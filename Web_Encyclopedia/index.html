@@ -34,6 +34,9 @@
         <button class="nav-tab-btn" data-tab="collection" onclick="App.setTab('collection')" id="tabCollection">
           ⭐ Моя Коллекция
         </button>
+        <button class="nav-tab-btn" data-tab="guides" onclick="App.setTab('guides')" id="tabGuides">
+          📖 Гайды
+        </button>
       </nav>
 
       <!-- Language Selector -->
@@ -188,6 +191,11 @@
       <!-- Generated via JS -->
     </div>
 
+    <!-- Guides View Container -->
+    <div id="guidesContainer" style="display: none;">
+      <!-- Generated via GuidesView -->
+    </div>
+
   </main>
 
   <!-- Detail Modal -->
@@ -205,6 +213,7 @@
   <script src="js/characters_view.js"></script>
   <script src="js/items_view.js"></script>
   <script src="js/collection_view.js"></script>
+  <script src="js/guides_view.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

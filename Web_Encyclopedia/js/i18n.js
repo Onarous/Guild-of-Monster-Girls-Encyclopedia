@@ -7,10 +7,11 @@ const I18N = {
   RU: {
     appTitle: "Guild of Monster Girls — Энциклопедия",
     appSubtitle: "База данных персонажей, экипировки, реликвий и сетов",
-    navCharacters: "Персонажи (204)",
-    navItems: "Предметы и Снаряжение (3,353)",
-    navBonds: "Сеты и Бонды (200+)",
-    navMyCollection: "Моя Коллекция",
+    navCharacters: "👥 Персонажи (204)",
+    navItems: "🎒 Предметы (3,353)",
+    navBonds: "🔗 Сеты и Бонды",
+    navMyCollection: "⭐ Моя Коллекция",
+    navGuides: "📖 Гайды и Механики",
     searchPlaceholder: "Поиск по имени, ID, навыку, стату или тегу...",
     filterTitles: {
       rarity: "Ранг / Редкость:",
@@ -169,10 +170,11 @@ const I18N = {
   EN: {
     appTitle: "Guild of Monster Girls — Encyclopedia",
     appSubtitle: "Complete Database for Characters, Equipment, Relics & Bonds",
-    navCharacters: "Characters (204)",
-    navItems: "Items & Equipment (3,353)",
-    navBonds: "Set Bonds (200+)",
-    navMyCollection: "My Collection",
+    navCharacters: "👥 Characters (204)",
+    navItems: "🎒 Items (3,353)",
+    navBonds: "🔗 Set Bonds",
+    navMyCollection: "⭐ My Collection",
+    navGuides: "📖 Guides & Theorycraft",
     searchPlaceholder: "Search by name, ID, skill, stat, or tag...",
     filterTitles: {
       rarity: "Rarity / Tier:",
@@ -330,10 +332,11 @@ const I18N = {
   CN: {
     appTitle: "魔物娘公会 — 完整图鉴数据库",
     appSubtitle: "角色、装备、信物、符文与羁绊百科全书",
-    navCharacters: "角色图鉴 (204)",
-    navItems: "装备道具 (3,353)",
-    navBonds: "套装羁绊 (200+)",
-    navMyCollection: "我的收藏",
+    navCharacters: "👥 角色图鉴 (204)",
+    navItems: "🎒 装备道具 (3,353)",
+    navBonds: "🔗 套装羁绊",
+    navMyCollection: "⭐ 我的收藏",
+    navGuides: "📖 攻略指南",
     searchPlaceholder: "搜索角色名、ID、技能效果、属性或标签...",
     filterTitles: {
       rarity: "品阶 / 稀有度:",

@@ -404,15 +404,26 @@ const App = {
       btn.classList.toggle('active', btn.dataset.tab === tab);
     });
 
+    const isGuides = tab === 'guides';
     const isItems = tab === 'items' || tab === 'bonds';
     const isBonds = tab === 'bonds';
     if (isBonds) this.state.itemCategory = 'bonds';
 
+    const toolbar = document.querySelector('.control-toolbar');
+    const metaRow = document.querySelector('.results-meta-row');
+    const cardsGrid = document.getElementById('cardsGrid');
+    const guidesContainer = document.getElementById('guidesContainer');
+
+    if (toolbar) toolbar.style.display = isGuides ? 'none' : 'block';
+    if (metaRow) metaRow.style.display = isGuides ? 'none' : 'flex';
+    if (cardsGrid) cardsGrid.style.display = isGuides ? 'none' : 'grid';
+    if (guidesContainer) guidesContainer.style.display = isGuides ? 'block' : 'none';
+
     document.getElementById('itemCategoryBar').style.display = isItems && !isBonds ? 'flex' : 'none';
     document.getElementById('slotFilterRow').style.display = isItems ? 'flex' : 'none';
-    document.getElementById('roleFilterRow').style.display = isItems ? 'none' : 'flex';
-    document.getElementById('bannerFilterRow').style.display = isItems ? 'none' : 'flex';
-    document.getElementById('sortGroup').style.display = isItems ? 'none' : 'flex';
+    document.getElementById('roleFilterRow').style.display = isItems || isGuides ? 'none' : 'flex';
+    document.getElementById('bannerFilterRow').style.display = isItems || isGuides ? 'none' : 'flex';
+    document.getElementById('sortGroup').style.display = isItems || isGuides ? 'none' : 'flex';
 
     this.render();
     if (tab === 'collection') {
@@ -457,6 +468,12 @@ const App = {
     const lang = this.state.lang;
     const tab = this.state.activeTab;
     const collHeaderEl = document.getElementById('collectionHeaderContainer');
+
+    if (tab === 'guides') {
+      if (collHeaderEl) collHeaderEl.style.display = 'none';
+      GuidesView.render('guidesContainer', lang);
+      return;
+    }
 
     if (tab === 'collection') {
       if (collHeaderEl) {
@@ -614,6 +631,7 @@ const App = {
     document.getElementById('tabItems').textContent = dict.navItems;
     document.getElementById('tabBonds').textContent = dict.navBonds;
     document.getElementById('tabCollection').textContent = dict.navMyCollection;
+    if (document.getElementById('tabGuides')) document.getElementById('tabGuides').textContent = dict.navGuides;
     document.getElementById('searchInput').placeholder = dict.searchPlaceholder;
     document.getElementById('resetFiltersBtn').textContent = dict.resetFilters;
     document.getElementById('sortLabel').textContent = dict.sortBy;
