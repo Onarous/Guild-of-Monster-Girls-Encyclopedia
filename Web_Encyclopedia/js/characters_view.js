@@ -329,11 +329,11 @@ const CharactersView = {
           ` : ''}
 
           <!-- Signature Relics -->
-          ${relicsHtml ? `
+          ${relicHtml ? `
             <div class="detail-section">
               <div class="section-heading">🔮 ${dict.signatureRelic}</div>
               <div class="traits-container">
-                ${relicsHtml}
+                ${relicHtml}
               </div>
             </div>
           ` : ''}
