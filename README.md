@@ -3,6 +3,8 @@
 > **Полная веб-энциклопедия и инструмент синхронизации коллекции для игры «Guild of Monster Girls» (魔物娘公会 / Гильдия Монстро-девочек).**
 > 
 > *Поддержка 3 языков: Русский (🇷🇺 RU), English (🇬🇧 EN), 中文 (🇨🇳 CN).*
+>
+> 🌐 **Онлайн-версия (GitHub Pages):** [https://onarous.github.io/Guild-of-Monster-Girls-Encyclopedia/](https://onarous.github.io/Guild-of-Monster-Girls-Encyclopedia/)
 
 ---
 
