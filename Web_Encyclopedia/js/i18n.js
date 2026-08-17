@@ -121,7 +121,7 @@ const I18N = {
     tokenStep1WhatTitle: "🔑 Что такое токен:",
     tokenStep1WhatDesc: "Это 32-значный ключ сессии ChillyRoom (например: <code>a1b2c3d4e5f60718293a4b5c6d7e8f90</code>), действующий до 30 дней. Позволяет загружать персонажей и ресурсы без ввода паролей.",
     tokenStep2HowTitle: "🔍 Как получить токен вручную:",
-    tokenStep2HowDesc: "• <b>Сниффер сети (HTTP Toolkit / HttpCanary / Charles / Reqable):</b> откройте игру и скопируйте токен из заголовка <code>Authorization: Bearer &lt;токен&gt;</code> любого запроса к <code>api.monster-girls-guild.chillyroom.com</code>.<br>• <b>Из PlayerPrefs:</b> скопируйте поле <code>Session.Token</code> из <code>SdkStateCache</code> в файле <code>com.chillyroom.monstergirls.gp.v2.playerprefs.xml</code>.",
+    tokenStep2HowDesc: "• <b>Сниффер сети (HTTP Toolkit / HttpCanary / Charles / Reqable):</b> откройте игру и скопируйте токен из заголовка <code>Authorization: Bearer &lt;токен&gt;</code> любого запроса к <code>api.monster-girls-guild.chillyroom.com</code>. (Если игра выдает ошибку входа при включенном сниффере из-за SSL-защиты Unity — скачайте фикс-скрипт <a href=\"unity_ssl_bypass.js\" download=\"unity_ssl_bypass.js\" class=\"shizuku-dl-link\"><code>📥 unity_ssl_bypass.js</code></a> или <a href=\"https://github.com/Onarous/Guild-of-Monster-Girls-Encyclopedia/blob/main/unity_ssl_bypass.js\" target=\"_blank\" class=\"shizuku-dl-link\">на GitHub</a>).<br>• <b>Из PlayerPrefs:</b> скопируйте поле <code>Session.Token</code> из <code>SdkStateCache</code> в файле <code>com.chillyroom.monstergirls.gp.v2.playerprefs.xml</code>.",
     tokenStep3SmartTitle: "💡 Умная вставка и авто-вход по ссылке:",
     tokenStep3SmartDesc: "Поле ввода автоматически извлекает токен из любого текста или ссылки вида <code>/?token=&lt;токен&gt;</code>.",
 
@@ -285,7 +285,7 @@ const I18N = {
     tokenStep1WhatTitle: "🔑 What is the Auth Token:",
     tokenStep1WhatDesc: "A 32-character hexadecimal key (e.g. <code>a1b2c3d4e5f60718293a4b5c6d7e8f90</code>) valid for up to 30 days. It authorizes data fetching without needing passwords.",
     tokenStep2HowTitle: "🔍 How to obtain your token manually:",
-    tokenStep2HowDesc: "• <b>Network Sniffer (HTTP Toolkit / HttpCanary / Charles / Reqable):</b> open the game and copy the token from the <code>Authorization: Bearer &lt;token&gt;</code> header on any request to <code>api.monster-girls-guild.chillyroom.com</code>.<br>• <b>From PlayerPrefs:</b> copy <code>Session.Token</code> from <code>SdkStateCache</code> in <code>com.chillyroom.monstergirls.gp.v2.playerprefs.xml</code>.",
+    tokenStep2HowDesc: "• <b>Network Sniffer (HTTP Toolkit / HttpCanary / Charles / Reqable):</b> open the game and copy the token from the <code>Authorization: Bearer &lt;token&gt;</code> header on any request to <code>api.monster-girls-guild.chillyroom.com</code>. (If the game refuses to connect with a proxy running due to Unity SSL Pinning, use the fix script <a href=\"unity_ssl_bypass.js\" download=\"unity_ssl_bypass.js\" class=\"shizuku-dl-link\"><code>📥 unity_ssl_bypass.js</code></a> or view on <a href=\"https://github.com/Onarous/Guild-of-Monster-Girls-Encyclopedia/blob/main/unity_ssl_bypass.js\" target=\"_blank\" class=\"shizuku-dl-link\">GitHub</a>).<br>• <b>From PlayerPrefs:</b> copy <code>Session.Token</code> from <code>SdkStateCache</code> in <code>com.chillyroom.monstergirls.gp.v2.playerprefs.xml</code>.",
     tokenStep3SmartTitle: "💡 Smart Parser & Link Auto-Login:",
     tokenStep3SmartDesc: "The input field automatically extracts 32-character tokens from URLs or links like <code>/?token=&lt;token&gt;</code>.",
 
@@ -448,7 +448,7 @@ const I18N = {
     tokenStep1WhatTitle: "🔑 什么是 Auth Token：",
     tokenStep1WhatDesc: "ChillyRoom 的 32 位十六进制会话凭证 (例如: <code>a1b2c3d4e5f60718293a4b5c6d7e8f90</code>)，有效期长达 30 天，无需密码即可同步数据。",
     tokenStep2HowTitle: "🔍 如何手动获取 Token：",
-    tokenStep2HowDesc: "• <b>抓包工具 (HTTP Toolkit / HttpCanary / Charles / Reqable):</b> 打开游戏，从请求 <code>api.monster-girls-guild.chillyroom.com</code> 的 <code>Authorization: Bearer &lt;Token&gt;</code> 请求头中复制。<br>• <b>从存档配置提取:</b> 从 <code>com.chillyroom.monstergirls.gp.v2.playerprefs.xml</code> 中的 <code>SdkStateCache</code> 字段复制 <code>Session.Token</code>。",
+    tokenStep2HowDesc: "• <b>抓包工具 (HTTP Toolkit / HttpCanary / Charles / Reqable):</b> 打开游戏，从请求 <code>api.monster-girls-guild.chillyroom.com</code> 的 <code>Authorization: Bearer &lt;Token&gt;</code> 请求头中复制。(若因 Unity 证书校验导致开启抓包时游戏无法连接，可下载修复脚本 <a href=\"unity_ssl_bypass.js\" download=\"unity_ssl_bypass.js\" class=\"shizuku-dl-link\"><code>📥 unity_ssl_bypass.js</code></a> 或查看 <a href=\"https://github.com/Onarous/Guild-of-Monster-Girls-Encyclopedia/blob/main/unity_ssl_bypass.js\" target=\"_blank\" class=\"shizuku-dl-link\">GitHub 仓库</a>)。<br>• <b>从存档配置提取:</b> 从 <code>com.chillyroom.monstergirls.gp.v2.playerprefs.xml</code> 中的 <code>SdkStateCache</code> 字段复制 <code>Session.Token</code>。",
     tokenStep3SmartTitle: "💡 智能解析与链接直达：",
     tokenStep3SmartDesc: "输入框会自动从任意文本或 <code>/?token=&lt;Token&gt;</code> 链接中提取 Token 进行同步。",
 
