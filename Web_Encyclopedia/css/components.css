@@ -1508,3 +1508,11 @@
   font-weight: 700;
 }
 
+.gacha-table-row {
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.gacha-table-row:hover {
+  background: rgba(59, 130, 246, 0.08);
+}
+

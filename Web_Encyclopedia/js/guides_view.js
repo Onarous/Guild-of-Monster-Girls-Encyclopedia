@@ -1,14 +1,23 @@
 /**
  * Guides & Technical Knowledge Base Component for Guild of Monster Girls Web Encyclopedia
- * Contains in-depth mechanics, formulas, turn phases, targeting, gacha pools, and sync guides.
+ * Contains in-depth mechanics, formulas, turn phases, targeting, gacha drop lists, and sync guides.
  * Full multilingual support for RU, EN, and CN.
  */
 
 const GuidesView = {
   activeSection: 'phases',
+  gachaFilter: 'all',
 
   setSection(sectionId) {
     this.activeSection = sectionId;
+    const container = document.getElementById('guidesContainer');
+    if (container) {
+      this.render(container.id, App.state.lang);
+    }
+  },
+
+  setGachaFilter(filter) {
+    this.gachaFilter = filter;
     const container = document.getElementById('guidesContainer');
     if (container) {
       this.render(container.id, App.state.lang);
@@ -28,7 +37,7 @@ const GuidesView = {
       { id: 'targeting', icon: '🎯', title: isRu ? 'Дистанция и Таргетинг' : isCn ? '攻击距离与目标选择' : 'Range, Distance & Targeting' },
       { id: 'damage', icon: '🛡️', title: isRu ? 'Урон, Защита и Баффы' : isCn ? '伤害计算、护盾与增益' : 'Damage Formulas, Shields & Buffs' },
       { id: 'elements', icon: '✨', title: isRu ? 'Стихии, Роли и Отряд' : isCn ? '元素克制、定位与配队' : 'Elements, Roles & Lineup' },
-      { id: 'gacha', icon: '🎪', title: isRu ? 'Баннеры и Система призыва' : isCn ? '招募卡池与抽卡机制' : 'Gacha Pools & Summoning' },
+      { id: 'gacha', icon: '🎪', title: isRu ? 'Списки найма и Баннеры' : isCn ? '招募卡池与掉落列表' : 'Recruit Pools & Gacha Lists' },
       { id: 'sync', icon: '📲', title: isRu ? 'Гайд по синхронизации' : isCn ? '账号同步与数据导出' : 'Account Sync & Export Guide' },
       { id: 'translation', icon: '⚠️', title: isRu ? 'Ошибки перевода игры' : isCn ? '游戏翻译勘误与说明' : 'Translation & Skill Fixes' }
     ];
@@ -72,7 +81,7 @@ const GuidesView = {
       case 'elements':
         return isRu ? this.getElementsRU() : isCn ? this.getElementsCN() : this.getElementsEN();
       case 'gacha':
-        return isRu ? this.getGachaRU() : isCn ? this.getGachaCN() : this.getGachaEN();
+        return this.getGachaContent(lang);
       case 'sync':
         return isRu ? this.getSyncRU() : isCn ? this.getSyncCN() : this.getSyncEN();
       case 'translation':
@@ -82,7 +91,7 @@ const GuidesView = {
     }
   },
 
-  // 1. Battle Phases (RU, EN, CN)
+  // 1. Battle Phases
   getPhasesRU() {
     return `
       <div class="guide-article">
@@ -174,7 +183,7 @@ const GuidesView = {
     `;
   },
 
-  // 2. Targeting & Range (RU, EN, CN)
+  // 2. Targeting & Range
   getTargetingRU() {
     return `
       <div class="guide-article">
@@ -288,7 +297,7 @@ const GuidesView = {
     `;
   },
 
-  // 3. Damage & Buffs (RU, EN, CN)
+  // 3. Damage & Buffs
   getDamageRU() {
     return `
       <div class="guide-article">
@@ -377,7 +386,7 @@ const GuidesView = {
     `;
   },
 
-  // 4. Elements & Team Building (RU, EN, CN)
+  // 4. Elements & Team Building
   getElementsRU() {
     return `
       <div class="guide-article">
@@ -477,94 +486,177 @@ const GuidesView = {
     `;
   },
 
-  // 5. Gacha & Summoning (RU, EN, CN)
-  getGachaRU() {
+  // 5. Gacha & Full Recruit Lists (Alter + Standard + Limited)
+  getGachaContent(lang = "RU") {
+    const isRu = lang === 'RU';
+    const isCn = lang === 'CN';
+    const allChars = (App.state.data.characters[lang] || []);
+    const charMap = {};
+    allChars.forEach(c => { charMap[c.id] = c; });
+
+    // 1. Alter Pool IDs (18 exact characters)
+    const alterIds = [
+      'M53301_001', 'M13303_001', 'M13304_001', 'M23301_001', 'M11304_001', 'M12301_001', 'M51302_001', 'M31301_001',
+      'M51201_001', 'M14201_001', 'M12202_001', 'M11205_001',
+      'M11103_001', 'M12101_001', 'M13104_001', 'M11109_001',
+      'M11005_001', 'M12003_001'
+    ];
+    const alterChars = alterIds.map(id => charMap[id]).filter(Boolean);
+
+    // 2. Standard Pool (140 characters)
+    const standardChars = allChars.filter(c => c.banner_type === 'standard');
+
+    // 3. Limited Rate-Up Banners (2 characters)
+    const limitedChars = allChars.filter(c => c.banner_type === 'limited');
+
+    const f = this.gachaFilter;
+    const showAlter = f === 'all' || f === 'alter';
+    const showStandard = f === 'all' || f === 'standard';
+    const showLimited = f === 'all' || f === 'limited';
+
     return `
       <div class="guide-article">
-        <h2 class="guide-title">🎪 Система призыва и Пулы баннеров (Gacha Pools)</h2>
+        <h2 class="guide-title">🎪 ${isRu ? 'Списки найма и Пулы баннеров (Gacha Pools)' : isCn ? '招募卡池与全量掉落列表' : 'Recruitment Pools & Drop Lists'}</h2>
+        <p class="guide-lead">
+          ${isRu 
+            ? 'Полные официальные списки персонажей, доступных в Базовом призыве, пуле Альтер-найма и лимитированных Rate-Up баннерах. Нажмите на любого персонажа для просмотра подробностей.' 
+            : isCn 
+            ? '《魔物娘公会》常规招募、异化/皮肤招募与限时UP卡池全量掉落名单。点击任意角色可直接查看详细属性。' 
+            : 'Complete official recruitment tables for Standard, Alter, and Limited Rate-Up summoning pools. Click any character to view full details.'}
+        </p>
 
-        <div class="guide-card">
-          <h3>🔮 1. Стандартный наем (140 героинь):</h3>
-          <p>Базовый постоянный пул гильдии. Включает 30 героинь ранга S, 56 ранга A, 34 ранга B и 20 ранга C.</p>
-          <ul class="guide-list">
-            <li><strong>Ключевые S-героини:</strong> Астральная Злодейка, Бесовка, Колдунья желаний, Звездная Лучница, Королева слизней, Святая сабля.</li>
-          </ul>
+        <!-- Sub-filter pills for pools -->
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
+          <button class="filter-pill ${f === 'all' ? 'active' : ''}" onclick="GuidesView.setGachaFilter('all')">
+            🌐 ${isRu ? 'Все пулы' : isCn ? '全部卡池' : 'All Pools'}
+          </button>
+          <button class="filter-pill ${f === 'alter' ? 'active' : ''}" onclick="GuidesView.setGachaFilter('alter')">
+            🌌 ${isRu ? 'Пул Альтер-Найма (18)' : isCn ? '异化招募池 (18)' : 'Alter Pool (18)'}
+          </button>
+          <button class="filter-pill ${f === 'standard' ? 'active' : ''}" onclick="GuidesView.setGachaFilter('standard')">
+            📜 ${isRu ? 'Пул Стандартного Найма (140)' : isCn ? '常规招募池 (140)' : 'Standard Pool (140)'}
+          </button>
+          <button class="filter-pill ${f === 'limited' ? 'active' : ''}" onclick="GuidesView.setGachaFilter('limited')">
+            🔥 ${isRu ? 'Лимитированные Rate-Up (2)' : isCn ? '限时UP卡池 (2)' : 'Limited Rate-Up (2)'}
+          </button>
         </div>
 
-        <div class="guide-card">
-          <h3>⏳ 2. Лимитированные баннеры Rate-Up:</h3>
-          <p>Временные события с повышенным шансом на получение эксклюзивных героинь:</p>
-          <ul class="guide-list">
-            <li><strong>Багровая драконица (M13310):</strong> Драконья S-ранг героиня стихии Воды.</li>
-            <li><strong>Владычица роз (M13307):</strong> Растительная S-ранг героиня стихии Земли.</li>
-          </ul>
-        </div>
+        ${showLimited ? `
+          <!-- Limited Banners Section -->
+          <div class="guide-card">
+            <h3>🔥 ${isRu ? 'Лимитированные Rate-Up баннеры (Limited Event Banners)' : isCn ? '限时UP专属招募活动' : 'Limited Rate-Up Event Banners'}</h3>
+            <p style="font-size: 13.5px; color: var(--text-secondary);">
+              ${isRu 
+                ? 'Эксклюзивные героини, доступные только во время действия специальных сезонных событий. Имеют гарантированный повышенный шанс призыва.' 
+                : isCn 
+                ? '限时登场的专属强力角色，仅在对应活动UP期间可抽取。' 
+                : 'Exclusive heroines available only during active event periods with featured drop rate guarantees.'}
+            </p>
+            ${this.renderGachaTable(limitedChars, lang)}
+          </div>
+        ` : ''}
 
-        <div class="guide-card">
-          <h3>👗 3. Пул Альтер-найма и Обликов (18 героинь):</h3>
-          <p>Специальный пул с альтернативными стихийными формами и скинами героинь (M53301_001, M13303_001, M23301_001 и др.).</p>
-        </div>
+        ${showAlter ? `
+          <!-- Alter Recruit Pool Section -->
+          <div class="guide-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+              <h3>🌌 ${isRu ? 'Пул Альтер-Найма (Alter Recruit Pool — 18 героинь)' : isCn ? '异化招募常驻卡池 (18位角色)' : 'Alter Recruitment Pool (18 Heroines)'}</h3>
+              <span class="badge-accent">${isRu ? 'Постоянный пул обликов' : isCn ? '常驻异化卡池' : 'Permanent Alter Pool'}</span>
+            </div>
+            <p style="font-size: 13.5px; color: var(--text-secondary);">
+              ${isRu 
+                ? 'Специальный пул альтернативных форм героинь с измененными стихиями, уникальными пассивками и новыми обликами.' 
+                : isCn 
+                ? '专属异化形态与皮肤常驻卡池，包含全新属性形态与独立技能组。' 
+                : 'Special summon pool containing alternative element versions, exclusive skins, and modified talent kits.'}
+            </p>
+            ${this.renderGachaTable(alterChars, lang)}
+          </div>
+        ` : ''}
+
+        ${showStandard ? `
+          <!-- Standard Recruit Pool Section -->
+          <div class="guide-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+              <h3>📜 ${isRu ? 'Пул Стандартного Найма (Standard Recruit Pool — 140 героинь)' : isCn ? '常规招募常驻卡池 (140位角色)' : 'Standard Recruitment Pool (140 Heroines)'}</h3>
+              <span class="badge-accent">${isRu ? 'Базовый постоянный пул' : isCn ? '公会常规招募' : 'Permanent Guild Summon'}</span>
+            </div>
+            <p style="font-size: 13.5px; color: var(--text-secondary);">
+              ${isRu 
+                ? 'Базовый постоянный пул гильдии: 30 героинь ранга S, 56 ранга A, 34 ранга B и 20 ранга C.' 
+                : isCn 
+                ? '公会基础招募常驻池：包含 30位S阶、56位A阶、34位B阶 与 20位C阶角色。' 
+                : 'Standard permanent guild summon pool: 30 S-Rank, 56 A-Rank, 34 B-Rank, and 20 C-Rank heroines.'}
+            </p>
+            ${this.renderGachaTable(standardChars, lang)}
+          </div>
+        ` : ''}
       </div>
     `;
   },
 
-  getGachaEN() {
+  renderGachaTable(chars, lang = "RU") {
+    if (!chars || chars.length === 0) {
+      return `<div style="color: var(--text-muted); font-style: italic; padding: 12px 0;">—</div>`;
+    }
+
+    const isRu = lang === 'RU';
+    const isCn = lang === 'CN';
+    const imgMap = App.state.imageMappings?.characters || {};
+
+    const tierWeight = { 'SS': 5, 'S': 4, 'A': 3, 'B': 2, 'C': 1 };
+    const sorted = [...chars].sort((a, b) => {
+      const diff = (tierWeight[b.rarity_tier] || 0) - (tierWeight[a.rarity_tier] || 0);
+      if (diff !== 0) return diff;
+      return String(a.name).localeCompare(String(b.name));
+    });
+
     return `
-      <div class="guide-article">
-        <h2 class="guide-title">🎪 Gacha Pools & Recruitment System</h2>
+      <div class="guide-table-wrapper" style="margin-top: 10px;">
+        <table class="guide-table">
+          <thead>
+            <tr>
+              <th>${isRu ? 'Героиня' : isCn ? '角色' : 'Heroine'}</th>
+              <th>ID</th>
+              <th>${isRu ? 'Ранг' : isCn ? '品阶' : 'Tier'}</th>
+              <th>${isRu ? 'Стихия' : isCn ? '元素' : 'Element'}</th>
+              <th>${isRu ? 'Класс' : isCn ? '职业' : 'Class'}</th>
+              <th>${isRu ? 'Раса' : isCn ? '种族' : 'Race'}</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${sorted.map(c => {
+              const tierClass = `tier-${(c.rarity_tier || 'C').toLowerCase()}`;
+              const elemClass = CharactersView.getElementClass(c.element);
+              const portrait = imgMap[c.id] || imgMap[c.key] || `assets/img/characters/${c.id}_1__single_part1_1@1.png`;
 
-        <div class="guide-card">
-          <h3>🔮 1. Standard Recruitment Pool (140 Heroines):</h3>
-          <p>Permanent guild summoning pool containing 30 S-Rank, 56 A-Rank, 34 B-Rank, and 20 C-Rank heroines.</p>
-          <ul class="guide-list">
-            <li><strong>Key S-Tier Targets:</strong> Astral Fiend, Imp, Wish Djinn, Stellar Archer, Slime Queen, Holy Blade.</li>
-          </ul>
-        </div>
-
-        <div class="guide-card">
-          <h3>⏳ 2. Limited Rate-Up Banners:</h3>
-          <p>Time-limited event banners with increased drop rates:</p>
-          <ul class="guide-list">
-            <li><strong>Crimson Dragoness (M13310):</strong> S-Tier Water Dragoness Warrior.</li>
-            <li><strong>Rose Sovereign (M13307):</strong> S-Tier Earth Plant Mage.</li>
-          </ul>
-        </div>
-
-        <div class="guide-card">
-          <h3>👗 3. Alter & Skin Recruitment Pool (18 Heroines):</h3>
-          <p>Permanent Alter recruitment pool featuring alternative element forms and skins (M53301_001, M13303_001, M23301_001, etc.).</p>
-        </div>
+              return `
+                <tr class="gacha-table-row" onclick="App.openCharacterModal('${c.id}')" title="${isRu ? 'Нажмите, чтобы открыть карточку персонажа' : isCn ? '点击查看角色详情' : 'Click to view details'}" style="cursor: pointer;">
+                  <td style="display: flex; align-items: center; gap: 10px;">
+                    <div style="width: 36px; height: 36px; border-radius: 6px; overflow: hidden; background: #0f172a; border: 1px solid var(--border-subtle); flex-shrink: 0;">
+                      <img src="${portrait}" alt="${c.name}" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                      <span style="display: none; width: 100%; height: 100%; align-items: center; justify-content: center; font-size: 16px;">🐉</span>
+                    </div>
+                    <div>
+                      <strong style="color: #f3e8ff;">${c.name}</strong>
+                      ${c.skin_name && c.skin_name !== '默认外观' && c.skin_name !== 'Default Appearance' && c.skin_name !== 'Базовый облик' ? `<span class="char-skin-badge" style="font-size: 11px; margin-left: 4px;">[${c.skin_name}]</span>` : ''}
+                    </div>
+                  </td>
+                  <td style="font-family: monospace; font-size: 11.5px; color: var(--text-muted);">${c.id}</td>
+                  <td><span class="tier-badge ${tierClass}">${c.rarity_tier}★</span></td>
+                  <td><span class="tag-badge ${elemClass}">✨ ${c.element || ''}</span></td>
+                  <td><span class="tag-badge">🛡️ ${c.class || ''}</span></td>
+                  <td><span class="tag-badge">🧬 ${c.creature_type || ''}</span></td>
+                </tr>
+              `;
+            }).join('')}
+          </tbody>
+        </table>
       </div>
     `;
   },
 
-  getGachaCN() {
-    return `
-      <div class="guide-article">
-        <h2 class="guide-title">🎪 招募卡池与抽卡系统</h2>
-
-        <div class="guide-card">
-          <h3>🔮 1. 常规招募卡池 (140位角色)：</h3>
-          <p>常驻公会招募池，包含 30位S阶、56位A阶、34位B阶 与 20位C阶角色。</p>
-        </div>
-
-        <div class="guide-card">
-          <h3>⏳ 2. 限时UP招募卡池：</h3>
-          <ul class="guide-list">
-            <li><strong>赤焰龙女 (M13310)：</strong> S阶限时专属角色。</li>
-            <li><strong>玫瑰领主 (M13307)：</strong> S阶限时专属角色。</li>
-          </ul>
-        </div>
-
-        <div class="guide-card">
-          <h3>👗 3. 皮肤与异化招募池 (18位角色)：</h3>
-          <p>包含星界邪神异化 (M53301_001)、大地魔女异化 (M13303_001) 等专属形态。</p>
-        </div>
-      </div>
-    `;
-  },
-
-  // 6. Sync & Account Extraction (RU, EN, CN)
+  // 6. Sync & Account Extraction
   getSyncRU() {
     return `
       <div class="guide-article">
@@ -644,7 +736,7 @@ const GuidesView = {
     `;
   },
 
-  // 7. Translation Errors & Skill Fixes (RU, EN, CN)
+  // 7. Translation Errors & Skill Fixes
   getTranslationRU() {
     return `
       <div class="guide-article">
