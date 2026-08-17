@@ -12,8 +12,10 @@ raw_assets_archive/
 *.swp
 *.swo
 
-# OS generated files
-.DS_Store
-Thumbs.db
-*.tmp
+# Binaries
+*frida-server*
+*.apk
+*.so
+*.dat
+
 
