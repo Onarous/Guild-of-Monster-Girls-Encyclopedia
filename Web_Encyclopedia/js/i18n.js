@@ -98,8 +98,8 @@ const I18N = {
     adbStep1EmuDesc: "Запустите эмулятор и откройте игру <b>Guild of Monster Girls</b> (войдите в город). В настройках эмулятора обязательно включите <b>Root-права</b> и <b>ADB-отладку</b>. Нажмите кнопку выше.",
     adbStep2PhoneTitle: "2. Для физических Android-телефонов по проводу:",
     adbStep2PhoneDesc: "На телефоне обязательно должны быть активны <b>Root-права</b> (Magisk / KernelSU / APatch) и включена <b>«Отладка по USB»</b> в меню разработчика. Без Root-прав системная папка игры закрыта защитой Android — в этом случае используйте эмулятор или вкладку «Вход по токену».",
-    adbStep3ShizukuTitle: "3. Для телефонов без ПК (Shizuku + Termux):",
-    adbStep3ShizukuDesc: "Запустите службу <b>Shizuku</b> по беспроводной отладке (Wi-Fi), откройте <b>Termux</b> и выполните скрипт <code>shizuku_sync.sh</code> — он считает сессию игры и откроет сайт с готовой авторизацией.",
+    adbStep3ShizukuTitle: "3. Для телефонов без ПК (Shizuku + Termux) ⚠️ [Экспериментально]:",
+    adbStep3ShizukuDesc: "Запустите службу <b>Shizuku</b> по беспроводной отладке (Wi-Fi), откройте <b>Termux</b> и запустите скрипт <a href=\"/shizuku_sync.sh\" download=\"shizuku_sync.sh\" class=\"shizuku-dl-link\"><code>📥 shizuku_sync.sh</code></a> (также доступен в <a href=\"https://github.com/Onarous/Guild-of-Monster-Girls-Encyclopedia/releases/tag/v1.0.0\" target=\"_blank\" class=\"shizuku-dl-link\">Релизах GitHub</a>).<br>⚠️ <b>Важное примечание:</b> На большинстве физических телефонов без Root доступ к папке игры блокируется ядром Android (ошибка <code>Permission denied</code>). Если этот метод не сработал на вашем устройстве, используйте 100% рабочий способ — вкладку <b>«🎫 Вход по токену»</b> через мобильный сниффер трафика (Reqable/HttpCanary) или эмулятор на ПК.",
     adbStep4SecTitle: "🔒 Безопасность и конфиденциальность:",
     adbStep4SecDesc: "Считывается исключительно локальный кэш игровой сессии (<code>SdkStateCache</code>). Пароли и личные данные не затрагиваются и никуда не передаются.",
     
@@ -110,7 +110,7 @@ const I18N = {
     tokenStep1WhatTitle: "🔑 Что такое токен:",
     tokenStep1WhatDesc: "Это 32-значный ключ сессии ChillyRoom (например: <code>a1b2c3d4e5f60718293a4b5c6d7e8f90</code>), действующий до 30 дней. Позволяет загружать персонажей и ресурсы без ввода паролей.",
     tokenStep2HowTitle: "🔍 Как получить токен вручную:",
-    tokenStep2HowDesc: "• <b>Сниффер сети (HTTP Toolkit / HttpCanary / Charles):</b> откройте игру и скопируйте токен из заголовка <code>Authorization: Bearer &lt;токен&gt;</code> любого запроса к <code>api.monster-girls-guild.chillyroom.com</code>.<br>• <b>Из PlayerPrefs:</b> скопируйте поле <code>Session.Token</code> из <code>SdkStateCache</code> в файле <code>com.chillyroom.monstergirls.gp.v2.playerprefs.xml</code>.",
+    tokenStep2HowDesc: "• <b>Сниффер сети (HTTP Toolkit / HttpCanary / Charles / Reqable):</b> откройте игру и скопируйте токен из заголовка <code>Authorization: Bearer &lt;токен&gt;</code> любого запроса к <code>api.monster-girls-guild.chillyroom.com</code>.<br>• <b>Из PlayerPrefs:</b> скопируйте поле <code>Session.Token</code> из <code>SdkStateCache</code> в файле <code>com.chillyroom.monstergirls.gp.v2.playerprefs.xml</code>.",
     tokenStep3SmartTitle: "💡 Умная вставка и авто-вход по ссылке:",
     tokenStep3SmartDesc: "Поле ввода автоматически извлекает токен из любого текста или ссылки вида <code>/?token=&lt;токен&gt;</code>.",
 
@@ -250,8 +250,8 @@ const I18N = {
     adbStep1EmuDesc: "Start the emulator and launch <b>Guild of Monster Girls</b> (enter the game town). Make sure to enable <b>Root permissions</b> and <b>ADB debugging</b> in emulator settings. Click the button above.",
     adbStep2PhoneTitle: "2. For Physical Android Phones via Cable:",
     adbStep2PhoneDesc: "Your physical phone MUST have <b>Root permissions</b> (Magisk / KernelSU / APatch) and <b>USB Debugging</b> enabled. Without Root, Android security restricts access to game data — please use a PC Emulator or the Token Tab instead.",
-    adbStep3ShizukuTitle: "3. For Android without PC (Shizuku + Termux):",
-    adbStep3ShizukuDesc: "Start <b>Shizuku</b> via Wireless Debugging, open <b>Termux</b> and run <code>shizuku_sync.sh</code> — it retrieves your session and opens the website with 1-tap auto-sync.",
+    adbStep3ShizukuTitle: "3. For Android without PC (Shizuku + Termux) ⚠️ [Experimental]:",
+    adbStep3ShizukuDesc: "Start <b>Shizuku</b> via Wireless Debugging, open <b>Termux</b> and run <a href=\"/shizuku_sync.sh\" download=\"shizuku_sync.sh\" class=\"shizuku-dl-link\"><code>📥 shizuku_sync.sh</code></a> (also available in <a href=\"https://github.com/Onarous/Guild-of-Monster-Girls-Encyclopedia/releases/tag/v1.0.0\" target=\"_blank\" class=\"shizuku-dl-link\">GitHub Releases</a>).<br>⚠️ <b>Note:</b> On unrooted Android devices, the OS may restrict private app access (<code>Permission denied</code>). If this happens, please use the 100% reliable <b>«🎫 Token Tab»</b> with a mobile traffic sniffer (Reqable / HttpCanary) or PC emulator.",
     adbStep4SecTitle: "🔒 Security & Privacy:",
     adbStep4SecDesc: "Only the local session cache (<code>SdkStateCache</code>) is read. No passwords or private files are touched or sent anywhere.",
     
@@ -262,7 +262,7 @@ const I18N = {
     tokenStep1WhatTitle: "🔑 What is the Auth Token:",
     tokenStep1WhatDesc: "A 32-character hexadecimal key (e.g. <code>a1b2c3d4e5f60718293a4b5c6d7e8f90</code>) valid for up to 30 days. It authorizes data fetching without needing passwords.",
     tokenStep2HowTitle: "🔍 How to obtain your token manually:",
-    tokenStep2HowDesc: "• <b>Network Sniffer (HTTP Toolkit / HttpCanary / Charles):</b> open the game and copy the token from the <code>Authorization: Bearer &lt;token&gt;</code> header on any request to <code>api.monster-girls-guild.chillyroom.com</code>.<br>• <b>From PlayerPrefs:</b> copy <code>Session.Token</code> from <code>SdkStateCache</code> in <code>com.chillyroom.monstergirls.gp.v2.playerprefs.xml</code>.",
+    tokenStep2HowDesc: "• <b>Network Sniffer (HTTP Toolkit / HttpCanary / Charles / Reqable):</b> open the game and copy the token from the <code>Authorization: Bearer &lt;token&gt;</code> header on any request to <code>api.monster-girls-guild.chillyroom.com</code>.<br>• <b>From PlayerPrefs:</b> copy <code>Session.Token</code> from <code>SdkStateCache</code> in <code>com.chillyroom.monstergirls.gp.v2.playerprefs.xml</code>.",
     tokenStep3SmartTitle: "💡 Smart Parser & Link Auto-Login:",
     tokenStep3SmartDesc: "The input field automatically extracts 32-character tokens from URLs or links like <code>/?token=&lt;token&gt;</code>.",
 
@@ -401,8 +401,8 @@ const I18N = {
     adbStep1EmuDesc: "启动模拟器并打开 <b>魔物娘公会</b> (进入城镇)。请确保在模拟器设置中开启了 <b>Root 权限</b> 与 <b>ADB 调试</b>。点击上方按钮即可一键同步。",
     adbStep2PhoneTitle: "2. 物理安卓手机用户 (USB 有线):",
     adbStep2PhoneDesc: "手机必须具备 <b>Root 权限</b> (Magisk / KernelSU / APatch) 并开启 <b>USB 调试</b>。若无 Root 权限，Android 系统将拦截读取，建议使用电脑模拟器或 Token 登录。",
-    adbStep3ShizukuTitle: "3. 手机免电脑方案 (Shizuku + Termux):",
-    adbStep3ShizukuDesc: "通过无线调试启动 <b>Shizuku</b>，在 <b>Termux</b> 中运行 <code>shizuku_sync.sh</code> 脚本 — 即可自动提取会话并一键在浏览器打开同步。",
+    adbStep3ShizukuTitle: "3. 手机免电脑方案 (Shizuku + Termux) ⚠️ [实验性]:",
+    adbStep3ShizukuDesc: "通过无线调试启动 <b>Shizuku</b>，在 <b>Termux</b> 中运行 <a href=\"/shizuku_sync.sh\" download=\"shizuku_sync.sh\" class=\"shizuku-dl-link\"><code>📥 shizuku_sync.sh</code></a> (也可在 <a href=\"https://github.com/Onarous/Guild-of-Monster-Girls-Encyclopedia/releases/tag/v1.0.0\" target=\"_blank\" class=\"shizuku-dl-link\">GitHub Releases</a> 下载)。<br>⚠️ <b>注意：</b> 在大多数无 Root 的实体手机上，Android 系统权限将拦截读取 (<code>Permission denied</code>)。如遇到此情况，请使用 100% 稳定的 <b>«🎫 Token 登录»</b> 配合抓包工具 (Reqable/HttpCanary) 或电脑模拟器。",
     adbStep4SecTitle: "🔒 安全与隐私保障:",
     adbStep4SecDesc: "仅读取游戏本地公开的会话缓存 (<code>SdkStateCache</code>)，无需输入密码，数据仅留存本地浏览器。",
     
@@ -413,7 +413,7 @@ const I18N = {
     tokenStep1WhatTitle: "🔑 什么是 Auth Token：",
     tokenStep1WhatDesc: "ChillyRoom 的 32 位十六进制会话凭证 (例如: <code>a1b2c3d4e5f60718293a4b5c6d7e8f90</code>)，有效期长达 30 天，无需密码即可同步数据。",
     tokenStep2HowTitle: "🔍 如何手动获取 Token：",
-    tokenStep2HowDesc: "• <b>抓包工具 (HTTP Toolkit / HttpCanary / Charles):</b> 打开游戏，从请求 <code>api.monster-girls-guild.chillyroom.com</code> 的 <code>Authorization: Bearer &lt;Token&gt;</code> 请求头中复制。<br>• <b>从存档配置提取:</b> 从 <code>com.chillyroom.monstergirls.gp.v2.playerprefs.xml</code> 中的 <code>SdkStateCache</code> 字段复制 <code>Session.Token</code>。",
+    tokenStep2HowDesc: "• <b>抓包工具 (HTTP Toolkit / HttpCanary / Charles / Reqable):</b> 打开游戏，从请求 <code>api.monster-girls-guild.chillyroom.com</code> 的 <code>Authorization: Bearer &lt;Token&gt;</code> 请求头中复制。<br>• <b>从存档配置提取:</b> 从 <code>com.chillyroom.monstergirls.gp.v2.playerprefs.xml</code> 中的 <code>SdkStateCache</code> 字段复制 <code>Session.Token</code>。",
     tokenStep3SmartTitle: "💡 智能解析与链接直达：",
     tokenStep3SmartDesc: "输入框会自动从任意文本或 <code>/?token=&lt;Token&gt;</code> 链接中提取 Token 进行同步。",
 

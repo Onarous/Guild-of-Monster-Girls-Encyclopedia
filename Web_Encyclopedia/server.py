@@ -228,6 +228,20 @@ class ProxyRequestHandler(http.server.SimpleHTTPRequestHandler):
             devices, err = get_connected_devices()
             self.send_json({"success": True, "devices": devices, "error": err})
             return
+        elif path in ["/shizuku_sync.sh", "/download/shizuku_sync.sh"]:
+            sh_path = os.path.join(DIRECTORY, "shizuku_sync.sh")
+            if not os.path.exists(sh_path):
+                sh_path = os.path.join(PARENT_DIR, "shizuku_sync.sh")
+            if os.path.exists(sh_path):
+                self.send_response(200)
+                self.send_header("Content-Type", "application/x-sh")
+                self.send_header("Content-Disposition", 'attachment; filename="shizuku_sync.sh"')
+                with open(sh_path, "rb") as f:
+                    content = f.read()
+                self.send_header("Content-Length", str(len(content)))
+                self.end_headers()
+                self.wfile.write(content)
+                return
         super().do_GET()
 
     def end_headers(self):
