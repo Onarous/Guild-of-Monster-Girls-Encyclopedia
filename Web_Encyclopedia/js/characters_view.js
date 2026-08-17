@@ -44,10 +44,11 @@ const CharactersView = {
         </span>
       `;
 
-      const portraitPath = charImgs[char.id] || charImgs[char.key] || '';
-      const portraitHtml = portraitPath 
-        ? `<img src="${portraitPath}" alt="${this.escapeHtml(char.name)}" class="char-portrait-img" loading="lazy" onerror="this.style.display='none'">`
-        : `<span class="char-portrait-placeholder">🐉</span>`;
+      const portraitPath = charImgs[char.id] || charImgs[char.key] || (char.id ? `assets/img/characters/${char.id}_1__single_part1_1@1.png` : '');
+      const portraitHtml = `
+        ${portraitPath ? `<img src="${portraitPath}" alt="${this.escapeHtml(char.name)}" class="char-portrait-img" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';">` : ''}
+        <span class="char-portrait-placeholder" style="${portraitPath ? 'display: none;' : ''}">🐉</span>
+      `;
 
       const roleTagsHtml = this.formatRoleBadges(char.combat_role, currentLang);
 
@@ -142,9 +143,10 @@ const CharactersView = {
       ? `<span class="char-skin-badge" style="font-size: 13px;">[${this.escapeHtml(char.skin_name)}]</span>` 
       : '';
 
-    const portraitPath = charImgs[char.id] || charImgs[char.key] || '';
+    const portraitPath = charImgs[char.id] || charImgs[char.key] || (char.id ? `assets/img/characters/${char.id}_1__single_part1_1@1.png` : '');
     const portraitModalHtml = portraitPath 
-      ? `<img src="${portraitPath}" alt="${this.escapeHtml(char.name)}" class="modal-portrait-img" onerror="this.style.display='none'">`
+      ? `<img src="${portraitPath}" alt="${this.escapeHtml(char.name)}" class="modal-portrait-img" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';">
+         <div style="display: none; font-size: 36px;">🐉</div>`
       : `<div style="font-size: 36px;">🐉</div>`;
 
     // Ultimates HTML

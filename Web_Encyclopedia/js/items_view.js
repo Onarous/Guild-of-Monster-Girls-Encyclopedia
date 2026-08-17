@@ -1,19 +1,57 @@
 /**
  * Items & Equipment View Component for Guild of Monster Girls Web Encyclopedia
- * Supports 100% individual item sprites & icons across all categories.
+ * Supports 100% individual item sprites & icons across all categories with robust fallbacks.
  */
 
 const ItemsView = {
   getItemIcon(item, category, imageMappings = {}) {
-    const itemMap = imageMappings.items || {};
-    const slotIcons = imageMappings.slot_icons || {};
+    if (!item) return null;
+    const iid = item.id || item.key || item.icon;
+    const itemMap = imageMappings && imageMappings.items ? imageMappings.items : {};
+    const slotIcons = imageMappings && imageMappings.slot_icons ? imageMappings.slot_icons : {};
 
-    if (item && item.id && itemMap[item.id]) {
-      return itemMap[item.id];
+    // 1. Exact mapping lookup
+    if (iid && itemMap[iid]) {
+      return itemMap[iid];
     }
-    if (item && item.slot && slotIcons[item.slot]) {
+
+    // 2. Direct convention check (all extracted item icons are named <ID>.png)
+    if (iid && typeof iid === 'string' && (iid.startsWith('Z') || iid.startsWith('F') || iid.startsWith('D') || iid.startsWith('B') || iid.startsWith('X') || iid.startsWith('cur_'))) {
+      return `assets/img/items/${iid}.png`;
+    }
+
+    // 3. Slot icon lookup
+    if (item.slot && slotIcons[item.slot]) {
       return slotIcons[item.slot];
     }
+
+    // 4. Fallback slot icons by category / slot name
+    const slotNorm = String(item.slot || '').toLowerCase();
+    if (slotNorm.includes('оружие') || slotNorm.includes('weapon') || slotNorm.includes('main') || slotNorm.includes('武')) {
+      return 'assets/img/items/cur_ico_equip_0001.png';
+    }
+    if (slotNorm.includes('второе') || slotNorm.includes('off') || slotNorm.includes('shield') || slotNorm.includes('副')) {
+      return 'assets/img/items/cur_ico_equip_0002.png';
+    }
+    if (slotNorm.includes('доспех') || slotNorm.includes('броня') || slotNorm.includes('body') || slotNorm.includes('armor') || slotNorm.includes('胸') || slotNorm.includes('甲')) {
+      return 'assets/img/items/cur_ico_equip_0004.png';
+    }
+    if (slotNorm.includes('шлем') || slotNorm.includes('head') || slotNorm.includes('helmet') || slotNorm.includes('头')) {
+      return 'assets/img/items/cur_ico_equip_0005.png';
+    }
+    if (slotNorm.includes('обувь') || slotNorm.includes('сапог') || slotNorm.includes('boot') || slotNorm.includes('shoe') || slotNorm.includes('鞋')) {
+      return 'assets/img/items/cur_ico_equip_1001.png';
+    }
+    if (slotNorm.includes('перчат') || slotNorm.includes('glove') || slotNorm.includes('gauntlet') || slotNorm.includes('手')) {
+      return 'assets/img/items/cur_ico_equip_1002.png';
+    }
+    if (slotNorm.includes('пояс') || slotNorm.includes('belt') || slotNorm.includes('sash') || slotNorm.includes('腰')) {
+      return 'assets/img/items/cur_ico_equip_1004.png';
+    }
+    if (category === 'runes' || slotNorm.includes('рун') || slotNorm.includes('rune') || slotNorm.includes('符')) {
+      return 'assets/img/items/cur_ico_rune_0001.png';
+    }
+
     return null;
   },
 
@@ -82,6 +120,7 @@ const ItemsView = {
     if (st.initial_magic) statLines.push(`Mana +${st.initial_magic}`);
 
     const iconSrc = this.getItemIcon(eq, 'equipment', imageMappings);
+    const fallbackEmoji = '🛡️';
 
     return `
       <div class="item-card" onclick="App.openItemModal('equipment', '${eq.id}')">
@@ -89,8 +128,9 @@ const ItemsView = {
           <div class="item-header-left">
             <div class="item-icon-container">
               ${iconSrc ? `
-                <img src="${iconSrc}" alt="${this.escapeHtml(eq.name)}" class="item-icon-img" onerror="this.outerHTML='<span style=\\'font-size:20px;\\'>🛡️</span>'">
-              ` : `<span style="font-size: 20px;">🛡️</span>`}
+                <img src="${iconSrc}" alt="${this.escapeHtml(eq.name)}" class="item-icon-img" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+                <span class="item-fallback-icon" style="display: none; font-size: 20px;">${fallbackEmoji}</span>
+              ` : `<span class="item-fallback-icon" style="font-size: 20px;">${fallbackEmoji}</span>`}
             </div>
             <div>
               <div class="item-name">${this.escapeHtml(eq.name)}</div>
@@ -127,14 +167,17 @@ const ItemsView = {
 
   renderRelicCard(rel, tierClass, dict, imageMappings = {}) {
     const iconSrc = this.getItemIcon(rel, 'relics', imageMappings);
+    const fallbackEmoji = '🔮';
+
     return `
       <div class="item-card" onclick="App.openItemModal('relics', '${rel.id}')">
         <div class="item-header">
           <div class="item-header-left">
             <div class="item-icon-container">
               ${iconSrc ? `
-                <img src="${iconSrc}" alt="${this.escapeHtml(rel.name)}" class="item-icon-img" onerror="this.outerHTML='<span style=\\'font-size:20px;\\'>🔮</span>'">
-              ` : `<span style="font-size: 20px;">🔮</span>`}
+                <img src="${iconSrc}" alt="${this.escapeHtml(rel.name)}" class="item-icon-img" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+                <span class="item-fallback-icon" style="display: none; font-size: 20px;">${fallbackEmoji}</span>
+              ` : `<span class="item-fallback-icon" style="font-size: 20px;">${fallbackEmoji}</span>`}
             </div>
             <div>
               <div class="item-name">${this.escapeHtml(rel.name)}</div>
@@ -165,14 +208,17 @@ const ItemsView = {
 
   renderRuneCard(rn, tierClass, dict, imageMappings = {}) {
     const iconSrc = this.getItemIcon(rn, 'runes', imageMappings);
+    const fallbackEmoji = '🪨';
+
     return `
       <div class="item-card" onclick="App.openItemModal('runes', '${rn.id}')">
         <div class="item-header">
           <div class="item-header-left">
             <div class="item-icon-container">
               ${iconSrc ? `
-                <img src="${iconSrc}" alt="${this.escapeHtml(rn.name)}" class="item-icon-img" onerror="this.outerHTML='<span style=\\'font-size:20px;\\'>🪨</span>'">
-              ` : `<span style="font-size: 20px;">🪨</span>`}
+                <img src="${iconSrc}" alt="${this.escapeHtml(rn.name)}" class="item-icon-img" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+                <span class="item-fallback-icon" style="display: none; font-size: 20px;">${fallbackEmoji}</span>
+              ` : `<span class="item-fallback-icon" style="font-size: 20px;">${fallbackEmoji}</span>`}
             </div>
             <div>
               <div class="item-name">${this.escapeHtml(rn.name)}</div>
@@ -235,8 +281,9 @@ const ItemsView = {
           <div class="item-header-left">
             <div class="item-icon-container">
               ${iconSrc ? `
-                <img src="${iconSrc}" alt="${this.escapeHtml(item.name)}" class="item-icon-img" onerror="this.outerHTML='<span style=\\'font-size:20px;\\'>${fallbackEmoji}</span>'">
-              ` : `<span style="font-size: 20px;">${fallbackEmoji}</span>`}
+                <img src="${iconSrc}" alt="${this.escapeHtml(item.name)}" class="item-icon-img" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+                <span class="item-fallback-icon" style="display: none; font-size: 20px;">${fallbackEmoji}</span>
+              ` : `<span class="item-fallback-icon" style="font-size: 20px;">${fallbackEmoji}</span>`}
             </div>
             <div>
               <div class="item-name">${this.escapeHtml(item.name)}</div>
@@ -273,7 +320,8 @@ const ItemsView = {
           <div class="modal-title-area">
             <div style="width: 52px; height: 52px; border-radius: var(--radius-md); border: 2px solid var(--border-subtle); background: radial-gradient(circle, #1e293b 0%, #0f172a 100%); display: flex; align-items: center; justify-content: center; padding: 4px; overflow: hidden; flex-shrink: 0;">
               ${iconSrc ? `
-                <img src="${iconSrc}" alt="Icon" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.outerHTML='<span style=\\'font-size:24px;\\'>${fallbackEmoji}</span>'">
+                <img src="${iconSrc}" alt="Icon" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+                <span style="display: none; font-size: 24px;">${fallbackEmoji}</span>
               ` : `<span style="font-size: 24px;">${fallbackEmoji}</span>`}
             </div>
             <div>
@@ -289,9 +337,9 @@ const ItemsView = {
 
         <div class="modal-body">
           <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-            ${item.slot ? `<span class="tag-badge">🛡️ ${dict.filterSlot}: ${this.escapeHtml(item.slot)}</span>` : ''}
-            ${item.class_limit ? `<span class="tag-badge">⚔️ ${dict.filterClass}: ${this.escapeHtml(item.class_limit)}</span>` : ''}
-            ${item.element ? `<span class="tag-badge">✨ ${dict.filterElement}: ${this.escapeHtml(item.element)}</span>` : ''}
+            ${item.slot ? `<span class="tag-badge">🛡️ ${dict.filterTitles?.slot || 'Slot'}: ${this.escapeHtml(item.slot)}</span>` : ''}
+            ${item.class_limit ? `<span class="tag-badge">⚔️ ${dict.filterTitles?.class || 'Class'}: ${this.escapeHtml(item.class_limit)}</span>` : ''}
+            ${item.element ? `<span class="tag-badge">✨ ${dict.filterTitles?.element || 'Element'}: ${this.escapeHtml(item.element)}</span>` : ''}
             ${item.type ? `<span class="tag-badge">${this.escapeHtml(item.type)}</span>` : ''}
           </div>
 
@@ -311,7 +359,7 @@ const ItemsView = {
 
           ${item.pure_bond ? `
             <div class="detail-section">
-              <div class="section-heading">🔗 ${dict.pureSetBond}</div>
+              <div class="section-heading">🔗 ${dict.pureSetBond || 'Set Bond'}</div>
               <div class="item-bond-box" style="font-size: 13px; padding: 12px;">
                 <div style="font-weight: 700; color: #60a5fa; margin-bottom: 4px;">${this.escapeHtml(item.pure_bond.name)}</div>
                 <div>${this.escapeHtml(item.pure_bond.effect)}</div>
@@ -321,7 +369,7 @@ const ItemsView = {
 
           ${item.enhance_ability ? `
             <div class="detail-section">
-              <div class="section-heading">⚡ ${dict.uniqueEquipmentEffect}</div>
+              <div class="section-heading">⚡ ${dict.uniqueEquipmentEffect || 'Special Effect'}</div>
               <div class="item-enhance-box" style="font-size: 13px; padding: 12px;">
                 <div style="font-weight: 700; color: #fbbf24; margin-bottom: 4px;">${this.escapeHtml(item.enhance_ability.name)}</div>
                 <div>${this.escapeHtml(item.enhance_ability.effect)}</div>
@@ -331,7 +379,7 @@ const ItemsView = {
 
           ${item.effect ? `
             <div class="detail-section">
-              <div class="section-heading">🔮 ${dict.effects}</div>
+              <div class="section-heading">🔮 ${dict.effects || 'Effect'}</div>
               <div style="background: var(--bg-surface-elevated); padding: 12px; border-radius: var(--radius-md); font-size: 13px; line-height: 1.5; color: var(--text-primary);">
                 ${this.escapeHtml(item.effect)}
               </div>
@@ -340,7 +388,7 @@ const ItemsView = {
 
           ${item.description ? `
             <div class="detail-section">
-              <div class="section-heading">📜 ${dict.description}</div>
+              <div class="section-heading">📜 ${dict.description || 'Description'}</div>
               <div style="font-style: italic; color: var(--text-secondary); line-height: 1.5; background: rgba(255,255,255,0.02); padding: 12px; border-radius: var(--radius-md); border-left: 3px solid #3b82f6;">
                 "${this.escapeHtml(item.description)}"
               </div>
