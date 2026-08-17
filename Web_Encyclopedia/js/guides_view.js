@@ -9,6 +9,7 @@ const GuidesView = {
   gachaFilter: 'all',
   eventsFilter: 'all',
   buildsFilter: 'all',
+  codesFilter: 'all',
 
   setSection(sectionId) {
     this.activeSection = sectionId;
@@ -42,6 +43,37 @@ const GuidesView = {
     }
   },
 
+  setCodesFilter(filter) {
+    this.codesFilter = filter;
+    const container = document.getElementById('guidesContainer');
+    if (container) {
+      this.render(container.id, App.state.lang);
+    }
+  },
+
+  copyPromoCode(code, btnId, lang = 'RU') {
+    const isRu = lang === 'RU';
+    const isCn = lang === 'CN';
+    const successText = isRu ? '✅ Скопировано!' : isCn ? '✅ 已复制!' : '✅ Copied!';
+    
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById(btnId);
+        if (btn) {
+          const orig = btn.innerHTML;
+          btn.innerHTML = successText;
+          btn.classList.add('copied');
+          setTimeout(() => {
+            btn.innerHTML = orig;
+            btn.classList.remove('copied');
+          }, 2000);
+        }
+      });
+    } else {
+      prompt(isRu ? 'Скопируйте промокод:' : isCn ? '复制兑换码:' : 'Copy code:', code);
+    }
+  },
+
   render(containerId, currentLang = "RU") {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -57,7 +89,8 @@ const GuidesView = {
       { id: 'elements', icon: '✨', title: isRu ? 'Стихии, Роли и Отряд' : isCn ? '元素克制、定位与配队' : 'Elements, Roles & Lineup' },
       { id: 'builds', icon: '🏆', title: isRu ? 'Лучшие сборки и Мета-отряды' : isCn ? '最佳阵容与流派推荐' : 'Best Builds & Meta Lineups' },
       { id: 'gacha', icon: '🎪', title: isRu ? 'Списки найма и Баннеры' : isCn ? '招募卡池与掉落列表' : 'Recruit Pools & Gacha Lists' },
-      { id: 'events', icon: '🎁', title: isRu ? 'Список игровых событий' : isCn ? '活动与限时事件列表' : 'Game Events & Activities' }
+      { id: 'events', icon: '🎁', title: isRu ? 'Список игровых событий' : isCn ? '活动与限时事件列表' : 'Game Events & Activities' },
+      { id: 'codes', icon: '🎟️', title: isRu ? 'Промокоды и Подарки' : isCn ? '礼包兑换码汇总' : 'Promo & Redeem Codes' }
     ];
 
     const contentHtml = this.getSectionContent(this.activeSection, lang);
@@ -104,6 +137,8 @@ const GuidesView = {
         return this.getGachaContent(lang);
       case 'events':
         return this.getEventsContent(lang);
+      case 'codes':
+        return this.getCodesContent(lang);
       default:
         return isRu ? this.getPhasesRU() : this.getPhasesEN();
     }
@@ -1203,6 +1238,153 @@ const GuidesView = {
               </div>
             </div>
           `).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  // 8. Promo & Gift Codes
+  getCodesContent(lang = "RU") {
+    const isRu = lang === 'RU';
+    const isCn = lang === 'CN';
+
+    const codesList = [
+      {
+        code: "GMG2026",
+        status: "active",
+        rewards: isRu ? "💎 500 Кристаллов, 🎫 10 Свитков призыва, 💰 100,000 Золота" : isCn ? "💎 500钻石, 🎫 10高级召唤券, 💰 10万金币" : "💎 500 Gems, 🎫 10 Summon Scrolls, 💰 100,000 Gold",
+        note: isRu ? "Главный подарочный промокод гильдии" : isCn ? "公会官方主力全员大礼包" : "Major Guild Welcome Gift Pack"
+      },
+      {
+        code: "VIP666",
+        status: "active",
+        rewards: isRu ? "💎 100 Кристаллов, 🎫 10 Обычных свитков найма, 💰 50,000 Золота" : isCn ? "💎 100钻石, 🎫 10常规召唤券, 💰 5万金币" : "💎 100 Gems, 🎫 10 Standard Scrolls, 💰 50,000 Gold",
+        note: isRu ? "Стартовый набор новичка" : isCn ? "新手入坑基础补给" : "Novice Starter Supply"
+      },
+      {
+        code: "VIP888",
+        status: "active",
+        rewards: isRu ? "💎 200 Кристаллов, 🎫 5 Продвинутых свитков, 💰 100,000 Золота" : isCn ? "💎 200钻石, 🎫 5进阶招募券, 💰 10万金币" : "💎 200 Gems, 🎫 5 Advanced Scrolls, 💰 100,000 Gold",
+        note: isRu ? "Набор прокачки гильдии" : isCn ? "公会发展进阶特权" : "Guild Progression Privilege"
+      },
+      {
+        code: "VIP999",
+        status: "active",
+        rewards: isRu ? "💎 300 Кристаллов, 📦 1 Сундук осколков S-ранга, ⚡ 30 Энергии" : isCn ? "💎 300钻石, 📦 1个S阶碎片宝箱, ⚡ 30体力" : "💎 300 Gems, 📦 1x S-Rank Shard Chest, ⚡ 30 Stamina",
+        note: isRu ? "VIP-набор редких фрагментов" : isCn ? "S阶角色特权宝箱" : "VIP S-Rank Role Chest"
+      },
+      {
+        code: "MONSTERGIRL",
+        status: "active",
+        rewards: isRu ? "💎 200 Кристаллов, 🍎 5 Плодов таланта" : isCn ? "💎 200钻石, 🍎 5个天赋果实" : "💎 200 Gems, 🍎 5x Talent Fruits",
+        note: isRu ? "Набор развития талантов" : isCn ? "魔物娘专属天赋培育包" : "Talent Fruit Growth Pack"
+      },
+      {
+        code: "WELCOME2026",
+        status: "active",
+        rewards: isRu ? "🎫 10 Стандартных свитков призыва" : isCn ? "🎫 10张常规召唤卷轴" : "🎫 10x Standard Summon Scrolls",
+        note: isRu ? "Приветственный бонус" : isCn ? "公会迎新专属礼包" : "Guild Welcome Bonus"
+      },
+      {
+        code: "DISCORD2026",
+        status: "active",
+        rewards: isRu ? "💎 150 Кристаллов, 💰 50,000 Золота" : isCn ? "💎 150钻石, 💰 5万金币" : "💎 150 Gems, 💰 50,000 Gold",
+        note: isRu ? "Бонус сообщества игроков" : isCn ? "官方社群专属福利" : "Community Channels Gift"
+      },
+      {
+        code: "SUMMER2026",
+        status: "expired",
+        rewards: isRu ? "💎 200 Кристаллов, 🍹 3 Летних коктейля" : isCn ? "💎 200钻石, 🍹 3杯清凉饮品" : "💎 200 Gems, 🍹 3x Summer Drinks",
+        note: isRu ? "Летний фестиваль (Архивный)" : isCn ? "夏日祭活动 (已过期)" : "Summer Festival (Archived)"
+      },
+      {
+        code: "DRAGONBOAT2026",
+        status: "expired",
+        rewards: isRu ? "💎 100 Кристаллов, 🛶 5 Мешков цзунцзы" : isCn ? "💎 100钻石, 🛶 5个端午福袋" : "💎 100 Gems, 🛶 5x Dragon Boat Bags",
+        note: isRu ? "Праздничный ивент (Архивный)" : isCn ? "端午节日礼包 (已过期)" : "Dragon Boat Festival (Archived)"
+      }
+    ];
+
+    const f = this.codesFilter;
+    const filteredCodes = codesList.filter(c => {
+      if (f === 'active') return c.status === 'active';
+      if (f === 'expired') return c.status === 'expired';
+      return true;
+    });
+
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">🎟️ ${isRu ? 'Промокоды и Подарочные наборы' : isCn ? '公会礼包兑换码全集' : 'Promo & Redeem Codes'}</h2>
+        <p class="guide-lead">
+          ${isRu 
+            ? 'Актуальные промокоды игры Guild of Monster Girls для получения бесплатных кристаллов, свитков призыва, золота и плодов таланта. Нажмите кнопку «Копировать», чтобы скопировать код в буфер обмена.' 
+            : isCn 
+            ? '《魔物娘公会》官方最新礼包兑换码汇总，免费领取钻石、召唤卷轴、金币与天赋果实。点击“复制”按钮一键领取。' 
+            : 'Working promo and redeem codes for Guild of Monster Girls to claim free gems, summon scrolls, gold, and talent fruits. Click "Copy" for 1-click clipboard copy.'}
+        </p>
+
+        <!-- Instructions Box -->
+        <div class="guide-card" style="border-left: 4px solid #38bdf8; background: rgba(56, 189, 248, 0.05);">
+          <h3 style="color: #38bdf8; display: flex; align-items: center; gap: 8px;">
+            <span>💡</span>
+            <span>${isRu ? 'Как активировать промокод в игре:' : isCn ? '游戏内兑换方法指南:' : 'How to Redeem Codes In-Game:'}</span>
+          </h3>
+          <ol class="guide-list" style="margin-top: 4px;">
+            <li>${isRu ? 'Запустите игру <strong>Guild of Monster Girls</strong> и войдите в зал гильдии.' : isCn ? '启动《魔物娘公会》并进入主界面。' : 'Launch <strong>Guild of Monster Girls</strong> and open the guild hall.'}</li>
+            <li>${isRu ? 'Нажмите на ваш <strong>Аватар / Профиль</strong> в верхнем левом углу (или откройте <em>«Настройки ⚙️»</em>).' : isCn ? '点击左上角<strong>个人头像/个人信息</strong>（或进入<em>设置 ⚙️</em>）。' : 'Click your <strong>Avatar / Profile</strong> in the top-left corner (or open <em>Settings ⚙️</em>).'}</li>
+            <li>${isRu ? 'Выберите пункт <strong>«Промокод / Активация» (Redeem Code / 兑换码)</strong>.' : isCn ? '选择<strong>“兑换码 / 礼包兑换”</strong>功能。' : 'Select <strong>"Redeem Code"</strong>.'}</li>
+            <li>${isRu ? 'Вставьте скопированный код и нажмите <strong>«Получить»</strong>.' : isCn ? '粘贴已复制的礼包码，点击<strong>“兑换”</strong>。' : 'Paste the copied code and hit <strong>"Claim"</strong>.'}</li>
+            <li>${isRu ? 'Награды моментально придут на вашу <strong>внутриигровую почту ✉️</strong>!' : isCn ? '丰厚奖励将立即发送至<strong>游戏内邮箱 ✉️</strong>！' : 'Rewards will be instantly delivered to your <strong>in-game Mailbox ✉️</strong>!'}</li>
+          </ol>
+        </div>
+
+        <!-- Filter buttons -->
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; margin-bottom: 16px;">
+          <button class="filter-pill ${f === 'all' ? 'active' : ''}" onclick="GuidesView.setCodesFilter('all')">
+            🌐 ${isRu ? 'Все коды (9)' : isCn ? '全部兑换码 (9)' : 'All Codes (9)'}
+          </button>
+          <button class="filter-pill ${f === 'active' ? 'active' : ''}" onclick="GuidesView.setCodesFilter('active')">
+            ✅ ${isRu ? 'Активные (7)' : isCn ? '可兑换有效码 (7)' : 'Active (7)'}
+          </button>
+          <button class="filter-pill ${f === 'expired' ? 'active' : ''}" onclick="GuidesView.setCodesFilter('expired')">
+            ⏳ ${isRu ? 'Архивные (2)' : isCn ? '已过期/历史 (2)' : 'Expired (2)'}
+          </button>
+        </div>
+
+        <!-- Codes Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px;">
+          ${filteredCodes.map((item, idx) => {
+            const isActive = item.status === 'active';
+            const btnId = `promoCopyBtn_${idx}`;
+
+            return `
+              <div class="guide-card" style="display: flex; flex-direction: column; justify-content: space-between; border-left: 3px solid ${isActive ? '#10b981' : '#64748b'}; padding: 18px 20px;">
+                <div>
+                  <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px;">
+                    <div style="font-family: monospace; font-size: 18px; font-weight: 800; color: ${isActive ? '#34d399' : '#94a3b8'}; letter-spacing: 1px; background: rgba(0, 0, 0, 0.4); padding: 4px 10px; border-radius: 6px; border: 1px dashed ${isActive ? 'rgba(52, 211, 153, 0.4)' : 'rgba(148, 163, 184, 0.3)'};">
+                      ${item.code}
+                    </div>
+                    <span class="badge-accent" style="background: ${isActive ? 'rgba(16, 185, 129, 0.2)' : 'rgba(100, 116, 139, 0.2)'}; color: ${isActive ? '#6ee7b7' : '#94a3b8'}; border-color: ${isActive ? 'rgba(16, 185, 129, 0.4)' : 'rgba(100, 116, 139, 0.3)'};">
+                      ${isActive ? (isRu ? '✅ Действует' : isCn ? '✅ 有效' : '✅ Active') : (isRu ? '⏳ Истек' : isCn ? '⏳ 已失效' : '⏳ Expired')}
+                    </span>
+                  </div>
+
+                  <div style="font-size: 13.5px; font-weight: 700; color: #f3e8ff; margin-bottom: 6px;">
+                    ${item.rewards}
+                  </div>
+                  <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.4;">
+                    ${item.note}
+                  </div>
+                </div>
+
+                <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: flex-end;">
+                  <button id="${btnId}" class="filter-pill ${isActive ? 'active' : ''}" onclick="GuidesView.copyPromoCode('${item.code}', '${btnId}', '${lang}')" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; font-size: 13px; font-weight: 700; border-radius: 6px; cursor: pointer; transition: all 0.15s ease;" ${!isActive ? 'disabled style="opacity: 0.6; cursor: not-allowed;"' : ''}>
+                    📋 ${isRu ? 'Скопировать код' : isCn ? '一键复制' : 'Copy Code'}
+                  </button>
+                </div>
+              </div>
+            `;
+          }).join('')}
         </div>
       </div>
     `;
