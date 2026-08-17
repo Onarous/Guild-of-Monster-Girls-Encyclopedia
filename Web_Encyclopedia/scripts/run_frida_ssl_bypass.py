@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Guild of Monster Girls — Proven Frida SSL Pinning Bypass
-Uses the exact launch flow from run_frida.py (BasePrivacyActivity + attach + unity_ssl_bypass.js).
+Uses the exact launch flow from run_frida.py + in-memory machine code patch.
 """
 
 import sys
@@ -47,10 +47,9 @@ def ensure_frida_server(adb_path, device_id, script_dir):
         print("[+] Служба frida-server уже активна на устройстве.")
         return True
 
-    # Check if binary exists
+    # Check if binary exists in /data/local/tmp
     ls_res = subprocess.run([adb_path, "-s", device_id, "shell", "ls", "/data/local/tmp/frida-server"], capture_output=True, text=True)
     if "No such file" in ls_res.stdout or not ls_res.stdout.strip():
-        # Check root or scripts folder
         for p in [os.path.join(script_dir, "frida-server"), os.path.join(os.path.dirname(script_dir), "..", "frida-server")]:
             if os.path.exists(p):
                 print(f"[*] Загрузка frida-server на устройство из {p}...")
@@ -97,7 +96,7 @@ def main():
 
     print("=" * 70)
     print("  🐉 GUILD OF MONSTER GIRLS — FRIDA SSL PINNING BYPASS")
-    print("  Оригинальный рабочий метод внедрения через BasePrivacyActivity")
+    print("  Прямой патч машинного кода в памяти (ChillyRoom + Mono TLS)")
     print("=" * 70 + "\n")
 
     if not frida:
@@ -122,6 +121,10 @@ def main():
 
     session = None
     try:
+        # Clear external il2cpp cache as noted in guide level 3
+        print("[*] Сброс внешнего кэша метаданных il2cpp...")
+        subprocess.run([adb, "-s", device_id, "shell", "su", "0", "rm", "-rf", f"/sdcard/Android/data/{PACKAGE_NAME}/files/il2cpp"], capture_output=True)
+
         print("[*] Подключение к устройству через Frida API...")
         try:
             device = frida.get_usb_device(timeout=10)
@@ -162,8 +165,8 @@ def main():
         script.load()
 
         print("\n" + "=" * 70)
-        print("  ✅ ОБХОД SSL PINNING УСПЕШНО АКТИВИРОВАН И РАБОТАЕТ!")
-        print("  🌐 Проверка версии пройдена, снифферы могут считывать токен.")
+        print("  ✅ ОБХОД SSL PINNING УСПЕШНО ПРИМЕНЕН В ПАМЯТИ!")
+        print("  🌐 Защита сертификатов ChillyRoom и Mono TLS нейтрализована.")
         print("=" * 70 + "\n")
 
         input(">>> Нажмите [ENTER] для завершения процесса и выключения обхода... <<<\n")
