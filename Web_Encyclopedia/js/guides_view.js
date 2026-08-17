@@ -547,14 +547,12 @@ const GuidesView = {
     const charMap = {};
     allChars.forEach(c => { charMap[c.id] = c; });
 
-    // 1. Alter Pool IDs (18 exact characters)
-    const alterIds = [
-      'M53301_001', 'M13303_001', 'M13304_001', 'M23301_001', 'M11304_001', 'M12301_001', 'M51302_001', 'M31301_001',
-      'M51201_001', 'M14201_001', 'M12202_001', 'M11205_001',
-      'M11103_001', 'M12101_001', 'M13104_001', 'M11109_001',
-      'M11005_001', 'M12003_001'
-    ];
-    const alterChars = alterIds.map(id => charMap[id]).filter(Boolean);
+    // 1. Alter & Skin Pool (All alter/skin heroines from Skin_Summon)
+    const alterChars = allChars.filter(c => 
+      c.banner_type === 'skin' || 
+      c.banner_type === 'skin_limited' || 
+      (c.skin_name && c.skin_name !== '默认外观' && c.skin_name !== 'Default Appearance' && c.skin_name !== 'Базовый облик')
+    );
 
     // 2. Standard Pool (140 characters)
     const standardChars = allChars.filter(c => c.banner_type === 'standard');
@@ -584,13 +582,13 @@ const GuidesView = {
             🌐 ${isRu ? 'Все пулы' : isCn ? '全部卡池' : 'All Pools'}
           </button>
           <button class="filter-pill ${f === 'alter' ? 'active' : ''}" onclick="GuidesView.setGachaFilter('alter')">
-            🌌 ${isRu ? 'Пул Альтер-Найма (18)' : isCn ? '异化招募池 (18)' : 'Alter Pool (18)'}
+            🌌 ${isRu ? `Пул Альтер-Найма (${alterChars.length})` : isCn ? `异化招募池 (${alterChars.length})` : `Alter Pool (${alterChars.length})`}
           </button>
           <button class="filter-pill ${f === 'standard' ? 'active' : ''}" onclick="GuidesView.setGachaFilter('standard')">
-            📜 ${isRu ? 'Пул Стандартного Найма (140)' : isCn ? '常规招募池 (140)' : 'Standard Pool (140)'}
+            📜 ${isRu ? `Пул Стандартного Найма (${standardChars.length})` : isCn ? `常规招募池 (${standardChars.length})` : `Standard Pool (${standardChars.length})`}
           </button>
           <button class="filter-pill ${f === 'limited' ? 'active' : ''}" onclick="GuidesView.setGachaFilter('limited')">
-            🔥 ${isRu ? 'Лимитированные Rate-Up (2)' : isCn ? '限时UP卡池 (2)' : 'Limited Rate-Up (2)'}
+            🔥 ${isRu ? `Лимитированные Rate-Up (${limitedChars.length})` : isCn ? `限时UP卡池 (${limitedChars.length})` : `Limited Rate-Up (${limitedChars.length})`}
           </button>
         </div>
 
@@ -613,15 +611,15 @@ const GuidesView = {
           <!-- Alter Recruit Pool Section -->
           <div class="guide-card">
             <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
-              <h3>🌌 ${isRu ? 'Пул Альтер-Найма (Alter Recruit Pool — 18 героинь)' : isCn ? '异化招募常驻卡池 (18位角色)' : 'Alter Recruitment Pool (18 Heroines)'}</h3>
+              <h3>🌌 ${isRu ? `Пул Альтер-Найма и Обликов (${alterChars.length} героинь)` : isCn ? `异化与皮肤招募常驻卡池 (${alterChars.length}位角色)` : `Alter & Skin Recruitment Pool (${alterChars.length} Heroines)`}</h3>
               <span class="badge-accent">${isRu ? 'Постоянный пул обликов' : isCn ? '常驻异化卡池' : 'Permanent Alter Pool'}</span>
             </div>
             <p style="font-size: 13.5px; color: var(--text-secondary);">
               ${isRu 
-                ? 'Специальный пул альтернативных форм героинь с измененными стихиями, уникальными пассивками и новыми обликами.' 
+                ? 'Полный пул альтернативных форм героинь и эксклюзивных обликов с измененными стихиями, уникальными пассивками и новыми талантами.' 
                 : isCn 
-                ? '专属异化形态与皮肤常驻卡池，包含全新属性形态与独立技能组。' 
-                : 'Special summon pool containing alternative element versions, exclusive skins, and modified talent kits.'}
+                ? '专属异化形态与皮肤全量卡池，包含全新属性形态、专属被动与独立技能组。' 
+                : 'Complete summon pool containing alternative element versions, exclusive skins, and modified talent kits.'}
             </p>
             ${this.renderGachaTable(alterChars, lang)}
           </div>
