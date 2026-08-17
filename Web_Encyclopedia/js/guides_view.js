@@ -8,6 +8,7 @@ const GuidesView = {
   activeSection: 'phases',
   gachaFilter: 'all',
   eventsFilter: 'all',
+  buildsFilter: 'all',
 
   setSection(sectionId) {
     this.activeSection = sectionId;
@@ -33,6 +34,14 @@ const GuidesView = {
     }
   },
 
+  setBuildsFilter(filter) {
+    this.buildsFilter = filter;
+    const container = document.getElementById('guidesContainer');
+    if (container) {
+      this.render(container.id, App.state.lang);
+    }
+  },
+
   render(containerId, currentLang = "RU") {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -46,6 +55,7 @@ const GuidesView = {
       { id: 'targeting', icon: '🎯', title: isRu ? 'Дистанция и Таргетинг' : isCn ? '攻击距离与目标选择' : 'Range, Distance & Targeting' },
       { id: 'damage', icon: '🛡️', title: isRu ? 'Урон, Защита и Баффы' : isCn ? '伤害计算、护盾与增益' : 'Damage Formulas, Shields & Buffs' },
       { id: 'elements', icon: '✨', title: isRu ? 'Стихии, Роли и Отряд' : isCn ? '元素克制、定位与配队' : 'Elements, Roles & Lineup' },
+      { id: 'builds', icon: '🏆', title: isRu ? 'Лучшие сборки и Мета-отряды' : isCn ? '最佳阵容与流派推荐' : 'Best Builds & Meta Lineups' },
       { id: 'gacha', icon: '🎪', title: isRu ? 'Списки найма и Баннеры' : isCn ? '招募卡池与掉落列表' : 'Recruit Pools & Gacha Lists' },
       { id: 'events', icon: '🎁', title: isRu ? 'Список игровых событий' : isCn ? '活动与限时事件列表' : 'Game Events & Activities' },
       { id: 'sync', icon: '📲', title: isRu ? 'Гайд по синхронизации' : isCn ? '账号同步与数据导出' : 'Account Sync & Export Guide' },
@@ -90,6 +100,8 @@ const GuidesView = {
         return isRu ? this.getDamageRU() : isCn ? this.getDamageCN() : this.getDamageEN();
       case 'elements':
         return isRu ? this.getElementsRU() : isCn ? this.getElementsCN() : this.getElementsEN();
+      case 'builds':
+        return this.getBuildsContent(lang);
       case 'gacha':
         return this.getGachaContent(lang);
       case 'events':
@@ -959,7 +971,250 @@ const GuidesView = {
     `;
   },
 
-  // 7. Sync & Account Extraction
+  // 7. Best Builds & Meta Lineups
+  getBuildsContent(lang = "RU") {
+    const isRu = lang === 'RU';
+    const isCn = lang === 'CN';
+    const charMap = {};
+    (App.state.data.characters[lang] || []).forEach(c => { charMap[c.id] = c; });
+    const imgMap = App.state.imageMappings?.characters || {};
+
+    const buildsData = [
+      {
+        id: "dot_meta",
+        icon: "🩸",
+        name: isRu ? "ДоТ-Королева: Истинный урон и Пробитие щитов" : isCn ? "毒爆流：生命流失与真实穿盾" : "DoT Queen: True HP Loss & Shield Pierce",
+        tier: "SS-Tier",
+        archetype: "dot",
+        tagline: isRu ? "Игнорирование 100% защиты и щитов боссов" : isCn ? "无视敌方防御与护盾的超强持续压制" : "100% Shield & Armor Bypass Pressure",
+        desc: isRu 
+          ? "Билд построен на эффектах потери здоровья (HP Loss), которые тикают на каждое действие противника и наносят чистый урон, пробивая любые щиты и сопротивления."
+          : isCn
+          ? "基于生命流失 (HP Loss) 机制的核心阵容，敌方每次行动均受到真实伤害结算，完美克制高护盾与高防御 Boss。"
+          : "Capitalizes on HP Loss mechanics that tick on every enemy action, bypassing all shields and damage mitigation completely.",
+        lineup: [
+          { rolePos: isRu ? "Авангард / Танк" : isCn ? "前排肉盾" : "Front Tank", id: "M11304", note: isRu ? "Перехват урона" : isCn ? "承伤拦截" : "Damage Intercept" },
+          { rolePos: isRu ? "Центр / Главный DPS" : isCn ? "中排核心" : "Mid DPS", id: "M23301_001", note: isRu ? "Яд и слизь" : isCn ? "剧毒粘液" : "Poison Slime" },
+          { rolePos: isRu ? "Центр / Дебаффер" : isCn ? "中排削防" : "Mid Debuff", id: "M13304", note: isRu ? "Массовый яд" : isCn ? "群体中毒" : "Mass Poison" },
+          { rolePos: isRu ? "Центр / Добив" : isCn ? "中排收割" : "Mid Finisher", id: "M11205_001", note: isRu ? "Кровотечение" : isCn ? "流血斩杀" : "Bleed Execute" },
+          { rolePos: isRu ? "Тыл / Лекарь" : isCn ? "后排治疗" : "Back Support", id: "M14201_001", note: isRu ? "Хил и баффы" : isCn ? "驱散与治疗" : "Heal & Cleanse" }
+        ],
+        sets: isRu ? "Сеты на Apply Additional (стаки дебаффов), чистый урон и вампиризм." : isCn ? "增益附加层数、真实伤害强化与吸血套装。" : "Sets boosting Apply Additional, true damage, and lifesteal.",
+        pros: isRu ? "Уничтожает любых танков и боссов с гигантским запасом щитов." : isCn ? "克制任何高防护盾型肉盾与强力 Boss。" : "Shreds heavy tanks and shield-gated raid bosses.",
+        difficulty: isRu ? "Средняя (требует хорошей живучести)" : isCn ? "中等 (需要前排坦度)" : "Medium (Requires Frontline Sustain)"
+      },
+      {
+        id: "burst_meta",
+        icon: "⚡",
+        name: isRu ? "Астральный Раш: 1-й Ход и Ультимейт-Спам" : isCn ? "星界速攻：首回合全员大招流" : "Astral Rush: Turn-1 Ultimate Spam",
+        tier: "SS-Tier",
+        archetype: "burst",
+        tagline: isRu ? "Extra Action до первого хода противника" : isCn ? "战斗开局满蓝插队，先手清屏" : "Instant Pre-emptive Extra Actions",
+        desc: isRu
+          ? "Использует механику максимальной стартовой маны на фазе Battle Start для получения внеочередных ходов (Extra Action) и аннигиляции врагов до их естественного хода."
+          : isCn
+          ? "利用开局满蓝机制在 Battle Start 阶段直接获得插队额外行动 (Extra Action)，在敌方出手前完成清场。"
+          : "Leverages Battle Start max MP triggers to take instant Extra Actions before opponents get their natural turns.",
+        lineup: [
+          { rolePos: isRu ? "Авангард / Танк" : isCn ? "前排先锋" : "Frontline", id: "M31301", note: isRu ? "Прорыв строя" : isCn ? "圣剑突进" : "Linebreak" },
+          { rolePos: isRu ? "Тыл / Ядерный DPS" : isCn ? "后排爆发" : "Back Nuke", id: "M53301_001", note: isRu ? "АоЕ Ультимейт" : isCn ? "星界核爆" : "AoE Nuke" },
+          { rolePos: isRu ? "Центр / Батарейка" : isCn ? "中排回能" : "Mid Battery", id: "M24301", note: isRu ? "Заливка маны" : isCn ? "能量加速" : "Mana Boost" },
+          { rolePos: isRu ? "Центр / Щитовик" : isCn ? "中排护盾" : "Mid Shielder", id: "M51201_001", note: isRu ? "Щит от DEF" : isCn ? "群体防御盾" : "DEF Shield" },
+          { rolePos: isRu ? "Тыл / Снайпер" : isCn ? "后排收割" : "Back Sniper", id: "M51303", note: isRu ? "Точечный ваншот" : isCn ? "星光狙击" : "Crit Snipe" }
+        ],
+        sets: isRu ? "Сеты со стартовой маной (Battle Start MP), скорость (SPD), урон навыков." : isCn ? "开局能量套、速度套与暴击技能伤害套装。" : "Battle Start MP sets, Speed (SPD), Skill DMG.",
+        pros: isRu ? "Мгновенная победа в PvP и быстрое прохождение сюжетных волн." : isCn ? "竞技场秒杀与副本极速竞速首选。" : "Instant Arena victories and rapid story wave clearing.",
+        difficulty: isRu ? "Высокая (требует хороших рун на скорость)" : isCn ? "较高 (依赖速度与开局蓝量配置)" : "High (Speed & MP gear dependent)"
+      },
+      {
+        id: "counter_meta",
+        icon: "🛡️",
+        name: isRu ? "Несокрушимый Оплот: Контратаки и Щиты" : isCn ? "铁壁反击：无限弹刀反击流" : "Iron Fortress: Infinite Counter-Attack",
+        tier: "S-Tier",
+        archetype: "counter",
+        tagline: isRu ? "Каждый удар по вам оборачивается сокрушительным ответом" : isCn ? "受击即反击，高额护盾坚不可摧" : "Every incoming hit triggers devastating retribution",
+        desc: isRu
+          ? "Танк и авангард перехватывают весь входящий урон с союзников и запускают бесконечные цепочки контратак (Counter Hit -> Counter After), восстанавливая здоровье."
+          : isCn
+          ? "前排全方位拦截伤害并触发连续反击打击链，配合高额护盾与受击回血，立于不败之地。"
+          : "Frontline intercepts ally damage and triggers endless counter-strike chains with self-sustain and DEF shields.",
+        lineup: [
+          { rolePos: isRu ? "Авангард / Контратакер" : isCn ? "前排核心" : "Front Counter", id: "M11304_001", note: isRu ? "Контратака на каждый удар" : isCn ? "无限反击" : "Counter Strike" },
+          { rolePos: isRu ? "Авангард / Танк" : isCn ? "前排副坦" : "Front Tank", id: "M11304", note: isRu ? "Снижение урона" : isCn ? "伤害减免" : "Damage Cut" },
+          { rolePos: isRu ? "Центр / Лекарь" : isCn ? "中排治疗" : "Mid Healer", id: "M14201", note: isRu ? "Регенерация и щиты" : isCn ? "圣光护盾" : "Sustain Shield" },
+          { rolePos: isRu ? "Тыл / Контроллер" : isCn ? "后排削弱" : "Back Controller", id: "M13303_001", note: isRu ? "Снижение атаки врага" : isCn ? "大地压制" : "ATK Break" },
+          { rolePos: isRu ? "Центр / Воин" : isCn ? "中排输出" : "Mid Fighter", id: "M11103_001", note: isRu ? "Стойкость и темп" : isCn ? "强袭节奏" : "Tenacity Temp" }
+        ],
+        sets: isRu ? "Сеты защиты (DEF), стойкости (Tenacity), вампиризма при контратаках." : isCn ? "高防御、坚韧度 (Tenacity) 与反击吸血套装。" : "DEF, Tenacity, Counter lifesteal sets.",
+        pros: isRu ? "Легко проходит затяжные бои и высокоуровневые башни испытаний." : isCn ? "高难持久战与爬塔挑战的最佳安全解。" : "Effortless high-tier tower climbing and endurance fights.",
+        difficulty: isRu ? "Низкая (очень стабильный и надежный билд)" : isCn ? "较低 (阵容稳定性极强)" : "Low (Extremely stable & safe)"
+      },
+      {
+        id: "snipe_meta",
+        icon: "🏹",
+        name: isRu ? "Снайперский Ваншот: Крит и Вырезка Тыла" : isCn ? "精准狙杀：暴击秒后排后置流" : "Crit Sniper: Rear-Line Execute",
+        tier: "S-Tier",
+        archetype: "snipe",
+        tagline: isRu ? "Дистанция Range 4–5 и фокусировка вражеских лекарей" : isCn ? "攻击距离4–5，直切敌方后排核心" : "Range 4-5 focus on enemy healers and buffers",
+        desc: isRu
+          ? "Отряд фокусируется на дальнобойном таргетинге (Furthest / Lowest HP target), мгновенно выбивая вражеских магов и лекарей до того, как они смогут вылечить команду."
+          : isCn
+          ? "利用远程索敌规则 (最远/最低生命值)，在开局直插敌方后排脆皮，瞬间蒸发核心辅助与治疗。"
+          : "Utilizes Range 4-5 targeting priorities to assassinate squishy rear supports before they can cast heals.",
+        lineup: [
+          { rolePos: isRu ? "Тыл / Главный Снайпер" : isCn ? "后排狙击" : "Main Sniper", id: "M51303", note: isRu ? "100% Крит Range 5" : isCn ? "超远距离暴击" : "100% Crit Range 5" },
+          { rolePos: isRu ? "Тыл / Лимит-Драконица" : isCn ? "后排龙女" : "Dragoness", id: "M13310", note: isRu ? "Игнор брони" : isCn ? "无视护甲" : "Armor Shred" },
+          { rolePos: isRu ? "Центр / Стрелок" : isCn ? "中排辅助" : "Mid Archer", id: "M12202_001", note: isRu ? "Уязвимость (Vulnerable)" : isCn ? "易伤增幅" : "Apply Vulnerable" },
+          { rolePos: isRu ? "Авангард / Танк" : isCn ? "前排防线" : "Front Line", id: "M51201", note: isRu ? "Удержание врагов" : isCn ? "战线拦截" : "Interception" },
+          { rolePos: isRu ? "Центр / Баффер" : isCn ? "中排增益" : "Mid Buffer", id: "M24301", note: isRu ? "Бафф крит-урона" : isCn ? "暴伤加成" : "Crit DMG Buff" }
+        ],
+        sets: isRu ? "Сеты на Крит. шанс, Крит. урон, пробитие защиты." : isCn ? "暴击率、暴击伤害与破甲专属套装。" : "Crit Rate, Crit DMG, and Armor Penetration sets.",
+        pros: isRu ? "Выключает главные козыри врага в первые секунды битвы." : isCn ? "开局即可瘫痪敌方战术核心体系。" : "Neutralizes the enemy win condition in seconds.",
+        difficulty: isRu ? "Средняя (требует разгона крит-шанса)" : isCn ? "中等 (需要高暴击率装备支撑)" : "Medium (Crit stat tuning needed)"
+      },
+      {
+        id: "freeze_meta",
+        icon: "❄️",
+        name: isRu ? "Абсолютная Заморозка: Контроль и Кража Маны" : isCn ? "极寒领域：冰冻控制与法力抽竭" : "Absolute Zero: Freeze CC & Mana Drain",
+        tier: "S-Tier",
+        archetype: "freeze",
+        tagline: isRu ? "Полная блокировка действий и сжигание вражеского MP" : isCn ? "冰冻封锁行动，抽光能量让敌方无法开大" : "Complete action denial & continuous MP starvation",
+        desc: isRu
+          ? "Комбинация заморозки, снижения скорости (SPD Slow) и вытягивания маны (Drain MP), которая оставляет противников без ресурсов и не дает использовать ультимейты."
+          : isCn
+          ? "通过冰冻、减速 (SPD Slow) 与强力抽能 (Drain MP) 形成全场控制链，让敌方全场无法释放任何技能。"
+          : "Locks down the entire battlefield with Freeze, SPD slows, and Mana Drain, starving opponents of skill resources.",
+        lineup: [
+          { rolePos: isRu ? "Тыл / Ледяная Драконица" : isCn ? "后排核心" : "Frost Dragoness", id: "M51302_001", note: isRu ? "Массовая заморозка" : isCn ? "群体冰冻" : "Mass Freeze" },
+          { rolePos: isRu ? "Центр / Владычица роз" : isCn ? "中排压制" : "Mid Binder", id: "M13307", note: isRu ? "Сковывающие корни" : isCn ? "荆棘缠绕" : "Thorn Roots" },
+          { rolePos: isRu ? "Центр / Срез скорости" : isCn ? "中排减速" : "Mid Slow", id: "M12301_001", note: isRu ? "Снижение SPD" : isCn ? "击退降速" : "SPD Knockback" },
+          { rolePos: isRu ? "Авангард / Слизь-Защитник" : isCn ? "前排粘液" : "Slime Tank", id: "M23301", note: isRu ? "Замедляющая стена" : isCn ? "减速肉盾" : "Slow Barrier" },
+          { rolePos: isRu ? "Тыл / Диспеллер" : isCn ? "后排驱散" : "Back Dispel", id: "M13104_001", note: isRu ? "Снятие баффов" : isCn ? "清除敌方增益" : "Buff Purge" }
+        ],
+        sets: isRu ? "Сеты на увеличение длительности контроля, скорость и сжигание MP." : isCn ? "控制时间延长、速度套与能量削减套装。" : "CC duration, Speed, and MP Drain sets.",
+        pros: isRu ? "Идеально нейтрализует опасных ультимейт-боссов и скоростные команды." : isCn ? "完美克制速攻大招流与高爆发 Boss。" : "Hard-counters rush teams and dangerous ultimate bosses.",
+        difficulty: isRu ? "Средняя (требует согласованных таймингов)" : isCn ? "中等 (需要技能施法节奏衔接)" : "Medium (Requires timing synergy)"
+      }
+    ];
+
+    const f = this.buildsFilter;
+    const filteredBuilds = buildsData.filter(b => {
+      if (f === 'dot') return b.archetype === 'dot';
+      if (f === 'burst') return b.archetype === 'burst';
+      if (f === 'counter') return b.archetype === 'counter';
+      if (f === 'snipe') return b.archetype === 'snipe';
+      if (f === 'freeze') return b.archetype === 'freeze';
+      return true;
+    });
+
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">🏆 ${isRu ? 'Лучшие сборки и Мета-отряды (Best Meta Builds)' : isCn ? '最佳阵容搭配与流派推荐' : 'Best Builds & Meta Lineups'}</h2>
+        <p class="guide-lead">
+          ${isRu 
+            ? 'Топовые синергетические сборки отрядов от сообщества и экспертов, протестированные на сложнейших рейдах, Башне испытаний и в PvP-арене. Нажмите на любого персонажа для просмотра карточки.' 
+            : isCn 
+            ? '高阶玩家实测推荐的T0/T1级顶尖流派阵容，包含核心机制解析、站位布局、装备信物推荐与实战打法。' 
+            : 'Top-tier synergistic party compositions tested in high-tier raids, Tower of Trials, and PvP Arena. Click any character to inspect details.'}
+        </p>
+
+        <!-- Sub-filter pills for builds -->
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
+          <button class="filter-pill ${f === 'all' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('all')">
+            🌐 ${isRu ? 'Все сборки (5)' : isCn ? '全流派 (5)' : 'All Builds (5)'}
+          </button>
+          <button class="filter-pill ${f === 'dot' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('dot')">
+            🩸 ${isRu ? 'ДоТ и Яд' : isCn ? '剧毒流' : 'DoT & Poison'}
+          </button>
+          <button class="filter-pill ${f === 'burst' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('burst')">
+            ⚡ ${isRu ? 'Астральный Раш' : isCn ? '速攻流' : 'Astral Rush'}
+          </button>
+          <button class="filter-pill ${f === 'counter' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('counter')">
+            🛡️ ${isRu ? 'Контратака и Танк' : isCn ? '反击流' : 'Counter Tank'}
+          </button>
+          <button class="filter-pill ${f === 'snipe' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('snipe')">
+            🏹 ${isRu ? 'Крит-Ваншот' : isCn ? '狙杀流' : 'Crit Snipe'}
+          </button>
+          <button class="filter-pill ${f === 'freeze' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('freeze')">
+            ❄️ ${isRu ? 'Ледяной Контроль' : isCn ? '极寒流' : 'Freeze CC'}
+          </button>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          ${filteredBuilds.map(b => `
+            <div class="guide-card" style="border-left: 4px solid ${b.tier === 'SS-Tier' ? '#f59e0b' : '#3b82f6'};">
+              <!-- Build Header -->
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="font-size: 26px;">${b.icon}</span>
+                  <div>
+                    <h3 style="margin: 0; color: #f3e8ff; font-size: 17px;">${b.name}</h3>
+                    <div style="font-size: 12.5px; color: #94a3b8; margin-top: 2px;">${b.tagline}</div>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span class="badge-accent" style="background: ${b.tier === 'SS-Tier' ? 'rgba(245, 158, 11, 0.25)' : 'rgba(59, 130, 246, 0.25)'}; color: ${b.tier === 'SS-Tier' ? '#fbbf24' : '#93c5fd'}; border-color: ${b.tier === 'SS-Tier' ? 'rgba(245, 158, 11, 0.5)' : 'rgba(59, 130, 246, 0.5)'}; font-size: 13px; font-weight: 800;">
+                    ⭐ ${b.tier}
+                  </span>
+                </div>
+              </div>
+
+              <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
+                ${b.desc}
+              </p>
+
+              <!-- Lineup Grid -->
+              <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 14px;">
+                <div style="font-size: 12px; font-weight: 700; color: #38bdf8; text-transform: uppercase; margin-bottom: 10px;">
+                  👥 ${isRu ? 'Позиции и Состав отряда (Lineup):' : isCn ? '阵容站位与推荐英雄:' : 'Lineup & Positioning:'}
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px;">
+                  ${b.lineup.map(slot => {
+                    const c = charMap[slot.id];
+                    if (!c) return '';
+                    const portrait = imgMap[c.id] || imgMap[c.key] || `assets/img/characters/${c.id}_1__single_part1_1@1.png`;
+                    const elemClass = CharactersView.getElementClass(c.element);
+                    const tierClass = `tier-${(c.rarity_tier || 'C').toLowerCase()}`;
+
+                    return `
+                      <div class="gacha-table-row" onclick="App.openCharacterModal('${c.id}')" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 8px 10px; display: flex; align-items: center; gap: 8px; cursor: pointer;" title="${isRu ? 'Открыть карточку персонажа' : isCn ? '查看角色详情' : 'Click to inspect'}">
+                        <div style="width: 38px; height: 38px; border-radius: 6px; overflow: hidden; background: #0f172a; border: 1px solid var(--border-subtle); flex-shrink: 0;">
+                          <img src="${portrait}" alt="${c.name}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'">
+                        </div>
+                        <div style="min-width: 0; flex: 1;">
+                          <div style="font-size: 11px; color: #94a3b8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${slot.rolePos}</div>
+                          <strong style="font-size: 12.5px; color: #f3e8ff; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${c.name}</strong>
+                          <div style="font-size: 10.5px; color: #34d399; margin-top: 1px;">${slot.note}</div>
+                        </div>
+                      </div>
+                    `;
+                  }).join('')}
+                </div>
+              </div>
+
+              <!-- Build Details & Advice -->
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 14px; font-size: 13px;">
+                <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 10px 12px;">
+                  <strong style="color: #60a5fa;">🛡️ ${isRu ? 'Рекомендуемое снаряжение:' : isCn ? '推荐装备与信物:' : 'Recommended Gear:'}</strong>
+                  <div style="color: var(--text-secondary); margin-top: 4px;">${b.sets}</div>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 10px 12px;">
+                  <strong style="color: #34d399;">✨ ${isRu ? 'Главные преимущества:' : isCn ? '阵容核心优势:' : 'Key Strengths:'}</strong>
+                  <div style="color: var(--text-secondary); margin-top: 4px;">${b.pros}</div>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 10px 12px;">
+                  <strong style="color: #fbbf24;">⚙️ ${isRu ? 'Сложность сборки:' : isCn ? '养成门槛与难度:' : 'Build Difficulty:'}</strong>
+                  <div style="color: var(--text-secondary); margin-top: 4px;">${b.difficulty}</div>
+                </div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  // 8. Sync & Account Extraction
   getSyncRU() {
     return `
       <div class="guide-article">
