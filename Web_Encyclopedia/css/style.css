@@ -240,3 +240,13 @@ body {
   color: var(--text-secondary);
   text-decoration: none;
 }
+
+.footer-disclaimer {
+  max-width: 900px;
+  margin: 8px auto 0;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  opacity: 0.85;
+}
+

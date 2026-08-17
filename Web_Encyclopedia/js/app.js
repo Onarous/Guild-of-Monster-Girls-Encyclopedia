@@ -632,6 +632,9 @@ const App = {
     document.getElementById('tabBonds').textContent = dict.navBonds;
     document.getElementById('tabCollection').textContent = dict.navMyCollection;
     if (document.getElementById('tabGuides')) document.getElementById('tabGuides').textContent = dict.navGuides;
+    if (document.getElementById('footerDisclaimerText') && dict.footerDisclaimer) {
+      document.getElementById('footerDisclaimerText').textContent = dict.footerDisclaimer;
+    }
     document.getElementById('searchInput').placeholder = dict.searchPlaceholder;
     document.getElementById('resetFiltersBtn').textContent = dict.resetFilters;
     document.getElementById('sortLabel').textContent = dict.sortBy;
