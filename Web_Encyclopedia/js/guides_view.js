@@ -57,9 +57,7 @@ const GuidesView = {
       { id: 'elements', icon: '✨', title: isRu ? 'Стихии, Роли и Отряд' : isCn ? '元素克制、定位与配队' : 'Elements, Roles & Lineup' },
       { id: 'builds', icon: '🏆', title: isRu ? 'Лучшие сборки и Мета-отряды' : isCn ? '最佳阵容与流派推荐' : 'Best Builds & Meta Lineups' },
       { id: 'gacha', icon: '🎪', title: isRu ? 'Списки найма и Баннеры' : isCn ? '招募卡池与掉落列表' : 'Recruit Pools & Gacha Lists' },
-      { id: 'events', icon: '🎁', title: isRu ? 'Список игровых событий' : isCn ? '活动与限时事件列表' : 'Game Events & Activities' },
-      { id: 'sync', icon: '📲', title: isRu ? 'Гайд по синхронизации' : isCn ? '账号同步与数据导出' : 'Account Sync & Export Guide' },
-      { id: 'translation', icon: '⚠️', title: isRu ? 'Ошибки перевода игры' : isCn ? '游戏翻译勘误与说明' : 'Translation & Skill Fixes' }
+      { id: 'events', icon: '🎁', title: isRu ? 'Список игровых событий' : isCn ? '活动与限时事件列表' : 'Game Events & Activities' }
     ];
 
     const contentHtml = this.getSectionContent(this.activeSection, lang);
@@ -106,10 +104,6 @@ const GuidesView = {
         return this.getGachaContent(lang);
       case 'events':
         return this.getEventsContent(lang);
-      case 'sync':
-        return isRu ? this.getSyncRU() : isCn ? this.getSyncCN() : this.getSyncEN();
-      case 'translation':
-        return isRu ? this.getTranslationRU() : isCn ? this.getTranslationCN() : this.getTranslationEN();
       default:
         return isRu ? this.getPhasesRU() : this.getPhasesEN();
     }
@@ -1209,140 +1203,6 @@ const GuidesView = {
               </div>
             </div>
           `).join('')}
-        </div>
-      </div>
-    `;
-  },
-
-  // 8. Sync & Account Extraction
-  getSyncRU() {
-    return `
-      <div class="guide-article">
-        <h2 class="guide-title">📲 Гайд по синхронизации коллекции и выгрузке аккаунта</h2>
-
-        <div class="guide-card">
-          <h3>🌐 Способ 1: Загрузка файла сохранения (100% работает на GitHub Pages)</h3>
-          <ol class="guide-list">
-            <li>Откройте вкладку <strong>«Моя Коллекция»</strong> на сайте.</li>
-            <li>Перейдите в раздел <strong>«📁 Загрузка сохранения (JSON)»</strong>.</li>
-            <li>Перетащите файл <code>monster_girls_roster.json</code> или вставьте текст JSON в поле.</li>
-            <li>Вся ваша коллекция мгновенно отобразится на сайте и сохранится в браузере!</li>
-          </ol>
-        </div>
-
-        <div class="guide-card">
-          <h3>⚡ Способ 2: Авто-синхронизация через WebADB (При локальном запуске)</h3>
-          <ol class="guide-list">
-            <li>Запустите файл <code>run_web_encyclopedia.bat</code> на вашем ПК.</li>
-            <li>Откройте эмулятор (MuMu Player / LDPlayer / Nox) с запущенной игрой.</li>
-            <li>В браузере на <code>http://localhost:8787</code> перейдите во вкладку <strong>«Коллекция»</strong> и нажмите <strong>«⚡ Синхронизировать»</strong>.</li>
-            <li>Сервер автоматически считает токен и состав вашей гильдии в 1 клик!</li>
-          </ol>
-        </div>
-
-        <div class="guide-card">
-          <h3>📱 Способ 3: Мобильный скрипт Shizuku (Android)</h3>
-          <p>Для пользователей телефонов без рут-прав: скачайте <code>shizuku_sync.sh</code> и выполните его через приложение Shizuku / Rish в Termux для мгновенного считывания токена в буфер обмена.</p>
-        </div>
-      </div>
-    `;
-  },
-
-  getSyncEN() {
-    return `
-      <div class="guide-article">
-        <h2 class="guide-title">📲 Account Synchronization & Extraction Guide</h2>
-
-        <div class="guide-card">
-          <h3>🌐 Method 1: Import Save File (100% Works on GitHub Pages)</h3>
-          <ol class="guide-list">
-            <li>Navigate to the <strong>"My Collection"</strong> tab on the website.</li>
-            <li>Click on <strong>"📁 Import Save File (JSON)"</strong>.</li>
-            <li>Drag & drop your <code>monster_girls_roster.json</code> or paste the JSON content.</li>
-            <li>Your entire hero roster instantly displays and persists in local browser storage!</li>
-          </ol>
-        </div>
-
-        <div class="guide-card">
-          <h3>⚡ Method 2: 1-Click Auto-Sync via WebADB (Local Server Mode)</h3>
-          <ol class="guide-list">
-            <li>Launch <code>run_web_encyclopedia.bat</code> on your PC.</li>
-            <li>Start your Android emulator with the game running.</li>
-            <li>Open <code>http://localhost:8787</code> in your browser and click <strong>"⚡ Connect & Sync"</strong>.</li>
-            <li>The local server extracts your authentication token and hero list automatically.</li>
-          </ol>
-        </div>
-      </div>
-    `;
-  },
-
-  getSyncCN() {
-    return `
-      <div class="guide-article">
-        <h2 class="guide-title">📲 账号同步与数据导入指南</h2>
-
-        <div class="guide-card">
-          <h3>🌐 方法一：导入本地存档 JSON 文件 (GitHub Pages 在线可用)</h3>
-          <ol class="guide-list">
-            <li>点击顶部导航栏的 <strong>“我的收藏”</strong> 页面。</li>
-            <li>选择 <strong>“📁 导入存档文件 (JSON)”</strong>。</li>
-            <li>拖入 <code>monster_girls_roster.json</code> 文件或直接粘贴数据。</li>
-            <li>全量角色收藏数据将自动在浏览器中持久化保存！</li>
-          </ol>
-        </div>
-      </div>
-    `;
-  },
-
-  // 7. Translation Errors & Skill Fixes
-  getTranslationRU() {
-    return `
-      <div class="guide-article">
-        <h2 class="guide-title">⚠️ Известные ошибки официального перевода игры</h2>
-        <p class="guide-lead">Официальный перевод некоторых навыков и пассивок содержит неточности. Ниже приведены проверенные сообществом исправления:</p>
-
-        <div class="guide-card">
-          <h3>🔍 Исправления ключевых описаний:</h3>
-          <ul class="guide-list">
-            <li><strong>Астральная Хранительница:</strong> Описание ультимейта в игре говорит "наносит урон врагам", но на самом деле способность накладывает щит на весь отряд от силы защиты (DEF).</li>
-            <li><strong>Святая сабля:</strong> Эффект "Follow-up" срабатывает только при наличии на цели дебаффа Уязвимости (Vulnerable), а не от любого попадания.</li>
-            <li><strong>Урон от горения и яда:</strong> Переведен в некоторых местах как "магический урон", однако по механике это чистый <em>HP Loss</em>, пробивающий щиты цели.</li>
-          </ul>
-        </div>
-      </div>
-    `;
-  },
-
-  getTranslationEN() {
-    return `
-      <div class="guide-article">
-        <h2 class="guide-title">⚠️ Official Localization Fixes & Skill Clarifications</h2>
-        <p class="guide-lead">Verified discrepancies in official in-game skill descriptions:</p>
-
-        <div class="guide-card">
-          <h3>🔍 Verified Skill Discrepancies:</h3>
-          <ul class="guide-list">
-            <li><strong>Astral Guardian:</strong> In-game text implies direct offensive damage, but her Ultimate actually grants a team-wide shield scaling with DEF.</li>
-            <li><strong>Holy Blade:</strong> The follow-up strike strictly requires the target to be afflicted with Vulnerable.</li>
-            <li><strong>DoT Effects (Burn/Poison):</strong> Mislabeled as magic damage in some tooltips; mechanically functioning as pure HP Loss that penetrates shields.</li>
-          </ul>
-        </div>
-      </div>
-    `;
-  },
-
-  getTranslationCN() {
-    return `
-      <div class="guide-article">
-        <h2 class="guide-title">⚠️ 游戏技能文本勘误与机制修正</h2>
-
-        <div class="guide-card">
-          <h3>🔍 核心技能机制确认：</h3>
-          <ul class="guide-list">
-            <li><strong>星界守卫：</strong> 终极技能实际效果为全体护盾加持，数值受防御力 (DEF) 加成。</li>
-            <li><strong>圣剑：</strong> 追击触发严格要求目标处于“易伤 (Vulnerable)”状态。</li>
-            <li><strong>持续伤害 (DoT)：</strong> 机制上为“真实生命流失 (HP Loss)”，无视护盾直接扣减生命值。</li>
-          </ul>
         </div>
       </div>
     `;
