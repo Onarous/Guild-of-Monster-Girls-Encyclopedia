@@ -150,7 +150,10 @@
       "recommended_character": "M 51303_000",
       "recommended_subclass": "M 13302_000",
       "recommended_feature": "M 12301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M53301_001",
@@ -303,7 +306,10 @@
       "recommended_character": "M 14201_001",
       "recommended_subclass": "M 13302_000",
       "recommended_feature": "M 11205_001"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M53301_002",
@@ -456,7 +462,10 @@
       "recommended_character": "M 31202",
       "recommended_subclass": "M 11207",
       "recommended_feature": "M 11201_000"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M31302",
@@ -609,7 +618,10 @@
       "recommended_character": "M 11203",
       "recommended_subclass": "M 41301_000",
       "recommended_feature": "M 11304"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M31302_000",
@@ -762,7 +774,10 @@
       "recommended_character": "M 12301_001",
       "recommended_subclass": "M 22301",
       "recommended_feature": "M 31301_001"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M13310",
@@ -915,7 +930,10 @@
       "recommended_character": "M 14206_002",
       "recommended_subclass": "M 54301_000",
       "recommended_feature": "M 21301_000"
-    }
+    },
+    "banner_type": "limited",
+    "banner_name": "Limited Rate-Up Banner",
+    "banner_badge": "⏳ Limited"
   },
   {
     "id": "M13306",
@@ -1068,7 +1086,10 @@
       "recommended_character": "M 33101",
       "recommended_subclass": "M 11301",
       "recommended_feature": "M 52301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13306_000",
@@ -1221,7 +1242,10 @@
       "recommended_character": "M 12211_000",
       "recommended_subclass": "M 33101",
       "recommended_feature": "M 12203"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "Limited Skin Rate-Up Banner",
+    "banner_badge": "👑 Limited Skin"
   },
   {
     "id": "M51302",
@@ -1374,7 +1398,10 @@
       "recommended_character": "M 24301",
       "recommended_subclass": "M 23204_000",
       "recommended_feature": "M 31303_000"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M51302_001",
@@ -1527,7 +1554,10 @@
       "recommended_character": "M 13207",
       "recommended_subclass": "M 23301",
       "recommended_feature": "M 14213"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M12211",
@@ -1680,7 +1710,10 @@
       "recommended_character": "M 11302",
       "recommended_subclass": "M 13302_000",
       "recommended_feature": "M 33101"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12211_000",
@@ -1833,7 +1866,10 @@
       "recommended_character": "M 13305",
       "recommended_subclass": "M 33101",
       "recommended_feature": "M 52301"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M00000",
@@ -1971,7 +2007,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "adventure",
+    "banner_name": "Adventure & Story Drop",
+    "banner_badge": "🗺️ Drop"
   },
   {
     "id": "M13302",
@@ -2124,7 +2163,10 @@
       "recommended_character": "M 13305",
       "recommended_subclass": "M 13201_000",
       "recommended_feature": "M 51303"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13302_000",
@@ -2277,7 +2319,10 @@
       "recommended_character": "M 53301",
       "recommended_subclass": "M 11201_000",
       "recommended_feature": "M 51303_000"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M13303",
@@ -2430,7 +2475,10 @@
       "recommended_character": "M 51303",
       "recommended_subclass": "M 14204",
       "recommended_feature": "M 13302"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13303_001",
@@ -2583,7 +2631,10 @@
       "recommended_character": "M 23205",
       "recommended_subclass": "M 21302",
       "recommended_feature": "M 22203"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M13303_002",
@@ -2736,7 +2787,10 @@
       "recommended_character": "M 54301_000",
       "recommended_subclass": "M 12210",
       "recommended_feature": "M 22202_002"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "Limited Skin Rate-Up Banner",
+    "banner_badge": "👑 Limited Skin"
   },
   {
     "id": "M14301",
@@ -2889,7 +2943,10 @@
       "recommended_character": "M 21201",
       "recommended_subclass": "M 23301",
       "recommended_feature": "M 52301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14301_000",
@@ -3042,7 +3099,10 @@
       "recommended_character": "M 14205",
       "recommended_subclass": "M 11301_000",
       "recommended_feature": "M 52301"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M54301",
@@ -3195,7 +3255,10 @@
       "recommended_character": "M 14203",
       "recommended_subclass": "M 21203",
       "recommended_feature": "M 52301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M54301_000",
@@ -3348,7 +3411,10 @@
       "recommended_character": "M 13105",
       "recommended_subclass": "M 11304_000",
       "recommended_feature": "M 11302"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "Limited Skin Rate-Up Banner",
+    "banner_badge": "👑 Limited Skin"
   },
   {
     "id": "M22301",
@@ -3501,7 +3567,10 @@
       "recommended_character": "M 12301_001",
       "recommended_subclass": "M 13201",
       "recommended_feature": "M 13304_001"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M41301",
@@ -3654,7 +3723,10 @@
       "recommended_character": "M 23204",
       "recommended_subclass": "M 21202",
       "recommended_feature": "M 31201"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M41301_000",
@@ -3807,7 +3879,10 @@
       "recommended_character": "M 12301_001",
       "recommended_subclass": "M 13304_001",
       "recommended_feature": "M 41201"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M21301",
@@ -3960,7 +4035,10 @@
       "recommended_character": "M 21201",
       "recommended_subclass": "M 14301",
       "recommended_feature": "M 11203_000"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M21301_000",
@@ -4113,7 +4191,10 @@
       "recommended_character": "M 13310",
       "recommended_subclass": "M 21205",
       "recommended_feature": "M 11303"
-    }
+    },
+    "banner_type": "adventure",
+    "banner_name": "Adventure & Story Drop",
+    "banner_badge": "🗺️ Drop"
   },
   {
     "id": "M13305",
@@ -4266,7 +4347,10 @@
       "recommended_character": "M 11206",
       "recommended_subclass": "M 13203",
       "recommended_feature": "M 11301_000"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13305_000",
@@ -4419,7 +4503,10 @@
       "recommended_character": "M 13305",
       "recommended_subclass": "M 12201_000",
       "recommended_feature": "M 12205_000"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M12301",
@@ -4572,7 +4659,10 @@
       "recommended_character": "M 52301",
       "recommended_subclass": "M 12205",
       "recommended_feature": "M 12202"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12301_001",
@@ -4725,7 +4815,10 @@
       "recommended_character": "M 12205",
       "recommended_subclass": "M 12207",
       "recommended_feature": "M 12202_001"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M31301",
@@ -4878,7 +4971,10 @@
       "recommended_character": "M 14204",
       "recommended_subclass": "M 11304_000",
       "recommended_feature": "M 11301_000"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M31301_001",
@@ -5031,7 +5127,10 @@
       "recommended_character": "M 14201_001",
       "recommended_subclass": "M 22301",
       "recommended_feature": "M 31301"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M51303",
@@ -5184,7 +5283,10 @@
       "recommended_character": "M 13303",
       "recommended_subclass": "M 13305",
       "recommended_feature": "M 13302"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M51303_000",
@@ -5337,7 +5439,10 @@
       "recommended_character": "M 11302",
       "recommended_subclass": "M 11201_000",
       "recommended_feature": "M 13302_000"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M14303",
@@ -5490,7 +5595,10 @@
       "recommended_character": "M 14203",
       "recommended_subclass": "M 11301",
       "recommended_feature": "M 52301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11301",
@@ -5643,7 +5751,10 @@
       "recommended_character": "M 14206",
       "recommended_subclass": "M 12211",
       "recommended_feature": "M 31301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11301_000",
@@ -5796,7 +5907,10 @@
       "recommended_character": "M 14201",
       "recommended_subclass": "M 11206",
       "recommended_feature": "M 11202"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M11304",
@@ -5949,7 +6063,10 @@
       "recommended_character": "M 31302",
       "recommended_subclass": "M 41301_000",
       "recommended_feature": "M 11304_000"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11304_000",
@@ -6102,7 +6219,10 @@
       "recommended_character": "M 31302",
       "recommended_subclass": "M 41301_000",
       "recommended_feature": "M 11304"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M11304_001",
@@ -6255,7 +6375,10 @@
       "recommended_character": "M 51201",
       "recommended_subclass": "M 31302",
       "recommended_feature": "M 11304"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M13307",
@@ -6408,7 +6531,10 @@
       "recommended_character": "M 21301",
       "recommended_subclass": "M 21203",
       "recommended_feature": "M 11303_002"
-    }
+    },
+    "banner_type": "limited",
+    "banner_name": "Limited Rate-Up Banner",
+    "banner_badge": "⏳ Limited"
   },
   {
     "id": "M13307_000",
@@ -6561,7 +6687,10 @@
       "recommended_character": "M 21301",
       "recommended_subclass": "M 52301_000",
       "recommended_feature": "M 14207"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "Limited Skin Rate-Up Banner",
+    "banner_badge": "👑 Limited Skin"
   },
   {
     "id": "M24301",
@@ -6714,7 +6843,10 @@
       "recommended_character": "M 12211",
       "recommended_subclass": "M 11301",
       "recommended_feature": "M 14203"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M24301_000",
@@ -6867,7 +6999,10 @@
       "recommended_character": "M 14213",
       "recommended_subclass": "M 23301",
       "recommended_feature": "M 51302_001"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "Limited Skin Rate-Up Banner",
+    "banner_badge": "👑 Limited Skin"
   },
   {
     "id": "M11302",
@@ -7020,7 +7155,10 @@
       "recommended_character": "M 51303_000",
       "recommended_subclass": "M 11201_000",
       "recommended_feature": "M 12301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11302_000",
@@ -7173,7 +7311,10 @@
       "recommended_character": "M 21201",
       "recommended_subclass": "M 21301",
       "recommended_feature": "M 13202"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M23301",
@@ -7326,7 +7467,10 @@
       "recommended_character": "M 13305",
       "recommended_subclass": "M 23201",
       "recommended_feature": "M 14213"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M23301_000",
@@ -7479,7 +7623,10 @@
       "recommended_character": "M 12211_000",
       "recommended_subclass": "M 12211",
       "recommended_feature": "M 11301_000"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M23301_001",
@@ -7632,7 +7779,10 @@
       "recommended_character": "M 21205",
       "recommended_subclass": "M 13305",
       "recommended_feature": "M 22201_002"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "Limited Skin Rate-Up Banner",
+    "banner_badge": "👑 Limited Skin"
   },
   {
     "id": "M11303",
@@ -7785,7 +7935,10 @@
       "recommended_character": "M 11203",
       "recommended_subclass": "M 13306",
       "recommended_feature": "M 31301_001"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11303_002",
@@ -7938,7 +8091,10 @@
       "recommended_character": "M 14206_002",
       "recommended_subclass": "M 52301_000",
       "recommended_feature": "M 11303"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "Limited Skin Rate-Up Banner",
+    "banner_badge": "👑 Limited Skin"
   },
   {
     "id": "M52301",
@@ -8091,7 +8247,10 @@
       "recommended_character": "M 12301_001",
       "recommended_subclass": "M 13304_001",
       "recommended_feature": "M 12202"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M52301_000",
@@ -8244,7 +8403,10 @@
       "recommended_character": "M 12301_001",
       "recommended_subclass": "M 22301",
       "recommended_feature": "M 12202_001"
-    }
+    },
+    "banner_type": "adventure",
+    "banner_name": "Adventure & Story Drop",
+    "banner_badge": "🗺️ Drop"
   },
   {
     "id": "M21302",
@@ -8397,7 +8559,10 @@
       "recommended_character": "M 23205",
       "recommended_subclass": "M 22203",
       "recommended_feature": "M 11301_000"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M21302_000",
@@ -8550,7 +8715,10 @@
       "recommended_character": "M 23301_000",
       "recommended_subclass": "M 21201",
       "recommended_feature": "M 21301"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M31303",
@@ -8703,7 +8871,10 @@
       "recommended_character": "M 11208",
       "recommended_subclass": "M 12207_000",
       "recommended_feature": "M 11301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M31303_000",
@@ -8856,7 +9027,10 @@
       "recommended_character": "M 13201_000",
       "recommended_subclass": "M 51302",
       "recommended_feature": "M 31303"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M12303",
@@ -9009,7 +9183,10 @@
       "recommended_character": "M 22203",
       "recommended_subclass": "M 31303_000",
       "recommended_feature": "M 23301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12303_000",
@@ -9162,7 +9339,10 @@
       "recommended_character": "M 13206",
       "recommended_subclass": "M 13304",
       "recommended_feature": "M 11301_000"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "Limited Skin Rate-Up Banner",
+    "banner_badge": "👑 Limited Skin"
   },
   {
     "id": "M14215",
@@ -9315,7 +9495,10 @@
       "recommended_character": "M 53301_002",
       "recommended_subclass": "M 11207",
       "recommended_feature": "M 13307"
-    }
+    },
+    "banner_type": "adventure",
+    "banner_name": "Adventure & Story Drop",
+    "banner_badge": "🗺️ Drop"
   },
   {
     "id": "M13304",
@@ -9468,7 +9651,10 @@
       "recommended_character": "M 13201",
       "recommended_subclass": "M 12301_001",
       "recommended_feature": "M 13304_001"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13304_001",
@@ -9621,7 +9807,10 @@
       "recommended_character": "M 13201",
       "recommended_subclass": "M 23301",
       "recommended_feature": "M 22301"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M12205",
@@ -9774,7 +9963,10 @@
       "recommended_character": "M 52301",
       "recommended_subclass": "M 12207",
       "recommended_feature": "M 22202"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12205_000",
@@ -9927,7 +10119,10 @@
       "recommended_character": "M 13305_000",
       "recommended_subclass": "M 12201_000",
       "recommended_feature": "M 11301_000"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M34301",
@@ -10080,7 +10275,10 @@
       "recommended_character": "M 13305_000",
       "recommended_subclass": "M 12211",
       "recommended_feature": "M 52301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M34301_000",
@@ -10233,7 +10431,10 @@
       "recommended_character": "M 53301",
       "recommended_subclass": "M 14301_000",
       "recommended_feature": "M 52301"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M13203",
@@ -10386,7 +10587,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13210",
@@ -10539,7 +10743,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11207",
@@ -10692,7 +10899,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M51201",
@@ -10845,7 +11055,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M51201_001",
@@ -10998,7 +11211,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M14204",
@@ -11151,7 +11367,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14207",
@@ -11304,7 +11523,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M22201",
@@ -11457,7 +11679,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M22201_002",
@@ -11610,7 +11835,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M31201",
@@ -11763,7 +11991,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12207",
@@ -11916,7 +12147,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12207_000",
@@ -12069,7 +12303,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M12203",
@@ -12222,7 +12459,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11205",
@@ -12375,7 +12615,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11205_001",
@@ -12528,7 +12771,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M23205",
@@ -12681,7 +12927,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M23202",
@@ -12834,7 +13083,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M21205",
@@ -12987,7 +13239,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13105",
@@ -13140,7 +13395,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11208",
@@ -13293,7 +13551,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M21202",
@@ -13446,7 +13707,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M21202_000",
@@ -13599,7 +13863,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M41201",
@@ -13752,7 +14019,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M21203",
@@ -13905,7 +14175,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M22202",
@@ -14058,7 +14331,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M22202_002",
@@ -14211,7 +14487,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M14202",
@@ -14364,7 +14643,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14202_000",
@@ -14517,7 +14799,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M14208",
@@ -14670,7 +14955,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11201",
@@ -14823,7 +15111,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11201_000",
@@ -14976,7 +15267,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M33101",
@@ -15129,7 +15423,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13205",
@@ -15282,7 +15579,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11204",
@@ -15435,7 +15735,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M31202",
@@ -15588,7 +15891,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14213",
@@ -15741,7 +16047,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12201",
@@ -15894,7 +16203,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12201_000",
@@ -16047,7 +16359,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M13204",
@@ -16200,7 +16515,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12210",
@@ -16353,7 +16671,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11209",
@@ -16506,7 +16827,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14205",
@@ -16659,7 +16983,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12204",
@@ -16812,7 +17139,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11203",
@@ -16965,7 +17295,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11203_000",
@@ -17118,7 +17451,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M13201",
@@ -17271,7 +17607,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13201_000",
@@ -17424,7 +17763,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M22203",
@@ -17577,7 +17919,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14211",
@@ -17730,7 +18075,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14210",
@@ -17883,7 +18231,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12208",
@@ -18036,7 +18387,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13207",
@@ -18189,7 +18543,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13202",
@@ -18342,7 +18699,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13206",
@@ -18495,7 +18855,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11210",
@@ -18648,7 +19011,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M21201",
@@ -18801,7 +19167,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M21201_002",
@@ -18954,7 +19323,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M23204",
@@ -19107,7 +19479,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M23204_000",
@@ -19260,7 +19635,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M12304",
@@ -19413,7 +19791,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M23203",
@@ -19566,7 +19947,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M21204",
@@ -19719,7 +20103,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14206",
@@ -19872,7 +20259,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14206_002",
@@ -20025,7 +20415,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M14201",
@@ -20178,7 +20571,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14201_001",
@@ -20331,7 +20727,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M12202",
@@ -20484,7 +20883,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12202_001",
@@ -20637,7 +21039,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M11202",
@@ -20790,7 +21195,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M23201",
@@ -20943,7 +21351,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11206",
@@ -21096,7 +21507,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14203",
@@ -21249,7 +21663,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14203_000",
@@ -21402,7 +21819,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M13106",
@@ -21543,7 +21963,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14101",
@@ -21684,7 +22107,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11113",
@@ -21825,7 +22251,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11110",
@@ -21966,7 +22395,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11114",
@@ -22107,7 +22539,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11115",
@@ -22248,7 +22683,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M32101",
@@ -22389,7 +22827,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11111",
@@ -22530,7 +22971,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M42101",
@@ -22671,7 +23115,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M41101",
@@ -22812,7 +23259,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13102",
@@ -22953,7 +23403,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11105",
@@ -23094,7 +23547,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12104",
@@ -23235,7 +23691,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11109",
@@ -23376,7 +23835,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11109_001",
@@ -23517,7 +23979,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M12105",
@@ -23658,7 +24123,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M43101",
@@ -23799,7 +24267,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13107",
@@ -23940,7 +24411,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12103",
@@ -24081,7 +24555,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11102",
@@ -24222,7 +24699,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M24102",
@@ -24363,7 +24843,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11107",
@@ -24504,7 +24987,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M14104",
@@ -24645,7 +25131,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M24101",
@@ -24786,7 +25275,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11108",
@@ -24927,7 +25419,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12106",
@@ -25068,7 +25563,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11112",
@@ -25209,7 +25707,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13103",
@@ -25350,7 +25851,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M21101",
@@ -25491,7 +25995,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11106",
@@ -25632,7 +26139,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11106_002",
@@ -25773,7 +26283,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M12102",
@@ -25914,7 +26427,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12102_002",
@@ -26055,7 +26571,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M32103",
@@ -26196,7 +26715,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11103",
@@ -26337,7 +26859,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11103_001",
@@ -26478,7 +27003,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M12101",
@@ -26619,7 +27147,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12101_001",
@@ -26760,7 +27291,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M13104",
@@ -26901,7 +27435,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13104_001",
@@ -27042,7 +27579,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M12003",
@@ -27178,7 +27718,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12003_001",
@@ -27314,7 +27857,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M11005",
@@ -27450,7 +27996,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11005_001",
@@ -27586,7 +28135,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M13002",
@@ -27722,7 +28274,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11009",
@@ -27858,7 +28413,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11008",
@@ -27994,7 +28552,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M13001",
@@ -28130,7 +28691,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11003",
@@ -28266,7 +28830,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11004",
@@ -28402,7 +28969,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12002",
@@ -28538,7 +29108,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11002",
@@ -28674,7 +29247,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11007",
@@ -28810,7 +29386,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11007_002",
@@ -28946,7 +29525,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M14103",
@@ -29082,7 +29664,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11006",
@@ -29218,7 +29803,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12004",
@@ -29354,7 +29942,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12004_002",
@@ -29490,7 +30081,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "Alter & Skin Summon Banner",
+    "banner_badge": "👗 Skin"
   },
   {
     "id": "M14102",
@@ -29626,7 +30220,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M11101",
@@ -29762,7 +30359,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M23001",
@@ -29898,7 +30498,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M24001",
@@ -30034,7 +30637,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M21001",
@@ -30170,7 +30776,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   },
   {
     "id": "M12001",
@@ -30306,6 +30915,9 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "Standard Permanent Banner",
+    "banner_badge": "🔮 Standard"
   }
 ]

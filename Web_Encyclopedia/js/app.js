@@ -15,8 +15,9 @@ const App = {
       rarity: "all",
       class: "all",
       element: "all",
-      slot: "all",
-      role: "all"
+      role: "all",
+      banner: "all",
+      slot: "all"
     },
     accountData: null,
     ownedRoleIds: new Set(),
@@ -410,6 +411,7 @@ const App = {
     document.getElementById('itemCategoryBar').style.display = isItems && !isBonds ? 'flex' : 'none';
     document.getElementById('slotFilterRow').style.display = isItems ? 'flex' : 'none';
     document.getElementById('roleFilterRow').style.display = isItems ? 'none' : 'flex';
+    document.getElementById('bannerFilterRow').style.display = isItems ? 'none' : 'flex';
     document.getElementById('sortGroup').style.display = isItems ? 'none' : 'flex';
 
     this.render();
@@ -442,7 +444,8 @@ const App = {
       class: "all",
       element: "all",
       slot: "all",
-      role: "all"
+      role: "all",
+      banner: "all"
     };
     document.querySelectorAll('.filter-pill').forEach(p => {
       p.classList.toggle('active', p.dataset.filterVal === "all");
@@ -552,9 +555,10 @@ const App = {
       if (!this.matchClass(c.class, f.class)) return false;
       if (!this.matchElement(c.element, f.element)) return false;
       if (!this.matchRole(c.combat_role, f.role)) return false;
+      if (f.banner && f.banner !== 'all' && c.banner_type !== f.banner) return false;
 
       if (q) {
-        const text = `${c.name} ${c.name_cn || ''} ${c.skin_name || ''} ${c.id} ${c.class} ${c.element} ${c.filter_tags || ''} ${c.unique_skills && c.unique_skills[0] ? c.unique_skills[0].description : ''}`.toLowerCase();
+        const text = `${c.name} ${c.name_cn || ''} ${c.skin_name || ''} ${c.id} ${c.class} ${c.element} ${c.banner_name || ''} ${c.filter_tags || ''} ${c.unique_skills && c.unique_skills[0] ? c.unique_skills[0].description : ''}`.toLowerCase();
         if (!text.includes(q)) return false;
       }
       return true;
@@ -620,6 +624,7 @@ const App = {
       if (document.getElementById('filterTitleClass')) document.getElementById('filterTitleClass').textContent = dict.filterTitles.class;
       if (document.getElementById('filterTitleElement')) document.getElementById('filterTitleElement').textContent = dict.filterTitles.element;
       if (document.getElementById('filterTitleRole')) document.getElementById('filterTitleRole').textContent = dict.filterTitles.role;
+      if (document.getElementById('filterTitleBanner')) document.getElementById('filterTitleBanner').textContent = dict.filterTitles.banner || 'Баннер:';
       if (document.getElementById('filterTitleSlot')) document.getElementById('filterTitleSlot').textContent = dict.filterTitles.slot;
     }
 
@@ -648,6 +653,14 @@ const App = {
     if (dict.filterPills?.role) {
       Object.entries(dict.filterPills.role).forEach(([k, label]) => {
         const el = document.querySelector(`.filter-pill[data-pill-key="${k}"]`);
+        if (el) el.textContent = label;
+      });
+    }
+
+    // Banner pills
+    if (dict.filterPills?.banner) {
+      Object.entries(dict.filterPills.banner).forEach(([k, label]) => {
+        const el = document.querySelector(`.filter-pill[data-filter-type="banner"][data-pill-key="${k}"]`);
         if (el) el.textContent = label;
       });
     }

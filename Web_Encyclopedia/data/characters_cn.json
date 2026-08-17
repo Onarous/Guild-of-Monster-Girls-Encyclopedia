@@ -135,7 +135,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "adventure",
+    "banner_name": "冒险·主线掉落",
+    "banner_badge": "🗺️ 掉落"
   },
   {
     "id": "M11301_000",
@@ -288,7 +291,10 @@
       "recommended_character": "M14201",
       "recommended_subclass": "M11206",
       "recommended_feature": "M11202"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M11301",
@@ -441,7 +447,10 @@
       "recommended_character": "M14206",
       "recommended_subclass": "M12211",
       "recommended_feature": "M31301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M22301",
@@ -594,7 +603,10 @@
       "recommended_character": "M12301_001",
       "recommended_subclass": "M13201",
       "recommended_feature": "M13304_001"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M23301_000",
@@ -747,7 +759,10 @@
       "recommended_character": "M12211_000",
       "recommended_subclass": "M12211",
       "recommended_feature": "M11301_000"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M23301_001",
@@ -900,7 +915,10 @@
       "recommended_character": "M21205",
       "recommended_subclass": "M13305",
       "recommended_feature": "M22201_002"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "限时皮肤UP招募",
+    "banner_badge": "👑 限时皮肤"
   },
   {
     "id": "M23301",
@@ -1053,7 +1071,10 @@
       "recommended_character": "M13305",
       "recommended_subclass": "M23201",
       "recommended_feature": "M14213"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M31301_001",
@@ -1206,7 +1227,10 @@
       "recommended_character": "M14201_001",
       "recommended_subclass": "M22301",
       "recommended_feature": "M31301"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M31301",
@@ -1359,7 +1383,10 @@
       "recommended_character": "M14204",
       "recommended_subclass": "M11304_000",
       "recommended_feature": "M11301_000"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13302_000",
@@ -1512,7 +1539,10 @@
       "recommended_character": "M53301",
       "recommended_subclass": "M11201_000",
       "recommended_feature": "M51303_000"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M13302",
@@ -1665,7 +1695,10 @@
       "recommended_character": "M13305",
       "recommended_subclass": "M13201_000",
       "recommended_feature": "M51303"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13303_002",
@@ -1818,7 +1851,10 @@
       "recommended_character": "M54301_000",
       "recommended_subclass": "M12210",
       "recommended_feature": "M22202_002"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "限时皮肤UP招募",
+    "banner_badge": "👑 限时皮肤"
   },
   {
     "id": "M13303_001",
@@ -1971,7 +2007,10 @@
       "recommended_character": "M23205",
       "recommended_subclass": "M21302",
       "recommended_feature": "M22203"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M13303",
@@ -2124,7 +2163,10 @@
       "recommended_character": "M51303",
       "recommended_subclass": "M14204",
       "recommended_feature": "M13302"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M24301_000",
@@ -2277,7 +2319,10 @@
       "recommended_character": "M14213",
       "recommended_subclass": "M23301",
       "recommended_feature": "M51302_001"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "限时皮肤UP招募",
+    "banner_badge": "👑 限时皮肤"
   },
   {
     "id": "M24301",
@@ -2430,7 +2475,10 @@
       "recommended_character": "M12211",
       "recommended_subclass": "M11301",
       "recommended_feature": "M14203"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M31303_000",
@@ -2583,7 +2631,10 @@
       "recommended_character": "M13201_000",
       "recommended_subclass": "M51302",
       "recommended_feature": "M31303"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M31303",
@@ -2736,7 +2787,10 @@
       "recommended_character": "M11208",
       "recommended_subclass": "M12207_000",
       "recommended_feature": "M11301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12303_000",
@@ -2889,7 +2943,10 @@
       "recommended_character": "M13206",
       "recommended_subclass": "M13304",
       "recommended_feature": "M11301_000"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "限时皮肤UP招募",
+    "banner_badge": "👑 限时皮肤"
   },
   {
     "id": "M12303",
@@ -3042,7 +3099,10 @@
       "recommended_character": "M22203",
       "recommended_subclass": "M31303_000",
       "recommended_feature": "M23301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11302_000",
@@ -3195,7 +3255,10 @@
       "recommended_character": "M21201",
       "recommended_subclass": "M21301",
       "recommended_feature": "M13202"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M11302",
@@ -3348,7 +3411,10 @@
       "recommended_character": "M51303_000",
       "recommended_subclass": "M11201_000",
       "recommended_feature": "M12301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M41301_000",
@@ -3501,7 +3567,10 @@
       "recommended_character": "M12301_001",
       "recommended_subclass": "M13304_001",
       "recommended_feature": "M41201"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M41301",
@@ -3654,7 +3723,10 @@
       "recommended_character": "M23204",
       "recommended_subclass": "M21202",
       "recommended_feature": "M31201"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14303",
@@ -3807,7 +3879,10 @@
       "recommended_character": "M14203",
       "recommended_subclass": "M11301",
       "recommended_feature": "M52301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M21302_000",
@@ -3960,7 +4035,10 @@
       "recommended_character": "M23301_000",
       "recommended_subclass": "M21201",
       "recommended_feature": "M21301"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M21302",
@@ -4113,7 +4191,10 @@
       "recommended_character": "M23205",
       "recommended_subclass": "M22203",
       "recommended_feature": "M11301_000"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14301_000",
@@ -4266,7 +4347,10 @@
       "recommended_character": "M14205",
       "recommended_subclass": "M11301_000",
       "recommended_feature": "M52301"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M14301",
@@ -4419,7 +4503,10 @@
       "recommended_character": "M21201",
       "recommended_subclass": "M23301",
       "recommended_feature": "M52301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M52301_000",
@@ -4572,7 +4659,10 @@
       "recommended_character": "M12301_001",
       "recommended_subclass": "M22301",
       "recommended_feature": "M12202_001"
-    }
+    },
+    "banner_type": "adventure",
+    "banner_name": "冒险·主线掉落",
+    "banner_badge": "🗺️ 掉落"
   },
   {
     "id": "M52301",
@@ -4725,7 +4815,10 @@
       "recommended_character": "M12301_001",
       "recommended_subclass": "M13304_001",
       "recommended_feature": "M12202"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M53301_002",
@@ -4878,7 +4971,10 @@
       "recommended_character": "M31202",
       "recommended_subclass": "M11207",
       "recommended_feature": "M11201_000"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M53301_001",
@@ -5031,7 +5127,10 @@
       "recommended_character": "M14201_001",
       "recommended_subclass": "M13302_000",
       "recommended_feature": "M11205_001"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M53301",
@@ -5184,7 +5283,10 @@
       "recommended_character": "M51303_000",
       "recommended_subclass": "M13302_000",
       "recommended_feature": "M12301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M54301_000",
@@ -5337,7 +5439,10 @@
       "recommended_character": "M13105",
       "recommended_subclass": "M11304_000",
       "recommended_feature": "M11302"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "限时皮肤UP招募",
+    "banner_badge": "👑 限时皮肤"
   },
   {
     "id": "M54301",
@@ -5490,7 +5595,10 @@
       "recommended_character": "M14203",
       "recommended_subclass": "M21203",
       "recommended_feature": "M52301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M31302_000",
@@ -5643,7 +5751,10 @@
       "recommended_character": "M12301_001",
       "recommended_subclass": "M22301",
       "recommended_feature": "M31301_001"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M31302",
@@ -5796,7 +5907,10 @@
       "recommended_character": "M11203",
       "recommended_subclass": "M41301_000",
       "recommended_feature": "M11304"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13306_000",
@@ -5949,7 +6063,10 @@
       "recommended_character": "M12211_000",
       "recommended_subclass": "M33101",
       "recommended_feature": "M12203"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "限时皮肤UP招募",
+    "banner_badge": "👑 限时皮肤"
   },
   {
     "id": "M13306",
@@ -6102,7 +6219,10 @@
       "recommended_character": "M33101",
       "recommended_subclass": "M11301",
       "recommended_feature": "M52301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M51303_000",
@@ -6255,7 +6375,10 @@
       "recommended_character": "M11302",
       "recommended_subclass": "M11201_000",
       "recommended_feature": "M13302_000"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M51303",
@@ -6408,7 +6531,10 @@
       "recommended_character": "M13303",
       "recommended_subclass": "M13305",
       "recommended_feature": "M13302"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14215",
@@ -6561,7 +6687,10 @@
       "recommended_character": "M53301_002",
       "recommended_subclass": "M11207",
       "recommended_feature": "M13307"
-    }
+    },
+    "banner_type": "adventure",
+    "banner_name": "冒险·主线掉落",
+    "banner_badge": "🗺️ 掉落"
   },
   {
     "id": "M12211_000",
@@ -6714,7 +6843,10 @@
       "recommended_character": "M13305",
       "recommended_subclass": "M33101",
       "recommended_feature": "M52301"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M12211",
@@ -6867,7 +6999,10 @@
       "recommended_character": "M11302",
       "recommended_subclass": "M13302_000",
       "recommended_feature": "M33101"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13307_000",
@@ -7020,7 +7155,10 @@
       "recommended_character": "M21301",
       "recommended_subclass": "M52301_000",
       "recommended_feature": "M14207"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "限时皮肤UP招募",
+    "banner_badge": "👑 限时皮肤"
   },
   {
     "id": "M13307",
@@ -7173,7 +7311,10 @@
       "recommended_character": "M21301",
       "recommended_subclass": "M21203",
       "recommended_feature": "M11303_002"
-    }
+    },
+    "banner_type": "limited",
+    "banner_name": "限时UP招募",
+    "banner_badge": "⏳ 限时UP"
   },
   {
     "id": "M11304_000",
@@ -7326,7 +7467,10 @@
       "recommended_character": "M31302",
       "recommended_subclass": "M41301_000",
       "recommended_feature": "M11304"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M11304_001",
@@ -7479,7 +7623,10 @@
       "recommended_character": "M51201",
       "recommended_subclass": "M31302",
       "recommended_feature": "M11304"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M11304",
@@ -7632,7 +7779,10 @@
       "recommended_character": "M31302",
       "recommended_subclass": "M41301_000",
       "recommended_feature": "M11304_000"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M34301_000",
@@ -7785,7 +7935,10 @@
       "recommended_character": "M53301",
       "recommended_subclass": "M14301_000",
       "recommended_feature": "M52301"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M34301",
@@ -7938,7 +8091,10 @@
       "recommended_character": "M13305_000",
       "recommended_subclass": "M12211",
       "recommended_feature": "M52301"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13310",
@@ -8091,7 +8247,10 @@
       "recommended_character": "M14206_002",
       "recommended_subclass": "M54301_000",
       "recommended_feature": "M21301_000"
-    }
+    },
+    "banner_type": "limited",
+    "banner_name": "限时UP招募",
+    "banner_badge": "⏳ 限时UP"
   },
   {
     "id": "M51302_001",
@@ -8244,7 +8403,10 @@
       "recommended_character": "M13207",
       "recommended_subclass": "M23301",
       "recommended_feature": "M14213"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M51302",
@@ -8397,7 +8559,10 @@
       "recommended_character": "M24301",
       "recommended_subclass": "M23204_000",
       "recommended_feature": "M31303_000"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11303_002",
@@ -8550,7 +8715,10 @@
       "recommended_character": "M14206_002",
       "recommended_subclass": "M52301_000",
       "recommended_feature": "M11303"
-    }
+    },
+    "banner_type": "skin_limited",
+    "banner_name": "限时皮肤UP招募",
+    "banner_badge": "👑 限时皮肤"
   },
   {
     "id": "M11303",
@@ -8703,7 +8871,10 @@
       "recommended_character": "M11203",
       "recommended_subclass": "M13306",
       "recommended_feature": "M31301_001"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12205_000",
@@ -8856,7 +9027,10 @@
       "recommended_character": "M13305_000",
       "recommended_subclass": "M12201_000",
       "recommended_feature": "M11301_000"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M12205",
@@ -9009,7 +9183,10 @@
       "recommended_character": "M52301",
       "recommended_subclass": "M12207",
       "recommended_feature": "M22202"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13305_000",
@@ -9162,7 +9339,10 @@
       "recommended_character": "M13305",
       "recommended_subclass": "M12201_000",
       "recommended_feature": "M12205_000"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M13305",
@@ -9315,7 +9495,10 @@
       "recommended_character": "M11206",
       "recommended_subclass": "M13203",
       "recommended_feature": "M11301_000"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12301_001",
@@ -9468,7 +9651,10 @@
       "recommended_character": "M12205",
       "recommended_subclass": "M12207",
       "recommended_feature": "M12202_001"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M12301",
@@ -9621,7 +9807,10 @@
       "recommended_character": "M52301",
       "recommended_subclass": "M12205",
       "recommended_feature": "M12202"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13304_001",
@@ -9774,7 +9963,10 @@
       "recommended_character": "M13201",
       "recommended_subclass": "M23301",
       "recommended_feature": "M22301"
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M13304",
@@ -9927,7 +10119,10 @@
       "recommended_character": "M13201",
       "recommended_subclass": "M12301_001",
       "recommended_feature": "M13304_001"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M21301_000",
@@ -10080,7 +10275,10 @@
       "recommended_character": "M13310",
       "recommended_subclass": "M21205",
       "recommended_feature": "M11303"
-    }
+    },
+    "banner_type": "adventure",
+    "banner_name": "冒险·主线掉落",
+    "banner_badge": "🗺️ 掉落"
   },
   {
     "id": "M21301",
@@ -10233,7 +10431,10 @@
       "recommended_character": "M21201",
       "recommended_subclass": "M14301",
       "recommended_feature": "M11203_000"
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13205",
@@ -10386,7 +10587,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12210",
@@ -10539,7 +10743,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11204",
@@ -10692,7 +10899,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M23202",
@@ -10845,7 +11055,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14202_000",
@@ -10998,7 +11211,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M14202",
@@ -11151,7 +11367,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13201_000",
@@ -11304,7 +11523,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M13201",
@@ -11457,7 +11679,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12207_000",
@@ -11610,7 +11835,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M12207",
@@ -11763,7 +11991,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12204",
@@ -11916,7 +12147,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13206",
@@ -12069,7 +12303,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13203",
@@ -12222,7 +12459,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M21201_002",
@@ -12375,7 +12615,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M21201",
@@ -12528,7 +12771,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M21203",
@@ -12681,7 +12927,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M22201_002",
@@ -12834,7 +13083,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M22201",
@@ -12987,7 +13239,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14206_002",
@@ -13140,7 +13395,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M14206",
@@ -13293,7 +13551,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M41201",
@@ -13446,7 +13707,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11205_001",
@@ -13599,7 +13863,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M11205",
@@ -13752,7 +14019,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14201_001",
@@ -13905,7 +14175,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M14201",
@@ -14058,7 +14331,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14203_000",
@@ -14211,7 +14487,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M14203",
@@ -14364,7 +14643,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13207",
@@ -14517,7 +14799,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M51201_001",
@@ -14670,7 +14955,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M51201",
@@ -14823,7 +15111,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14213",
@@ -14976,7 +15267,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12304",
@@ -15129,7 +15423,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14207",
@@ -15282,7 +15579,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12203",
@@ -15435,7 +15735,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11207",
@@ -15588,7 +15891,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M21204",
@@ -15741,7 +16047,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M23201",
@@ -15894,7 +16203,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M22203",
@@ -16047,7 +16359,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M21205",
@@ -16200,7 +16515,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13210",
@@ -16353,7 +16671,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14204",
@@ -16506,7 +16827,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13105",
@@ -16659,7 +16983,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M21202_000",
@@ -16812,7 +17139,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M21202",
@@ -16965,7 +17295,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11201_000",
@@ -17118,7 +17451,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M11201",
@@ -17271,7 +17607,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12202_001",
@@ -17424,7 +17763,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M12202",
@@ -17577,7 +17919,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M31201",
@@ -17730,7 +18075,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14211",
@@ -17883,7 +18231,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14208",
@@ -18036,7 +18387,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M33101",
@@ -18189,7 +18543,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11203_000",
@@ -18342,7 +18699,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M11203",
@@ -18495,7 +18855,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M23203",
@@ -18648,7 +19011,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11206",
@@ -18801,7 +19167,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11202",
@@ -18954,7 +19323,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11209",
@@ -19107,7 +19479,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14205",
@@ -19260,7 +19635,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11210",
@@ -19413,7 +19791,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12201_000",
@@ -19566,7 +19947,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M12201",
@@ -19719,7 +20103,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M31202",
@@ -19872,7 +20259,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M22202_002",
@@ -20025,7 +20415,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M22202",
@@ -20178,7 +20571,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14210",
@@ -20331,7 +20727,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12208",
@@ -20484,7 +20883,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M23204_000",
@@ -20637,7 +21039,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M23204",
@@ -20790,7 +21195,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13202",
@@ -20943,7 +21351,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13204",
@@ -21096,7 +21507,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11208",
@@ -21249,7 +21663,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M23205",
@@ -21402,7 +21819,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12105",
@@ -21543,7 +21963,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M24101",
@@ -21684,7 +22107,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11105",
@@ -21825,7 +22251,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13102",
@@ -21966,7 +22395,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12104",
@@ -22107,7 +22539,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M32101",
@@ -22248,7 +22683,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11112",
@@ -22389,7 +22827,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12106",
@@ -22530,7 +22971,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13106",
@@ -22671,7 +23115,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14101",
@@ -22812,7 +23259,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11114",
@@ -22953,7 +23403,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11106_002",
@@ -23094,7 +23547,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M11106",
@@ -23235,7 +23691,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12102_002",
@@ -23376,7 +23835,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M12102",
@@ -23517,7 +23979,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M42101",
@@ -23658,7 +24123,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M41101",
@@ -23799,7 +24267,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13103",
@@ -23940,7 +24411,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M21101",
@@ -24081,7 +24555,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11111",
@@ -24222,7 +24699,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11113",
@@ -24363,7 +24843,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M32103",
@@ -24504,7 +24987,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13104_001",
@@ -24645,7 +25131,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M13104",
@@ -24786,7 +25275,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12101_001",
@@ -24927,7 +25419,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M12101",
@@ -25068,7 +25563,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11103_001",
@@ -25209,7 +25707,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M11103",
@@ -25350,7 +25851,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11108",
@@ -25491,7 +25995,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M24102",
@@ -25632,7 +26139,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11115",
@@ -25773,7 +26283,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11110",
@@ -25914,7 +26427,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12103",
@@ -26055,7 +26571,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M43101",
@@ -26196,7 +26715,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13107",
@@ -26337,7 +26859,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11107",
@@ -26478,7 +27003,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14104",
@@ -26619,7 +27147,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11102",
@@ -26760,7 +27291,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11109_001",
@@ -26901,7 +27435,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M11109",
@@ -27042,7 +27579,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11005_001",
@@ -27178,7 +27718,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M11005",
@@ -27314,7 +27857,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12003_001",
@@ -27450,7 +27996,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M12003",
@@ -27586,7 +28135,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11006",
@@ -27722,7 +28274,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14103",
@@ -27858,7 +28413,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M21001",
@@ -27994,7 +28552,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M23001",
@@ -28130,7 +28691,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M24001",
@@ -28266,7 +28830,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11002",
@@ -28402,7 +28969,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12002",
@@ -28538,7 +29108,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11101",
@@ -28674,7 +29247,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11007_002",
@@ -28810,7 +29386,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M11007",
@@ -28946,7 +29525,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12004_002",
@@ -29082,7 +29664,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "skin",
+    "banner_name": "皮肤·异化招募",
+    "banner_badge": "👗 皮肤"
   },
   {
     "id": "M12004",
@@ -29218,7 +29803,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11009",
@@ -29354,7 +29942,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11008",
@@ -29490,7 +30081,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13002",
@@ -29626,7 +30220,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M14102",
@@ -29762,7 +30359,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M12001",
@@ -29898,7 +30498,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11003",
@@ -30034,7 +30637,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M11004",
@@ -30170,7 +30776,10 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   },
   {
     "id": "M13001",
@@ -30306,6 +30915,9 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    }
+    },
+    "banner_type": "standard",
+    "banner_name": "常规招募 (常驻)",
+    "banner_badge": "🔮 常规"
   }
 ]

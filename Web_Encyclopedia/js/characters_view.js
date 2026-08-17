@@ -76,6 +76,7 @@ const CharactersView = {
             ${char.creature_type ? `<span class="tag-badge">🧬 ${this.escapeHtml(char.creature_type)}</span>` : ''}
             ${roleTagsHtml}
             ${char.map_terrain ? `<span class="tag-badge">🗺️ ${this.escapeHtml(char.map_terrain)}</span>` : ''}
+            <span class="tag-badge" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); font-weight: 600;">${this.escapeHtml(char.banner_badge || '🔮 Базовый')}</span>
             ${ownedBadge}
           </div>
 
@@ -348,6 +349,23 @@ const CharactersView = {
             </div>
           ` : ''}
 
+          <!-- Banner & Acquisition Source -->
+          <div class="detail-section">
+            <div class="section-heading">🎪 ${dict.bannerSource || 'Баннер призыва / Источник получения'}</div>
+            <div style="background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: var(--radius-md); padding: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 26px;">${this.getBannerIcon(char.banner_type)}</span>
+                <div>
+                  <div style="font-weight: 700; color: #f3e8ff; font-size: 14px;">${this.escapeHtml(char.banner_name || 'Стандартный призыв (Постоянный пул)')}</div>
+                  <div style="font-size: 12px; color: var(--text-secondary); margin-top: 2px;">${this.getBannerDesc(char.banner_type, currentLang)}</div>
+                </div>
+              </div>
+              <span class="tag-badge" style="background: rgba(168, 85, 247, 0.2); color: #d8b4fe; border: 1px solid rgba(168, 85, 247, 0.4); font-size: 12px; padding: 4px 12px; font-weight: 600;">
+                ${this.escapeHtml(char.banner_badge || '🔮 Базовый')}
+              </span>
+            </div>
+          </div>
+
           <!-- Recommendations -->
           ${char.team_recommendations && Object.values(char.team_recommendations).some(Boolean) ? `
             <div class="detail-section">
@@ -363,6 +381,51 @@ const CharactersView = {
         </div>
       </div>
     `;
+  },
+
+  getBannerIcon(type) {
+    if (type === 'limited') return '⏳';
+    if (type === 'skin_limited') return '👑';
+    if (type === 'skin') return '👗';
+    if (type === 'adventure') return '🗺️';
+    if (type === 'event') return '🎁';
+    return '🔮';
+  },
+
+  getBannerDesc(type, lang = "RU") {
+    const descs = {
+      standard: {
+        RU: "Доступна постоянно в стандартном призыве гильдии (базовый пул).",
+        EN: "Permanently available in the standard guild recruitment pool.",
+        CN: "常驻于公会常规招募卡池，随时可招募。"
+      },
+      limited: {
+        RU: "Лимитированный персонаж! Появляется во время специальных событий с повышенным шансом (Rate-Up).",
+        EN: "Limited character! Available during special Rate-Up event banners.",
+        CN: "限时角色！仅在专属限时UP招募活动期间登场。"
+      },
+      skin: {
+        RU: "Облик / Альтер-форма персонажа. Доступна в постоянном пуле Альтер-найма.",
+        EN: "Skin / Alter form. Available in the permanent Skin & Alter recruitment pool.",
+        CN: "角色皮肤/异化形态。可在常驻皮肤·异化招募卡池中获取。"
+      },
+      skin_limited: {
+        RU: "Эксклюзивный лимитированный облик! Доступен во время сезонных Rate-Up событий.",
+        EN: "Exclusive limited skin! Available during special seasonal skin rate-up events.",
+        CN: "限定专属皮肤！仅在限时皮肤UP招募期间获取。"
+      },
+      adventure: {
+        RU: "Добывается в процессе прохождения глав приключений, сюжета и наград уровней.",
+        EN: "Obtained by progressing through story adventure chapters and stage rewards.",
+        CN: "通过冒险主线关卡推进与首通奖励获取。"
+      },
+      event: {
+        RU: "Награда за участие во временных событиях, фестивалях или в магазине обмена.",
+        EN: "Reward from special limited events, festival challenges, or the event exchange shop.",
+        CN: "通过限时活动挑战、节日庆典或活动商店兑换获取。"
+      }
+    };
+    return (descs[type] && descs[type][lang]) || (descs.standard && descs.standard[lang]) || descs.standard.RU;
   },
 
   getElementClass(element) {

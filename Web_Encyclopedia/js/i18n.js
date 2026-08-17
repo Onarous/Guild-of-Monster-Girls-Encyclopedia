@@ -17,6 +17,7 @@ const I18N = {
       class: "Класс:",
       element: "Стихия:",
       role: "Боевая роль:",
+      banner: "Баннер / Источник:",
       slot: "Слот экипировки:"
     },
     all: "Все",
@@ -53,6 +54,14 @@ const I18N = {
         tank: "🛡️ Танк",
         healer: "💚 Лекарь",
         support: "⚡ Саппорт"
+      },
+      banner: {
+        standard: "🔮 Базовый баннер",
+        limited: "⏳ Лимитированный (Rate-Up)",
+        skin: "👗 Баннер обликов",
+        skin_limited: "👑 Лимит-скин",
+        adventure: "🗺️ Дроп / Сюжет",
+        event: "🎁 События"
       },
       slot: {
         main_hand: "🗡️ Оружие",
@@ -151,6 +160,7 @@ const I18N = {
     signatureRelic: "Сигнатурная реликвия",
     upgradeMaterials: "Материалы возвышения",
     teamRecommendations: "Рекомендации в отряд",
+    bannerSource: "Баннер призыва / Источник получения",
     owned: "В коллекции",
     notOwned: "Не получена",
     level1Stats: "Уровень 1"
@@ -169,6 +179,7 @@ const I18N = {
       class: "Class:",
       element: "Element:",
       role: "Combat Role:",
+      banner: "Summon Banner:",
       slot: "Equipment Slot:"
     },
     all: "All",
@@ -205,6 +216,14 @@ const I18N = {
         tank: "🛡️ Tank",
         healer: "💚 Healer",
         support: "⚡ Support"
+      },
+      banner: {
+        standard: "🔮 Standard Banner",
+        limited: "⏳ Limited Rate-Up",
+        skin: "👗 Skin & Alter",
+        skin_limited: "👑 Limited Skin",
+        adventure: "🗺️ Adventure Drop",
+        event: "🎁 Events"
       },
       slot: {
         main_hand: "🗡️ Main Hand",
@@ -302,6 +321,7 @@ const I18N = {
     signatureRelic: "Signature Relic",
     upgradeMaterials: "Ascension Materials",
     teamRecommendations: "Team Recommendations",
+    bannerSource: "Summon Banner / Acquisition Source",
     owned: "Collected",
     notOwned: "Not Collected",
     level1Stats: "Level 1"
@@ -320,6 +340,7 @@ const I18N = {
       class: "职业:",
       element: "元素属性:",
       role: "战斗定位:",
+      banner: "招募卡池:",
       slot: "装备部位:"
     },
     all: "全部",
@@ -356,6 +377,14 @@ const I18N = {
         tank: "🛡️ 防御 (坦克)",
         healer: "💚 治疗 (奶妈)",
         support: "⚡ 辅助"
+      },
+      banner: {
+        standard: "🔮 常规招募",
+        limited: "⏳ 限时UP招募",
+        skin: "👗 皮肤·异化",
+        skin_limited: "👑 限时皮肤UP",
+        adventure: "🗺️ 冒险主线掉落",
+        event: "🎁 活动兑换"
       },
       slot: {
         main_hand: "🗡️ 主手武器",
@@ -453,9 +482,9 @@ const I18N = {
     signatureRelic: "专属核心信物",
     upgradeMaterials: "突破与晋阶素材",
     teamRecommendations: "阵容推荐搭配",
-    owned: "已拥有",
-    notOwned: "未收集",
-    level1Stats: "1级属性"
+    bannerSource: "招募卡池 / 获取途径",
+    owned: "已获得",
+    notOwned: "未获得",
+    level1Stats: "1级初始"
   }
 };
-
