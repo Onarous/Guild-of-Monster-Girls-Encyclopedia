@@ -73,6 +73,7 @@ const CharactersView = {
           <div class="card-tags">
             <span class="tag-badge ${elemClass}">✨ ${this.escapeHtml(char.element || '')}</span>
             <span class="tag-badge">🛡️ ${this.escapeHtml(char.class || '')}</span>
+            ${char.creature_type ? `<span class="tag-badge">🧬 ${this.escapeHtml(char.creature_type)}</span>` : ''}
             ${roleTagsHtml}
             ${ownedBadge}
           </div>
