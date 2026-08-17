@@ -7,6 +7,7 @@
 const GuidesView = {
   activeSection: 'phases',
   gachaFilter: 'all',
+  eventsFilter: 'all',
 
   setSection(sectionId) {
     this.activeSection = sectionId;
@@ -18,6 +19,14 @@ const GuidesView = {
 
   setGachaFilter(filter) {
     this.gachaFilter = filter;
+    const container = document.getElementById('guidesContainer');
+    if (container) {
+      this.render(container.id, App.state.lang);
+    }
+  },
+
+  setEventsFilter(filter) {
+    this.eventsFilter = filter;
     const container = document.getElementById('guidesContainer');
     if (container) {
       this.render(container.id, App.state.lang);
@@ -38,6 +47,7 @@ const GuidesView = {
       { id: 'damage', icon: '🛡️', title: isRu ? 'Урон, Защита и Баффы' : isCn ? '伤害计算、护盾与增益' : 'Damage Formulas, Shields & Buffs' },
       { id: 'elements', icon: '✨', title: isRu ? 'Стихии, Роли и Отряд' : isCn ? '元素克制、定位与配队' : 'Elements, Roles & Lineup' },
       { id: 'gacha', icon: '🎪', title: isRu ? 'Списки найма и Баннеры' : isCn ? '招募卡池与掉落列表' : 'Recruit Pools & Gacha Lists' },
+      { id: 'events', icon: '🎁', title: isRu ? 'Список игровых событий' : isCn ? '活动与限时事件列表' : 'Game Events & Activities' },
       { id: 'sync', icon: '📲', title: isRu ? 'Гайд по синхронизации' : isCn ? '账号同步与数据导出' : 'Account Sync & Export Guide' },
       { id: 'translation', icon: '⚠️', title: isRu ? 'Ошибки перевода игры' : isCn ? '游戏翻译勘误与说明' : 'Translation & Skill Fixes' }
     ];
@@ -82,6 +92,8 @@ const GuidesView = {
         return isRu ? this.getElementsRU() : isCn ? this.getElementsCN() : this.getElementsEN();
       case 'gacha':
         return this.getGachaContent(lang);
+      case 'events':
+        return this.getEventsContent(lang);
       case 'sync':
         return isRu ? this.getSyncRU() : isCn ? this.getSyncCN() : this.getSyncEN();
       case 'translation':
@@ -656,7 +668,298 @@ const GuidesView = {
     `;
   },
 
-  // 6. Sync & Account Extraction
+  // 6. Game Events & Activities List
+  getEventsContent(lang = "RU") {
+    const isRu = lang === 'RU';
+    const isCn = lang === 'CN';
+    const charMap = {};
+    (App.state.data.characters[lang] || []).forEach(c => { charMap[c.id] = c; });
+    const imgMap = App.state.imageMappings?.characters || {};
+
+    const eventsData = [
+      {
+        id: "activity_1",
+        code: "HD00001",
+        icon: "🎁",
+        name: isRu ? "Бонус первого набора" : isCn ? "首充赠礼" : "First Pack Bonus",
+        type: isRu ? "Бессрочно" : isCn ? "永久" : "Permanent",
+        typeCategory: "permanent",
+        start: "",
+        end: "",
+        rewardRole: null,
+        desc: isRu ? "Совершите любую первую покупку в гильдии и получайте щедрые наборы наград в течение 3 дней!" : isCn ? "任意充值即可连续领取三天超值好礼！" : "Make any first purchase and claim valuable rewards for 3 days!"
+      },
+      {
+        id: "activity_2",
+        code: "HD00002",
+        icon: "📅",
+        name: isRu ? "Ежедневный вход" : isCn ? "每日签到" : "Daily Check-In",
+        type: isRu ? "Бессрочно" : isCn ? "永久" : "Permanent",
+        typeCategory: "permanent",
+        start: "",
+        end: "",
+        rewardRole: null,
+        desc: isRu ? "Заходите в игру каждый день и получайте кристаллы, свитки призыва и ресурсы развития гильдии!" : isCn ? "每日登录公会即可领取专属福利与召唤卷轴！" : "Log in daily to claim crystals, summon scrolls, and growth resources!"
+      },
+      {
+        id: "activity_3",
+        code: "HD00003",
+        icon: "⚔️",
+        name: isRu ? "Гайд по данным (Боевой пропуск)" : isCn ? "情报指南 (战令)" : "Intel Guide (Battle Pass)",
+        type: isRu ? "Боевой пропуск" : isCn ? "战令" : "Battle Pass",
+        typeCategory: "limited",
+        start: "2026/08/12 21:00",
+        end: "2026/09/23 21:00",
+        rewardRole: "M11304_001",
+        desc: isRu ? "Выполняйте задания боевого пропуска и разблокируйте эксклюзивную героиню ранга S — Альтер Святую саблю!" : isCn ? "购买解锁进阶指南，即可获取专属异化圣剑之灵角色与丰厚奖励！" : "Complete battle pass quests to unlock the exclusive S-tier Alter Holy Blade heroine!"
+      },
+      {
+        id: "activity_4",
+        code: "HD00004",
+        icon: "🎯",
+        name: isRu ? "7-дневное задание новичка" : isCn ? "七日挑战" : "7-Day Quest",
+        type: isRu ? "Для новичков" : isCn ? "新手" : "Novice",
+        typeCategory: "permanent",
+        start: "",
+        end: "",
+        rewardRole: "M11005_001",
+        desc: isRu ? "Завершите цепочку 7-дневных миссий и бесплатно получите Пчелу-воительницу и ценные ресурсы прокачки." : isCn ? "完成七日新手系列任务，免费领取黄蜂魔女与大量养成资源。" : "Complete the 7-day novice mission series to receive the Bee Warrior heroine and upgrade resources for free."
+      },
+      {
+        id: "activity_5",
+        code: "HD00005",
+        icon: "❄️",
+        name: isRu ? "Исекай-рейд: Вторжение из другого мира" : isCn ? "异界入侵" : "Isekai Raid: Otherworld Invasion",
+        type: isRu ? "Рейд / Лимит" : isCn ? "限时副本" : "Raid / Limited",
+        typeCategory: "limited",
+        start: "2026/08/12 21:00",
+        end: "2026/09/23 21:00",
+        rewardRole: null,
+        desc: isRu ? "Сражайтесь с рейдовыми боссами из другого мира, собирайте Исекай-кристаллы льда и обменивайте их в Магазине ивента на легендарную экипировку и реликвии!" : isCn ? "挑战异界入侵首领，收集异界冰晶，在专属异界商店中兑换顶级装备与强力信物！" : "Battle otherworld raid bosses, collect Isekai Ice Crystals, and exchange them in the event shop for top-tier gear and relics!"
+      },
+      {
+        id: "activity_6",
+        code: "HD00006",
+        icon: "🏆",
+        name: isRu ? "Исекай-испытание" : isCn ? "异界挑战" : "Isekai Challenge",
+        type: isRu ? "Лимит" : isCn ? "限时" : "Limited",
+        typeCategory: "limited",
+        start: "2026/08/12 21:00",
+        end: "2026/09/23 21:00",
+        rewardRole: null,
+        desc: isRu ? "Проходите сложные этапы испытаний с модификаторами и получайте редкие сундуки и алмазы." : isCn ? "挑战高难度异界关卡，达成通关目标获取珍稀宝箱与钻石。" : "Conquer high-difficulty challenge stages with special battle modifiers to earn rare chests and diamonds."
+      },
+      {
+        id: "activity_7",
+        code: "HD00007",
+        icon: "👑",
+        name: isRu ? "Испытание на вершине (Рейтинг арены)" : isCn ? "巅峰赛" : "Peak Challenge (Arena Championship)",
+        type: isRu ? "Лимит / PvP" : isCn ? "巅峰竞技" : "Peak PvP",
+        typeCategory: "limited",
+        start: "2026/08/19 21:00",
+        end: "2026/09/02 21:00",
+        rewardRole: "GH20014_001",
+        desc: isRu ? "Сражайтесь за высшие места в рейтинге гильдий и разблокируйте эксклюзивный облик Хозяйки гильдии и коллекционный декор!" : isCn ? "公会跨服竞技角逐，冲榜解锁专属公会会长皮肤与珍藏装饰！" : "Climb the guild rankings in cross-server arena battles to unlock the exclusive Guildmaster Skin and collector decor!"
+      },
+      {
+        id: "activity_8",
+        code: "HD00008",
+        icon: "📖",
+        name: isRu ? "Усиление новичка" : isCn ? "新手助力" : "Starter Boost",
+        type: isRu ? "Бессрочно" : isCn ? "永久" : "Permanent",
+        typeCategory: "permanent",
+        start: "",
+        end: "",
+        rewardRole: null,
+        desc: isRu ? "Повышайте уровень Кодекса гильдии и забирайте награды за каждые 5 уровней прогресса." : isCn ? "提升图鉴等级，每达成指定里程碑即可领取海量奖励。" : "Level up your guild codex to claim progression milestone rewards every 5 levels."
+      },
+      {
+        id: "activity_9",
+        code: "HD00009",
+        icon: "⚙️",
+        name: isRu ? "Заводной тайник" : isCn ? "机巧秘宝" : "Clockwork Trove",
+        type: isRu ? "Лимит / Рулетка" : isCn ? "限时抽奖" : "Clockwork Lottery",
+        typeCategory: "limited",
+        start: "2026/08/26 21:00",
+        end: "2026/09/09 21:00",
+        rewardRole: null,
+        desc: isRu ? "Тратьте заводные шестеренки в секретном автомате гильдии для выбивания супер-призов и рун." : isCn ? "消耗机巧齿轮开启神秘机巧宝箱，赢取限定大奖与顶级符文。" : "Spend clockwork gears to spin the guild treasure machine for exclusive grand prizes and high-tier runes."
+      },
+      {
+        id: "activity_10",
+        code: "HD00010",
+        icon: "🏰",
+        name: isRu ? "Преображение гильдии" : isCn ? "公会翻新" : "Guild Makeover",
+        type: isRu ? "Лимит" : isCn ? "限时" : "Limited",
+        typeCategory: "limited",
+        start: "2026/09/09 21:00",
+        end: "2026/09/23 21:00",
+        rewardRole: null,
+        desc: isRu ? "Отмечайтесь и собирайте стройматериалы, чтобы украсить главное здание гильдии новым тематическим стилем!" : isCn ? "每日签到收集翻新材料，为公会大厅换上全新华丽装潢！" : "Check in and gather renovation materials to unlock stunning new visual themes for the guild hall!"
+      },
+      {
+        id: "activity_11",
+        code: "HD00011",
+        icon: "🏖️",
+        name: isRu ? "Прохладный отдых (Летний фестиваль)" : isCn ? "清凉假日 (夏日祭)" : "Cool Getaway (Summer Festival)",
+        type: isRu ? "Сезонный" : isCn ? "夏日限定" : "Seasonal",
+        typeCategory: "seasonal",
+        start: "2026/04/29 21:00",
+        end: "2026/05/06 21:00",
+        rewardRole: null,
+        desc: isRu ? "Отмечайтесь 3 дня подряд, чтобы получить пляжный купальник для героини и праздничные коктейли." : isCn ? "签到三天即可免费领取泳装魔物娘体验与专属清凉礼包！" : "Check in 3 days to receive the summer swimsuit heroine skin and festive beach treats!"
+      },
+      {
+        id: "activity_12",
+        code: "HD00012",
+        icon: "🌿",
+        name: isRu ? "7-дневное испытание: Альтер Ведьма земли" : isCn ? "七日挑战·大地魔女异化" : "7-Day Challenge: Alter Earth Witch",
+        type: isRu ? "Лимит" : isCn ? "限时" : "Limited",
+        typeCategory: "limited",
+        start: "2026/05/13 21:00",
+        end: "2026/07/01 21:00",
+        rewardRole: "M13303_001",
+        desc: isRu ? "Выполняйте задания специального фестиваля и бесплатно получите героиню ранга S — Альтер Ведьму земли!" : isCn ? "完成限时专属挑战任务，免费获取S阶强力角色【大地魔女·异化】！" : "Complete featured challenge quests to claim the S-tier Alter Earth Witch heroine for free!"
+      },
+      {
+        id: "activity_13",
+        code: "HD00013",
+        icon: "💬",
+        name: isRu ? "Бонус сообщества игроков" : isCn ? "玩家社群福利" : "Community Bonus",
+        type: isRu ? "Бессрочно" : isCn ? "永久" : "Permanent",
+        typeCategory: "permanent",
+        start: "",
+        end: "",
+        rewardRole: null,
+        desc: isRu ? "Присоединяйтесь к официальному сообществу гильдии и мгновенно получайте подарочный набор кристаллов." : isCn ? "加入官方玩家社群，立领100钻石福利礼包！" : "Join the official community channels to claim an instant bonus pack of gems!"
+      },
+      {
+        id: "activity_14",
+        code: "HD00014",
+        icon: "🛶",
+        name: isRu ? "Праздник драконьих лодок" : isCn ? "端午安康" : "Dragon Boat Festival",
+        type: isRu ? "Сезонный" : isCn ? "节日" : "Seasonal",
+        typeCategory: "seasonal",
+        start: "2026/06/17 21:00",
+        end: "2026/06/24 21:00",
+        rewardRole: null,
+        desc: isRu ? "Праздничный вход в течение 3 дней с выдачей подарочных мешков цзунцзы с редкими ресурсами." : isCn ? "端午签到三日领取传统粽子福袋，开启获得稀有道具！" : "Check in 3 days during the festival to claim traditional Zongzi gift bags packed with rare materials!"
+      },
+      {
+        id: "activity_15",
+        code: "HD00015",
+        icon: "🍎",
+        name: isRu ? "Щедрый урожай (Дроп талантов x2)" : isCn ? "果实丰收 (天赋果实双倍)" : "Bountiful Harvest (2x Fruit Drop)",
+        type: isRu ? "Лимит / Бонус" : isCn ? "双倍掉落" : "Double Drop",
+        typeCategory: "seasonal",
+        start: "2026/08/12 21:00",
+        end: "2026/08/19 21:00",
+        rewardRole: null,
+        desc: isRu ? "Во время события шанс выпадения Плодов таланта во всех режимах гильдии удваивается!" : isCn ? "活动期间所有副本中天赋果实的掉落概率翻倍！" : "Talent Fruit drop rate is doubled across all dungeon stages during the event period!"
+      },
+      {
+        id: "activity_16",
+        code: "HD00016",
+        icon: "🌱",
+        name: isRu ? "Рост плодов (Выходные дни)" : isCn ? "果实培育 (周末福利)" : "Fruit Cultivation (Weekend Event)",
+        type: isRu ? "Бессрочно / Выходные" : isCn ? "周末" : "Weekend",
+        typeCategory: "permanent",
+        start: "",
+        end: "",
+        rewardRole: null,
+        desc: isRu ? "Входите в игру 3 дня подряд в пятницу, субботу и воскресенье для получения гарантированных Плодов таланта." : isCn ? "每周五至周日连续登录，即可领取珍贵的天赋果实！" : "Log in 3 consecutive days over the weekend to claim guaranteed Talent Fruits."
+      }
+    ];
+
+    const f = this.eventsFilter;
+    const filteredEvents = eventsData.filter(ev => {
+      if (f === 'limited') return ev.typeCategory === 'limited';
+      if (f === 'permanent') return ev.typeCategory === 'permanent';
+      if (f === 'seasonal') return ev.typeCategory === 'seasonal';
+      return true;
+    });
+
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">🎁 ${isRu ? 'Список игровых событий и активностей' : isCn ? '游戏活动与限时事件全览' : 'Game Events & Activities List'}</h2>
+        <p class="guide-lead">
+          ${isRu 
+            ? 'Полный справочник всех постоянных, лимитированных и сезонных событий Guild of Monster Girls с условиями участия, датами и уникальными наградами.' 
+            : isCn 
+            ? '《魔物娘公会》全量常驻、限时与节日活动一览表，包含开启时间、参与机制与专属限定奖励。' 
+            : 'Complete overview of all permanent, limited, and seasonal events in Guild of Monster Girls, with dates, mechanics, and featured rewards.'}
+        </p>
+
+        <!-- Event Filter Buttons -->
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
+          <button class="filter-pill ${f === 'all' ? 'active' : ''}" onclick="GuidesView.setEventsFilter('all')">
+            🌐 ${isRu ? 'Все события (16)' : isCn ? '全部活动 (16)' : 'All Events (16)'}
+          </button>
+          <button class="filter-pill ${f === 'limited' ? 'active' : ''}" onclick="GuidesView.setEventsFilter('limited')">
+            🔥 ${isRu ? 'Рейды и Лимиты' : isCn ? '限时与异界副本' : 'Raids & Limited'}
+          </button>
+          <button class="filter-pill ${f === 'permanent' ? 'active' : ''}" onclick="GuidesView.setEventsFilter('permanent')">
+            ♾️ ${isRu ? 'Постоянные' : isCn ? '常驻与新手' : 'Permanent'}
+          </button>
+          <button class="filter-pill ${f === 'seasonal' ? 'active' : ''}" onclick="GuidesView.setEventsFilter('seasonal')">
+            🎉 ${isRu ? 'Праздники и Бонусы' : isCn ? '节日与双倍' : 'Festivals & Bonuses'}
+          </button>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px;">
+          ${filteredEvents.map(ev => {
+            const rewardChar = ev.rewardRole ? charMap[ev.rewardRole] : null;
+            const rewardImg = rewardChar ? (imgMap[rewardChar.id] || imgMap[rewardChar.key] || `assets/img/characters/${rewardChar.id}_1__single_part1_1@1.png`) : null;
+
+            return `
+              <div class="guide-card" style="display: flex; flex-direction: column; justify-content: space-between; border-left: 3px solid #8b5cf6; padding: 16px 20px;">
+                <div>
+                  <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 8px;">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                      <span style="font-size: 22px;">${ev.icon}</span>
+                      <div>
+                        <strong style="color: #f3e8ff; font-size: 15px;">${ev.name}</strong>
+                        <div style="font-family: monospace; font-size: 11px; color: var(--text-muted);">${ev.code}</div>
+                      </div>
+                    </div>
+                    <span class="badge-accent" style="white-space: nowrap;">${ev.type}</span>
+                  </div>
+
+                  ${ev.start ? `
+                    <div style="font-size: 12px; color: #38bdf8; margin-bottom: 8px; display: flex; align-items: center; gap: 4px;">
+                      <span>⏳</span>
+                      <span>${ev.start} — ${ev.end}</span>
+                    </div>
+                  ` : `
+                    <div style="font-size: 12px; color: #34d399; margin-bottom: 8px; display: flex; align-items: center; gap: 4px;">
+                      <span>♾️</span>
+                      <span>${isRu ? 'Постоянная активность' : isCn ? '永久开放' : 'Permanent Activity'}</span>
+                    </div>
+                  `}
+
+                  <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+                    ${ev.desc}
+                  </p>
+                </div>
+
+                ${rewardChar ? `
+                  <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between;">
+                    <span style="font-size: 12px; color: var(--text-muted);">${isRu ? 'Награда:' : isCn ? '专属奖励:' : 'Reward:'}</span>
+                    <button class="filter-pill active" onclick="App.openCharacterModal('${rewardChar.id}')" style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; font-size: 12px; border-radius: 6px;" title="${isRu ? 'Открыть карточку персонажа' : isCn ? '查看角色详情' : 'View character'}">
+                      <img src="${rewardImg}" alt="${rewardChar.name}" style="width: 20px; height: 20px; border-radius: 4px; object-fit: cover;" onerror="this.style.display='none'">
+                      <span>⭐ ${rewardChar.name}</span>
+                    </button>
+                  </div>
+                ` : ''}
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+  },
+
+  // 7. Sync & Account Extraction
   getSyncRU() {
     return `
       <div class="guide-article">
