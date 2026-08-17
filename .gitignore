@@ -1,0 +1,19 @@
+# Python byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Raw assets archive (animation frames not used on website)
+raw_assets_archive/
+
+# Environments & IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+*.tmp
+

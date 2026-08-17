@@ -1,0 +1,9 @@
+{
+  "auth_token": "",
+  "language": "ru",
+  "proxy_url": "http://127.0.0.1:8000",
+  "api_base": "https://api.monster-girls-guild.chillyroom.com",
+  "game_version": "1.2.0",
+  "sdk_version": "1.19.20.0",
+  "app_version": "1.0.2.0"
+}
