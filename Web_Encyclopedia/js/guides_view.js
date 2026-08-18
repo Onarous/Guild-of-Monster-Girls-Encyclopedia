@@ -766,13 +766,19 @@ const GuidesView = {
           <!-- Limited Banners Section -->
           <div class="guide-card">
             <h3>🔥 ${isRu ? 'Лимитированные Rate-Up баннеры (Limited Event Banners)' : isCn ? '限时UP专属招募活动' : 'Limited Rate-Up Event Banners'}</h3>
-            <p style="font-size: 13.5px; color: var(--text-secondary);">
+            <p style="font-size: 13.5px; color: var(--text-secondary); margin-bottom: 16px;">
               ${isRu 
-                ? 'Эксклюзивные героини, доступные только во время действия специальных сезонных событий. Имеют гарантированный повышенный шанс призыва.' 
+                ? 'Эксклюзивные героини и облики, доступные только во время действия специальных сезонных событий. Имеют гарантированный повышенный шанс призыва.' 
                 : isCn 
-                ? '限时登场的专属强力角色，仅在对应活动UP期间可抽取。' 
-                : 'Exclusive heroines available only during active event periods with featured drop rate guarantees.'}
+                ? '限时登场的专属强力角色与皮肤，仅在对应活动UP期间可抽取。' 
+                : 'Exclusive heroines and skins available only during active event periods with featured drop rate guarantees.'}
             </p>
+
+            ${typeof LiveTimers !== 'undefined' ? LiveTimers.renderBannerCards(lang) : ''}
+
+            <h4 style="margin-top: 20px; font-size: 14px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
+              📋 ${isRu ? 'Список лимитированных персонажей' : isCn ? '限时卡池角色表' : 'Limited Characters Drop List'}
+            </h4>
             ${this.renderGachaTable(limitedChars, lang)}
           </div>
         ` : ''}
@@ -1135,9 +1141,22 @@ const GuidesView = {
                   </div>
 
                   ${ev.start ? `
-                    <div style="font-size: 12px; color: #38bdf8; margin-bottom: 8px; display: flex; align-items: center; gap: 4px;">
-                      <span>⏳</span>
-                      <span>${ev.start} — ${ev.end}</span>
+                    <div style="margin-bottom: 10px;">
+                      <div style="font-size: 12px; color: #38bdf8; margin-bottom: 6px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px;">
+                        <span>📅 ${ev.start.slice(0, 10)} — ${ev.end.slice(0, 10)}</span>
+                        ${typeof LiveTimers !== 'undefined' ? LiveTimers.formatBadge(ev.start, ev.end, lang) : ''}
+                      </div>
+                      ${typeof LiveTimers !== 'undefined' ? (() => {
+                        const state = LiveTimers.getCountdownState(ev.start, ev.end);
+                        if (state.status === 'active') {
+                          return `
+                            <div class="live-timer-progress-track" style="margin-top: 4px;" data-timer-start="${ev.start}" data-timer-end="${ev.end}">
+                              <div class="live-timer-progress-fill" style="width: ${state.percent.toFixed(1)}%;"></div>
+                            </div>
+                          `;
+                        }
+                        return '';
+                      })() : ''}
                     </div>
                   ` : `
                     <div style="font-size: 12px; color: #34d399; margin-bottom: 8px; display: flex; align-items: center; gap: 4px;">

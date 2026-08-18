@@ -370,9 +370,21 @@ const CharactersView = {
                   <div style="font-size: 12px; color: var(--text-secondary); margin-top: 2px;">${this.getBannerDesc(char.banner_type, currentLang)}</div>
                 </div>
               </div>
-              <span class="tag-badge" style="background: rgba(168, 85, 247, 0.2); color: #d8b4fe; border: 1px solid rgba(168, 85, 247, 0.4); font-size: 12px; padding: 4px 12px; font-weight: 600;">
-                ${this.escapeHtml(char.banner_badge || '🔮 Базовый')}
-              </span>
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                ${(() => {
+                  if (typeof LiveTimers !== 'undefined') {
+                    if (char.id === 'M13307') return LiveTimers.formatBadge('2026/08/13 21:00:00', '2026/09/24 21:00:00', currentLang);
+                    if (char.id === 'M13307_000') return LiveTimers.formatBadge('2026/08/13 21:00:00', '2026/09/03 21:00:00', currentLang);
+                    if (char.id === 'M12303_000') return LiveTimers.formatBadge('2026/09/03 21:00:00', '2026/09/24 21:00:00', currentLang);
+                    if (char.id === 'M13310') return LiveTimers.formatBadge('2026/07/02 21:00:00', '2026/08/13 21:00:00', currentLang);
+                    if (char.id === 'M11304_001') return LiveTimers.formatBadge('2026/08/12 21:00:00', '2026/09/23 21:00:00', currentLang);
+                  }
+                  return '';
+                })()}
+                <span class="tag-badge" style="background: rgba(168, 85, 247, 0.2); color: #d8b4fe; border: 1px solid rgba(168, 85, 247, 0.4); font-size: 12px; padding: 4px 12px; font-weight: 600;">
+                  ${this.escapeHtml(char.banner_badge || '🔮 Базовый')}
+                </span>
+              </div>
             </div>
           </div>
 

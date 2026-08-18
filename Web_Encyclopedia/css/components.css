@@ -3358,4 +3358,369 @@
   font-weight: 700 !important;
 }
 
+/* ==========================================================================
+   Live Timers, Banner Cards & Event Ticker Styles
+   ========================================================================== */
+
+/* Top Live Ticker Bar */
+.live-ticker-container {
+  margin-bottom: 16px;
+}
+
+.live-ticker-bar {
+  background: linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 27, 75, 0.9) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.28);
+  border-radius: var(--radius-md);
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.live-ticker-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.live-ticker-pulse {
+  color: #ef4444;
+  font-size: 14px;
+  animation: live-pulse-glow 1.4s infinite ease-in-out;
+}
+
+@keyframes live-pulse-glow {
+  0%, 100% { opacity: 1; transform: scale(1); filter: drop-shadow(0 0 4px #ef4444); }
+  50% { opacity: 0.4; transform: scale(0.85); filter: drop-shadow(0 0 1px #ef4444); }
+}
+
+.live-ticker-title {
+  font-family: var(--font-title), sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  color: #f3e8ff;
+  white-space: nowrap;
+  letter-spacing: 0.4px;
+}
+
+.live-ticker-scroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 2px 0;
+  flex: 1;
+}
+
+.live-ticker-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.live-ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  font-size: 12px;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.live-ticker-item:hover {
+  background: rgba(168, 85, 247, 0.15);
+  border-color: #a855f7;
+  transform: translateY(-1px);
+}
+
+.live-ticker-item.active {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.live-ticker-item.upcoming {
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+.ticker-item-icon { font-size: 14px; }
+.ticker-item-name { font-weight: 700; color: #f8fafc; }
+
+.ticker-item-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: monospace;
+  font-size: 11.5px;
+  color: #facc15;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.ticker-item-timer .timer-prefix {
+  color: var(--text-muted);
+  font-size: 10.5px;
+}
+
+.ticker-item-timer.ended {
+  color: var(--text-muted);
+}
+
+/* Live Timer Badges */
+.live-timer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.live-timer-badge.status-active {
+  background: rgba(239, 68, 68, 0.12);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.live-timer-badge.status-active .live-timer-digits {
+  color: #fef08a;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.live-timer-badge.status-upcoming {
+  background: rgba(56, 189, 248, 0.12);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+.live-timer-badge.status-upcoming .live-timer-digits {
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.live-timer-badge.status-permanent {
+  background: rgba(16, 185, 129, 0.12);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.live-timer-badge.status-ended {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Progress Track for Live Durations */
+.live-timer-progress-track {
+  width: 100%;
+  height: 5px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.live-timer-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981 0%, #f59e0b 70%, #ef4444 100%);
+  border-radius: var(--radius-full);
+  transition: width 1s linear;
+}
+
+/* Live Banner Cards in GuidesView */
+.live-banner-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.live-banner-card {
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 27, 75, 0.6) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease;
+}
+
+.live-banner-card:hover {
+  border-color: #c084fc;
+  box-shadow: 0 6px 24px rgba(168, 85, 247, 0.25);
+  transform: translateY(-2px);
+}
+
+.live-banner-card.active {
+  border-color: rgba(245, 158, 11, 0.5);
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.15);
+}
+
+.live-banner-card.upcoming {
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.banner-card-top {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.banner-avatar-box {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #090d16;
+  border: 2px solid rgba(168, 85, 247, 0.4);
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-avatar-icon {
+  font-size: 26px;
+  position: absolute;
+}
+
+.banner-info-area {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.banner-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.banner-tag-badge {
+  font-size: 10px;
+  font-weight: 800;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  padding: 1px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.banner-status-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.banner-status-badge.status-active {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.15);
+}
+
+.banner-status-badge.status-upcoming {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.15);
+}
+
+.banner-status-badge.status-ended {
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.banner-card-title {
+  font-family: var(--font-title), sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.banner-card-sub {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+
+/* Banner Timer Box */
+.banner-timer-box {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timer-box-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.timer-box-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.timer-dates-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+.banner-view-btn {
+  width: 100%;
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  color: #e9d5ff;
+  border-radius: var(--radius-sm);
+  padding: 7px 12px;
+  font-size: 12.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.banner-view-btn:hover {
+  background: #9333ea;
+  color: #ffffff;
+  border-color: #a855f7;
+  transform: translateY(-1px);
+}
+
+
 

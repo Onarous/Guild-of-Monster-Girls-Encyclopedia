@@ -59,6 +59,12 @@ const App = {
     await this.loadDatasets(this.state.lang);
     this.updateLanguageUI();
 
+    // Start live banner and event timers
+    if (typeof LiveTimers !== 'undefined') {
+      LiveTimers.start();
+      LiveTimers.renderTicker('liveTickerContainer', this.state.lang);
+    }
+
     // Initial route handling
     this.handleRoute(true);
 
@@ -533,6 +539,10 @@ const App = {
       this.updateLanguageUI();
       this.updateTabUI(this.state.activeTab);
       this.render();
+
+      if (typeof LiveTimers !== 'undefined') {
+        LiveTimers.renderTicker('liveTickerContainer', lang);
+      }
 
       // If contacts modal is open, re-render it in the new language
       const modal = document.getElementById('detailModal');
