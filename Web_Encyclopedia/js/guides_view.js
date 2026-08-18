@@ -1744,7 +1744,7 @@ const GuidesView = {
         </div>
       </div>
     `;
-  }
+  },
 
   // 9. External Resources & Wikis
   getResourcesContent(lang = "RU") {
@@ -1863,3 +1863,8 @@ const GuidesView = {
     `;
   }
 };
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = GuidesView;
+}
+
