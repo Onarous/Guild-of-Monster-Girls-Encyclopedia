@@ -13,28 +13,34 @@ const GuidesView = {
   codesFilter: 'all',
 
   toggleNavMobile(e) {
-    if (e) e.stopPropagation();
+    if (e) {
+      e.stopPropagation();
+      e.preventDefault();
+    }
     this.isNavCollapsedMobile = !this.isNavCollapsedMobile;
     const sidebar = document.querySelector('.guides-sidebar');
     if (sidebar) {
-      sidebar.classList.toggle('nav-collapsed', this.isNavCollapsedMobile);
+      if (this.isNavCollapsedMobile) {
+        sidebar.classList.add('nav-collapsed');
+      } else {
+        sidebar.classList.remove('nav-collapsed');
+      }
       const toggleText = sidebar.querySelector('.guides-toggle-text');
-      const toggleChevron = sidebar.querySelector('.guides-toggle-chevron');
       const isRu = App.state.lang === 'RU';
       const isCn = App.state.lang === 'CN';
       if (toggleText) {
         toggleText.textContent = this.isNavCollapsedMobile 
-          ? (isRu ? 'Развернуть' : isCn ? '展开' : 'Expand') 
-          : (isRu ? 'Скрыть' : isCn ? '收起' : 'Hide');
-      }
-      if (toggleChevron) {
-        toggleChevron.textContent = this.isNavCollapsedMobile ? '▼' : '▲';
+          ? (isRu ? 'Развернуть ▾' : isCn ? '展开 ▾' : 'Expand ▾') 
+          : (isRu ? 'Скрыть ▴' : isCn ? '收起 ▴' : 'Hide ▴');
       }
     }
   },
 
   setSection(sectionId) {
     this.activeSection = sectionId;
+    if (window.innerWidth <= 900) {
+      this.isNavCollapsedMobile = true;
+    }
     const container = document.getElementById('guidesContainer');
     if (container) {
       this.render(container.id, App.state.lang);
@@ -133,19 +139,24 @@ const GuidesView = {
         <aside class="guides-sidebar ${this.isNavCollapsedMobile ? 'nav-collapsed' : ''}">
           <div class="guides-sidebar-header" onclick="GuidesView.toggleNavMobile(event)">
             <div class="guides-sidebar-title">
-              <span>📚 ${isRu ? 'Оглавление' : isCn ? '攻略目录' : 'Knowledge Base'}</span>
-              <span class="guides-active-chapter-pill">${activeItem.icon} ${activeItem.title}</span>
+              <span style="font-size: 16px;">📚</span>
+              <span class="guides-toc-label">${isRu ? 'Оглавление' : isCn ? '攻略目录' : 'Knowledge Base'}</span>
+              <span class="guides-active-chapter-pill">
+                <span>${activeItem.icon}</span>
+                <span class="guides-pill-text">${activeItem.title}</span>
+              </span>
             </div>
             <button class="guides-toggle-btn" type="button" onclick="GuidesView.toggleNavMobile(event)" aria-label="Скрыть/показать оглавление">
-              <span class="guides-toggle-text">${this.isNavCollapsedMobile ? (isRu ? 'Развернуть' : isCn ? '展开' : 'Expand') : (isRu ? 'Скрыть' : isCn ? '收起' : 'Hide')}</span>
-              <span class="guides-toggle-chevron">${this.isNavCollapsedMobile ? '▼' : '▲'}</span>
+              <span class="guides-toggle-text">${this.isNavCollapsedMobile ? (isRu ? 'Развернуть ▾' : isCn ? '展开 ▾' : 'Expand ▾') : (isRu ? 'Скрыть ▴' : isCn ? '收起 ▴' : 'Hide ▴')}</span>
             </button>
           </div>
           <div class="guides-nav-list">
-            ${menuItems.map(item => `
+            ${menuItems.map((item, idx) => `
               <button class="guide-nav-btn ${this.activeSection === item.id ? 'active' : ''}" onclick="GuidesView.setSection('${item.id}')">
+                <span class="guide-nav-num">${idx + 1}</span>
                 <span class="guide-nav-icon">${item.icon}</span>
                 <span class="guide-nav-text">${item.title}</span>
+                ${this.activeSection === item.id ? '<span class="guide-nav-active-mark">●</span>' : ''}
               </button>
             `).join('')}
           </div>
