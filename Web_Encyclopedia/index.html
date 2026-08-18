@@ -12,7 +12,7 @@
   <!-- App Header -->
   <header class="app-header">
     <div class="header-container">
-      <div class="logo-area">
+      <div class="logo-area" onclick="App.setTab('characters')" style="cursor: pointer;">
         <div class="logo-icon">🐉</div>
         <div class="logo-text">
           <h1 id="appTitle">Guild of Monster Girls</h1>
@@ -20,8 +20,8 @@
         </div>
       </div>
 
-      <!-- Navigation Tabs -->
-      <nav class="nav-tabs">
+      <!-- Desktop Navigation Tabs -->
+      <nav class="nav-tabs" aria-label="Desktop Navigation">
         <button class="nav-tab-btn active" data-tab="characters" onclick="App.setTab('characters')" id="tabCharacters">
           👥 Персонажи (204)
         </button>
@@ -39,14 +39,84 @@
         </button>
       </nav>
 
-      <!-- Language Selector -->
-      <div class="lang-selector">
+      <!-- Desktop Language Selector -->
+      <div class="lang-selector" aria-label="Desktop Language Selector">
         <button class="lang-btn active" data-lang="RU" onclick="App.setLanguage('RU')">🇷🇺 RU</button>
         <button class="lang-btn" data-lang="EN" onclick="App.setLanguage('EN')">🇬🇧 EN</button>
         <button class="lang-btn" data-lang="CN" onclick="App.setLanguage('CN')">🇨🇳 CN</button>
       </div>
+
+      <!-- Mobile Hamburger Menu Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="App.toggleMobileDrawer()" aria-label="Toggle navigation menu" title="Меню">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop" onclick="App.closeMobileDrawer()"></div>
+
+  <!-- Mobile Slide-out Drawer Menu -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <div class="drawer-logo-area">
+        <div class="logo-icon">🐉</div>
+        <div class="drawer-title-box">
+          <div class="drawer-app-title" id="drawerAppTitle">GMG Encyclopedia</div>
+          <div class="drawer-app-subtitle" id="drawerAppSubtitle">v2026.1 Wiki</div>
+        </div>
+      </div>
+      <button class="drawer-close-btn" id="drawerCloseBtn" onclick="App.closeMobileDrawer()" aria-label="Закрыть меню">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Sections Section -->
+      <div class="drawer-section-title" id="drawerNavTitle">Разделы</div>
+      <nav class="drawer-nav-list">
+        <button class="drawer-nav-item active" data-tab="characters" onclick="App.setTabFromDrawer('characters')" id="drawerTabCharacters">
+          <span class="drawer-nav-icon">👥</span>
+          <span class="drawer-nav-label" id="drawerTextCharacters">Персонажи (204)</span>
+          <span class="drawer-active-dot"></span>
+        </button>
+        <button class="drawer-nav-item" data-tab="items" onclick="App.setTabFromDrawer('items')" id="drawerTabItems">
+          <span class="drawer-nav-icon">🎒</span>
+          <span class="drawer-nav-label" id="drawerTextItems">Предметы (3,353)</span>
+          <span class="drawer-active-dot"></span>
+        </button>
+        <button class="drawer-nav-item" data-tab="bonds" onclick="App.setTabFromDrawer('bonds')" id="drawerTabBonds">
+          <span class="drawer-nav-icon">🔗</span>
+          <span class="drawer-nav-label" id="drawerTextBonds">Сеты и Бонды</span>
+          <span class="drawer-active-dot"></span>
+        </button>
+        <button class="drawer-nav-item" data-tab="collection" onclick="App.setTabFromDrawer('collection')" id="drawerTabCollection">
+          <span class="drawer-nav-icon">⭐</span>
+          <span class="drawer-nav-label" id="drawerTextCollection">Моя Коллекция</span>
+          <span class="drawer-active-dot"></span>
+        </button>
+        <button class="drawer-nav-item" data-tab="guides" onclick="App.setTabFromDrawer('guides')" id="drawerTabGuides">
+          <span class="drawer-nav-icon">📖</span>
+          <span class="drawer-nav-label" id="drawerTextGuides">Гайды</span>
+          <span class="drawer-active-dot"></span>
+        </button>
+      </nav>
+
+      <div class="drawer-separator"></div>
+
+      <!-- Language Switcher in Drawer -->
+      <div class="drawer-section-title" id="drawerLangTitle">Язык интерфейса</div>
+      <div class="drawer-lang-selector">
+        <button class="drawer-lang-pill active" data-lang="RU" onclick="App.setLanguageFromDrawer('RU')">🇷🇺 Русский</button>
+        <button class="drawer-lang-pill" data-lang="EN" onclick="App.setLanguageFromDrawer('EN')">🇬🇧 English</button>
+        <button class="drawer-lang-pill" data-lang="CN" onclick="App.setLanguageFromDrawer('CN')">🇨🇳 中文</button>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-footer-note">Guild of Monster Girls &bull; Fan Project</div>
+    </div>
+  </aside>
 
   <!-- Main Container -->
   <main class="main-wrapper">

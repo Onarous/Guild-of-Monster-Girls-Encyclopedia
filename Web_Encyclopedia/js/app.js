@@ -394,10 +394,48 @@ const App = {
     }
   },
 
+  openMobileDrawer() {
+    const drawer = document.getElementById('mobileDrawer');
+    const backdrop = document.getElementById('mobileDrawerBackdrop');
+    if (drawer) drawer.classList.add('open');
+    if (backdrop) backdrop.classList.add('open');
+    document.body.classList.add('drawer-open');
+  },
+
+  closeMobileDrawer() {
+    const drawer = document.getElementById('mobileDrawer');
+    const backdrop = document.getElementById('mobileDrawerBackdrop');
+    if (drawer) drawer.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+    document.body.classList.remove('drawer-open');
+  },
+
+  toggleMobileDrawer() {
+    const drawer = document.getElementById('mobileDrawer');
+    if (drawer && drawer.classList.contains('open')) {
+      this.closeMobileDrawer();
+    } else {
+      this.openMobileDrawer();
+    }
+  },
+
+  setTabFromDrawer(tab) {
+    this.setTab(tab);
+    this.closeMobileDrawer();
+  },
+
+  setLanguageFromDrawer(lang) {
+    this.setLanguage(lang);
+    this.closeMobileDrawer();
+  },
+
   setLanguage(lang) {
     if (this.state.lang === lang) return;
     this.state.lang = lang;
     document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+    document.querySelectorAll('.drawer-lang-pill').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.lang === lang);
     });
     this.loadDatasets(lang).then(() => {
@@ -410,6 +448,9 @@ const App = {
     if (this.state.activeTab === tab) return;
     this.state.activeTab = tab;
     document.querySelectorAll('.nav-tab-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.tab === tab);
+    });
+    document.querySelectorAll('.drawer-nav-item').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.tab === tab);
     });
 
@@ -660,6 +701,19 @@ const App = {
     document.getElementById('resetFiltersBtn').textContent = dict.resetFilters;
     document.getElementById('sortLabel').textContent = dict.sortBy;
 
+    // Drawer Navigation & Language Titles
+    if (document.getElementById('drawerNavTitle') && dict.drawerNavTitle) {
+      document.getElementById('drawerNavTitle').textContent = dict.drawerNavTitle;
+    }
+    if (document.getElementById('drawerLangTitle') && dict.drawerLangTitle) {
+      document.getElementById('drawerLangTitle').textContent = dict.drawerLangTitle;
+    }
+    if (document.getElementById('drawerTextCharacters')) document.getElementById('drawerTextCharacters').textContent = dict.navCharacters;
+    if (document.getElementById('drawerTextItems')) document.getElementById('drawerTextItems').textContent = dict.navItems;
+    if (document.getElementById('drawerTextBonds')) document.getElementById('drawerTextBonds').textContent = dict.navBonds;
+    if (document.getElementById('drawerTextCollection')) document.getElementById('drawerTextCollection').textContent = dict.navMyCollection;
+    if (document.getElementById('drawerTextGuides')) document.getElementById('drawerTextGuides').textContent = dict.navGuides;
+
     // Filter Titles
     if (dict.filterTitles) {
       if (document.getElementById('filterTitleRarity')) document.getElementById('filterTitleRarity').textContent = dict.filterTitles.rarity;
@@ -784,9 +838,12 @@ const App = {
       if (e.target.id === 'detailModal') this.closeModal();
     });
 
-    // Close modal on ESC
+    // Close modal and drawer on ESC
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') this.closeModal();
+      if (e.key === 'Escape') {
+        this.closeModal();
+        this.closeMobileDrawer();
+      }
     });
   }
 };

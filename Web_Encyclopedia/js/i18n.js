@@ -12,6 +12,8 @@ const I18N = {
     navBonds: "🔗 Сеты и Бонды",
     navMyCollection: "⭐ Моя Коллекция",
     navGuides: "📖 Гайды и Механики",
+    drawerNavTitle: "Разделы энциклопедии",
+    drawerLangTitle: "Язык интерфейса",
     footerDisclaimer: "⚠️ Неофициальный фанатский проект. Данный сайт и база данных созданы сообществом игроков и никак не связаны, не спонсируются и не одобрены оригинальными разработчиками / авторами игры Guild of Monster Girls. Все игровые ресурсы, персонажи и товарные знаки принадлежат их правообладателям.",
     searchPlaceholder: "Поиск по имени, ID, навыку, стату или тегу...",
     filterTitles: {
@@ -179,6 +181,8 @@ const I18N = {
     navBonds: "🔗 Set Bonds",
     navMyCollection: "⭐ My Collection",
     navGuides: "📖 Guides & Theorycraft",
+    drawerNavTitle: "Encyclopedia Sections",
+    drawerLangTitle: "Language",
     footerDisclaimer: "⚠️ Unofficial Fan Project. This website and database are created by the player community and are not affiliated with, endorsed, or sponsored by the original authors/developers of Guild of Monster Girls. All game assets, characters, and trademarks belong to their respective owners.",
     searchPlaceholder: "Search by name, ID, skill, stat, or tag...",
     filterTitles: {
@@ -345,6 +349,8 @@ const I18N = {
     navBonds: "🔗 套装羁绊",
     navMyCollection: "⭐ 我的收藏",
     navGuides: "📖 攻略指南",
+    drawerNavTitle: "图鉴导航",
+    drawerLangTitle: "界面语言",
     footerDisclaimer: "⚠️ 非官方同人/玩家社区项目。本网站及百科数据库由玩家社区独立制作，与《魔物娘公会》原作者、开发商及发行方无任何官方关联、赞助或背书。游戏素材、角色数据及商标版权均归其原著作权人所有。",
     searchPlaceholder: "搜索角色名、ID、技能效果、属性或标签...",
     filterTitles: {
