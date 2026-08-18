@@ -1074,13 +1074,13 @@ const GuidesView = {
           </button>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px;">
+        <div class="guide-cards-grid">
           ${filteredEvents.map(ev => {
             const rewardChar = ev.rewardRole ? charMap[ev.rewardRole] : null;
             const rewardImg = rewardChar ? (imgMap[rewardChar.id] || imgMap[rewardChar.key] || `assets/img/characters/${rewardChar.id}_1__single_part1_1@1.png`) : null;
 
             return `
-              <div class="guide-card" style="display: flex; flex-direction: column; justify-content: space-between; border-left: 3px solid #8b5cf6; padding: 16px 20px;">
+              <div class="guide-card" style="display: flex; flex-direction: column; justify-content: space-between; border-left: 3px solid #8b5cf6;">
                 <div>
                   <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 8px;">
                     <div style="display: flex; align-items: center; gap: 8px;">
@@ -1452,7 +1452,7 @@ const GuidesView = {
                 <div style="font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px;">
                   👥 ${isRu ? 'Состав отряда и роли:' : isCn ? '核心阵容与站位:' : 'Lineup & Role Slots:'}
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
+                <div class="guide-lineup-grid">
                   ${b.lineup.map(slot => {
                     const c = charMap[slot.id];
                     const charImg = c ? (imgMap[c.id] || imgMap[c.key] || `assets/img/characters/${c.id}_1__single_part1_1@1.png`) : null;
@@ -1473,7 +1473,7 @@ const GuidesView = {
               </div>
 
               <!-- Meta specs footer -->
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; padding-top: 12px; border-top: 1px solid var(--border-subtle); font-size: 12.5px;">
+              <div class="guide-specs-grid" style="padding-top: 12px; border-top: 1px solid var(--border-subtle); font-size: 12.5px;">
                 <div>
                   <strong style="color: #38bdf8;">🎽 ${isRu ? 'Рекомендуемые сеты:' : isCn ? '核心装备信物:' : 'Recommended Sets:'}</strong>
                   <span style="color: var(--text-secondary); margin-left: 4px;">${b.sets}</span>
@@ -1645,13 +1645,13 @@ const GuidesView = {
         </div>
 
         <!-- Codes Grid -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px;">
+        <div class="guide-cards-grid">
           ${filteredCodes.map((item, idx) => {
             const isActive = item.status === 'active';
             const btnId = `promoCopyBtn_${idx}`;
 
             return `
-              <div class="guide-card" style="display: flex; flex-direction: column; justify-content: space-between; border-left: 3px solid ${isActive ? '#10b981' : '#64748b'}; padding: 18px 20px;">
+              <div class="guide-card" style="display: flex; flex-direction: column; justify-content: space-between; border-left: 3px solid ${isActive ? '#10b981' : '#64748b'};">
                 <div>
                   <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px;">
                     <div style="font-family: monospace; font-size: 18px; font-weight: 800; color: ${isActive ? '#34d399' : '#94a3b8'}; letter-spacing: 1px; background: rgba(0, 0, 0, 0.4); padding: 4px 10px; border-radius: 6px; border: 1px dashed ${isActive ? 'rgba(52, 211, 153, 0.4)' : 'rgba(148, 163, 184, 0.3)'};">
