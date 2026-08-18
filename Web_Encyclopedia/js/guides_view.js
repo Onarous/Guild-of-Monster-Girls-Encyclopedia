@@ -16,6 +16,12 @@ const GuidesView = {
     const container = document.getElementById('guidesContainer');
     if (container) {
       this.render(container.id, App.state.lang);
+      if (window.innerWidth <= 900) {
+        const contentPanel = container.querySelector('.guides-content-panel');
+        if (contentPanel) {
+          contentPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
     }
   },
 

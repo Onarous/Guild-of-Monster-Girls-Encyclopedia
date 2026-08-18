@@ -1257,12 +1257,6 @@
   margin-top: 10px;
 }
 
-@media (max-width: 900px) {
-  .guides-wrapper {
-    grid-template-columns: 1fr;
-  }
-}
-
 .guides-sidebar {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -1271,6 +1265,7 @@
   height: fit-content;
   position: sticky;
   top: 90px;
+  z-index: 10;
 }
 
 .guides-sidebar-title {
@@ -1322,6 +1317,62 @@
 .guide-nav-icon {
   font-size: 18px;
   flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .guides-wrapper {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .guides-sidebar {
+    position: static !important;
+    top: auto !important;
+    padding: 12px 14px;
+    border-radius: var(--radius-md);
+    box-shadow: none;
+    z-index: 1;
+  }
+
+  .guides-sidebar-title {
+    font-size: 12px;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+  }
+
+  .guides-nav-list {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 8px;
+    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .guides-nav-list::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .guides-nav-list::-webkit-scrollbar-thumb {
+    background: var(--border-subtle);
+    border-radius: 4px;
+  }
+
+  .guide-nav-btn {
+    flex: 0 0 auto;
+    padding: 8px 14px;
+    font-size: 13px;
+    white-space: nowrap;
+    border-radius: var(--radius-full);
+    background: var(--bg-surface-elevated);
+    border: 1px solid var(--border-subtle);
+    gap: 8px;
+  }
+
+  .guide-nav-icon {
+    font-size: 15px;
+  }
 }
 
 .guides-content-panel {
