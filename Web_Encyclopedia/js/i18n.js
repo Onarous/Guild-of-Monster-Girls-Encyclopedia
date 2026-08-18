@@ -61,10 +61,10 @@ const I18N = {
       },
       banner: {
         standard: "🔮 Базовый баннер",
-        limited: "⏳ Лимитированный (Rate-Up)",
         skin: "🎭 Альтер баннер",
         skin_limited: "👑 Лимит Альтер-баннер",
         adventure: "🗺️ Дроп / Сюжет",
+        limited: "⏳ Лимитированный (Rate-Up)",
         event: "🎁 События"
       },
       slot: {
@@ -230,10 +230,10 @@ const I18N = {
       },
       banner: {
         standard: "🔮 Standard Banner",
-        limited: "⏳ Limited Rate-Up",
         skin: "🎭 Alter Banner",
         skin_limited: "👑 Limited Alter Banner",
         adventure: "🗺️ Adventure Drop",
+        limited: "⏳ Limited Rate-Up",
         event: "🎁 Events"
       },
       slot: {
@@ -398,10 +398,10 @@ const I18N = {
       },
       banner: {
         standard: "🔮 常规招募",
-        limited: "⏳ 限时UP招募",
         skin: "🎭 异化招募 (Alter)",
         skin_limited: "👑 限时异化UP",
         adventure: "🗺️ 冒险主线掉落",
+        limited: "⏳ 限时UP招募",
         event: "🎁 活动兑换"
       },
       slot: {
