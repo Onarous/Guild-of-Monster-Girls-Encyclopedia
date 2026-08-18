@@ -23,9 +23,11 @@ PREFS_PATH = f"/data/data/{PACKAGE_NAME}/shared_prefs/{PACKAGE_NAME}.v2.playerpr
 def find_adb():
     candidates = [
         "adb",
+        r"D:\LDPlayer\LDPlayer9\adb.exe",
+        r"C:\LDPlayer\LDPlayer9\adb.exe",
+        r"D:\Program Files\LDPlayer9\adb.exe",
         r"C:\platform-tools\adb.exe",
-        r"C:\Program Files\Nox\bin\nox_adb.exe",
-        r"D:\Program Files\LDPlayer9\adb.exe"
+        r"C:\Program Files\Nox\bin\nox_adb.exe"
     ]
     for c in candidates:
         try:
