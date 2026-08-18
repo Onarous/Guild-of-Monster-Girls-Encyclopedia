@@ -43,6 +43,7 @@ const App = {
     this.loadAccountData();
     await this.loadDatasets(this.state.lang);
     this.updateLanguageUI();
+    this.updateTabUI(this.state.activeTab);
     this.render();
     await this.checkUrlTokenParam();
   },
@@ -471,6 +472,18 @@ const App = {
       });
     }
 
+    this.updateTabUI(tab);
+    this.render();
+    if (tab === 'collection') {
+      setTimeout(() => this.refreshConnectedDevices(), 60);
+    }
+  },
+
+  updateTabUI(tab) {
+    const isGuides = tab === 'guides';
+    const isItems = tab === 'items' || tab === 'bonds';
+    const isBonds = tab === 'bonds';
+
     const toolbar = document.querySelector('.control-toolbar');
     const metaRow = document.querySelector('.results-meta-row');
     const cardsGrid = document.getElementById('cardsGrid');
@@ -481,24 +494,46 @@ const App = {
     if (cardsGrid) cardsGrid.style.display = isGuides ? 'none' : 'grid';
     if (guidesContainer) guidesContainer.style.display = isGuides ? 'block' : 'none';
 
-    document.getElementById('itemCategoryBar').style.display = isItems && !isBonds ? 'flex' : 'none';
-    document.getElementById('slotFilterRow').style.display = isItems ? 'flex' : 'none';
-    document.getElementById('roleFilterRow').style.display = isItems || isGuides ? 'none' : 'flex';
-    document.getElementById('bannerFilterRow').style.display = isItems || isGuides ? 'none' : 'flex';
-    document.getElementById('sortGroup').style.display = isGuides ? 'none' : 'flex';
+    const itemCatBar = document.getElementById('itemCategoryBar');
+    if (itemCatBar) itemCatBar.style.display = isItems && !isBonds ? 'flex' : 'none';
+    
+    const slotRow = document.getElementById('slotFilterRow');
+    if (slotRow) slotRow.style.display = isItems ? 'flex' : 'none';
+    
+    const roleRow = document.getElementById('roleFilterRow');
+    if (roleRow) roleRow.style.display = isItems || isGuides ? 'none' : 'flex';
+    
+    const bannerRow = document.getElementById('bannerFilterRow');
+    if (bannerRow) bannerRow.style.display = isItems || isGuides ? 'none' : 'flex';
+    
+    const sortGrp = document.getElementById('sortGroup');
+    if (sortGrp) sortGrp.style.display = isGuides ? 'none' : 'flex';
 
-    // SS rarity tier exists only for items/relics/bonds, not for character heroines
+    // Rarity pills: SS is only for items/bonds, hidden for characters/collection
     const pillSS = document.getElementById('pillTierSS');
+    const pillS = document.getElementById('pillTierS');
+    const pillA = document.getElementById('pillTierA');
+    const pillB = document.getElementById('pillTierB');
+    const pillC = document.getElementById('pillTierC');
+
     if (pillSS) {
-      pillSS.style.display = isItems ? 'inline-flex' : 'none';
+      pillSS.style.display = isItems ? 'flex' : 'none';
       if (!isItems && this.state.filters.rarity === 'SS') {
         this.setFilter('rarity', 'all');
       }
     }
 
-    this.render();
-    if (tab === 'collection') {
-      setTimeout(() => this.refreshConnectedDevices(), 60);
+    if (isItems) {
+      if (pillSS) pillSS.textContent = 'SS★';
+      if (pillS) pillS.textContent = 'S★';
+      if (pillA) pillA.textContent = 'A★';
+      if (pillB) pillB.textContent = 'B★';
+      if (pillC) pillC.textContent = 'C★';
+    } else {
+      if (pillS) pillS.textContent = 'S★ 4★';
+      if (pillA) pillA.textContent = 'A★ 3★';
+      if (pillB) pillB.textContent = 'B★ 2★';
+      if (pillC) pillC.textContent = 'C★ 1★';
     }
   },
 
