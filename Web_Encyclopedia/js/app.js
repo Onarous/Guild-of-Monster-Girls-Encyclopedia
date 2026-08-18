@@ -858,6 +858,200 @@ const App = {
         });
       }
     }
+    // Contact Buttons Text
+    if (document.getElementById('headerContactsBtnText') && dict.contactsBtn) {
+      document.getElementById('headerContactsBtnText').textContent = dict.contactsBtn.replace('💬', '').trim();
+    }
+    if (document.getElementById('drawerContactsText') && dict.contactsBtn) {
+      document.getElementById('drawerContactsText').textContent = dict.contactsBtn.replace('💬', '').trim() + ' & обратная связь';
+    }
+    if (document.getElementById('footerContactsLinkText') && dict.contactsBtn) {
+      document.getElementById('footerContactsLinkText').textContent = dict.contactsBtn.replace('💬', '').trim() + ' & Обратная связь';
+    }
+  },
+
+  async copyToClipboard(text, btnId) {
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+      
+      const btn = document.getElementById(btnId);
+      if (btn) {
+        const dict = I18N[this.state.lang] || I18N.RU;
+        const originalHtml = btn.innerHTML;
+        btn.innerHTML = `✓ <span>${dict.copiedBtn || 'Скопировано!'}</span>`;
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+          btn.classList.remove('copied');
+        }, 2000);
+      }
+    } catch (e) {
+      prompt(`Скопируйте вручную:`, text);
+    }
+  },
+
+  openContactsModal() {
+    const dict = I18N[this.state.lang] || I18N.RU;
+    const modal = document.getElementById('detailModal');
+    
+    modal.innerHTML = `
+      <div class="modal-dialog" style="max-width: 640px;">
+        <div class="modal-header">
+          <div class="modal-title" style="display: flex; align-items: center; gap: 8px;">
+            <span>💬</span>
+            <span>${dict.contactsModalTitle || 'Контакты и обратная связь'}</span>
+          </div>
+          <button class="modal-close-btn" onclick="App.closeModal()">&times;</button>
+        </div>
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 16px; max-height: 80vh; overflow-y: auto;">
+          
+          <!-- Section 1: Creator Contacts -->
+          <div class="contact-section-card creator-card">
+            <div class="contact-card-header">
+              <div class="contact-card-title">
+                <span>🛠️</span>
+                <span>${dict.siteCreatorTitle || 'Создатель сайта и базы данных'}</span>
+              </div>
+            </div>
+            <p class="contact-card-desc">
+              ${dict.siteCreatorDesc || 'По вопросам работы сайта, предложениям по улучшению, найденным ошибкам и добавлению новых функций:'}
+            </p>
+            
+            <div class="contact-items-grid">
+              <!-- Telegram -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <span class="contact-icon" style="color: #38bdf8;">✈️</span>
+                  <div class="contact-info">
+                    <span class="contact-label">Telegram</span>
+                    <span class="contact-value">@OnarousBrake</span>
+                  </div>
+                </div>
+                <div class="contact-actions">
+                  <button class="contact-action-btn copy-btn" id="copyTgBtn" onclick="App.copyToClipboard('@OnarousBrake', 'copyTgBtn')" title="Скопировать юзернейм">
+                    📋 <span>${dict.copyBtn || 'Копировать'}</span>
+                  </button>
+                  <a href="https://t.me/OnarousBrake" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn" style="background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.4); color: #7dd3fc;">
+                    🔗 <span>${dict.openLink || 'Открыть'}</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Discord -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <span class="contact-icon" style="color: #818cf8;">🎮</span>
+                  <div class="contact-info">
+                    <span class="contact-label">Discord (Username)</span>
+                    <span class="contact-value">onarous</span>
+                  </div>
+                </div>
+                <div class="contact-actions">
+                  <button class="contact-action-btn copy-btn" id="copyDcBtn" onclick="App.copyToClipboard('onarous', 'copyDcBtn')" title="Скопировать Discord ник">
+                    📋 <span>${dict.copyBtn || 'Копировать'}</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- GitHub Repository -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <span class="contact-icon" style="color: #f1f5f9;">🐙</span>
+                  <div class="contact-info">
+                    <span class="contact-label">GitHub Repository</span>
+                    <span class="contact-value">Onarous / Encyclopedia</span>
+                  </div>
+                </div>
+                <div class="contact-actions">
+                  <a href="https://github.com/Onarous/Guild-of-Monster-Girls-Encyclopedia" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn">
+                    ⭐ <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Official Game Developers (ChillyRoom) -->
+          <div class="contact-section-card official-card">
+            <div class="contact-card-header">
+              <div class="contact-card-title">
+                <span>🎮</span>
+                <span>${dict.officialDevsTitle || 'Официальные контакты разработчиков игры'}</span>
+              </div>
+            </div>
+            <p class="contact-card-desc">
+              ${dict.officialDevsDesc || 'По вопросам официальной поддержки игры, восстановления игрового аккаунта, багов в игре и платежей (ChillyRoom):'}
+            </p>
+            
+            <div class="contact-items-grid">
+              <!-- Support Email -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <span class="contact-icon" style="color: #fbbf24;">✉️</span>
+                  <div class="contact-info">
+                    <span class="contact-label">Official Support Email</span>
+                    <span class="contact-value">info@chillyroom.games</span>
+                  </div>
+                </div>
+                <div class="contact-actions">
+                  <button class="contact-action-btn copy-btn" id="copyDevEmailBtn" onclick="App.copyToClipboard('info@chillyroom.games', 'copyDevEmailBtn')">
+                    📋 <span>${dict.copyBtn || 'Копировать'}</span>
+                  </button>
+                  <a href="mailto:info@chillyroom.games" class="contact-action-btn link-btn">
+                    ✉️ <span>Email</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Official ChillyRoom Discord -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <span class="contact-icon" style="color: #a78bfa;">💬</span>
+                  <div class="contact-info">
+                    <span class="contact-label">Official ChillyRoom Discord</span>
+                    <span class="contact-value">discord.gg/chillyroom</span>
+                  </div>
+                </div>
+                <div class="contact-actions">
+                  <a href="https://discord.gg/chillyroom" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn" style="background: rgba(167, 139, 250, 0.15); border-color: rgba(167, 139, 250, 0.4); color: #c4b5fd;">
+                    🔗 <span>${dict.openLink || 'Войти'}</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Official Website -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <span class="contact-icon" style="color: #34d399;">🌐</span>
+                  <div class="contact-info">
+                    <span class="contact-label">Official Website</span>
+                    <span class="contact-value">chillyroom.games</span>
+                  </div>
+                </div>
+                <div class="contact-actions">
+                  <a href="https://www.chillyroom.games" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn">
+                    🔗 <span>${dict.openLink || 'Открыть'}</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    `;
+    modal.classList.add('active');
   },
 
   openCharacterModal(id) {

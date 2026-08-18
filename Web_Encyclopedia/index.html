@@ -39,11 +39,19 @@
         </button>
       </nav>
 
-      <!-- Desktop Language Selector -->
-      <div class="lang-selector" aria-label="Desktop Language Selector">
-        <button class="lang-btn active" data-lang="RU" onclick="App.setLanguage('RU')">🇷🇺 RU</button>
-        <button class="lang-btn" data-lang="EN" onclick="App.setLanguage('EN')">🇬🇧 EN</button>
-        <button class="lang-btn" data-lang="CN" onclick="App.setLanguage('CN')">🇨🇳 CN</button>
+      <!-- Desktop Actions (Language & Contacts) -->
+      <div class="header-actions">
+        <!-- Desktop Language Selector -->
+        <div class="lang-selector" aria-label="Desktop Language Selector">
+          <button class="lang-btn active" data-lang="RU" onclick="App.setLanguage('RU')">🇷🇺 RU</button>
+          <button class="lang-btn" data-lang="EN" onclick="App.setLanguage('EN')">🇬🇧 EN</button>
+          <button class="lang-btn" data-lang="CN" onclick="App.setLanguage('CN')">🇨🇳 CN</button>
+        </div>
+
+        <!-- Desktop Contacts Button -->
+        <button class="header-contact-btn" id="headerContactsBtn" onclick="App.openContactsModal()" title="Контакты">
+          💬 <span id="headerContactsBtnText">Контакты</span>
+        </button>
       </div>
 
       <!-- Mobile Hamburger Menu Button -->
@@ -111,6 +119,14 @@
         <button class="drawer-lang-pill" data-lang="EN" onclick="App.setLanguageFromDrawer('EN')">🇬🇧 English</button>
         <button class="drawer-lang-pill" data-lang="CN" onclick="App.setLanguageFromDrawer('CN')">🇨🇳 中文</button>
       </div>
+
+      <div class="drawer-separator"></div>
+
+      <!-- Contacts in Drawer -->
+      <button class="drawer-contact-btn" id="drawerContactsBtn" onclick="App.openContactsModal(); App.closeMobileDrawer();">
+        <span class="drawer-nav-icon">💬</span>
+        <span class="drawer-nav-label" id="drawerContactsText">Контакты и обратная связь</span>
+      </button>
     </div>
 
     <div class="drawer-footer">
@@ -275,7 +291,17 @@
 
   <!-- App Footer -->
   <footer class="app-footer">
-    <p id="footerMainText">Guild of Monster Girls Encyclopedia — Interactive Web Viewer | Multi-Language System (RU / EN / CN)</p>
+    <div class="footer-top-row">
+      <p id="footerMainText">Guild of Monster Girls Encyclopedia — Interactive Web Viewer | Multi-Language System (RU / EN / CN)</p>
+      <div class="footer-links">
+        <button class="footer-contact-link" id="footerContactsLink" onclick="App.openContactsModal()">
+          💬 <span id="footerContactsLinkText">Контакты & Обратная связь</span>
+        </button>
+        <a href="https://github.com/Onarous/Guild-of-Monster-Girls-Encyclopedia" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+          ⭐ GitHub Repository
+        </a>
+      </div>
+    </div>
     <p id="footerDisclaimerText" class="footer-disclaimer">
       ⚠️ Неофициальный фанатский проект. Данный сайт и база данных созданы сообществом игроков и никак не связаны, не спонсируются и не одобрены оригинальными разработчиками / авторами игры Guild of Monster Girls. Все игровые ресурсы, персонажи и товарные знаки принадлежат их правообладателям.
     </p>
