@@ -83,6 +83,15 @@ const CalculatorsView = {
     const container = document.getElementById('calculatorsContainer');
     if (container) {
       this.render('calculatorsContainer', App.state.lang);
+      if (typeof App !== 'undefined' && App.updateUrl) {
+        App.updateUrl('calculators', calcId);
+      }
+      if (window.innerWidth <= 900) {
+        const contentPanel = container.querySelector('.calculators-content-panel');
+        if (contentPanel) {
+          contentPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
     }
   },
 

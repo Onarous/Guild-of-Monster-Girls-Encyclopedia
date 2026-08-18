@@ -39,13 +39,101 @@ const App = {
 
   async init() {
     this.bindEvents();
+    window.addEventListener('hashchange', () => this.handleRoute(false));
+    window.addEventListener('popstate', () => this.handleRoute(false));
+
+    // Language preference from URL or localStorage
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang');
+    if (langParam && ['RU', 'EN', 'CN'].includes(langParam.toUpperCase())) {
+      this.state.lang = langParam.toUpperCase();
+    } else {
+      const savedLang = localStorage.getItem('gmg_lang');
+      if (savedLang && ['RU', 'EN', 'CN'].includes(savedLang)) {
+        this.state.lang = savedLang;
+      }
+    }
+
     await this.loadImageMappings();
     this.loadAccountData();
     await this.loadDatasets(this.state.lang);
     this.updateLanguageUI();
-    this.updateTabUI(this.state.activeTab);
-    this.render();
+
+    // Initial route handling
+    this.handleRoute(true);
+
     await this.checkUrlTokenParam();
+  },
+
+  handleRoute(isInitial = false) {
+    const path = window.location.pathname.toLowerCase();
+    let initialTab = document.body.dataset.initialTab || 'characters';
+    let isContactsPage = document.body.dataset.initialTab === 'contacts';
+
+    if (path.endsWith('items.html')) initialTab = 'items';
+    else if (path.endsWith('bonds.html')) initialTab = 'bonds';
+    else if (path.endsWith('collection.html')) initialTab = 'collection';
+    else if (path.endsWith('guides.html')) initialTab = 'guides';
+    else if (path.endsWith('calculators.html')) initialTab = 'calculators';
+    else if (path.endsWith('contacts.html')) isContactsPage = true;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const tabParam = urlParams.get('tab');
+    if (tabParam && ['characters', 'items', 'bonds', 'collection', 'guides', 'calculators'].includes(tabParam)) {
+      initialTab = tabParam;
+    }
+
+    // Process hash e.g. #characters, #items/relics, #guides/codes, #character/10101, #item/equipment/2001, #contacts
+    const rawHash = window.location.hash.replace(/^#\/?/, '').trim();
+    const hashParts = rawHash.split('/').map(decodeURIComponent);
+    const route = hashParts[0] || '';
+
+    if (['characters', 'items', 'bonds', 'collection', 'guides', 'calculators'].includes(route)) {
+      initialTab = route;
+    }
+
+    if (route === 'items' && hashParts[1]) {
+      this.state.itemCategory = hashParts[1];
+    }
+
+    if (route === 'guides' && hashParts[1]) {
+      GuidesView.activeSection = hashParts[1];
+    } else if (route === 'calculators' && hashParts[1]) {
+      CalculatorsView.activeCalc = hashParts[1];
+    }
+
+    this.setTab(initialTab, false);
+
+    if (route === 'contacts' || isContactsPage) {
+      setTimeout(() => this.openContactsModal(false), 60);
+      return;
+    }
+
+    // Deep link modals
+    if (route === 'character' || route === 'char') {
+      const charId = hashParts[1];
+      if (charId) {
+        setTimeout(() => this.openCharacterModal(charId, false), 150);
+      }
+    } else if (route === 'item') {
+      const cat = hashParts.length > 2 ? hashParts[1] : (this.state.itemCategory || 'equipment');
+      const itemId = hashParts.length > 2 ? hashParts[2] : hashParts[1];
+      if (itemId) {
+        setTimeout(() => this.openItemModal(cat, itemId, false), 150);
+      }
+    }
+  },
+
+  updateUrl(route, subRoute = '', updateHistory = true) {
+    let hash = `#${route}`;
+    if (subRoute) hash += `/${subRoute}`;
+    if (window.location.hash !== hash) {
+      if (updateHistory) {
+        history.pushState(null, '', hash);
+      } else {
+        history.replaceState(null, '', hash);
+      }
+    }
   },
 
   async checkUrlTokenParam() {
@@ -433,6 +521,8 @@ const App = {
   setLanguage(lang) {
     if (this.state.lang === lang) return;
     this.state.lang = lang;
+    try { localStorage.setItem('gmg_lang', lang); } catch (e) {}
+
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.lang === lang);
     });
@@ -447,13 +537,21 @@ const App = {
       // If contacts modal is open, re-render it in the new language
       const modal = document.getElementById('detailModal');
       if (modal && modal.classList.contains('active') && modal.dataset.modalType === 'contacts') {
-        this.openContactsModal();
+        this.openContactsModal(false);
       }
     });
   },
 
-  setTab(tab) {
-    if (this.state.activeTab === tab) return;
+  setItemCategory(cat) {
+    this.state.itemCategory = cat;
+    document.querySelectorAll('.cat-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.cat === cat);
+    });
+    this.updateUrl('items', cat);
+    this.render();
+  },
+
+  setTab(tab, updateHash = true) {
     this.state.activeTab = tab;
     document.querySelectorAll('.nav-tab-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.tab === tab);
@@ -483,6 +581,19 @@ const App = {
 
     this.updateTabUI(tab);
     this.render();
+
+    if (updateHash) {
+      if (isGuides && GuidesView.activeSection) {
+        this.updateUrl('guides', GuidesView.activeSection);
+      } else if (isCalculators && CalculatorsView.activeCalc) {
+        this.updateUrl('calculators', CalculatorsView.activeCalc);
+      } else if (tab === 'items' && this.state.itemCategory) {
+        this.updateUrl('items', this.state.itemCategory);
+      } else {
+        this.updateUrl(tab);
+      }
+    }
+
     if (tab === 'collection') {
       setTimeout(() => this.refreshConnectedDevices(), 60);
     }
@@ -1143,35 +1254,66 @@ const App = {
       </div>
     `;
     modal.classList.add('active');
+
+    if (updateHash) {
+      this.updateUrl('contacts');
+    }
   },
 
-  openCharacterModal(id) {
+  openCharacterModal(id, updateHash = true) {
     const lang = this.state.lang;
-    const char = (this.state.data.characters[lang] || []).find(c => c.id === id);
+    const char = (this.state.data.characters[lang] || []).find(c => c.id === id || String(c.id) === String(id) || c.key === id);
     if (!char) return;
 
     const modal = document.getElementById('detailModal');
     modal.dataset.modalType = 'character';
+    modal.dataset.charId = char.id;
     modal.innerHTML = CharactersView.renderModal(char, lang, this.state.imageMappings, this.state.ownedRoleIds);
     modal.classList.add('active');
+
+    if (updateHash) {
+      this.updateUrl('character', char.id);
+    }
   },
 
-  openItemModal(category, id) {
+  openItemModal(category, id, updateHash = true) {
     const lang = this.state.lang;
     const list = this.state.data.items[lang]?.[category] || [];
-    const item = list.find(i => i.id === id);
+    const item = list.find(i => i.id === id || String(i.id) === String(id));
     if (!item) return;
 
     const modal = document.getElementById('detailModal');
     modal.dataset.modalType = 'item';
+    modal.dataset.itemCat = category;
+    modal.dataset.itemId = item.id;
     modal.innerHTML = ItemsView.renderModal(item, category, lang, this.state.imageMappings);
     modal.classList.add('active');
+
+    if (updateHash) {
+      this.updateUrl('item', `${category}/${item.id}`);
+    }
   },
 
-  closeModal() {
+  closeModal(updateHash = true) {
     const modal = document.getElementById('detailModal');
+    if (!modal) return;
     modal.classList.remove('active');
     delete modal.dataset.modalType;
+    delete modal.dataset.charId;
+    delete modal.dataset.itemCat;
+    delete modal.dataset.itemId;
+
+    if (updateHash) {
+      if (this.state.activeTab === 'guides' && GuidesView.activeSection) {
+        this.updateUrl('guides', GuidesView.activeSection);
+      } else if (this.state.activeTab === 'calculators' && CalculatorsView.activeCalc) {
+        this.updateUrl('calculators', CalculatorsView.activeCalc);
+      } else if (this.state.activeTab === 'items' && this.state.itemCategory) {
+        this.updateUrl('items', this.state.itemCategory);
+      } else {
+        this.updateUrl(this.state.activeTab);
+      }
+    }
   },
 
   bindEvents() {

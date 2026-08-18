@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📖 Гайды и Механики — Guild of Monster Girls Encyclopedia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+SC:wght@400;500;700;900&family=Oswald:wght@500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260818_2">
+  <link rel="stylesheet" href="css/components.css?v=20260818_2">
+</head>
+<body data-initial-tab="guides">
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-area" onclick="App.setTab('characters')" style="cursor: pointer;">
+        <div class="logo-icon">🐉</div>
+        <div class="logo-text">
+          <h1 id="appTitle">Guild of Monster Girls</h1>
+          <p id="appSubtitle">Complete Character & Equipment Encyclopedia</p>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation Tabs -->
+      <nav class="nav-tabs" aria-label="Desktop Navigation">
+        <button class="nav-tab-btn active" data-tab="characters" onclick="App.setTab('characters')" id="tabCharacters">
+          👥 Персонажи (204)
+        </button>
+        <button class="nav-tab-btn" data-tab="items" onclick="App.setTab('items')" id="tabItems">
+          🎒 Предметы (3,353)
+        </button>
+        <button class="nav-tab-btn" data-tab="bonds" onclick="App.setTab('bonds')" id="tabBonds">
+          🔗 Сеты и Бонды
+        </button>
+        <button class="nav-tab-btn" data-tab="collection" onclick="App.setTab('collection')" id="tabCollection">
+          ⭐ Моя Коллекция
+        </button>
+        <button class="nav-tab-btn" data-tab="guides" onclick="App.setTab('guides')" id="tabGuides">
+          📖 Гайды
+        </button>
+        <button class="nav-tab-btn" data-tab="calculators" onclick="App.setTab('calculators')" id="tabCalculators">
+          🧮 Калькуляторы
+        </button>
+      </nav>
+
+      <!-- Desktop Actions (Contacts & Language) -->
+      <div class="header-actions">
+        <!-- Desktop Contacts Button -->
+        <button class="header-contact-btn" id="headerContactsBtn" onclick="App.openContactsModal()" title="Контакты">
+          💬 <span id="headerContactsBtnText">Контакты</span>
+        </button>
+
+        <!-- Desktop Language Selector -->
+        <div class="lang-selector" aria-label="Desktop Language Selector">
+          <button class="lang-btn active" data-lang="RU" onclick="App.setLanguage('RU')">🇷🇺 RU</button>
+          <button class="lang-btn" data-lang="EN" onclick="App.setLanguage('EN')">🇬🇧 EN</button>
+          <button class="lang-btn" data-lang="CN" onclick="App.setLanguage('CN')">🇨🇳 CN</button>
+        </div>
+      </div>
+
+      <!-- Mobile Hamburger Menu Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="App.toggleMobileDrawer()" aria-label="Toggle navigation menu" title="Меню">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop" onclick="App.closeMobileDrawer()"></div>
+
+  <!-- Mobile Slide-out Drawer Menu -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <div class="drawer-logo-area">
+        <div class="logo-icon">🐉</div>
+        <div class="drawer-title-box">
+          <div class="drawer-app-title" id="drawerAppTitle">GMG Encyclopedia</div>
+          <div class="drawer-app-subtitle" id="drawerAppSubtitle">v2026.1 Wiki</div>
+        </div>
+      </div>
+      <button class="drawer-close-btn" id="drawerCloseBtn" onclick="App.closeMobileDrawer()" aria-label="Закрыть меню">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Sections Section -->
+      <div class="drawer-section-title" id="drawerNavTitle">Разделы</div>
+      <nav class="drawer-nav-list">
+        <button class="drawer-nav-item active" data-tab="characters" onclick="App.setTabFromDrawer('characters')" id="drawerTabCharacters">
+          <span class="drawer-nav-icon">👥</span>
+          <span class="drawer-nav-label" id="drawerTextCharacters">Персонажи (204)</span>
+          <span class="drawer-active-dot"></span>
+        </button>
+        <button class="drawer-nav-item" data-tab="items" onclick="App.setTabFromDrawer('items')" id="drawerTabItems">
+          <span class="drawer-nav-icon">🎒</span>
+          <span class="drawer-nav-label" id="drawerTextItems">Предметы (3,353)</span>
+          <span class="drawer-active-dot"></span>
+        </button>
+        <button class="drawer-nav-item" data-tab="bonds" onclick="App.setTabFromDrawer('bonds')" id="drawerTabBonds">
+          <span class="drawer-nav-icon">🔗</span>
+          <span class="drawer-nav-label" id="drawerTextBonds">Сеты и Бонды</span>
+          <span class="drawer-active-dot"></span>
+        </button>
+        <button class="drawer-nav-item" data-tab="collection" onclick="App.setTabFromDrawer('collection')" id="drawerTabCollection">
+          <span class="drawer-nav-icon">⭐</span>
+          <span class="drawer-nav-label" id="drawerTextCollection">Моя Коллекция</span>
+          <span class="drawer-active-dot"></span>
+        </button>
+        <button class="drawer-nav-item" data-tab="guides" onclick="App.setTabFromDrawer('guides')" id="drawerTabGuides">
+          <span class="drawer-nav-icon">📖</span>
+          <span class="drawer-nav-label" id="drawerTextGuides">Гайды</span>
+          <span class="drawer-active-dot"></span>
+        </button>
+        <button class="drawer-nav-item" data-tab="calculators" onclick="App.setTabFromDrawer('calculators')" id="drawerTabCalculators">
+          <span class="drawer-nav-icon">🧮</span>
+          <span class="drawer-nav-label" id="drawerTextCalculators">Калькуляторы</span>
+          <span class="drawer-active-dot"></span>
+        </button>
+      </nav>
+
+      <div class="drawer-separator"></div>
+
+      <!-- Contacts in Drawer -->
+      <button class="drawer-contact-btn" id="drawerContactsBtn" onclick="App.openContactsModal(); App.closeMobileDrawer();">
+        <span class="drawer-nav-icon">💬</span>
+        <span class="drawer-nav-label" id="drawerContactsText">Контакты и обратная связь</span>
+      </button>
+
+      <div class="drawer-separator"></div>
+
+      <!-- Language Switcher in Drawer (After Contacts) -->
+      <div class="drawer-section-title" id="drawerLangTitle">Язык интерфейса</div>
+      <div class="drawer-lang-selector">
+        <button class="drawer-lang-pill active" data-lang="RU" onclick="App.setLanguageFromDrawer('RU')">🇷🇺 Русский</button>
+        <button class="drawer-lang-pill" data-lang="EN" onclick="App.setLanguageFromDrawer('EN')">🇬🇧 English</button>
+        <button class="drawer-lang-pill" data-lang="CN" onclick="App.setLanguageFromDrawer('CN')">🇨🇳 中文</button>
+      </div>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-footer-note">Guild of Monster Girls &bull; Fan Project</div>
+    </div>
+  </aside>
+
+  <!-- Main Container -->
+  <main class="main-wrapper">
+
+    <!-- Account & Collection Sync Header (Visible on collection tab) -->
+    <div id="collectionHeaderContainer" style="display: none;"></div>
+
+    <!-- Category Sub-bar for Items -->
+    <div class="item-category-bar" id="itemCategoryBar" style="display: none;">
+      <button class="cat-btn active" data-cat="equipment" onclick="App.setItemCategory('equipment')">⚔️ Снаряжение</button>
+      <button class="cat-btn" data-cat="relics" onclick="App.setItemCategory('relics')">🔮 Реликвии</button>
+      <button class="cat-btn" data-cat="runes" onclick="App.setItemCategory('runes')">🪨 Руны</button>
+      <button class="cat-btn" data-cat="bonds" onclick="App.setItemCategory('bonds')">🔗 Сеты</button>
+      <button class="cat-btn" data-cat="prefixes" onclick="App.setItemCategory('prefixes')">🏷️ Префиксы</button>
+      <button class="cat-btn" data-cat="special_items" onclick="App.setItemCategory('special_items')">💰 Особое</button>
+      <button class="cat-btn" data-cat="ingredients" onclick="App.setItemCategory('ingredients')">💎 Материалы</button>
+      <button class="cat-btn" data-cat="chests" onclick="App.setItemCategory('chests')">📦 Сундуки</button>
+      <button class="cat-btn" data-cat="godstones" onclick="App.setItemCategory('godstones')">⚡ Бог-камни</button>
+      <button class="cat-btn" data-cat="dungeon_relics" onclick="App.setItemCategory('dungeon_relics')">🗝️ Подземелья</button>
+    </div>
+
+    <!-- Control Toolbar (Search, Sort & Filters) -->
+    <div class="control-toolbar">
+      <div class="search-sort-row">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Поиск по имени, ID, навыку, стату или тегу..." autocomplete="off">
+        </div>
+
+        <div class="sort-group" id="sortGroup">
+          <label class="sort-label" for="sortSelect" id="sortLabel">Сортировка:</label>
+          <select id="sortSelect" class="sort-select">
+            <option value="rarity">🌟 По редкости (SS → C)</option>
+            <option value="name">🔤 По имени (А-Я)</option>
+            <option value="hp">❤️ По Здоровью (HP)</option>
+            <option value="atk">⚔️ По Атаке (ATK)</option>
+            <option value="def">🛡️ По Защите (DEF)</option>
+            <option value="spd">⚡ По Скорости (SPD)</option>
+            <option value="int">🔮 По Духу (INT)</option>
+            <option value="str">💪 По Силе (STR)</option>
+            <option value="dex">🎯 По Ловкости (DEX)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Faceted Filters -->
+      <div class="filter-sections-container">
+        
+        <!-- Rarity Tier Filter -->
+        <div class="filter-row">
+          <span class="filter-title" id="filterTitleRarity">Ранг:</span>
+          <div class="pill-group">
+            <button class="filter-pill active" data-pill-all="true" data-filter-type="rarity" data-filter-val="all" onclick="App.setFilter('rarity', 'all')">Все</button>
+            <button class="filter-pill pill-tier-ss" id="pillTierSS" data-filter-type="rarity" data-filter-val="SS" onclick="App.setFilter('rarity', 'SS')" style="display: none;">SS★</button>
+            <button class="filter-pill pill-tier-s" id="pillTierS" data-filter-type="rarity" data-filter-val="S" onclick="App.setFilter('rarity', 'S')">S★ 4★</button>
+            <button class="filter-pill pill-tier-a" id="pillTierA" data-filter-type="rarity" data-filter-val="A" onclick="App.setFilter('rarity', 'A')">A★ 3★</button>
+            <button class="filter-pill pill-tier-b" id="pillTierB" data-filter-type="rarity" data-filter-val="B" onclick="App.setFilter('rarity', 'B')">B★ 2★</button>
+            <button class="filter-pill pill-tier-c" id="pillTierC" data-filter-type="rarity" data-filter-val="C" onclick="App.setFilter('rarity', 'C')">C★ 1★</button>
+          </div>
+        </div>
+
+        <!-- Class Filter -->
+        <div class="filter-row">
+          <span class="filter-title" id="filterTitleClass">Класс:</span>
+          <div class="pill-group">
+            <button class="filter-pill active" data-pill-all="true" data-filter-type="class" data-filter-val="all" onclick="App.setFilter('class', 'all')">Все</button>
+            <button class="filter-pill" data-filter-type="class" data-filter-val="warrior" data-pill-key="warrior" onclick="App.setFilter('class', 'warrior')">⚔️ Воин</button>
+            <button class="filter-pill" data-filter-type="class" data-filter-val="archer" data-pill-key="archer" onclick="App.setFilter('class', 'archer')">🏹 Стрелок</button>
+            <button class="filter-pill" data-filter-type="class" data-filter-val="mage" data-pill-key="mage" onclick="App.setFilter('class', 'mage')">🔮 Маг</button>
+            <button class="filter-pill" data-filter-type="class" data-filter-val="cleric" data-pill-key="cleric" onclick="App.setFilter('class', 'cleric')">✨ Жрица</button>
+          </div>
+        </div>
+
+        <!-- Element Filter -->
+        <div class="filter-row">
+          <span class="filter-title" id="filterTitleElement">Стихия:</span>
+          <div class="pill-group">
+            <button class="filter-pill active" data-pill-all="true" data-filter-type="element" data-filter-val="all" onclick="App.setFilter('element', 'all')">Все</button>
+            <button class="filter-pill pill-elem-fire" data-filter-type="element" data-filter-val="fire" data-pill-key="fire" onclick="App.setFilter('element', 'fire')">🔥 Огонь</button>
+            <button class="filter-pill pill-elem-water" data-filter-type="element" data-filter-val="water" data-pill-key="water" onclick="App.setFilter('element', 'water')">💧 Вода</button>
+            <button class="filter-pill pill-elem-wind" data-filter-type="element" data-filter-val="wind" data-pill-key="wind" onclick="App.setFilter('element', 'wind')">🌪️ Ветер</button>
+            <button class="filter-pill pill-elem-earth" data-filter-type="element" data-filter-val="earth" data-pill-key="earth" onclick="App.setFilter('element', 'earth')">⛰️ Земля</button>
+            <button class="filter-pill pill-elem-light" data-filter-type="element" data-filter-val="light" data-pill-key="light" onclick="App.setFilter('element', 'light')">☀️ Свет</button>
+            <button class="filter-pill pill-elem-dark" data-filter-type="element" data-filter-val="dark" data-pill-key="dark" onclick="App.setFilter('element', 'dark')">🌑 Тьма</button>
+          </div>
+        </div>
+
+        <!-- Role Filter (Characters only) -->
+        <div class="filter-row" id="roleFilterRow">
+          <span class="filter-title" id="filterTitleRole">Роль:</span>
+          <div class="pill-group">
+            <button class="filter-pill active" data-pill-all="true" data-filter-type="role" data-filter-val="all" onclick="App.setFilter('role', 'all')">Все</button>
+            <button class="filter-pill" data-filter-type="role" data-filter-val="dps" data-pill-key="dps" onclick="App.setFilter('role', 'dps')">💥 Урон (DPS)</button>
+            <button class="filter-pill" data-filter-type="role" data-filter-val="tank" data-pill-key="tank" onclick="App.setFilter('role', 'tank')">🛡️ Танк</button>
+            <button class="filter-pill" data-filter-type="role" data-filter-val="healer" data-pill-key="healer" onclick="App.setFilter('role', 'healer')">💚 Лекарь</button>
+            <button class="filter-pill" data-filter-type="role" data-filter-val="support" data-pill-key="support" onclick="App.setFilter('role', 'support')">⚡ Саппорт</button>
+          </div>
+        </div>
+
+        <!-- Banner Filter (Characters only) -->
+        <div class="filter-row" id="bannerFilterRow">
+          <span class="filter-title" id="filterTitleBanner">Баннер:</span>
+          <div class="pill-group">
+            <button class="filter-pill active" data-pill-all="true" data-filter-type="banner" data-filter-val="all" onclick="App.setFilter('banner', 'all')">Все</button>
+            <button class="filter-pill" data-filter-type="banner" data-filter-val="standard" data-pill-key="standard" onclick="App.setFilter('banner', 'standard')">🔮 Базовый</button>
+            <button class="filter-pill" data-filter-type="banner" data-filter-val="skin" data-pill-key="skin" onclick="App.setFilter('banner', 'skin')">🎭 Альтер</button>
+            <button class="filter-pill" data-filter-type="banner" data-filter-val="skin_limited" data-pill-key="skin_limited" onclick="App.setFilter('banner', 'skin_limited')">👑 Лимит-Альтер</button>
+            <button class="filter-pill" data-filter-type="banner" data-filter-val="adventure" data-pill-key="adventure" onclick="App.setFilter('banner', 'adventure')">🗺️ Дроп</button>
+            <button class="filter-pill" data-filter-type="banner" data-filter-val="limited" data-pill-key="limited" onclick="App.setFilter('banner', 'limited')">⏳ Лимит</button>
+            <button class="filter-pill" data-filter-type="banner" data-filter-val="event" data-pill-key="event" onclick="App.setFilter('banner', 'event')">🎁 События</button>
+          </div>
+        </div>
+
+        <!-- Slot Filter (Items only) -->
+        <div class="filter-row" id="slotFilterRow" style="display: none;">
+          <span class="filter-title" id="filterTitleSlot">Слот:</span>
+          <div class="pill-group">
+            <button class="filter-pill active" data-pill-all="true" data-filter-type="slot" data-filter-val="all" onclick="App.setFilter('slot', 'all')">Все</button>
+            <button class="filter-pill" data-filter-type="slot" data-filter-val="main_hand" data-pill-key="main_hand" onclick="App.setFilter('slot', 'main_hand')">🗡️ Оружие</button>
+            <button class="filter-pill" data-filter-type="slot" data-filter-val="body" data-pill-key="body" onclick="App.setFilter('slot', 'body')">🥋 Броня</button>
+            <button class="filter-pill" data-filter-type="slot" data-filter-val="head" data-pill-key="head" onclick="App.setFilter('slot', 'head')">🪖 Шлем</button>
+            <button class="filter-pill" data-filter-type="slot" data-filter-val="boots" data-pill-key="boots" onclick="App.setFilter('slot', 'boots')">👢 Сапоги</button>
+            <button class="filter-pill" data-filter-type="slot" data-filter-val="gloves" data-pill-key="gloves" onclick="App.setFilter('slot', 'gloves')">🧤 Перчатки</button>
+            <button class="filter-pill" data-filter-type="slot" data-filter-val="belt" data-pill-key="belt" onclick="App.setFilter('slot', 'belt')">🎗️ Пояс</button>
+            <button class="filter-pill" data-filter-type="slot" data-filter-val="ring" data-pill-key="ring" onclick="App.setFilter('slot', 'ring')">💍 Кольцо</button>
+            <button class="filter-pill" data-filter-type="slot" data-filter-val="necklace" data-pill-key="necklace" onclick="App.setFilter('slot', 'necklace')">📿 Ожерелье</button>
+            <button class="filter-pill" data-filter-type="slot" data-filter-val="badge" data-pill-key="badge" onclick="App.setFilter('slot', 'badge')">🎖️ Эмблема</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Meta row (Count & Reset) -->
+    <div class="results-meta-row">
+      <div class="results-count" id="resultCount">Найдено записей: <strong>0</strong></div>
+      <button class="reset-btn" id="resetFiltersBtn" onclick="App.resetFilters()">Сбросить фильтры</button>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="cards-grid" id="cardsGrid">
+      <!-- Generated via JS -->
+    </div>
+
+    <!-- Guides View Container -->
+    <div id="guidesContainer" style="display: none;">
+      <!-- Generated via GuidesView -->
+    </div>
+
+    <!-- Calculators View Container -->
+    <div id="calculatorsContainer" style="display: none;">
+      <!-- Generated via CalculatorsView -->
+    </div>
+
+  </main>
+
+  <!-- Detail Modal -->
+  <div class="modal-backdrop" id="detailModal">
+    <!-- Rendered via JS -->
+  </div>
+
+  <!-- App Footer -->
+  <footer class="app-footer">
+    <div class="footer-top-row">
+      <p id="footerMainText">Guild of Monster Girls Encyclopedia — Interactive Web Viewer | Multi-Language System (RU / EN / CN)</p>
+      <div class="footer-links">
+        <button class="footer-contact-link" id="footerContactsLink" onclick="App.openContactsModal()">
+          💬 <span id="footerContactsLinkText">Контакты & Обратная связь</span>
+        </button>
+        <a href="https://github.com/Onarous/Guild-of-Monster-Girls-Encyclopedia" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+          ⭐ GitHub Repository
+        </a>
+      </div>
+    </div>
+    <p id="footerDisclaimerText" class="footer-disclaimer">
+      ⚠️ Неофициальный фанатский проект. Данный сайт и база данных созданы сообществом игроков и никак не связаны, не спонсируются и не одобрены оригинальными разработчиками / авторами игры Guild of Monster Girls. Все игровые ресурсы, персонажи и товарные знаки принадлежат их правообладателям.
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js?v=20260818_2"></script>
+  <script src="js/characters_view.js?v=20260818_2"></script>
+  <script src="js/items_view.js?v=20260818_2"></script>
+  <script src="js/collection_view.js?v=20260818_2"></script>
+  <script src="js/guides_view.js?v=20260818_2"></script>
+  <script src="js/calculators_view.js?v=20260818_2"></script>
+  <script src="js/app.js?v=20260818_2"></script>
+</body>
+</html>

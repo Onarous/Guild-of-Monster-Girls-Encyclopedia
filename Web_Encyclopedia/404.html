@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // Single Page Apps for GitHub Pages redirect
+    var path = window.location.pathname;
+    var filename = path.split('/').pop();
+    if (filename && filename.endsWith('.html') && filename !== '404.html') {
+      window.location.replace(filename + window.location.search + window.location.hash);
+    } else {
+      var tab = filename.replace('.html', '');
+      if (['characters', 'items', 'bonds', 'collection', 'guides', 'calculators', 'contacts'].includes(tab)) {
+        window.location.replace('index.html#' + tab + window.location.search);
+      } else {
+        window.location.replace('index.html' + window.location.search + window.location.hash);
+      }
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting to encyclopedia...</p>
+</body>
+</html>
