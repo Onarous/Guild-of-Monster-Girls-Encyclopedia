@@ -2783,10 +2783,10 @@ const GuidesView = {
       },
       {
         icon: "🇨🇳",
-        name: isRu ? "Сообщество TapTap (Гайды и Мета)" : isCn ? "TapTap 玩家社区与流派攻略" : "TapTap Player Guides & Meta",
-        desc: isRu ? "Аналитические статьи, разбор T0/T1 меты и подробные гайды по прохождению этапов гильдии от опытных игроков." : isCn ? "叶叶小飞花等资深玩家撰写的前沿T0流派组队与关卡攻坚详细攻略。" : "In-depth meta analysis, T0/T1 team compositions, and stage progression guides.",
-        url: "https://www.taptap.cn/moment/825053452206868359",
-        actionText: isRu ? "Перейти к гайдам" : isCn ? "查看攻略" : "View Guides"
+        name: isRu ? "Сообщество TapTap (Форум и Гайды)" : isCn ? "TapTap 官方社区论坛与攻略" : "TapTap Official Forum & Guides",
+        desc: isRu ? "Официальный форум игры, аналитические статьи, разбор меты и подробные гайды по прохождению этапов гильдии от игроков." : isCn ? "TapTap官方游戏论坛，收录前沿流派组队、版本更新与关卡攻坚详细攻略。" : "Official game forum, meta team compositions, and stage progression guides from the community.",
+        url: "https://www.taptap.cn/app/742940/topic",
+        actionText: isRu ? "Перейти к гайдам" : isCn ? "查看论坛攻略" : "View Forum"
       },
       {
         icon: "📜",
