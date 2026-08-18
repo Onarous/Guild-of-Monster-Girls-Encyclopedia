@@ -623,20 +623,21 @@ const App = {
       CharactersView.renderList(list, 'cardsGrid', lang, this.state.ownedRoleIds, this.state.imageMappings);
       this.updateResultCount(list.length);
     } 
-    else if (tab === 'characters') {
-      if (collHeaderEl) collHeaderEl.style.display = 'none';
-      let list = this.state.data.characters[lang] || [];
-      list = this.filterAndSortCharacters(list);
-      CharactersView.renderList(list, 'cardsGrid', lang, this.state.ownedRoleIds, this.state.imageMappings);
-      this.updateResultCount(list.length);
-    } 
-    else {
+    else if (tab === 'items' || tab === 'bonds') {
       if (collHeaderEl) collHeaderEl.style.display = 'none';
       let itemsObj = this.state.data.items[lang] || {};
       let cat = tab === 'bonds' ? 'bonds' : (this.state.itemCategory === 'bonds' ? 'equipment' : this.state.itemCategory);
       let list = itemsObj[cat] || [];
       list = this.filterAndSortItems(list);
       ItemsView.renderList({ [cat]: list }, cat, 'cardsGrid', lang, this.state.imageMappings);
+      this.updateResultCount(list.length);
+    }
+    else {
+      // Default fallback: show characters
+      if (collHeaderEl) collHeaderEl.style.display = 'none';
+      let list = this.state.data.characters[lang] || [];
+      list = this.filterAndSortCharacters(list);
+      CharactersView.renderList(list, 'cardsGrid', lang, this.state.ownedRoleIds, this.state.imageMappings);
       this.updateResultCount(list.length);
     }
   },
