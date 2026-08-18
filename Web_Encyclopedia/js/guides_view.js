@@ -6,10 +6,32 @@
 
 const GuidesView = {
   activeSection: 'phases',
+  isNavCollapsedMobile: false,
   gachaFilter: 'all',
   eventsFilter: 'all',
   buildsFilter: 'all',
   codesFilter: 'all',
+
+  toggleNavMobile(e) {
+    if (e) e.stopPropagation();
+    this.isNavCollapsedMobile = !this.isNavCollapsedMobile;
+    const sidebar = document.querySelector('.guides-sidebar');
+    if (sidebar) {
+      sidebar.classList.toggle('nav-collapsed', this.isNavCollapsedMobile);
+      const toggleText = sidebar.querySelector('.guides-toggle-text');
+      const toggleChevron = sidebar.querySelector('.guides-toggle-chevron');
+      const isRu = App.state.lang === 'RU';
+      const isCn = App.state.lang === 'CN';
+      if (toggleText) {
+        toggleText.textContent = this.isNavCollapsedMobile 
+          ? (isRu ? 'Развернуть' : isCn ? '展开' : 'Expand') 
+          : (isRu ? 'Скрыть' : isCn ? '收起' : 'Hide');
+      }
+      if (toggleChevron) {
+        toggleChevron.textContent = this.isNavCollapsedMobile ? '▼' : '▲';
+      }
+    }
+  },
 
   setSection(sectionId) {
     this.activeSection = sectionId;
@@ -103,13 +125,21 @@ const GuidesView = {
       { id: 'codes', icon: '🎟️', title: isRu ? 'Промокоды и Подарки' : isCn ? '礼包兑换码汇总' : 'Promo & Redeem Codes' }
     ];
 
+    const activeItem = menuItems.find(m => m.id === this.activeSection) || menuItems[0];
     const contentHtml = this.getSectionContent(this.activeSection, lang);
 
     container.innerHTML = `
       <div class="guides-wrapper">
-        <aside class="guides-sidebar">
-          <div class="guides-sidebar-title">
-            📚 ${isRu ? 'Оглавление гайдов' : isCn ? '攻略目录' : 'Knowledge Base'}
+        <aside class="guides-sidebar ${this.isNavCollapsedMobile ? 'nav-collapsed' : ''}">
+          <div class="guides-sidebar-header" onclick="GuidesView.toggleNavMobile(event)">
+            <div class="guides-sidebar-title">
+              <span>📚 ${isRu ? 'Оглавление' : isCn ? '攻略目录' : 'Knowledge Base'}</span>
+              <span class="guides-active-chapter-pill">${activeItem.icon} ${activeItem.title}</span>
+            </div>
+            <button class="guides-toggle-btn" type="button" onclick="GuidesView.toggleNavMobile(event)" aria-label="Скрыть/показать оглавление">
+              <span class="guides-toggle-text">${this.isNavCollapsedMobile ? (isRu ? 'Развернуть' : isCn ? '展开' : 'Expand') : (isRu ? 'Скрыть' : isCn ? '收起' : 'Hide')}</span>
+              <span class="guides-toggle-chevron">${this.isNavCollapsedMobile ? '▼' : '▲'}</span>
+            </button>
           </div>
           <div class="guides-nav-list">
             ${menuItems.map(item => `
