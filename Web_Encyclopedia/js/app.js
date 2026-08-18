@@ -987,20 +987,20 @@ const App = {
             <div class="contact-card-header">
               <div class="contact-card-title">
                 <span>🎮</span>
-                <span>${dict.officialDevsTitle || 'Официальные контакты разработчиков игры'}</span>
+                <span>${dict.officialDevsTitle || 'Официальные контакты разработчиков игры (ChillyRoom)'}</span>
               </div>
             </div>
             <p class="contact-card-desc">
-              ${dict.officialDevsDesc || 'По вопросам официальной поддержки игры, восстановления игрового аккаунта, багов в игре и платежей (ChillyRoom):'}
+              ${dict.officialDevsDesc || 'По вопросам официальной поддержки игры, восстановления аккаунта, багов в игре и платежей (ChillyRoom Inc.):'}
             </p>
             
             <div class="contact-items-grid">
-              <!-- Support Email -->
+              <!-- Support Email (from in-game Tip_Customer_Service & Setting_Orders_Des_02) -->
               <div class="contact-item">
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #fbbf24;">✉️</span>
                   <div class="contact-info">
-                    <span class="contact-label">Official Support Email</span>
+                    <span class="contact-label">Official Support Email (Почта поддержки)</span>
                     <span class="contact-value">info@chillyroom.games</span>
                   </div>
                 </div>
@@ -1014,19 +1014,19 @@ const App = {
                 </div>
               </div>
 
-              <!-- Official ChillyRoom Discord -->
+              <!-- Official Customer Service QQ (from in-game Setting_Orders_Des_02) -->
               <div class="contact-item">
                 <div class="contact-item-left">
-                  <span class="contact-icon" style="color: #a78bfa;">💬</span>
+                  <span class="contact-icon" style="color: #38bdf8;">🐧</span>
                   <div class="contact-info">
-                    <span class="contact-label">Official ChillyRoom Discord</span>
-                    <span class="contact-value">discord.gg/chillyroom</span>
+                    <span class="contact-label">Official Customer Service QQ (Служба поддержки QQ)</span>
+                    <span class="contact-value">800179233</span>
                   </div>
                 </div>
                 <div class="contact-actions">
-                  <a href="https://discord.gg/chillyroom" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn" style="background: rgba(167, 139, 250, 0.15); border-color: rgba(167, 139, 250, 0.4); color: #c4b5fd;">
-                    🔗 <span>${dict.openLink || 'Войти'}</span>
-                  </a>
+                  <button class="contact-action-btn copy-btn" id="copyDevQqBtn" onclick="App.copyToClipboard('800179233', 'copyDevQqBtn')" title="Скопировать номер QQ">
+                    📋 <span>${dict.copyBtn || 'Копировать'}</span>
+                  </button>
                 </div>
               </div>
 
@@ -1035,7 +1035,7 @@ const App = {
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #34d399;">🌐</span>
                   <div class="contact-info">
-                    <span class="contact-label">Official Website</span>
+                    <span class="contact-label">Official Website (Официальный сайт)</span>
                     <span class="contact-value">chillyroom.games</span>
                   </div>
                 </div>
