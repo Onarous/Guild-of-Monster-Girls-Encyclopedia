@@ -106,7 +106,9 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  min-width: 110px;
+  width: 175px;
+  min-width: 175px;
+  flex-shrink: 0;
 }
 
 .pill-group {
