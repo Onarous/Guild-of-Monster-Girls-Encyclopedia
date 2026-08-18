@@ -611,8 +611,8 @@ const GuidesView = {
           <!-- Alter Recruit Pool Section -->
           <div class="guide-card">
             <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
-              <h3>🌌 ${isRu ? `Пул Альтер-Найма и Обликов (${alterChars.length} героинь)` : isCn ? `异化与皮肤招募常驻卡池 (${alterChars.length}位角色)` : `Alter & Skin Recruitment Pool (${alterChars.length} Heroines)`}</h3>
-              <span class="badge-accent">${isRu ? 'Постоянный пул обликов' : isCn ? '常驻异化卡池' : 'Permanent Alter Pool'}</span>
+              <h3>🌌 ${isRu ? `Пул Альтер-Баннера (${alterChars.length} героинь)` : isCn ? `异化招募常驻卡池 (${alterChars.length}位角色)` : `Alter Recruitment Pool (${alterChars.length} Heroines)`}</h3>
+              <span class="badge-accent">${isRu ? 'Постоянный Альтер-Баннер' : isCn ? '常驻异化卡池' : 'Permanent Alter Banner'}</span>
             </div>
             <p style="font-size: 13.5px; color: var(--text-secondary);">
               ${isRu 

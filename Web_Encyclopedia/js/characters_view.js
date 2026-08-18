@@ -396,7 +396,7 @@ const CharactersView = {
   getBannerIcon(type) {
     if (type === 'limited') return '⏳';
     if (type === 'skin_limited') return '👑';
-    if (type === 'skin') return '👗';
+    if (type === 'skin') return '🎭';
     if (type === 'adventure') return '🗺️';
     if (type === 'event') return '🎁';
     return '🔮';
@@ -415,14 +415,14 @@ const CharactersView = {
         CN: "限时角色！仅在专属限时UP招募活动期间登场。"
       },
       skin: {
-        RU: "Облик / Альтер-форма персонажа. Доступна в постоянном пуле Альтер-найма.",
-        EN: "Skin / Alter form. Available in the permanent Skin & Alter recruitment pool.",
-        CN: "角色皮肤/异化形态。可在常驻皮肤·异化招募卡池中获取。"
+        RU: "Альтер-форма / облик персонажа. Доступна в постоянном пуле Альтер-баннера.",
+        EN: "Alter form / skin. Available in the permanent Alter recruitment pool.",
+        CN: "角色异化形态/皮肤。可在常驻异化招募卡池中获取。"
       },
       skin_limited: {
-        RU: "Эксклюзивный лимитированный облик! Доступен во время сезонных Rate-Up событий.",
-        EN: "Exclusive limited skin! Available during special seasonal skin rate-up events.",
-        CN: "限定专属皮肤！仅在限时皮肤UP招募期间获取。"
+        RU: "Эксклюзивный лимитированный Альтер-персонаж! Доступен во время специальных Rate-Up событий.",
+        EN: "Exclusive limited Alter character! Available during special seasonal Alter Rate-Up events.",
+        CN: "限定专属异化角色！仅在限时异化UP招募期间获取。"
       },
       adventure: {
         RU: "Добывается в процессе прохождения глав приключений, сюжета и наград уровней.",
