@@ -1418,42 +1418,41 @@
   }
 
   .guides-sidebar-title {
-    font-size: 12px;
+    font-size: 13px;
     display: flex;
     align-items: center;
     gap: 6px;
     flex: 1;
     min-width: 0;
+    flex-wrap: wrap;
   }
 
   .guides-toc-label {
     white-space: nowrap;
     color: var(--text-secondary);
-    font-size: 11.5px;
+    font-size: 12px;
   }
 
   .guides-active-chapter-pill {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
-    font-size: 11.5px;
+    gap: 5px;
+    font-size: 12px;
     font-weight: 700;
     color: #93c5fd;
     background: rgba(59, 130, 246, 0.15);
     border: 1px solid rgba(59, 130, 246, 0.35);
-    padding: 2px 8px;
+    padding: 3px 10px;
     border-radius: var(--radius-full);
-    max-width: 170px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    max-width: 100%;
+    white-space: normal;
+    word-break: break-word;
     margin-left: 2px;
   }
 
   .guides-pill-text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
+    word-break: break-word;
   }
 
   .guides-toggle-btn {
@@ -1543,7 +1542,6 @@
   min-width: 0;
   max-width: 100%;
   width: 100%;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -1554,7 +1552,6 @@
   min-width: 0;
   max-width: 100%;
   width: 100%;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -1592,6 +1589,15 @@
   overflow-wrap: break-word;
 }
 
+.guide-card p,
+.guide-card h3,
+.guide-card h4,
+.guide-card div,
+.guide-card span {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 .guide-card h3 {
   font-size: 16px;
   font-weight: 700;
@@ -1609,6 +1615,11 @@
   font-size: 14px;
   color: var(--text-secondary);
   line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.guide-list li {
   word-break: break-word;
   overflow-wrap: break-word;
 }

@@ -1502,10 +1502,10 @@ const GuidesView = {
                     return `
                       <div onclick="App.openCharacterModal('${slot.id}')" style="display: flex; align-items: center; gap: 8px; background: rgba(0,0,0,0.3); padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border-subtle); cursor: pointer; transition: all 0.15s ease;" title="${isRu ? 'Открыть карточку' : isCn ? '查看详情' : 'View Card'}">
                         ${charImg ? `<img src="${charImg}" alt="${charName}" style="width: 36px; height: 36px; border-radius: 6px; object-fit: cover;" onerror="this.style.display='none'">` : '<div style="width: 36px; height: 36px; background: #334155; border-radius: 6px; display: flex; align-items: center; justify-content: center;">⭐</div>'}
-                        <div style="overflow: hidden;">
+                        <div style="flex: 1; min-width: 0;">
                           <div style="font-size: 11px; color: #a78bfa; font-weight: 600;">${slot.rolePos}</div>
-                          <div style="font-size: 13px; font-weight: 700; color: #f1f5f9; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${charName}</div>
-                          <div style="font-size: 10.5px; color: var(--text-muted);">${slot.note}</div>
+                          <div style="font-size: 13px; font-weight: 700; color: #f1f5f9; word-break: break-word; line-height: 1.3;">${charName}</div>
+                          <div style="font-size: 11px; color: var(--text-muted); line-height: 1.3;">${slot.note}</div>
                         </div>
                       </div>
                     `;
