@@ -491,8 +491,8 @@ const CalculatorsView = {
                 <button class="calc-action-btn" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);" onclick="CalculatorsView.simRollUntilGold()">
                   🌟 ${isRu ? 'До следующего золотого' : isCn ? '直接洗出下个金天赋' : 'Roll to Gold'}
                 </button>
-                <button class="calc-preset-btn" onclick="CalculatorsView.resetSim()">
-                  🔄 ${isRu ? 'Сбросить симулятор' : isCn ? '重置模拟' : 'Reset'}
+                <button class="calc-secondary-btn" onclick="CalculatorsView.resetSim()">
+                  🔄 ${isRu ? 'Сбросить' : isCn ? '重置' : 'Reset'}
                 </button>
               </div>
             </div>
@@ -1310,16 +1310,16 @@ const CalculatorsView = {
           </div>
 
           <!-- Wizard Stepper Controls -->
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 24px; border-top: 1px solid var(--border-subtle); padding-top: 16px;">
-            <button class="calc-preset-btn" ${s.step === 1 ? 'disabled style="opacity: 0.5;"' : ''} onclick="CalculatorsView.setTransferStep(Math.max(1, s.step - 1))">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 24px; border-top: 1px solid var(--border-subtle); padding-top: 16px; flex-wrap: wrap; gap: 10px;">
+            <button class="calc-secondary-btn" ${s.step === 1 ? 'disabled style="opacity: 0.5; cursor: not-allowed;"' : ''} onclick="CalculatorsView.setTransferStep(${Math.max(1, s.step - 1)})">
               ⬅️ ${isRu ? 'Предыдущий шаг' : isCn ? '上一步' : 'Previous Step'}
             </button>
 
-            <div style="font-size: 13px; color: #fbbf24;">
+            <div style="font-size: 13px; color: #fbbf24; font-weight: 700;">
               💎 ${isRu ? 'Суммарный расход кристаллов: ' : isCn ? '累计钻石消耗: ' : 'Total Gems Cost: '} <strong>${s.step >= 4 ? '400' : (s.step >= 3 ? '200' : '0')} 💎</strong>
             </div>
 
-            <button class="calc-action-btn" onclick="CalculatorsView.setTransferStep(s.step >= 4 ? 1 : s.step + 1)">
+            <button class="calc-action-btn" onclick="CalculatorsView.setTransferStep(${s.step >= 4 ? 1 : s.step + 1})">
               ${s.step >= 4 ? (isRu ? '🔄 Начать сначала' : isCn ? '重新开始' : 'Start Over') : (isRu ? 'Следующий шаг ➔' : isCn ? '下一步 ➔' : 'Next Step ➔')}
             </button>
           </div>
