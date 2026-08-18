@@ -505,3 +505,8 @@ const ItemsView = {
       .replace(/'/g, "&#039;");
   }
 };
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = ItemsView;
+}
+

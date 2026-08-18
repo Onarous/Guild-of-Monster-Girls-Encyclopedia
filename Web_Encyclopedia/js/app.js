@@ -574,10 +574,6 @@ const App = {
     if (isBonds) {
       this.state.itemCategory = 'bonds';
     } else if (tab === 'items') {
-      // If switching from bonds to items tab, reset to default equipment category
-      if (this.state.itemCategory === 'bonds') {
-        this.state.itemCategory = 'equipment';
-      }
       // Synchronize category sub-bar active button
       document.querySelectorAll('.cat-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.cat === this.state.itemCategory);
@@ -745,7 +741,7 @@ const App = {
     else if (tab === 'items' || tab === 'bonds') {
       if (collHeaderEl) collHeaderEl.style.display = 'none';
       let itemsObj = this.state.data.items[lang] || {};
-      let cat = tab === 'bonds' ? 'bonds' : (this.state.itemCategory === 'bonds' ? 'equipment' : this.state.itemCategory);
+      let cat = tab === 'bonds' ? 'bonds' : (this.state.itemCategory || 'equipment');
       let list = itemsObj[cat] || [];
       list = this.filterAndSortItems(list);
       ItemsView.renderList({ [cat]: list }, cat, 'cardsGrid', lang, this.state.imageMappings);
