@@ -28,6 +28,15 @@ const App = {
     }
   },
 
+  isGitHubPages() {
+    try {
+      const host = window.location.hostname.toLowerCase();
+      return host.endsWith('github.io') || host.includes('github') || host.includes('githubpreview') || host === 'onarous.github.io';
+    } catch (e) {
+      return false;
+    }
+  },
+
   async init() {
     this.bindEvents();
     await this.loadImageMappings();

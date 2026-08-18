@@ -1,11 +1,12 @@
 /**
  * Collection & Account Manager View Component for Guild of Monster Girls Web Encyclopedia
- * Supports Login by Username/Password, Email Code, Token, and Save File Import.
+ * Supports Login by WebADB, Token, and Save File Import (JSON/Txt).
+ * When hosted on GitHub Pages, server-dependent login tabs are automatically omitted in favor of client-side Save File Import.
  * All credentials, tokens, and game data are persisted locally in browser localStorage.
  */
 
 const CollectionView = {
-  activeLoginTab: "webadb", // "webadb" | "token"
+  activeLoginTab: (typeof window !== "undefined" && (window.location.hostname.endsWith("github.io") || window.location.hostname.includes("github"))) ? "import" : "webadb",
 
   setLoginTab(tab) {
     this.activeLoginTab = tab;
@@ -22,8 +23,76 @@ const CollectionView = {
     const ownedCount = ownedIds.size;
     const pct = totalCharacters > 0 ? Math.round((ownedCount / totalCharacters) * 100) : 0;
     const isLogged = accountData && (ownedCount > 0 || accountData.token || accountData.account);
+    const isGhPages = typeof App !== "undefined" && App.isGitHubPages && App.isGitHubPages();
 
     if (!isLogged) {
+      // 1. GitHub Pages Mode: Only Client-Side Save File Import is shown (server login tabs omitted)
+      if (isGhPages) {
+        return `
+          <div class="account-connect-card">
+            <div class="acc-header-info">
+              <div class="acc-icon-badge">📁</div>
+              <div>
+                <h2 class="acc-title">${dict.accConnectTitleGhPages || dict.accConnectTitle}</h2>
+                <p class="acc-desc">${dict.accConnectDescGhPages || dict.accConnectDesc}</p>
+              </div>
+            </div>
+
+            <!-- GitHub Pages Notice Banner -->
+            <div class="auth-req-badge" style="margin-bottom: 16px; background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.35); color: #e0f2fe;">
+              ${dict.ghPagesSyncNotice}
+            </div>
+
+            <div class="acc-actions-grid">
+              <!-- Save File Import Interface -->
+              <div class="login-tab-content" data-tab="import" style="display: block;">
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                  <div class="save-dropzone" onclick="document.getElementById('accFileInputTab').click()" ondragover="event.preventDefault(); this.classList.add('dragover');" ondragleave="this.classList.remove('dragover');" ondrop="event.preventDefault(); this.classList.remove('dragover'); App.importSaveFile(event);">
+                    <div class="save-dropzone-icon">📁</div>
+                    <div class="save-dropzone-text">${dict.importDropZoneText}</div>
+                    <input type="file" id="accFileInputTab" accept=".json,.txt" style="display: none;" onchange="App.importSaveFile(event)">
+                  </div>
+
+                  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+                    <button class="acc-btn secondary" onclick="document.getElementById('accFileInputTab').click()">${dict.accImportFileBtn}</button>
+                    <button class="acc-btn outline" onclick="App.showPasteJsonModal()">${dict.accPasteJsonBtn}</button>
+                  </div>
+
+                  <!-- Detailed Save File Instructions -->
+                  <div class="auth-instruction-box">
+                    <div class="auth-inst-title">
+                      <span>${dict.importInstructionsTitle}</span>
+                    </div>
+
+                    <div class="auth-inst-step">
+                      <strong>${dict.importStep1FilesTitle}</strong>
+                      <span>${dict.importStep1FilesDesc}</span>
+                    </div>
+
+                    <div class="auth-inst-step">
+                      <strong>${dict.importStep2PathTitle}</strong>
+                      <span>${dict.importStep2PathDesc}</span>
+                    </div>
+
+                    <div class="auth-inst-security">
+                      <strong>${dict.importStep3OfflineTitle}</strong> ${dict.importStep3OfflineDesc}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Privacy Notice -->
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.06);">
+              <div class="acc-privacy-notice">
+                ${dict.accPrivacyNotice}
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      // 2. Localhost Mode: Full Tabbed Interface with WebADB & Token Login support
       return `
         <div class="account-connect-card">
           <div class="acc-header-info">
@@ -155,7 +224,7 @@ const CollectionView = {
                     <span>${dict.importInstructionsTitle}</span>
                   </div>
 
-                  <div class="auth-inst-step">
+                    <div class="auth-inst-step">
                     <strong>${dict.importStep1FilesTitle}</strong>
                     <span>${dict.importStep1FilesDesc}</span>
                   </div>
@@ -207,7 +276,7 @@ const CollectionView = {
               <span>📁 ${dict.accImportFileBtn}</span>
               <input type="file" accept=".json,.txt" style="display: none;" onchange="App.importSaveFile(event)">
             </label>
-            <button class="dash-btn outline" onclick="App.refreshAccountData()">🔄 ${dict.accRefreshBtn}</button>
+            ${!isGhPages ? `<button class="dash-btn outline" onclick="App.refreshAccountData()">🔄 ${dict.accRefreshBtn}</button>` : ''}
             <button class="dash-btn danger" onclick="App.logoutAccount()">🚪 ${dict.accLogoutBtn}</button>
           </div>
         </div>

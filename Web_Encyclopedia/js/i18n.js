@@ -92,6 +92,9 @@ const I18N = {
     // Account & Collection
     accConnectTitle: "Вход в коллекцию и синхронизация",
     accConnectDesc: "Выберите удобный способ синхронизации: мгновенный автовход с эмулятора/устройства, ввод токена сессии или загрузку файла сохранения. Ваши данные хранятся исключительно в вашем браузере.",
+    accConnectTitleGhPages: "Импорт сохранения коллекции",
+    accConnectDescGhPages: "Загрузите файл monster_girls_roster.json или вставьте JSON-данные из экстрактора для просмотра вашей коллекции. Ваши данные хранятся исключительно в вашем браузере.",
+    ghPagesSyncNotice: "🌐 <b>GitHub Pages режим:</b> Прямой вход через WebADB и токен работает через локальный сервер (<code>run_web_encyclopedia.bat</code>). В онлайн-версии синхронизация выполняется через импорт файла сохранения.",
     loginTabWebAdb: "⚡ Авто-вход (WebADB / Устройство)",
     loginTabToken: "🎫 Вход по токену / Ссылке",
     loginTabImport: "📁 Загрузка сохранения (JSON)",
@@ -256,6 +259,9 @@ const I18N = {
     // Account & Collection
     accConnectTitle: "Collection Sync & Authentication",
     accConnectDesc: "Choose your sync method: 1-click auto-sync from emulator/device, auth token, or import your game save file. All data is saved strictly in your browser.",
+    accConnectTitleGhPages: "Import Save Collection",
+    accConnectDescGhPages: "Load your monster_girls_roster.json file or paste JSON data from the extractor. All data is saved strictly in your browser.",
+    ghPagesSyncNotice: "🌐 <b>GitHub Pages Mode:</b> Direct Token and WebADB logins require the local backend server (<code>run_web_encyclopedia.bat</code>). In this online version, use save file import.",
     loginTabWebAdb: "⚡ Auto-Sync (WebADB / Device)",
     loginTabToken: "🎫 Auth Token / Link",
     loginTabImport: "📁 Import Save File (JSON)",
@@ -419,6 +425,9 @@ const I18N = {
     // Account & Collection
     accConnectTitle: "图鉴收藏与数据同步",
     accConnectDesc: "选择便捷的同步方式：模拟器/设备一键自动同步、输入会话Token或直接导入存档文件。数据仅保存在您的本地浏览器中。",
+    accConnectTitleGhPages: "导入收藏存档",
+    accConnectDescGhPages: "导入 monster_girls_roster.json 文件或粘贴提取器导出的 JSON 数据。所有数据均安全保存在浏览器本地。",
+    ghPagesSyncNotice: "🌐 <b>GitHub Pages 模式:</b> Token 和 WebADB 直接同步需要本地后端支持 (<code>run_web_encyclopedia.bat</code>)。在线版请使用存档文件导入。",
     loginTabWebAdb: "⚡ 一键同步 (WebADB / 设备)",
     loginTabToken: "🎫 Token / 链接登录",
     loginTabImport: "📁 导入存档文件 (JSON)",
