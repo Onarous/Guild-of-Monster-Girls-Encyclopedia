@@ -72,6 +72,20 @@ const ItemsView = {
     return emojis[category] || '📦';
   },
 
+  itemsPerPage: 60,
+  currentPage: 1,
+
+  resetPagination() {
+    this.currentPage = 1;
+  },
+
+  loadMore() {
+    this.currentPage++;
+    if (typeof App !== 'undefined' && App.render) {
+      App.render();
+    }
+  },
+
   renderList(itemsData, category, containerId, currentLang = "RU", imageMappings = {}) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -89,7 +103,13 @@ const ItemsView = {
       return;
     }
 
-    container.innerHTML = list.map(item => {
+    const totalCount = list.length;
+    const limit = this.currentPage * this.itemsPerPage;
+    const visibleList = list.slice(0, limit);
+    const hasMore = totalCount > limit;
+    const remainingCount = totalCount - limit;
+
+    const cardsHtml = visibleList.map(item => {
       const step = item.step || item.Step || 'C';
       const tierClass = `tier-${step.toLowerCase()}`;
 
@@ -105,6 +125,22 @@ const ItemsView = {
         return this.renderGenericItemCard(item, category, tierClass, dict, imageMappings);
       }
     }).join('');
+
+    const isRu = currentLang === 'RU';
+    const isCn = currentLang === 'CN';
+
+    const paginationHtml = hasMore ? `
+      <div class="items-pagination-bar" style="grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; margin-top: 20px; padding: 18px 20px; background: rgba(15, 23, 42, 0.6); border: 1px dashed rgba(168, 85, 247, 0.35); border-radius: var(--radius-md);">
+        <div style="font-size: 13px; color: var(--text-secondary);">
+          ${isRu ? `Показано <strong>${visibleList.length}</strong> из <strong>${totalCount}</strong> предметов (Осталось: ${remainingCount})` : isCn ? `已显示 <strong>${visibleList.length}</strong> / <strong>${totalCount}</strong> 件物品 (剩余: ${remainingCount})` : `Showing <strong>${visibleList.length}</strong> of <strong>${totalCount}</strong> items (${remainingCount} remaining)`}
+        </div>
+        <button onclick="ItemsView.loadMore()" class="filter-pill active" style="padding: 9px 24px; font-size: 13.5px; font-weight: 700; border-radius: var(--radius-md); box-shadow: 0 4px 14px rgba(147, 51, 234, 0.25); cursor: pointer; transition: all 0.15s ease;">
+          📦 ${isRu ? `Показать еще 60 предметов ▾` : isCn ? `加载更多 60 件物品 ▾` : `Load 60 More Items ▾`}
+        </button>
+      </div>
+    ` : '';
+
+    container.innerHTML = cardsHtml + paginationHtml;
   },
 
   renderEquipCard(eq, tierClass, dict, imageMappings = {}) {

@@ -2776,17 +2776,17 @@ const GuidesView = {
     const communityItems = [
       {
         icon: "💬",
-        name: isRu ? "Официальный Discord Guild of Monster Girls" : isCn ? "官方玩家 Discord 社区" : "Official Discord Community",
-        desc: isRu ? "Каналы #theorycraft, #guides и #questions с участием ведущих тестеров механик и авторов актуальных сборок." : isCn ? "官方核心交流群，包含配队理论、最新攻略与每日问答频道。" : "Channels for mechanics theorycrafting, build discussions, and daily Q&A.",
-        url: "https://discord.gg/",
-        actionText: isRu ? "Открыть Discord" : isCn ? "加入群组" : "Join Discord"
+        name: isRu ? "Discord Сообщество Теоретиков" : isCn ? "Discord 玩家与配队理论频道" : "Discord Theorycraft Community",
+        desc: isRu ? "Международное сообщество игроков: каналы #theorycraft, #guides и #questions с участием ведущих исследователей механик (Xylene, baosbanhbao, Versailles, SpookyBoi)." : isCn ? "海外玩家深度配队与伤害机制交流群（涵盖 #theorycraft、#guides 与 #questions 专属频道）。" : "Global player hub featuring #theorycraft, #guides, and #questions channels with mechanics testers.",
+        isDiscordInfo: true,
+        actionText: isRu ? "Каналы: #theorycraft" : isCn ? "核心频道: #theorycraft" : "Channels: #theorycraft"
       },
       {
         icon: "🇨🇳",
         name: isRu ? "Сообщество TapTap (Форум и Гайды)" : isCn ? "TapTap 官方社区论坛与攻略" : "TapTap Official Forum & Guides",
         desc: isRu ? "Официальный форум игры, аналитические статьи, разбор меты и подробные гайды по прохождению этапов гильдии от игроков." : isCn ? "TapTap官方游戏论坛，收录前沿流派组队、版本更新与关卡攻坚详细攻略。" : "Official game forum, meta team compositions, and stage progression guides from the community.",
         url: "https://www.taptap.cn/app/742940/topic",
-        actionText: isRu ? "Перейти к гайдам" : isCn ? "查看论坛攻略" : "View Forum"
+        actionText: isRu ? "Перейти к форуму" : isCn ? "查看论坛攻略" : "Open Forum"
       },
       {
         icon: "📜",
@@ -2827,6 +2827,10 @@ const GuidesView = {
                   <button onclick="App.setTab('characters')" class="filter-pill active" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; font-size: 12.5px; font-weight: 700; border-radius: 6px; cursor: pointer;">
                     🚀 ${item.actionText} ➔
                   </button>
+                ` : item.isDiscordInfo ? `
+                  <span class="tag-badge" style="background: rgba(88, 101, 242, 0.15); color: #818cf8; border: 1px solid rgba(88, 101, 242, 0.35); padding: 6px 12px; font-weight: 700; font-size: 12px; border-radius: 6px;">
+                    👾 ${item.actionText}
+                  </span>
                 ` : `
                   <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="filter-pill active" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; font-size: 12.5px; font-weight: 700; border-radius: 6px;">
                     🔗 ${item.actionText} ↗

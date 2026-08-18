@@ -668,6 +668,7 @@ const App = {
 
   setItemCategory(cat) {
     this.state.itemCategory = cat;
+    if (typeof ItemsView !== 'undefined' && ItemsView.resetPagination) ItemsView.resetPagination();
     document.querySelectorAll('.cat-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.cat === cat);
     });
@@ -676,6 +677,7 @@ const App = {
 
   setFilter(type, value) {
     this.state.filters[type] = value;
+    if (typeof ItemsView !== 'undefined' && ItemsView.resetPagination) ItemsView.resetPagination();
     document.querySelectorAll(`.filter-pill[data-filter-type="${type}"]`).forEach(p => {
       p.classList.toggle('active', p.dataset.filterVal === value);
     });
@@ -685,6 +687,7 @@ const App = {
   resetFilters() {
     this.state.searchQuery = "";
     document.getElementById('searchInput').value = "";
+    if (typeof ItemsView !== 'undefined' && ItemsView.resetPagination) ItemsView.resetPagination();
     this.state.filters = {
       rarity: "all",
       class: "all",

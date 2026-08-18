@@ -836,7 +836,7 @@ const CalculatorsView = {
               <div class="calc-pill-selector">
                 ${s.slots.map(sl => `
                   <button class="calc-select-pill ${s.activeAttacker === sl.id ? 'active' : ''} ${!sl.alive ? 'pill-dead' : ''}" onclick="CalculatorsView.setActiveAttacker(${sl.id})">
-                    ${sl.team === 'ally' ? '🛡️' : '⚔️'} ${sl.name} ${!sl.alive ? `(${isRu ? 'Мертв' : isCn ? '阵亡' : 'Dead'})` : ''}
+                    ${sl.team === 'ally' ? '🛡️' : '⚔️'} ${this.getSlotName(sl, lang)} ${!sl.alive ? `(${isRu ? 'Мертв' : isCn ? '阵亡' : 'Dead'})` : ''}
                   </button>
                 `).join('')}
               </div>
@@ -887,7 +887,7 @@ const CalculatorsView = {
 
             ${chosenTarget ? `
               <div class="metric-display-banner status-ideal">
-                <div class="metric-big-number" style="font-size: 24px;">🎯 ${chosenTarget.slot.name}</div>
+                <div class="metric-big-number" style="font-size: 24px;">🎯 ${this.getSlotName(chosenTarget.slot, lang)}</div>
                 <div class="metric-big-label">
                   ${isRu ? 'Выбранная цель атаки' : isCn ? '最终锁定攻击目标' : 'Selected Target'}
                 </div>
@@ -913,7 +913,7 @@ const CalculatorsView = {
               </div>
               ${targetCalculations.map(tc => `
                 <div class="breakdown-row">
-                  <span>${tc.slot.name} ${tc.slot.taunt ? '💥[TAUNT]' : ''}</span>
+                  <span>${this.getSlotName(tc.slot, lang)} ${tc.slot.taunt ? '💥[TAUNT]' : ''}</span>
                   <strong style="color: ${tc.reachable ? '#34d399' : '#f43f5e'};">
                     Range ${tc.distance} ${tc.reachable ? `(✅ ${isRu ? 'Достает' : isCn ? '可触及' : 'In Range'})` : `(❌ ${isRu ? 'Не достает' : isCn ? '超出' : 'Out'})`}
                   </strong>
@@ -926,20 +926,35 @@ const CalculatorsView = {
     `;
   },
 
+  getSlotName(slot, lang) {
+    const isRu = lang === 'RU';
+    const isCn = lang === 'CN';
+    switch (slot.id) {
+      case 0: return isRu ? 'Союзник (Тыл)' : isCn ? '友方 (后排)' : 'Ally (Back)';
+      case 1: return isRu ? 'Союзник (Центр)' : isCn ? '友方 (中排)' : 'Ally (Mid)';
+      case 2: return isRu ? 'Союзник (Авангард)' : isCn ? '友方 (前锋)' : 'Ally (Front)';
+      case 3: return isRu ? 'Враг (Авангард)' : isCn ? '敌方 (前锋)' : 'Enemy (Front)';
+      case 4: return isRu ? 'Враг (Центр)' : isCn ? '敌方 (中排)' : 'Enemy (Mid)';
+      case 5: return isRu ? 'Враг (Тыл)' : isCn ? '敌方 (后排)' : 'Enemy (Back)';
+      default: return slot.name;
+    }
+  },
+
   renderBattleCell(slot, idx, isAttacker, isTarget, lang) {
     const isRu = lang === 'RU';
     const isCn = lang === 'CN';
+    const slotName = this.getSlotName(slot, lang);
 
     return `
       <div class="battle-slot-cell ${!slot.alive ? 'cell-dead' : ''} ${isAttacker ? 'cell-attacker' : ''} ${isTarget ? 'cell-target' : ''}">
         <div class="cell-idx-badge">#${idx} ${idx === 0 || idx === 5 ? (isRu ? 'Тыл' : isCn ? '后' : 'Back') : (idx === 1 || idx === 4 ? (isRu ? 'Центр' : isCn ? '中' : 'Mid') : (isRu ? 'Авангард' : isCn ? '前' : 'Front'))}</div>
-        <div class="cell-unit-name">${slot.name}</div>
+        <div class="cell-unit-name">${slotName}</div>
         <div class="cell-stats-line">❤️ ${slot.hp} HP | ⚔️ ${slot.atk}</div>
 
         <!-- Toggle States -->
         <div class="cell-controls">
           <button class="cell-toggle-btn ${slot.alive ? 'btn-on' : 'btn-off'}" onclick="CalculatorsView.toggleSlotAlive(${idx})" title="${isRu ? 'Переключить Жив / Мертв' : isCn ? '切换存活/阵亡' : 'Toggle Alive'}">
-            ${slot.alive ? '❤️ Жив' : '💀 Мертв'}
+            ${slot.alive ? (isRu ? '❤️ Жив' : isCn ? '❤️ 存活' : '❤️ Alive') : (isRu ? '💀 Мертв' : isCn ? '💀 阵亡' : '💀 Dead')}
           </button>
           <button class="cell-toggle-btn ${slot.taunt ? 'btn-on-warn' : ''}" onclick="CalculatorsView.toggleSlotTaunt(${idx})" title="${isRu ? 'Провокация (Taunt)' : isCn ? '嘲讽状态' : 'Taunt'}">
             💥 Taunt
@@ -1331,28 +1346,28 @@ const CalculatorsView = {
           <div class="wizard-visual-schematic">
             <div class="schematic-node ${s.step === 1 ? 'node-highlight' : ''}">
               <div class="node-title">📄 Page 1</div>
-              <div class="node-state">${s.step === 1 ? (isRu ? '⚡ Крутим 4 золота' : isCn ? '⚡ 洗出4金底座' : 'Rolling 4 Golds') : (s.step === 4 ? '🎉 2x ЭКСКЛЮЗИВА' : '4 Золотых слота')}</div>
+              <div class="node-state">${s.step === 1 ? (isRu ? '⚡ Крутим 4 золота' : isCn ? '⚡ 洗出4金底座' : 'Rolling 4 Golds') : (s.step === 4 ? (isRu ? '🎉 2x ЭКСКЛЮЗИВА' : isCn ? '🎉 2x 同名专属' : '🎉 2x EXCLUSIVES') : (isRu ? '4 Золотых слота' : isCn ? '4金槽位' : '4 Gold Slots'))}</div>
             </div>
 
             <div class="schematic-arrow">${s.step >= 2 ? '➔' : '...'}</div>
 
             <div class="schematic-node ${s.step === 2 ? 'node-highlight' : ''}">
               <div class="node-title">📑 Page 2</div>
-              <div class="node-state">${s.step >= 2 ? '⭐ Эксклюзив' : 'Закрыта'}</div>
+              <div class="node-state">${s.step >= 2 ? (isRu ? '⭐ Эксклюзив' : isCn ? '⭐ 自身专属' : '⭐ Exclusive') : (isRu ? 'Закрыта' : isCn ? '待开启' : 'Locked')}</div>
             </div>
 
             <div class="schematic-arrow">${s.step >= 3 ? '➔ (200 💎)' : '...'}</div>
 
             <div class="schematic-node ${s.step === 3 ? 'node-highlight' : ''}">
-              <div class="node-title">👤 Донор-Посредник</div>
-              <div class="node-state">${s.step >= 3 ? '📥 Хранит эксклюзив' : 'В резерве'}</div>
+              <div class="node-title">👤 ${isRu ? 'Донор-Посредник' : isCn ? '中介狗粮' : 'Donor Unit'}</div>
+              <div class="node-state">${s.step >= 3 ? (isRu ? '📥 Хранит эксклюзив' : isCn ? '📥 暂存专属' : '📥 Holds Exclusive') : (isRu ? 'В резерве' : isCn ? '待命中介' : 'In Reserve')}</div>
             </div>
 
             <div class="schematic-arrow">${s.step === 4 ? '➔ (200 💎)' : '...'}</div>
 
             <div class="schematic-node ${s.step === 4 ? 'node-highlight' : ''}">
-              <div class="node-title">🏆 Итог (Page 1)</div>
-              <div class="node-state">${s.step === 4 ? '🔥 2x–4x ДУБЛИКАТ' : 'Ожидание'}</div>
+              <div class="node-title">🏆 ${isRu ? 'Итог (Page 1)' : isCn ? '终极叠加 (Page 1)' : 'Result (Page 1)'}</div>
+              <div class="node-state">${s.step === 4 ? (isRu ? '🔥 2x–4x ДУБЛИКАТ' : isCn ? '🔥 2x–4x 暴力叠加' : '🔥 2x–4x DUPLICATE') : (isRu ? 'Ожидание' : isCn ? '等待回传' : 'Waiting')}</div>
             </div>
           </div>
 
