@@ -13,6 +13,31 @@
 
 const CalculatorsView = {
   activeCalc: 'clover', // 'clover' | 'talent' | 'range' | 'damage' | 'transfer'
+  isNavCollapsedMobile: false,
+
+  toggleNavMobile(e) {
+    if (e) {
+      e.stopPropagation();
+      e.preventDefault();
+    }
+    this.isNavCollapsedMobile = !this.isNavCollapsedMobile;
+    const sidebar = document.querySelector('.calc-sidebar');
+    if (sidebar) {
+      if (this.isNavCollapsedMobile) {
+        sidebar.classList.add('nav-collapsed');
+      } else {
+        sidebar.classList.remove('nav-collapsed');
+      }
+      const toggleText = sidebar.querySelector('.calc-toggle-text');
+      const isRu = App.state.lang === 'RU';
+      const isCn = App.state.lang === 'CN';
+      if (toggleText) {
+        toggleText.textContent = this.isNavCollapsedMobile 
+          ? (isRu ? 'Развернуть ▾' : isCn ? '展开 ▾' : 'Expand ▾') 
+          : (isRu ? 'Скрыть ▴' : isCn ? '收起 ▴' : 'Hide ▴');
+      }
+    }
+  },
 
   // --- State for Calculator 1: LUK & Clover ---
   cloverState: {
@@ -80,6 +105,9 @@ const CalculatorsView = {
 
   setCalculator(calcId) {
     this.activeCalc = calcId;
+    if (window.innerWidth <= 900) {
+      this.isNavCollapsedMobile = true;
+    }
     const container = document.getElementById('calculatorsContainer');
     if (container) {
       this.render('calculatorsContainer', App.state.lang);
@@ -87,7 +115,7 @@ const CalculatorsView = {
         App.updateUrl('calculators', calcId);
       }
       if (window.innerWidth <= 900) {
-        const contentPanel = container.querySelector('.calculators-content-panel');
+        const contentPanel = container.querySelector('.calc-main-panel');
         if (contentPanel) {
           contentPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
@@ -110,6 +138,8 @@ const CalculatorsView = {
       { id: 'damage', icon: '🧮', title: isRu ? 'Урон и Пробитие Стойкости' : isCn ? '伤害计算与破韧模拟' : 'Damage & Break Sim' },
       { id: 'transfer', icon: '🔄', title: isRu ? 'Мастер Дублирования' : isCn ? '专属天赋多重叠加' : 'Talent Duplication' }
     ];
+
+    const activeItem = calcTabs.find(t => t.id === this.activeCalc) || calcTabs[0];
 
     let contentHtml = '';
     switch (this.activeCalc) {
@@ -134,20 +164,37 @@ const CalculatorsView = {
 
     container.innerHTML = `
       <div class="calc-wrapper">
-        <!-- Calculators Navigation Bar -->
-        <div class="calc-nav-bar">
-          ${calcTabs.map(t => `
-            <button class="calc-nav-tab ${this.activeCalc === t.id ? 'active' : ''}" onclick="CalculatorsView.setCalculator('${t.id}')">
-              <span class="calc-tab-icon">${t.icon}</span>
-              <span class="calc-tab-text">${t.title}</span>
+        <!-- Calculators Sidebar Navigation -->
+        <aside class="calc-sidebar ${this.isNavCollapsedMobile ? 'nav-collapsed' : ''}">
+          <div class="calc-sidebar-header" onclick="CalculatorsView.toggleNavMobile(event)">
+            <div class="calc-sidebar-title">
+              <span style="font-size: 16px;">🧮</span>
+              <span class="calc-toc-label">${isRu ? 'Калькуляторы' : isCn ? '计算器与模拟' : 'Calculators'}</span>
+              <span class="calc-active-tab-pill">
+                <span>${activeItem.icon}</span>
+                <span class="calc-pill-text">${activeItem.title}</span>
+              </span>
+            </div>
+            <button class="calc-toggle-btn" type="button" onclick="CalculatorsView.toggleNavMobile(event)" aria-label="Скрыть/показать список калькуляторов">
+              <span class="calc-toggle-text">${this.isNavCollapsedMobile ? (isRu ? 'Развернуть ▾' : isCn ? '展开 ▾' : 'Expand ▾') : (isRu ? 'Скрыть ▴' : isCn ? '收起 ▴' : 'Hide ▴')}</span>
             </button>
-          `).join('')}
-        </div>
+          </div>
+          <div class="calc-nav-list">
+            ${calcTabs.map((t, idx) => `
+              <button class="calc-nav-tab ${this.activeCalc === t.id ? 'active' : ''}" onclick="CalculatorsView.setCalculator('${t.id}')">
+                <span class="calc-tab-num">${idx + 1}</span>
+                <span class="calc-tab-icon">${t.icon}</span>
+                <span class="calc-tab-text">${t.title}</span>
+                ${this.activeCalc === t.id ? '<span class="calc-tab-active-mark">●</span>' : ''}
+              </button>
+            `).join('')}
+          </div>
+        </aside>
 
         <!-- Calculator Main Content Container -->
-        <div class="calc-main-panel">
+        <section class="calc-main-panel">
           ${contentHtml}
-        </div>
+        </section>
       </div>
     `;
   },
