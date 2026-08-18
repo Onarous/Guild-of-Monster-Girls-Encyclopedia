@@ -441,7 +441,14 @@ const App = {
     });
     this.loadDatasets(lang).then(() => {
       this.updateLanguageUI();
+      this.updateTabUI(this.state.activeTab);
       this.render();
+
+      // If contacts modal is open, re-render it in the new language
+      const modal = document.getElementById('detailModal');
+      if (modal && modal.classList.contains('active') && modal.dataset.modalType === 'contacts') {
+        this.openContactsModal();
+      }
     });
   },
 
@@ -903,14 +910,16 @@ const App = {
 
   openContactsModal() {
     const dict = I18N[this.state.lang] || I18N.RU;
+    const c = dict.contacts || {};
     const modal = document.getElementById('detailModal');
+    modal.dataset.modalType = 'contacts';
     
     modal.innerHTML = `
       <div class="modal-dialog" style="max-width: 640px;">
         <div class="modal-header">
           <div class="modal-title" style="display: flex; align-items: center; gap: 8px;">
             <span>💬</span>
-            <span>${dict.contactsModalTitle || 'Контакты и обратная связь'}</span>
+            <span>${c.modalTitle || 'Контакты и обратная связь'}</span>
           </div>
           <button class="modal-close-btn" onclick="App.closeModal()">&times;</button>
         </div>
@@ -921,11 +930,11 @@ const App = {
             <div class="contact-card-header">
               <div class="contact-card-title">
                 <span>🛠️</span>
-                <span>${dict.siteCreatorTitle || 'Создатель сайта и базы данных'}</span>
+                <span>${c.siteCreatorTitle || 'Создатель сайта и базы данных'}</span>
               </div>
             </div>
             <p class="contact-card-desc">
-              ${dict.siteCreatorDesc || 'По вопросам работы сайта, предложениям по улучшению, найденным ошибкам и добавлению новых функций:'}
+              ${c.siteCreatorDesc || 'По вопросам работы сайта, предложениям по улучшению, найденным ошибкам и добавлению новых функций:'}
             </p>
             
             <div class="contact-items-grid">
@@ -934,16 +943,16 @@ const App = {
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #38bdf8;">✈️</span>
                   <div class="contact-info">
-                    <span class="contact-label">Telegram</span>
+                    <span class="contact-label">${c.telegram || 'Telegram'}</span>
                     <span class="contact-value">@OnarousBrake</span>
                   </div>
                 </div>
                 <div class="contact-actions">
-                  <button class="contact-action-btn copy-btn" id="copyTgBtn" onclick="App.copyToClipboard('@OnarousBrake', 'copyTgBtn')" title="Скопировать юзернейм">
-                    📋 <span>${dict.copyBtn || 'Копировать'}</span>
+                  <button class="contact-action-btn copy-btn" id="copyTgBtn" onclick="App.copyToClipboard('@OnarousBrake', 'copyTgBtn')" title="${c.copyHint || 'Скопировать'}">
+                    📋 <span>${c.copy || 'Копировать'}</span>
                   </button>
                   <a href="https://t.me/OnarousBrake" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn" style="background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.4); color: #7dd3fc;">
-                    🔗 <span>${dict.openLink || 'Открыть'}</span>
+                    🔗 <span>${c.open || 'Открыть'}</span>
                   </a>
                 </div>
               </div>
@@ -953,13 +962,13 @@ const App = {
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #818cf8;">🎮</span>
                   <div class="contact-info">
-                    <span class="contact-label">Discord (Username)</span>
+                    <span class="contact-label">${c.discordUser || 'Discord (Никнейм)'}</span>
                     <span class="contact-value">onarous</span>
                   </div>
                 </div>
                 <div class="contact-actions">
-                  <button class="contact-action-btn copy-btn" id="copyDcBtn" onclick="App.copyToClipboard('onarous', 'copyDcBtn')" title="Скопировать Discord ник">
-                    📋 <span>${dict.copyBtn || 'Копировать'}</span>
+                  <button class="contact-action-btn copy-btn" id="copyDcBtn" onclick="App.copyToClipboard('onarous', 'copyDcBtn')" title="${c.copyHint || 'Скопировать'}">
+                    📋 <span>${c.copy || 'Копировать'}</span>
                   </button>
                 </div>
               </div>
@@ -969,7 +978,7 @@ const App = {
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #f1f5f9;">🐙</span>
                   <div class="contact-info">
-                    <span class="contact-label">GitHub Repository</span>
+                    <span class="contact-label">${c.githubRepo || 'GitHub Репозиторий'}</span>
                     <span class="contact-value">Onarous / Encyclopedia</span>
                   </div>
                 </div>
@@ -987,11 +996,11 @@ const App = {
             <div class="contact-card-header">
               <div class="contact-card-title">
                 <span>🎮</span>
-                <span>${dict.officialDevsTitle || 'Официальные контакты разработчиков игры (ChillyRoom)'}</span>
+                <span>${c.officialDevsTitle || 'Официальные контакты разработчиков игры (ChillyRoom)'}</span>
               </div>
             </div>
             <p class="contact-card-desc">
-              ${dict.officialDevsDesc || 'По вопросам официальной поддержки игры, восстановления аккаунта, багов в игре и платежей (ChillyRoom Inc.):'}
+              ${c.officialDevsDesc || 'По вопросам официальной поддержки игры, восстановления аккаунта, багов в игре и платежей (ChillyRoom Inc.):'}
             </p>
             
             <div class="contact-items-grid">
@@ -1000,16 +1009,16 @@ const App = {
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #a78bfa;">💬</span>
                   <div class="contact-info">
-                    <span class="contact-label">Official Discord Server</span>
+                    <span class="contact-label">${c.officialDiscord || 'Официальный Discord сервер'}</span>
                     <span class="contact-value">discord.gg/euUJPpEdPb</span>
                   </div>
                 </div>
                 <div class="contact-actions">
-                  <button class="contact-action-btn copy-btn" id="copyDevDcBtn" onclick="App.copyToClipboard('https://discord.gg/euUJPpEdPb', 'copyDevDcBtn')" title="Скопировать ссылку Discord">
-                    📋 <span>${dict.copyBtn || 'Копировать'}</span>
+                  <button class="contact-action-btn copy-btn" id="copyDevDcBtn" onclick="App.copyToClipboard('https://discord.gg/euUJPpEdPb', 'copyDevDcBtn')" title="${c.copyHint || 'Скопировать'}">
+                    📋 <span>${c.copy || 'Копировать'}</span>
                   </button>
                   <a href="https://discord.gg/euUJPpEdPb" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn" style="background: rgba(167, 139, 250, 0.15); border-color: rgba(167, 139, 250, 0.4); color: #c4b5fd;">
-                    🔗 <span>${dict.openLink || 'Войти'}</span>
+                    🔗 <span>${c.join || 'Войти'}</span>
                   </a>
                 </div>
               </div>
@@ -1019,13 +1028,13 @@ const App = {
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #34d399;">🌐</span>
                   <div class="contact-info">
-                    <span class="contact-label">Official Website (Портал)</span>
+                    <span class="contact-label">${c.officialWebsite || 'Официальный сайт (Портал)'}</span>
                     <span class="contact-value">chillyroom.com/en</span>
                   </div>
                 </div>
                 <div class="contact-actions">
                   <a href="https://chillyroom.com/en" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn">
-                    🔗 <span>${dict.openLink || 'Открыть'}</span>
+                    🔗 <span>${c.open || 'Открыть'}</span>
                   </a>
                 </div>
               </div>
@@ -1035,13 +1044,13 @@ const App = {
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #ef4444;">▶️</span>
                   <div class="contact-info">
-                    <span class="contact-label">YouTube Channel</span>
+                    <span class="contact-label">${c.youtubeChannel || 'Официальный YouTube канал'}</span>
                     <span class="contact-value">ChillyRoom Official</span>
                   </div>
                 </div>
                 <div class="contact-actions">
                   <a href="https://www.youtube.com/channel/UCclOds0DMrP7LvEdFY_wxWw" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn" style="background: rgba(239, 68, 68, 0.15); border-color: rgba(239, 68, 68, 0.4); color: #fca5a5;">
-                    🔗 <span>${dict.openLink || 'Открыть'}</span>
+                    🔗 <span>${c.open || 'Открыть'}</span>
                   </a>
                 </div>
               </div>
@@ -1051,13 +1060,13 @@ const App = {
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #f1f5f9; font-weight: bold;">𝕏</span>
                   <div class="contact-info">
-                    <span class="contact-label">X (Twitter)</span>
+                    <span class="contact-label">${c.twitterX || 'X (Twitter)'}</span>
                     <span class="contact-value">@ChillyRoom</span>
                   </div>
                 </div>
                 <div class="contact-actions">
                   <a href="https://x.com/ChillyRoom" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn">
-                    🔗 <span>${dict.openLink || 'Открыть'}</span>
+                    🔗 <span>${c.open || 'Открыть'}</span>
                   </a>
                 </div>
               </div>
@@ -1067,13 +1076,13 @@ const App = {
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #f43f5e;">📷</span>
                   <div class="contact-info">
-                    <span class="contact-label">Instagram</span>
+                    <span class="contact-label">${c.instagram || 'Instagram'}</span>
                     <span class="contact-value">@chillyroominc</span>
                   </div>
                 </div>
                 <div class="contact-actions">
                   <a href="https://www.instagram.com/chillyroominc/" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn" style="background: rgba(244, 63, 94, 0.15); border-color: rgba(244, 63, 94, 0.4); color: #fda4af;">
-                    🔗 <span>${dict.openLink || 'Открыть'}</span>
+                    🔗 <span>${c.open || 'Открыть'}</span>
                   </a>
                 </div>
               </div>
@@ -1083,16 +1092,16 @@ const App = {
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #fbbf24;">✉️</span>
                   <div class="contact-info">
-                    <span class="contact-label">Official Support Email (Почта поддержки)</span>
+                    <span class="contact-label">${c.supportEmail || 'Официальная почта поддержки'}</span>
                     <span class="contact-value">info@chillyroom.games</span>
                   </div>
                 </div>
                 <div class="contact-actions">
                   <button class="contact-action-btn copy-btn" id="copyDevEmailBtn" onclick="App.copyToClipboard('info@chillyroom.games', 'copyDevEmailBtn')">
-                    📋 <span>${dict.copyBtn || 'Копировать'}</span>
+                    📋 <span>${c.copy || 'Копировать'}</span>
                   </button>
                   <a href="mailto:info@chillyroom.games" class="contact-action-btn link-btn">
-                    ✉️ <span>Email</span>
+                    ✉️ <span>${c.sendEmail || 'Написать'}</span>
                   </a>
                 </div>
               </div>
@@ -1102,13 +1111,13 @@ const App = {
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #38bdf8;">🐧</span>
                   <div class="contact-info">
-                    <span class="contact-label">Customer Service QQ (Служба поддержки QQ)</span>
+                    <span class="contact-label">${c.customerServiceQq || 'Служба поддержки игроков QQ'}</span>
                     <span class="contact-value">800179233</span>
                   </div>
                 </div>
                 <div class="contact-actions">
-                  <button class="contact-action-btn copy-btn" id="copyDevQqBtn" onclick="App.copyToClipboard('800179233', 'copyDevQqBtn')" title="Скопировать номер QQ">
-                    📋 <span>${dict.copyBtn || 'Копировать'}</span>
+                  <button class="contact-action-btn copy-btn" id="copyDevQqBtn" onclick="App.copyToClipboard('800179233', 'copyDevQqBtn')" title="${c.copyHint || 'Скопировать'}">
+                    📋 <span>${c.copy || 'Копировать'}</span>
                   </button>
                 </div>
               </div>
@@ -1127,6 +1136,7 @@ const App = {
     if (!char) return;
 
     const modal = document.getElementById('detailModal');
+    modal.dataset.modalType = 'character';
     modal.innerHTML = CharactersView.renderModal(char, lang, this.state.imageMappings, this.state.ownedRoleIds);
     modal.classList.add('active');
   },
@@ -1138,6 +1148,7 @@ const App = {
     if (!item) return;
 
     const modal = document.getElementById('detailModal');
+    modal.dataset.modalType = 'item';
     modal.innerHTML = ItemsView.renderModal(item, category, lang, this.state.imageMappings);
     modal.classList.add('active');
   },
@@ -1145,6 +1156,7 @@ const App = {
   closeModal() {
     const modal = document.getElementById('detailModal');
     modal.classList.remove('active');
+    delete modal.dataset.modalType;
   },
 
   bindEvents() {
