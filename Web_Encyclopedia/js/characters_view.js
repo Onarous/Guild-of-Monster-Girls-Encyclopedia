@@ -31,8 +31,8 @@ const CharactersView = {
         ? char.unique_skills[0].description 
         : (dict.passiveTraits || "Пассивные способности");
 
-      const skinHtml = char.skin_name && char.skin_name !== "默认外观" && char.skin_name !== "Default Appearance" && char.skin_name !== "Базовый облик"
-        ? `<span class="char-skin-badge">${this.escapeHtml(char.skin_name)}</span>` 
+      const skinHtml = char.skin_name && char.skin_name !== "默认外观" && char.skin_name !== "Default Appearance" && char.skin_name !== "Базовый облик" && char.skin_name !== "Базовый вид"
+        ? `<span class="char-skin-badge" title="Альтер-форма">🎭 ${this.escapeHtml(char.skin_name)}</span>` 
         : '';
 
       const ownedBadge = `
@@ -142,8 +142,8 @@ const CharactersView = {
     const elemClass = this.getElementClass(char.element);
     const charImgs = imageMappings.characters || {};
 
-    const skinHtml = char.skin_name && char.skin_name !== "默认外观" && char.skin_name !== "Default Appearance" && char.skin_name !== "Базовый облик"
-      ? `<span class="char-skin-badge" style="font-size: 13px;">[${this.escapeHtml(char.skin_name)}]</span>` 
+    const skinHtml = char.skin_name && char.skin_name !== "默认外观" && char.skin_name !== "Default Appearance" && char.skin_name !== "Базовый облик" && char.skin_name !== "Базовый вид"
+      ? `<span class="char-skin-badge" style="font-size: 13px;" title="Альтер-форма">🎭 [${this.escapeHtml(char.skin_name)}]</span>` 
       : '';
 
     const portraitPath = charImgs[char.id] || charImgs[char.key] || (char.id ? `assets/img/characters/${char.id}_1__single_part1_1@1.png` : '');
