@@ -128,7 +128,8 @@ const GuidesView = {
       { id: 'builds', icon: '🏆', title: isRu ? 'Лучшие сборки и Мета-отряды' : isCn ? '最佳阵容与流派推荐' : 'Best Builds & Meta Lineups' },
       { id: 'gacha', icon: '🎪', title: isRu ? 'Списки найма и Баннеры' : isCn ? '招募卡池与掉落列表' : 'Recruit Pools & Gacha Lists' },
       { id: 'events', icon: '🎁', title: isRu ? 'Список игровых событий' : isCn ? '活动与限时事件列表' : 'Game Events & Activities' },
-      { id: 'codes', icon: '🎟️', title: isRu ? 'Промокоды и Подарки' : isCn ? '礼包兑换码汇总' : 'Promo & Redeem Codes' }
+      { id: 'codes', icon: '🎟️', title: isRu ? 'Промокоды и Подарки' : isCn ? '礼包兑换码汇总' : 'Promo & Redeem Codes' },
+      { id: 'resources', icon: '🌐', title: isRu ? 'Внешние базы и Wiki' : isCn ? '外部数据库与Wiki工具' : 'External Wikis & Tools' }
     ];
 
     const activeItem = menuItems.find(m => m.id === this.activeSection) || menuItems[0];
@@ -192,6 +193,8 @@ const GuidesView = {
         return this.getEventsContent(lang);
       case 'codes':
         return this.getCodesContent(lang);
+      case 'resources':
+        return this.getResourcesContent(lang);
       default:
         return isRu ? this.getPhasesRU() : this.getPhasesEN();
     }
@@ -1738,6 +1741,123 @@ const GuidesView = {
               </div>
             `;
           }).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  // 9. External Resources & Wikis
+  getResourcesContent(lang = "RU") {
+    const isRu = lang === 'RU';
+    const isCn = lang === 'CN';
+
+    const tools = [
+      {
+        icon: "📖",
+        name: isRu ? "Каталог 204 Персонажей (Units Index)" : isCn ? "全量角色图鉴 (204位角色)" : "204 Units Index & Profiles",
+        url: "https://gomg-wiki.pages.dev/units/",
+        desc: isRu ? "Полная база всех 144 базовых и 60 альтер-героинь с фильтрацией по стихиям, рангам (S/A/B/C) и карточками способностей." : isCn ? "收录全部144位常规角色与60位异化角色，支持元素/职业/品阶多维筛选及独立角色详情页。" : "Complete index of all 144 standard and 60 alter heroines with stats, skills, and profiles."
+      },
+      {
+        icon: "🧬",
+        name: isRu ? "Симулятор и Менеджер Талантов" : isCn ? "天赋洗练模拟器与方案管理" : "Talent Simulator & Manager",
+        url: "https://gomg-wiki.pages.dev/talent-simulator.html",
+        desc: isRu ? "Интерактивная симуляция реролла талантов плодами, расчет шансов выпадения золотых аффиксов и тест переноса эксклюзивов." : isCn ? "天赋洗练概率模拟、洗金消耗测试与多套天赋预设管理工具。" : "Simulate talent fruit rerolling, calculate gold affix odds, and test exclusive talent transfers."
+      },
+      {
+        icon: "🎲",
+        name: isRu ? "Оптимизатор Гачи (Gacha Optimizer)" : isCn ? "卡池抽取规划与保底计算器" : "Gacha Optimizer & Pity Calc",
+        url: "https://gomg-wiki.pages.dev/gacha-optimizer.html",
+        desc: isRu ? "Калькулятор вероятностей призыва, расчет расходов свитков/самоцветов до гаранта и оптимизация шансов." : isCn ? "招募概率测算、保底期望与钻石/抽券消耗规划工具。" : "Calculate recruit probabilities, pity thresholds, and plan gem/ticket spending."
+      },
+      {
+        icon: "🔑",
+        name: isRu ? "Справочник Механик и Терминов (Keywords)" : isCn ? "战斗词条与技能关键词字典" : "Keywords & Mechanics Glossary",
+        url: "https://gomg-wiki.pages.dev/keywords/",
+        desc: isRu ? "Толковый словарь всех игровых статусов и триггеров: Bleed, Vulnerable, Decay, Tenacity, Lure, Freeze и др." : isCn ? "流血、易伤、衰减、坚韧、嘲讽、冰冻等全战斗状态词条权威释义。" : "Detailed definitions of all combat statuses, buffs, debuffs, and triggers."
+      },
+      {
+        icon: "👥",
+        name: isRu ? "Конструктор Команд и Анализ Логов" : isCn ? "阵容配队器与战报日志分析" : "Team Builder & Battle Logs",
+        url: "https://gomg-wiki.pages.dev/build-team.html",
+        desc: isRu ? "Инструмент расстановки отрядов с проверкой синергий и модуль парсинга боевых логов урона." : isCn ? "可视化站位配队测试与战斗日志解析测伤工具。" : "Party placement tool with synergy checking and battle log damage parser."
+      },
+      {
+        icon: "🔍",
+        name: isRu ? "Полнотекстовый Поиск по Снаряжению и Рунам" : isCn ? "装备、符文与神石全局搜索" : "Fulltext Search for Gear, Runes & Godstones",
+        url: "https://gomg-wiki.pages.dev/search-gear.html",
+        desc: isRu ? "Базы данных экипировки, рун, божественных камней и благословений с подробными эффектами." : isCn ? "全装备、全符文、神石珠宝与祝福效果的精确搜索索引。" : "Searchable databases for all gear pieces, rune sets, jewels/godstones, and blessings."
+      }
+    ];
+
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">🌐 ${isRu ? 'Авторитетные Внешние Источники и Базы Данных' : isCn ? '外部权威数据库、Wiki与高阶工具' : 'External Community Wikis, Databases & Tools'}</h2>
+        <p class="guide-lead">
+          ${isRu 
+            ? 'Рекомендуемые сообществом внешние вики-ресурсы, онлайн-симуляторы и базы данных по игре Guild of Monster Girls. Нажмите на любой ресурс для перехода.' 
+            : isCn 
+            ? '《魔物娘公会》海外及国内资深社区精选的高阶在线工具、全量Wiki与配队数据库。点击即可直接访问对应功能。' 
+            : 'Recommended community wikis, online simulators, and comprehensive databases for Guild of Monster Girls.'}
+        </p>
+
+        <!-- Main Wiki Header Card -->
+        <div class="guide-card" style="border-left: 4px solid #38bdf8; background: rgba(56, 189, 248, 0.05); margin-bottom: 20px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+            <div>
+              <h3 style="color: #38bdf8; margin: 0 0 4px 0; font-size: 18px;">
+                🌟 GMG Community Wiki & Tools
+              </h3>
+              <div style="font-family: monospace; font-size: 13px; color: #a5f3fc;">
+                https://gomg-wiki.pages.dev/
+              </div>
+            </div>
+            <a href="https://gomg-wiki.pages.dev/units/" target="_blank" rel="noopener noreferrer" class="filter-pill active" style="text-decoration: none; padding: 8px 16px; font-weight: 700; font-size: 13px;">
+              🚀 ${isRu ? 'Открыть Wiki' : isCn ? '访问主站' : 'Open Wiki'} ↗
+            </a>
+          </div>
+          <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.5; margin: 10px 0 0 0;">
+            ${isRu 
+              ? 'Главная англоязычная база данных, сгенерированная напрямую из игровых таблиц RoleDataTable. Включает карточки всех 204 героинь, симуляторы и поисковые индексы.' 
+              : isCn 
+              ? '基于官方 RoleDataTable 自动解析生成的全量英文维基，收录204位角色完整数据，并提供强大的在线辅助工具。' 
+              : 'The comprehensive community database generated directly from RoleDataTable, featuring 204 heroines and interactive web tools.'}
+          </p>
+        </div>
+
+        <!-- Tools Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px;">
+          ${tools.map(item => `
+            <div class="guide-card" style="display: flex; flex-direction: column; justify-content: space-between; border-left: 3px solid #8b5cf6; padding: 18px 20px;">
+              <div>
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                  <span style="font-size: 24px;">${item.icon}</span>
+                  <h3 style="margin: 0; font-size: 15px; color: #f3e8ff;">${item.name}</h3>
+                </div>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5; margin: 0 0 12px 0;">
+                  ${item.desc}
+                </p>
+              </div>
+
+              <div style="padding-top: 12px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: flex-end;">
+                <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="filter-pill active" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; font-size: 12.5px; font-weight: 700; border-radius: 6px;">
+                  🔗 ${isRu ? 'Перейти к разделу' : isCn ? '立即前往' : 'Launch Tool'} ↗
+                </a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+
+        <!-- Community Channels Card -->
+        <div class="guide-card" style="border-left: 4px solid #a855f7; margin-top: 20px;">
+          <h3 style="color: #c084fc; margin-top: 0; display: flex; align-items: center; gap: 8px;">
+            <span>💬</span>
+            <span>${isRu ? 'Другие авторитетные источники сообщества:' : isCn ? '其他官方与玩家社区交流阵地:' : 'Other Key Community Channels:'}</span>
+          </h3>
+          <ul class="guide-list" style="margin-bottom: 0; font-size: 13px;">
+            <li><strong>TapTap (Китайское сообщество):</strong> <a href="https://www.taptap.cn/moment/825053452206868359" target="_blank" rel="noopener noreferrer" style="color: #38bdf8;">Гайд по мета-билдам от 叶叶小飞花 ↗</a> — первоисточник большинства современных T0/T1 сборок.</li>
+            <li><strong>Официальный Discord Guild of Monster Girls:</strong> Каналы <code>#theorycraft</code>, <code>#guides</code> и <code>#questions</code> — ежедневные исследования механик от ведущих теоретиков (Xylene, baosbanhbao, Versailles, SpookyBoi).</li>
+          </ul>
         </div>
       </div>
     `;

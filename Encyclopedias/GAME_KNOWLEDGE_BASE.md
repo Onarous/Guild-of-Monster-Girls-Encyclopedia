@@ -12,6 +12,13 @@
 5. [Терминология урона, Защита и Формулы (Damage Terms & Stats)](#5-терминология-урона-защита-и-формулы)
 6. [Эффекты поражения и смерти (Defeat Effects)](#6-эффекты-поражения-и-смерти)
 7. [Известные ошибки локализации игры (Translation Errors)](#7-известные-ошибки-локализации-игры)
+8. [Ивенты, Баннеры и Система Найма (Events & Summon System)](#8-ивенты-баннеры-и-система-найма-events--summon-system)
+9. [Промокоды и Подарочные коды (Gift Codes)](#9-промокоды-и-подарочные-коды-gift-codes)
+10. [Мета-Билды, Топовые Команды и Тир-Лист (Meta Teams & Tier Guide)](#10-мета-билды-топовые-команды-и-тир-лист-meta-teams--tier-guide)
+11. [Советы для Новичков, Экономика Ресурсов и Прокачка (Tips for Beginners & Economy)](#11-советы-для-новичков-экономика-ресурсов-и-прокачка-tips-for-beginners--economy)
+12. [Фарм Экипировки, Трекинг, Звездность и Механика Удачи (Farming, Stars & Luck)](#12-фарм-экипировки-трекинг-звездность-и-механика-удачи-farming-stars--luck)
+13. [Плоды Таланта: Система Гаранта, Фарм и Техника Переноса/Дублирования (Talent Fruits & Transfer)](#13-плоды-таланта-система-гаранта-фарм-и-техника-переносадублирования-talent-fruits--transfer)
+14. [Авторитетные Внешние Источники и Базы Данных (Community Resources & Wikis)](#14-авторитетные-внешние-источники-и-базы-данных-community-resources--wikis)
 
 ---
 
@@ -545,7 +552,48 @@
   5. В результате на Page 1 у вас будет работать **две копии её эксклюзивного таланта**!
 
 ---
+
+## 14. Авторитетные Внешние Источники и Базы Данных (Community Resources & Wikis)
+
+Для получения актуальной информации о персонажах, механиках, симуляции талантов и расчетах вероятностей призыва рекомендуется использовать следующие проверенные внешние ресурсы сообщества:
+
+### 🌐 1. GMG Community Wiki & Tools ([gomg-wiki.pages.dev](https://gomg-wiki.pages.dev/))
+Главная англоязычная база данных и набор интерактивных веб-инструментов по *Guild of Monster Girls*:
+
+* **📖 Каталог Персонажей (Units Index):** [gomg-wiki.pages.dev/units/](https://gomg-wiki.pages.dev/units/)
+  * Полный список всех **204 героинь** (144 Standard + 60 Alter) с распределением по рангам (S/A/B/C), стихиям, типам атак и прямыми ссылками на карточки профилей.
+* **🔑 Глоссарий Механик и Ключевых Слов (Keywords):** [gomg-wiki.pages.dev/keywords/](https://gomg-wiki.pages.dev/keywords/)
+  * Детальный разбор всех игровых статусов (Bleed, Vulnerable, Decay, Tenacity, Lure, Taunt, Freeze и др.).
+* **🎲 Оптимизатор Гачи (Gacha Optimizer):** [gomg-wiki.pages.dev/gacha-optimizer.html](https://gomg-wiki.pages.dev/gacha-optimizer.html)
+  * Калькулятор вероятностей, расчет гаранта и симуляция расходов свитков и самоцветов.
+* **🧬 Симулятор и Менеджер Талантов (Talent Simulator & Manager):**
+  * [gomg-wiki.pages.dev/talent-simulator.html](https://gomg-wiki.pages.dev/talent-simulator.html) — симуляция реролла страниц талантов, расчет шансов выпадения золотых аффиксов и тест переноса эксклюзивов.
+  * [gomg-wiki.pages.dev/talent-manage.html](https://gomg-wiki.pages.dev/talent-manage.html) — сохранение и организация ваших индивидуальных билдов талантов.
+* **👥 Конструктор Команд и Анализатор Логов (Team Builder & Battle Logs):**
+  * [gomg-wiki.pages.dev/build-team.html](https://gomg-wiki.pages.dev/build-team.html) — интерактивная сборка и позиционирование отрядов с проверкой синергий.
+  * [gomg-wiki.pages.dev/battle-logs.html](https://gomg-wiki.pages.dev/battle-logs.html) — загрузка и разбор боевых логов с расчетом эффективности DPS и урона.
+* **🔍 Поисковые Базы Данных (Search Engines):**
+  * Поиск по героиням: [gomg-wiki.pages.dev/search-unit.html](https://gomg-wiki.pages.dev/search-unit.html)
+  * Полнотекстовый поиск по талантам: [gomg-wiki.pages.dev/search-talent-new.html](https://gomg-wiki.pages.dev/search-talent-new.html)
+  * База снаряжения (Gear): [gomg-wiki.pages.dev/search-gear.html](https://gomg-wiki.pages.dev/search-gear.html)
+  * База рун (Runes): [gomg-wiki.pages.dev/search-runes.html](https://gomg-wiki.pages.dev/search-runes.html)
+  * База Божественных Камней / Самоцветов (Godstones / Jewels): [gomg-wiki.pages.dev/search-godstone.html](https://gomg-wiki.pages.dev/search-godstone.html)
+  * База Благословений (Blessings): [gomg-wiki.pages.dev/search-blessing.html](https://gomg-wiki.pages.dev/search-blessing.html)
+
+---
+
+### 🇨🇳 2. Аналитические Гайды и Мета TapTap
+* **Гайд по мета-билдам и тир-листам от 叶叶小飞花:** [TapTap Moment #825053452206868359](https://www.taptap.cn/moment/825053452206868359)
+  * Глубокий разбор текущего состояния меты, T0 сборок (Принцесса, Зайчиха, Ледяная Злодейка, Скоростной Мечник) и соло-джокеров (Неубиваемая Золотая Дева).
+
+---
+
+### 💬 3. Официальный Discord Сообщества (Theorycrafting & Guides)
+* Каналы `#theorycraft`, `#guides`, `#questions` с участием ведущих тестеров механик (`Xylene [EOS]`, `baosbanhbao`, `Versailles`, `SpookyBoi`).
+
+---
 *(Файл обновляется по мере поступления новых данных)*
+
 
 
 
