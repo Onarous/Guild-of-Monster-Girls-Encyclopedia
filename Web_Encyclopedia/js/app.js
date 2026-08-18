@@ -463,6 +463,8 @@ const App = {
     });
 
     const isGuides = tab === 'guides';
+    const isCalculators = tab === 'calculators';
+    const isCustomView = isGuides || isCalculators;
     const isItems = tab === 'items' || tab === 'bonds';
     const isBonds = tab === 'bonds';
     
@@ -488,6 +490,8 @@ const App = {
 
   updateTabUI(tab) {
     const isGuides = tab === 'guides';
+    const isCalculators = tab === 'calculators';
+    const isCustomView = isGuides || isCalculators;
     const isItems = tab === 'items' || tab === 'bonds';
     const isBonds = tab === 'bonds';
 
@@ -495,11 +499,13 @@ const App = {
     const metaRow = document.querySelector('.results-meta-row');
     const cardsGrid = document.getElementById('cardsGrid');
     const guidesContainer = document.getElementById('guidesContainer');
+    const calculatorsContainer = document.getElementById('calculatorsContainer');
 
-    if (toolbar) toolbar.style.display = isGuides ? 'none' : 'block';
-    if (metaRow) metaRow.style.display = isGuides ? 'none' : 'flex';
-    if (cardsGrid) cardsGrid.style.display = isGuides ? 'none' : 'grid';
+    if (toolbar) toolbar.style.display = isCustomView ? 'none' : 'block';
+    if (metaRow) metaRow.style.display = isCustomView ? 'none' : 'flex';
+    if (cardsGrid) cardsGrid.style.display = isCustomView ? 'none' : 'grid';
     if (guidesContainer) guidesContainer.style.display = isGuides ? 'block' : 'none';
+    if (calculatorsContainer) calculatorsContainer.style.display = isCalculators ? 'block' : 'none';
 
     const itemCatBar = document.getElementById('itemCategoryBar');
     if (itemCatBar) itemCatBar.style.display = isItems && !isBonds ? 'flex' : 'none';
@@ -508,13 +514,13 @@ const App = {
     if (slotRow) slotRow.style.display = isItems ? 'flex' : 'none';
     
     const roleRow = document.getElementById('roleFilterRow');
-    if (roleRow) roleRow.style.display = isItems || isGuides ? 'none' : 'flex';
+    if (roleRow) roleRow.style.display = isItems || isCustomView ? 'none' : 'flex';
     
     const bannerRow = document.getElementById('bannerFilterRow');
-    if (bannerRow) bannerRow.style.display = isItems || isGuides ? 'none' : 'flex';
+    if (bannerRow) bannerRow.style.display = isItems || isCustomView ? 'none' : 'flex';
     
     const sortGrp = document.getElementById('sortGroup');
-    if (sortGrp) sortGrp.style.display = isGuides ? 'none' : 'flex';
+    if (sortGrp) sortGrp.style.display = isCustomView ? 'none' : 'flex';
 
     // Rarity pills: SS is only for items/bonds, hidden for characters/collection
     const pillSS = document.getElementById('pillTierSS');
@@ -585,6 +591,12 @@ const App = {
     if (tab === 'guides') {
       if (collHeaderEl) collHeaderEl.style.display = 'none';
       GuidesView.render('guidesContainer', lang);
+      return;
+    }
+
+    if (tab === 'calculators') {
+      if (collHeaderEl) collHeaderEl.style.display = 'none';
+      CalculatorsView.render('calculatorsContainer', lang);
       return;
     }
 
@@ -771,6 +783,7 @@ const App = {
     document.getElementById('tabBonds').textContent = dict.navBonds;
     document.getElementById('tabCollection').textContent = dict.navMyCollection;
     if (document.getElementById('tabGuides')) document.getElementById('tabGuides').textContent = dict.navGuides;
+    if (document.getElementById('tabCalculators')) document.getElementById('tabCalculators').textContent = dict.navCalculators || '🧮 Калькуляторы';
     if (document.getElementById('footerDisclaimerText') && dict.footerDisclaimer) {
       document.getElementById('footerDisclaimerText').textContent = dict.footerDisclaimer;
     }
@@ -790,6 +803,7 @@ const App = {
     if (document.getElementById('drawerTextBonds')) document.getElementById('drawerTextBonds').textContent = dict.navBonds;
     if (document.getElementById('drawerTextCollection')) document.getElementById('drawerTextCollection').textContent = dict.navMyCollection;
     if (document.getElementById('drawerTextGuides')) document.getElementById('drawerTextGuides').textContent = dict.navGuides;
+    if (document.getElementById('drawerTextCalculators')) document.getElementById('drawerTextCalculators').textContent = dict.navCalculators || '🧮 Калькуляторы';
 
     // Filter Titles
     if (dict.filterTitles) {

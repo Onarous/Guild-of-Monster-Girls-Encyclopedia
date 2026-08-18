@@ -83,6 +83,7 @@ const GuidesView = {
     const isCn = lang === 'CN';
 
     const menuItems = [
+      { id: 'tips', icon: '💡', title: isRu ? 'Советы новичкам и Экономика' : isCn ? '萌新避坑与资源经济' : 'Beginner Tips & Economy' },
       { id: 'phases', icon: '⚔️', title: isRu ? 'Фазы боя и порядок ходов' : isCn ? '战斗阶段与行动顺序' : 'Battle Phases & Turn Order' },
       { id: 'targeting', icon: '🎯', title: isRu ? 'Дистанция и Таргетинг' : isCn ? '攻击距离与目标选择' : 'Range, Distance & Targeting' },
       { id: 'damage', icon: '🛡️', title: isRu ? 'Урон, Защита и Баффы' : isCn ? '伤害计算、护盾与增益' : 'Damage Formulas, Shields & Buffs' },
@@ -123,6 +124,8 @@ const GuidesView = {
     const isCn = lang === 'CN';
 
     switch (sectionId) {
+      case 'tips':
+        return this.getTipsContent(lang);
       case 'phases':
         return isRu ? this.getPhasesRU() : isCn ? this.getPhasesCN() : this.getPhasesEN();
       case 'targeting':
@@ -142,6 +145,123 @@ const GuidesView = {
       default:
         return isRu ? this.getPhasesRU() : this.getPhasesEN();
     }
+  },
+
+
+  // 0. Beginner Tips & Resource Economy
+  getTipsContent(lang = "RU") {
+    const isRu = lang === 'RU';
+    const isCn = lang === 'CN';
+
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">💡 ${isRu ? 'Советы для новичков и Экономика ресурсов' : isCn ? '萌新必看避坑指南与资源经济学' : 'Beginner Tips & Resource Economy'}</h2>
+        <p class="guide-lead">
+          ${isRu 
+            ? 'Золотые правила развития аккаунта, грамотного расхода самоцветов, кристаллов и фарма от опытных теоретиков гильдии (Theorycraft baosbanhbao).' 
+            : isCn 
+            ? '高阶玩家实测总结的钻石规划、卡池抽取、金币消耗、炼金合成与体力分配全套核心策略指南。' 
+            : 'Essential progression rules, gem spending priority, crystal merging, and stamina management from veteran guild theorycrafters.'}
+        </p>
+
+        <!-- 1. Gems & Recruits -->
+        <div class="guide-card" style="border-left: 4px solid #38bdf8;">
+          <h3 style="color: #38bdf8; display: flex; align-items: center; gap: 8px;">
+            <span>💎</span>
+            <span>${isRu ? '1. Самоцветы, Крутки и Осколки' : isCn ? '1. 钻石规划、卡池心愿与碎片管理' : '1. Gems, Wishlist & Shards'}</span>
+          </h3>
+          <ul class="guide-list">
+            <li><strong>${isRu ? 'Самоцветы (Gems):' : isCn ? '钻石用途:' : 'Gems Spending:'}</strong> ${isRu ? 'Тратьте кристаллы <strong>только на Альтер-найм (Alter summon)</strong>. В эндгейме они потребуются для реролла золотых талантов (200 кристаллов за замену). Арена и Астральное Царство стабильно снабжают кристаллами каждую неделю.' : isCn ? '钻石<strong>只用来抽异化卡池</strong>。游戏后期每次更换金天赋需要消耗200钻石。每周竞技场和星界领域都会提供大量钻石，放心抽异化。' : 'Spend gems <strong>only on Alter Summon</strong>. In the endgame, gems are used for swapping gold talents (200 gems each). Weekly Arena and Astral Realm provide a steady income.'}</li>
+            <li><strong>${isRu ? 'Список желаний (Wishlist):' : isCn ? '常规心愿推荐:' : 'Standard Wishlist:'}</strong> ${isRu ? 'В стандартном призыве ставьте <strong>Кристальную грибницу (Crystal Shroom)</strong> или <strong>Командующую Легиона (Legion Commander)</strong> — это топ батарейки маны для частого спама ультимейтами.' : isCn ? '常规招募心愿推荐选择<strong>水晶菇娘</strong>或<strong>军团统领</strong>。她们是队伍的“回蓝充电宝”，能让主力DPS高频释放大招。' : 'Wish-pick <strong>Crystal Shroom</strong> or <strong>Legion Commander</strong>. These mana batteries enable your main DPS to spam skills frequently.'}</li>
+            <li><strong>${isRu ? 'Смена цели в Wishlist:' : isCn ? '保底前出货即换:' : 'Swap Wishlist Target:'}</strong> ${isRu ? 'Если выбили желаемую героиню до 100 круток гаранта, <strong>сразу меняйте цель</strong> на другую не полученную девочку. Прогресс и осколки не сгорают.' : isCn ? '如果在100抽保底前抽出了心愿角色，<strong>立刻更换为另一位未拥有的角色</strong>。更换心愿角色会返还对应碎片。' : 'Once you pull your wish pick before 100 pity, swap to another unowned girl. You will retain all refund progress.'}</li>
+            <li><strong>${isRu ? 'Альтер-осколки (Alter Shards):' : isCn ? '异化碎片严禁乱用:' : 'Save Alter Shards:'}</strong> ${isRu ? '⚠️ <strong>СТРОГО КОПИТЬ:</strong> для прокачки альтера на 5★ требуется 400 альтер-осколков. Тратьте только когда точно уверены в ключевом керри.' : isCn ? '⚠️ <strong>绝对攒着别乱用：</strong>升满一个5星异化角色需要整整400个异化碎片，只留给你决定重度培养的核心主力。' : '⚠️ <strong>SAVE THEM:</strong> It takes 400 alter shards to 5-star an alter girl. Only spend when you are 100% committed to your main carry.'}</li>
+            <li><strong>${isRu ? 'Приоритеты Альтер-найма:' : isCn ? '异化卡池优先目标:' : 'Alter Priority:'}</strong> ${isRu ? 'В первую очередь ищите <strong>Шагающую по ветру [Зайчиху]</strong> и <strong>Великую волшебницу [Зайчиху]</strong> — они разгоняют LUK (удачу) и фарм редкого шмота с клевером.' : isCn ? '优先锁定【兔耳】<strong>风行游侠</strong>与【兔耳】<strong>魔术大师</strong>。这两位幸运角色搭配四叶草是后期刷神装与高级符文的核心基石。' : 'Look out for <strong>[Bunny] Windstrider</strong> and <strong>[Bunny] Grand Magician</strong> for high LUK farming synergy.'}</li>
+          </ul>
+        </div>
+
+        <!-- 2. Gold & Upgrades -->
+        <div class="guide-card" style="border-left: 4px solid #eab308;">
+          <h3 style="color: #eab308; display: flex; align-items: center; gap: 8px;">
+            <span>💰</span>
+            <span>${isRu ? '2. Золото, Прокачка и Сброс до 60 уровня' : isCn ? '2. 金币消耗、60级免费重置与心之升级' : '2. Gold, Level 60 Reset & Hearts'}</span>
+          </h3>
+          <ul class="guide-list">
+            <li><strong>${isRu ? 'Приоритет расходов золота:' : isCn ? '金币消费优先级:' : 'Gold Spending Order:'}</strong> ${isRu ? '1. Повышение звездности экипировки и рун ➔ 2. Прокачка 3 боевых юнитов до 60 ур. по уровню Кодекса ➔ 3. Излишки — товары у странствующего гоблина.' : isCn ? '1. 装备与符文升星 ➔ 2. 随图鉴等级将3个主力升至60级 ➔ 3. 剩余金币在游商地精处扫货。' : '1. Star up gear & runes ➔ 2. Level 3 units to Lv 60 as codex grows ➔ 3. Spend excess at travel merchant goblin.'}</li>
+            <li><strong>${isRu ? 'Остановка на 60 уровне:' : isCn ? '升到60级立即停手:' : 'Stop at Level 60:'}</strong> ${isRu ? 'Любого персонажа 60 уровня и ниже можно <strong>БЕСПЛАТНО сбросить (Reset)</strong> с возвратом 100% золота и ресурсов. Экспериментируйте с пачками без штрафов!' : isCn ? '所有60级及以下的角色均支持<strong>无损免费重置</strong>，全额返还金币与养成材料，方便零成本尝试各种流派。' : 'Units at Lv 60 and below can be <strong>freely reset</strong> for 100% gold and material refund to experiment with teams.'}</li>
+            <li><strong>${isRu ? 'Прокачка 70+ через Сердца (Hearts):' : isCn ? '70级以上用心之升级:' : 'Level 70+ with Hearts:'}</strong> ${isRu ? 'После 70 уровня используйте <em>Сердца героинь</em> (покупаются у торговца-гоблина). Они дают +1, +5 или +10 уровней моментально без золота и ресурсов.' : isCn ? '70级以上通过游商购买<em>勇者之心</em>直接提升1/5/10级，无需消耗金币与材料（需先解锁图鉴等级上限）。' : 'Use <em>Heroine Hearts</em> from the goblin merchant to level up units by 1, 5, or 10 levels without gold/materials.'}</li>
+            <li><strong>${isRu ? 'Плоды таланта (Talent Fruits):' : isCn ? '天赋果实务必留到后期:' : 'Save Talent Fruits:'}</strong> ${isRu ? '<strong>КОПИТЬ для эндгейма.</strong> Не сливайте плоды в случайных героев на ранних стадиях игры.' : isCn ? '<strong>严禁前期随意乱喂！</strong>全部存到大后期确立毕业阵容后再精细洗练专属天赋。' : '<strong>SAVE FOR ENDGAME.</strong> Do not waste valuable talent fruits early on random units.'}</li>
+          </ul>
+        </div>
+
+        <!-- 3. Manual vs Blitz & Clovers -->
+        <div class="guide-card" style="border-left: 4px solid #10b981;">
+          <h3 style="color: #10b981; display: flex; align-items: center; gap: 8px;">
+            <span>⚔️</span>
+            <span>${isRu ? '3. Ручная зачистка, Блиц и Клевер' : isCn ? '3. 手动推图、扫荡机制与四叶草' : '3. Manual vs Blitz & Clovers'}</span>
+          </h3>
+          <ul class="guide-list">
+            <li><strong>${isRu ? 'Ручная зачистка (Manual):' : isCn ? '前期手动拿抽券:' : 'Manual Clearing:'}</strong> ${isRu ? 'На старте проходите вручную как можно больше этажей ради билетов призыва. В мид/эндгейме: бегите прямо к Боссу и спец-клеткам, затем <strong>выходите с карты</strong>, экономя стамину на мобах.' : isCn ? '前期尽量手动全清关卡拿满常规招募券。中后期直奔 Boss 房和特殊事件格，打完直接离开关卡，跳过杂兵省体力。' : 'Manually clear as many early stages for summon tickets. In mid/endgame, rush the Boss tile and exit to conserve stamina.'}</li>
+            <li><strong>${isRu ? 'Эффективный Блиц (Blitz):' : isCn ? '10连扫荡吃神谕:' : '10x Blitz Rule:'}</strong> ${isRu ? 'Рекомендуется запускать блиц <strong>10x за 500 стамины</strong>, чтобы поймать несколько баффов оракула. Блиц за 50 стамины также отлично фармит клевер и плоды таланта.' : isCn ? '建议只使用 <strong>500体力的10连扫荡</strong>，以博取多次神谕Buff。50体力的单次扫荡也是农四叶草与天赋果实的极佳途径。' : 'Only blitz on 10x (500 stamina) to maximize oracle buffs. Blitz is also great for farming clovers and talent berries.'}</li>
+            <li><strong>${isRu ? 'Клевер (Clover):' : isCn ? '四叶草囤到红装农场:' : 'Clover Strategy:'}</strong> ${isRu ? 'Копите клевер до разблокировки Красного снаряжения в достижениях. Рекомендуется начинать с <em>Равнин Рассветного Шага (Dawnstep Plains)</em> ради Соломенной шляпы.' : isCn ? '四叶草留到中后期通过成就解锁红装时再集中使用。优先从【黎明平原】开始刷取神级散件【草帽】。' : 'Save clovers until midgame when farming Red gear achievements, starting with Dawnstep Plains for the Straw Hat.'}</li>
+            <li><strong>${isRu ? 'Ежедневная реклама (ADs):' : isCn ? '每日免费广告福利:' : 'Daily Free ADs:'}</strong> ${isRu ? 'Каждый день забирайте: 3x Клевера, 3x 20k золота, 3x 200 энергии, 3x обновления контрактов, 1x мгновенный 8-часовой сбор алхимии, гарантированный дроп Вестницы.' : isCn ? '每日白嫖资源：3个四叶草、3次2万金币、3次200体力、3次悬赏刷新、1次8小时炼金直收、先驱保底掉落、探索直达与星界步数。' : 'Daily free AD rewards: 3x Clovers, 3x 20k gold, 3x 200 stamina, 3x bounty refreshes, 8-hr alchemy clear, and Astral realm steps.'}</li>
+          </ul>
+        </div>
+
+        <!-- 4. Alchemy & Crystals -->
+        <div class="guide-card" style="border-left: 4px solid #a855f7;">
+          <h3 style="color: #a855f7; display: flex; align-items: center; gap: 8px;">
+            <span>⚗️</span>
+            <span>${isRu ? '4. Алхимия, Сундуки и Слияние Кристаллов' : isCn ? '4. 炼金全开、宝箱自动合成与晶石合成' : '4. Alchemy, Chests & Crystal Merging'}</span>
+          </h3>
+          <ul class="guide-list">
+            <li><strong>${isRu ? 'Авто-слияние сундуков:' : isCn ? '宝箱合成节点:' : 'Chest Merging:'}</strong> ${isRu ? 'В начале игры останавливайте авто-слияние на <strong>Фиолетовых сундуках</strong> и открывайте их для быстрой прокачки уровня Кодекса. В эндгейме сливайте на максимум до Оранжевых.' : isCn ? '前期宝箱自动合成停在<strong>紫色品阶</strong>并开启，快速填补图鉴等级。中后期再一路自动合成到最高橙色品阶。' : 'Early game: stop auto-merging at Purple chests to open and raise codex faster. Endgame: auto-merge to max Orange.'}</li>
+            <li><strong>${isRu ? 'Алхимия (Кнопка «Max»):' : isCn ? '炼金必选【全部】:' : 'Alchemy Max:'}</strong> ${isRu ? 'Всегда используйте режим <strong>«Max»</strong>. Звездите даже зеленый и синий шмот для уровня Кодекса. Алхимия снабжает кристаллами и камнями Наследия.' : isCn ? '炼金一律选用<strong>“全部 (Max)”</strong>。即使是绿装蓝装也要升星以提升图鉴，同时获取兑换图鉴装备与传承石的晶石。' : 'Always use "Max" in alchemy. Star up all gear (even green/blue) for codex progression and legacy stones.'}</li>
+            <li><strong>${isRu ? 'Слияние Кристаллов (Курс 5:1):' : isCn ? '晶石5:1合成法则:' : '5:1 Crystal Merging:'}</strong> ${isRu ? '5 Зеленых ➔ 1 Синий ➔ 5 Синих ➔ 1 Фиолетовый ➔ 5 Фиолетовых ➔ 1 Желтый/Божественный.<br>• В начале сливайте в <strong>Фиолетовые</strong> для быстрого выкупа недостающих сетов Кодекса.<br>• Собрав основу, сливайте в <strong>Желтые</strong> и закрывайте 100% зачистку карт в Кодексе для открытия Красного снаряжения.' : isCn ? '5绿=1蓝，5蓝=1紫，5紫=1金。<br>• 前期合成到<strong>紫晶</strong>，快速点出关键队伍套装辅助推图。<br>• 基础套装齐备后合成<strong>金晶</strong>，直接100%点亮目标地图图鉴，解锁红装成就。' : '5:1 merge ratio (5 Green = 1 Blue, 5 Blue = 1 Purple, 5 Purple = 1 Yellow).<br>• Early game: merge to Purple to quick-unlock codex gear sets.<br>• Midgame: merge to Yellow to 100% clear maps for Red gear unlocks.'}</li>
+          </ul>
+        </div>
+
+        <!-- 5. Gear Star-Up & Legacy -->
+        <div class="guide-card" style="border-left: 4px solid #ec4899;">
+          <h3 style="color: #ec4899; display: flex; align-items: center; gap: 8px;">
+            <span>⭐</span>
+            <span>${isRu ? '5. Звездность Экипировки (1★–3★), Наследие (Legacy) и Комбо Сетов' : isCn ? '5. 装备升星(1★–3★)、传承(Legacy)与套装偷位机制' : '5. Gear Star-Up (1★–3★), Legacy & Multi-Set Resonance'}</span>
+          </h3>
+          <ul class="guide-list">
+            <li><strong>${isRu ? 'Шкала улучшения экипировки:' : isCn ? '装备升星消耗与收益:' : 'Star-Up Progression:'}</strong> ${isRu ? '• <strong>Legacy (Камень наследия):</strong> +1 очко ко всем 3 строкам талантов предмета.<br>• <strong>1★ (1 дубликат):</strong> +1 очко к 1-й строке.<br>• <strong>2★ (5 дубликатов):</strong> +1 очко ко 2-й строке.<br>• <strong>3★ (10 дубликатов):</strong> +1 очко к 3-й строке.<br>• <strong>MAX (Legacy + 3★):</strong> +3 очка ко ВСЕМ строкам талантов предмета!' : isCn ? '• <strong>传承 (传承石):</strong> 全词条+1点天赋点数。<br>• <strong>1星 (消耗1个同名装备):</strong> 第1行词条+1点。<br>• <strong>2星 (消耗5个同名装备):</strong> 第2行词条+1点。<br>• <strong>3星 (消耗10个同名装备):</strong> 第3行词条+1点。<br>• <strong>满配 (传承+3星):</strong> 装备全词条总计+3点！' : '• <strong>Legacy:</strong> +1 to all talent rows.<br>• <strong>1-Star (1 dupe):</strong> +1 to 1st row.<br>• <strong>2-Star (5 dupes):</strong> +1 to 2nd row.<br>• <strong>3-Star (10 dupes):</strong> +1 to 3rd row.<br>• <strong>MAX (Legacy + 3-Star):</strong> +3 to ALL talent rows!'}</li>
+            <li><strong>${isRu ? 'Секрет 3★ — Активация сетов 2 предметами вместо 3:' : isCn ? '3星核心价值——少穿装备激活完整套装:' : '3-Star Secret: 2-Piece Full Resonance:'}</strong> ${isRu ? 'Прокачанная до 3★ вещь дает достаточно очков сета, чтобы полностью активировать 3-предметный сет <strong>всего двумя надетыми вещами</strong>! 3-й слот освобождается под другой мощный сет, позволяя комбинировать сразу несколько резонансов на одной героине.' : isCn ? '满3星装备提供的高额词条点数，能让原本需要穿戴3件的套装仅凭<strong>2件装备即可完全激活满层套装效果</strong>！腾出的第3个装备槽可以自由混搭其他强力套装，极大提升单人战斗力。' : '3-Star gear provides so many resonance points that you only need 2 pieces to activate a 3-piece set, freeing up the 3rd slot for another powerful set!'}</li>
+            <li><strong>${isRu ? 'Запрет на распыление до 3★:' : isCn ? '未满3星绝不当狗粮:' : 'Never Fodder Below 3-Star:'}</strong> ${isRu ? '⚠️ Никогда не скармливайте в алхимию экипировку и руны, пока они не прокачаны до 3★ для Кодекса! Только лишние дубликаты после 3★ идут в утиль.' : isCn ? '⚠️ 严禁将未满3星的装备/符文送进炼金炉！必须先升满3星解锁图鉴最大收益，多余的溢出副本才拿去换晶石。' : '⚠️ Never use un-starred gear as alchemy fodder until it hits 3-Star for your codex!'}</li>
+          </ul>
+        </div>
+
+        <!-- 6. Real Luck Mechanics & Abyss Drops -->
+        <div class="guide-card" style="border-left: 4px solid #f97316;">
+          <h3 style="color: #f97316; display: flex; align-items: center; gap: 8px;">
+            <span>🎲</span>
+            <span>${isRu ? '6. Разбор Механики Удачи (LUK), Клевер и Дроп d20 в Бездне' : isCn ? '6. 幸运值 (LUK) 真实机制、四叶草重骰与深渊额外掉落' : '6. True Luck (LUK) Mechanics, Clovers & Abyss d20 Drops'}</span>
+          </h3>
+          <ul class="guide-list">
+            <li><strong>${isRu ? 'Как реально работает Удача (LUK):' : isCn ? '幸运值真实作用机制:' : 'How LUK Truly Works:'}</strong> ${isRu ? 'Удача (LUK) <strong>НЕ влияет на первый бесплатный бросок кубика</strong> (он на 100% случайный). Удача дает <strong>+1 к результату броска за каждые 15 суммарной Удачи команды ПРИ ТРАТЕ КЛЕВЕРА</strong>!' : isCn ? '全队幸运值 (LUK) <strong>完全不影响战后首次免费掷骰</strong>（初次掷骰为纯随机）。幸运值的真实机制为：<strong>在使用四叶草重骰时，全队每有15点幸运值，重骰点数固定+1</strong>！' : 'LUK <strong>does NOT affect the initial free dice roll</strong> (pure RNG). Instead, every 15 team LUK grants <strong>+1 to your dice roll WHEN SPENDING A CLOVER</strong>!'}</li>
+            <li><strong>${isRu ? 'Стратегия Клевера на Натуральную 20-ку:' : isCn ? '四叶草绝杀20点策略:' : 'Clover Strategy for 20s:'}</strong> ${isRu ? 'Только ролл 20 гарантирует Оранжевый / Желтый Наследие дроп. Тратьте клевер только тогда, когда базовый ролл выпал 17–19 — с бонусом LUK вы гарантированно за 1–2 клевера добьете кубик до 20!' : isCn ? '投出20点是必定掉落橙装与黄晶传承装的唯一途径。初次掷出17-19点时再使用四叶草，依靠幸运加成只需1-2个四叶草即可稳稳保底20点神装！' : 'Only dice roll 20 guarantees Orange/Yellow Legacy drops. Only spend clovers when the initial roll is 17-19 to easily hit 20.'}</li>
+            <li><strong>${isRu ? 'Смотрите на спрайты монстров:' : isCn ? '怪物穿什么就掉什么:' : 'Visual Monster Gear:'}</strong> ${isRu ? 'Какая экипировка визуально надета на спрайте монстра на клетке карты — именно она и может выпасть после победы!' : isCn ? '地图格子上怪物身上穿戴展示的是什么装备，击败后就会掉落该特定装备！' : 'The actual gear sprite visible on the enemy tile is exactly what can drop from that fight!'}</li>
+            <li><strong>${isRu ? 'Экстра-дроп в Бездне (Abyss):' : isCn ? '深渊额外掉落加成:' : 'Abyss Extra Drops:'}</strong> ${isRu ? '• <strong>Бездна 20+ (Abyss 20+):</strong> +1 дополнительный предмет дропа.<br>• <strong>Бездна 40+ (Abyss 40+):</strong> +2 дополнительных предмета дропа.' : isCn ? '• <strong>深渊20+层：</strong>战后额外多掉落1件装备。<br>• <strong>深渊40+层：</strong>战后额外多掉落2件装备。' : '• <strong>Abyss 20+:</strong> +1 extra gear drop.<br>• <strong>Abyss 40+:</strong> +2 extra gear drops.'}</li>
+          </ul>
+        </div>
+
+        <!-- 7. Talent Fruit Pity, Duplication & Transfer -->
+        <div class="guide-card" style="border-left: 4px solid #14b8a6;">
+          <h3 style="color: #14b8a6; display: flex; align-items: center; gap: 8px;">
+            <span>🧬</span>
+            <span>${isRu ? '7. Плоды Таланта: Скрытый Гарант (Wishlist Pity) и Секрет Дублирования Эксклюзивов' : isCn ? '7. 天赋果实心愿保底机制与专属天赋转移/复制秘籍' : '7. Talent Fruit Wishlist Pity, Transfer & Duplication Guide'}</span>
+          </h3>
+          <ul class="guide-list">
+            <li><strong>${isRu ? 'Скрытая математика гаранта (Wishlist Pity):' : isCn ? '心愿天赋保底递增公式:' : 'Wishlist Pity Formula:'}</strong> ${isRu ? 'Шанс на целевой золотой талант из Wishlist начинает расти <strong>ТОЛЬКО ПОСЛЕ 50 золотых талантов-промахов</strong>. С 51-го ролла шанс растет на <strong>+5% за каждый последующий золотой реролл</strong> (на 70-м золотом таланте достигается 100% гарант).' : isCn ? '心愿金天赋的保底概率<strong>只有在连续歪掉50个非心愿金天赋后才开始递增</strong>。从第51个金天赋开始，每次洗练概率递增<strong>+5%</strong>，第70个金天赋必定100%出心愿目标！' : 'Pity chance begins increasing ONLY after 50 non-wishlist gold talents. From roll 51 onwards, chance increases by +5% per gold reroll, hitting 100% hard pity at roll 70.'}</li>
+            <li><strong>${isRu ? 'Сборка идеальных 4 слотов:' : isCn ? '四金天赋标准养成法:' : '4-Slot Gold Method:'}</strong> ${isRu ? 'Сначала крутите 1-ю страницу до открытия <strong>4 любых золотых слотов</strong> (неважно, какие таланты). Затем выбивайте нужные эксклюзивы на донорах и переносите их за 200 кристаллов.' : isCn ? '先在第1页洗出<strong>任意4个金色天赋槽位</strong>（无需在意词条好坏）。然后在其他狗粮角色身上洗出极品专属天赋，消耗200钻石转移至主力身上覆盖。' : 'First reroll Page 1 until you have 4 random gold slots. Then roll target exclusives on donor units and transfer them across for 200 gems.'}</li>
+            <li><strong>${isRu ? 'Секрет дублирования (2x–4x одинаковых эксклюзивов):' : isCn ? '多重专属天赋同页叠加技巧:' : 'Talent Duplication Secret:'}</strong> ${isRu ? 'Реролл не дает выбить два одинаковых таланта на одной странице, но <strong>Перенос талантов игнорирует это правило</strong>! Чтобы получить 2+ копии собственного эксклюзива: откройте 2-ю страницу ➔ выбейте эксклюзив ➔ перенесите на донора ➔ перенесите с донора обратно на 1-ю страницу!' : isCn ? '常规洗练无法在同页洗出同名天赋，但<strong>【天赋转移】完全不受该限制</strong>！若想让角色拥有双重自身专属天赋：开启第2页天赋 ➔ 在第2页洗出自身专属 ➔ 转移给中介角色 ➔ 再从中介转回第1页，实现多重专属暴力叠加！' : 'Regular rerolling forbids dupes on one page, but <strong>Talent Transfer bypasses this rule</strong>! Use Page 2 -> donor -> Page 1 to stack multiple copies of the same top exclusive!'}</li>
+            <li><strong>${isRu ? 'Фарм плодов (Ручной vs Блиц):' : isCn ? '果实刷取效率最大化:' : 'Fruit Farming Optimization:'}</strong> ${isRu ? '• <em>Ручной фарм:</em> бейте <strong>только фиолетовых и золотых врагов</strong> (максимум плодов на 1 энергии).<br>• <em>Блиц 10x (500 энергии):</em> дает ~360 плодов в неделю + горы клевера и прокачку всей экипировки региона.' : isCn ? '• <em>手动攻坚：</em>只打<strong>紫色与金色精英怪</strong>（每点体力果实产出率最高）。<br>• <em>10连扫荡(500体力)：</em>每周稳定产出约360果实，兼顾大量四叶草与全图装备升星。' : '• <em>Manual:</em> Target only purple & gold enemies for peak fruit-per-stamina.<br>• <em>10x Blitz:</em> Yields ~360 fruits/week plus tons of clovers and whole-map star upgrades.'}</li>
+          </ul>
+        </div>
+      </div>
+    `;
   },
 
   // 1. Battle Phases
@@ -998,7 +1118,7 @@ const GuidesView = {
     `;
   },
 
-  // 7. Best Builds & Meta Lineups
+  // 7. Best Builds & Meta Lineups (Updated with TapTap & Community Theorycraft Meta)
   getBuildsContent(lang = "RU") {
     const isRu = lang === 'RU';
     const isCn = lang === 'CN';
@@ -1008,210 +1128,334 @@ const GuidesView = {
 
     const buildsData = [
       {
-        id: "dot_meta",
-        icon: "🩸",
-        name: isRu ? "ДоТ-Королева: Истинный урон и Пробитие щитов" : isCn ? "毒爆流：生命流失与真实穿盾" : "DoT Queen: True HP Loss & Shield Pierce",
-        tier: "SS-Tier",
-        archetype: "dot",
-        tagline: isRu ? "Игнорирование 100% защиты и щитов боссов" : isCn ? "无视敌方防御与护盾的超强持续压制" : "100% Shield & Armor Bypass Pressure",
+        id: "princess_followup",
+        icon: "👑",
+        name: isRu ? "Команда Преследования Принцессы (Princess Follow-up)" : isCn ? "公主追击队：超频连击吃拐流" : "Princess Follow-up: Rapid Hit Chain",
+        tier: "T0 / SSS (F2P God)",
+        archetype: "core",
+        isF2p: true,
+        tagline: isRu ? "70+ атак преследования за раунд и абсолютный снос бронированных врагов" : isCn ? "单回合70+追击次数，吃拐能力独一档，钢化怪的严父" : "70+ Follow-up attacks per round, insane buff consumption & armor shred",
         desc: isRu 
-          ? "Билд построен на эффектах потери здоровья (HP Loss), которые тикают на каждое действие противника и наносят чистый урон, пробивая любые щиты и сопротивления."
+          ? "Лучшая бюджетная команда для старта. Не требует альтер-осколков, таланты легко выбиваются, наносит до 70+ атак преследования за раунд. В версии с божественными камнями получила колоссальный буст урона."
           : isCn
-          ? "基于生命流失 (HP Loss) 机制的核心阵容，敌方每次行动均受到真实伤害结算，完美克制高护盾与高防御 Boss。"
-          : "Capitalizes on HP Loss mechanics that tick on every enemy action, bypassing all shields and damage mitigation completely.",
+          ? "无异化碎片需求，天赋容易刷取，造价极其便宜。高达70+的追击次数吃拐能力独一档，在神石版本伤害飞跃，新手开荒首选。"
+          : "The ultimate F2P starter team. No alter shards needed, easy talent farming, delivering 70+ follow-up strikes per turn with top-tier buff scaling.",
         lineup: [
-          { rolePos: isRu ? "Авангард / Танк" : isCn ? "前排肉盾" : "Front Tank", id: "M11304", note: isRu ? "Перехват урона" : isCn ? "承伤拦截" : "Damage Intercept" },
-          { rolePos: isRu ? "Центр / Главный DPS" : isCn ? "中排核心" : "Mid DPS", id: "M23301_001", note: isRu ? "Яд и слизь" : isCn ? "剧毒粘液" : "Poison Slime" },
-          { rolePos: isRu ? "Центр / Дебаффер" : isCn ? "中排削防" : "Mid Debuff", id: "M13304", note: isRu ? "Массовый яд" : isCn ? "群体中毒" : "Mass Poison" },
-          { rolePos: isRu ? "Центр / Добив" : isCn ? "中排收割" : "Mid Finisher", id: "M11205_001", note: isRu ? "Кровотечение" : isCn ? "流血斩杀" : "Bleed Execute" },
-          { rolePos: isRu ? "Тыл / Лекарь" : isCn ? "后排治疗" : "Back Support", id: "M14201_001", note: isRu ? "Хил и баффы" : isCn ? "驱散与治疗" : "Heal & Cleanse" }
+          { rolePos: isRu ? "Центр / Главный Керри" : isCn ? "中排核心" : "Main Carry", id: "M12301", note: isRu ? "Принцесса (70+ ударов)" : isCn ? "鹰身公主 (核心追击)" : "Harpy Princess (Carry)" },
+          { rolePos: isRu ? "Тыл / Лекарь-Баффер" : isCn ? "后排治疗" : "Buffer Healer", id: "M14201_001", note: isRu ? "Боевая жрица (Жажда крови)" : isCn ? "战争祭司 (热血拐)" : "War Priest (Bloodlust)" },
+          { rolePos: isRu ? "Авангард / Танк" : isCn ? "前排先锋" : "Front Tank", id: "M11103_001", note: isRu ? "Варг-воительница" : isCn ? "狼灵战士" : "Warg Warrior" },
+          { rolePos: isRu ? "Центр / Дебаффер" : isCn ? "中排削弱" : "Mid Debuff", id: "M12202_001", note: isRu ? "Варг-лучница (Уязвимость)" : isCn ? "狼灵射手 (易伤)" : "Warg Archer (Vulnerable)" },
+          { rolePos: isRu ? "Тыл / Контроллер" : isCn ? "后排辅助" : "Back Support", id: "M13104_001", note: isRu ? "Волчица-шаманка" : isCn ? "狼族先知" : "Wolfkin Shaman" }
         ],
-        sets: isRu ? "Сеты на Apply Additional (стаки дебаффов), чистый урон и вампиризм." : isCn ? "增益附加层数、真实伤害强化与吸血套装。" : "Sets boosting Apply Additional, true damage, and lifesteal.",
-        pros: isRu ? "Уничтожает любых танков и боссов с гигантским запасом щитов." : isCn ? "克制任何高防护盾型肉盾与强力 Boss。" : "Shreds heavy tanks and shield-gated raid bosses.",
-        difficulty: isRu ? "Средняя (требует хорошей живучести)" : isCn ? "中等 (需要前排坦度)" : "Medium (Requires Frontline Sustain)"
+        sets: isRu ? "Сеты на урон преследования (Follow-up DMG), Apply Additional, шанс крита и атаку." : isCn ? "追击伤害套、附加层数提升、暴击与攻击套装。" : "Follow-up DMG sets, Apply Additional, Crit Rate, ATK.",
+        pros: isRu ? "Минимальная себестоимость, сокрушает бронированных монстров, легко пересобирается в скилл-билд." : isCn ? "极低造价，克制钢化与高防怪物，后期可无缝转型技能流。" : "Extremely cheap to build, shreds armored targets, scales smoothly into lategame.",
+        difficulty: isRu ? "Очень низкая (Идеально для новичков)" : isCn ? "极低 (萌新首选)" : "Very Low (Best for Starters)"
       },
       {
-        id: "burst_meta",
-        icon: "⚡",
-        name: isRu ? "Астральный Раш: 1-й Ход и Ультимейт-Спам" : isCn ? "星界速攻：首回合全员大招流" : "Astral Rush: Turn-1 Ultimate Spam",
-        tier: "SS-Tier",
-        archetype: "burst",
-        tagline: isRu ? "Extra Action до первого хода противника" : isCn ? "战斗开局满蓝插队，先手清屏" : "Instant Pre-emptive Extra Actions",
-        desc: isRu
-          ? "Использует механику максимальной стартовой маны на фазе Battle Start для получения внеочередных ходов (Extra Action) и аннигиляции врагов до их естественного хода."
+        id: "lucky_rabbit_farm",
+        icon: "🥕",
+        name: isRu ? "Счастливая Зайчиха / Гриб-Кентавр-Кот (Lucky Rabbit Farm)" : isCn ? "菇马猫幸运兔：全图速刷与掉宝王" : "Lucky Rabbit: Speed Farm & Magic Find",
+        tier: "T0 (Farm King)",
+        archetype: "core",
+        isF2p: true,
+        tagline: isRu ? "Половина всей меты игры: универсальный фарм карт и максимальный лут (MF)" : isCn ? "幻少半壁江山，兼顾极速推图与最高掉宝率" : "Half of the game meta: fastest wave clearing and highest drop rates",
+        desc: isRu 
+          ? "Самая популярная команда в игре («мастхэв каждого игрока»). Объединяет скоростную зачистку подземелий и повышенный шанс выпадения редкого снаряжения. Базовый талант «Удача за удачей» делает сборку очень дешевой."
           : isCn
-          ? "利用开局满蓝机制在 Battle Start 阶段直接获得插队额外行动 (Extra Action)，在敌方出手前完成清场。"
-          : "Leverages Battle Start max MP triggers to take instant Extra Actions before opponents get their natural turns.",
+          ? "日常刷图无可替代的绝对顶流，人手一只的含金量。兼顾刷图效率与顶级掉宝，使用普通天赋即可低成本成型。"
+          : "The reigning king of everyday dungeon farming. Combines blazing wave-clear speeds with maximum Magic Find drop rates.",
         lineup: [
-          { rolePos: isRu ? "Авангард / Танк" : isCn ? "前排先锋" : "Frontline", id: "M31301", note: isRu ? "Прорыв строя" : isCn ? "圣剑突进" : "Linebreak" },
-          { rolePos: isRu ? "Тыл / Ядерный DPS" : isCn ? "后排爆发" : "Back Nuke", id: "M53301_001", note: isRu ? "АоЕ Ультимейт" : isCn ? "星界核爆" : "AoE Nuke" },
-          { rolePos: isRu ? "Центр / Батарейка" : isCn ? "中排回能" : "Mid Battery", id: "M24301", note: isRu ? "Заливка маны" : isCn ? "能量加速" : "Mana Boost" },
-          { rolePos: isRu ? "Центр / Щитовик" : isCn ? "中排护盾" : "Mid Shielder", id: "M51201_001", note: isRu ? "Щит от DEF" : isCn ? "群体防御盾" : "DEF Shield" },
-          { rolePos: isRu ? "Тыл / Снайпер" : isCn ? "后排收割" : "Back Sniper", id: "M51303", note: isRu ? "Точечный ваншот" : isCn ? "星光狙击" : "Crit Snipe" }
+          { rolePos: isRu ? "Тыл / Главный Маг" : isCn ? "后排主C" : "Main Caster", id: "M13305", note: isRu ? "Великая волшебница (Кролик)" : isCn ? "魔术大师 (幸运兔)" : "Grand Magician (Rabbit)" },
+          { rolePos: isRu ? "Центр / Ускоритель" : isCn ? "中排拉条" : "Mid Puller", id: "M11204", note: isRu ? "Всадница Легиона" : isCn ? "军团骑兵" : "Legion Cavalry" },
+          { rolePos: isRu ? "Тыл / Золото-Фарм" : isCn ? "后排打金" : "Gold Farmer", id: "M14203", note: isRu ? "Чжаоцай (Двойное золото)" : isCn ? "招财 (双倍金币)" : "Zhaocai (Double Gold)" },
+          { rolePos: isRu ? "Авангард / Танк" : isCn ? "前排肉盾" : "Frontline", id: "M11301", note: isRu ? "Командующая Легиона" : isCn ? "军团统领" : "Legion Commander" },
+          { rolePos: isRu ? "Центр / Поддержка" : isCn ? "中排辅助" : "Mid Shifter", id: "M13206", note: isRu ? "Споровая ведьма" : isCn ? "孢子女巫" : "Spore Witch" }
         ],
-        sets: isRu ? "Сеты со стартовой маной (Battle Start MP), скорость (SPD), урон навыков." : isCn ? "开局能量套、速度套与暴击技能伤害套装。" : "Battle Start MP sets, Speed (SPD), Skill DMG.",
-        pros: isRu ? "Мгновенная победа в PvP и быстрое прохождение сюжетных волн." : isCn ? "竞技场秒杀与副本极速竞速首选。" : "Instant Arena victories and rapid story wave clearing.",
-        difficulty: isRu ? "Высокая (требует хороших рун на скорость)" : isCn ? "较高 (依赖速度与开局蓝量配置)" : "High (Speed & MP gear dependent)"
+        sets: isRu ? "Сеты на Удачу (Luck / Drop Rate), стартовую ману и урон навыков." : isCn ? "幸运套 (掉宝率)、开局能量套与技能伤害套装。" : "Luck (Magic Find), Battle Start MP, and Skill DMG sets.",
+        pros: isRu ? "Безумный приток золота и предметов, мгновенная зачистка обычных карт." : isCn ? "无与伦比的资源与金币获取效率，日常推图极度顺畅。" : "Unrivaled gear farming efficiency and lightning-fast daily clearing.",
+        difficulty: isRu ? "Низкая (базовая версия) / Высокая (в эндгейме с камнями удачи)" : isCn ? "低 (基础成型) / 高 (极限幸运神石)" : "Low (Base) / High (Lategame Godstones)"
       },
       {
-        id: "counter_meta",
-        icon: "🛡️",
-        name: isRu ? "Несокрушимый Оплот: Контратаки и Щиты" : isCn ? "铁壁反击：无限弹刀反击流" : "Iron Fortress: Infinite Counter-Attack",
-        tier: "S-Tier",
-        archetype: "counter",
-        tagline: isRu ? "Каждый удар по вам оборачивается сокрушительным ответом" : isCn ? "受击即反击，高额护盾坚不可摧" : "Every incoming hit triggers devastating retribution",
-        desc: isRu
-          ? "Танк и авангард перехватывают весь входящий урон с союзников и запускают бесконечные цепочки контратак (Counter Hit -> Counter After), восстанавливая здоровье."
-          : isCn
-          ? "前排全方位拦截伤害并触发连续反击打击链，配合高额护盾与受击回血，立于不败之地。"
-          : "Frontline intercepts ally damage and triggers endless counter-strike chains with self-sustain and DEF shields.",
-        lineup: [
-          { rolePos: isRu ? "Авангард / Контратакер" : isCn ? "前排核心" : "Front Counter", id: "M11304_001", note: isRu ? "Контратака на каждый удар" : isCn ? "无限反击" : "Counter Strike" },
-          { rolePos: isRu ? "Авангард / Танк" : isCn ? "前排副坦" : "Front Tank", id: "M11304", note: isRu ? "Снижение урона" : isCn ? "伤害减免" : "Damage Cut" },
-          { rolePos: isRu ? "Центр / Лекарь" : isCn ? "中排治疗" : "Mid Healer", id: "M14201", note: isRu ? "Регенерация и щиты" : isCn ? "圣光护盾" : "Sustain Shield" },
-          { rolePos: isRu ? "Тыл / Контроллер" : isCn ? "后排削弱" : "Back Controller", id: "M13303_001", note: isRu ? "Снижение атаки врага" : isCn ? "大地压制" : "ATK Break" },
-          { rolePos: isRu ? "Центр / Воин" : isCn ? "中排输出" : "Mid Fighter", id: "M11103_001", note: isRu ? "Стойкость и темп" : isCn ? "强袭节奏" : "Tenacity Temp" }
-        ],
-        sets: isRu ? "Сеты защиты (DEF), стойкости (Tenacity), вампиризма при контратаках." : isCn ? "高防御、坚韧度 (Tenacity) 与反击吸血套装。" : "DEF, Tenacity, Counter lifesteal sets.",
-        pros: isRu ? "Легко проходит затяжные бои и высокоуровневые башни испытаний." : isCn ? "高难持久战与爬塔挑战的最佳安全解。" : "Effortless high-tier tower climbing and endurance fights.",
-        difficulty: isRu ? "Низкая (очень стабильный и надежный билд)" : isCn ? "较低 (阵容稳定性极强)" : "Low (Extremely stable & safe)"
-      },
-      {
-        id: "snipe_meta",
-        icon: "🏹",
-        name: isRu ? "Снайперский Ваншот: Крит и Вырезка Тыла" : isCn ? "精准狙杀：暴击秒后排后置流" : "Crit Sniper: Rear-Line Execute",
-        tier: "S-Tier",
-        archetype: "snipe",
-        tagline: isRu ? "Дистанция Range 4–5 и фокусировка вражеских лекарей" : isCn ? "攻击距离4–5，直切敌方后排核心" : "Range 4-5 focus on enemy healers and buffers",
-        desc: isRu
-          ? "Отряд фокусируется на дальнобойном таргетинге (Furthest / Lowest HP target), мгновенно выбивая вражеских магов и лекарей до того, как они смогут вылечить команду."
-          : isCn
-          ? "利用远程索敌规则 (最远/最低生命值)，在开局直插敌方后排脆皮，瞬间蒸发核心辅助与治疗。"
-          : "Utilizes Range 4-5 targeting priorities to assassinate squishy rear supports before they can cast heals.",
-        lineup: [
-          { rolePos: isRu ? "Тыл / Главный Снайпер" : isCn ? "后排狙击" : "Main Sniper", id: "M51303", note: isRu ? "100% Крит Range 5" : isCn ? "超远距离暴击" : "100% Crit Range 5" },
-          { rolePos: isRu ? "Тыл / Лимит-Драконица" : isCn ? "后排龙女" : "Dragoness", id: "M13310", note: isRu ? "Игнор брони" : isCn ? "无视护甲" : "Armor Shred" },
-          { rolePos: isRu ? "Центр / Стрелок" : isCn ? "中排辅助" : "Mid Archer", id: "M12202_001", note: isRu ? "Уязвимость (Vulnerable)" : isCn ? "易伤增幅" : "Apply Vulnerable" },
-          { rolePos: isRu ? "Авангард / Танк" : isCn ? "前排防线" : "Front Line", id: "M51201", note: isRu ? "Удержание врагов" : isCn ? "战线拦截" : "Interception" },
-          { rolePos: isRu ? "Центр / Баффер" : isCn ? "中排增益" : "Mid Buffer", id: "M24301", note: isRu ? "Бафф крит-урона" : isCn ? "暴伤加成" : "Crit DMG Buff" }
-        ],
-        sets: isRu ? "Сеты на Крит. шанс, Крит. урон, пробитие защиты." : isCn ? "暴击率、暴击伤害与破甲专属套装。" : "Crit Rate, Crit DMG, and Armor Penetration sets.",
-        pros: isRu ? "Выключает главные козыри врага в первые секунды битвы." : isCn ? "开局即可瘫痪敌方战术核心体系。" : "Neutralizes the enemy win condition in seconds.",
-        difficulty: isRu ? "Средняя (требует разгона крит-шанса)" : isCn ? "中等 (需要高暴击率装备支撑)" : "Medium (Crit stat tuning needed)"
-      },
-      {
-        id: "freeze_meta",
+        id: "ice_malice_fiend",
         icon: "❄️",
-        name: isRu ? "Абсолютная Заморозка: Контроль и Кража Маны" : isCn ? "极寒领域：冰冻控制与法力抽竭" : "Absolute Zero: Freeze CC & Mana Drain",
-        tier: "S-Tier",
-        archetype: "freeze",
-        tagline: isRu ? "Полная блокировка действий и сжигание вражеского MP" : isCn ? "冰冻封锁行动，抽光能量让敌方无法开大" : "Complete action denial & continuous MP starvation",
-        desc: isRu
-          ? "Комбинация заморозки, снижения скорости (SPD Slow) и вытягивания маны (Drain MP), которая оставляет противников без ресурсов и не дает использовать ультимейты."
+        name: isRu ? "Зловещая Ледяная Злодейка (Malice Ice Fiend)" : isCn ? "恶意冰邪队：无行动湮灭流" : "Malice Ice Fiend: Out-of-Turn Annihilation",
+        tier: "T0 (Boss Destroyer)",
+        archetype: "core",
+        isF2p: true,
+        tagline: isRu ? "Уничтожение врагов вообще без совершения действий при пробитии стойкости" : isCn ? "你游最高山最长河，破韧即湮灭，无需行动摧毁一切" : "Zero-action obliteration upon toughness break; the game's ultimate mechanical engine",
+        desc: isRu 
+          ? "Фундаментальный базис меты. При сбивании стойкости противника наносит колоссальный урон от эффекта Злобы (Malice) вне своего хода. Берется гарантированно за Камень желаний (30 дней логина)."
           : isCn
-          ? "通过冰冻、减速 (SPD Slow) 与强力抽能 (Drain MP) 形成全场控制链，让敌方全场无法释放任何技能。"
-          : "Locks down the entire battlefield with Freeze, SPD slows, and Mana Drain, starving opponents of skill resources.",
+          ? "堪称幻少的底层逻辑，只要环境允许破韧，冰邪就是T0顶流，无需行动即可将敌人尽数湮灭。登陆30天通过许愿石直接免费获取。"
+          : "The core mechanic benchmark of the game. Deals immense out-of-turn damage the instant an enemy's Toughness is broken.",
         lineup: [
-          { rolePos: isRu ? "Тыл / Ледяная Драконица" : isCn ? "后排核心" : "Frost Dragoness", id: "M51302_001", note: isRu ? "Массовая заморозка" : isCn ? "群体冰冻" : "Mass Freeze" },
-          { rolePos: isRu ? "Центр / Владычица роз" : isCn ? "中排压制" : "Mid Binder", id: "M13307", note: isRu ? "Сковывающие корни" : isCn ? "荆棘缠绕" : "Thorn Roots" },
-          { rolePos: isRu ? "Центр / Срез скорости" : isCn ? "中排减速" : "Mid Slow", id: "M12301_001", note: isRu ? "Снижение SPD" : isCn ? "击退降速" : "SPD Knockback" },
-          { rolePos: isRu ? "Авангард / Слизь-Защитник" : isCn ? "前排粘液" : "Slime Tank", id: "M23301", note: isRu ? "Замедляющая стена" : isCn ? "减速肉盾" : "Slow Barrier" },
-          { rolePos: isRu ? "Тыл / Диспеллер" : isCn ? "后排驱散" : "Back Dispel", id: "M13104_001", note: isRu ? "Снятие баффов" : isCn ? "清除敌方增益" : "Buff Purge" }
+          { rolePos: isRu ? "Тыл / Главный Дробитель" : isCn ? "后排核心" : "Main Carry", id: "M53301_001", note: isRu ? "Астральная Злодейка (Альтер)" : isCn ? "星界邪神·异化 (冰邪)" : "Astral Fiend (Alter/Ice)" },
+          { rolePos: isRu ? "Центр / 3★ Поддержка" : isCn ? "中排支援" : "3-Star Supp", id: "M53301", note: isRu ? "Астральная Злодейка (Обычная)" : isCn ? "星界邪神 (普邪3星支援)" : "Astral Fiend (Base Support)" },
+          { rolePos: isRu ? "Авангард / Пробиватель" : isCn ? "前排破韧" : "Shieldbreaker", id: "M51302", note: isRu ? "Рассветная драконица" : isCn ? "晨曦龙女 (破韧手)" : "Dawn Dragoness" },
+          { rolePos: isRu ? "Центр / Батарейка" : isCn ? "中排回能" : "Mid Energy", id: "M24301", note: isRu ? "Безмятежная ундина" : isCn ? "宁静水灵" : "Serene Undine" },
+          { rolePos: isRu ? "Тыл / Ускоритель" : isCn ? "后排辅助" : "Turn Engine", id: "M51201_001", note: isRu ? "Астральная Хранительница" : isCn ? "星界守卫·异化" : "Astral Guardian (Alter)" }
         ],
-        sets: isRu ? "Сеты на увеличение длительности контроля, скорость и сжигание MP." : isCn ? "控制时间延长、速度套与能量削减套装。" : "CC duration, Speed, and MP Drain sets.",
-        pros: isRu ? "Идеально нейтрализует опасных ультимейт-боссов и скоростные команды." : isCn ? "完美克制速攻大招流与高爆发 Boss。" : "Hard-counters rush teams and dangerous ultimate bosses.",
-        difficulty: isRu ? "Средняя (требует согласованных таймингов)" : isCn ? "中等 (需要技能施法节奏衔接)" : "Medium (Requires timing synergy)"
+        sets: isRu ? "Сеты на пробитие стойкости (Toughness Break), сжигание маны, заморозку и урон от потери HP." : isCn ? "破韧套、抽蓝套、冰冻延长时间与生命流失增幅套装。" : "Toughness Break, MP Drain, Freeze duration, and HP Loss sets.",
+        pros: isRu ? "Не зависит от ограничений маны, стирает боссов в Исекай-порталах за секунды." : isCn ? "不吃减魔减速，异界传送门攻坚天花板，成型即横扫所有地图。" : "Ignores mana-lock mechanics; shreds high-tier Otherworld portal bosses.",
+        difficulty: isRu ? "Средняя (легко получается через Камень желаний)" : isCn ? "中等 (30天许愿石直接成型)" : "Medium (Free via 30-Day Wish Stone)"
+      },
+      {
+        id: "speed_sword_immortal",
+        icon: "🌸",
+        name: isRu ? "Скоростной Мечник-Бессмертный (Speed Sword Immortal)" : isCn ? "加速流剑仙：直伤天花板" : "Speed Sword Immortal: Direct DMG Ceiling",
+        tier: "T0 (Direct DMG Top)",
+        archetype: "core",
+        isF2p: false,
+        tagline: isRu ? "Абсолютный рекорд прямого урона и главный фаворит Чемпионата Вершины" : isCn ? "新晋顶流，超高成长数值，当前版本的直伤天花板" : "The current pinnacle of direct multi-hit burst and Peak Tournament dominator",
+        desc: isRu 
+          ? "Текущий потолок прямого урона (Direct DMG Ceiling). Бешеные множители урона, сочетающие гигантскую базовую атаку и мульти-сегментные серии ударов. Самодостаточна даже без узких саппортов."
+          : isCn
+          ? "成长数值极其优异，伤害上限极高，兼具高基础与多段数优势，单体素质极强，是巅峰赛统治级主力。"
+          : "The gold standard of direct damage output, boasting astronomical base multipliers and high multi-hit counts.",
+        lineup: [
+          { rolePos: isRu ? "Авангард / Соло-Керри" : isCn ? "前排主C" : "Solo Carry", id: "M51302_001", note: isRu ? "Рассветная драконица (Альтер)" : isCn ? "晨曦龙女·异化 (剑仙)" : "Dawn Dragoness (Alter)" },
+          { rolePos: isRu ? "Тыл / Баффер атаки" : isCn ? "后排增攻" : "ATK Buffer", id: "M14201_001", note: isRu ? "Боевая жрица" : isCn ? "战争祭司" : "War Priest" },
+          { rolePos: isRu ? "Центр / Щитовик" : isCn ? "中排护盾" : "Shielder", id: "M31202", note: isRu ? "Утраченная Эгида" : isCn ? "迷失盾灵" : "Lost Aegis" },
+          { rolePos: isRu ? "Центр / Раздатчик скорости" : isCn ? "中排加速" : "Speed Buffer", id: "M12205", note: isRu ? "Шагающая по ветру" : isCn ? "风行游侠" : "Windstrider" },
+          { rolePos: isRu ? "Тыл / Лекарь" : isCn ? "后排治疗" : "Healer", id: "M24301", note: isRu ? "Безмятежная ундина" : isCn ? "宁静水灵" : "Serene Undine" }
+        ],
+        sets: isRu ? "Сеты скорости (SPD), крит. урона, базовой атаки и Жажды крови." : isCn ? "极速套、暴击伤害、基础攻击与热血套装。" : "High SPD, Crit DMG, Base ATK, and Bloodlust sets.",
+        pros: isRu ? "Невероятный взрывной урон в соло-цель, доминирует в турнире Вершины." : isCn ? "极强单体摧毁力，跨服巅峰赛首选直伤核心。" : "Unstoppable single-target burst, ideal for Peak Tournament brackets.",
+        difficulty: isRu ? "Высокая (добавляется в стандартный пул через 3 месяца после батлпаса)" : isCn ? "较高 (战令首发，需等待进池)" : "High (Battle Pass debut, premium build)"
+      },
+      {
+        id: "undefeated_ice_blade",
+        icon: "⚔️",
+        name: isRu ? "Непобедимый Ледяной Клинок (Undefeated Ice Blade)" : isCn ? "未战冰剑队：多段斩击吸蓝流" : "Undefeated Ice Blade: Multi-Slash Drain",
+        tier: "S-Tier (Skill Warrior)",
+        archetype: "core",
+        isF2p: true,
+        tagline: isRu ? "Многосегментные серии рубящих атак, бафф Жажды крови и вампиризм маны" : isCn ? "超帅多段斩击，吃满热血buff，五星吸魔极大降低生存压力" : "Rapid multi-slash combos, full Bloodlust synergy, and 5-star MP leech",
+        desc: isRu 
+          ? "Стильный воин навыков с непрерывными сериями ударов. 5-звездочная способность похищает ману противников, сводя на нет угрозу их ультимейтов."
+          : isCn
+          ? "技能流战士排面，完美吃满热血增伤，五星吸魔效果大幅提高全队生存，装备成型简单且毕业上限可观。"
+          : "Skill-focused slashing warrior who maximizes Bloodlust buffs while siphoning enemy MP on hit.",
+        lineup: [
+          { rolePos: isRu ? "Авангард / Главный Мечник" : isCn ? "前排核心" : "Lead Blade", id: "M31301_001", note: isRu ? "Святая сабля (Альтер)" : isCn ? "圣剑之灵·异化 (冰剑)" : "Holy Blade (Alter)" },
+          { rolePos: isRu ? "Центр / Баффер" : isCn ? "中排热血" : "Bloodlust Buff", id: "M14201", note: isRu ? "Боевая жрица" : isCn ? "战争祭司" : "War Priest" },
+          { rolePos: isRu ? "Авангард / Танк" : isCn ? "前排副坦" : "Off-Tank", id: "M31202", note: isRu ? "Утраченная Эгида" : isCn ? "迷失盾灵" : "Lost Aegis" },
+          { rolePos: isRu ? "Тыл / Лекарь" : isCn ? "后排治疗" : "Healer", id: "M14101", note: isRu ? "Жрица Академии" : isCn ? "学院牧师" : "Academy Priest" },
+          { rolePos: isRu ? "Центр / Саб-ДПС" : isCn ? "中排副C" : "Sub-DPS", id: "M31201", note: isRu ? "Сломанная сабля" : isCn ? "破碎剑灵" : "Broken Blade" }
+        ],
+        sets: isRu ? "Сеты урона навыков, кражи маны, атаки и пробития брони." : isCn ? "技能伤害套、吸魔套、破甲与攻击套装。" : "Skill DMG, MP Leech, Armor Pen, ATK sets.",
+        pros: isRu ? "Очень стабильный и живучий воин навыков, легкий сбор экипировки." : isCn ? "高生存多段打击，吸蓝压制敌方大招，配装平滑。" : "Reliable multi-hit burst, drains enemy skill meters, smooth gearing curve.",
+        difficulty: isRu ? "Средняя" : isCn ? "中等" : "Medium"
+      },
+      {
+        id: "deathrattle_induction",
+        icon: "💀",
+        name: isRu ? "Индукция Предсмертного Завещания (Deathrattle Induction)" : isCn ? "未战诱导流：999防御攻坚炸弹" : "Deathrattle Induction: 999 DEF Crusher",
+        tier: "S-Tier (Niche Bossing)",
+        archetype: "advanced",
+        isF2p: false,
+        tagline: isRu ? "Колоссальный взрыв прямого урона против боссов с 999 брони и заморозкой" : isCn ? "爆炸直伤输出，轻松应对999防护/冰冻极端减伤环境" : "Explosive direct damage designed to annihilate 999 DEF & Freeze mitigation bosses",
+        desc: isRu 
+          ? "Специализированная осадная пачка для уничтожения боссов со сверхвысокой броней (999 DEF). Выдает моментальный пиковый взрыв прямого урона."
+          : isCn
+          ? "攻坚特化配队，专克999防护与冰冻减伤词条。注意会被敌方的【安眠】特性克制，需8金天赋起步。"
+          : "Specialized boss-busting formation built to overcome 999 DEF shields and harsh damage reduction affixes.",
+        lineup: [
+          { rolePos: isRu ? "Центр / Ядерный Керри" : isCn ? "中排主C" : "Nuke Core", id: "M31302", note: isRu ? "Великанша / Кролик" : isCn ? "核心魔偶 / 幸运兔" : "Core Golem / Rabbit" },
+          { rolePos: isRu ? "Тыл / Активатор Завещания" : isCn ? "后排诱导" : "Inductor", id: "M13305", note: isRu ? "Великая волшебница" : isCn ? "魔术大师" : "Grand Magician" },
+          { rolePos: isRu ? "Авангард / Танк Завещания" : isCn ? "前排遗言" : "Deathrattle Tank", id: "M41301", note: isRu ? "Призрак-капитан" : isCn ? "幽灵船长" : "Ghost Captain" },
+          { rolePos: isRu ? "Центр / Усилитель" : isCn ? "中排增伤" : "Multiplier", id: "M21302", note: isRu ? "Вечная владычица" : isCn ? "无尽领主" : "Timeless Lord" },
+          { rolePos: isRu ? "Тыл / Саппорт" : isCn ? "后排辅助" : "Support", id: "M43101", note: isRu ? "Заблудшая Душа" : isCn ? "迷失之魂" : "Lost Soul" }
+        ],
+        sets: isRu ? "Сеты Предсмертного Завещания (Deathrattle), множители урона и чистая атака." : isCn ? "遗言增伤套、未战诱导套与攻击力倍率装备。" : "Deathrattle multipliers, Induction sets, Pure ATK.",
+        pros: isRu ? "Пробивает любую пассивную защиту и броню рейдовых боссов." : isCn ? "无视一切超高护甲减伤词条，秒杀特定极限 Boss。" : "Crushes ultra-armored dungeon bosses in a single rotation.",
+        difficulty: isRu ? "Высокая (требует 8 золотых талантов, контрится аффиксом «Спящий»)" : isCn ? "高 (刚需8金天赋，被安眠词条克制)" : "High (Requires 8 Gold Talents; countered by Asleep affix)"
+      },
+      {
+        id: "purify_slime_shroom_dragon",
+        icon: "🍄",
+        name: isRu ? "Очищение Слайм-Гриб-Дракон (Purify Slime-Shroom-Dragon)" : isCn ? "净化史菇龙：高难自驱散攻坚队" : "Purify Slime-Shroom-Dragon: Cleanse Burst",
+        tier: "S-Tier (Cleanse & Burst)",
+        archetype: "advanced",
+        isF2p: true,
+        tagline: isRu ? "Снятие баффов с боссов, очищение команды и независимый от стаков урон" : isCn ? "自带海量净化驱散，拔除敌方防御增益，攻坚能力极强" : "Massive team cleansing, strips boss defense buffs, independent damage scaling",
+        desc: isRu 
+          ? "Универсальный осадный сетап на предсмертных эффектах. Не боится диспелов со стороны врагов, постоянно снимает с боссов щиты и броню, восстанавливая здоровье."
+          : isCn
+          ? "不依赖状态层数增伤，无惧敌方驱散。自带强力净化剥离敌方防御减伤，伤害成长优秀，性价比极高。"
+          : "A robust lategame team that operates on deathrattle rotations while continuously purging enemy defense buffs.",
+        lineup: [
+          { rolePos: isRu ? "Центр / Керри" : isCn ? "中排核心" : "Lead Nuke", id: "M23301", note: isRu ? "Королева слизней" : isCn ? "史莱姆王" : "Slime Queen" },
+          { rolePos: isRu ? "Центр / Очищение" : isCn ? "中排驱散" : "Purifier", id: "M13306", note: isRu ? "Кристальная грибница" : isCn ? "水晶菇娘" : "Crystal Shroom" },
+          { rolePos: isRu ? "Авангард / Дракон" : isCn ? "前排龙女" : "Dragon Front", id: "M51302", note: isRu ? "Рассветная драконица" : isCn ? "晨曦龙女" : "Dawn Dragoness" },
+          { rolePos: isRu ? "Тыл / Лекарь" : isCn ? "后排治疗" : "Healer", id: "M24301", note: isRu ? "Безмятежная ундина" : isCn ? "宁静水灵" : "Serene Undine" },
+          { rolePos: isRu ? "Авангард / Танк" : isCn ? "前排肉盾" : "Sustain Tank", id: "M21203", note: isRu ? "Гигантская Слизь" : isCn ? "巨大史莱姆" : "Giant Slime" }
+        ],
+        sets: isRu ? "Сеты очищения, базового прямого урона и регенерации HP." : isCn ? "净化套、基础直伤套与生命回复套装。" : "Cleanse sets, Base Direct DMG, HP Sustain.",
+        pros: isRu ? "Идеальная выживаемость против дебафферов, высокая адаптивность к сложным модам." : isCn ? "极强生存自愈力，轻松应对各种高难词缀副本。" : "Top tier survival against heavy debuff stages and punishing modifiers.",
+        difficulty: isRu ? "Средняя (базовая версия недорогая)" : isCn ? "中等 (基础造价便宜)" : "Medium (Affordable base investment)"
+      },
+      {
+        id: "golden_maiden_20k",
+        icon: "🪙",
+        name: isRu ? "20,000 HP Золотая Дева (20k HP Golden Maiden)" : isCn ? "万血流黄金女：零暖机两万血开局秒杀" : "20k HP Golden Maiden: Instant Turn-0 Juggernaut",
+        tier: "S-Tier (Zero Warm-up)",
+        archetype: "advanced",
+        isF2p: false,
+        tagline: isRu ? "20,000 HP и 2000+ базового урона с 0-й секунды без прогрева" : isCn ? "开局两万血量上限，基础伤害2000+，零暖机直接启动" : "20,000 HP pool and 2000+ base ATK from turn 0 with zero ramp-up time",
+        desc: isRu 
+          ? "Бьет обычными атаками, преследованиями и контратаками (полный иммунитет к дебаффам маны и унынию). Металлическая раса полностью игнорирует эффекты смертельной потери HP."
+          : isCn
+          ? "依赖普攻、追击与反击输出，完全不受减魔与沮丧影响。金属元素种族免疫流失致死，开局数值极为恐怖。"
+          : "Relies strictly on Basic, Follow-up, and Counter attacks, rendering it totally immune to mana drain and depression debuffs.",
+        lineup: [
+          { rolePos: isRu ? "Авангард / Джаггернаут" : isCn ? "前排核心" : "Lead Juggernaut", id: "M21301", note: isRu ? "Золотая дева (20k HP)" : isCn ? "黄金之女 (两万血核心)" : "Golden Maiden (20k HP)" },
+          { rolePos: isRu ? "Центр / Баффер защиты" : isCn ? "中排防线" : "DEF Buffer", id: "M22202", note: isRu ? "Позолоченная лучница" : isCn ? "鎏金射手" : "Gilt Archer" },
+          { rolePos: isRu ? "Авангард / Каменный щит" : isCn ? "前排石壁" : "Stone Guard", id: "M21201", note: isRu ? "Каменная стражница" : isCn ? "岩石守卫" : "Stone Guard" },
+          { rolePos: isRu ? "Тыл / Металл-Певунья" : isCn ? "后排金属" : "Metal Songstress", id: "M24102", note: isRu ? "Серебряная певунья" : isCn ? "白银歌姬" : "Silver Songstress" },
+          { rolePos: isRu ? "Центр / Контроль" : isCn ? "中排辅助" : "Mid Artillery", id: "M22201", note: isRu ? "Валунный стрелок" : isCn ? "巨岩炮手" : "Boulder Gunner" }
+        ],
+        sets: isRu ? "Сеты на Max HP %, базовую атаку и стойкость." : isCn ? "最大生命值百分比套、基础攻击力与坚韧套装。" : "Max HP %, Base ATK, and Tenacity sets.",
+        pros: isRu ? "Не требует раскачки, не убивается кровотечениями, моментальный урон." : isCn ? "零启动时间，不怕流失，开局即巅峰数值。" : "Zero setup time, immune to bleed/drain deaths, instant upfront burst.",
+        difficulty: isRu ? "Экстремально высокая (требует 12 золотых талантов)" : isCn ? "极高 (刚需12金专属天赋)" : "Extremely High (Requires 12 Gold Talents)"
+      },
+      {
+        id: "ice_fire_burn_drain",
+        icon: "🔥",
+        name: isRu ? "Ледяное Пламя / Ожог + Потеря HP (Ice-Fire Burn Drain)" : isCn ? "冰火流失队：首回合数万真伤焚决" : "Ice-Fire Burn Drain: Turn-1 True HP Shred",
+        tier: "SSS-Tier (Whale Endgame)",
+        archetype: "advanced",
+        isF2p: false,
+        tagline: isRu ? "50,000+ чистого урона потери HP на старте раунда и сверхживучесть" : isCn ? "开局引爆数万流失真伤，多层防护与金属免疫，终极攻坚焚决" : "50k+ True HP Loss explosion on turn start, maximum damage mitigation & survival",
+        desc: isRu 
+          ? "Эндгейм-билд высшего порядка. Объединяет механику Злобы Ледяной Злодейки и взрывной урон Ожога. Металлические союзники защищают команду от ответных тиков потери HP."
+          : isCn
+          ? "灼烧流失体系的终极形态，开局即爆发数万流失伤害。结合金属免疫与高层防护，兼顾巨额真伤与顶级生存。"
+          : "The ultimate endgame configuration. Fuses Malice toughness break with explosive Burn drain.",
+        lineup: [
+          { rolePos: isRu ? "Тыл / Ледяной Дробитель" : isCn ? "后排核心" : "Malice Core", id: "M53301_001", note: isRu ? "Астральная Злодейка (Альтер)" : isCn ? "星界邪神·异化 (冰邪)" : "Astral Fiend (Alter)" },
+          { rolePos: isRu ? "Центр / Огненный Урон" : isCn ? "中排直伤" : "Burn Direct", id: "M21302", note: isRu ? "Вечная владычица (Альтер Лорд)" : isCn ? "无尽领主·异化" : "Timeless Lord (Alter)" },
+          { rolePos: isRu ? "Центр / Металл-Щит" : isCn ? "中排金属" : "Metal Buffer", id: "M22202", note: isRu ? "Позолоченная лучница" : isCn ? "鎏金射手" : "Gilt Archer" },
+          { rolePos: isRu ? "Авангард / Шутовская Злодейка" : isCn ? "前排拉条" : "Turn Engine", id: "M51201_001", note: isRu ? "Шутовская Злодейка / Куб" : isCn ? "愚邪 (自拉条引擎)" : "Foolish Fiend (Engine)" },
+          { rolePos: isRu ? "Тыл / Огненная Жрица" : isCn ? "后排点火" : "Burn Igniter", id: "M21205", note: isRu ? "Огненная банши" : isCn ? "火焰女妖" : "Fire Banshee" }
+        ],
+        sets: isRu ? "Сеты на потерю HP (HP Loss), стаки Ожога, Божественные камни и щиты." : isCn ? "生命流失增幅、灼烧层数强化与顶级专属神石。" : "HP Loss Amp, Burn Stack boosts, Godstones, Shields.",
+        pros: isRu ? "Самый высокий суммарный урон в игре, стирает порталы любого уровня." : isCn ? "理论总伤害上限天花板，任何高层传送门与竞速秒杀。" : "Absolute highest theoretical damage ceiling in the game.",
+        difficulty: isRu ? "Максимальная (12 золотых талантов + топовые Godstone камни)" : isCn ? "顶级 (12金天赋+毕业神石)" : "Max (12 Gold Talents + Perfect Godstones)"
+      },
+      {
+        id: "solo_jokers",
+        icon: "🃏",
+        name: isRu ? "Джокеры Высшего Ранга (Solo Utility Powerhouses)" : isCn ? "独立真神单卡：逆转战局的核心对策卡" : "Solo Jokers: Standalone Boss Counters",
+        tier: "S+ Utility",
+        archetype: "solo",
+        isF2p: true,
+        tagline: isRu ? "Ключевые одиночные карты, способные в соло закрыть Пик 36 и сложнейших боссов" : isCn ? "不依赖固定配队，单卡即完全体，巅峰36与高难攻坚必备" : "Standalone hyper-utility units capable of soloing Peak 36 and extreme mechanics",
+        desc: isRu 
+          ? "Не требуют фиксированной команды. «Неубиваемая Золотая Дева» (Сет Жизнеобеспечения + Куб) за счет расовой защиты от смертельного урона соло закрывает Пик 36. «Шутовская Злодейка» дает бесконечное продвижение ходов без генерации маны боссам."
+          : isCn
+          ? "【不死黄金女】：魔方限伤+维生套回血+金属锁血种族天赋，巅峰36极限通关核心对策卡。【愚邪】：自拉五大强力引擎，治疗不给敌方送怒回魔，冰邪灼烧顶级挂件。"
+          : "Universal standalone counters. Immortal Golden Maiden uses Cube + Life Support to cheese Peak 36, while Foolish Fiend provides turn-advance without feeding boss MP.",
+        lineup: [
+          { rolePos: isRu ? "Джокер Выживания" : isCn ? "不死对策" : "Immortal Tank", id: "M21301", note: isRu ? "Неубиваемая Золотая Дева" : isCn ? "不死黄金女 (巅峰36对策)" : "Immortal Golden Maiden (Peak 36)" },
+          { rolePos: isRu ? "Джокер Продвижения Ходов" : isCn ? "拉条神卡" : "Turn Engine", id: "M51201_001", note: isRu ? "Шутовская Злодейка (Ускоритель)" : isCn ? "愚邪 (自拉条无送怒治疗)" : "Foolish Fiend (Turn Puller)" }
+        ],
+        sets: isRu ? "Сет жизнеобеспечения (Life Support), Артефакт-Куб, сопротивления." : isCn ? "维生套、魔方减伤信物、异常抵抗套装。" : "Life Support set, Magic Cube artifact, RES sets.",
+        pros: isRu ? "Подходят в любую команду, спасают в безвыходных ситуациях." : isCn ? "即插即用，任何高难本的破局关键钥匙。" : "Plug-and-play into virtually any team to solve impossible boss stages.",
+        difficulty: isRu ? "Средняя (требуется специализированная экипировка)" : isCn ? "中等 (需特定功能性套装)" : "Medium (Specific gear required)"
       }
     ];
 
     const f = this.buildsFilter;
     const filteredBuilds = buildsData.filter(b => {
-      if (f === 'dot') return b.archetype === 'dot';
-      if (f === 'burst') return b.archetype === 'burst';
-      if (f === 'counter') return b.archetype === 'counter';
-      if (f === 'snipe') return b.archetype === 'snipe';
-      if (f === 'freeze') return b.archetype === 'freeze';
+      if (f === 'core') return b.archetype === 'core';
+      if (f === 'advanced') return b.archetype === 'advanced';
+      if (f === 'solo') return b.archetype === 'solo';
+      if (f === 'f2p') return b.isF2p === true;
       return true;
     });
 
     return `
       <div class="guide-article">
-        <h2 class="guide-title">🏆 ${isRu ? 'Лучшие сборки и Мета-отряды (Best Meta Builds)' : isCn ? '最佳阵容搭配与流派推荐' : 'Best Builds & Meta Lineups'}</h2>
+        <h2 class="guide-title">🏆 ${isRu ? 'Лучшие сборки и Мета-отряды (Best Meta Builds)' : isCn ? '现版本主流阵容汇总＆评价 (Meta Builds Tier List)' : 'Best Builds & Meta Lineups Tier List'}</h2>
         <p class="guide-lead">
           ${isRu 
-            ? 'Топовые синергетические сборки отрядов от сообщества и экспертов, протестированные на сложнейших рейдах, Башне испытаний и в PvP-арене. Нажмите на любого персонажа для просмотра карточки.' 
+            ? 'Актуальный тир-лист и детальный разбор топовых мета-сборок от ведущих игроков сообщества (TapTap / Discord). Нажмите на любого персонажа в ростере для открытия его профиля и характеристик.' 
             : isCn 
-            ? '高阶玩家实测推荐的T0/T1级顶尖流派阵容，包含核心机制解析、站位布局、装备信物推荐与实战打法。' 
-            : 'Top-tier synergistic party compositions tested in high-tier raids, Tower of Trials, and PvP Arena. Click any character to inspect details.'}
+            ? '根据最新版本与高阶实战测试整理的主流队伍评测与养成指南（基于TapTap资深配队攻略）。点击任意角色卡片即可直接查看详细属性与技能。' 
+            : 'Verified meta party compositions and tier rankings based on high-level endgame testing (TapTap & Discord Theorycraft). Click any character to inspect details.'}
         </p>
 
         <!-- Sub-filter pills for builds -->
         <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
           <button class="filter-pill ${f === 'all' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('all')">
-            🌐 ${isRu ? 'Все сборки (5)' : isCn ? '全流派 (5)' : 'All Builds (5)'}
+            🌐 ${isRu ? 'Все сборки (10)' : isCn ? '全部流派 (10)' : 'All Builds (10)'}
           </button>
-          <button class="filter-pill ${f === 'dot' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('dot')">
-            🩸 ${isRu ? 'ДоТ и Яд' : isCn ? '剧毒流' : 'DoT & Poison'}
+          <button class="filter-pill ${f === 'core' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('core')">
+            👑 ${isRu ? 'Мейнстрим-основа (5)' : isCn ? '主流核心推荐 (5)' : 'Core Mainstream (5)'}
           </button>
-          <button class="filter-pill ${f === 'burst' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('burst')">
-            ⚡ ${isRu ? 'Астральный Раш' : isCn ? '速攻流' : 'Astral Rush'}
+          <button class="filter-pill ${f === 'f2p' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('f2p')">
+            🌱 ${isRu ? 'Для новичков / F2P' : isCn ? '新手平民开荒' : 'F2P Friendly'}
           </button>
-          <button class="filter-pill ${f === 'counter' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('counter')">
-            🛡️ ${isRu ? 'Контратака и Танк' : isCn ? '反击流' : 'Counter Tank'}
+          <button class="filter-pill ${f === 'advanced' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('advanced')">
+            🧪 ${isRu ? 'Продвинутые / Осада (4)' : isCn ? '进阶攻坚流派 (4)' : 'Advanced Endgame (4)'}
           </button>
-          <button class="filter-pill ${f === 'snipe' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('snipe')">
-            🏹 ${isRu ? 'Крит-Ваншот' : isCn ? '狙杀流' : 'Crit Snipe'}
-          </button>
-          <button class="filter-pill ${f === 'freeze' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('freeze')">
-            ❄️ ${isRu ? 'Ледяной Контроль' : isCn ? '极寒流' : 'Freeze CC'}
+          <button class="filter-pill ${f === 'solo' ? 'active' : ''}" onclick="GuidesView.setBuildsFilter('solo')">
+            🃏 ${isRu ? 'Джокеры / Саппорты' : isCn ? '独立神卡对策' : 'Solo Jokers'}
           </button>
         </div>
 
+        <!-- Outdated Builds Warning Alert -->
+        <div class="guide-card" style="border-left: 4px solid #f59e0b; background: rgba(245, 158, 11, 0.06); margin-bottom: 20px;">
+          <h3 style="color: #f59e0b; display: flex; align-items: center; gap: 8px; margin-top: 0;">
+            <span>⚠️</span>
+            <span>${isRu ? 'Устаревшие сборки (Не рекомендуются для прокачки новичкам):' : isCn ? '版本更迭过时流派（不建议新手优先培养）:' : 'Outdated Builds (Not Recommended for Beginners):'}</span>
+          </h3>
+          <ul class="guide-list" style="margin-bottom: 0; font-size: 13px;">
+            <li><strong>${isRu ? 'Горячая Титанида-копейщица (Hot Titan Lancer / 热血巨灵枪):' : isCn ? '热血巨灵枪:' : 'Hot Titan Lancer:'}</strong> ${isRu ? 'Бывший старт-фаворит релиза. Сейчас полностью вытеснен Командой Принцессы, которая наносит в разы больше урона при тех же затратах.' : isCn ? '开服早期的平民战神，如今已被伤害更高、成型更快的【公主追击队】完全取代。' : 'Early release staple; completely outclassed by the Princess Follow-up team.'}</li>
+            <li><strong>${isRu ? 'Ледяная Оса (Frost Wasp Witch / 冰蜂流失队):' : isCn ? '冰蜂流失队:' : 'Frost Wasp Witch:'}</strong> ${isRu ? 'Пострадала от нерфов ледяного пула; урон значительно ниже Астральной Злодейки, а фарм слабее Зайчихи.' : isCn ? '因冰系平衡调整受到波及，伤害大幅落后于冰邪神，刷图效率不及幸运兔。' : 'Heavily outscaled by Astral Fiend in bossing and Lucky Rabbit in farming.'}</li>
+          </ul>
+        </div>
+
+        <!-- Builds Grid -->
         <div style="display: flex; flex-direction: column; gap: 20px;">
           ${filteredBuilds.map(b => `
-            <div class="guide-card" style="border-left: 4px solid ${b.tier === 'SS-Tier' ? '#f59e0b' : '#3b82f6'};">
-              <!-- Build Header -->
-              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
+            <div class="guide-card" style="border-left: 4px solid #8b5cf6; padding: 20px;">
+              <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 10px; flex-wrap: wrap;">
                 <div style="display: flex; align-items: center; gap: 10px;">
-                  <span style="font-size: 26px;">${b.icon}</span>
+                  <span style="font-size: 28px;">${b.icon}</span>
                   <div>
                     <h3 style="margin: 0; color: #f3e8ff; font-size: 17px;">${b.name}</h3>
-                    <div style="font-size: 12.5px; color: #94a3b8; margin-top: 2px;">${b.tagline}</div>
+                    <div style="font-size: 12px; color: #a78bfa; font-weight: 600; margin-top: 2px;">${b.tagline}</div>
                   </div>
                 </div>
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <span class="badge-accent" style="background: ${b.tier === 'SS-Tier' ? 'rgba(245, 158, 11, 0.25)' : 'rgba(59, 130, 246, 0.25)'}; color: ${b.tier === 'SS-Tier' ? '#fbbf24' : '#93c5fd'}; border-color: ${b.tier === 'SS-Tier' ? 'rgba(245, 158, 11, 0.5)' : 'rgba(59, 130, 246, 0.5)'}; font-size: 13px; font-weight: 800;">
-                    ⭐ ${b.tier}
-                  </span>
-                </div>
+                <span class="badge-accent" style="font-size: 12px; padding: 4px 10px; background: rgba(139, 92, 246, 0.25); color: #c4b5fd; border-color: rgba(139, 92, 246, 0.5);">
+                  ${b.tier}
+                </span>
               </div>
 
-              <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; margin: 0 0 14px 0;">
+              <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
                 ${b.desc}
               </p>
 
-              <!-- Lineup Grid -->
-              <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 14px;">
-                <div style="font-size: 12px; font-weight: 700; color: #38bdf8; text-transform: uppercase; margin-bottom: 10px;">
-                  👥 ${isRu ? 'Позиции и Состав отряда (Lineup):' : isCn ? '阵容站位与推荐英雄:' : 'Lineup & Positioning:'}
+              <!-- Lineup slots -->
+              <div style="margin-bottom: 16px;">
+                <div style="font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px;">
+                  👥 ${isRu ? 'Состав отряда и роли:' : isCn ? '核心阵容与站位:' : 'Lineup & Role Slots:'}
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
                   ${b.lineup.map(slot => {
                     const c = charMap[slot.id];
-                    if (!c) return '';
-                    const portrait = imgMap[c.id] || imgMap[c.key] || `assets/img/characters/${c.id}_1__single_part1_1@1.png`;
-                    const elemClass = CharactersView.getElementClass(c.element);
-                    const tierClass = `tier-${(c.rarity_tier || 'C').toLowerCase()}`;
+                    const charImg = c ? (imgMap[c.id] || imgMap[c.key] || `assets/img/characters/${c.id}_1__single_part1_1@1.png`) : null;
+                    const charName = c ? c.name : slot.id;
 
                     return `
-                      <div class="gacha-table-row" onclick="App.openCharacterModal('${c.id}')" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 8px; padding: 8px 10px; display: flex; align-items: center; gap: 8px; cursor: pointer;" title="${isRu ? 'Открыть карточку персонажа' : isCn ? '查看角色详情' : 'Click to inspect'}">
-                        <div style="width: 38px; height: 38px; border-radius: 6px; overflow: hidden; background: #0f172a; border: 1px solid var(--border-subtle); flex-shrink: 0;">
-                          <img src="${portrait}" alt="${c.name}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'">
-                        </div>
-                        <div style="min-width: 0; flex: 1;">
-                          <div style="font-size: 11px; color: #94a3b8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${slot.rolePos}</div>
-                          <strong style="font-size: 12.5px; color: #f3e8ff; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${c.name}</strong>
-                          <div style="font-size: 10.5px; color: #34d399; margin-top: 1px;">${slot.note}</div>
+                      <div onclick="App.openCharacterModal('${slot.id}')" style="display: flex; align-items: center; gap: 8px; background: rgba(0,0,0,0.3); padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border-subtle); cursor: pointer; transition: all 0.15s ease;" title="${isRu ? 'Открыть карточку' : isCn ? '查看详情' : 'View Card'}">
+                        ${charImg ? `<img src="${charImg}" alt="${charName}" style="width: 36px; height: 36px; border-radius: 6px; object-fit: cover;" onerror="this.style.display='none'">` : '<div style="width: 36px; height: 36px; background: #334155; border-radius: 6px; display: flex; align-items: center; justify-content: center;">⭐</div>'}
+                        <div style="overflow: hidden;">
+                          <div style="font-size: 11px; color: #a78bfa; font-weight: 600;">${slot.rolePos}</div>
+                          <div style="font-size: 13px; font-weight: 700; color: #f1f5f9; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${charName}</div>
+                          <div style="font-size: 10.5px; color: var(--text-muted);">${slot.note}</div>
                         </div>
                       </div>
                     `;
@@ -1219,19 +1463,19 @@ const GuidesView = {
                 </div>
               </div>
 
-              <!-- Build Details & Advice -->
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 14px; font-size: 13px;">
-                <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 10px 12px;">
-                  <strong style="color: #60a5fa;">🛡️ ${isRu ? 'Рекомендуемое снаряжение:' : isCn ? '推荐装备与信物:' : 'Recommended Gear:'}</strong>
-                  <div style="color: var(--text-secondary); margin-top: 4px;">${b.sets}</div>
+              <!-- Meta specs footer -->
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; padding-top: 12px; border-top: 1px solid var(--border-subtle); font-size: 12.5px;">
+                <div>
+                  <strong style="color: #38bdf8;">🎽 ${isRu ? 'Рекомендуемые сеты:' : isCn ? '核心装备信物:' : 'Recommended Sets:'}</strong>
+                  <span style="color: var(--text-secondary); margin-left: 4px;">${b.sets}</span>
                 </div>
-                <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 10px 12px;">
-                  <strong style="color: #34d399;">✨ ${isRu ? 'Главные преимущества:' : isCn ? '阵容核心优势:' : 'Key Strengths:'}</strong>
-                  <div style="color: var(--text-secondary); margin-top: 4px;">${b.pros}</div>
+                <div>
+                  <strong style="color: #34d399;">✨ ${isRu ? 'Главные плюсы:' : isCn ? '实战核心优势:' : 'Key Strengths:'}</strong>
+                  <span style="color: var(--text-secondary); margin-left: 4px;">${b.pros}</span>
                 </div>
-                <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 10px 12px;">
-                  <strong style="color: #fbbf24;">⚙️ ${isRu ? 'Сложность сборки:' : isCn ? '养成门槛与难度:' : 'Build Difficulty:'}</strong>
-                  <div style="color: var(--text-secondary); margin-top: 4px;">${b.difficulty}</div>
+                <div>
+                  <strong style="color: #fbbf24;">📈 ${isRu ? 'Сложность сборки:' : isCn ? '养成门槛难度:' : 'Build Cost / Difficulty:'}</strong>
+                  <span style="color: var(--text-secondary); margin-left: 4px;">${b.difficulty}</span>
                 </div>
               </div>
             </div>
@@ -1241,65 +1485,107 @@ const GuidesView = {
     `;
   },
 
-  // 8. Promo & Gift Codes
+  // 8. Promo & Gift Codes (Updated with verified August 2026 codes)
   getCodesContent(lang = "RU") {
     const isRu = lang === 'RU';
     const isCn = lang === 'CN';
 
     const codesList = [
       {
+        code: "TIMBER0813",
+        status: "active",
+        rewards: isRu ? "📦 1 Большой припас (500 Stamina), 💎 100 Самоцветов, 💰 20,000 Золота" : isCn ? "📦 1大体力补给 (500点体力), 💎 100钻石, 💰 2万金币" : "📦 1x Large Supply (500 Stamina), 💎 100 Gems, 💰 20,000 Gold",
+        note: isRu ? "🔥 Самый свежий промокод (Август 2026)" : isCn ? "🔥 2026年8月最新官方兑换码" : "🔥 Fresh August 2026 official code"
+      },
+      {
+        code: "MGMMAG",
+        status: "active",
+        rewards: isRu ? "💎 100 Самоцветов, 🎫 Свитки призыва и ресурсы" : isCn ? "💎 100钻石, 🎫 招募券与进阶养成资源" : "💎 100 Gems, 🎫 Summon Tickets & Upgrade Materials",
+        note: isRu ? "Летний подарочный набор сообщества" : isCn ? "官方夏日社区专享福利" : "Community Summer Gift Pack"
+      },
+      {
+        code: "HXSNGH0402",
+        status: "active",
+        rewards: isRu ? "💎 100 Самоцветов, 🎫 1 Билет для найма (Recruit Ticket)" : isCn ? "💎 100钻石, 🎫 1张常规推荐信" : "💎 100 Gems, 🎫 1x Recruit Ticket",
+        note: isRu ? "Подарок официальной гильдии" : isCn ? "公会迎新专属推荐信" : "Official Guild Recruit Gift"
+      },
+      {
+        code: "HXSNGH888",
+        status: "active",
+        rewards: isRu ? "💎 100 Самоцветов, 🍎 5 Плодов таланта (Talent Fruits)" : isCn ? "💎 100钻石, 🍎 5个天赋果实" : "💎 100 Gems, 🍎 5x Talent Fruits",
+        note: isRu ? "Набор прокачки скрытых талантов" : isCn ? "魔物娘专属天赋培育包" : "Talent Fruit Growth Pack"
+      },
+      {
+        code: "HXSNGH666",
+        status: "active",
+        rewards: isRu ? "💎 100 Самоцветов, 🍀 1 Клевер (Clover)" : isCn ? "💎 100钻石, 🍀 1个四叶草" : "💎 100 Gems, 🍀 1x Clover",
+        note: isRu ? "Бонус на удачу и выпадение лута" : isCn ? "幸运祈愿掉宝加成" : "Lucky Magic Find Boost"
+      },
+      {
+        code: "vip888",
+        status: "active",
+        rewards: isRu ? "💎 100 Самоцветов, 📦 1 Необычный зеленый ящик" : isCn ? "💎 100钻石, 📦 1个绿色奇珍宝箱" : "💎 100 Gems, 📦 1x Green Strange Crate",
+        note: isRu ? "Постоянный VIP-код на экипировку" : isCn ? "常驻VIP特权装备箱" : "Permanent VIP Gear Crate"
+      },
+      {
+        code: "vip777",
+        status: "active",
+        rewards: isRu ? "💎 100 Самоцветов, 💰 10,000 Золота" : isCn ? "💎 100钻石, 💰 1万金币" : "💎 100 Gems, 💰 10,000 Gold",
+        note: isRu ? "Постоянный VIP-код на золото" : isCn ? "常驻VIP金币补给" : "Permanent VIP Gold Pack"
+      },
+      {
+        code: "vip666",
+        status: "active",
+        rewards: isRu ? "💎 100 Самоцветов, 🔮 5 Темно-фиолетовых кристаллов" : isCn ? "💎 100钻石, 🔮 5个暗紫晶石" : "💎 100 Gems, 🔮 5x Dark Purple Crystals",
+        note: isRu ? "Постоянный VIP-код новичка" : isCn ? "常驻VIP晶石礼包" : "Permanent VIP Crystal Pack"
+      },
+      {
+        code: "SSP2ND",
+        status: "expired",
+        rewards: isRu ? "💎 200 Самоцветов, 💰 50,000 Золота" : isCn ? "💎 200钻石, 💰 5万金币" : "💎 200 Gems, 💰 50,000 Gold",
+        note: isRu ? "Сезонный код (Действовал до 30 июня 2026)" : isCn ? "赛季礼包 (已于2026年6月30日截止)" : "Seasonal code (Expired June 30, 2026)"
+      },
+      {
+        code: "endlessdesert",
+        status: "expired",
+        rewards: isRu ? "📦 1 Большой припас, 💎 100 Самоцветов, 🍀 1 Клевер" : isCn ? "📦 1大体力补给, 💎 100钻石, 🍀 1四叶草" : "📦 1x Large Supply, 💎 100 Gems, 🍀 1x Clover",
+        note: isRu ? "Ивент Бескрайней пустыни (Архивный)" : isCn ? "无尽荒漠活动礼包 (已过期)" : "Endless Desert Event (Expired)"
+      },
+      {
         code: "GMG2026",
-        status: "active",
-        rewards: isRu ? "💎 500 Кристаллов, 🎫 10 Свитков призыва, 💰 100,000 Золота" : isCn ? "💎 500钻石, 🎫 10高级召唤券, 💰 10万金币" : "💎 500 Gems, 🎫 10 Summon Scrolls, 💰 100,000 Gold",
-        note: isRu ? "Главный подарочный промокод гильдии" : isCn ? "公会官方主力全员大礼包" : "Major Guild Welcome Gift Pack"
-      },
-      {
-        code: "VIP666",
-        status: "active",
-        rewards: isRu ? "💎 100 Кристаллов, 🎫 10 Обычных свитков найма, 💰 50,000 Золота" : isCn ? "💎 100钻石, 🎫 10常规召唤券, 💰 5万金币" : "💎 100 Gems, 🎫 10 Standard Scrolls, 💰 50,000 Gold",
-        note: isRu ? "Стартовый набор новичка" : isCn ? "新手入坑基础补给" : "Novice Starter Supply"
-      },
-      {
-        code: "VIP888",
-        status: "active",
-        rewards: isRu ? "💎 200 Кристаллов, 🎫 5 Продвинутых свитков, 💰 100,000 Золота" : isCn ? "💎 200钻石, 🎫 5进阶招募券, 💰 10万金币" : "💎 200 Gems, 🎫 5 Advanced Scrolls, 💰 100,000 Gold",
-        note: isRu ? "Набор прокачки гильдии" : isCn ? "公会发展进阶特权" : "Guild Progression Privilege"
-      },
-      {
-        code: "VIP999",
-        status: "active",
-        rewards: isRu ? "💎 300 Кристаллов, 📦 1 Сундук осколков S-ранга, ⚡ 30 Энергии" : isCn ? "💎 300钻石, 📦 1个S阶碎片宝箱, ⚡ 30体力" : "💎 300 Gems, 📦 1x S-Rank Shard Chest, ⚡ 30 Stamina",
-        note: isRu ? "VIP-набор редких фрагментов" : isCn ? "S阶角色特权宝箱" : "VIP S-Rank Role Chest"
-      },
-      {
-        code: "MONSTERGIRL",
-        status: "active",
-        rewards: isRu ? "💎 200 Кристаллов, 🍎 5 Плодов таланта" : isCn ? "💎 200钻石, 🍎 5个天赋果实" : "💎 200 Gems, 🍎 5x Talent Fruits",
-        note: isRu ? "Набор развития талантов" : isCn ? "魔物娘专属天赋培育包" : "Talent Fruit Growth Pack"
-      },
-      {
-        code: "WELCOME2026",
-        status: "active",
-        rewards: isRu ? "🎫 10 Стандартных свитков призыва" : isCn ? "🎫 10张常规召唤卷轴" : "🎫 10x Standard Summon Scrolls",
-        note: isRu ? "Приветственный бонус" : isCn ? "公会迎新专属礼包" : "Guild Welcome Bonus"
-      },
-      {
-        code: "DISCORD2026",
-        status: "active",
-        rewards: isRu ? "💎 150 Кристаллов, 💰 50,000 Золота" : isCn ? "💎 150钻石, 💰 5万金币" : "💎 150 Gems, 💰 50,000 Gold",
-        note: isRu ? "Бонус сообщества игроков" : isCn ? "官方社群专属福利" : "Community Channels Gift"
-      },
-      {
-        code: "SUMMER2026",
         status: "expired",
-        rewards: isRu ? "💎 200 Кристаллов, 🍹 3 Летних коктейля" : isCn ? "💎 200钻石, 🍹 3杯清凉饮品" : "💎 200 Gems, 🍹 3x Summer Drinks",
-        note: isRu ? "Летний фестиваль (Архивный)" : isCn ? "夏日祭活动 (已过期)" : "Summer Festival (Archived)"
+        rewards: isRu ? "🎫 10 Билетов для найма" : isCn ? "🎫 10张推荐信" : "🎫 10x Recruit Tickets",
+        note: isRu ? "Релизный промокод (Завершен)" : isCn ? "公测开服专属礼包 (已截止)" : "Launch Welcome Code (Expired)"
       },
       {
-        code: "DRAGONBOAT2026",
+        code: "GUILDMASTER",
         status: "expired",
-        rewards: isRu ? "💎 100 Кристаллов, 🛶 5 Мешков цзунцзы" : isCn ? "💎 100钻石, 🛶 5个端午福袋" : "💎 100 Gems, 🛶 5x Dragon Boat Bags",
-        note: isRu ? "Праздничный ивент (Архивный)" : isCn ? "端午节日礼包 (已过期)" : "Dragon Boat Festival (Archived)"
+        rewards: isRu ? "💎 100 Самоцветов, 🎫 1 Билет найма, 📦 1 Зеленый ящик" : isCn ? "💎 100钻石, 🎫 1推荐信, 📦 1绿色宝箱" : "💎 100 Gems, 🎫 1x Ticket, 📦 1x Crate",
+        note: isRu ? "Бонус Мастера гильдии (Завершен)" : isCn ? "公会长专属礼包 (已截止)" : "Guildmaster Bonus (Expired)"
+      },
+      {
+        code: "HXSNSFSX",
+        status: "expired",
+        rewards: isRu ? "💎 100 Самоцветов, 🍀 2 Клевера" : isCn ? "💎 100钻石, 🍀 2四叶草" : "💎 100 Gems, 🍀 2x Clovers",
+        note: isRu ? "Архивный промокод" : isCn ? "历史兑换码 (已过期)" : "Archived code (Expired)"
+      },
+      {
+        code: "HXSNDJS1",
+        status: "expired",
+        rewards: isRu ? "💎 100 Самоцветов, 🎫 2 Билета найма" : isCn ? "💎 100钻石, 🎫 2推荐信" : "💎 100 Gems, 🎫 2x Tickets",
+        note: isRu ? "Архивный промокод" : isCn ? "历史兑换码 (已过期)" : "Archived code (Expired)"
+      },
+      {
+        code: "HXSNDJS2",
+        status: "expired",
+        rewards: isRu ? "💎 100 Самоцветов, 📦 1 Зеленый ящик" : isCn ? "💎 100钻石, 📦 1绿色宝箱" : "💎 100 Gems, 📦 1x Crate",
+        note: isRu ? "Архивный промокод" : isCn ? "历史兑换码 (已过期)" : "Archived code (Expired)"
+      },
+      {
+        code: "HXSNDJS3",
+        status: "expired",
+        rewards: isRu ? "💎 100 Самоцветов, 💰 20,000 Золота" : isCn ? "💎 100钻石, 💰 2万金币" : "💎 100 Gems, 💰 20,000 Gold",
+        note: isRu ? "Архивный промокод" : isCn ? "历史兑换码 (已过期)" : "Archived code (Expired)"
       }
     ];
 
@@ -1312,40 +1598,40 @@ const GuidesView = {
 
     return `
       <div class="guide-article">
-        <h2 class="guide-title">🎟️ ${isRu ? 'Промокоды и Подарочные наборы' : isCn ? '公会礼包兑换码全集' : 'Promo & Redeem Codes'}</h2>
+        <h2 class="guide-title">🎟️ ${isRu ? 'Промокоды и Подарочные наборы (Promo & Gift Codes)' : isCn ? '公会礼包兑换码全集' : 'Promo & Redeem Codes'}</h2>
         <p class="guide-lead">
           ${isRu 
-            ? 'Актуальные промокоды игры Guild of Monster Girls для получения бесплатных кристаллов, свитков призыва, золота и плодов таланта. Нажмите кнопку «Копировать», чтобы скопировать код в буфер обмена.' 
+            ? 'Актуальные проверенные промокоды игры Guild of Monster Girls для получения бесплатных кристаллов, билетов найма, золота и плодов таланта. Нажмите кнопку «Скопировать код», чтобы мгновенно скопировать его в буфер обмена.' 
             : isCn 
-            ? '《魔物娘公会》官方最新礼包兑换码汇总，免费领取钻石、召唤卷轴、金币与天赋果实。点击“复制”按钮一键领取。' 
-            : 'Working promo and redeem codes for Guild of Monster Girls to claim free gems, summon scrolls, gold, and talent fruits. Click "Copy" for 1-click clipboard copy.'}
+            ? '《魔物娘公会》官方最新礼包兑换码汇总，免费领取钻石、推荐信、金币与天赋果实。点击“一键复制”即可快速兑换。' 
+            : 'Working promo and redeem codes for Guild of Monster Girls to claim free gems, recruit tickets, gold, and talent fruits. Click "Copy Code" for 1-click clipboard copy.'}
         </p>
 
         <!-- Instructions Box -->
         <div class="guide-card" style="border-left: 4px solid #38bdf8; background: rgba(56, 189, 248, 0.05);">
-          <h3 style="color: #38bdf8; display: flex; align-items: center; gap: 8px;">
+          <h3 style="color: #38bdf8; display: flex; align-items: center; gap: 8px; margin-top: 0;">
             <span>💡</span>
             <span>${isRu ? 'Как активировать промокод в игре:' : isCn ? '游戏内兑换方法指南:' : 'How to Redeem Codes In-Game:'}</span>
           </h3>
-          <ol class="guide-list" style="margin-top: 4px;">
-            <li>${isRu ? 'Запустите игру <strong>Guild of Monster Girls</strong> и войдите в зал гильдии.' : isCn ? '启动《魔物娘公会》并进入主界面。' : 'Launch <strong>Guild of Monster Girls</strong> and open the guild hall.'}</li>
+          <ol class="guide-list" style="margin-top: 4px; margin-bottom: 0;">
+            <li>${isRu ? 'Запустите игру <strong>Guild of Monster Girls</strong> и перейдите на главный экран гильдии.' : isCn ? '启动《魔物娘公会》并进入主界面。' : 'Launch <strong>Guild of Monster Girls</strong> and open the guild hall.'}</li>
             <li>${isRu ? 'Нажмите на ваш <strong>Аватар / Профиль</strong> в верхнем левом углу (или откройте <em>«Настройки ⚙️»</em>).' : isCn ? '点击左上角<strong>个人头像/个人信息</strong>（或进入<em>设置 ⚙️</em>）。' : 'Click your <strong>Avatar / Profile</strong> in the top-left corner (or open <em>Settings ⚙️</em>).'}</li>
             <li>${isRu ? 'Выберите пункт <strong>«Промокод / Активация» (Redeem Code / 兑换码)</strong>.' : isCn ? '选择<strong>“兑换码 / 礼包兑换”</strong>功能。' : 'Select <strong>"Redeem Code"</strong>.'}</li>
-            <li>${isRu ? 'Вставьте скопированный код и нажмите <strong>«Получить»</strong>.' : isCn ? '粘贴已复制的礼包码，点击<strong>“兑换”</strong>。' : 'Paste the copied code and hit <strong>"Claim"</strong>.'}</li>
-            <li>${isRu ? 'Награды моментально придут на вашу <strong>внутриигровую почту ✉️</strong>!' : isCn ? '丰厚奖励将立即发送至<strong>游戏内邮箱 ✉️</strong>！' : 'Rewards will be instantly delivered to your <strong>in-game Mailbox ✉️</strong>!'}</li>
+            <li>${isRu ? 'Вставьте скопированный код и подтвердите получение.' : isCn ? '粘贴已复制的礼包码，点击<strong>“兑换”</strong>。' : 'Paste the copied code and hit <strong>"Claim"</strong>.'}</li>
+            <li>${isRu ? 'Награды моментально поступят на вашу <strong>внутриигровую почту ✉️</strong>!' : isCn ? '丰厚奖励将立即发送至<strong>游戏内邮箱 ✉️</strong>！' : 'Rewards will be instantly delivered to your <strong>in-game Mailbox ✉️</strong>!'}</li>
           </ol>
         </div>
 
         <!-- Filter buttons -->
-        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; margin-bottom: 16px;">
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; margin-bottom: 16px;">
           <button class="filter-pill ${f === 'all' ? 'active' : ''}" onclick="GuidesView.setCodesFilter('all')">
-            🌐 ${isRu ? 'Все коды (9)' : isCn ? '全部兑换码 (9)' : 'All Codes (9)'}
+            🌐 ${isRu ? 'Все коды (16)' : isCn ? '全部兑换码 (16)' : 'All Codes (16)'}
           </button>
           <button class="filter-pill ${f === 'active' ? 'active' : ''}" onclick="GuidesView.setCodesFilter('active')">
-            ✅ ${isRu ? 'Активные (7)' : isCn ? '可兑换有效码 (7)' : 'Active (7)'}
+            ✅ ${isRu ? 'Активные и Рабочие (8)' : isCn ? '可兑换有效码 (8)' : 'Active & Working (8)'}
           </button>
           <button class="filter-pill ${f === 'expired' ? 'active' : ''}" onclick="GuidesView.setCodesFilter('expired')">
-            ⏳ ${isRu ? 'Архивные (2)' : isCn ? '已过期/历史 (2)' : 'Expired (2)'}
+            ⏳ ${isRu ? 'Истекшие / Архив (8)' : isCn ? '已过期/历史 (8)' : 'Expired (8)'}
           </button>
         </div>
 

@@ -40,6 +40,9 @@
         <button class="nav-tab-btn" data-tab="guides" onclick="App.setTab('guides')" id="tabGuides">
           📖 Гайды
         </button>
+        <button class="nav-tab-btn" data-tab="calculators" onclick="App.setTab('calculators')" id="tabCalculators">
+          🧮 Калькуляторы
+        </button>
       </nav>
 
       <!-- Desktop Actions (Contacts & Language) -->
@@ -109,6 +112,11 @@
         <button class="drawer-nav-item" data-tab="guides" onclick="App.setTabFromDrawer('guides')" id="drawerTabGuides">
           <span class="drawer-nav-icon">📖</span>
           <span class="drawer-nav-label" id="drawerTextGuides">Гайды</span>
+          <span class="drawer-active-dot"></span>
+        </button>
+        <button class="drawer-nav-item" data-tab="calculators" onclick="App.setTabFromDrawer('calculators')" id="drawerTabCalculators">
+          <span class="drawer-nav-icon">🧮</span>
+          <span class="drawer-nav-label" id="drawerTextCalculators">Калькуляторы</span>
           <span class="drawer-active-dot"></span>
         </button>
       </nav>
@@ -285,6 +293,11 @@
       <!-- Generated via GuidesView -->
     </div>
 
+    <!-- Calculators View Container -->
+    <div id="calculatorsContainer" style="display: none;">
+      <!-- Generated via CalculatorsView -->
+    </div>
+
   </main>
 
   <!-- Detail Modal -->
@@ -316,6 +329,7 @@
   <script src="js/items_view.js"></script>
   <script src="js/collection_view.js"></script>
   <script src="js/guides_view.js"></script>
+  <script src="js/calculators_view.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
