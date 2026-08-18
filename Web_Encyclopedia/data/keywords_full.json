@@ -1,0 +1,853 @@
+[
+  {
+    "id": "bloodlust",
+    "code": "T20005",
+    "icon": "🩸",
+    "cat": "buff",
+    "name": {
+      "RU": "Жажда крови (Bloodlust)",
+      "EN": "Bloodlust",
+      "CN": "嗜血"
+    },
+    "desc": {
+      "RU": "Каждый стак увеличивает общий наносимый урон (Total DMG) на 1. Применяется к каждому удару в многоударных сериях и масштабируется по каждой цели в зависимости от наносимого урона. Расходуется после срабатывания.",
+      "EN": "Each stack increases total DMG dealt by 1. Applies to each hit in multi-hit attacks and scales per target based on DMG dealt. Consumed after taking effect.",
+      "CN": "每层增加造成的最终伤害1点。在多段攻击中作用于每一击，并按造成的伤害对每个目标独立生效。生效后消耗。"
+    },
+    "type": {
+      "RU": "Расходный бафф",
+      "EN": "Consumed on hit",
+      "CN": "消耗型增益"
+    },
+    "element": "Fire / Neutral",
+    "priority": "High"
+  },
+  {
+    "id": "faith",
+    "code": "T20008",
+    "icon": "🙏",
+    "cat": "buff",
+    "name": {
+      "RU": "Вера (Faith)",
+      "EN": "Faith",
+      "CN": "信仰"
+    },
+    "desc": {
+      "RU": "Каждые 5 стаков на юните увеличивают общее восстанавливаемое им здоровье (Total HP Restored) другим союзникам на 1. Постоянный эффект (не сбрасывается при лечении).",
+      "EN": "Every 5 stacks on the unit increases their total HP restored to other targets by 1. Persistent effect.",
+      "CN": "角色身上每拥有5层信仰，为其他友方恢复的总生命值提升1点。常驻增益（治疗时不消耗）。"
+    },
+    "type": {
+      "RU": "Постоянный бафф",
+      "EN": "Persistent",
+      "CN": "常驻增益"
+    },
+    "element": "Light",
+    "priority": "Normal"
+  },
+  {
+    "id": "growth",
+    "code": "T20015",
+    "icon": "🌱",
+    "cat": "buff",
+    "name": {
+      "RU": "Рост (Growth)",
+      "EN": "Growth",
+      "CN": "成长"
+    },
+    "desc": {
+      "RU": "Каждый стак перманентно увеличивает максимальный запас здоровья (Max HP) носителя на 1. Постоянный эффект.",
+      "EN": "Each stack increases Max HP by 1. Persistent effect.",
+      "CN": "每层使持有者的最大生命值上限提升1点。常驻增益。"
+    },
+    "type": {
+      "RU": "Постоянный бафф",
+      "EN": "Persistent",
+      "CN": "常驻增益"
+    },
+    "element": "Earth",
+    "priority": "Normal"
+  },
+  {
+    "id": "haste",
+    "code": "T20003",
+    "icon": "⚡",
+    "cat": "buff",
+    "name": {
+      "RU": "Ускорение (Haste)",
+      "EN": "Haste",
+      "CN": "迅捷"
+    },
+    "desc": {
+      "RU": "Каждый стак увеличивает скорость юнита (SPD) на 1. Определяет очередность ходов в раунде. Постоянный эффект.",
+      "EN": "Each stack grants the target 1 SPD. Determines turn order within the round. Persistent effect.",
+      "CN": "每层为目标增加1点速度（SPD），决定回合内的行动先后顺序。常驻增益。"
+    },
+    "type": {
+      "RU": "Постоянный бафф",
+      "EN": "Persistent",
+      "CN": "常驻增益"
+    },
+    "element": "Wind",
+    "priority": "High"
+  },
+  {
+    "id": "precision",
+    "code": "T20004",
+    "icon": "🎯",
+    "cat": "buff",
+    "name": {
+      "RU": "Меткость (Precision)",
+      "EN": "Precision",
+      "CN": "精准"
+    },
+    "desc": {
+      "RU": "Каждые 5 стаков увеличивают урон дополнительных атак (Follow-Up DMG) на 1. Заставляет цель отдавать приоритет атаке задней линии противника (Back row). Постоянный эффект.",
+      "EN": "Every 5 stacks increase Follow-Up DMG by 1. Target prioritizes attacking back position. Persistent effect.",
+      "CN": "每5层提升追加攻击（追击）伤害1点。使目标攻击时优先锁定敌方后排核心。常驻增益。"
+    },
+    "type": {
+      "RU": "Постоянный бафф",
+      "EN": "Persistent",
+      "CN": "常驻增益"
+    },
+    "element": "Wind",
+    "priority": "Normal"
+  },
+  {
+    "id": "regen",
+    "code": "T30002",
+    "icon": "💚",
+    "cat": "buff",
+    "name": {
+      "RU": "Регенерация (Regen)",
+      "EN": "Regen",
+      "CN": "再生"
+    },
+    "desc": {
+      "RU": "Каждый стак восстанавливает 1 HP в конце действия юнита (до 20% от Max HP за одно срабатывание). Расходуется после применения.",
+      "EN": "Each stack restores 1 HP at action end, up to 20% of Max HP per instance. Consumed after taking effect.",
+      "CN": "行动结束时每层恢复1点生命值，单次上限为最大生命值的20%。生效后消耗。"
+    },
+    "type": {
+      "RU": "Расходный бафф",
+      "EN": "Consumed on action",
+      "CN": "回合末消耗"
+    },
+    "element": "Water / Earth",
+    "priority": "Normal"
+  },
+  {
+    "id": "shield",
+    "code": "T20006",
+    "icon": "🛡️",
+    "cat": "buff",
+    "name": {
+      "RU": "Щит (Shield)",
+      "EN": "Shield",
+      "CN": "护盾"
+    },
+    "desc": {
+      "RU": "Каждый стак поглощает 1 единицу входящего прямого урона (Total DMG taken). Применяется к каждому удару в многоударных сериях. Расходуется по мере получения урона. Не защищает от чистой потери HP (HP Loss).",
+      "EN": "Each stack reduces total DMG taken by 1. Applies to each hit in multi-hit attacks. Consumed upon taking damage. Does not block HP Loss.",
+      "CN": "每层抵扣1点受到的总伤害。多段受击中每段均可抵扣。受击后按伤害点数消耗。无法抵挡纯扣血（HP Loss）。"
+    },
+    "type": {
+      "RU": "Поглощающий бафф",
+      "EN": "Consumed on hit",
+      "CN": "受击抵扣"
+    },
+    "element": "Light / Earth",
+    "priority": "High"
+  },
+  {
+    "id": "soothe",
+    "code": "T30001",
+    "icon": "🕊️",
+    "cat": "buff",
+    "name": {
+      "RU": "Успокоение (Soothe)",
+      "EN": "Soothe",
+      "CN": "抚慰"
+    },
+    "desc": {
+      "RU": "Каждый стак снижает прямую потерю здоровья (HP Loss от кровотечения, яда и ожогов) на 1 единицу. Расходуется после срабатывания тика урона.",
+      "EN": "Each stack reduces HP loss by 1. Mitigates DoT effects like Bleed, Poison, Burn. Consumed after taking effect.",
+      "CN": "每层减免1点生命值流失（流血、灼烧等DoT扣血）。流失结算生效后消耗。"
+    },
+    "type": {
+      "RU": "Расходный бафф",
+      "EN": "Consumed on tick",
+      "CN": "扣血减免"
+    },
+    "element": "Water",
+    "priority": "High"
+  },
+  {
+    "id": "thorns",
+    "code": "T20009",
+    "icon": "🌵",
+    "cat": "buff",
+    "name": {
+      "RU": "Шипы / Возмездие (Thorns)",
+      "EN": "Thorns",
+      "CN": "荆棘"
+    },
+    "desc": {
+      "RU": "При получении прямого удара наносит атакующему противнику ответный урон в размере накопленных стаков Шипов. Расходуется частично при контратаке.",
+      "EN": "Deals retaliatory damage back to the attacker upon receiving a direct hit based on active Thorns stacks.",
+      "CN": "受到直接攻击时，根据持有的荆棘层数反弹相应伤害给攻击者。"
+    },
+    "type": {
+      "RU": "Отражающий бафф",
+      "EN": "Reflect Buff",
+      "CN": "反伤增益"
+    },
+    "element": "Earth",
+    "priority": "Normal"
+  },
+  {
+    "id": "burn",
+    "code": "T40003",
+    "icon": "🔥",
+    "cat": "debuff",
+    "name": {
+      "RU": "Ожог (Burn)",
+      "EN": "Burn",
+      "CN": "灼烧"
+    },
+    "desc": {
+      "RU": "Каждый стак наносит цели 1 ед. потери здоровья (HP Loss) в конце каждого действия. Пробивает щиты. Расходуется после каждого срабатывания.",
+      "EN": "Each stack deals 1 HP loss at action end. Bypasses shields entirely. Consumed after taking effect.",
+      "CN": "行动结束时每层造成1点生命值流失（HP Loss）。完全无视护盾。生效后消耗。"
+    },
+    "type": {
+      "RU": "Периодический урон (DoT)",
+      "EN": "DoT Debuff",
+      "CN": "DoT持续伤害"
+    },
+    "element": "Fire",
+    "priority": "Normal"
+  },
+  {
+    "id": "chill",
+    "code": "T40004",
+    "icon": "❄️",
+    "cat": "debuff",
+    "name": {
+      "RU": "Обморожение (Chill)",
+      "EN": "Chill",
+      "CN": "冰冻"
+    },
+    "desc": {
+      "RU": "Каждый стак снижает скорость цели (SPD) на 1. При накоплении критического числа стаков может трансформироваться в полное Замораживание/Оглушение. Постоянный эффект.",
+      "EN": "Each stack reduces target SPD by 1. Persistent debuff that slows down action order.",
+      "CN": "每层降低目标1点速度（SPD），延后行动顺序。常驻减益。"
+    },
+    "type": {
+      "RU": "Замедляющий дебафф",
+      "EN": "Persistent Slow",
+      "CN": "减速减益"
+    },
+    "element": "Water",
+    "priority": "Normal"
+  },
+  {
+    "id": "expose",
+    "code": "T40001",
+    "icon": "👁️",
+    "cat": "debuff",
+    "name": {
+      "RU": "Раскрытие (Expose)",
+      "EN": "Expose",
+      "CN": "暴露"
+    },
+    "desc": {
+      "RU": "Каждый стак снижает защиту цели (DEF) на 1. Повышает уязвимость цели к обычным физическим и магическим атакам. Постоянный эффект.",
+      "EN": "Each stack reduces target DEF by 1. Increases incoming mitigated damage. Persistent effect.",
+      "CN": "每层降低目标1点防御力（DEF）。提升目标受到的基础物理/魔法伤害。常驻减益。"
+    },
+    "type": {
+      "RU": "Снижение защиты",
+      "EN": "Armor Reduction",
+      "CN": "破甲减益"
+    },
+    "element": "Dark / Earth",
+    "priority": "Normal"
+  },
+  {
+    "id": "hinder",
+    "code": "T40002",
+    "icon": "⛓️",
+    "cat": "debuff",
+    "name": {
+      "RU": "Помеха (Hinder)",
+      "EN": "Hinder",
+      "CN": "阻碍"
+    },
+    "desc": {
+      "RU": "Каждый стак снижает силу атаки цели (ATK) на 1. Ослабляет весь исходящий урон противника. Постоянный эффект.",
+      "EN": "Each stack reduces target ATK by 1. Weakens all outgoing attack power. Persistent effect.",
+      "CN": "每层降低目标1点攻击力（ATK）。削弱敌方造成的全部技能与普通攻击伤害。常驻减益。"
+    },
+    "type": {
+      "RU": "Снижение атаки",
+      "EN": "ATK Reduction",
+      "CN": "减攻减益"
+    },
+    "element": "Dark",
+    "priority": "Normal"
+  },
+  {
+    "id": "shock",
+    "code": "T40005",
+    "icon": "⚡",
+    "cat": "debuff",
+    "name": {
+      "RU": "Шок (Shock)",
+      "EN": "Shock",
+      "CN": "感电"
+    },
+    "desc": {
+      "RU": "Каждый стак увеличивает входящий урон от стихийных реакций молнии и наносит дополнительный урон при получении ударов. Расходуется при атаке.",
+      "EN": "Amplifies electric element reaction damage and deals bonus damage upon receiving hits. Consumed on trigger.",
+      "CN": "提升受到的雷元素连锁伤害，并在受到攻击时触发额外电击伤害。触发后消耗。"
+    },
+    "type": {
+      "RU": "Стихийный дебафф",
+      "EN": "Elemental Debuff",
+      "CN": "元素易伤"
+    },
+    "element": "Light / Wind",
+    "priority": "High"
+  },
+  {
+    "id": "slow",
+    "code": "T40006",
+    "icon": "🐌",
+    "cat": "debuff",
+    "name": {
+      "RU": "Замедление (Slow)",
+      "EN": "Slow",
+      "CN": "迟缓"
+    },
+    "desc": {
+      "RU": "Существенно снижает базовую инициативу и сдвигает ход цели в самый конец очереди раунда.",
+      "EN": "Reduces target speed and pushes action phase to the end of the combat queue.",
+      "CN": "大幅削减基础速度，将目标行动顺位延后至回合末尾。"
+    },
+    "type": {
+      "RU": "Контроль очереди",
+      "EN": "Turn Delay",
+      "CN": "顺位延后"
+    },
+    "element": "Earth",
+    "priority": "High"
+  },
+  {
+    "id": "stun",
+    "code": "T10001",
+    "icon": "💫",
+    "cat": "debuff",
+    "name": {
+      "RU": "Оглушение (Stun)",
+      "EN": "Stun",
+      "CN": "眩晕"
+    },
+    "desc": {
+      "RU": "Полностью лишает цель возможности действовать в текущем раунде. Цель пропускает свой ход и не восстанавливает Action Mana. Снимается после завершения раунда или при очищении.",
+      "EN": "Target cannot take actions during the afflicted turn. Skips attack phase and generates no action mana.",
+      "CN": "强控状态。目标在当前回合内完全无法行动，跳过出手机会且不产生行动魔力。回合结束或被净化后解除。"
+    },
+    "type": {
+      "RU": "Полный контроль (Hard CC)",
+      "EN": "Hard CC",
+      "CN": "强力控制"
+    },
+    "element": "Neutral",
+    "priority": "Highest"
+  },
+  {
+    "id": "taunt",
+    "code": "T10009",
+    "icon": "📢",
+    "cat": "debuff",
+    "name": {
+      "RU": "Провокация (Taunt)",
+      "EN": "Taunt",
+      "CN": "嘲讽"
+    },
+    "desc": {
+      "RU": "Принуждает цель атаковать только применившего провокацию танка, игнорируя стандартные правила таргетинга (Nearest/Furthest/Lowest HP).",
+      "EN": "Forces affected enemies to target only the taunting tank, overriding default distance & priority rules.",
+      "CN": "嘲讽强制控制。受影响的敌方必须优先攻击施加嘲讽的坦克角色，无视原有的前后排与残血索敌规则。"
+    },
+    "type": {
+      "RU": "Контроль цели",
+      "EN": "Target Redirection",
+      "CN": "索敌重定向"
+    },
+    "element": "Earth",
+    "priority": "Highest"
+  },
+  {
+    "id": "vulnerable",
+    "code": "T40007",
+    "icon": "💔",
+    "cat": "debuff",
+    "name": {
+      "RU": "Уязвимость (Vulnerable)",
+      "EN": "Vulnerable",
+      "CN": "易伤"
+    },
+    "desc": {
+      "RU": "Каждый стак увеличивает получаемый целью урон (Total DMG taken) на 1 ед. за каждый полученный удар. Применяется сверх снижения брони (DEF). Расходуется после получения урона.",
+      "EN": "Each stack increases total DMG taken by 1 per hit instance. Added on top of defense mitigation. Consumed on hit.",
+      "CN": "受击时每层使受到的总伤害增加1点。在护甲减免结算后额外累加。受击后按层消耗。"
+    },
+    "type": {
+      "RU": "Прямое увеличение урона",
+      "EN": "Damage Amp",
+      "CN": "伤害放大"
+    },
+    "element": "Dark",
+    "priority": "High"
+  },
+  {
+    "id": "cleanse",
+    "code": "T50005",
+    "icon": "✨",
+    "cat": "instant",
+    "name": {
+      "RU": "Очищение (Cleanse)",
+      "EN": "Cleanse",
+      "CN": "净化"
+    },
+    "desc": {
+      "RU": "Мгновенно снимает отрицательные статусы, стаки дебаффов (Burn, Chill, Expose, Hinder, Vulnerable) и эффекты контроля с союзников.",
+      "EN": "Instantly removes negative debuffs, DoT stacks, and crowd control effects from allied units.",
+      "CN": "瞬间清除友方身上的负面减益状态、持续伤害层数及控制效果。"
+    },
+    "type": {
+      "RU": "Мгновенное снятие",
+      "EN": "Instant Cleanse",
+      "CN": "瞬间驱散"
+    },
+    "element": "Light / Water",
+    "priority": "Highest"
+  },
+  {
+    "id": "decay",
+    "code": "T50002",
+    "icon": "💀",
+    "cat": "instant",
+    "name": {
+      "RU": "Распад / Увядание (Decay)",
+      "EN": "Decay",
+      "CN": "衰减/腐朽"
+    },
+    "desc": {
+      "RU": "Мгновенно снижает эффективность входящего лечения цели на 50–100%. Блокирует восстановление HP саппортами.",
+      "EN": "Instantly reduces healing received by target by 50-100%, countering enemy sustain.",
+      "CN": "瞬间大幅降低目标受到的治疗恢复效果（禁疗/重伤），克制敌方治疗回血流。"
+    },
+    "type": {
+      "RU": "Антихил",
+      "EN": "Anti-Heal",
+      "CN": "治疗抑制"
+    },
+    "element": "Dark",
+    "priority": "High"
+  },
+  {
+    "id": "fear",
+    "code": "T10006",
+    "icon": "😱",
+    "cat": "instant",
+    "name": {
+      "RU": "Страх (Fear)",
+      "EN": "Fear",
+      "CN": "恐惧"
+    },
+    "desc": {
+      "RU": "Мгновенно сбивает каст ультимейта, сжигает часть накопленной маны цели и отбрасывает её ход в очереди.",
+      "EN": "Disrupts ultimate skill charging, drains action mana, and delays turn priority.",
+      "CN": "打断大招蓄力，削减目标已积累的魔力并延后其行动轮次。"
+    },
+    "type": {
+      "RU": "Сбив каста / Манаберн",
+      "EN": "Interrupt & Mana Burn",
+      "CN": "打断与削魔"
+    },
+    "element": "Dark",
+    "priority": "High"
+  },
+  {
+    "id": "fortitude",
+    "code": "T20016",
+    "icon": "🏰",
+    "cat": "instant",
+    "name": {
+      "RU": "Стойкость / Несгибаемость (Fortitude)",
+      "EN": "Fortitude",
+      "CN": "坚韧"
+    },
+    "desc": {
+      "RU": "Предотвращает фатальный урон при падении здоровья до 0, оставляя 1 HP и даруя временную неуязвимость на 1 действие.",
+      "EN": "Prevents lethal fatal damage when HP drops to 0, retaining 1 HP with brief invulnerability.",
+      "CN": "致命伤害免疫。当生命值降至0时保留1点血量并获得短暂免死护盾。"
+    },
+    "type": {
+      "RU": "Защита от смерти",
+      "EN": "Death Immunity",
+      "CN": "名刀免死"
+    },
+    "element": "Light / Earth",
+    "priority": "Highest"
+  },
+  {
+    "id": "inspire",
+    "code": "T50003",
+    "icon": "🎺",
+    "cat": "instant",
+    "name": {
+      "RU": "Воодушевление (Inspire)",
+      "EN": "Inspire",
+      "CN": "鼓舞"
+    },
+    "desc": {
+      "RU": "Мгновенно передает союзнику дополнительную ману (Action Mana) или дает право немедленного внеочередного действия.",
+      "EN": "Instantly grants bonus Action Mana or triggers an immediate out-of-turn action for the ally.",
+      "CN": "瞬间为友方充能行动魔力，或立即触发一次额外的插队行动回合。"
+    },
+    "type": {
+      "RU": "Заливка маны / Ресет",
+      "EN": "Mana Battery",
+      "CN": "魔力充能"
+    },
+    "element": "Light",
+    "priority": "High"
+  },
+  {
+    "id": "reversal",
+    "code": "T50004",
+    "icon": "🔄",
+    "cat": "instant",
+    "name": {
+      "RU": "Обращение / Инверсия (Reversal)",
+      "EN": "Reversal",
+      "CN": "逆转"
+    },
+    "desc": {
+      "RU": "Конвертирует входящие дебаффы в положительные баффы (например, Ожог/Раскрытие превращаются в Регенерацию/Щит).",
+      "EN": "Transforms incoming negative debuffs into positive buffs upon trigger.",
+      "CN": "机制逆转：将受到的负面减益状态反转转化为对应的增益Buff（如流血转再生）。"
+    },
+    "type": {
+      "RU": "Инверсия эффектов",
+      "EN": "Debuff to Buff",
+      "CN": "状态逆转"
+    },
+    "element": "Light / Dark",
+    "priority": "High"
+  },
+  {
+    "id": "stat_all",
+    "code": "STAT_ALL",
+    "icon": "📊",
+    "cat": "stat",
+    "name": {
+      "RU": "Все характеристики (All Stats)",
+      "EN": "All Stats",
+      "CN": "全属性"
+    },
+    "desc": {
+      "RU": "Комплексное увеличение сразу всех базовых характеристик: ATK, DEF, HP, SPD и LUK.",
+      "EN": "Simultaneously increases all core attributes: ATK, DEF, HP, SPD, and LUK.",
+      "CN": "同时提升基础攻击、防御、生命上限、速度与幸运等全维度基础属性。"
+    },
+    "type": {
+      "RU": "Базовые статы",
+      "EN": "Core Stats",
+      "CN": "基础全属性"
+    },
+    "element": "Neutral",
+    "priority": "Normal"
+  },
+  {
+    "id": "stat_atk",
+    "code": "STAT_ATK",
+    "icon": "⚔️",
+    "cat": "stat",
+    "name": {
+      "RU": "Сила атаки (ATK)",
+      "EN": "Attack (ATK)",
+      "CN": "攻击力"
+    },
+    "desc": {
+      "RU": "Определяет базовую мощь ударов, навыков и масштабирование большинства дамажащих способностей.",
+      "EN": "Primary scaling stat governing base damage for normal attacks and active skills.",
+      "CN": "核心输出属性，直接决定普通攻击与大多数主动终结技的基础伤害基数。"
+    },
+    "type": {
+      "RU": "Боевой стат",
+      "EN": "Offensive Stat",
+      "CN": "攻击属性"
+    },
+    "element": "Neutral",
+    "priority": "Normal"
+  },
+  {
+    "id": "stat_def",
+    "code": "STAT_DEF",
+    "icon": "🛡️",
+    "cat": "stat",
+    "name": {
+      "RU": "Защита (DEF)",
+      "EN": "Defense (DEF)",
+      "CN": "防御力"
+    },
+    "desc": {
+      "RU": "Снижает входящий прямой физический и магический урон по формуле: Damage = Attack × (100 / (100 + DEF)). Не защищает от чистой потери HP.",
+      "EN": "Mitigates incoming physical and magical damage via defense mitigation formula. Does not block HP Loss.",
+      "CN": "减免受到的直接物理与魔法伤害。减免公式受护甲收益递减规律影响，无法抵御纯扣血。"
+    },
+    "type": {
+      "RU": "Защитный стат",
+      "EN": "Defensive Stat",
+      "CN": "防御属性"
+    },
+    "element": "Neutral",
+    "priority": "Normal"
+  },
+  {
+    "id": "stat_luck",
+    "code": "STAT_LUCK",
+    "icon": "🍀",
+    "cat": "stat",
+    "name": {
+      "RU": "Удача (Luck / LUK)",
+      "EN": "Luck (LUK)",
+      "CN": "幸运"
+    },
+    "desc": {
+      "RU": "Влияет на критический шанс, шанс уклонения, а также повышает результат броска кубика D20 после победы в подземельях (+1 к роллу за каждые 15 LUK).",
+      "EN": "Governs critical strike rate, evasion chance, and grants +1 bonus per 15 LUK to end-of-battle D20 dungeon loot rolls.",
+      "CN": "影响暴击率、闪避率，并在副本结算时为D20战利品掷骰提供加成（每15点幸运+1投骰点数）。"
+    },
+    "type": {
+      "RU": "Особый стат",
+      "EN": "Utility Stat",
+      "CN": "特殊功能属性"
+    },
+    "element": "Light",
+    "priority": "Normal"
+  },
+  {
+    "id": "stat_spd",
+    "code": "STAT_SPD",
+    "icon": "👟",
+    "cat": "stat",
+    "name": {
+      "RU": "Скорость / Инициатива (SPD)",
+      "EN": "Speed (SPD)",
+      "CN": "速度"
+    },
+    "desc": {
+      "RU": "Определяет порядок ходов персонажей в каждом раунде (от наивысшей к наименьшей SPD).",
+      "EN": "Determines chronological action sequence within each combat turn cycle (highest to lowest).",
+      "CN": "决定每个战斗回合内全场所有角色的先后出手顺位（由高到低依次行动）。"
+    },
+    "type": {
+      "RU": "Инициатива",
+      "EN": "Initiative",
+      "CN": "行动先手"
+    },
+    "element": "Wind",
+    "priority": "High"
+  },
+  {
+    "id": "stat_toughness",
+    "code": "STAT_TOUGHNESS",
+    "icon": "💎",
+    "cat": "stat",
+    "name": {
+      "RU": "Прочность / Стойкость (Toughness)",
+      "EN": "Toughness",
+      "CN": "韧性/护盾厚度"
+    },
+    "desc": {
+      "RU": "Особая шкала стойкости боссов и элитных врагов. При пробитии стойкости (Toughness Break) цель оглушается и получает повышенный урон.",
+      "EN": "Special break gauge for elite bosses. Depleting toughness triggers Toughness Break, stunning the target and multiplying damage taken.",
+      "CN": "首领与精英单位的韧性条。破韧（Toughness Break）后目标陷入虚弱瘫痪，受到全额破防高额增伤。"
+    },
+    "type": {
+      "RU": "Шкала пробития",
+      "EN": "Break Gauge",
+      "CN": "破韧机制"
+    },
+    "element": "Neutral",
+    "priority": "High"
+  },
+  {
+    "id": "stat_weakness",
+    "code": "STAT_WEAKNESS",
+    "icon": "🎯",
+    "cat": "stat",
+    "name": {
+      "RU": "Слабость / Уязвимость стихии (Weakness)",
+      "EN": "Weakness",
+      "CN": "弱点属性"
+    },
+    "desc": {
+      "RU": "Стихийная уязвимость врага. Атаки соответствующей контр-стихией наносят +50% урона и ускоренно снимают шкалу стойкости.",
+      "EN": "Elemental counter weakness. Matching counter element deals +50% bonus damage and rapidly breaks toughness gauge.",
+      "CN": "目标弱点元素。使用克制元素攻击可造成额外50%克制增伤，并成倍加速削减韧性值。"
+    },
+    "type": {
+      "RU": "Стихийная уязвимость",
+      "EN": "Elemental Weakness",
+      "CN": "元素克制弱点"
+    },
+    "element": "All",
+    "priority": "High"
+  },
+  {
+    "id": "mech_absorb",
+    "code": "MECH_ABSORB",
+    "icon": "🧲",
+    "cat": "mechanic",
+    "name": {
+      "RU": "Поглощение урона (Absorb)",
+      "EN": "Absorb",
+      "CN": "伤害吸收"
+    },
+    "desc": {
+      "RU": "Конвертирует часть полученного прямого урона в собственное лечение или восполнение маны.",
+      "EN": "Converts a portion of incoming damage into direct healing or mana recovery.",
+      "CN": "将受到的直接伤害按比例转化为自身的生命恢复或魔力充能。"
+    },
+    "type": {
+      "RU": "Защитная механика",
+      "EN": "Defensive Rule",
+      "CN": "防御机制"
+    },
+    "element": "Dark / Water",
+    "priority": "Normal"
+  },
+  {
+    "id": "mech_followup",
+    "code": "MECH_FOLLOWUP",
+    "icon": "🎯",
+    "cat": "mechanic",
+    "name": {
+      "RU": "Дополнительная атака (Follow-Up)",
+      "EN": "Follow-Up Attack",
+      "CN": "追加攻击/追击"
+    },
+    "desc": {
+      "RU": "Внеочередной удар, срабатывающий автоматически после крита, контратаки или атаки союзника. Усиливается стаками Precision.",
+      "EN": "Extra attack automatically triggered following crits, counters, or ally actions. Scaled by Precision stacks.",
+      "CN": "在暴击、反击或队友出手后自动触发的额外追击伤害。受精准（Precision）层数加成。"
+    },
+    "type": {
+      "RU": "Атакующая механика",
+      "EN": "Offensive Trigger",
+      "CN": "追击联动"
+    },
+    "element": "Wind",
+    "priority": "High"
+  },
+  {
+    "id": "mech_fixed",
+    "code": "MECH_FIXED",
+    "icon": "🗡️",
+    "cat": "mechanic",
+    "name": {
+      "RU": "Фиксированный / Чистый урон (Fixed Damage)",
+      "EN": "Fixed Damage",
+      "CN": "真实伤害/固定伤害"
+    },
+    "desc": {
+      "RU": "Наносит точное значение урона, полностью игнорируя показатель защиты цели (DEF) и проценты сопротивления (Damage Reduction).",
+      "EN": "Deals precise unmitigated damage, bypassing both target Defense (DEF) and percentage Damage Reduction.",
+      "CN": "完全无视目标的护甲防御（DEF）与百分比免伤减免，直接扣除等量真实血量。"
+    },
+    "type": {
+      "RU": "Чистый урон",
+      "EN": "True Damage",
+      "CN": "真实真伤"
+    },
+    "element": "Light / Dark",
+    "priority": "Highest"
+  },
+  {
+    "id": "mech_counter",
+    "code": "MECH_COUNTER",
+    "icon": "⚔️",
+    "cat": "mechanic",
+    "name": {
+      "RU": "Контратака (Counter)",
+      "EN": "Counterattack",
+      "CN": "反击"
+    },
+    "desc": {
+      "RU": "Автоматический немедленный ответный удар по атакующему при получении прямого попадания.",
+      "EN": "Immediate retaliatory strike against the enemy initiator upon taking a direct hit.",
+      "CN": "受到敌方直接命中时，立即无视轮次对攻击发起者进行一次即时反击。"
+    },
+    "type": {
+      "RU": "Реакция",
+      "EN": "Reaction",
+      "CN": "受击反击"
+    },
+    "element": "Earth / Fire",
+    "priority": "Normal"
+  },
+  {
+    "id": "mech_action_mana",
+    "code": "MECH_ACTION_MANA",
+    "icon": "🔷",
+    "cat": "mechanic",
+    "name": {
+      "RU": "Мана действия и Ультимейт (Action Mana)",
+      "EN": "Action Mana",
+      "CN": "行动魔力与大招"
+    },
+    "desc": {
+      "RU": "Накапливается за совершение атак (+25 MP) и получение ударов (+15 MP). При достижении 100 MP персонаж активирует ультимейт.",
+      "EN": "Accumulates through attacking (+25 MP) and taking damage (+15 MP). Triggers Ultimate Skill at 100 MP.",
+      "CN": "通过主动攻击（+25点）与受击（+15点）积累。蓄满100点魔力时在下一次行动释放终极技能。"
+    },
+    "type": {
+      "RU": "Ресурс боя",
+      "EN": "Combat Resource",
+      "CN": "大招能量体系"
+    },
+    "element": "Neutral",
+    "priority": "Highest"
+  },
+  {
+    "id": "mech_stacks",
+    "code": "MECH_STACKS",
+    "icon": "🔢",
+    "cat": "mechanic",
+    "name": {
+      "RU": "Стекирование и Лимиты (Stacks & Caps)",
+      "EN": "Stacks & Stacking Limits",
+      "CN": "层数叠加与上限"
+    },
+    "desc": {
+      "RU": "Большинство баффов и дебаффов в игре накапливаются в виде стаков. Расходные стаки тратятся за каждый удар, постоянные действуют до конца боя.",
+      "EN": "Mechanic where buff/debuff effectiveness scales linearly with accumulated stack quantity.",
+      "CN": "游戏绝大部分状态采用层数叠加机制。消耗型层数随出招抵扣，常驻型层数持续整场战斗。"
+    },
+    "type": {
+      "RU": "Базовое правило",
+      "EN": "Core Mechanic",
+      "CN": "核心底层规则"
+    },
+    "element": "Neutral",
+    "priority": "Normal"
+  }
+]

@@ -3722,5 +3722,14 @@
   transform: translateY(-1px);
 }
 
+/* Keyword & Buffs Cards */
+.keyword-card:hover {
+  border-color: rgba(168, 85, 247, 0.45) !important;
+  background: rgba(30, 27, 75, 0.5) !important;
+  box-shadow: 0 4px 18px rgba(168, 85, 247, 0.15);
+  transform: translateY(-2px);
+}
+
+
 
 
