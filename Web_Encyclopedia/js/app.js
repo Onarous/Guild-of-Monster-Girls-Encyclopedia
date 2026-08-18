@@ -487,6 +487,15 @@ const App = {
     document.getElementById('bannerFilterRow').style.display = isItems || isGuides ? 'none' : 'flex';
     document.getElementById('sortGroup').style.display = isGuides ? 'none' : 'flex';
 
+    // SS rarity tier exists only for items/relics/bonds, not for character heroines
+    const pillSS = document.getElementById('pillTierSS');
+    if (pillSS) {
+      pillSS.style.display = isItems ? 'inline-flex' : 'none';
+      if (!isItems && this.state.filters.rarity === 'SS') {
+        this.setFilter('rarity', 'all');
+      }
+    }
+
     this.render();
     if (tab === 'collection') {
       setTimeout(() => this.refreshConnectedDevices(), 60);
