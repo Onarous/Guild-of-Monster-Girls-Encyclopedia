@@ -995,6 +995,89 @@ const App = {
             </p>
             
             <div class="contact-items-grid">
+              <!-- Official Discord -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <span class="contact-icon" style="color: #a78bfa;">💬</span>
+                  <div class="contact-info">
+                    <span class="contact-label">Official Discord Server</span>
+                    <span class="contact-value">discord.gg/euUJPpEdPb</span>
+                  </div>
+                </div>
+                <div class="contact-actions">
+                  <button class="contact-action-btn copy-btn" id="copyDevDcBtn" onclick="App.copyToClipboard('https://discord.gg/euUJPpEdPb', 'copyDevDcBtn')" title="Скопировать ссылку Discord">
+                    📋 <span>${dict.copyBtn || 'Копировать'}</span>
+                  </button>
+                  <a href="https://discord.gg/euUJPpEdPb" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn" style="background: rgba(167, 139, 250, 0.15); border-color: rgba(167, 139, 250, 0.4); color: #c4b5fd;">
+                    🔗 <span>${dict.openLink || 'Войти'}</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Official Website -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <span class="contact-icon" style="color: #34d399;">🌐</span>
+                  <div class="contact-info">
+                    <span class="contact-label">Official Website (Портал)</span>
+                    <span class="contact-value">chillyroom.com/en</span>
+                  </div>
+                </div>
+                <div class="contact-actions">
+                  <a href="https://chillyroom.com/en" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn">
+                    🔗 <span>${dict.openLink || 'Открыть'}</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- YouTube -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <span class="contact-icon" style="color: #ef4444;">▶️</span>
+                  <div class="contact-info">
+                    <span class="contact-label">YouTube Channel</span>
+                    <span class="contact-value">ChillyRoom Official</span>
+                  </div>
+                </div>
+                <div class="contact-actions">
+                  <a href="https://www.youtube.com/channel/UCclOds0DMrP7LvEdFY_wxWw" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn" style="background: rgba(239, 68, 68, 0.15); border-color: rgba(239, 68, 68, 0.4); color: #fca5a5;">
+                    🔗 <span>${dict.openLink || 'Открыть'}</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- X (Twitter) -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <span class="contact-icon" style="color: #f1f5f9; font-weight: bold;">𝕏</span>
+                  <div class="contact-info">
+                    <span class="contact-label">X (Twitter)</span>
+                    <span class="contact-value">@ChillyRoom</span>
+                  </div>
+                </div>
+                <div class="contact-actions">
+                  <a href="https://x.com/ChillyRoom" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn">
+                    🔗 <span>${dict.openLink || 'Открыть'}</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Instagram -->
+              <div class="contact-item">
+                <div class="contact-item-left">
+                  <span class="contact-icon" style="color: #f43f5e;">📷</span>
+                  <div class="contact-info">
+                    <span class="contact-label">Instagram</span>
+                    <span class="contact-value">@chillyroominc</span>
+                  </div>
+                </div>
+                <div class="contact-actions">
+                  <a href="https://www.instagram.com/chillyroominc/" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn" style="background: rgba(244, 63, 94, 0.15); border-color: rgba(244, 63, 94, 0.4); color: #fda4af;">
+                    🔗 <span>${dict.openLink || 'Открыть'}</span>
+                  </a>
+                </div>
+              </div>
+
               <!-- Support Email (from in-game Tip_Customer_Service & Setting_Orders_Des_02) -->
               <div class="contact-item">
                 <div class="contact-item-left">
@@ -1014,12 +1097,12 @@ const App = {
                 </div>
               </div>
 
-              <!-- Official Customer Service QQ (from in-game Setting_Orders_Des_02) -->
+              <!-- Customer Service QQ (from in-game Setting_Orders_Des_02) -->
               <div class="contact-item">
                 <div class="contact-item-left">
                   <span class="contact-icon" style="color: #38bdf8;">🐧</span>
                   <div class="contact-info">
-                    <span class="contact-label">Official Customer Service QQ (Служба поддержки QQ)</span>
+                    <span class="contact-label">Customer Service QQ (Служба поддержки QQ)</span>
                     <span class="contact-value">800179233</span>
                   </div>
                 </div>
@@ -1027,22 +1110,6 @@ const App = {
                   <button class="contact-action-btn copy-btn" id="copyDevQqBtn" onclick="App.copyToClipboard('800179233', 'copyDevQqBtn')" title="Скопировать номер QQ">
                     📋 <span>${dict.copyBtn || 'Копировать'}</span>
                   </button>
-                </div>
-              </div>
-
-              <!-- Official Website -->
-              <div class="contact-item">
-                <div class="contact-item-left">
-                  <span class="contact-icon" style="color: #34d399;">🌐</span>
-                  <div class="contact-info">
-                    <span class="contact-label">Official Website (Официальный сайт)</span>
-                    <span class="contact-value">chillyroom.games</span>
-                  </div>
-                </div>
-                <div class="contact-actions">
-                  <a href="https://www.chillyroom.games" target="_blank" rel="noopener noreferrer" class="contact-action-btn link-btn">
-                    🔗 <span>${dict.openLink || 'Открыть'}</span>
-                  </a>
                 </div>
               </div>
             </div>
