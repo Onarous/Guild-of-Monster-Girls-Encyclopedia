@@ -39,19 +39,19 @@
         </button>
       </nav>
 
-      <!-- Desktop Actions (Language & Contacts) -->
+      <!-- Desktop Actions (Contacts & Language) -->
       <div class="header-actions">
+        <!-- Desktop Contacts Button -->
+        <button class="header-contact-btn" id="headerContactsBtn" onclick="App.openContactsModal()" title="Контакты">
+          💬 <span id="headerContactsBtnText">Контакты</span>
+        </button>
+
         <!-- Desktop Language Selector -->
         <div class="lang-selector" aria-label="Desktop Language Selector">
           <button class="lang-btn active" data-lang="RU" onclick="App.setLanguage('RU')">🇷🇺 RU</button>
           <button class="lang-btn" data-lang="EN" onclick="App.setLanguage('EN')">🇬🇧 EN</button>
           <button class="lang-btn" data-lang="CN" onclick="App.setLanguage('CN')">🇨🇳 CN</button>
         </div>
-
-        <!-- Desktop Contacts Button -->
-        <button class="header-contact-btn" id="headerContactsBtn" onclick="App.openContactsModal()" title="Контакты">
-          💬 <span id="headerContactsBtnText">Контакты</span>
-        </button>
       </div>
 
       <!-- Mobile Hamburger Menu Button -->
@@ -112,21 +112,21 @@
 
       <div class="drawer-separator"></div>
 
-      <!-- Language Switcher in Drawer -->
+      <!-- Contacts in Drawer -->
+      <button class="drawer-contact-btn" id="drawerContactsBtn" onclick="App.openContactsModal(); App.closeMobileDrawer();">
+        <span class="drawer-nav-icon">💬</span>
+        <span class="drawer-nav-label" id="drawerContactsText">Контакты и обратная связь</span>
+      </button>
+
+      <div class="drawer-separator"></div>
+
+      <!-- Language Switcher in Drawer (After Contacts) -->
       <div class="drawer-section-title" id="drawerLangTitle">Язык интерфейса</div>
       <div class="drawer-lang-selector">
         <button class="drawer-lang-pill active" data-lang="RU" onclick="App.setLanguageFromDrawer('RU')">🇷🇺 Русский</button>
         <button class="drawer-lang-pill" data-lang="EN" onclick="App.setLanguageFromDrawer('EN')">🇬🇧 English</button>
         <button class="drawer-lang-pill" data-lang="CN" onclick="App.setLanguageFromDrawer('CN')">🇨🇳 中文</button>
       </div>
-
-      <div class="drawer-separator"></div>
-
-      <!-- Contacts in Drawer -->
-      <button class="drawer-contact-btn" id="drawerContactsBtn" onclick="App.openContactsModal(); App.closeMobileDrawer();">
-        <span class="drawer-nav-icon">💬</span>
-        <span class="drawer-nav-label" id="drawerContactsText">Контакты и обратная связь</span>
-      </button>
     </div>
 
     <div class="drawer-footer">
