@@ -557,29 +557,6 @@
 
 Для получения актуальной информации о персонажах, механиках, симуляции талантов и расчетах вероятностей призыва рекомендуется использовать следующие проверенные внешние ресурсы сообщества:
 
-### 🌐 1. GMG Community Wiki & Tools ([gomg-wiki.pages.dev](https://gomg-wiki.pages.dev/))
-Главная англоязычная база данных и набор интерактивных веб-инструментов по *Guild of Monster Girls*:
-
-* **📖 Каталог Персонажей (Units Index):** [gomg-wiki.pages.dev/units/](https://gomg-wiki.pages.dev/units/)
-  * Полный список всех **204 героинь** (144 Standard + 60 Alter) с распределением по рангам (S/A/B/C), стихиям, типам атак и прямыми ссылками на карточки профилей.
-* **🔑 Глоссарий Механик и Ключевых Слов (Keywords):** [gomg-wiki.pages.dev/keywords/](https://gomg-wiki.pages.dev/keywords/)
-  * Детальный разбор всех игровых статусов (Bleed, Vulnerable, Decay, Tenacity, Lure, Taunt, Freeze и др.).
-* **🎲 Оптимизатор Гачи (Gacha Optimizer):** [gomg-wiki.pages.dev/gacha-optimizer.html](https://gomg-wiki.pages.dev/gacha-optimizer.html)
-  * Калькулятор вероятностей, расчет гаранта и симуляция расходов свитков и самоцветов.
-* **🧬 Симулятор и Менеджер Талантов (Talent Simulator & Manager):**
-  * [gomg-wiki.pages.dev/talent-simulator.html](https://gomg-wiki.pages.dev/talent-simulator.html) — симуляция реролла страниц талантов, расчет шансов выпадения золотых аффиксов и тест переноса эксклюзивов.
-  * [gomg-wiki.pages.dev/talent-manage.html](https://gomg-wiki.pages.dev/talent-manage.html) — сохранение и организация ваших индивидуальных билдов талантов.
-* **👥 Конструктор Команд и Анализатор Логов (Team Builder & Battle Logs):**
-  * [gomg-wiki.pages.dev/build-team.html](https://gomg-wiki.pages.dev/build-team.html) — интерактивная сборка и позиционирование отрядов с проверкой синергий.
-  * [gomg-wiki.pages.dev/battle-logs.html](https://gomg-wiki.pages.dev/battle-logs.html) — загрузка и разбор боевых логов с расчетом эффективности DPS и урона.
-* **🔍 Поисковые Базы Данных (Search Engines):**
-  * Поиск по героиням: [gomg-wiki.pages.dev/search-unit.html](https://gomg-wiki.pages.dev/search-unit.html)
-  * Полнотекстовый поиск по талантам: [gomg-wiki.pages.dev/search-talent-new.html](https://gomg-wiki.pages.dev/search-talent-new.html)
-  * База снаряжения (Gear): [gomg-wiki.pages.dev/search-gear.html](https://gomg-wiki.pages.dev/search-gear.html)
-  * База рун (Runes): [gomg-wiki.pages.dev/search-runes.html](https://gomg-wiki.pages.dev/search-runes.html)
-  * База Божественных Камней / Самоцветов (Godstones / Jewels): [gomg-wiki.pages.dev/search-godstone.html](https://gomg-wiki.pages.dev/search-godstone.html)
-  * База Благословений (Blessings): [gomg-wiki.pages.dev/search-blessing.html](https://gomg-wiki.pages.dev/search-blessing.html)
-
 ---
 
 ### 🇨🇳 2. Аналитические Гайды и Мета TapTap
@@ -593,7 +570,6 @@
 
 ---
 *(Файл обновляется по мере поступления новых данных)*
-
 
 
 
