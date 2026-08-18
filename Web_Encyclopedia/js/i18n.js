@@ -28,7 +28,7 @@ const I18N = {
     resetFilters: "Сбросить фильтры",
     sortBy: "Сортировка:",
     sortOptions: {
-      rarity: "🌟 По редкости (S → C)",
+      rarity: "🌟 По редкости (SS → C)",
       name: "🔤 По имени (А-Я)",
       hp: "❤️ По Здоровью (HP)",
       atk: "⚔️ По Атаке (ATK)",
@@ -197,7 +197,7 @@ const I18N = {
     resetFilters: "Reset Filters",
     sortBy: "Sort By:",
     sortOptions: {
-      rarity: "🌟 By Rarity (S → C)",
+      rarity: "🌟 By Rarity (SS → C)",
       name: "🔤 By Name (A-Z)",
       hp: "❤️ By Health (HP)",
       atk: "⚔️ By Attack (ATK)",
@@ -365,7 +365,7 @@ const I18N = {
     resetFilters: "重置筛选",
     sortBy: "排序方式:",
     sortOptions: {
-      rarity: "🌟 按品阶排序 (S → C)",
+      rarity: "🌟 按品阶排序 (SS → C)",
       name: "🔤 按名称排序 (A-Z)",
       hp: "❤️ 按生命 (HP)",
       atk: "⚔️ 按攻击 (ATK)",

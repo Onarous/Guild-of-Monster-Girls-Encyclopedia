@@ -485,7 +485,7 @@ const App = {
     document.getElementById('slotFilterRow').style.display = isItems ? 'flex' : 'none';
     document.getElementById('roleFilterRow').style.display = isItems || isGuides ? 'none' : 'flex';
     document.getElementById('bannerFilterRow').style.display = isItems || isGuides ? 'none' : 'flex';
-    document.getElementById('sortGroup').style.display = isItems || isGuides ? 'none' : 'flex';
+    document.getElementById('sortGroup').style.display = isGuides ? 'none' : 'flex';
 
     this.render();
     if (tab === 'collection') {
@@ -572,7 +572,7 @@ const App = {
       let itemsObj = this.state.data.items[lang] || {};
       let cat = tab === 'bonds' ? 'bonds' : (this.state.itemCategory === 'bonds' ? 'equipment' : this.state.itemCategory);
       let list = itemsObj[cat] || [];
-      list = this.filterItems(list);
+      list = this.filterAndSortItems(list);
       ItemsView.renderList({ [cat]: list }, cat, 'cardsGrid', lang, this.state.imageMappings);
       this.updateResultCount(list.length);
     }
@@ -644,7 +644,7 @@ const App = {
     });
 
     const s = this.state.sortBy;
-    const tierWeight = { 'SS': 5, 'S': 4, 'A': 3, 'B': 2, 'C': 1 };
+    const tierWeight = { 'SS': 6, 'S': 5, 'A': 4, 'B': 3, 'C': 2, 'D': 1 };
 
     res.sort((a, b) => {
       if (s === 'name') return String(a.name).localeCompare(String(b.name));
@@ -655,29 +655,55 @@ const App = {
       if (s === 'int') return (b.base_stats?.int_spirit || 0) - (a.base_stats?.int_spirit || 0);
       if (s === 'str') return (b.base_stats?.str_power || 0) - (a.base_stats?.str_power || 0);
       if (s === 'dex') return (b.base_stats?.dex_agility || 0) - (a.base_stats?.dex_agility || 0);
-      return (tierWeight[b.rarity_tier] || 0) - (tierWeight[a.rarity_tier] || 0);
+      
+      const stepA = String(a.rarity_tier || a.step || a.Step || '').trim().toUpperCase();
+      const stepB = String(b.rarity_tier || b.step || b.Step || '').trim().toUpperCase();
+      const weightA = tierWeight[stepA] || 0;
+      const weightB = tierWeight[stepB] || 0;
+      if (weightB !== weightA) return weightB - weightA;
+      return String(a.id || a.name || '').localeCompare(String(b.id || b.name || ''), undefined, { numeric: true });
     });
 
     return res;
   },
 
-  filterItems(list) {
+  filterAndSortItems(list) {
     const q = this.state.searchQuery.toLowerCase().trim();
     const f = this.state.filters;
 
-    return list.filter(it => {
-      const step = it.step || it.Step || '';
-      if (f.rarity !== 'all' && step !== f.rarity) return false;
+    let res = list.filter(it => {
+      const step = String(it.step || it.Step || it.rarity_tier || it.quality || '').trim().toUpperCase();
+      if (f.rarity !== 'all' && step !== f.rarity.toUpperCase()) return false;
       if (!this.matchSlot(it.slot, f.slot)) return false;
       if (!this.matchClass(it.class_limit, f.class)) return false;
       if (!this.matchElement(it.element, f.element)) return false;
 
       if (q) {
-        const text = `${it.name} ${it.name_cn || ''} ${it.id} ${it.slot || ''} ${it.description || ''} ${it.pure_bond?.effect || ''} ${it.enhance_ability?.effect || ''}`.toLowerCase();
+        const text = `${it.name || ''} ${it.name_cn || ''} ${it.id || ''} ${it.slot || ''} ${it.description || ''} ${it.pure_bond?.effect || ''} ${it.enhance_ability?.effect || ''}`.toLowerCase();
         if (!text.includes(q)) return false;
       }
       return true;
     });
+
+    const s = this.state.sortBy;
+    const tierWeight = { 'SS': 6, 'S': 5, 'A': 4, 'B': 3, 'C': 2, 'D': 1 };
+
+    res.sort((a, b) => {
+      if (s === 'name') {
+        return String(a.name || '').localeCompare(String(b.name || ''));
+      }
+      const stepA = String(a.step || a.Step || a.rarity_tier || a.quality || '').trim().toUpperCase();
+      const stepB = String(b.step || b.Step || b.rarity_tier || b.quality || '').trim().toUpperCase();
+      const weightA = tierWeight[stepA] || 0;
+      const weightB = tierWeight[stepB] || 0;
+
+      if (weightB !== weightA) {
+        return weightB - weightA; // SS (6) > S (5) > A (4) > B (3) > C (2) > D (1) > '' (0)
+      }
+      return String(a.id || a.name || '').localeCompare(String(b.id || b.name || ''), undefined, { numeric: true });
+    });
+
+    return res;
   },
 
   updateResultCount(count) {
