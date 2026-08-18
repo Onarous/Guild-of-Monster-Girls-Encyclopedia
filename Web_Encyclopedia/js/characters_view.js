@@ -376,6 +376,66 @@ const CharactersView = {
             </div>
           </div>
 
+          <!-- Star Ascension & Milestones Guide -->
+          <div class="detail-section">
+            <div class="section-heading">⭐ ${dict.starAscensionTitle || 'Возвышение и Звёздность (1★ — 6★)'}</div>
+            <div class="star-ascension-card">
+              <div class="star-ascension-header">
+                <span style="font-size: 13px; color: var(--text-secondary);">${dict.starAscensionSubtitle || 'Пороги силы, открытие механик и расход осколков:'}</span>
+                <span class="star-cur-tier-pill">Base: <strong>${char.rarity_tier}★</strong></span>
+              </div>
+
+              <div class="star-milestone-grid">
+                <div class="star-milestone-step">
+                  <div class="star-step-badge">1★</div>
+                  <div class="star-step-content">
+                    <div class="star-step-title">${currentLang === 'RU' ? 'Базовый старт' : (currentLang === 'CN' ? '初始解锁' : 'Base Unlock')}</div>
+                    <div class="star-step-desc">${dict.starMilestone1}</div>
+                  </div>
+                </div>
+                <div class="star-milestone-step">
+                  <div class="star-step-badge">2★</div>
+                  <div class="star-step-content">
+                    <div class="star-step-title">${currentLang === 'RU' ? '+20% Статов & Раса' : (currentLang === 'CN' ? '基础面板提升' : '+20% Stats & Race')}</div>
+                    <div class="star-step-desc">${dict.starMilestone2}</div>
+                  </div>
+                </div>
+                <div class="star-milestone-step highlight-support">
+                  <div class="star-step-badge">3★</div>
+                  <div class="star-step-content">
+                    <div class="star-step-title">${currentLang === 'RU' ? '🔑 Рубеж Саппорта (Стр. 2)' : (currentLang === 'CN' ? '🔑 核心辅助质变 (双天赋)' : '🔑 Support Spike (Page 2)')}</div>
+                    <div class="star-step-desc">${dict.starMilestone3}</div>
+                  </div>
+                </div>
+                <div class="star-milestone-step">
+                  <div class="star-step-badge">4★</div>
+                  <div class="star-step-content">
+                    <div class="star-step-title">${currentLang === 'RU' ? '🔮 Реликвия (+25% Мощи)' : (currentLang === 'CN' ? '🔮 专属信物槽位' : '🔮 Signature Relic Slot')}</div>
+                    <div class="star-step-desc">${dict.starMilestone4}</div>
+                  </div>
+                </div>
+                <div class="star-milestone-step highlight-carry">
+                  <div class="star-step-badge">5★</div>
+                  <div class="star-step-content">
+                    <div class="star-step-title">${currentLang === 'RU' ? '👑 MAX Потенциал Керри' : (currentLang === 'CN' ? '👑 主C极限质变 (400碎片)' : '👑 MAX Carry Potential')}</div>
+                    <div class="star-step-desc">${dict.starMilestone5}</div>
+                  </div>
+                </div>
+                <div class="star-milestone-step">
+                  <div class="star-step-badge">6★</div>
+                  <div class="star-step-content">
+                    <div class="star-step-title">${currentLang === 'RU' ? '⚡ Возвышение Кодекса' : (currentLang === 'CN' ? '⚡ 图鉴全额突破' : '⚡ Codex Limit Cap')}</div>
+                    <div class="star-step-desc">${dict.starMilestone6}</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="star-tip-box ${char.banner_type === 'skin' || char.banner_type === 'skin_limited' || (char.skin_name && char.skin_name !== '默认外观' && char.skin_name !== 'Базовый вид' && char.skin_name !== 'Default Appearance') ? 'tip-alter' : 'tip-standard'}">
+                ${char.banner_type === 'skin' || char.banner_type === 'skin_limited' || (char.skin_name && char.skin_name !== '默认外观' && char.skin_name !== 'Базовый вид' && char.skin_name !== 'Default Appearance') ? dict.starAlterTip : dict.starStandardTip}
+              </div>
+            </div>
+          </div>
+
           <!-- Recommendations -->
           ${char.team_recommendations && Object.values(char.team_recommendations).some(Boolean) ? `
             <div class="detail-section">

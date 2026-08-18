@@ -192,10 +192,31 @@ const I18N = {
     signatureRelic: "Сигнатурная реликвия",
     upgradeMaterials: "Материалы возвышения",
     teamRecommendations: "Рекомендации в отряд",
-    bannerSource: "Баннер призыва / Источник получения",
     owned: "В коллекции",
     notOwned: "Не получена",
-    level1Stats: "Уровень 1"
+    level1Stats: "Уровень 1",
+
+    // Star Ascension & Gear Star Guidance
+    starAscensionTitle: "Возвышение и Звёздность (1★ — 6★)",
+    starAscensionSubtitle: "Пороги силы, открытие механик и расход осколков:",
+    starMilestone1: "Базовые характеристики, авто-атака и активный ультимейт.",
+    starMilestone2: "+20% к базовым статам, открытие расовой пассивной особенности.",
+    starMilestone3: "Ключевой рубеж поддержки: разблокировка 2-й страницы талантов и усиление пассивок.",
+    starMilestone4: "Открытие слота сигнатурной реликвии, сильный скачок боевой мощи (+25-30%).",
+    starMilestone5: "MAX Потенциал (Мейн-керри): сильнейшие ультимативные эффекты (кража маны, пробитие стойкости, двойные прокачки). Требует 400 осколков.",
+    starMilestone6: "Предельное возвышение Кодекса и максимальные множители характеристик.",
+    starStandardTip: "💡 Стандартная героиня: прокачивается стандартными универсальными осколками и дубликатами из Wishlist (гарант 100 круток). При раннем выпадении сразу меняйте цель в Wishlist!",
+    starAlterTip: "⚠️ Редкая Альтер-героиня: для 5★ требуется 400 альтер-осколков. Копите и вкладывайте только в ключевых мейн-керри (напр. Astral Fiend Alter)!",
+    
+    itemStarTitle: "Звёздность Снаряжения и Наследие (0★ ➔ 3★ & Legacy)",
+    itemStarDesc: "Каждый предмет экипировки уникален. Дубликаты используются для прокачки звёздности и усиления резонанса сетов:",
+    itemStar0: "Базовый предмет (1 очко к строкам бонусов сета)",
+    itemStar1: "1★ (1 дубликат): +1 очко к таланту 1-й строки сета",
+    itemStar2: "2★ (5 дубликатов): +1 очко к таланту 2-й строки сета",
+    itemStar3: "3★ (10 дубликатов): +1 очко к таланту 3-й строки сета",
+    itemStarLegacy: "MAX Наследие (16 дубликатов + Камень): +3 очка ко ВСЕМ строкам талантов предмета!",
+    itemStarComboRule: "💡 Сокращение сетов: Экипировка 3★ позволяет активировать полный бонус сета всего 2 надетыми предметами вместо 4-х (напр. Сапоги 3★ + Пояс 3★)!",
+    itemStarAlchemyRule: "⚠️ Правило алхимии: НИ В КОЕМ СЛУЧАЕ не распыляйте снаряжение и руны в алхимию, пока они не прокачаны до 3★ MAX для уровня Кодекса!"
   },
 
   EN: {
@@ -385,10 +406,31 @@ const I18N = {
     signatureRelic: "Signature Relic",
     upgradeMaterials: "Ascension Materials",
     teamRecommendations: "Team Recommendations",
-    bannerSource: "Summon Banner / Acquisition Source",
     owned: "Collected",
     notOwned: "Not Collected",
-    level1Stats: "Level 1"
+    level1Stats: "Level 1",
+
+    // Star Ascension & Gear Star Guidance
+    starAscensionTitle: "Star Ascension & Milestones (1★ — 6★)",
+    starAscensionSubtitle: "Power spikes, unlocked mechanics & shard costs:",
+    starMilestone1: "Base attributes, normal attack & active ultimate skill.",
+    starMilestone2: "+20% attribute increase, unlocks racial passive trait.",
+    starMilestone3: "Key Support Milestone: unlocks Talent Page 2 & empowers passive skills.",
+    starMilestone4: "Unlocks signature relic slot, major combat power spike (+25-30%).",
+    starMilestone5: "MAX Carry Potential: unlocks game-breaking passives (mana drain, toughness break, double scaling). Requires 400 shards.",
+    starMilestone6: "Codex Ascension Limit & maximum attribute multipliers.",
+    starStandardTip: "💡 Standard Heroine: upgraded via standard universal shards & Wishlist dupes (100 pity). Switch Wishlist target immediately once pulled!",
+    starAlterTip: "⚠️ Rare Alter Heroine: 5★ requires 400 Alter Shards. Hoard and invest exclusively into top-tier hyper-carries (e.g. Astral Fiend Alter)!",
+    
+    itemStarTitle: "Gear Star Up & Legacy System (0★ ➔ 3★ & Legacy)",
+    itemStarDesc: "Each piece of equipment is unique. Duplicates are used to star up gear and boost set resonance points:",
+    itemStar0: "Base item (1 point to set bonus rows)",
+    itemStar1: "1★ (1 dupe): +1 point to Row 1 set talent",
+    itemStar2: "2★ (5 dupes): +1 point to Row 2 set talent",
+    itemStar3: "3★ (10 dupes): +1 point to Row 3 set talent",
+    itemStarLegacy: "MAX Legacy (16 dupes + Stone): +3 points to ALL talent rows simultaneously!",
+    itemStarComboRule: "💡 Set Reduction: 3★ gear activates full set bonuses with just 2 equipped pieces instead of 4 (e.g. 3★ Boots + 3★ Belt)!",
+    itemStarAlchemyRule: "⚠️ Alchemy Golden Rule: NEVER scrap equipment or runes in alchemy until they are 3★ MAX in your Codex!"
   },
 
   CN: {
@@ -578,9 +620,30 @@ const I18N = {
     signatureRelic: "专属核心信物",
     upgradeMaterials: "突破与晋阶素材",
     teamRecommendations: "阵容推荐搭配",
-    bannerSource: "招募卡池 / 获取途径",
     owned: "已获得",
     notOwned: "未获得",
-    level1Stats: "1级初始"
+    level1Stats: "1级初始",
+
+    // Star Ascension & Gear Star Guidance
+    starAscensionTitle: "角色升星与突破里程碑 (1★ — 6★)",
+    starAscensionSubtitle: "各星级战力质变点、机制解锁与碎片消耗：",
+    starMilestone1: "解锁基础面板属性、普通攻击与专属主动绝技(大招)。",
+    starMilestone2: "基础属性提升约20%，解锁专属种族被动特性。",
+    starMilestone3: "核心辅助质变点：解锁第2页天赋方案，强化核心被动技能。",
+    starMilestone4: "解锁专属核心信物装备槽，战斗力大幅跃升 (+25-30%)。",
+    starMilestone5: "主C极限质变点：解锁强力终极机制 (偷蓝/破防/双重倍率)，需400碎片。",
+    starMilestone6: "图鉴极致突破，获得全额属性成长倍率。",
+    starStandardTip: "💡 常规角色：使用通用碎片及心愿单招募升星(100抽保底)。一旦提前抽中心仪角色，请立即切换心愿单目标！",
+    starAlterTip: "⚠️ 稀有异化角色：升至5★需消耗多达400枚异化碎片。请严格囤积并优先投资核心主C (如异化水法 Astral Fiend Alter)！",
+    
+    itemStarTitle: "装备升星与传承(Legacy)共鸣系统",
+    itemStarDesc: "所有装备同名唯一。重复获得的装备副本用于升星并提供额外套装共鸣点数：",
+    itemStar0: "初始装备 (提供1点基础套装共鸣)",
+    itemStar1: "1★ (消耗1副本): 第1行套装天赋额外 +1 点",
+    itemStar2: "2★ (消耗5副本): 第2行套装天赋额外 +1 点",
+    itemStar3: "3★ (消耗10副本): 第3行套装天赋额外 +1 点",
+    itemStarLegacy: "MAX 传承3★ (消耗16副本+突破石): 全部词条词缀全额 +3 点共鸣！",
+    itemStarComboRule: "💡 散件搭套装策略：3★装备仅需穿戴2件即可激活原本需要4件套的完整共鸣效果 (如3★鞋子+3★腰带)！",
+    itemStarAlchemyRule: "⚠️ 炼金分解铁律：在图鉴中未将该装备/符文升至3★满级前，绝对不要将其分解为结晶！"
   }
 };

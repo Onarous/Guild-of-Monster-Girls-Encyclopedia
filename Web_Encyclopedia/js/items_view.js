@@ -144,6 +144,7 @@ const ItemsView = {
           <span class="item-slot-badge">🛡️ ${this.escapeHtml(eq.slot || '')}</span>
           ${eq.element ? `<span class="tag-badge" style="font-size: 10px;">✨ ${this.escapeHtml(eq.element)}</span>` : ''}
           ${eq.class_limit ? `<span class="tag-badge" style="font-size: 10px;">⚔️ ${this.escapeHtml(eq.class_limit)}</span>` : ''}
+          <span class="tag-badge star-gear-pill" title="Прокачка звёздности от 0★ до 3★ MAX (Наследие) дает до +3 очков ко всем строкам сета">⭐ 0★→3★ Legacy</span>
         </div>
 
         <div style="font-size: 12px; font-weight: 700; color: #38bdf8;">
@@ -230,6 +231,7 @@ const ItemsView = {
 
         <div style="display: flex; gap: 6px; flex-wrap: wrap;">
           <span class="item-slot-badge">💎 ${this.escapeHtml(rn.material)}</span>
+          <span class="tag-badge star-gear-pill" title="Руны прокачиваются до 3★ MAX для бонусов Кодекса и резонанса">⭐ 0★→3★ Legacy</span>
           <span class="tag-badge">Score: ${rn.score}</span>
         </div>
 
@@ -382,6 +384,64 @@ const ItemsView = {
               <div class="section-heading">🔮 ${dict.effects || 'Effect'}</div>
               <div style="background: var(--bg-surface-elevated); padding: 12px; border-radius: var(--radius-md); font-size: 13px; line-height: 1.5; color: var(--text-primary);">
                 ${this.escapeHtml(item.effect)}
+              </div>
+            </div>
+          ` : ''}
+
+          ${category === 'equipment' || category === 'runes' || item.slot || item.pure_bond ? `
+            <div class="detail-section">
+              <div class="section-heading">⭐ ${dict.itemStarTitle || 'Звёздность Снаряжения и Наследие (0★ ➔ 3★ & Legacy)'}</div>
+              <div class="star-gear-card">
+                <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;">
+                  ${dict.itemStarDesc || 'Каждый предмет экипировки уникален. Дубликаты используются для прокачки звёздности и усиления резонанса сетов:'}
+                </div>
+
+                <div class="star-gear-table-wrapper">
+                  <table class="star-gear-table">
+                    <thead>
+                      <tr>
+                        <th>${currentLang === 'RU' ? 'Звёзды' : (currentLang === 'CN' ? '星级' : 'Star Level')}</th>
+                        <th>${currentLang === 'RU' ? 'Дубликаты' : (currentLang === 'CN' ? '消耗副本' : 'Dupes')}</th>
+                        <th>${currentLang === 'RU' ? 'Бонус к талантам сета' : (currentLang === 'CN' ? '套装共鸣加成' : 'Set Talent Bonus')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span class="star-step-badge">0★</span></td>
+                        <td>0</td>
+                        <td>${dict.itemStar0 || 'Базовый предмет (1 очко к строкам бонусов сета)'}</td>
+                      </tr>
+                      <tr>
+                        <td><span class="star-step-badge">1★</span></td>
+                        <td>1</td>
+                        <td><strong>${dict.itemStar1 || '1★ (1 дубликат): +1 очко к таланту 1-й строки сета'}</strong></td>
+                      </tr>
+                      <tr>
+                        <td><span class="star-step-badge">2★</span></td>
+                        <td>5</td>
+                        <td><strong>${dict.itemStar2 || '2★ (5 дубликатов): +1 очко к таланту 2-й строки сета'}</strong></td>
+                      </tr>
+                      <tr>
+                        <td><span class="star-step-badge">3★</span></td>
+                        <td>10</td>
+                        <td><strong style="color: #60a5fa;">${dict.itemStar3 || '3★ (10 дубликатов): +1 очко к таланту 3-й строки сета'}</strong></td>
+                      </tr>
+                      <tr class="legacy-row">
+                        <td><span class="star-step-badge legacy-badge">👑 MAX</span></td>
+                        <td>16 + 💎</td>
+                        <td><strong style="color: #fbbf24;">${dict.itemStarLegacy || 'MAX Наследие: +3 очка ко ВСЕМ строкам талантов предмета!'}</strong></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="star-tip-box tip-standard" style="margin-top: 10px;">
+                  ${dict.itemStarComboRule || '💡 Сокращение сетов: Экипировка 3★ позволяет активировать полный бонус сета всего 2 надетыми предметами вместо 4-х!'}
+                </div>
+
+                <div class="star-tip-box tip-alter" style="margin-top: 8px;">
+                  ${dict.itemStarAlchemyRule || '⚠️ Правило алхимии: НИ В КОЕМ СЛУЧАЕ не распыляйте снаряжение и руны в алхимию, пока они не прокачаны до 3★ MAX для уровня Кодекса!'}
+                </div>
               </div>
             </div>
           ` : ''}
