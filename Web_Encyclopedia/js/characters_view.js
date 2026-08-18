@@ -209,14 +209,24 @@ const CharactersView = {
     // Exclusive Talents HTML
     let talentsHtml = '';
     if (char.exclusive_talents && char.exclusive_talents.length > 0) {
-      talentsHtml = char.exclusive_talents.map(et => `
-        <div class="talent-card-item">
-          <div class="talent-rank-header">
-            <span>✨ Rank ${et.rank}: ${this.escapeHtml(et.name)}</span>
+      const rankLabel = currentLang === 'CN' ? '品阶' : (currentLang === 'EN' ? 'Rank' : 'Ранг');
+      talentsHtml = char.exclusive_talents.map(et => {
+        const stepVal = et.step || et.Step || et.rank || '';
+        const tierBadge = stepVal ? `<span class="tag-badge pill-tier-${String(stepVal).toLowerCase()}">${rankLabel} ${this.escapeHtml(stepVal)}</span>` : '';
+        const idBadge = et.id ? `<span style="font-size: 11px; color: var(--text-muted); font-family: monospace;">ID: ${this.escapeHtml(et.id)}</span>` : '';
+        return `
+          <div class="trait-card-item" style="border-left: 3px solid #8b5cf6;">
+            <div class="trait-name-row" style="color: #c084fc;">
+              <span>✨ ${this.escapeHtml(et.name || 'Талант')}</span>
+              <div style="display: flex; gap: 6px; align-items: center;">
+                ${idBadge}
+                ${tierBadge}
+              </div>
+            </div>
+            <div class="trait-desc">${this.escapeHtml(et.effect || et.description || '')}</div>
           </div>
-          <div class="talent-desc">${this.escapeHtml(et.effect || et.description || '')}</div>
-        </div>
-      `).join('');
+        `;
+      }).join('');
     }
 
     // Exclusive Relic HTML
