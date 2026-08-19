@@ -140,6 +140,17 @@ const App = {
       if (itemId) {
         setTimeout(() => this.openItemModal(cat, itemId, false), 150);
       }
+    } else if (route === 'buff') {
+      const buffId = hashParts[1];
+      if (buffId) {
+        setTimeout(() => this.openBuffModal(buffId, false), 150);
+      }
+    } else if (route === 'tile' || route === 'tiles') {
+      const tileId = hashParts[1];
+      if (tileId) {
+        GuidesView.activeSection = 'tiles';
+        setTimeout(() => this.openTileModal(tileId, false), 150);
+      }
     }
   },
 
@@ -1438,7 +1449,19 @@ const App = {
     if (!tileId) return;
     const lang = this.state.lang || 'RU';
     const tiles = this.state.mapTiles || (typeof GuidesView !== 'undefined' ? GuidesView.defaultMapTiles : []) || [];
-    const tile = tiles.find(t => t.id === tileId || t.key === tileId || (t.name && (t.name[lang] === tileId || t.name.RU === tileId || t.name.EN === tileId)));
+    const q = String(tileId).toLowerCase().trim();
+    const tile = tiles.find(t => 
+      t.id.toLowerCase() === q ||
+      t.id.replace('tile_', '').toLowerCase() === q ||
+      `tile_${q}` === t.id.toLowerCase() ||
+      (t.key && t.key.toLowerCase() === q) ||
+      (t.name && (
+        (t.name.RU && t.name.RU.toLowerCase() === q) ||
+        (t.name.EN && t.name.EN.toLowerCase() === q) ||
+        (t.name.CN && t.name.CN.toLowerCase() === q) ||
+        (typeof t.name === 'string' && t.name.toLowerCase() === q)
+      ))
+    );
     if (!tile) return;
 
     if (!isBack && this.currentModal && (this.currentModal.type !== 'tile' || this.currentModal.id !== tile.id)) {

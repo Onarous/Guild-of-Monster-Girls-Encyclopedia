@@ -534,6 +534,43 @@ const ItemsView = {
     `;
   },
 
+  renderItemTileSources(item, currentLang = 'RU') {
+    if (!item) return '';
+    const isRu = currentLang === 'RU';
+    const isCn = currentLang === 'CN';
+    const allTiles = (typeof App !== 'undefined' && App.state?.mapTiles) ? App.state.mapTiles : ((typeof GuidesView !== 'undefined' && GuidesView.defaultMapTiles) ? GuidesView.defaultMapTiles : []);
+    const itemName = item.name || '';
+    if (!itemName) return '';
+    
+    const matchingTiles = allTiles.filter(t => {
+      const mats = t.materials?.[currentLang] || t.materials?.RU || [];
+      return mats.some(m => itemName.includes(m) || m.includes(itemName));
+    });
+    
+    if (matchingTiles.length === 0) return '';
+    
+    return `
+      <div class="detail-section" style="margin-top: 15px;">
+        <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between;">
+          <span>🗺️ ${isRu ? 'Источники на игровом поле (Тайлы)' : (isCn ? '地图产出地块' : 'Map Spot Sources')} (${matchingTiles.length})</span>
+          <span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">${isRu ? 'Нажмите для перехода к тайлу' : 'Click to view tile'}</span>
+        </div>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; max-height: 180px; overflow-y: auto; padding: 4px;">
+          ${matchingTiles.map(t => {
+            const tName = t.name?.[currentLang] || t.name?.RU || t.id;
+            return `
+              <span class="tag-badge clickable-badge" 
+                    onclick="event.stopPropagation(); App.openTileModal('${t.id}')" 
+                    title="${isRu ? 'Открыть карточку тайла' : 'Open tile card'}"
+                    style="background: rgba(56, 189, 248, 0.1); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.35); padding: 5px 12px; font-size: 12px; cursor: pointer; transition: all 0.15s ease;">
+                ${t.icon || '🗺️'} ${this.escapeHtml(tName)}
+              </span>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+  },
   renderModal(item, category, currentLang = "RU", imageMappings = {}) {
     if (!item) return '';
     const dict = I18N[currentLang] || I18N.RU;
@@ -846,6 +883,9 @@ const ItemsView = {
               </div>
             </div>
           ` : ''}
+
+          <!-- Map Tiles Drop Sources (for materials/ingredients) -->
+          ${this.renderItemTileSources(item, currentLang)}
 
           ${item.description ? `
             <div class="detail-section">
