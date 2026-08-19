@@ -4799,3 +4799,218 @@
   color: #ffffff !important;
   box-shadow: 0 0 12px rgba(56, 189, 248, 0.35) !important;
 }
+
+
+/* Interactive Guide Entity Chips & Links */
+.guide-entity-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none !important;
+  transition: all 0.15s ease-in-out;
+  border: 1px solid transparent;
+  vertical-align: middle;
+  line-height: 1.4;
+  margin: 1px 2px;
+}
+
+.guide-entity-chip:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.guide-chip-char {
+  background: rgba(168, 85, 247, 0.18);
+  border-color: rgba(168, 85, 247, 0.45);
+  color: #d8b4fe;
+}
+.guide-chip-char:hover {
+  border-color: #a855f7;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
+}
+
+.guide-chip-gold {
+  background: rgba(234, 179, 8, 0.18);
+  border-color: rgba(234, 179, 8, 0.45);
+  color: #fde047;
+}
+.guide-chip-gold:hover {
+  border-color: #facc15;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(234, 179, 8, 0.4);
+}
+
+.guide-chip-gem {
+  background: rgba(56, 189, 248, 0.18);
+  border-color: rgba(56, 189, 248, 0.45);
+  color: #7dd3fc;
+}
+.guide-chip-gem:hover {
+  border-color: #38bdf8;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+}
+
+.guide-chip-clover {
+  background: rgba(34, 197, 94, 0.18);
+  border-color: rgba(34, 197, 94, 0.45);
+  color: #86efac;
+}
+.guide-chip-clover:hover {
+  border-color: #22c55e;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+}
+
+.guide-chip-fruit {
+  background: rgba(192, 132, 252, 0.18);
+  border-color: rgba(192, 132, 252, 0.45);
+  color: #e9d5ff;
+}
+.guide-chip-fruit:hover {
+  border-color: #c084fc;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(192, 132, 252, 0.4);
+}
+
+.guide-chip-ration {
+  background: rgba(249, 115, 22, 0.18);
+  border-color: rgba(249, 115, 22, 0.45);
+  color: #fdba74;
+}
+.guide-chip-ration:hover {
+  border-color: #f97316;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(249, 115, 22, 0.4);
+}
+
+.guide-chip-stone {
+  background: rgba(251, 146, 60, 0.18);
+  border-color: rgba(251, 146, 60, 0.45);
+  color: #fed7aa;
+}
+.guide-chip-stone:hover {
+  border-color: #fb923c;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(251, 146, 60, 0.4);
+}
+
+.guide-chip-gear {
+  background: rgba(59, 130, 246, 0.18);
+  border-color: rgba(59, 130, 246, 0.45);
+  color: #93c5fd;
+}
+.guide-chip-gear:hover {
+  border-color: #3b82f6;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+}
+
+.guide-chip-chest {
+  background: rgba(245, 158, 11, 0.18);
+  border-color: rgba(245, 158, 11, 0.45);
+  color: #fde68a;
+}
+.guide-chip-chest:hover {
+  border-color: #f59e0b;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);
+}
+
+
+/* Collapsible Details & Accordion in Guides */
+details.guide-collapse-block {
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+details.guide-collapse-block summary.guide-collapse-summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  transition: all 0.2s ease;
+}
+
+details.guide-collapse-block summary.guide-collapse-summary::-webkit-details-marker {
+  display: none;
+}
+
+details.guide-collapse-block summary.guide-collapse-summary:hover {
+  filter: brightness(1.1);
+}
+
+details.guide-collapse-block summary.guide-collapse-summary .guide-collapse-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 13px;
+  transition: transform 0.25s ease, background 0.2s ease;
+}
+
+details.guide-collapse-block[open] summary.guide-collapse-summary .guide-collapse-arrow {
+  transform: rotate(180deg);
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+}
+
+details.guide-collapse-block .guide-collapse-body {
+  padding: 16px 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+details.guide-rank-collapse {
+  margin-bottom: 14px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+details.guide-rank-collapse summary.guide-rank-summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  transition: all 0.15s ease;
+}
+
+details.guide-rank-collapse summary.guide-rank-summary::-webkit-details-marker {
+  display: none;
+}
+
+details.guide-rank-collapse summary.guide-rank-summary:hover {
+  filter: brightness(1.12);
+}
+
+details.guide-rank-collapse summary.guide-rank-summary .rank-collapse-arrow {
+  font-size: 12px;
+  transition: transform 0.2s ease;
+  opacity: 0.85;
+}
+
+details.guide-rank-collapse[open] summary.guide-rank-summary .rank-collapse-arrow {
+  transform: rotate(180deg);
+}
+
+details.guide-rank-collapse .guide-rank-body {
+  padding-top: 10px;
+}
