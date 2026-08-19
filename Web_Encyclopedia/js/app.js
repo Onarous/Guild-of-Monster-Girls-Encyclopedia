@@ -1343,13 +1343,14 @@ const App = {
     let targetCat = category;
     let list = this.state.data.items?.[lang]?.[targetCat] || [];
     
-    let item = list.find(i => i.id === id || String(i.id) === String(id) || i.key === id);
+    // Prioritize key, uid, id_step exact match to resolve exact rarity variant
+    let item = list.find(i => i.key === id || i.uid === id || (i.id && i.step && `${i.id}_${i.step}` === id) || i.id === id);
     
     // Multi-category search fallback if not found in targetCat
     if (!item && this.state.data.items?.[lang]) {
       for (const [catKey, catList] of Object.entries(this.state.data.items[lang])) {
         if (Array.isArray(catList)) {
-          const found = catList.find(i => i.id === id || String(i.id) === String(id) || i.key === id);
+          const found = catList.find(i => i.key === id || i.uid === id || (i.id && i.step && `${i.id}_${i.step}` === id) || i.id === id);
           if (found) {
             item = found;
             targetCat = catKey;
@@ -1365,7 +1366,7 @@ const App = {
         if (this.state.data.items?.[l]) {
           for (const [catKey, catList] of Object.entries(this.state.data.items[l])) {
             if (Array.isArray(catList)) {
-              const found = catList.find(i => i.id === id || String(i.id) === String(id) || i.key === id);
+              const found = catList.find(i => i.key === id || i.uid === id || (i.id && i.step && `${i.id}_${i.step}` === id) || i.id === id);
               if (found) {
                 item = found;
                 targetCat = catKey;
@@ -1384,13 +1385,13 @@ const App = {
     if (!modal) return;
     modal.dataset.modalType = 'item';
     modal.dataset.itemCat = targetCat;
-    modal.dataset.itemId = item.id;
+    modal.dataset.itemId = item.key || item.uid || item.id;
     delete modal.dataset.charId;
     modal.innerHTML = ItemsView.renderModal(item, targetCat, lang, this.state.imageMappings);
     modal.classList.add('active');
 
     if (updateHash) {
-      this.updateUrl('item', `${targetCat}/${item.id}`);
+      this.updateUrl('item', `${targetCat}/${item.key || item.uid || item.id}`);
     }
   },
 

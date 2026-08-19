@@ -330,7 +330,7 @@ const ItemsView = {
     const dropCount = ch.drop_table ? ch.drop_table.length : 0;
 
     return `
-      <div class="item-card" onclick="App.openItemModal('chests', '${ch.id}')" style="cursor: pointer;">
+      <div class="item-card" onclick="App.openItemModal('chests', '${ch.key || ch.uid || ch.id}')" style="cursor: pointer;">
         <div class="item-card-header">
           <div class="item-card-icon-box">
             ${iconSrc ? `
@@ -663,67 +663,37 @@ const ItemsView = {
 
           ${item.drop_table && item.drop_table.length > 0 ? `
             <div class="detail-section">
-              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
-                <span>🎁 ${dict.chestDropTableTitle || 'Таблица возможного дропа'} (${item.drop_table.length})</span>
-                <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">
-                  ${dict.chestDropClickTip || 'Кликните на предмет для подробного просмотра'}
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                <span>🎁 ${dict.chestDropTableTitle || (currentLang === 'RU' ? 'Возможный дроп' : currentLang === 'CN' ? '可能掉落物品' : 'Possible Drops')} (${item.drop_table.length})</span>
+                <span style="font-size: 11.5px; font-weight: normal; color: var(--text-muted);">
+                  💡 ${currentLang === 'RU' ? 'Наведите для названия • Кликните для карточки' : currentLang === 'CN' ? '悬停查看名称 • 点击查看详情' : 'Hover for name • Click for details'}
                 </span>
               </div>
               
-              <div class="chest-drop-table-wrapper" style="max-height: 380px; overflow-y: auto; border: 1px solid rgba(168, 85, 247, 0.3); border-radius: var(--radius-md); background: rgba(10, 14, 23, 0.65); box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);">
-                <table class="star-gear-table" style="width: 100%; border-collapse: collapse; font-size: 12.5px;">
-                  <thead style="position: sticky; top: 0; background: #0b1120; z-index: 2; border-bottom: 2px solid rgba(168, 85, 247, 0.35);">
-                    <tr>
-                      <th style="padding: 10px 12px; text-align: left; color: #c084fc;">${dict.chestDropItem || 'Предмет'}</th>
-                      <th style="padding: 10px 12px; text-align: center; color: #c084fc;">${dict.chestDropCategory || 'Категория'}</th>
-                      <th style="padding: 10px 12px; text-align: center; color: #c084fc;">${dict.chestDropDetails || 'Свойства / Слот'}</th>
-                      <th style="padding: 10px 12px; text-align: center; color: #c084fc;">${dict.chestDropQty || 'Кол-во'}</th>
-                      <th style="padding: 10px 12px; text-align: right; color: #c084fc;">${dict.chestDropAction || 'Действие'}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    ${item.drop_table.map(d => {
-                      const dIcon = this.getItemIcon(d, d.category, imageMappings);
-                      const dTierClass = d.step ? `tier-${d.step.toLowerCase()}` : '';
-                      const dFallbackEmoji = this.getCategoryFallbackEmoji(d.category);
-                      return `
-                        <tr class="drop-row" onclick="App.openItemModal('${d.category}', '${d.id}')" style="cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0.06); transition: all 0.15s ease;">
-                          <td style="padding: 8px 12px;">
-                            <div style="display: flex; align-items: center; gap: 9px;">
-                              <div style="width: 32px; height: 32px; border-radius: 4px; background: rgba(30,41,59,0.8); border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
-                                ${dIcon ? `
-                                  <img src="${dIcon}" alt="${this.escapeHtml(d.name)}" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
-                                  <span style="display: none; font-size: 16px;">${dFallbackEmoji}</span>
-                                ` : `<span style="font-size: 16px;">${dFallbackEmoji}</span>`}
-                              </div>
-                              <div>
-                                <div style="font-weight: 700; color: #ffffff; display: flex; align-items: center; gap: 6px;">
-                                  ${d.step ? `<span class="tier-badge ${dTierClass}" style="font-size: 9.5px; padding: 1px 5px;">${d.step}</span>` : ''}
-                                  <span>${this.escapeHtml(d.name)}</span>
-                                </div>
-                                <div style="font-size: 11px; color: var(--text-muted); font-family: monospace;">ID: ${d.id}</div>
-                              </div>
-                            </div>
-                          </td>
-                          <td style="padding: 8px 12px; text-align: center;">
-                            <span class="tag-badge" style="font-size: 11px; padding: 2px 7px;">${this.getCategoryLabel(d.category, currentLang)}</span>
-                          </td>
-                          <td style="padding: 8px 12px; text-align: center; color: var(--text-secondary); font-size: 11.5px;">
-                            ${[d.slot, d.class_limit, d.type].filter(Boolean).map(x => this.escapeHtml(x)).join(' • ') || '—'}
-                          </td>
-                          <td style="padding: 8px 12px; text-align: center; font-weight: 700; color: #38bdf8;">
-                            ×${this.escapeHtml(d.num || '1')}
-                          </td>
-                          <td style="padding: 8px 12px; text-align: right;">
-                            <button class="filter-pill" style="padding: 4px 11px; font-size: 11.5px; cursor: pointer; color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); font-weight: 600;" onclick="event.stopPropagation(); App.openItemModal('${d.category}', '${d.id}')">
-                              ${dict.viewItem || 'Открыть'} ➔
-                            </button>
-                          </td>
-                        </tr>
-                      `;
-                    }).join('')}
-                  </tbody>
-                </table>
+              <div class="chest-loot-grid">
+                ${item.drop_table.map(d => {
+                  const dIcon = this.getItemIcon(d, d.category, imageMappings);
+                  const dStep = d.step || '';
+                  const dTierClass = dStep ? `loot-tier-${dStep.toLowerCase()}` : '';
+                  const dFallbackEmoji = this.getCategoryFallbackEmoji(d.category);
+                  const tooltipText = `${d.name}${dStep ? ` [${dStep}★]` : ''}${d.slot || d.type ? ` • ${d.slot || d.type}` : ''}${d.class_limit ? ` (${d.class_limit})` : ''}`;
+                  
+                  return `
+                    <div class="loot-tile ${dTierClass}" 
+                         onclick="App.openItemModal('${d.category}', '${d.id}')" 
+                         title="${this.escapeHtml(tooltipText)}"
+                         data-tooltip="${this.escapeHtml(tooltipText)}">
+                      <div class="loot-tile-icon-box">
+                        ${dIcon ? `
+                          <img src="${dIcon}" alt="${this.escapeHtml(d.name)}" class="loot-tile-img" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+                          <span style="display: none; font-size: 20px;">${dFallbackEmoji}</span>
+                        ` : `<span style="font-size: 20px;">${dFallbackEmoji}</span>`}
+                      </div>
+                      ${dStep ? `<span class="loot-tile-tier">${dStep}</span>` : ''}
+                      ${d.num && String(d.num) !== '1' ? `<span class="loot-tile-qty">×${this.escapeHtml(d.num)}</span>` : ''}
+                    </div>
+                  `;
+                }).join('')}
               </div>
             </div>
           ` : ''}
