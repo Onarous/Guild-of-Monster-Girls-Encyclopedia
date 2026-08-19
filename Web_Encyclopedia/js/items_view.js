@@ -534,7 +534,8 @@ const ItemsView = {
     `;
   },
 
-  renderItemTileSources(item, currentLang = 'RU') {
+  renderItemTileSources(item, currentLang = 'RU', category = null) {
+    if (!item || category === 'bonds') return '';
     if (!item) return '';
     const isRu = currentLang === 'RU';
     const isCn = currentLang === 'CN';
@@ -835,6 +836,62 @@ const ItemsView = {
             </div>
           ` : ''}
 
+                    <!-- Set / Bond Equipment Pieces Resolution -->
+          ${category === 'bonds' ? (() => {
+            const allEquips = (typeof App !== 'undefined' && App.state?.data?.items?.[currentLang]?.equipment) || [];
+            const bondName = item.name;
+            const bondId = item.id;
+            const matchingEquips = allEquips.filter(e => {
+              const pb = e.pure_bond;
+              if (pb && typeof pb === 'object') {
+                if (pb.name === bondName) return true;
+                if (pb.code && pb.code.startsWith(bondName)) return true;
+                if (pb.id === bondId) return true;
+              } else if (typeof pb === 'string' && pb.includes(bondName)) {
+                return true;
+              }
+              if (e.bond_id === bondId || e.suit_id === bondId) return true;
+              return false;
+            });
+
+            if (matchingEquips.length === 0) return '';
+
+            return `
+              <div class="detail-section" style="margin-top: 15px;">
+                <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                  <span>⚔️ ${currentLang === 'RU' ? 'Снаряжение комплекта (Предметы)' : (currentLang === 'CN' ? '所属装备部件' : 'Set Equipment Pieces')} (${matchingEquips.length})</span>
+                  <span style="font-size: 11.5px; font-weight: normal; color: var(--text-muted);">
+                    💡 ${currentLang === 'RU' ? 'Наведите для свойств • Кликните для карточки предмета' : (currentLang === 'CN' ? '悬停查看属性 • 点击查看装备' : 'Hover for stats • Click for item card')}
+                  </span>
+                </div>
+                <div class="chest-loot-grid" style="background: rgba(10, 14, 23, 0.7); border: 1px solid rgba(168, 85, 247, 0.3); max-height: 260px;">
+                  ${matchingEquips.map(eq => {
+                    const eqName = eq.name || eq.id;
+                    const eqStep = eq.step || 'C';
+                    const tierClass = `loot-tier-${eqStep.toLowerCase()}`;
+                    const eqIcon = this.getItemIcon(eq, 'equipment', imageMappings);
+                    const tooltipText = `⚔️ ${eqName} [${eqStep}★]${eq.slot ? ` • ${eq.slot}` : ''}${eq.class_limit ? ` (${eq.class_limit})` : ''}`;
+
+                    return `
+                      <div class="loot-tile ${tierClass}" 
+                           onclick="App.openItemModal('equipment', '${eq.id}')" 
+                           title="${this.escapeHtml(tooltipText)}"
+                           data-tooltip="${this.escapeHtml(tooltipText)}">
+                        <div class="loot-tile-icon-box">
+                          ${eqIcon ? `
+                            <img src="${eqIcon}" alt="${this.escapeHtml(eqName)}" class="loot-tile-img" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+                            <span style="display: none; font-size: 22px;">⚔️</span>
+                          ` : `<span style="font-size: 22px;">⚔️</span>`}
+                        </div>
+                        <span class="loot-tile-tier">${eqStep}</span>
+                      </div>
+                    `;
+                  }).join('')}
+                </div>
+              </div>
+            `;
+          })() : ''}
+
           ${category !== 'chests' && category !== 'relics' ? `
             <div class="detail-section">
               <div class="section-heading">📍 ${dict.acquisitionTitle || 'Способ получения'}</div>
@@ -885,7 +942,7 @@ const ItemsView = {
           ` : ''}
 
           <!-- Map Tiles Drop Sources (for materials/ingredients) -->
-          ${this.renderItemTileSources(item, currentLang)}
+          ${this.renderItemTileSources(item, currentLang, category)}
 
           <!-- Banner link for summon tickets, wish stones, gems -->
           ${(item.id === 'D00006_031' || item.id === 'D00006_032' || item.id === 'D00010_021' || item.id === 'D00010_031' || item.id === 'D00001_000' || (item.name && (item.name.includes('Билет') || item.name.includes('найм') || item.name.includes('Самоцвет') || item.name.includes('招募') || item.name.includes('Recruit')))) ? `
