@@ -297,17 +297,7 @@ const CharactersView = {
 
         <div class="modal-body">
 
-          <!-- Banner Acquisition Link -->
-          <div class="detail-section" style="margin-bottom: 12px;">
-            <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.3); padding: 10px 14px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
-              <div style="font-size: 12.5px; color: #f1f5f9;">
-                <span>🎪 <strong>${currentLang === 'RU' ? 'Способ найма' : (currentLang === 'CN' ? '获取途径' : 'Acquisition')}</strong>: ${char.is_alter ? (currentLang === 'RU' ? 'Альтер-найм (Баннер Иных Миров)' : 'Alter Summon Banner') : (char.rarity_tier >= 5 ? (currentLang === 'RU' ? 'Баннеры призыва и Список Желаний' : 'Rate-Up / Wishlist Summon') : (currentLang === 'RU' ? 'Стандартный наем' : 'Standard Summon'))}</span>
-              </div>
-              <button class="action-btn secondary-btn" onclick="App.setTab('guides'); GuidesView.setSection('gacha');" style="font-size: 11.5px; padding: 4px 12px; color: #38bdf8; border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.12); cursor: pointer;">
-                ${currentLang === 'RU' ? 'Шансы в баннерах ➔' : (currentLang === 'CN' ? '卡池概率 ➔' : 'Banner Rates ➔')}
-              </button>
-            </div>
-          </div>
+
 
           <div style="display: flex; gap: 8px; flex-wrap: wrap;">
             <span class="tag-badge ${elemClass}">✨ ${this.escapeHtml(char.element || '')}</span>
@@ -391,13 +381,23 @@ const CharactersView = {
 
           <!-- Banner & Acquisition Source -->
           <div class="detail-section">
-            <div class="section-heading">🎪 ${dict.bannerSource || 'Баннер призыва / Источник получения'}</div>
-            <div style="background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: var(--radius-md); padding: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
-              <div style="display: flex; align-items: center; gap: 10px;">
-                <span style="font-size: 26px;">${this.getBannerIcon(char.banner_type)}</span>
+            <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between;">
+              <span>🎪 ${dict.bannerSource || 'Баннер призыва / Источник получения'}</span>
+              <span style="font-size: 11px; font-weight: normal; color: #c084fc;">💡 ${currentLang === 'RU' ? 'Кликните для перехода в гайд по баннерам' : (currentLang === 'CN' ? '点击查看卡池与概率' : 'Click to view banners & rates')}</span>
+            </div>
+            <div onclick="App.setTab('guides'); GuidesView.setSection('gacha');" 
+                 title="${currentLang === 'RU' ? 'Перейти к расписанию баннеров и шансам дропа' : (currentLang === 'CN' ? '查看卡池排期与抽取概率' : 'View banner schedule & drop rates')}"
+                 style="background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: var(--radius-md); padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; cursor: pointer; transition: all 0.2s ease;"
+                 onmouseenter="this.style.background='rgba(168, 85, 247, 0.16)'; this.style.borderColor='rgba(168, 85, 247, 0.5)';"
+                 onmouseleave="this.style.background='rgba(168, 85, 247, 0.08)'; this.style.borderColor='rgba(168, 85, 247, 0.25)';">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 28px;">${this.getBannerIcon(char.banner_type)}</span>
                 <div>
-                  <div style="font-weight: 700; color: #f3e8ff; font-size: 14px;">${this.escapeHtml(char.banner_name || 'Стандартный призыв (Постоянный пул)')}</div>
-                  <div style="font-size: 12px; color: var(--text-secondary); margin-top: 2px;">${this.getBannerDesc(char.banner_type, currentLang)}</div>
+                  <div style="font-weight: 700; color: #f3e8ff; font-size: 14.5px; display: flex; align-items: center; gap: 8px;">
+                    <span>${this.escapeHtml(char.banner_name || 'Стандартный призыв (Постоянный пул)')}</span>
+                    <span style="font-size: 11px; color: #c084fc;">➔</span>
+                  </div>
+                  <div style="font-size: 12px; color: #cbd5e1; margin-top: 2px;">${this.getBannerDesc(char.banner_type, currentLang)}</div>
                 </div>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
@@ -413,6 +413,9 @@ const CharactersView = {
                 })()}
                 <span class="tag-badge" style="background: rgba(168, 85, 247, 0.2); color: #d8b4fe; border: 1px solid rgba(168, 85, 247, 0.4); font-size: 12px; padding: 4px 12px; font-weight: 600;">
                   ${this.escapeHtml(char.banner_badge || '🔮 Базовый')}
+                </span>
+                <span class="action-btn secondary-btn" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.12); font-size: 11.5px; padding: 4px 10px; pointer-events: none;">
+                  ${currentLang === 'RU' ? 'Шансы в баннерах ➔' : (currentLang === 'CN' ? '卡池概率 ➔' : 'Banner Rates ➔')}
                 </span>
               </div>
             </div>
