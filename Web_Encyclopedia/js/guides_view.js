@@ -25661,6 +25661,9 @@ const GuidesView = {
     const mats = tile.materials?.[currentLang] || tile.materials?.RU || [];
     const rates = tile.rates || {};
     const dropsSummary = tile.drops_summary?.[currentLang] || tile.drops_summary?.RU || [];
+    const possibleChests = tile.possible_chests || [];
+    const possibleEquips = tile.possible_equips || [];
+    const descText = tile.description?.[currentLang] || tile.description?.RU || '';
 
     const catBadges = {
       chest: { bg: 'rgba(234, 179, 8, 0.15)', text: '#facc15', border: 'rgba(234, 179, 8, 0.3)', icon: '📦' },
@@ -25673,7 +25676,7 @@ const GuidesView = {
     const currentCatStyle = catBadges[cat] || catBadges.terrain;
 
     return `
-      <div class="modal-dialog map-tile-modal-dialog" style="max-width: 680px;">
+      <div class="modal-dialog map-tile-modal-dialog" style="max-width: 720px;">
         <div class="modal-header">
           <div class="modal-title-area">
             ${(typeof App !== 'undefined' && App.renderModalBackButton) ? App.renderModalBackButton(currentLang) : ''}
@@ -25692,7 +25695,7 @@ const GuidesView = {
                   📐 ${isRu ? 'Размер' : (isCn ? '尺寸' : 'Size')}: ${sizeStr}
                 </span>
                 <span class="tag-badge" style="background: rgba(255,255,255,0.06); color: var(--text-muted); font-size: 11px; padding: 2px 8px;">
-                  ID: ${tile.id}
+                  ID: ${tile.id} (${tile.code || tile.key || ''})
                 </span>
               </div>
             </div>
@@ -25701,11 +25704,20 @@ const GuidesView = {
         </div>
 
         <div class="modal-body" style="padding: 20px; display: flex; flex-direction: column; gap: 20px;">
+          <!-- Description & Lore -->
+          ${descText ? `
+            <div class="detail-section" style="margin-bottom: 0;">
+              <div style="background: rgba(0,0,0,0.2); padding: 12px 14px; border-radius: var(--radius-sm); font-size: 13.5px; line-height: 1.6; color: var(--text-secondary); border-left: 3px solid var(--primary);">
+                ${this.escapeHtml(descText)}
+              </div>
+            </div>
+          ` : ''}
+
           <!-- Drop Rates Breakdown -->
           <div class="detail-section" style="margin-bottom: 0;">
             <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between;">
               <span>📊 ${isRu ? 'Шансы и категории дропа' : (isCn ? '掉落概率与类别' : 'Drop Rates Breakdown')}</span>
-              <span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">Area_Spot Base Config</span>
+              <span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">Area_Spot Raw Weights</span>
             </div>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-top: 10px;">
               <div style="background: rgba(234, 179, 8, 0.08); border: 1px solid rgba(234, 179, 8, 0.2); border-radius: var(--radius-sm); padding: 10px; text-align: center;">
@@ -25735,19 +25747,65 @@ const GuidesView = {
             </div>
           </div>
 
-          <!-- Materials & Harvestables -->
+          <!-- Harvestable Materials -->
           ${mats.length > 0 ? `
             <div class="detail-section" style="margin-bottom: 0;">
               <div class="section-heading">🌿 ${isRu ? 'Добываемые материалы и ресурсы' : (isCn ? '可采集素材与产出' : 'Harvestable Materials')}</div>
               <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
                 ${mats.map(m => `
-                  <span class="tag-badge" 
+                  <span class="tag-badge clickable-badge" 
                         onclick="event.stopPropagation(); App.openItemModal('ingredients', '${this.escapeHtml(m)}')" 
                         title="${isRu ? 'Нажмите, чтобы открыть информацию о материале' : 'Click to view material'}"
-                        style="background: rgba(34, 197, 94, 0.12); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.35); font-size: 13px; padding: 5px 12px; cursor: pointer; transition: all 0.15s ease;">
+                        style="background: rgba(34, 197, 94, 0.12); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.35); font-size: 13px; padding: 6px 14px; cursor: pointer; transition: all 0.15s ease;">
                     💎 ${this.escapeHtml(m)}
                   </span>
                 `).join('')}
+              </div>
+            </div>
+          ` : ''}
+
+          <!-- Possible Chests -->
+          ${possibleChests.length > 0 && rates.chest > 0 ? `
+            <div class="detail-section" style="margin-bottom: 0;">
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between;">
+                <span>📦 ${isRu ? 'Возможные сундуки на тайле' : (isCn ? '可能出现的宝箱' : 'Possible Chests')} (${possibleChests.length})</span>
+                <span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">${isRu ? 'Кликните для просмотра лута' : 'Click chest to view loot'}</span>
+              </div>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
+                ${possibleChests.map(c => {
+                  const cName = c.name?.[currentLang] || c.name?.RU || c.id;
+                  return `
+                    <span class="tag-badge clickable-badge" 
+                          onclick="event.stopPropagation(); App.openItemModal('chests', '${c.id}')" 
+                          title="${this.escapeHtml(cName)} [${c.step}★]"
+                          style="background: rgba(234, 179, 8, 0.1); color: #facc15; border: 1px solid rgba(234, 179, 8, 0.35); padding: 5px 12px; font-size: 12px; cursor: pointer; transition: all 0.15s ease;">
+                      📦 ${this.escapeHtml(cName)} <span style="font-weight: 700; color: #fff;">[${c.step}★]</span>
+                    </span>
+                  `;
+                }).join('')}
+              </div>
+            </div>
+          ` : ''}
+
+          <!-- Possible Equipment -->
+          ${possibleEquips.length > 0 && rates.equip > 0 ? `
+            <div class="detail-section" style="margin-bottom: 0;">
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between;">
+                <span>⚔️ ${isRu ? 'Прямой дроп снаряжения в локации' : (isCn ? '可能掉落装备' : 'Direct Gear Drops')} (${possibleEquips.length})</span>
+                <span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">${isRu ? 'Кликните для характеристик' : 'Click gear for stats'}</span>
+              </div>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
+                ${possibleEquips.map(eq => {
+                  const eqName = eq.name?.[currentLang] || eq.name?.RU || eq.id;
+                  return `
+                    <span class="tag-badge clickable-badge" 
+                          onclick="event.stopPropagation(); App.openItemModal('equipment', '${eq.id}')" 
+                          title="${this.escapeHtml(eqName)} [${eq.step}★]"
+                          style="background: rgba(56, 189, 248, 0.1); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); padding: 5px 12px; font-size: 12px; cursor: pointer; transition: all 0.15s ease;">
+                      ⚔️ ${this.escapeHtml(eqName)} <span style="font-weight: 700; color: #fff;">[${eq.step}★]</span>
+                    </span>
+                  `;
+                }).join('')}
               </div>
             </div>
           ` : ''}
@@ -25768,7 +25826,7 @@ const GuidesView = {
 
           <!-- Drop Summary List -->
           <div class="detail-section" style="margin-bottom: 0;">
-            <div class="section-heading">🎁 ${isRu ? 'Подробная сводка дропа' : (isCn ? '详细掉落构成' : 'Detailed Drops Composition')}</div>
+            <div class="section-heading">🎁 ${isRu ? 'Сводка правил добычи' : (isCn ? '详细掉落构成' : 'Detailed Drops Composition')}</div>
             <div style="background: rgba(0,0,0,0.25); padding: 12px 16px; border-radius: var(--radius-sm); font-size: 13px; line-height: 1.8; color: var(--text-secondary);">
               ${dropsSummary.map(d => `<div>• ${this.escapeHtml(d)}</div>`).join('')}
             </div>
