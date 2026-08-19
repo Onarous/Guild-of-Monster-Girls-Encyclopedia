@@ -45345,9 +45345,9 @@ const GuidesView = {
                 : 'Spend gems <span style="color: #facc15; font-weight: 700;">only on Alter Summons</span> and high-end golden talent transfers (200 gems/swap). Never buy standard equipment for gems in the general shop.'}</li>
 
               <!-- Recommended Alter Priorities Block -->
-              <li style="background: rgba(168, 85, 247, 0.1); border-left: 3px solid #c084fc; padding: 8px 12px; border-radius: var(--radius-sm); margin: 6px 0;">
-                <strong style="color: #c084fc;">🔮 ${isRu ? 'Рекомендованные приоритеты Альтер-Найма:' : isCn ? '异格招募核心优先级：' : 'Recommended Alter Summon Priorities:'}</strong>
-                <div style="margin-top: 4px; line-height: 1.7; font-size: 13px;">
+              <li>
+                <strong>🔮 ${isRu ? 'Рекомендованные приоритеты Альтер-Найма:' : isCn ? '异格招募核心优先级：' : 'Recommended Alter Summon Priorities:'}</strong>
+                <div style="margin-top: 4px; line-height: 1.7;">
                   • 🥇 <strong>${isRu ? 'Приоритет №1 (LUK-Фарм и Золото):' : isCn ? '首要目标 (打宝与双倍金币):' : 'Top Priority #1 (LUK Farm & Gold):'}</strong> <span class="guide-entity-chip guide-chip-char" onclick="App.openCharacterModal('M13305_000')">🐰 Великая волшебница [Альтер] (M13305_000)</span> и <span class="guide-entity-chip guide-chip-char" onclick="App.openCharacterModal('M12205_000')">🌪️ Шагающая по ветру [Альтер] (M12205_000)</span>. Ключевые героини, конвертирующие удачу команды в урон и повышающие шанс редкого дропа (MF).<br>
                   • 🥈 <strong>${isRu ? 'Приоритет №2 (Мета-Керри Бездны):' : isCn ? '主力核心 (深渊真神):' : 'Priority #2 (Abyss Meta Carries):'}</strong> <span class="guide-entity-chip guide-chip-char" onclick="App.openCharacterModal('M53301_001')">❄️ Астральная Злодейка [Альтер] (M53301_001)</span> (также берется бесплатно на 30-й день входа) и <span class="guide-entity-chip guide-chip-char" onclick="App.openCharacterModal('M31301_001')">⚔️ Святая сабля [Альтер] (M31301_001)</span>.<br>
                   • ⚠️ <strong>${isRu ? 'Альтер-осколки:' : isCn ? '异格碎片规划:' : 'Alter Shards Warning:'}</strong> Для прокачки Альтера на 5★ требуется <strong>400 альтер-осколков</strong>. Строго копите их и не распыляйте на второстепенных героев!
