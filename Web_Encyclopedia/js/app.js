@@ -503,6 +503,21 @@ const App = {
       }
     }
 
+    // Load map tiles dataset
+    if (!this.state.mapTiles || this.state.mapTiles.length === 0) {
+      try {
+        const res = await fetch('data/map_tiles.json');
+        if (res.ok) {
+          this.state.mapTiles = await res.json();
+        }
+      } catch (e) {
+        console.warn("Could not fetch map_tiles.json:", e);
+      }
+      if ((!this.state.mapTiles || this.state.mapTiles.length === 0) && typeof GuidesView !== 'undefined' && GuidesView.defaultMapTiles) {
+        this.state.mapTiles = GuidesView.defaultMapTiles;
+      }
+    }
+
     // Load keywords/buffs dataset
     if (!this.state.keywords || this.state.keywords.length === 0) {
       try {
