@@ -23488,37 +23488,58 @@ const GuidesView = {
   }
 ],
 
+  activeSection: 'tips',
+  lastContainerId: 'guidesContainer',
   tilesFilter: 'all',
   tilesSearchQuery: '',
 
+  setSection(sectionId) {
+    this.activeSection = sectionId;
+    const lang = (typeof App !== 'undefined' && App.state?.lang) ? App.state.lang : 'RU';
+    const containerId = this.lastContainerId || 'guidesContainer';
+    this.render(containerId, lang);
+    if (typeof App !== 'undefined' && App.updateUrl) {
+      App.updateUrl('guides', sectionId);
+    }
+    const panel = document.querySelector('.guides-content-panel');
+    if (panel) {
+      panel.scrollTop = 0;
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  },
+
   setTilesFilter(filter) {
     this.tilesFilter = filter;
-    this.render();
+    const lang = (typeof App !== 'undefined' && App.state?.lang) ? App.state.lang : 'RU';
+    this.render(this.lastContainerId || 'guidesContainer', lang);
   },
 
   setTilesSearch(query) {
-    this.tilesSearchQuery = query;
-    this.render();
+    this.tilesSearchQuery = String(query).toLowerCase().trim();
+    const lang = (typeof App !== 'undefined' && App.state?.lang) ? App.state.lang : 'RU';
+    this.render(this.lastContainerId || 'guidesContainer', lang);
+    const searchInput = document.getElementById('tilesSearchInput');
+    if (searchInput) {
+      searchInput.focus();
+      searchInput.setSelectionRange(searchInput.value.length, searchInput.value.length);
+    }
   },
 
   setKeywordsFilter(filter) {
     this.keywordsFilter = filter;
-    const container = document.getElementById('guidesContainer');
-    if (container) {
-      this.render(container.id, App.state.lang);
-    }
+    const lang = (typeof App !== 'undefined' && App.state?.lang) ? App.state.lang : 'RU';
+    this.render(this.lastContainerId || 'guidesContainer', lang);
   },
 
   setKeywordsSearch(query) {
     this.keywordsSearchQuery = String(query).toLowerCase().trim();
-    const container = document.getElementById('guidesContainer');
-    if (container) {
-      this.render(container.id, App.state.lang);
-      const searchInput = document.getElementById('keywordSearchInput');
-      if (searchInput) {
-        searchInput.focus();
-        searchInput.setSelectionRange(searchInput.value.length, searchInput.value.length);
-      }
+    const lang = (typeof App !== 'undefined' && App.state?.lang) ? App.state.lang : 'RU';
+    this.render(this.lastContainerId || 'guidesContainer', lang);
+    const searchInput = document.getElementById('keywordSearchInput');
+    if (searchInput) {
+      searchInput.focus();
+      searchInput.setSelectionRange(searchInput.value.length, searchInput.value.length);
     }
   },
 
@@ -23553,9 +23574,14 @@ const GuidesView = {
     }
   },
 
-  render(containerId, currentLang = "RU") {
-    const container = document.getElementById(containerId);
+  render(containerId = null, currentLang = null) {
+    const targetId = containerId || this.lastContainerId || 'guidesContainer';
+    this.lastContainerId = targetId;
+    const container = document.getElementById(targetId);
     if (!container) return;
+
+    const currentAppLang = (typeof App !== 'undefined' && App.state?.lang) ? App.state.lang : 'RU';
+    const effectiveLang = currentLang || currentAppLang || 'RU';
 
     const lang = currentLang.toUpperCase();
     const isRu = lang === 'RU';
