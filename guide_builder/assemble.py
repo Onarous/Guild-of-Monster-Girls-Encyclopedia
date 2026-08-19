@@ -3,7 +3,7 @@
 Assembler script to construct the complete, enriched guides_view.js
 """
 
-import sys, os, re
+import sys, os, re, json
 
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -27,25 +27,18 @@ import resources
 import helpers
 
 TARGET_FILE = 'MonsterGirls_Account_Extractor/Web_Encyclopedia/js/guides_view.js'
+MAP_TILES_FILE = 'MonsterGirls_Account_Extractor/Web_Encyclopedia/data/map_tiles.json'
 
-with open(TARGET_FILE, 'r', encoding='utf-8') as f:
-    orig_text = f.read()
+with open(MAP_TILES_FILE, 'r', encoding='utf-8') as f:
+    tiles_data = json.load(f)
 
-# 1. Extract header and defaultMapTiles
-tiles_start_idx = orig_text.find('const defaultMapTiles = [')
-if tiles_start_idx == -1:
-    print("Error: could not find const defaultMapTiles")
-    sys.exit(1)
-
-# Find the closing ]; of defaultMapTiles
-# search for '];' starting from tiles_start_idx
-tiles_end_marker = "];"
-prev_bracket = orig_text.find(tiles_end_marker, tiles_start_idx)
-if prev_bracket == -1:
-    print("Error: could not find closing ]; of defaultMapTiles")
-    sys.exit(1)
-
-header_and_tiles = orig_text[:prev_bracket+2]
+header_and_tiles = (
+    "/**\n"
+    " * Guides View Component for Guild of Monster Girls Web Encyclopedia\n"
+    " * Contains all 14 Knowledge Base Chapters with rich interactive hero, item and tile drops.\n"
+    " */\n\n"
+    "const defaultMapTiles = " + json.dumps(tiles_data, ensure_ascii=False, indent=2) + ";"
+)
 
 # 2. Assemble all parts
 new_js_code = (
@@ -74,5 +67,4 @@ with open(TARGET_FILE, 'w', encoding='utf-8') as f:
     f.write(new_js_code)
 
 print(f"Successfully generated {TARGET_FILE}")
-print(f"Original size: {len(orig_text)} chars ({orig_text.count(chr(10))} lines)")
-print(f"New size: {len(new_js_code)} chars ({new_js_code.count(chr(10))} lines)")
+print(f"Size: {len(new_js_code)} chars ({new_js_code.count(chr(10))} lines)")

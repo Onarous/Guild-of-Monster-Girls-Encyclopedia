@@ -536,16 +536,43 @@ const ItemsView = {
 
   renderItemTileSources(item, currentLang = 'RU', category = null) {
     if (!item || category === 'bonds') return '';
-    if (!item) return '';
     const isRu = currentLang === 'RU';
     const isCn = currentLang === 'CN';
-    const allTiles = (typeof App !== 'undefined' && App.state?.mapTiles) ? App.state.mapTiles : ((typeof GuidesView !== 'undefined' && GuidesView.defaultMapTiles) ? GuidesView.defaultMapTiles : []);
-    const itemName = item.name || '';
-    if (!itemName) return '';
+    const allTiles = (typeof App !== 'undefined' && App.state?.mapTiles && App.state.mapTiles.length) 
+      ? App.state.mapTiles 
+      : ((typeof GuidesView !== 'undefined' && GuidesView.defaultMapTiles) ? GuidesView.defaultMapTiles : []);
     
+    const itemId = String(item.id || '');
+    const itemName = String(item.name || '').toLowerCase();
+    const itemArea = String(item.area_name || '').toLowerCase();
+
     const matchingTiles = allTiles.filter(t => {
-      const mats = t.materials?.[currentLang] || t.materials?.RU || [];
-      return mats.some(m => itemName.includes(m) || m.includes(itemName));
+      // 1. Direct equipment drop match
+      if (t.possible_equips && t.possible_equips.some(eq => eq.id === itemId || (typeof eq === 'string' && eq === itemId))) {
+        return true;
+      }
+      // 2. Direct chest drop match
+      if (t.possible_chests && t.possible_chests.some(ch => ch.id === itemId || (typeof ch === 'string' && ch === itemId))) {
+        return true;
+      }
+      // 3. Material match
+      const mats = Array.isArray(t.materials) ? t.materials : (t.materials?.[currentLang] || t.materials?.RU || t.materials?.CN || []);
+      if (mats.some(m => itemName && (itemName.includes(String(m).toLowerCase()) || String(m).toLowerCase().includes(itemName)))) {
+        return true;
+      }
+      // 4. Biome match for area-specific items
+      if (itemArea && itemArea !== '不限' && itemArea !== 'все зоны' && itemArea !== 'any zone') {
+        const biomes = Array.isArray(t.biomes) ? t.biomes : [
+          ...(t.biomes?.[currentLang] || []),
+          ...(t.biomes?.RU || []),
+          ...(t.biomes?.CN || []),
+          ...(t.biomes?.EN || [])
+        ];
+        if (biomes.some(b => String(b).toLowerCase() === itemArea || String(b).toLowerCase().includes(itemArea))) {
+          return true;
+        }
+      }
+      return false;
     });
     
     if (matchingTiles.length === 0) return '';
@@ -553,18 +580,19 @@ const ItemsView = {
     return `
       <div class="detail-section" style="margin-top: 15px;">
         <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between;">
-          <span>🗺️ ${isRu ? 'Источники на игровом поле (Тайлы)' : (isCn ? '地图产出地块' : 'Map Spot Sources')} (${matchingTiles.length})</span>
-          <span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">${isRu ? 'Нажмите для перехода к тайлу' : 'Click to view tile'}</span>
+          <span>🗺️ ${isRu ? 'Источники на карте приключений (Тайлы)' : (isCn ? '大地图探索产出地块' : 'Map Spot Sources')} (${matchingTiles.length})</span>
+          <span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">${isRu ? 'Кликните для перехода к тайлу' : 'Click to view tile'}</span>
         </div>
         <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; max-height: 180px; overflow-y: auto; padding: 4px;">
           ${matchingTiles.map(t => {
-            const tName = t.name?.[currentLang] || t.name?.RU || t.id;
+            const tName = typeof t.name === 'object' ? (t.name[currentLang] || t.name.RU || t.name.CN || t.id) : (t.name || t.id);
+            const icon = t.icon || (t.category === 'altar' ? '🏛️' : t.category === 'mimic' ? '🧰' : t.category === 'resource' ? '💎' : '🗺️');
             return `
               <span class="tag-badge clickable-badge" 
                     onclick="event.stopPropagation(); App.openTileModal('${t.id}')" 
                     title="${isRu ? 'Открыть карточку тайла' : 'Open tile card'}"
-                    style="background: rgba(56, 189, 248, 0.1); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.35); padding: 5px 12px; font-size: 12px; cursor: pointer; transition: all 0.15s ease;">
-                ${t.icon || '🗺️'} ${this.escapeHtml(tName)}
+                    style="background: rgba(56, 189, 248, 0.12); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.35); padding: 5px 12px; font-size: 12px; cursor: pointer; transition: all 0.15s ease; border-radius: var(--radius-sm);">
+                ${icon} ${this.escapeHtml(tName)}
               </span>
             `;
           }).join('')}
