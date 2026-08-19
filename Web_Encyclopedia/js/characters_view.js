@@ -115,7 +115,7 @@ const CharactersView = {
                   <span class="card-relic-name">${this.escapeHtml(primaryRelic.name)}</span>
                   <span class="tier-badge tier-${(primaryRelic.step || 's').toLowerCase()}" style="font-size: 9px; padding: 1px 5px;">${primaryRelic.step || 'S'}★</span>
                 </div>
-                <div class="card-relic-desc">${this.escapeHtml(primaryRelic.effect || primaryRelic.description || '')}</div>
+                <div class="card-relic-desc">${this.formatDesc(primaryRelic.effect || primaryRelic.description || '', (dict.starMilestone4||'').includes('прозрения')?'RU':'EN')}</div>
               </div>
             `;
           })()}
@@ -185,7 +185,7 @@ const CharactersView = {
             <span class="tag-badge">Hits: ${u.hit_times || 1}</span>
             <span class="tag-badge">Max: ${u.max_targets || 1}</span>
           </div>
-          <div class="skill-desc-text">${this.escapeHtml(u.description)}</div>
+          <div class="skill-desc-text">${this.formatDesc(u.description, currentLang)}</div>
           ${u.positive_tags ? `<div style="font-size: 11px; color: var(--text-muted); margin-top: 6px;">🏷️ <strong>Tags:</strong> ${this.escapeHtml(u.positive_tags)}</div>` : ''}
         </div>
       `).join('');
@@ -213,7 +213,7 @@ const CharactersView = {
               <span>${item.icon} ${this.escapeHtml(traitObj.name)}</span>
               <span class="tag-badge" style="font-size: 10px;">${item.label || item.key}</span>
             </div>
-            <div class="trait-desc">${this.escapeHtml(traitObj.effect || traitObj.description || '')}</div>
+            <div class="trait-desc">${this.formatDesc(traitObj.effect || traitObj.description || '', currentLang)}</div>
           </div>
         `;
       }
@@ -240,7 +240,7 @@ const CharactersView = {
                 ${tierBadge}
               </div>
             </div>
-            <div class="trait-desc">${this.escapeHtml(et.effect || et.description || '')}</div>
+            <div class="trait-desc">${this.formatDesc(et.effect || et.description || '', currentLang)}</div>
           </div>
         `;
       }).join('');
@@ -585,7 +585,7 @@ const CharactersView = {
             return `
               <div class="relic-level-row ${lvlClass}">
                 <span class="relic-level-badge ${lvlClass}">${badgeLabel}</span>
-                <span class="relic-level-effect ${isMax ? 'lvl-3' : ''}">${this.escapeHtml(lv.effect)}</span>
+                <span class="relic-level-effect ${isMax ? 'lvl-3' : ''}">${this.formatDesc(lv.effect, currentLang)}</span>
               </div>
             `;
           }).join('')}
@@ -611,6 +611,12 @@ const CharactersView = {
     if (el.includes('свет') || el.includes('light')) return 'elem-light';
     if (el.includes('тьма') || el.includes('dark')) return 'elem-dark';
     return '';
+  },
+
+  formatDesc(str, lang = null) {
+    if (!str) return '';
+    const escaped = this.escapeHtml(str);
+    return (typeof App !== 'undefined' && App.linkifyBuffs) ? App.linkifyBuffs(escaped, lang) : escaped;
   },
 
   escapeHtml(str) {

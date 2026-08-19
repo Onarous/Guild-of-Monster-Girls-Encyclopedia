@@ -293,13 +293,13 @@ const ItemsView = {
 
         ${eq.pure_bond ? `
           <div class="item-bond-box">
-            🔗 <strong>${this.escapeHtml(eq.pure_bond.name)}:</strong> ${this.escapeHtml(eq.pure_bond.effect)}
+            🔗 <strong>${this.escapeHtml(eq.pure_bond.name)}:</strong> ${this.formatDesc(eq.pure_bond.effect, (dict.starMilestone4||'').includes('прозрения')?'RU':'EN')}
           </div>
         ` : ''}
 
         ${eq.enhance_ability ? `
           <div class="item-enhance-box">
-            ⚡ <strong>${this.escapeHtml(eq.enhance_ability.name)}:</strong> ${this.escapeHtml(eq.enhance_ability.effect)}
+            ⚡ <strong>${this.escapeHtml(eq.enhance_ability.name)}:</strong> ${this.formatDesc(eq.enhance_ability.effect, (dict.starMilestone4||'').includes('прозрения')?'RU':'EN')}
           </div>
         ` : ''}
         <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(eq, 'equipment', (dict.starMilestone4||'').includes('прозрения')?'RU':((dict.starMilestone4||'').includes('信物')?'CN':'EN')))}">
@@ -355,7 +355,7 @@ const ItemsView = {
               return `
                 <div class="relic-level-row ${lvlClass}" style="padding: 4px 8px; font-size: 11.5px;">
                   <span class="relic-level-badge ${lvlClass}" style="font-size: 10px; padding: 1.5px 6px;">${badgeLabel}</span>
-                  <span class="relic-level-effect ${isMax ? 'lvl-3' : ''}" style="font-size: 11.5px;">${this.escapeHtml(lv.effect)}</span>
+                  <span class="relic-level-effect ${isMax ? 'lvl-3' : ''}" style="font-size: 11.5px;">${this.formatDesc(lv.effect, currentLang)}</span>
                 </div>
               `;
             }).join('')}
@@ -408,7 +408,7 @@ const ItemsView = {
         </div>
 
         <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">
-          ${this.escapeHtml(rn.description)}
+          ${this.formatDesc(rn.description, (dict.starMilestone4||'').includes('прозрения')?'RU':'EN')}
         </div>
         <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(rn, 'runes', (dict.starMilestone4||'').includes('прозрения')?'RU':((dict.starMilestone4||'').includes('信物')?'CN':'EN')))}">
           <span class="item-source-label">📍 ${dict.acquisitionLabel || 'Получение'}:</span>
@@ -488,7 +488,7 @@ const ItemsView = {
         </div>
 
         <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">
-          ${this.escapeHtml(bd.effect_desc || bd.basic_desc)}
+          ${this.formatDesc(bd.effect_desc || bd.basic_desc, (dict.starMilestone4||'').includes('прозрения')?'RU':'EN')}
         </div>
         <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(bd, 'bonds', (dict.starMilestone4||'').includes('прозрения')?'RU':((dict.starMilestone4||'').includes('信物')?'CN':'EN')))}">
           <span class="item-source-label">📍 ${dict.acquisitionLabel || 'Получение'}:</span>
@@ -527,7 +527,7 @@ const ItemsView = {
         </div>
 
         <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">
-          ${this.escapeHtml(item.description || item.effect || '')}
+          ${this.formatDesc(item.description || item.effect || '', (dict.starMilestone4||'').includes('прозрения')?'RU':'EN')}
         </div>
         <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(item, category, (dict.starMilestone4||'').includes('прозрения')?'RU':((dict.starMilestone4||'').includes('信物')?'CN':'EN')))}">
           <span class="item-source-label">📍 ${dict.acquisitionLabel || 'Получение'}:</span>
@@ -593,7 +593,7 @@ const ItemsView = {
               <div class="section-heading">🔗 ${dict.pureSetBond || 'Set Bond'}</div>
               <div class="item-bond-box" style="font-size: 13px; padding: 12px;">
                 <div style="font-weight: 700; color: #60a5fa; margin-bottom: 4px;">${this.escapeHtml(item.pure_bond.name)}</div>
-                <div>${this.escapeHtml(item.pure_bond.effect)}</div>
+                <div>${this.formatDesc(item.pure_bond.effect, currentLang)}</div>
               </div>
             </div>
           ` : ''}
@@ -603,7 +603,7 @@ const ItemsView = {
               <div class="section-heading">⚡ ${dict.uniqueEquipmentEffect || 'Special Effect'}</div>
               <div class="item-enhance-box" style="font-size: 13px; padding: 12px;">
                 <div style="font-weight: 700; color: #fbbf24; margin-bottom: 4px;">${this.escapeHtml(item.enhance_ability.name)}</div>
-                <div>${this.escapeHtml(item.enhance_ability.effect)}</div>
+                <div>${this.formatDesc(item.enhance_ability.effect, currentLang)}</div>
               </div>
             </div>
           ` : ''}
@@ -612,7 +612,7 @@ const ItemsView = {
             <div class="detail-section">
               <div class="section-heading">🔮 ${dict.effects || 'Effect'}</div>
               <div style="background: var(--bg-surface-elevated); padding: 12px; border-radius: var(--radius-md); font-size: 13px; line-height: 1.5; color: var(--text-primary);">
-                ${this.escapeHtml(item.effect)}
+                ${this.formatDesc(item.effect, currentLang)}
               </div>
             </div>
           ` : ''}
@@ -656,7 +656,7 @@ const ItemsView = {
                             </td>
                             <td>
                               <strong style="color: ${isMax ? '#fbbf24' : (lv.level === 2 ? '#60a5fa' : '#e2e8f0')};">
-                                ${this.escapeHtml(lv.effect)}
+                                ${this.formatDesc(lv.effect, currentLang)}
                               </strong>
                             </td>
                           </tr>
@@ -860,6 +860,12 @@ const ItemsView = {
         </div>
       </div>
     `;
+  },
+
+  formatDesc(str, lang = null) {
+    if (!str) return '';
+    const escaped = this.escapeHtml(str);
+    return (typeof App !== 'undefined' && App.linkifyBuffs) ? App.linkifyBuffs(escaped, lang) : escaped;
   },
 
   escapeHtml(str) {

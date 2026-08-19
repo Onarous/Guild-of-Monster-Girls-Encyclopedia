@@ -1337,6 +1337,89 @@ const App = {
     }
   },
 
+  openBuffModal(buffId, updateHash = true) {
+    if (!buffId) return;
+    const lang = this.state.lang || 'RU';
+    const buffs = this.state.keywords || [];
+    
+    // Find by id, code, key, or name
+    const q = String(buffId).toLowerCase().trim();
+    const buff = buffs.find(b => 
+      b.id.toLowerCase() === q || 
+      (b.code && b.code.toLowerCase() === q) || 
+      (b.key && b.key.toLowerCase() === q) ||
+      (b.name && b.name.RU && b.name.RU.toLowerCase() === q) ||
+      (b.name && b.name.EN && b.name.EN.toLowerCase() === q) ||
+      (b.name && b.name.CN && b.name.CN.toLowerCase() === q)
+    );
+    
+    if (!buff) return;
+
+    const modal = document.getElementById('detailModal');
+    if (!modal) return;
+    modal.dataset.modalType = 'buff';
+    modal.dataset.buffId = buff.id;
+    delete modal.dataset.charId;
+    delete modal.dataset.itemId;
+    delete modal.dataset.itemCat;
+
+    modal.innerHTML = GuidesView.renderBuffModal(buff, lang);
+    modal.classList.add('active');
+
+    if (updateHash) {
+      this.updateUrl('buff', buff.id);
+    }
+  },
+
+  linkifyBuffs(text, lang = null) {
+    if (!text || typeof text !== 'string') return text || '';
+    const currentLang = lang || this.state.lang || 'RU';
+    const buffs = this.state.keywords || [];
+    if (!buffs || buffs.length === 0) return text;
+
+    if (!this._buffRegexMap) this._buffRegexMap = {};
+    if (!this._buffRegexMap[currentLang]) {
+      const excluded = new Set([
+        'при атаке', 'при получении урона', 'действие', 'урон', 'цель', 'ход', 'стаки', 'стак',
+        'атака', 'защита', 'скорость', 'здоровье', 'макс. оз', 'оз', 'мана', 'прочность',
+        'action', 'turn', 'target', 'stacks', 'stack', 'damage', 'attack', 'defense', 'speed', 'hp', 'mana'
+      ]);
+
+      const termList = [];
+      for (const b of buffs) {
+        const rawName = (b.name && b.name[currentLang]) ? b.name[currentLang].split('(')[0].trim() : '';
+        if (rawName && rawName.length >= 2 && !excluded.has(rawName.toLowerCase())) {
+          termList.push({
+            term: rawName,
+            id: b.id,
+            name: b.name[currentLang],
+            icon: b.icon || '✨'
+          });
+        }
+      }
+      termList.sort((a, b) => b.term.length - a.term.length);
+
+      if (termList.length > 0) {
+        // Unicode lookaround boundary pattern
+        const regexStr = '(?<=^|[^\\p{L}\\p{N}_])(' + termList.map(t => t.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')(?=$|[^\\p{L}\\p{N}_])';
+        const termMap = {};
+        termList.forEach(t => { termMap[t.term.toLowerCase()] = t; });
+        this._buffRegexMap[currentLang] = { regex: new RegExp(regexStr, 'giu'), termMap };
+      } else {
+        this._buffRegexMap[currentLang] = null;
+      }
+    }
+
+    const mapData = this._buffRegexMap[currentLang];
+    if (!mapData) return text;
+
+    return text.replace(mapData.regex, (match) => {
+      const info = mapData.termMap[match.toLowerCase()];
+      if (!info) return match;
+      return `<span class="buff-link" onclick="event.stopPropagation(); App.openBuffModal('${info.id}')" title="✨ ${info.name}">✨ ${match}</span>`;
+    });
+  },
+
   openItemModal(category, id, updateHash = true) {
     if (!id || id === 'gold' || id === 'gems') return;
     const lang = this.state.lang || 'RU';

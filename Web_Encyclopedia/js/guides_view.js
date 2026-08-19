@@ -550,1091 +550,127 @@ const GuidesView = {
   getDamageContent(lang = "RU") {
     const isRu = lang === 'RU';
     const isCn = lang === 'CN';
+    const allKeywords = (typeof App !== 'undefined' && App.state?.keywords && App.state.keywords.length > 0) 
+      ? App.state.keywords 
+      : [];
 
-    const allKeywords = [
-      {
-            "id": "bloodlust",
-            "code": "T20005",
-            "icon": "🩸",
-            "cat": "buff",
-            "name": {
-                  "RU": "Жажда крови (Bloodlust)",
-                  "EN": "Bloodlust",
-                  "CN": "嗜血"
-            },
-            "desc": {
-                  "RU": "Каждый стак увеличивает общий наносимый урон (Total DMG) на 1. Применяется к каждому удару в многоударных сериях и масштабируется по каждой цели в зависимости от наносимого урона. Расходуется после срабатывания.",
-                  "EN": "Each stack increases total DMG dealt by 1. Applies to each hit in multi-hit attacks and scales per target based on DMG dealt. Consumed after taking effect.",
-                  "CN": "每层增加造成的最终伤害1点。在多段攻击中作用于每一击，并按造成的伤害对每个目标独立生效。生效后消耗。"
-            },
-            "type": {
-                  "RU": "Расходный бафф",
-                  "EN": "Consumed on hit",
-                  "CN": "消耗型增益"
-            },
-            "element": "Fire / Neutral",
-            "priority": "High"
-      },
-      {
-            "id": "faith",
-            "code": "T20008",
-            "icon": "🙏",
-            "cat": "buff",
-            "name": {
-                  "RU": "Вера (Faith)",
-                  "EN": "Faith",
-                  "CN": "信仰"
-            },
-            "desc": {
-                  "RU": "Каждые 5 стаков на юните увеличивают общее восстанавливаемое им здоровье (Total HP Restored) другим союзникам на 1. Постоянный эффект (не сбрасывается при лечении).",
-                  "EN": "Every 5 stacks on the unit increases their total HP restored to other targets by 1. Persistent effect.",
-                  "CN": "角色身上每拥有5层信仰，为其他友方恢复的总生命值提升1点。常驻增益（治疗时不消耗）。"
-            },
-            "type": {
-                  "RU": "Постоянный бафф",
-                  "EN": "Persistent",
-                  "CN": "常驻增益"
-            },
-            "element": "Light",
-            "priority": "Normal"
-      },
-      {
-            "id": "growth",
-            "code": "T20015",
-            "icon": "🌱",
-            "cat": "buff",
-            "name": {
-                  "RU": "Рост (Growth)",
-                  "EN": "Growth",
-                  "CN": "成长"
-            },
-            "desc": {
-                  "RU": "Каждый стак перманентно увеличивает максимальный запас здоровья (Max HP) носителя на 1. Постоянный эффект.",
-                  "EN": "Each stack increases Max HP by 1. Persistent effect.",
-                  "CN": "每层使持有者的最大生命值上限提升1点。常驻增益。"
-            },
-            "type": {
-                  "RU": "Постоянный бафф",
-                  "EN": "Persistent",
-                  "CN": "常驻增益"
-            },
-            "element": "Earth",
-            "priority": "Normal"
-      },
-      {
-            "id": "haste",
-            "code": "T20003",
-            "icon": "⚡",
-            "cat": "buff",
-            "name": {
-                  "RU": "Ускорение (Haste)",
-                  "EN": "Haste",
-                  "CN": "迅捷"
-            },
-            "desc": {
-                  "RU": "Каждый стак увеличивает скорость юнита (SPD) на 1. Определяет очередность ходов в раунде. Постоянный эффект.",
-                  "EN": "Each stack grants the target 1 SPD. Determines turn order within the round. Persistent effect.",
-                  "CN": "每层为目标增加1点速度（SPD），决定回合内的行动先后顺序。常驻增益。"
-            },
-            "type": {
-                  "RU": "Постоянный бафф",
-                  "EN": "Persistent",
-                  "CN": "常驻增益"
-            },
-            "element": "Wind",
-            "priority": "High"
-      },
-      {
-            "id": "precision",
-            "code": "T20004",
-            "icon": "🎯",
-            "cat": "buff",
-            "name": {
-                  "RU": "Меткость (Precision)",
-                  "EN": "Precision",
-                  "CN": "精准"
-            },
-            "desc": {
-                  "RU": "Каждые 5 стаков увеличивают урон дополнительных атак (Follow-Up DMG) на 1. Заставляет цель отдавать приоритет атаке задней линии противника (Back row). Постоянный эффект.",
-                  "EN": "Every 5 stacks increase Follow-Up DMG by 1. Target prioritizes attacking back position. Persistent effect.",
-                  "CN": "每5层提升追加攻击（追击）伤害1点。使目标攻击时优先锁定敌方后排核心。常驻增益。"
-            },
-            "type": {
-                  "RU": "Постоянный бафф",
-                  "EN": "Persistent",
-                  "CN": "常驻增益"
-            },
-            "element": "Wind",
-            "priority": "Normal"
-      },
-      {
-            "id": "regen",
-            "code": "T30002",
-            "icon": "💚",
-            "cat": "buff",
-            "name": {
-                  "RU": "Регенерация (Regen)",
-                  "EN": "Regen",
-                  "CN": "再生"
-            },
-            "desc": {
-                  "RU": "Каждый стак восстанавливает 1 HP в конце действия юнита (до 20% от Max HP за одно срабатывание). Расходуется после применения.",
-                  "EN": "Each stack restores 1 HP at action end, up to 20% of Max HP per instance. Consumed after taking effect.",
-                  "CN": "行动结束时每层恢复1点生命值，单次上限为最大生命值的20%。生效后消耗。"
-            },
-            "type": {
-                  "RU": "Расходный бафф",
-                  "EN": "Consumed on action",
-                  "CN": "回合末消耗"
-            },
-            "element": "Water / Earth",
-            "priority": "Normal"
-      },
-      {
-            "id": "shield",
-            "code": "T20006",
-            "icon": "🛡️",
-            "cat": "buff",
-            "name": {
-                  "RU": "Щит (Shield)",
-                  "EN": "Shield",
-                  "CN": "护盾"
-            },
-            "desc": {
-                  "RU": "Каждый стак поглощает 1 единицу входящего прямого урона (Total DMG taken). Применяется к каждому удару в многоударных сериях. Расходуется по мере получения урона. Не защищает от чистой потери HP (HP Loss).",
-                  "EN": "Each stack reduces total DMG taken by 1. Applies to each hit in multi-hit attacks. Consumed upon taking damage. Does not block HP Loss.",
-                  "CN": "每层抵扣1点受到的总伤害。多段受击中每段均可抵扣。受击后按伤害点数消耗。无法抵挡纯扣血（HP Loss）。"
-            },
-            "type": {
-                  "RU": "Поглощающий бафф",
-                  "EN": "Consumed on hit",
-                  "CN": "受击抵扣"
-            },
-            "element": "Light / Earth",
-            "priority": "High"
-      },
-      {
-            "id": "soothe",
-            "code": "T30001",
-            "icon": "🕊️",
-            "cat": "buff",
-            "name": {
-                  "RU": "Успокоение (Soothe)",
-                  "EN": "Soothe",
-                  "CN": "抚慰"
-            },
-            "desc": {
-                  "RU": "Каждый стак снижает прямую потерю здоровья (HP Loss от кровотечения, яда и ожогов) на 1 единицу. Расходуется после срабатывания тика урона.",
-                  "EN": "Each stack reduces HP loss by 1. Mitigates DoT effects like Bleed, Poison, Burn. Consumed after taking effect.",
-                  "CN": "每层减免1点生命值流失（流血、灼烧等DoT扣血）。流失结算生效后消耗。"
-            },
-            "type": {
-                  "RU": "Расходный бафф",
-                  "EN": "Consumed on tick",
-                  "CN": "扣血减免"
-            },
-            "element": "Water",
-            "priority": "High"
-      },
-      {
-            "id": "thorns",
-            "code": "T20009",
-            "icon": "🌵",
-            "cat": "buff",
-            "name": {
-                  "RU": "Шипы / Возмездие (Thorns)",
-                  "EN": "Thorns",
-                  "CN": "荆棘"
-            },
-            "desc": {
-                  "RU": "При получении прямого удара наносит атакующему противнику ответный урон в размере накопленных стаков Шипов. Расходуется частично при контратаке.",
-                  "EN": "Deals retaliatory damage back to the attacker upon receiving a direct hit based on active Thorns stacks.",
-                  "CN": "受到直接攻击时，根据持有的荆棘层数反弹相应伤害给攻击者。"
-            },
-            "type": {
-                  "RU": "Отражающий бафф",
-                  "EN": "Reflect Buff",
-                  "CN": "反伤增益"
-            },
-            "element": "Earth",
-            "priority": "Normal"
-      },
-      {
-            "id": "burn",
-            "code": "T40003",
-            "icon": "🔥",
-            "cat": "debuff",
-            "name": {
-                  "RU": "Ожог (Burn)",
-                  "EN": "Burn",
-                  "CN": "灼烧"
-            },
-            "desc": {
-                  "RU": "Каждый стак наносит цели 1 ед. потери здоровья (HP Loss) в конце каждого действия. Пробивает щиты. Расходуется после каждого срабатывания.",
-                  "EN": "Each stack deals 1 HP loss at action end. Bypasses shields entirely. Consumed after taking effect.",
-                  "CN": "行动结束时每层造成1点生命值流失（HP Loss）。完全无视护盾。生效后消耗。"
-            },
-            "type": {
-                  "RU": "Периодический урон (DoT)",
-                  "EN": "DoT Debuff",
-                  "CN": "DoT持续伤害"
-            },
-            "element": "Fire",
-            "priority": "Normal"
-      },
-      {
-            "id": "chill",
-            "code": "T40004",
-            "icon": "❄️",
-            "cat": "debuff",
-            "name": {
-                  "RU": "Обморожение (Chill)",
-                  "EN": "Chill",
-                  "CN": "冰冻"
-            },
-            "desc": {
-                  "RU": "Каждый стак снижает скорость цели (SPD) на 1. При накоплении критического числа стаков может трансформироваться в полное Замораживание/Оглушение. Постоянный эффект.",
-                  "EN": "Each stack reduces target SPD by 1. Persistent debuff that slows down action order.",
-                  "CN": "每层降低目标1点速度（SPD），延后行动顺序。常驻减益。"
-            },
-            "type": {
-                  "RU": "Замедляющий дебафф",
-                  "EN": "Persistent Slow",
-                  "CN": "减速减益"
-            },
-            "element": "Water",
-            "priority": "Normal"
-      },
-      {
-            "id": "expose",
-            "code": "T40001",
-            "icon": "👁️",
-            "cat": "debuff",
-            "name": {
-                  "RU": "Раскрытие (Expose)",
-                  "EN": "Expose",
-                  "CN": "暴露"
-            },
-            "desc": {
-                  "RU": "Каждый стак снижает защиту цели (DEF) на 1. Повышает уязвимость цели к обычным физическим и магическим атакам. Постоянный эффект.",
-                  "EN": "Each stack reduces target DEF by 1. Increases incoming mitigated damage. Persistent effect.",
-                  "CN": "每层降低目标1点防御力（DEF）。提升目标受到的基础物理/魔法伤害。常驻减益。"
-            },
-            "type": {
-                  "RU": "Снижение защиты",
-                  "EN": "Armor Reduction",
-                  "CN": "破甲减益"
-            },
-            "element": "Dark / Earth",
-            "priority": "Normal"
-      },
-      {
-            "id": "hinder",
-            "code": "T40002",
-            "icon": "⛓️",
-            "cat": "debuff",
-            "name": {
-                  "RU": "Помеха (Hinder)",
-                  "EN": "Hinder",
-                  "CN": "阻碍"
-            },
-            "desc": {
-                  "RU": "Каждый стак снижает силу атаки цели (ATK) на 1. Ослабляет весь исходящий урон противника. Постоянный эффект.",
-                  "EN": "Each stack reduces target ATK by 1. Weakens all outgoing attack power. Persistent effect.",
-                  "CN": "每层降低目标1点攻击力（ATK）。削弱敌方造成的全部技能与普通攻击伤害。常驻减益。"
-            },
-            "type": {
-                  "RU": "Снижение атаки",
-                  "EN": "ATK Reduction",
-                  "CN": "减攻减益"
-            },
-            "element": "Dark",
-            "priority": "Normal"
-      },
-      {
-            "id": "shock",
-            "code": "T40005",
-            "icon": "⚡",
-            "cat": "debuff",
-            "name": {
-                  "RU": "Шок (Shock)",
-                  "EN": "Shock",
-                  "CN": "感电"
-            },
-            "desc": {
-                  "RU": "Каждый стак увеличивает входящий урон от стихийных реакций молнии и наносит дополнительный урон при получении ударов. Расходуется при атаке.",
-                  "EN": "Amplifies electric element reaction damage and deals bonus damage upon receiving hits. Consumed on trigger.",
-                  "CN": "提升受到的雷元素连锁伤害，并在受到攻击时触发额外电击伤害。触发后消耗。"
-            },
-            "type": {
-                  "RU": "Стихийный дебафф",
-                  "EN": "Elemental Debuff",
-                  "CN": "元素易伤"
-            },
-            "element": "Light / Wind",
-            "priority": "High"
-      },
-      {
-            "id": "slow",
-            "code": "T40006",
-            "icon": "🐌",
-            "cat": "debuff",
-            "name": {
-                  "RU": "Замедление (Slow)",
-                  "EN": "Slow",
-                  "CN": "迟缓"
-            },
-            "desc": {
-                  "RU": "Существенно снижает базовую инициативу и сдвигает ход цели в самый конец очереди раунда.",
-                  "EN": "Reduces target speed and pushes action phase to the end of the combat queue.",
-                  "CN": "大幅削减基础速度，将目标行动顺位延后至回合末尾。"
-            },
-            "type": {
-                  "RU": "Контроль очереди",
-                  "EN": "Turn Delay",
-                  "CN": "顺位延后"
-            },
-            "element": "Earth",
-            "priority": "High"
-      },
-      {
-            "id": "stun",
-            "code": "T10001",
-            "icon": "💫",
-            "cat": "debuff",
-            "name": {
-                  "RU": "Оглушение (Stun)",
-                  "EN": "Stun",
-                  "CN": "眩晕"
-            },
-            "desc": {
-                  "RU": "Полностью лишает цель возможности действовать в текущем раунде. Цель пропускает свой ход и не восстанавливает Action Mana. Снимается после завершения раунда или при очищении.",
-                  "EN": "Target cannot take actions during the afflicted turn. Skips attack phase and generates no action mana.",
-                  "CN": "强控状态。目标在当前回合内完全无法行动，跳过出手机会且不产生行动魔力。回合结束或被净化后解除。"
-            },
-            "type": {
-                  "RU": "Полный контроль (Hard CC)",
-                  "EN": "Hard CC",
-                  "CN": "强力控制"
-            },
-            "element": "Neutral",
-            "priority": "Highest"
-      },
-      {
-            "id": "taunt",
-            "code": "T10009",
-            "icon": "📢",
-            "cat": "debuff",
-            "name": {
-                  "RU": "Провокация (Taunt)",
-                  "EN": "Taunt",
-                  "CN": "嘲讽"
-            },
-            "desc": {
-                  "RU": "Принуждает цель атаковать только применившего провокацию танка, игнорируя стандартные правила таргетинга (Nearest/Furthest/Lowest HP).",
-                  "EN": "Forces affected enemies to target only the taunting tank, overriding default distance & priority rules.",
-                  "CN": "嘲讽强制控制。受影响的敌方必须优先攻击施加嘲讽的坦克角色，无视原有的前后排与残血索敌规则。"
-            },
-            "type": {
-                  "RU": "Контроль цели",
-                  "EN": "Target Redirection",
-                  "CN": "索敌重定向"
-            },
-            "element": "Earth",
-            "priority": "Highest"
-      },
-      {
-            "id": "vulnerable",
-            "code": "T40007",
-            "icon": "💔",
-            "cat": "debuff",
-            "name": {
-                  "RU": "Уязвимость (Vulnerable)",
-                  "EN": "Vulnerable",
-                  "CN": "易伤"
-            },
-            "desc": {
-                  "RU": "Каждый стак увеличивает получаемый целью урон (Total DMG taken) на 1 ед. за каждый полученный удар. Применяется сверх снижения брони (DEF). Расходуется после получения урона.",
-                  "EN": "Each stack increases total DMG taken by 1 per hit instance. Added on top of defense mitigation. Consumed on hit.",
-                  "CN": "受击时每层使受到的总伤害增加1点。在护甲减免结算后额外累加。受击后按层消耗。"
-            },
-            "type": {
-                  "RU": "Прямое увеличение урона",
-                  "EN": "Damage Amp",
-                  "CN": "伤害放大"
-            },
-            "element": "Dark",
-            "priority": "High"
-      },
-      {
-            "id": "cleanse",
-            "code": "T50005",
-            "icon": "✨",
-            "cat": "instant",
-            "name": {
-                  "RU": "Очищение (Cleanse)",
-                  "EN": "Cleanse",
-                  "CN": "净化"
-            },
-            "desc": {
-                  "RU": "Мгновенно снимает отрицательные статусы, стаки дебаффов (Burn, Chill, Expose, Hinder, Vulnerable) и эффекты контроля с союзников.",
-                  "EN": "Instantly removes negative debuffs, DoT stacks, and crowd control effects from allied units.",
-                  "CN": "瞬间清除友方身上的负面减益状态、持续伤害层数及控制效果。"
-            },
-            "type": {
-                  "RU": "Мгновенное снятие",
-                  "EN": "Instant Cleanse",
-                  "CN": "瞬间驱散"
-            },
-            "element": "Light / Water",
-            "priority": "Highest"
-      },
-      {
-            "id": "decay",
-            "code": "T50002",
-            "icon": "💀",
-            "cat": "instant",
-            "name": {
-                  "RU": "Распад / Увядание (Decay)",
-                  "EN": "Decay",
-                  "CN": "衰减/腐朽"
-            },
-            "desc": {
-                  "RU": "Мгновенно снижает эффективность входящего лечения цели на 50–100%. Блокирует восстановление HP саппортами.",
-                  "EN": "Instantly reduces healing received by target by 50-100%, countering enemy sustain.",
-                  "CN": "瞬间大幅降低目标受到的治疗恢复效果（禁疗/重伤），克制敌方治疗回血流。"
-            },
-            "type": {
-                  "RU": "Антихил",
-                  "EN": "Anti-Heal",
-                  "CN": "治疗抑制"
-            },
-            "element": "Dark",
-            "priority": "High"
-      },
-      {
-            "id": "fear",
-            "code": "T10006",
-            "icon": "😱",
-            "cat": "instant",
-            "name": {
-                  "RU": "Страх (Fear)",
-                  "EN": "Fear",
-                  "CN": "恐惧"
-            },
-            "desc": {
-                  "RU": "Мгновенно сбивает каст ультимейта, сжигает часть накопленной маны цели и отбрасывает её ход в очереди.",
-                  "EN": "Disrupts ultimate skill charging, drains action mana, and delays turn priority.",
-                  "CN": "打断大招蓄力，削减目标已积累的魔力并延后其行动轮次。"
-            },
-            "type": {
-                  "RU": "Сбив каста / Манаберн",
-                  "EN": "Interrupt & Mana Burn",
-                  "CN": "打断与削魔"
-            },
-            "element": "Dark",
-            "priority": "High"
-      },
-      {
-            "id": "fortitude",
-            "code": "T20016",
-            "icon": "🏰",
-            "cat": "instant",
-            "name": {
-                  "RU": "Стойкость / Несгибаемость (Fortitude)",
-                  "EN": "Fortitude",
-                  "CN": "坚韧"
-            },
-            "desc": {
-                  "RU": "Предотвращает фатальный урон при падении здоровья до 0, оставляя 1 HP и даруя временную неуязвимость на 1 действие.",
-                  "EN": "Prevents lethal fatal damage when HP drops to 0, retaining 1 HP with brief invulnerability.",
-                  "CN": "致命伤害免疫。当生命值降至0时保留1点血量并获得短暂免死护盾。"
-            },
-            "type": {
-                  "RU": "Защита от смерти",
-                  "EN": "Death Immunity",
-                  "CN": "名刀免死"
-            },
-            "element": "Light / Earth",
-            "priority": "Highest"
-      },
-      {
-            "id": "inspire",
-            "code": "T50003",
-            "icon": "🎺",
-            "cat": "instant",
-            "name": {
-                  "RU": "Воодушевление (Inspire)",
-                  "EN": "Inspire",
-                  "CN": "鼓舞"
-            },
-            "desc": {
-                  "RU": "Мгновенно передает союзнику дополнительную ману (Action Mana) или дает право немедленного внеочередного действия.",
-                  "EN": "Instantly grants bonus Action Mana or triggers an immediate out-of-turn action for the ally.",
-                  "CN": "瞬间为友方充能行动魔力，或立即触发一次额外的插队行动回合。"
-            },
-            "type": {
-                  "RU": "Заливка маны / Ресет",
-                  "EN": "Mana Battery",
-                  "CN": "魔力充能"
-            },
-            "element": "Light",
-            "priority": "High"
-      },
-      {
-            "id": "reversal",
-            "code": "T50004",
-            "icon": "🔄",
-            "cat": "instant",
-            "name": {
-                  "RU": "Обращение / Инверсия (Reversal)",
-                  "EN": "Reversal",
-                  "CN": "逆转"
-            },
-            "desc": {
-                  "RU": "Конвертирует входящие дебаффы в положительные баффы (например, Ожог/Раскрытие превращаются в Регенерацию/Щит).",
-                  "EN": "Transforms incoming negative debuffs into positive buffs upon trigger.",
-                  "CN": "机制逆转：将受到的负面减益状态反转转化为对应的增益Buff（如流血转再生）。"
-            },
-            "type": {
-                  "RU": "Инверсия эффектов",
-                  "EN": "Debuff to Buff",
-                  "CN": "状态逆转"
-            },
-            "element": "Light / Dark",
-            "priority": "High"
-      },
-      {
-            "id": "stat_all",
-            "code": "STAT_ALL",
-            "icon": "📊",
-            "cat": "stat",
-            "name": {
-                  "RU": "Все характеристики (All Stats)",
-                  "EN": "All Stats",
-                  "CN": "全属性"
-            },
-            "desc": {
-                  "RU": "Комплексное увеличение сразу всех базовых характеристик: ATK, DEF, HP, SPD и LUK.",
-                  "EN": "Simultaneously increases all core attributes: ATK, DEF, HP, SPD, and LUK.",
-                  "CN": "同时提升基础攻击、防御、生命上限、速度与幸运等全维度基础属性。"
-            },
-            "type": {
-                  "RU": "Базовые статы",
-                  "EN": "Core Stats",
-                  "CN": "基础全属性"
-            },
-            "element": "Neutral",
-            "priority": "Normal"
-      },
-      {
-            "id": "stat_atk",
-            "code": "STAT_ATK",
-            "icon": "⚔️",
-            "cat": "stat",
-            "name": {
-                  "RU": "Сила атаки (ATK)",
-                  "EN": "Attack (ATK)",
-                  "CN": "攻击力"
-            },
-            "desc": {
-                  "RU": "Определяет базовую мощь ударов, навыков и масштабирование большинства дамажащих способностей.",
-                  "EN": "Primary scaling stat governing base damage for normal attacks and active skills.",
-                  "CN": "核心输出属性，直接决定普通攻击与大多数主动终结技的基础伤害基数。"
-            },
-            "type": {
-                  "RU": "Боевой стат",
-                  "EN": "Offensive Stat",
-                  "CN": "攻击属性"
-            },
-            "element": "Neutral",
-            "priority": "Normal"
-      },
-      {
-            "id": "stat_def",
-            "code": "STAT_DEF",
-            "icon": "🛡️",
-            "cat": "stat",
-            "name": {
-                  "RU": "Защита (DEF)",
-                  "EN": "Defense (DEF)",
-                  "CN": "防御力"
-            },
-            "desc": {
-                  "RU": "Снижает входящий прямой физический и магический урон по формуле: Damage = Attack × (100 / (100 + DEF)). Не защищает от чистой потери HP.",
-                  "EN": "Mitigates incoming physical and magical damage via defense mitigation formula. Does not block HP Loss.",
-                  "CN": "减免受到的直接物理与魔法伤害。减免公式受护甲收益递减规律影响，无法抵御纯扣血。"
-            },
-            "type": {
-                  "RU": "Защитный стат",
-                  "EN": "Defensive Stat",
-                  "CN": "防御属性"
-            },
-            "element": "Neutral",
-            "priority": "Normal"
-      },
-      {
-            "id": "stat_luck",
-            "code": "STAT_LUCK",
-            "icon": "🍀",
-            "cat": "stat",
-            "name": {
-                  "RU": "Удача (Luck / LUK)",
-                  "EN": "Luck (LUK)",
-                  "CN": "幸运"
-            },
-            "desc": {
-                  "RU": "Влияет на критический шанс, шанс уклонения, а также повышает результат броска кубика D20 после победы в подземельях (+1 к роллу за каждые 15 LUK).",
-                  "EN": "Governs critical strike rate, evasion chance, and grants +1 bonus per 15 LUK to end-of-battle D20 dungeon loot rolls.",
-                  "CN": "影响暴击率、闪避率，并在副本结算时为D20战利品掷骰提供加成（每15点幸运+1投骰点数）。"
-            },
-            "type": {
-                  "RU": "Особый стат",
-                  "EN": "Utility Stat",
-                  "CN": "特殊功能属性"
-            },
-            "element": "Light",
-            "priority": "Normal"
-      },
-      {
-            "id": "stat_spd",
-            "code": "STAT_SPD",
-            "icon": "👟",
-            "cat": "stat",
-            "name": {
-                  "RU": "Скорость / Инициатива (SPD)",
-                  "EN": "Speed (SPD)",
-                  "CN": "速度"
-            },
-            "desc": {
-                  "RU": "Определяет порядок ходов персонажей в каждом раунде (от наивысшей к наименьшей SPD).",
-                  "EN": "Determines chronological action sequence within each combat turn cycle (highest to lowest).",
-                  "CN": "决定每个战斗回合内全场所有角色的先后出手顺位（由高到低依次行动）。"
-            },
-            "type": {
-                  "RU": "Инициатива",
-                  "EN": "Initiative",
-                  "CN": "行动先手"
-            },
-            "element": "Wind",
-            "priority": "High"
-      },
-      {
-            "id": "stat_toughness",
-            "code": "STAT_TOUGHNESS",
-            "icon": "💎",
-            "cat": "stat",
-            "name": {
-                  "RU": "Прочность / Стойкость (Toughness)",
-                  "EN": "Toughness",
-                  "CN": "韧性/护盾厚度"
-            },
-            "desc": {
-                  "RU": "Особая шкала стойкости боссов и элитных врагов. При пробитии стойкости (Toughness Break) цель оглушается и получает повышенный урон.",
-                  "EN": "Special break gauge for elite bosses. Depleting toughness triggers Toughness Break, stunning the target and multiplying damage taken.",
-                  "CN": "首领与精英单位的韧性条。破韧（Toughness Break）后目标陷入虚弱瘫痪，受到全额破防高额增伤。"
-            },
-            "type": {
-                  "RU": "Шкала пробития",
-                  "EN": "Break Gauge",
-                  "CN": "破韧机制"
-            },
-            "element": "Neutral",
-            "priority": "High"
-      },
-      {
-            "id": "stat_weakness",
-            "code": "STAT_WEAKNESS",
-            "icon": "🎯",
-            "cat": "stat",
-            "name": {
-                  "RU": "Слабость / Уязвимость стихии (Weakness)",
-                  "EN": "Weakness",
-                  "CN": "弱点属性"
-            },
-            "desc": {
-                  "RU": "Стихийная уязвимость врага. Атаки соответствующей контр-стихией наносят +50% урона и ускоренно снимают шкалу стойкости.",
-                  "EN": "Elemental counter weakness. Matching counter element deals +50% bonus damage and rapidly breaks toughness gauge.",
-                  "CN": "目标弱点元素。使用克制元素攻击可造成额外50%克制增伤，并成倍加速削减韧性值。"
-            },
-            "type": {
-                  "RU": "Стихийная уязвимость",
-                  "EN": "Elemental Weakness",
-                  "CN": "元素克制弱点"
-            },
-            "element": "All",
-            "priority": "High"
-      },
-      {
-            "id": "mech_absorb",
-            "code": "MECH_ABSORB",
-            "icon": "🧲",
-            "cat": "mechanic",
-            "name": {
-                  "RU": "Поглощение урона (Absorb)",
-                  "EN": "Absorb",
-                  "CN": "伤害吸收"
-            },
-            "desc": {
-                  "RU": "Конвертирует часть полученного прямого урона в собственное лечение или восполнение маны.",
-                  "EN": "Converts a portion of incoming damage into direct healing or mana recovery.",
-                  "CN": "将受到的直接伤害按比例转化为自身的生命恢复或魔力充能。"
-            },
-            "type": {
-                  "RU": "Защитная механика",
-                  "EN": "Defensive Rule",
-                  "CN": "防御机制"
-            },
-            "element": "Dark / Water",
-            "priority": "Normal"
-      },
-      {
-            "id": "mech_followup",
-            "code": "MECH_FOLLOWUP",
-            "icon": "🎯",
-            "cat": "mechanic",
-            "name": {
-                  "RU": "Дополнительная атака (Follow-Up)",
-                  "EN": "Follow-Up Attack",
-                  "CN": "追加攻击/追击"
-            },
-            "desc": {
-                  "RU": "Внеочередной удар, срабатывающий автоматически после крита, контратаки или атаки союзника. Усиливается стаками Precision.",
-                  "EN": "Extra attack automatically triggered following crits, counters, or ally actions. Scaled by Precision stacks.",
-                  "CN": "在暴击、反击或队友出手后自动触发的额外追击伤害。受精准（Precision）层数加成。"
-            },
-            "type": {
-                  "RU": "Атакующая механика",
-                  "EN": "Offensive Trigger",
-                  "CN": "追击联动"
-            },
-            "element": "Wind",
-            "priority": "High"
-      },
-      {
-            "id": "mech_fixed",
-            "code": "MECH_FIXED",
-            "icon": "🗡️",
-            "cat": "mechanic",
-            "name": {
-                  "RU": "Фиксированный / Чистый урон (Fixed Damage)",
-                  "EN": "Fixed Damage",
-                  "CN": "真实伤害/固定伤害"
-            },
-            "desc": {
-                  "RU": "Наносит точное значение урона, полностью игнорируя показатель защиты цели (DEF) и проценты сопротивления (Damage Reduction).",
-                  "EN": "Deals precise unmitigated damage, bypassing both target Defense (DEF) and percentage Damage Reduction.",
-                  "CN": "完全无视目标的护甲防御（DEF）与百分比免伤减免，直接扣除等量真实血量。"
-            },
-            "type": {
-                  "RU": "Чистый урон",
-                  "EN": "True Damage",
-                  "CN": "真实真伤"
-            },
-            "element": "Light / Dark",
-            "priority": "Highest"
-      },
-      {
-            "id": "mech_counter",
-            "code": "MECH_COUNTER",
-            "icon": "⚔️",
-            "cat": "mechanic",
-            "name": {
-                  "RU": "Контратака (Counter)",
-                  "EN": "Counterattack",
-                  "CN": "反击"
-            },
-            "desc": {
-                  "RU": "Автоматический немедленный ответный удар по атакующему при получении прямого попадания.",
-                  "EN": "Immediate retaliatory strike against the enemy initiator upon taking a direct hit.",
-                  "CN": "受到敌方直接命中时，立即无视轮次对攻击发起者进行一次即时反击。"
-            },
-            "type": {
-                  "RU": "Реакция",
-                  "EN": "Reaction",
-                  "CN": "受击反击"
-            },
-            "element": "Earth / Fire",
-            "priority": "Normal"
-      },
-      {
-            "id": "mech_action_mana",
-            "code": "MECH_ACTION_MANA",
-            "icon": "🔷",
-            "cat": "mechanic",
-            "name": {
-                  "RU": "Мана действия и Ультимейт (Action Mana)",
-                  "EN": "Action Mana",
-                  "CN": "行动魔力与大招"
-            },
-            "desc": {
-                  "RU": "Накапливается за совершение атак (+25 MP) и получение ударов (+15 MP). При достижении 100 MP персонаж активирует ультимейт.",
-                  "EN": "Accumulates through attacking (+25 MP) and taking damage (+15 MP). Triggers Ultimate Skill at 100 MP.",
-                  "CN": "通过主动攻击（+25点）与受击（+15点）积累。蓄满100点魔力时在下一次行动释放终极技能。"
-            },
-            "type": {
-                  "RU": "Ресурс боя",
-                  "EN": "Combat Resource",
-                  "CN": "大招能量体系"
-            },
-            "element": "Neutral",
-            "priority": "Highest"
-      },
-      {
-            "id": "mech_stacks",
-            "code": "MECH_STACKS",
-            "icon": "🔢",
-            "cat": "mechanic",
-            "name": {
-                  "RU": "Стекирование и Лимиты (Stacks & Caps)",
-                  "EN": "Stacks & Stacking Limits",
-                  "CN": "层数叠加与上限"
-            },
-            "desc": {
-                  "RU": "Большинство баффов и дебаффов в игре накапливаются в виде стаков. Расходные стаки тратятся за каждый удар, постоянные действуют до конца боя.",
-                  "EN": "Mechanic where buff/debuff effectiveness scales linearly with accumulated stack quantity.",
-                  "CN": "游戏绝大部分状态采用层数叠加机制。消耗型层数随出招抵扣，常驻型层数持续整场战斗。"
-            },
-            "type": {
-                  "RU": "Базовое правило",
-                  "EN": "Core Mechanic",
-                  "CN": "核心底层规则"
-            },
-            "element": "Neutral",
-            "priority": "Normal"
+    const activeFilter = this.keywordsFilter || 'all';
+    const searchQuery = (this.keywordsSearchQuery || '').toLowerCase().trim();
+
+    const filteredKeywords = allKeywords.filter(kw => {
+      if (activeFilter !== 'all' && kw.cat !== activeFilter) return false;
+      if (searchQuery) {
+        const name = (kw.name?.[lang] || kw.name?.RU || '').toLowerCase();
+        const desc = (kw.desc?.[lang] || kw.desc?.RU || '').toLowerCase();
+        const code = (kw.code || kw.key || '').toLowerCase();
+        if (!name.includes(searchQuery) && !desc.includes(searchQuery) && !code.includes(searchQuery)) {
+          return false;
+        }
       }
-];
-
-    const filter = this.keywordsFilter || 'all';
-    const query = this.keywordsSearchQuery || '';
-
-    const filteredKeywords = allKeywords.filter(item => {
-      const matchCat = filter === 'all' || item.cat === filter;
-      if (!matchCat) return false;
-      if (!query) return true;
-
-      const nameRu = (item.name.RU || '').toLowerCase();
-      const nameEn = (item.name.EN || '').toLowerCase();
-      const nameCn = (item.name.CN || '').toLowerCase();
-      const descRu = (item.desc.RU || '').toLowerCase();
-      const descEn = (item.desc.EN || '').toLowerCase();
-      const descCn = (item.desc.CN || '').toLowerCase();
-      const code = (item.code || '').toLowerCase();
-      const elem = (item.element || '').toLowerCase();
-
-      return nameRu.includes(query) || nameEn.includes(query) || nameCn.includes(query) ||
-             descRu.includes(query) || descEn.includes(query) || descCn.includes(query) ||
-             code.includes(query) || elem.includes(query);
+      return true;
     });
 
-    const counts = {
-      all: allKeywords.length,
-      buff: allKeywords.filter(k => k.cat === 'buff').length,
-      debuff: allKeywords.filter(k => k.cat === 'debuff').length,
-      instant: allKeywords.filter(k => k.cat === 'instant').length,
-      stat: allKeywords.filter(k => k.cat === 'stat').length,
-      mechanic: allKeywords.filter(k => k.cat === 'mechanic').length
+    const filterLabels = {
+      all: isRu ? `Все эффекты (${allKeywords.length})` : isCn ? `全部状态 (${allKeywords.length})` : `All (${allKeywords.length})`,
+      buff: isRu ? '🟢 Усиления (Баффы)' : isCn ? '🟢 正面增益' : '🟢 Buffs',
+      debuff: isRu ? '🔴 Ослабления (Дебаффы)' : isCn ? '🔴 负面减益' : '🔴 Debuffs',
+      control: isRu ? '💫 Контроль' : isCn ? '💫 控制状态' : '💫 Controls',
+      instant: isRu ? '⚡ Мгновенные' : isCn ? '⚡ 即时效果' : '⚡ Instants',
+      mechanic: isRu ? '⚙️ Механики' : isCn ? '⚙️ 战斗机制' : '⚙️ Mechanics'
     };
 
     return `
       <div class="guide-article">
-        <h2 class="guide-title">🛡️ ${isRu ? 'Урон, Защита, Баффы и Ключевые слова' : isCn ? '伤害计算、护盾增益与战斗词条字典' : 'Damage, Shields, Buffs & Keywords'}</h2>
+        <h2 class="guide-title">🛡️ ${isRu ? 'Урон, Защита и Интерактивный справочник Баффов' : isCn ? '伤害公式、护盾减免与全状态增益指南' : 'Damage Formulas, Shields & Buffs'}</h2>
         <p class="guide-lead">
           ${isRu 
-            ? 'Полный справочник боевых терминов, формул урона, баффов и дебаффов из официальной таблицы KeywordDataTable. Официальные данные механик KeywordDataTable.' 
+            ? 'Полный справочник всех 83 боевых статусов, баффов, дебаффов и формул расчёта урона. Кликните по любой карточке для открытия подробного окна с героями и предметами!' 
             : isCn 
-            ? '《魔物娘公会》底层战斗机制全景解析：伤害计算公式、全部增益Buff、减益Debuff及状态词条字典（基于 KeywordDataTable 数据表）。' 
-            : 'Comprehensive combat mechanics, damage mitigation formulas, buffs, debuffs, and gameplay keywords from KeywordDataTable.'}
+            ? '全83种战斗状态、增益、减益与伤害计算公式完整指南。点击任意状态卡片可打开关联角色与装备的详情弹窗！' 
+            : 'Comprehensive reference of all 83 combat statuses, buffs, debuffs, and damage formulas. Click any card to open detailed heroine and gear associations!'}
         </p>
 
-        <!-- Combat Core Damage Classifications -->
+        <!-- Formulas Section -->
         <div class="guide-card" style="border-left: 4px solid #38bdf8;">
-          <h3 style="color: #38bdf8; margin-top: 0;">📊 ${isRu ? 'Основные типы урона и формулы расчета' : isCn ? '核心伤害类型与结算规则' : 'Core Damage Types & Formulas'}</h3>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 12px;">
-            <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); padding: 12px; border-radius: var(--radius-sm);">
-              <div style="font-weight: 700; color: #f3e8ff; margin-bottom: 4px;">⚔️ ${isRu ? 'Обычный урон (Physical / Magic)' : isCn ? '常规物理/魔法伤害' : 'Standard Damage'}</div>
-              <div style="font-size: 12.5px; color: var(--text-secondary); line-height: 1.4;">
-                ${isRu 
-                  ? 'Снижается защитой цели (DEF) и процентом снижения урона: <code>Урон = Атака × (100 / (100 + DEF)) × (1 - DR%)</code>.' 
-                  : isCn 
-                  ? '受目标护甲 (DEF) 与百分比减伤 (DR%) 减免：<code>伤害 = 攻击 × (100 / (100 + 防御)) × (1 - 减伤率)</code>。' 
-                  : 'Mitigated by Defense (DEF) and Damage Reduction percentage (DR%).'}
-              </div>
-            </div>
-
-            <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); padding: 12px; border-radius: var(--radius-sm);">
-              <div style="font-weight: 700; color: #f87171; margin-bottom: 4px;">💔 ${isRu ? 'Уязвимость (Vulnerable)' : isCn ? '易伤直接追加 (Vulnerable)' : 'Vulnerable Damage'}</div>
-              <div style="font-size: 12.5px; color: var(--text-secondary); line-height: 1.4;">
-                ${isRu 
-                  ? 'Дополнительный урон от стаков Vulnerable добавляется <em>поверх</em> итоговой атаки независимо от величины DEF врага.' 
-                  : isCn 
-                  ? '易伤层数直接在护甲结算后累加于最终伤害之上，无视敌方的高额防御力。' 
-                  : 'Bonus damage applied on top of post-mitigation damage, bypassing defense.'}
-              </div>
-            </div>
-
-            <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); padding: 12px; border-radius: var(--radius-sm);">
-              <div style="font-weight: 700; color: #a855f7; margin-bottom: 4px;">🌀 ${isRu ? 'Вытягивание (Drain MP / HP)' : isCn ? '能量/生命吸取 (Drain)' : 'Drain MP / HP'}</div>
-              <div style="font-size: 12.5px; color: var(--text-secondary); line-height: 1.4;">
-                ${isRu 
-                  ? '<strong>Игнорирует Damage Reduction и лимиты урона!</strong> Наносит чистый урон даже металлическим и неуязвимым монстрам.' 
-                  : isCn 
-                  ? '<strong>完全无视百分比免伤与伤害上限！</strong> 可对高免伤和金属史莱姆类敌人造成全额真实伤害。' 
-                  : 'Bypasses damage reduction and damage caps. Inflicts direct unmitigated damage.'}
-              </div>
-            </div>
-
-            <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.06); padding: 12px; border-radius: var(--radius-sm);">
-              <div style="font-weight: 700; color: #fbbf24; margin-bottom: 4px;">🩸 ${isRu ? 'Потеря HP (HP Loss / DoT)' : isCn ? '生命值流失 (HP Loss / DoT)' : 'HP Loss (True DoT)'}</div>
-              <div style="font-size: 12.5px; color: var(--text-secondary); line-height: 1.4;">
-                ${isRu 
-                  ? '<strong>Полностью пробивает щиты!</strong> Кровотечение, ожоги и яд тикают на каждое действие и отнимают реальное здоровье.' 
-                  : isCn 
-                  ? '<strong>完全无视护盾穿透扣血！</strong> 流血、灼烧与中毒在每次行动结算时直接削减真实生命值。' 
-                  : 'Completely penetrates shields. Deals direct health reduction upon action trigger.'}
-              </div>
-            </div>
-          </div>
+          <h3 style="color: #38bdf8; display: flex; align-items: center; gap: 8px;">
+            <span>📐</span>
+            <span>${isRu ? '1. Формулы урона, Защиты и Пробития' : isCn ? '1. 伤害构成与攻防差值公式' : '1. Damage Formulas & Stat Checks'}</span>
+          </h3>
+          <ul class="guide-list">
+            <li><strong>${isRu ? 'Прямой урон (Direct DMG):' : isCn ? '直接伤害:' : 'Direct DMG:'}</strong> ${isRu ? '<code>Урон = Базовый урон + max(0, (АТК - ЗАЩ) / 5)</code>. Каждые 5 единиц разницы между АТК атакующего и ЗАЩ цели добавляют 1 ед. чистого урона.' : isCn ? '<code>伤害 = 基础伤害 + max(0, (攻击 - 防御) / 5)</code>。攻防差值每高出5点，额外提升1点伤害。' : '<code>DMG = Base DMG + max(0, (ATK - DEF) / 5)</code>. Every 5 points difference between ATK and DEF adds 1 pure damage.'}</li>
+            <li><strong>${isRu ? 'Многоударные серии:' : isCn ? '多段伤害机制:' : 'Multi-hit DMG:'}</strong> ${isRu ? 'Баффы урона (Жажда крови) и щиты (Щит) применяются к <em>каждому отдельному удару</em> серии!' : isCn ? '热血增伤与防护抵扣均对多段攻击的<em>每一击</em>生效！' : 'Bloodlust DMG boost and Shield reduction apply to <em>each hit</em> in a multi-hit sequence!'}</li>
+          </ul>
         </div>
 
-        <!-- Interactive Keywords & Buffs Explorer -->
-        <div class="guide-card" style="border-left: 4px solid #8b5cf6;">
-          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 14px;">
-            <div>
-              <h3 style="color: #c084fc; margin: 0 0 4px 0;">📖 ${isRu ? 'Справочник ключевых слов и баффов (KeywordDataTable)' : isCn ? '全量状态词条与增益/减益字典' : 'Keywords & Status Dictionary'}</h3>
-              <div style="font-size: 12.5px; color: var(--text-muted);">
-                ${isRu ? `Всего терминов: ${allKeywords.length} | Показано: ${filteredKeywords.length}` : isCn ? `收录总词条: ${allKeywords.length} | 当前显示: ${filteredKeywords.length}` : `Total Terms: ${allKeywords.length} | Displayed: ${filteredKeywords.length}`}
-              </div>
+        <!-- Interactive Buffs & Statuses Catalog -->
+        <div style="margin-top: 24px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 14px;">
+            <div style="font-size: 18px; font-weight: 800; color: #ffffff; display: flex; align-items: center; gap: 8px;">
+              <span>✨</span>
+              <span>${isRu ? 'Интерактивный справочник статусов' : isCn ? '状态与增益图鉴' : 'Interactive Status Catalog'} (${filteredKeywords.length})</span>
             </div>
-
-            <!-- Search input -->
-            <div style="position: relative; min-width: 220px;">
-              <input 
-                type="text" 
-                id="keywordSearchInput"
-                class="search-input" 
-                placeholder="${isRu ? 'Поиск баффа, ID (T20005) или эффекта...' : isCn ? '搜索状态、ID或关键词...' : 'Search buff, ID or effect...'}" 
-                value="${query}"
-                oninput="GuidesView.setKeywordsSearch(this.value)"
-                style="padding: 6px 30px 6px 12px; font-size: 13px; border-radius: var(--radius-md);"
-              >
-              ${query ? `
-                <button onclick="GuidesView.setKeywordsSearch('')" style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 14px;">✕</button>
-              ` : ''}
+            
+            <div style="position: relative; min-width: 220px; flex: 1; max-width: 320px;">
+              <input type="text" 
+                     id="keywordSearchInput" 
+                     placeholder="${isRu ? '🔍 Поиск по названию/описанию...' : isCn ? '🔍 搜索状态或效果...' : '🔍 Search buffs/mechanics...'}" 
+                     value="${this.escapeHtml(this.keywordsSearchQuery || '')}"
+                     oninput="GuidesView.setKeywordsSearch(this.value)"
+                     style="width: 100%; padding: 8px 12px; background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(168, 85, 247, 0.3); border-radius: var(--radius-sm); color: #ffffff; font-size: 13px;">
             </div>
           </div>
 
           <!-- Category Filter Pills -->
           <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
-            <button class="filter-pill ${filter === 'all' ? 'active' : ''}" onclick="GuidesView.setKeywordsFilter('all')">
-              🌐 ${isRu ? `Все (${counts.all})` : isCn ? `全部 (${counts.all})` : `All (${counts.all})`}
-            </button>
-            <button class="filter-pill ${filter === 'buff' ? 'active' : ''}" onclick="GuidesView.setKeywordsFilter('buff')">
-              🛡️ ${isRu ? `Баффы (${counts.buff})` : isCn ? `增益 Buff (${counts.buff})` : `Buffs (${counts.buff})`}
-            </button>
-            <button class="filter-pill ${filter === 'debuff' ? 'active' : ''}" onclick="GuidesView.setKeywordsFilter('debuff')">
-              💀 ${isRu ? `Дебаффы (${counts.debuff})` : isCn ? `减益 Debuff (${counts.debuff})` : `Debuffs (${counts.debuff})`}
-            </button>
-            <button class="filter-pill ${filter === 'instant' ? 'active' : ''}" onclick="GuidesView.setKeywordsFilter('instant')">
-              ⚡ ${isRu ? `Мгновенные (${counts.instant})` : isCn ? `瞬发机制 (${counts.instant})` : `Instants (${counts.instant})`}
-            </button>
-            <button class="filter-pill ${filter === 'stat' ? 'active' : ''}" onclick="GuidesView.setKeywordsFilter('stat')">
-              📊 ${isRu ? `Характеристики (${counts.stat})` : isCn ? `属性词条 (${counts.stat})` : `Stats (${counts.stat})`}
-            </button>
-            <button class="filter-pill ${filter === 'mechanic' ? 'active' : ''}" onclick="GuidesView.setKeywordsFilter('mechanic')">
-              ⚙️ ${isRu ? `Механики (${counts.mechanic})` : isCn ? `战斗机制 (${counts.mechanic})` : `Mechanics (${counts.mechanic})`}
-            </button>
+            ${['all', 'buff', 'debuff', 'control', 'instant', 'mechanic'].map(catKey => `
+              <button class="filter-pill ${activeFilter === catKey ? 'active' : ''}" 
+                      onclick="GuidesView.setKeywordsFilter('${catKey}')"
+                      style="padding: 6px 12px; font-size: 12.5px; font-weight: 700; cursor: pointer;">
+                ${filterLabels[catKey]}
+              </button>
+            `).join('')}
           </div>
 
-          <!-- Keywords Grid -->
-          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px;">
-            ${filteredKeywords.map(item => {
-              const name = item.name[lang] || item.name.RU;
-              const desc = item.desc[lang] || item.desc.RU;
-              const typeStr = item.type[lang] || item.type.RU;
-
-              const catBadgeClass = item.cat === 'buff' ? 'tag-badge' : (item.cat === 'debuff' ? 'tag-badge' : 'tag-badge');
-              const catColor = item.cat === 'buff' ? '#34d399' : (item.cat === 'debuff' ? '#f87171' : (item.cat === 'instant' ? '#fbbf24' : '#38bdf8'));
-              const catBg = item.cat === 'buff' ? 'rgba(16, 185, 129, 0.15)' : (item.cat === 'debuff' ? 'rgba(239, 68, 68, 0.15)' : (item.cat === 'instant' ? 'rgba(245, 158, 11, 0.15)' : 'rgba(56, 189, 248, 0.15)'));
+          <!-- Buff Cards Grid -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;">
+            ${filteredKeywords.map(kw => {
+              const kwName = kw.name?.[lang] || kw.name?.RU || kw.id;
+              const kwDesc = kw.desc?.[lang] || kw.desc?.RU || '';
+              const kwCat = kw.cat || 'buff';
+              const kwIcon = kw.icon || '✨';
+              const relCount = (kw.related_characters?.length || 0) + (kw.related_items?.length || 0);
 
               return `
-                <div class="keyword-card" style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-md); padding: 14px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; transition: all 0.15s ease;">
-                  <div>
-                    <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 6px;">
-                      <div style="display: flex; align-items: center; gap: 8px;">
-                        <span style="font-size: 22px;">${item.icon}</span>
-                        <div>
-                          <div style="font-weight: 700; color: #f8fafc; font-size: 14.5px;">${name}</div>
-                          ${item.code ? `<div style="font-family: monospace; font-size: 11px; color: var(--text-muted);">${item.code}</div>` : ''}
-                        </div>
+                <div class="buff-card" onclick="App.openBuffModal('${kw.id}')">
+                  <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                      <span style="font-size: 24px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">${kwIcon}</span>
+                      <div>
+                        <div style="font-weight: 800; font-size: 14.5px; color: #ffffff;">${this.escapeHtml(kwName)}</div>
+                        ${kw.code ? `<div style="font-size: 11px; color: var(--text-muted); font-family: monospace;">${kw.code}</div>` : ''}
                       </div>
-                      <span class="tag-badge" style="background: ${catBg}; color: ${catColor}; border: 1px solid ${catColor}40; font-size: 11px; font-weight: 700; padding: 2px 8px; white-space: nowrap;">
-                        ${typeStr}
-                      </span>
                     </div>
-
-                    <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px;">
-                      ${item.element ? `<span class="tag-badge" style="font-size: 10.5px;">✨ ${item.element}</span>` : ''}
-                      ${item.priority ? `<span class="tag-badge" style="font-size: 10.5px;">⚡ Prior: ${item.priority}</span>` : ''}
-                    </div>
-
-                    <p style="font-size: 12.5px; color: var(--text-secondary); line-height: 1.45; margin: 0;">
-                      ${desc}
-                    </p>
+                    <span class="buff-cat-badge buff-cat-${kwCat}">${kwCat.toUpperCase()}</span>
                   </div>
 
-                  <div style="padding-top: 8px; border-top: 1px solid rgba(255, 255, 255, 0.05); display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: var(--text-muted);">
-                    <span>${item.cat.toUpperCase()}</span>
-                    <span style="color: #38bdf8; font-family: monospace; font-weight: 600;">${item.code || 'Keyword'}</span>
+                  <div style="font-size: 12.5px; color: var(--text-secondary); line-height: 1.45; max-height: 54px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
+                    ${this.escapeHtml(kwDesc)}
+                  </div>
+
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 6px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 11px; color: var(--text-muted);">
+                    <span>${kw.element && kw.element !== 'Neutral' ? `✨ ${this.escapeHtml(kw.element)}` : '⚡ Статус'}</span>
+                    <span style="color: #c084fc; font-weight: 700;">${relCount > 0 ? `👑 ${relCount} связей ➔` : 'Подробнее ➔'}</span>
                   </div>
                 </div>
               `;
             }).join('')}
           </div>
         </div>
-
-        <!-- Stat Modifiers Rules -->
-        <div class="guide-card" style="border-left: 4px solid #10b981;">
-          <h3 style="color: #34d399; margin-top: 0;">💡 ${isRu ? 'Ключевые модификаторы характеристик' : isCn ? '属性修正与效果结算规则' : 'Key Stat Modifiers & Stacking Rules'}</h3>
-          <div class="guide-table-wrapper">
-            <table class="guide-table">
-              <thead>
-                <tr>
-                  <th>${isRu ? 'Модификатор' : isCn ? '词条修饰符' : 'Modifier'}</th>
-                  <th>${isRu ? 'Тип' : isCn ? '作用目标' : 'Target'}</th>
-                  <th>${isRu ? 'Механика работы' : isCn ? '结算机制' : 'Mechanism'}</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Gain / Gain Bonus</strong></td>
-                  <td>${isRu ? 'На себя' : isCn ? '自身获取' : 'Self Incoming'}</td>
-                  <td>${isRu ? 'Увеличивает количество получаемых стаков, баффов и исцеления от внешних источников и пассивок.' : isCn ? '放大自身从外部技能或天赋中获得的增益层数与治疗量。' : 'Amplifies incoming buffs, stacks, and healing received.'}</td>
-                </tr>
-                <tr>
-                  <td><strong>Apply [Additional]</strong></td>
-                  <td>${isRu ? 'Исходящий' : isCn ? '向外施加' : 'Outgoing Target'}</td>
-                  <td>${isRu ? 'Увеличивает количество стаков и дебаффов, которые персонаж накладывает на вражеские цели.' : isCn ? '增加自身向敌方目标附加的负面减益与控制状态层数。' : 'Increases the quantity of debuffs and stacks applied to targets.'}</td>
-                </tr>
-                <tr>
-                  <td><strong>Tenacity (Стойкость)</strong></td>
-                  <td>${isRu ? 'Защита' : isCn ? '抗性防御' : 'Defense'}</td>
-                  <td>${isRu ? 'Снижает длительность эффектов контроля и снижает получаемый критический урон.' : isCn ? '缩短受控时间，并按比例降低受到的暴击伤害。' : 'Reduces duration of crowd control and critical damage intake.'}</td>
-                </tr>
-                <tr>
-                  <td><strong>Weakness (Слабость)</strong></td>
-                  <td>${isRu ? 'Дебафф' : isCn ? '易伤弱化' : 'Debuff'}</td>
-                  <td>${isRu ? 'Увеличивает весь входящий урон по цели от всех источников и ускоряет пробитие стойкости.' : isCn ? '提升目标受到的全伤害，并加速被削减韧性。' : 'Increases all incoming damage and accelerates toughness break.'}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
       </div>
     `;
   },
 
-  // 4. Elements & Team Building
+    // 4. Elements & Team Building
   getElementsRU() {
     return `
       <div class="guide-article">
@@ -2843,9 +1879,113 @@ const GuidesView = {
       </div>
     `;
   }
+,
+
+  renderBuffModal(buff, currentLang = 'RU') {
+    if (!buff) return '';
+    const isRu = currentLang === 'RU';
+    const isCn = currentLang === 'CN';
+    const name = buff.name?.[currentLang] || buff.name?.RU || buff.id;
+    const desc = buff.desc?.[currentLang] || buff.desc?.RU || '';
+    const cat = buff.cat || 'buff';
+    const icon = buff.icon || '✨';
+    const code = buff.code || buff.key || '';
+    const element = buff.element || 'Neutral';
+    const relChars = buff.related_characters || [];
+    const relItems = buff.related_items || [];
+
+    const catLabels = {
+      buff: isRu ? '🟢 Усиление (Бафф)' : (isCn ? '🟢 正面增益 (Buff)' : '🟢 Positive Buff'),
+      debuff: isRu ? '🔴 Ослабление (Дебафф)' : (isCn ? '🔴 负面减益 (Debuff)' : '🔴 Debuff'),
+      control: isRu ? '💫 Эффект контроля' : (isCn ? '💫 控制状态' : '💫 Crowd Control'),
+      instant: isRu ? '⚡ Мгновенный эффект' : (isCn ? '⚡ 即时结算' : '⚡ Instant Effect'),
+      mechanic: isRu ? '⚙️ Боевая механика' : (isCn ? '⚙️ 战斗机制' : '⚙️ Combat Mechanic')
+    };
+
+    return `
+      <div class="modal-dialog buff-modal-dialog">
+        <div class="modal-header">
+          <div class="modal-title-area">
+            <div style="width: 52px; height: 52px; border-radius: var(--radius-md); border: 2px solid rgba(168, 85, 247, 0.4); background: radial-gradient(circle, #1e293b 0%, #0f172a 100%); display: flex; align-items: center; justify-content: center; font-size: 26px; flex-shrink: 0; box-shadow: 0 0 15px rgba(168, 85, 247, 0.25);">
+              ${icon}
+            </div>
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <span class="modal-title" style="font-size: 20px; font-weight: 800; color: #ffffff;">${this.escapeHtml(name)}</span>
+                ${code ? `<span class="tag-badge" style="font-family: monospace; font-size: 11px; color: #a855f7; border-color: rgba(168, 85, 247, 0.3);">${code}</span>` : ''}
+              </div>
+              <div style="display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap;">
+                <span class="buff-cat-badge buff-cat-${cat}">${catLabels[cat] || cat}</span>
+                ${element && element !== 'Neutral' ? `<span class="tag-badge">✨ ${this.escapeHtml(element)}</span>` : ''}
+              </div>
+            </div>
+          </div>
+          <button class="modal-close-btn" onclick="App.closeModal()">&times;</button>
+        </div>
+
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 16px;">
+          <div class="detail-section">
+            <div class="section-heading">📜 ${isRu ? 'Механика и Описание эффекта' : isCn ? '效果机制与详细说明' : 'Mechanics & Effect Description'}</div>
+            <div style="font-size: 14px; line-height: 1.6; color: #f1f5f9; background: rgba(10, 14, 23, 0.7); padding: 14px 16px; border-radius: var(--radius-md); border-left: 4px solid #a855f7; box-shadow: inset 0 2px 8px rgba(0,0,0,0.4);">
+              ${this.escapeHtml(desc)}
+            </div>
+          </div>
+
+          ${relChars.length > 0 ? `
+            <div class="detail-section">
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between;">
+                <span>👑 ${isRu ? 'Героини с этим эффектом' : isCn ? '拥有此效果的角色' : 'Heroines with this Effect'} (${relChars.length})</span>
+                <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">
+                  ${isRu ? 'Кликните для карточки героини' : isCn ? '点击查看角色卡' : 'Click to view heroine'}
+                </span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px;">
+                ${relChars.map(ch => `
+                  <div class="filter-pill" style="display: flex; align-items: center; gap: 8px; padding: 6px 10px; cursor: pointer; border-radius: var(--radius-sm); background: rgba(30, 41, 59, 0.6); transition: all 0.15s ease;" onclick="App.openCharacterModal('${ch.id}')">
+                    <span style="font-size: 14px;">👑</span>
+                    <div style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: left;">
+                      <div style="font-weight: 700; color: #ffffff; font-size: 12.5px;">${this.escapeHtml(ch.name)}</div>
+                      <div style="font-size: 10.5px; color: var(--text-muted);">${this.escapeHtml(ch.element || '')} • ${this.escapeHtml(ch.class_name || '')}</div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          ` : ''}
+
+          ${relItems.length > 0 ? `
+            <div class="detail-section">
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between;">
+                <span>⚔️ ${isRu ? 'Снаряжение и Руны с этим эффектом' : isCn ? '关联装备与符文' : 'Equipment & Runes'} (${relItems.length})</span>
+                <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">
+                  ${isRu ? 'Кликните для карточки предмета' : isCn ? '点击查看物品' : 'Click to view item'}
+                </span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px;">
+                ${relItems.map(it => `
+                  <div class="filter-pill" style="display: flex; align-items: center; gap: 8px; padding: 6px 10px; cursor: pointer; border-radius: var(--radius-sm); background: rgba(30, 41, 59, 0.6); transition: all 0.15s ease;" onclick="App.openItemModal('${it.category}', '${it.id}')">
+                    <span style="font-size: 14px;">📦</span>
+                    <div style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: left;">
+                      <div style="font-weight: 700; color: #ffffff; font-size: 12.5px;">${this.escapeHtml(it.name)}</div>
+                      <div style="font-size: 10.5px; color: #38bdf8;">${it.step ? `${it.step}★ • ` : ''}${it.category}</div>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          ` : ''}
+        </div>
+      </div>
+    `;
+  },
+
+  escapeHtml(str) {
+    if (!str || typeof str !== 'string') return '';
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
 };
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = GuidesView;
-}
-
