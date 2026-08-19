@@ -46921,7 +46921,7 @@ const GuidesView = {
 
 
 
-  // 11. Gacha & Banners (With Accurate Alter Summon Unification & Default-Collapsed Grids)
+  // 11. Gacha & Banners (With Standard & Alter Tickets and Collapsible Probability Grids)
   getGachaContent(lang = 'RU') {
     const isRu = lang === 'RU';
     const isCn = lang === 'CN';
@@ -47009,14 +47009,33 @@ const GuidesView = {
         <h2 class="guide-title">🎪 ${isRu ? 'Баннеры найма, Таблицы шансов дропа и Система Гаранта' : isCn ? '招募卡池机制、全角色掉落概率表与保底规则' : 'Summon Banners, Drop Rate Tables & Pity Systems'}</h2>
         <p class="guide-lead">
           ${isRu 
-            ? 'Актуальные героини Базового и Альтер-найма с повышенным шансом получения (Rate-Up), правила гаранта и сворачиваемые интерактивные grid-таблицы вероятностей призыва для каждого персонажа (S/A/B/C). Кликните по любой героине для открытия карточки.' 
+            ? 'Полное руководство по системе призыва: для обычного найма требуются <span class="guide-entity-chip guide-chip-ration" onclick="App.openItemModal(\'consumables\', \'D00006_031\')">🎫 Билеты для найма</span>, а для альтер-найма используются специальные <span class="guide-entity-chip guide-chip-stone" onclick="App.openItemModal(\'consumables\', \'D00006_032\')">🔮 Альтер-билеты для найма</span> (или <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal(\'consumables\', \'D00001_000\')">💎 Самоцветы</span>). Сворачиваемые интерактивные grid-таблицы вероятностей призыва для каждого персонажа (S/A/B/C) и правила гаранта.' 
             : isCn 
-            ? '基础招募与异格招募当前UP角色、保底规则与全角色精准概率网格图鉴（支持折叠/展开）。点击任意角色可直接查看属性与技能。' 
-            : 'Current Standard & Alter summon rate-up heroines, pity mechanics, and collapsible interactive grid rate tables for all characters (S/A/B/C).'}
+            ? '招募系统全解析：基础招募消耗 <span class="guide-entity-chip guide-chip-ration" onclick="App.openItemModal(\'consumables\', \'D00006_031\')">🎫 推荐信 (普通招募券)</span>，异格招募消耗专用的 <span class="guide-entity-chip guide-chip-stone" onclick="App.openItemModal(\'consumables\', \'D00006_032\')">🔮 异化推荐信 (异格招募券)</span>（或消耗 <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal(\'consumables\', \'D00001_000\')">💎 钻石</span>）。包含全角色概率网格与保底规则。' 
+            : 'Summon system breakdown: Standard summon requires <span class="guide-entity-chip guide-chip-ration" onclick="App.openItemModal(\'consumables\', \'D00006_031\')">🎫 Recruit Tickets</span>, while Alter summon uses specialized <span class="guide-entity-chip guide-chip-stone" onclick="App.openItemModal(\'consumables\', \'D00006_032\')">🔮 Alter Recruit Tickets</span> (or <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal(\'consumables\', \'D00001_000\')">💎 Gems</span>).'}
         </p>
 
+        <!-- Summon Currencies Info Notice -->
+        <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: var(--radius-md); padding: 14px 18px; margin-top: 20px; margin-bottom: 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 24px;">🎫</span>
+            <div>
+              <div style="font-size: 14px; font-weight: 800; color: #ffffff;">
+                ${isRu ? 'Требуемые валюты и билеты для найма:' : isCn ? '招募所需票券与货币规则：' : 'Required Summon Tickets & Currencies:'}
+              </div>
+              <div style="font-size: 12.5px; color: #cbd5e1; margin-top: 3px;">
+                ${isRu 
+                  ? '• <strong>Обычный найм:</strong> используйте <span class="guide-entity-chip guide-chip-ration" onclick="App.openItemModal(\'consumables\', \'D00006_031\')">🎫 Билет для найма</span> или <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal(\'consumables\', \'D00001_000\')">💎 Самоцветы</span><br>• <strong>Альтер-наем:</strong> требуются <span class="guide-entity-chip guide-chip-stone" onclick="App.openItemModal(\'consumables\', \'D00006_032\')">🔮 Альтер-билет для найма</span> или <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal(\'consumables\', \'D00001_000\')">💎 Самоцветы</span> (200 гемов / крутка)' 
+                  : isCn 
+                  ? '• <strong>基础招募：</strong>消耗 <span class="guide-entity-chip guide-chip-ration" onclick="App.openItemModal(\'consumables\', \'D00006_031\')">🎫 推荐信</span> 或 <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal(\'consumables\', \'D00001_000\')">💎 钻石</span><br>• <strong>异格招募：</strong>消耗 <span class="guide-entity-chip guide-chip-stone" onclick="App.openItemModal(\'consumables\', \'D00006_032\')">🔮 异化推荐信</span> 或 <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal(\'consumables\', \'D00001_000\')">💎 钻石</span> (200钻/抽)' 
+                  : '• <strong>Standard Summon:</strong> Uses <span class="guide-entity-chip guide-chip-ration" onclick="App.openItemModal(\'consumables\', \'D00006_031\')">🎫 Recruit Ticket</span> or <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal(\'consumables\', \'D00001_000\')">💎 Gems</span><br>• <strong>Alter Summon:</strong> Requires <span class="guide-entity-chip guide-chip-stone" onclick="App.openItemModal(\'consumables\', \'D00006_032\')">🔮 Alter Recruit Ticket</span> or <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal(\'consumables\', \'D00001_000\')">💎 Gems</span> (200 gems/pull)'}
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Current Rate-Up Characters Section -->
-        <div style="margin-top: 24px; margin-bottom: 24px;">
+        <div style="margin-bottom: 24px;">
           <div class="section-heading" style="font-size: 16px; font-weight: 800; color: #ffffff; display: flex; align-items: center; gap: 8px; margin-bottom: 14px;">
             <span>🔥</span> <span>${isRu ? 'Персонажи с повышенным шансом призыва на данный момент (Current Rate-Up)' : isCn ? '当前概率提升角色 (Rate-Up UP卡池)' : 'Characters with Increased Drop Rate (Current Rate-Up)'}</span>
           </div>
@@ -47045,7 +47064,10 @@ const GuidesView = {
                 </div>
 
                 <div style="font-size: 13px; line-height: 1.6; color: #e2e8f0; background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: var(--radius-sm);">
-                  🎯 <strong>Шанс в базовом найме:</strong> составляет <strong style="color: #facc15;">50% от всех выпавших S-ранг героинь</strong> (абсолютный шанс: <strong style="color: #38bdf8;">1.250%</strong> на каждую крутку).
+                  🎯 <strong>Шанс в базовом найме:</strong> составляет <strong style="color: #facc15;">50% от всех выпавших S-ранг героинь</strong> (абсолютный шанс: <strong style="color: #38bdf8;">1.250%</strong> на каждую крутку).<br>
+                  <div style="margin-top: 4px; font-size: 12px; color: #cbd5e1;">
+                    Валюта: <span class="guide-entity-chip guide-chip-ration" onclick="App.openItemModal('consumables', 'D00006_031')">🎫 Билет для найма</span> или <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal('consumables', 'D00001_000')">💎 Самоцветы</span>
+                  </div>
                 </div>
               </div>
 
@@ -47079,7 +47101,10 @@ const GuidesView = {
                 </div>
 
                 <div style="font-size: 13px; line-height: 1.6; color: #e2e8f0; background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: var(--radius-sm);">
-                  🎯 <strong>Лимитированный Альтер:</strong> повышенная вероятность призыва в Альтер-Найме за <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal('consumables', 'D00001_000')">💎 Самоцветы</span>.
+                  🎯 <strong>Лимитированный Альтер:</strong> повышенный шанс в Альтер-Найме.<br>
+                  <div style="margin-top: 4px; font-size: 12px; color: #cbd5e1;">
+                    Валюта: <span class="guide-entity-chip guide-chip-stone" onclick="App.openItemModal('consumables', 'D00006_032')">🔮 Альтер-билет для найма</span> или <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal('consumables', 'D00001_000')">💎 Самоцветы</span> (200/крутка)
+                  </div>
                 </div>
               </div>
 
@@ -47113,7 +47138,10 @@ const GuidesView = {
                 </div>
 
                 <div style="font-size: 13px; line-height: 1.6; color: #e2e8f0; background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: var(--radius-sm);">
-                  🎯 <strong>Следующая ротация:</strong> планируемый повышенный шанс в Альтер-Найме (Alter ID: M12303_000).
+                  🎯 <strong>Следующая ротация:</strong> планируемый повышенный шанс в Альтер-Найме (Alter ID: M12303_000).<br>
+                  <div style="margin-top: 4px; font-size: 12px; color: #cbd5e1;">
+                    Валюта: <span class="guide-entity-chip guide-chip-stone" onclick="App.openItemModal('consumables', 'D00006_032')">🔮 Альтер-билет для найма</span> или <span class="guide-entity-chip guide-chip-gem" onclick="App.openItemModal('consumables', 'D00001_000')">💎 Самоцветы</span>
+                  </div>
                 </div>
               </div>
 
@@ -47138,7 +47166,7 @@ const GuidesView = {
                   ${isRu ? 'Базовые Вероятности Призыва (Стандартный Пул)' : isCn ? '基础招募卡池全角色概率图鉴' : 'Standard Summon Pool & Drop Rates'}
                 </div>
                 <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">
-                  ${isRu ? '144 героини • Крутки за свитки и самоцветы' : isCn ? '144名基础角色 • 支持契约券与钻石招募' : '144 heroes • Recruits via tickets and gems'}
+                  ${isRu ? '144 героини • Призыв за <span class="guide-entity-chip guide-chip-ration" onclick="event.stopPropagation(); App.openItemModal(\'consumables\', \'D00006_031\')">🎫 Билеты для найма</span> или <span class="guide-entity-chip guide-chip-gem" onclick="event.stopPropagation(); App.openItemModal(\'consumables\', \'D00001_000\')">💎 Самоцветы</span>' : isCn ? '144名基础角色 • 消耗推荐信或钻石' : '144 heroes • Recruits via tickets and gems'}
                 </div>
               </div>
             </div>
@@ -47163,7 +47191,7 @@ const GuidesView = {
                   ${isRu ? 'Альтер-Наем: Все Вероятности и Персонажи (Альтер Пул)' : isCn ? '异格招募卡池全角色概率图鉴' : 'Alter Summon Pool & Drop Rates'}
                 </div>
                 <div style="font-size: 12px; color: #d8b4fe; margin-top: 2px;">
-                  ${isRu ? '60 уникальных Альтер-форм • Крутки за Самоцветы' : isCn ? '60名专属异格角色 • 钻石招募' : '60 unique Alter heroes • Recruits via Gems'}
+                  ${isRu ? '60 уникальных Альтер-форм • Призыв за <span class="guide-entity-chip guide-chip-stone" onclick="event.stopPropagation(); App.openItemModal(\'consumables\', \'D00006_032\')">🔮 Альтер-билеты</span> или <span class="guide-entity-chip guide-chip-gem" onclick="event.stopPropagation(); App.openItemModal(\'consumables\', \'D00001_000\')">💎 Самоцветы</span>' : isCn ? '60名专属异格角色 • 消耗异化推荐信或钻石' : '60 unique Alter heroes • Recruits via Alter Tickets and Gems'}
                 </div>
               </div>
             </div>
