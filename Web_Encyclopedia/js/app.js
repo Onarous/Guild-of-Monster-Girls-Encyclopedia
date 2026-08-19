@@ -76,7 +76,7 @@ const App = {
     let isContactsPage = document.body.dataset.initialTab === 'contacts';
 
     if (path.endsWith('items.html')) initialTab = 'items';
-    else if (path.endsWith('bonds.html')) initialTab = 'bonds';
+    else if (path.endsWith('bonds.html')) { initialTab = 'items'; this.state.itemCategory = 'bonds'; }
     else if (path.endsWith('collection.html')) initialTab = 'collection';
     else if (path.endsWith('guides.html')) initialTab = 'guides';
     else if (path.endsWith('calculators.html')) initialTab = 'calculators';
@@ -942,7 +942,7 @@ const App = {
     document.getElementById('appSubtitle').textContent = dict.appSubtitle;
     document.getElementById('tabCharacters').textContent = dict.navCharacters;
     document.getElementById('tabItems').textContent = dict.navItems;
-    document.getElementById('tabBonds').textContent = dict.navBonds;
+    if (document.getElementById('tabBonds')) document.getElementById('tabBonds').textContent = dict.navBonds;
     document.getElementById('tabCollection').textContent = dict.navMyCollection;
     if (document.getElementById('tabGuides')) document.getElementById('tabGuides').textContent = dict.navGuides;
     if (document.getElementById('tabCalculators')) document.getElementById('tabCalculators').textContent = dict.navCalculators || '🧮 Калькуляторы';
@@ -962,7 +962,7 @@ const App = {
     }
     if (document.getElementById('drawerTextCharacters')) document.getElementById('drawerTextCharacters').textContent = dict.navCharacters;
     if (document.getElementById('drawerTextItems')) document.getElementById('drawerTextItems').textContent = dict.navItems;
-    if (document.getElementById('drawerTextBonds')) document.getElementById('drawerTextBonds').textContent = dict.navBonds;
+    if (document.getElementById('drawerTextBonds')) if (document.getElementById('drawerTextBonds')) document.getElementById('drawerTextBonds').textContent = dict.navBonds;
     if (document.getElementById('drawerTextCollection')) document.getElementById('drawerTextCollection').textContent = dict.navMyCollection;
     if (document.getElementById('drawerTextGuides')) document.getElementById('drawerTextGuides').textContent = dict.navGuides;
     if (document.getElementById('drawerTextCalculators')) document.getElementById('drawerTextCalculators').textContent = dict.navCalculators || '🧮 Калькуляторы';
