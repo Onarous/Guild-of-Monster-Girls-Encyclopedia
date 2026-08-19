@@ -1046,7 +1046,7 @@ const App = {
     // Sort Select options
     if (dict.sortOptions) {
       const sel = document.getElementById('sortSelect');
-      if (sel) {
+      if (sel && sel.options) {
         Array.from(sel.options).forEach(opt => {
           if (dict.sortOptions[opt.value]) {
             opt.textContent = dict.sortOptions[opt.value];
@@ -1755,5 +1755,12 @@ const App = {
     });
   }
 };
+
+if (typeof window !== 'undefined') {
+  window.App = App;
+}
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = App;
+}
 
 window.addEventListener('DOMContentLoaded', () => App.init());

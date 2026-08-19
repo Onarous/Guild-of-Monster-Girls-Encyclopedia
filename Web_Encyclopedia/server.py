@@ -418,9 +418,12 @@ class ProxyRequestHandler(http.server.SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+class ThreadedHTTPServer(socketserver.ThreadingTCPServer):
+    allow_reuse_address = True
+    daemon_threads = True
+
 def run_server():
-    socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("", PORT), ProxyRequestHandler) as httpd:
+    with ThreadedHTTPServer(("", PORT), ProxyRequestHandler) as httpd:
         print(f"[*] Guild of Monster Girls Web Server running at http://localhost:{PORT}/")
         print(f"[*] Built-in Game API Proxy active with ZERO CORS issues.")
         try:

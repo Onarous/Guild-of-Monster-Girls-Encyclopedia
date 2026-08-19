@@ -1795,6 +1795,300 @@
   box-shadow: 0 0 12px rgba(16, 185, 129, 0.4) !important;
 }
 
+/* ==========================================================================
+   Comprehensive Button Design System (Dark Fantasy & Gaming UI)
+   ========================================================================== */
+
+.action-btn,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--bg-surface-elevated);
+  color: var(--text-primary);
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+}
+
+.action-btn:hover,
+.btn:hover {
+  transform: translateY(-1.5px);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.action-btn:active,
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Primary Action Button (Blue / Cyan Glow Gradient) */
+.action-btn.primary-btn,
+.action-btn.primary,
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border: 1px solid rgba(147, 197, 253, 0.45);
+  color: #ffffff;
+  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.35);
+}
+
+.action-btn.primary-btn:hover,
+.action-btn.primary:hover,
+.btn-primary:hover {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  border-color: #93c5fd;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.55);
+}
+
+/* Secondary Action Button (Sky Blue Glass Glow) */
+.action-btn.secondary-btn,
+.action-btn.secondary,
+.btn-secondary {
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #38bdf8;
+  backdrop-filter: blur(4px);
+}
+
+.action-btn.secondary-btn:hover,
+.action-btn.secondary:hover,
+.btn-secondary:hover {
+  background: rgba(56, 189, 248, 0.22);
+  border-color: #38bdf8;
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.35);
+}
+
+/* Gold Button (Wishlist / Star Up / Rare Drops) */
+.action-btn.gold-btn,
+.action-btn.gold,
+.btn-gold {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fbbf24;
+}
+
+.action-btn.gold-btn:hover,
+.action-btn.gold:hover,
+.btn-gold:hover {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  border-color: #fde68a;
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.45);
+}
+
+/* Purple Button (Alter / Magic / Epic) */
+.action-btn.purple-btn,
+.action-btn.purple,
+.btn-purple {
+  background: rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  color: #c084fc;
+}
+
+.action-btn.purple-btn:hover,
+.action-btn.purple:hover,
+.btn-purple:hover {
+  background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);
+  border-color: #e9d5ff;
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(168, 85, 247, 0.45);
+}
+
+/* Success / Emerald Button & Copied Feedback */
+.action-btn.success-btn,
+.action-btn.success,
+.btn-success,
+.action-btn.copied,
+.promo-copy-btn.copied {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  border-color: #6ee7b7 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.5) !important;
+  animation: pulseSuccess 0.35s ease;
+}
+
+@keyframes pulseSuccess {
+  0% { transform: scale(0.96); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+/* Danger / Fire Button */
+.action-btn.danger-btn,
+.action-btn.danger,
+.btn-danger {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #f87171;
+}
+
+.action-btn.danger-btn:hover,
+.action-btn.danger:hover,
+.btn-danger:hover {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  border-color: #fecaca;
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.45);
+}
+
+/* Outline / Subtle Button */
+.action-btn.outline-btn,
+.action-btn.outline,
+.btn-outline {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.action-btn.outline-btn:hover,
+.action-btn.outline:hover,
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #60a5fa;
+  color: var(--text-primary);
+}
+
+/* Sizing Modifiers */
+.action-btn.btn-sm,
+.action-btn.sm {
+  padding: 4px 10px;
+  font-size: 11.5px;
+  border-radius: var(--radius-sm);
+  gap: 4px;
+}
+
+.action-btn.btn-lg,
+.action-btn.lg {
+  padding: 10px 20px;
+  font-size: 14.5px;
+  border-radius: var(--radius-md);
+  gap: 8px;
+}
+
+/* Dedicated Promo Copy Button */
+.promo-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 6px 14px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #38bdf8;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.promo-copy-btn:hover {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: #38bdf8;
+  color: #ffffff;
+  transform: translateY(-1.5px);
+  box-shadow: 0 0 14px rgba(56, 189, 248, 0.45);
+}
+
+.promo-copy-btn:active {
+  transform: translateY(0);
+}
+
+/* Tile Action Link & Detail Buttons */
+.tile-action-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 30px;
+  padding: 0;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 12px;
+  transition: all var(--transition-fast);
+}
+
+.tile-action-link-btn:hover {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: rgba(56, 189, 248, 0.5);
+  color: #38bdf8;
+  transform: translateY(-1px);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+.tile-action-detail-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 5px 12px;
+  height: 30px;
+  border-radius: var(--radius-sm);
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #38bdf8;
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.tile-action-detail-btn:hover {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  border-color: #38bdf8;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 10px rgba(2, 132, 199, 0.4);
+}
+
+/* Interactive Hero / Item Chip in Guides */
+.guide-hero-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 8px;
+  background: rgba(234, 179, 8, 0.12);
+  border: 1px solid rgba(234, 179, 8, 0.35);
+  border-radius: var(--radius-sm);
+  color: #facc15;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  user-select: none;
+}
+
+.guide-hero-chip:hover {
+  background: rgba(234, 179, 8, 0.28);
+  border-color: #fde047;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 0 12px rgba(234, 179, 8, 0.4);
+}
+
 /* Specific Responsive Grid Helpers for Guides */
 .guide-cards-grid {
   display: grid;

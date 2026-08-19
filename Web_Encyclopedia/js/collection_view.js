@@ -6,7 +6,7 @@
  */
 
 const CollectionView = {
-  activeLoginTab: (typeof window !== "undefined" && (window.location.hostname.endsWith("github.io") || window.location.hostname.includes("github"))) ? "import" : "webadb",
+  activeLoginTab: (typeof window !== "undefined" && window.location && window.location.hostname && (window.location.hostname.endsWith("github.io") || window.location.hostname.includes("github"))) ? "import" : "webadb",
 
   setLoginTab(tab) {
     this.activeLoginTab = tab;
