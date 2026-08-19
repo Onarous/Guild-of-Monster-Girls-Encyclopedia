@@ -55,6 +55,23 @@ const ItemsView = {
     return null;
   },
 
+  getCategoryLabel(category, currentLang = 'RU') {
+    const isRu = currentLang === 'RU';
+    const isCn = currentLang === 'CN';
+    switch (category) {
+      case 'equipment': return isRu ? '⚔️ Снаряжение' : (isCn ? '⚔️ 装备' : '⚔️ Equipment');
+      case 'relics': return isRu ? '🔮 Прозрение' : (isCn ? '🔮 信物' : '🔮 Insight');
+      case 'runes': return isRu ? '🪨 Руна' : (isCn ? '🪨 符文' : '🪨 Rune');
+      case 'ingredients': return isRu ? '🌿 Материал' : (isCn ? '🌿 素材' : '🌿 Material');
+      case 'special_items': return isRu ? '✨ Предмет' : (isCn ? '✨ 道具' : '✨ Special Item');
+      case 'currency': return isRu ? '💰 Валюта' : (isCn ? '💰 货币' : '💰 Currency');
+      case 'chests': return isRu ? '📦 Сундук' : (isCn ? '📦 宝箱' : '📦 Chest');
+      case 'godstones': return isRu ? '💎 Камень' : (isCn ? '💎 神石' : '💎 Godstone');
+      case 'dungeon_relics': return isRu ? '🗝️ Реликвия' : (isCn ? '🗝️ 遗物' : '🗝️ Relic');
+      default: return isRu ? '📦 Предмет' : (isCn ? '📦 物品' : '📦 Item');
+    }
+  },
+
   getCategoryFallbackEmoji(category) {
     const emojis = {
       equipment: '⚔️',
@@ -121,6 +138,8 @@ const ItemsView = {
         return this.renderRuneCard(item, tierClass, dict, imageMappings);
       } else if (category === 'bonds') {
         return this.renderBondCard(item, tierClass, dict, imageMappings);
+      } else if (category === 'chests') {
+        return this.renderChestCard(item, tierClass, dict, imageMappings);
       } else {
         return this.renderGenericItemCard(item, category, tierClass, dict, imageMappings);
       }
@@ -298,6 +317,54 @@ const ItemsView = {
         <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">
           ${this.escapeHtml(rn.description)}
         </div>
+      </div>
+    `;
+  },
+
+  renderChestCard(ch, tierClass, dict, imageMappings = {}) {
+    const iconSrc = this.getItemIcon(ch, 'chests', imageMappings);
+    const fallbackEmoji = '📦';
+    const step = ch.step || ch.Step || 'C';
+    const isRu = (dict.starMilestone4 || '').includes('прозрения');
+    const isCn = (dict.starMilestone4 || '').includes('信物');
+    const dropCount = ch.drop_table ? ch.drop_table.length : 0;
+
+    return `
+      <div class="item-card" onclick="App.openItemModal('chests', '${ch.id}')" style="cursor: pointer;">
+        <div class="item-card-header">
+          <div class="item-card-icon-box">
+            ${iconSrc ? `
+              <img src="${iconSrc}" alt="Chest" class="item-card-img" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+              <span style="display: none; font-size: 26px;">${fallbackEmoji}</span>
+            ` : `<span style="font-size: 26px;">${fallbackEmoji}</span>`}
+          </div>
+          <div class="item-card-header-info">
+            <div class="item-card-title-row">
+              <span class="tier-badge ${tierClass}">${step}</span>
+              <span class="item-card-name" title="${this.escapeHtml(ch.name)}">${this.escapeHtml(ch.name)}</span>
+            </div>
+            <div class="item-card-id">ID: ${ch.id}</div>
+          </div>
+        </div>
+
+        <div class="item-card-tags">
+          ${ch.drop_type ? `<span class="tag-badge">🎁 ${this.escapeHtml(ch.drop_type)}</span>` : ''}
+          ${ch.drop_content ? `<span class="tag-badge">📋 ${this.escapeHtml(ch.drop_content)}</span>` : ''}
+          ${ch.num ? `<span class="tag-badge">🔢 ×${this.escapeHtml(ch.num)}</span>` : ''}
+        </div>
+
+        ${ch.description ? `
+          <div class="item-card-desc" style="margin-top: 6px; line-height: 1.35; font-size: 12.5px; color: var(--text-secondary);">
+            ${this.escapeHtml(ch.description)}
+          </div>
+        ` : ''}
+
+        ${dropCount > 0 ? `
+          <div style="font-size: 11.5px; color: #a855f7; background: rgba(168, 85, 247, 0.08); padding: 6px 9px; border-radius: var(--radius-sm); border: 1px solid rgba(168, 85, 247, 0.25); display: flex; align-items: center; justify-content: space-between; margin-top: auto;">
+            <span>🎁 <strong>${dict.chestDropCount || 'Возможный дроп'}:</strong> ${dropCount} ${isRu ? 'предм.' : (isCn ? '件' : 'items')}</span>
+            <span style="color: #38bdf8; font-weight: 700;">➔</span>
+          </div>
+        ` : ''}
       </div>
     `;
   },
@@ -577,6 +644,86 @@ const ItemsView = {
                 <div class="star-tip-box tip-alter" style="margin-top: 8px;">
                   ${dict.itemStarAlchemyRule || '⚠️ Правило алхимии: НИ В КОЕМ СЛУЧАЕ не распыляйте снаряжение и руны в алхимию, пока они не прокачаны до 3★ MAX для уровня Кодекса!'}
                 </div>
+              </div>
+            </div>
+          ` : ''}
+
+          ${item.drop_type || item.drop_content || item.num ? `
+            <div class="detail-section" style="margin-bottom: 12px;">
+              <div class="section-heading">📦 ${currentLang === 'RU' ? 'Параметры сундука' : currentLang === 'CN' ? '宝箱属性' : 'Chest Properties'}</div>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                ${item.drop_type ? `<span class="tag-badge" style="background: rgba(168, 85, 247, 0.15); border-color: rgba(168, 85, 247, 0.4); color: #c084fc;">🎁 ${dict.chestDropCategory || 'Тип дропа'}: ${this.escapeHtml(item.drop_type)}</span>` : ''}
+                ${item.drop_content ? `<span class="tag-badge" style="background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.4); color: #38bdf8;">📋 ${this.escapeHtml(item.drop_content)}</span>` : ''}
+                ${item.num ? `<span class="tag-badge" style="background: rgba(251, 191, 36, 0.15); border-color: rgba(251, 191, 36, 0.4); color: #fbbf24;">🔢 ${dict.chestDropQty || 'Кол-во'}: ×${this.escapeHtml(item.num)}</span>` : ''}
+                ${item.extra_possi ? `<span class="tag-badge" style="background: rgba(34, 197, 94, 0.15); border-color: rgba(34, 197, 94, 0.4); color: #4ade80;">✨ +${Math.round(item.extra_possi * 100)}% Extra</span>` : ''}
+                ${item.area_name && item.area_name !== '不限' && item.area_name !== 'Все зоны' ? `<span class="tag-badge">📍 ${this.escapeHtml(item.area_name)}</span>` : ''}
+              </div>
+            </div>
+          ` : ''}
+
+          ${item.drop_table && item.drop_table.length > 0 ? `
+            <div class="detail-section">
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                <span>🎁 ${dict.chestDropTableTitle || 'Таблица возможного дропа'} (${item.drop_table.length})</span>
+                <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">
+                  ${dict.chestDropClickTip || 'Кликните на предмет для подробного просмотра'}
+                </span>
+              </div>
+              
+              <div class="chest-drop-table-wrapper" style="max-height: 380px; overflow-y: auto; border: 1px solid rgba(168, 85, 247, 0.3); border-radius: var(--radius-md); background: rgba(10, 14, 23, 0.65); box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);">
+                <table class="star-gear-table" style="width: 100%; border-collapse: collapse; font-size: 12.5px;">
+                  <thead style="position: sticky; top: 0; background: #0b1120; z-index: 2; border-bottom: 2px solid rgba(168, 85, 247, 0.35);">
+                    <tr>
+                      <th style="padding: 10px 12px; text-align: left; color: #c084fc;">${dict.chestDropItem || 'Предмет'}</th>
+                      <th style="padding: 10px 12px; text-align: center; color: #c084fc;">${dict.chestDropCategory || 'Категория'}</th>
+                      <th style="padding: 10px 12px; text-align: center; color: #c084fc;">${dict.chestDropDetails || 'Свойства / Слот'}</th>
+                      <th style="padding: 10px 12px; text-align: center; color: #c084fc;">${dict.chestDropQty || 'Кол-во'}</th>
+                      <th style="padding: 10px 12px; text-align: right; color: #c084fc;">${dict.chestDropAction || 'Действие'}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${item.drop_table.map(d => {
+                      const dIcon = this.getItemIcon(d, d.category, imageMappings);
+                      const dTierClass = d.step ? `tier-${d.step.toLowerCase()}` : '';
+                      const dFallbackEmoji = this.getCategoryFallbackEmoji(d.category);
+                      return `
+                        <tr class="drop-row" onclick="App.openItemModal('${d.category}', '${d.id}')" style="cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0.06); transition: all 0.15s ease;">
+                          <td style="padding: 8px 12px;">
+                            <div style="display: flex; align-items: center; gap: 9px;">
+                              <div style="width: 32px; height: 32px; border-radius: 4px; background: rgba(30,41,59,0.8); border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
+                                ${dIcon ? `
+                                  <img src="${dIcon}" alt="${this.escapeHtml(d.name)}" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+                                  <span style="display: none; font-size: 16px;">${dFallbackEmoji}</span>
+                                ` : `<span style="font-size: 16px;">${dFallbackEmoji}</span>`}
+                              </div>
+                              <div>
+                                <div style="font-weight: 700; color: #ffffff; display: flex; align-items: center; gap: 6px;">
+                                  ${d.step ? `<span class="tier-badge ${dTierClass}" style="font-size: 9.5px; padding: 1px 5px;">${d.step}</span>` : ''}
+                                  <span>${this.escapeHtml(d.name)}</span>
+                                </div>
+                                <div style="font-size: 11px; color: var(--text-muted); font-family: monospace;">ID: ${d.id}</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td style="padding: 8px 12px; text-align: center;">
+                            <span class="tag-badge" style="font-size: 11px; padding: 2px 7px;">${this.getCategoryLabel(d.category, currentLang)}</span>
+                          </td>
+                          <td style="padding: 8px 12px; text-align: center; color: var(--text-secondary); font-size: 11.5px;">
+                            ${[d.slot, d.class_limit, d.type].filter(Boolean).map(x => this.escapeHtml(x)).join(' • ') || '—'}
+                          </td>
+                          <td style="padding: 8px 12px; text-align: center; font-weight: 700; color: #38bdf8;">
+                            ×${this.escapeHtml(d.num || '1')}
+                          </td>
+                          <td style="padding: 8px 12px; text-align: right;">
+                            <button class="filter-pill" style="padding: 4px 11px; font-size: 11.5px; cursor: pointer; color: #38bdf8; border-color: rgba(56, 189, 248, 0.35); font-weight: 600;" onclick="event.stopPropagation(); App.openItemModal('${d.category}', '${d.id}')">
+                              ${dict.viewItem || 'Открыть'} ➔
+                            </button>
+                          </td>
+                        </tr>
+                      `;
+                    }).join('')}
+                  </tbody>
+                </table>
               </div>
             </div>
           ` : ''}

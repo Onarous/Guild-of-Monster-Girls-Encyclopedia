@@ -4022,3 +4022,29 @@
   border-color: #ec4899;
   transform: translateY(-1px);
 }
+
+/* Chest Drop Table Styles */
+.drop-row:hover {
+  background: rgba(168, 85, 247, 0.16) !important;
+}
+
+.drop-row:hover td {
+  color: #ffffff !important;
+}
+
+.chest-drop-table-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chest-drop-table-wrapper::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+.chest-drop-table-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.45);
+  border-radius: 3px;
+}
+
+.chest-drop-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.7);
+}

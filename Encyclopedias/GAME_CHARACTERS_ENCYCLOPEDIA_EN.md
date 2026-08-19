@@ -85,7 +85,7 @@
 ## Core Golem (role_161) — [S★ (4★ Legendary)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Construct | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Construct | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `12`, ATK: `20`, DEF: `4`, SPD: `18`, INT: `0`, STR: `4`, DEX: `2`, TOUGH: `24`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -199,7 +199,7 @@
 ## Desert Dancer (role_182) — [S★ (4★ Legendary)]
 
 
-- **Class:** Archer | **Element:** Fire | **Type:** Spirit | **Position:** Support, DPS, Suggest
+- **Class:** Ranger / Archer | **Element:** Fire | **Type:** Spirit | **Position:** Support, DPS, Suggest
 - **Base Stats (Lv. 1):** HP: `10`, ATK: `22`, DEF: `2`, SPD: `20`, INT: `2`, STR: `2`, DEX: `6`, TOUGH: `20`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, HP, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -423,7 +423,7 @@
 ## Frost Spider Queen (role_82) — [S★ (4★ Legendary)]
 
 
-- **Class:** Archer | **Element:** Water | **Type:** Spirit | **Position:** DPS, Suggest
+- **Class:** Ranger / Archer | **Element:** Water | **Type:** Spirit | **Position:** DPS, Suggest
 - **Base Stats (Lv. 1):** HP: `10`, ATK: `22`, DEF: `2`, SPD: `20`, INT: `2`, STR: `4`, DEX: `2`, TOUGH: `22`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, SPI, STR, SPI, AGI, HP, SPI, STR, SPI, AGI, HP, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -556,7 +556,7 @@
 ## Harpy Princess (role_76) — [S★ (4★ Legendary)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `10`, ATK: `24`, DEF: `0`, SPD: `22`, INT: `0`, STR: `2`, DEX: `6`, TOUGH: `20`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -575,7 +575,7 @@
 ## Harpy Princess (role_77) — [S★ (4★ Legendary)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `10`, ATK: `24`, DEF: `0`, SPD: `22`, INT: `0`, STR: `2`, DEX: `4`, TOUGH: `22`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -993,7 +993,7 @@
 ## Stellar Archer (role_6) — [S★ (4★ Legendary)]
 
 
-- **Class:** Archer | **Element:** Light | **Type:** Divine | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Light | **Type:** Divine | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `14`, ATK: `20`, DEF: `2`, SPD: `20`, INT: `6`, STR: `0`, DEX: `2`, TOUGH: `18`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, SPD, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, HP, SPI, STR, SPI, AGI, HP, SPI, STR, SPI, AGI, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1107,7 +1107,7 @@
 ## Troll Sorceress (role_201) — [S★ (4★ Legendary)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `12`, ATK: `22`, DEF: `2`, SPD: `20`, INT: `2`, STR: `0`, DEX: `4`, TOUGH: `22`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1202,7 +1202,7 @@
 ## Windstrider (role_33) — [S★ (4★ Legendary)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `10`, ATK: `24`, DEF: `0`, SPD: `22`, INT: `0`, STR: `2`, DEX: `6`, TOUGH: `20`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1221,7 +1221,7 @@
 ## Windstrider (role_34) — [S★ (4★ Legendary)]
 
 
-- **Class:** Archer | **Element:** Light | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Light | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `10`, ATK: `22`, DEF: `2`, SPD: `22`, INT: `2`, STR: `2`, DEX: `6`, TOUGH: `18`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1373,7 +1373,7 @@
 ## Boom Shroom (role_156) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Fire | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Fire | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `8`, ATK: `18`, DEF: `2`, SPD: `16`, INT: `0`, STR: `4`, DEX: `4`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, HP, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1411,7 +1411,7 @@
 ## Boulder Gunner (role_98) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Earth | **Type:** Demon | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Earth | **Type:** Demon | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `8`, ATK: `16`, DEF: `4`, SPD: `14`, INT: `4`, STR: `4`, DEX: `0`, TOUGH: `18`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1430,7 +1430,7 @@
 ## Boulder Gunner (role_99) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Fire | **Type:** Demon | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Fire | **Type:** Demon | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `20`, DEF: `0`, SPD: `16`, INT: `4`, STR: `4`, DEX: `2`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, HP, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1468,7 +1468,7 @@
 ## Candy (role_17) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Fire | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Fire | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `20`, DEF: `0`, SPD: `18`, INT: `0`, STR: `4`, DEX: `6`, TOUGH: `14`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, HP, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1487,7 +1487,7 @@
 ## Candy (role_18) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `20`, DEF: `0`, SPD: `18`, INT: `0`, STR: `2`, DEX: `6`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1506,7 +1506,7 @@
 ## Coco Tosser (role_144) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `18`, DEF: `2`, SPD: `18`, INT: `2`, STR: `2`, DEX: `4`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, SPD, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1734,7 +1734,7 @@
 ## Gilt Archer (role_100) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Light | **Type:** Demon | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Light | **Type:** Demon | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `8`, ATK: `16`, DEF: `4`, SPD: `16`, INT: `4`, STR: `2`, DEX: `2`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, SPD, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1753,7 +1753,7 @@
 ## Gilt Archer (role_101) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Fire | **Type:** Demon | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Fire | **Type:** Demon | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `20`, DEF: `0`, SPD: `16`, INT: `4`, STR: `4`, DEX: `2`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, HP, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1886,7 +1886,7 @@
 ## Jungle Hunter (role_132) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `8`, ATK: `18`, DEF: `2`, SPD: `16`, INT: `2`, STR: `0`, DEX: `4`, TOUGH: `18`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1962,7 +1962,7 @@
 ## Lurking Shadow (role_23) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Dark | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Dark | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `20`, DEF: `0`, SPD: `18`, INT: `0`, STR: `4`, DEX: `4`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, SPI, AGI, STR, HP, AGI, SPI, AGI, STR, Toughness, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -1981,7 +1981,7 @@
 ## Lurking Shadow (role_24) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Light | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Light | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `18`, DEF: `2`, SPD: `18`, INT: `2`, STR: `2`, DEX: `6`, TOUGH: `14`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -2000,7 +2000,7 @@
 ## Magic Attendant (role_130) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Dark | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Dark | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `8`, ATK: `18`, DEF: `2`, SPD: `16`, INT: `2`, STR: `2`, DEX: `2`, TOUGH: `18`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, SPI, AGI, STR, HP, AGI, SPI, AGI, STR, Toughness, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -2019,7 +2019,7 @@
 ## Mercenary Gunner (role_178) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Fire | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Fire | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `18`, DEF: `2`, SPD: `16`, INT: `2`, STR: `2`, DEX: `6`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, HP, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -2076,7 +2076,7 @@
 ## Naga Archer (role_116) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Water | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Water | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `8`, ATK: `18`, DEF: `2`, SPD: `16`, INT: `4`, STR: `2`, DEX: `2`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, SPI, STR, SPI, AGI, HP, SPI, STR, SPI, AGI, HP, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -2171,7 +2171,7 @@
 ## Quicksand Assassin (role_187) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Earth | **Type:** Demon | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Earth | **Type:** Demon | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `16`, DEF: `4`, SPD: `14`, INT: `6`, STR: `2`, DEX: `2`, TOUGH: `18`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -2228,7 +2228,7 @@
 ## Silver Ranger (role_195) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `8`, ATK: `18`, DEF: `2`, SPD: `16`, INT: `2`, STR: `0`, DEX: `4`, TOUGH: `18`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -2399,7 +2399,7 @@
 ## Thorn Archer (role_190) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Earth | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Earth | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `16`, DEF: `4`, SPD: `14`, INT: `4`, STR: `2`, DEX: `4`, TOUGH: `18`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -2532,7 +2532,7 @@
 ## Warg Archer (role_72) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Earth | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Earth | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `18`, DEF: `2`, SPD: `16`, INT: `2`, STR: `4`, DEX: `4`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -2551,7 +2551,7 @@
 ## Warg Archer (role_73) — [A★ (3★ Epic)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `20`, DEF: `0`, SPD: `18`, INT: `0`, STR: `2`, DEX: `4`, TOUGH: `18`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP, HP, HP, HP, HP, HP`
 
@@ -2779,7 +2779,7 @@
 ## Fairy Archer (role_44) — [B★ (2★ Rare)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Construct | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Construct | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `14`, DEF: `4`, SPD: `12`, INT: `2`, STR: `2`, DEX: `2`, TOUGH: `18`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, HP, HP, HP, HP, HP, HP`
 
@@ -2817,7 +2817,7 @@
 ## Ghost Gunner (role_115) — [B★ (2★ Rare)]
 
 
-- **Class:** Archer | **Element:** Dark | **Type:** Undead | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Dark | **Type:** Undead | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `18`, DEF: `0`, SPD: `14`, INT: `2`, STR: `4`, DEX: `0`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, SPI, AGI, STR, HP, AGI, SPI, AGI, STR, Toughness, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, Toughness, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, HP, HP, HP, HP, HP, HP`
 
@@ -2950,7 +2950,7 @@
 ## Legion Archer (role_164) — [B★ (2★ Rare)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `4`, ATK: `18`, DEF: `0`, SPD: `16`, INT: `0`, STR: `2`, DEX: `6`, TOUGH: `14`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP`
 
@@ -3007,7 +3007,7 @@
 ## Shell Maiden (role_139) — [B★ (2★ Rare)]
 
 
-- **Class:** Archer | **Element:** Water | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Water | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `4`, ATK: `14`, DEF: `4`, SPD: `14`, INT: `4`, STR: `4`, DEX: `2`, TOUGH: `14`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, SPI, STR, SPI, AGI, HP, SPI, STR, SPI, AGI, HP, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, SPD, HP, HP, HP, HP, HP`
 
@@ -3140,7 +3140,7 @@
 ## Spore Archer (role_152) — [B★ (2★ Rare)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `16`, DEF: `2`, SPD: `14`, INT: `0`, STR: `2`, DEX: `4`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP`
 
@@ -3254,7 +3254,7 @@
 ## Troll Hurler (role_89) — [B★ (2★ Rare)]
 
 
-- **Class:** Archer | **Element:** Earth | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Earth | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `6`, ATK: `14`, DEF: `4`, SPD: `12`, INT: `2`, STR: `4`, DEX: `2`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP`
 
@@ -3273,7 +3273,7 @@
 ## Troll Hurler (role_90) — [B★ (2★ Rare)]
 
 
-- **Class:** Archer | **Element:** Fire | **Type:** Spirit | **Position:** 
+- **Class:** Ranger / Archer | **Element:** Fire | **Type:** Spirit | **Position:** 
 - **Base Stats (Lv. 1):** HP: `4`, ATK: `18`, DEF: `0`, SPD: `14`, INT: `2`, STR: `4`, DEX: `4`, TOUGH: `14`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, HP, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, HP, HP, HP, HP, HP`
 
@@ -3349,7 +3349,7 @@
 ## Wolfkin Hunter (role_66) — [B★ (2★ Rare)]
 
 
-- **Class:** Archer | **Element:** Fire | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Fire | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `4`, ATK: `18`, DEF: `0`, SPD: `16`, INT: `0`, STR: `4`, DEX: `6`, TOUGH: `12`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, HP, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP`
 
@@ -3368,7 +3368,7 @@
 ## Wolfkin Hunter (role_67) — [B★ (2★ Rare)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `4`, ATK: `18`, DEF: `0`, SPD: `16`, INT: `0`, STR: `2`, DEX: `4`, TOUGH: `16`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD, HP, HP, HP, HP, HP`
 
@@ -3425,7 +3425,7 @@
 ## Bee Hunter (role_60) — [C★ (1★ Common)]
 
 
-- **Class:** Archer | **Element:** Dark | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Dark | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `2`, ATK: `16`, DEF: `0`, SPD: `14`, INT: `0`, STR: `4`, DEX: `4`, TOUGH: `12`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, SPI, AGI, STR, HP, AGI, SPI, AGI, STR, Toughness, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD`
 
@@ -3444,7 +3444,7 @@
 ## Bee Hunter (role_61) — [C★ (1★ Common)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `2`, ATK: `16`, DEF: `0`, SPD: `14`, INT: `0`, STR: `2`, DEX: `4`, TOUGH: `14`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD`
 
@@ -3615,7 +3615,7 @@
 ## Goblin Hunter (role_9) — [C★ (1★ Common)]
 
 
-- **Class:** Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Wind | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `2`, ATK: `16`, DEF: `0`, SPD: `14`, INT: `0`, STR: `2`, DEX: `6`, TOUGH: `12`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, AGI, STR, SPI, HP, STR, AGI, STR, SPI, SPD`
 
@@ -3729,7 +3729,7 @@
 ## Mine Gatherer (role_85) — [C★ (1★ Common)]
 
 
-- **Class:** Archer | **Element:** Earth | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Earth | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `4`, ATK: `12`, DEF: `4`, SPD: `10`, INT: `2`, STR: `4`, DEX: `2`, TOUGH: `14`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness`
 
@@ -3748,7 +3748,7 @@
 ## Mine Gatherer (role_86) — [C★ (1★ Common)]
 
 
-- **Class:** Archer | **Element:** Fire | **Type:** Spirit | **Position:** 
+- **Class:** Ranger / Archer | **Element:** Fire | **Type:** Spirit | **Position:** 
 - **Base Stats (Lv. 1):** HP: `2`, ATK: `16`, DEF: `0`, SPD: `12`, INT: `2`, STR: `4`, DEX: `4`, TOUGH: `12`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, HP, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness`
 
@@ -3862,7 +3862,7 @@
 ## Wildcat Hunter (role_125) — [C★ (1★ Common)]
 
 
-- **Class:** Archer | **Element:** Earth | **Type:** Spirit | **Position:** DPS
+- **Class:** Ranger / Archer | **Element:** Earth | **Type:** Spirit | **Position:** DPS
 - **Base Stats (Lv. 1):** HP: `4`, ATK: `12`, DEF: `4`, SPD: `10`, INT: `4`, STR: `2`, DEX: `2`, TOUGH: `14`
 - **Growth Profile:** `SPD, AGI, SPD, AGI, HP, AGI, SPD, AGI, Toughness, AGI, STR, SPI, STR, AGI, HP, STR, SPI, STR, AGI, Toughness, AGI, STR, AGI, SPI, HP, AGI, STR, AGI, SPI, SPD, SPI, AGI, SPI, STR, HP, SPI, AGI, SPI, STR, HP`
 

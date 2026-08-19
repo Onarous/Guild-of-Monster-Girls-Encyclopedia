@@ -135,21 +135,21 @@
 - **Description:** *"Stare long enough, and you'll see stars."*
 
 ### Starcore Badge — `Z60008_031`
-- **Slot:** Badge | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Dark
+- **Slot:** Badge | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +4, DEX: +4, INITIAL_MAGIC: +2
 - **Set Bond (Pure):** **Black Hole** — Apply 1,2,3,4,5,6 stacks of Decay to the nearest enemy at action start.
 - **Enhance Ability:** **Dark Star Core** — Drain 1,1,1 Mana per hit when following up, up to 2,4,6 times.
 - **Description:** *"A dead star's heart, still burning with the urge to destroy."*
 
 ### Starcore Necklace — `Z60007_831`
-- **Slot:** Necklace | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Dark
+- **Slot:** Necklace | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +4, DEX: +4, INITIAL_MAGIC: +2
 - **Set Bond (Pure):** **Black Hole** — Apply 1,2,3,4,5,6 stacks of Decay to the nearest enemy at action start.
 - **Enhance Ability:** **Dark Star Core** — Drain 1,1,1 Mana per hit when following up, up to 2,4,6 times.
 - **Description:** *"A dead star's heart, still burning with the urge to destroy."*
 
 ### Starcore Ring — `Z60008_921`
-- **Slot:** Ring | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Dark
+- **Slot:** Ring | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +4, DEX: +4, INITIAL_MAGIC: +2
 - **Set Bond (Pure):** **Black Hole** — Apply 1,2,3,4,5,6 stacks of Decay to the nearest enemy at action start.
 - **Enhance Ability:** **Dark Star Core** — Drain 1,1,1 Mana per hit when following up, up to 2,4,6 times.
@@ -198,21 +198,21 @@
 - **Description:** *"They say the full set bends the very elements to your will."*
 
 ### Lost Holy Bow — `Z60007_231`
-- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Dark, Light
+- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Dark, Light
 - **Stats:** DEX: +6, SPD: +3, LUCK: +1
 - **Set Bond (Pure):** **Huntress** — Gain 2,4,6,8,10,12 stacks of Precision at action start.
 - **Enhance Ability:** **Unknown** — Never be the enemy's first priority and take 0,50,100% less Counter DMG.
 - **Description:** *"So forgettable, collectors never realize it's missing."*
 
 ### Lost Holy Arrows — `Z00003_231`
-- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Dark, Light
+- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Dark, Light
 - **Stats:** DEX: +6, SPD: +3, LUCK: +1
 - **Set Bond (Pure):** **Huntress** — Gain 2,4,6,8,10,12 stacks of Precision at action start.
 - **Enhance Ability:** **Unknown** — Never be the enemy's first priority and take 0,50,100% less Counter DMG.
 - **Description:** *"So forgettable, collectors never realize it's missing."*
 
 ### Lost Sash — `Z00003_232`
-- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Dark, Light
+- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Dark, Light
 - **Stats:** DEX: +6, SPD: +3, LUCK: +1
 - **Set Bond (Pure):** **Huntress** — Gain 2,4,6,8,10,12 stacks of Precision at action start.
 - **Enhance Ability:** **Unknown** — Never be the enemy's first priority and take 0,50,100% less Counter DMG.
@@ -555,63 +555,63 @@
 - **Description:** *"Amplifies the light within."*
 
 ### Marksman Bow — `Z00017_221`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharpshooter** — Deal 2,4,6,8,10,12 more Follow-Up DMG.
 - **Enhance Ability:** **Lucky Moment** — Gain 1,1,1 ATK per 3,2,1 Luck during a basic attack.
 - **Description:** *"With this, you never miss."*
 
 ### Marksman Quiver — `Z00017_223`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharpshooter** — Deal 2,4,6,8,10,12 more Follow-Up DMG.
 - **Enhance Ability:** **Lucky Moment** — Gain 1,1,1 ATK per 3,2,1 Luck during a basic attack.
 - **Description:** *"With this, you never miss."*
 
 ### Marksman Badge — `Z00017_224`
-- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharpshooter** — Deal 2,4,6,8,10,12 more Follow-Up DMG.
 - **Enhance Ability:** **Lucky Moment** — Gain 1,1,1 ATK per 3,2,1 Luck during a basic attack.
 - **Description:** *"With this, you never miss."*
 
 ### Marksman Hat — `Z00017_521`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharpshooter** — Deal 2,4,6,8,10,12 more Follow-Up DMG.
 - **Enhance Ability:** **Archer's Focus** — Deal 5,10,15 more Follow-Up DMG but lose 2,2,2 Action Mana.
 - **Description:** *"With this, you never miss."*
 
 ### Marksman Mantle — `Z00017_622`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharpshooter** — Deal 2,4,6,8,10,12 more Follow-Up DMG.
 - **Enhance Ability:** **Archer's Focus** — Deal 5,10,15 more Follow-Up DMG but lose 2,2,2 Action Mana.
 - **Description:** *"With this, you never miss."*
 
 ### Marksman Necklace — `Z00017_625`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharpshooter** — Deal 2,4,6,8,10,12 more Follow-Up DMG.
 - **Enhance Ability:** **Archer's Focus** — Deal 5,10,15 more Follow-Up DMG but lose 2,2,2 Action Mana.
 - **Description:** *"With this, you never miss."*
 
 ### Marksman Gloves — `Z00017_621`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharpshooter** — Deal 2,4,6,8,10,12 more Follow-Up DMG.
 - **Enhance Ability:** **Wait For It** — Gain 1,2,3 more Follow-Up DMG next time at action end if not attacked this turn.
 - **Description:** *"With this, you never miss."*
 
 ### Marksman Belt — `Z00017_623`
-- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharpshooter** — Deal 2,4,6,8,10,12 more Follow-Up DMG.
 - **Enhance Ability:** **Wait For It** — Gain 1,2,3 more Follow-Up DMG next time at action end if not attacked this turn.
 - **Description:** *"With this, you never miss."*
 
 ### Marksman Boots — `Z00017_624`
-- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharpshooter** — Deal 2,4,6,8,10,12 more Follow-Up DMG.
 - **Enhance Ability:** **Wait For It** — Gain 1,2,3 more Follow-Up DMG next time at action end if not attacked this turn.
@@ -786,21 +786,21 @@
 - **Description:** *"Makes your life force as stubborn as stone."*
 
 ### Swift Bow — `Z00002_212`
-- **Slot:** Main Hand | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind
+- **Slot:** Main Hand | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Swift** — Gain 1,2,3,4,5,6 SPD.
 - **Enhance Ability:** **Swift Attack** — Gain 1,1,1 ATK per 75,50,25 SPD.
 - **Description:** *"Light as air, swift as wind."*
 
 ### Swift Arrows — `Z00002_713`
-- **Slot:** Off-hand / Shield | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind
+- **Slot:** Off-hand / Shield | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Swift** — Gain 1,2,3,4,5,6 SPD.
 - **Enhance Ability:** **Swift Attack** — Gain 1,1,1 ATK per 75,50,25 SPD.
 - **Description:** *"Light as air, swift as wind."*
 
 ### Swift Badge — `Z00002_714`
-- **Slot:** Badge | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind
+- **Slot:** Badge | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Swift** — Gain 1,2,3,4,5,6 SPD.
 - **Enhance Ability:** **Swift Attack** — Gain 1,1,1 ATK per 75,50,25 SPD.
@@ -919,21 +919,21 @@
 - **Description:** *"Sharpens the mind like a whetstone sharpens steel."*
 
 ### Archer Bow — `Z00002_211`
-- **Slot:** Main Hand | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Wind
+- **Slot:** Main Hand | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +1
 - **Set Bond (Pure):** **Lightweight** — Gain 1,2,3,4,5,6 AGI.
 - **Enhance Ability:** **Archery Stack** — Gain 1,2,3 ATK after following up, up to 3,6,9.
 - **Description:** *"Keeps you moving when others would rest."*
 
 ### Archer Cape — `Z00002_611`
-- **Slot:** Body | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Wind
+- **Slot:** Body | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +1
 - **Set Bond (Pure):** **Lightweight** — Gain 1,2,3,4,5,6 AGI.
 - **Enhance Ability:** **Archery Stack** — Gain 1,2,3 ATK after following up, up to 3,6,9.
 - **Description:** *"Keeps you moving when others would rest."*
 
 ### Archer Bracers — `Z00002_711`
-- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Wind
+- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +1
 - **Set Bond (Pure):** **Lightweight** — Gain 1,2,3,4,5,6 AGI.
 - **Enhance Ability:** **Archery Stack** — Gain 1,2,3 ATK after following up, up to 3,6,9.
@@ -989,63 +989,63 @@
 - **Description:** *"Commands hurricanes with a gesture."*
 
 ### Rogue Hood — `Z00017_232`
-- **Slot:** Head | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Wind
+- **Slot:** Head | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Never Give Up** — Gain 2,4,6 ATK after attacking. Effect increases by 50,50,50% on miss.
 - **Description:** *"No prey escapes someone wearing this."*
 
 ### Rogue Cape — `Z20025_723`
-- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Wind
+- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Never Give Up** — Gain 2,4,6 ATK after attacking. Effect increases by 50,50,50% on miss.
 - **Description:** *"No prey escapes someone wearing this."*
 
 ### Rogue Sash — `Z20025_722`
-- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Wind
+- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Never Give Up** — Gain 2,4,6 ATK after attacking. Effect increases by 50,50,50% on miss.
 - **Description:** *"No prey escapes someone wearing this."*
 
 ### Sniper Crossbow — `Z00017_222`
-- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +6, SPD: +3, LUCK: +1
 - **Set Bond (Pure):** **Huntress** — Gain 2,4,6,8,10,12 stacks of Precision at action start.
 - **Enhance Ability:** **Ammo Up** — Take 1,1,1 extra action each turn but gain 10,5,0 Max Mana.
 - **Description:** *"Your enemies have nowhere to hide."*
 
 ### Sniper Bolts — `Z00017_231`
-- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +6, SPD: +3, LUCK: +1
 - **Set Bond (Pure):** **Huntress** — Gain 2,4,6,8,10,12 stacks of Precision at action start.
 - **Enhance Ability:** **Ammo Up** — Take 1,1,1 extra action each turn but gain 10,5,0 Max Mana.
 - **Description:** *"Your enemies have nowhere to hide."*
 
 ### Sniper Necklace — `Z00017_233`
-- **Slot:** Necklace | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Necklace | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +6, SPD: +3, LUCK: +1
 - **Set Bond (Pure):** **Huntress** — Gain 2,4,6,8,10,12 stacks of Precision at action start.
 - **Enhance Ability:** **Ammo Up** — Take 1,1,1 extra action each turn but gain 10,5,0 Max Mana.
 - **Description:** *"Your enemies have nowhere to hide."*
 
 ### Sniper Bracers — `Z00017_234`
-- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +6, SPD: +3, LUCK: +1
 - **Set Bond (Pure):** **Huntress** — Gain 2,4,6,8,10,12 stacks of Precision at action start.
 - **Enhance Ability:** **Hold Breath** — Gain 3,6,9 more stacks of Precision but deal 1,1,1 fewer Follow-Up attacks.
 - **Description:** *"Your enemies have nowhere to hide."*
 
 ### Sniper Belt — `Z00017_235`
-- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +6, SPD: +3, LUCK: +1
 - **Set Bond (Pure):** **Huntress** — Gain 2,4,6,8,10,12 stacks of Precision at action start.
 - **Enhance Ability:** **Hold Breath** — Gain 3,6,9 more stacks of Precision but deal 1,1,1 fewer Follow-Up attacks.
 - **Description:** *"Your enemies have nowhere to hide."*
 
 ### Sniper Ring — `Z00017_236`
-- **Slot:** Ring | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Ring | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +6, SPD: +3, LUCK: +1
 - **Set Bond (Pure):** **Huntress** — Gain 2,4,6,8,10,12 stacks of Precision at action start.
 - **Enhance Ability:** **Hold Breath** — Gain 3,6,9 more stacks of Precision but deal 1,1,1 fewer Follow-Up attacks.
@@ -1115,42 +1115,42 @@
 - **Description:** *"Rivers of blood have stained this blade."*
 
 ### Windlistener Bow — `Z00000_241`
-- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +4, SPD: +4
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Ride The Wind** — Deal +1,1,1 Follow-Up attacks. Deal +1 Follow-Up DMG per 120,80,40 stacks of Haste.
 - **Description:** *"Only true windrunners earn the right to carry this."*
 
 ### Windlistener Arrows — `Z00000_242`
-- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +4, SPD: +4
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Ride The Wind** — Deal +1,1,1 Follow-Up attacks. Deal +1 Follow-Up DMG per 120,80,40 stacks of Haste.
 - **Description:** *"Only true windrunners earn the right to carry this."*
 
 ### Windlistener Boots — `Z00000_243`
-- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +4, SPD: +4
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Ride The Wind** — Deal +1,1,1 Follow-Up attacks. Deal +1 Follow-Up DMG per 120,80,40 stacks of Haste.
 - **Description:** *"Only true windrunners earn the right to carry this."*
 
 ### Windwhisper Hood — `Z20026_531`
-- **Slot:** Head | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Head | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Endless Pursuit** — Deal 1,2,3 more Follow-Up DMG after a Follow-Up. Lose the effect after being hit by a Counter.
 - **Description:** *"Only true windrunners earn the right to carry this."*
 
 ### Windwhisper Bracers — `Z00017_022`
-- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Endless Pursuit** — Deal 1,2,3 more Follow-Up DMG after a Follow-Up. Lose the effect after being hit by a Counter.
 - **Description:** *"Only true windrunners earn the right to carry this."*
 
 ### Windwhisper Badge — `Z00017_021`
-- **Slot:** Badge | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Badge | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Endless Pursuit** — Deal 1,2,3 more Follow-Up DMG after a Follow-Up. Lose the effect after being hit by a Counter.
@@ -1178,42 +1178,42 @@
 - **Description:** *"All flash, no substance."*
 
 ### Windrun Crossbow — `Z20004_211`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Windrun** — Gain 4,8,12,16,20,24 stacks of Haste at turn start.
 - **Enhance Ability:** **Swift Pursuit** — Deal +1,1,1 Follow-Up DMG per 120,80,40 stacks of Haste.
 - **Description:** *"Windrunners swear by these. Looking good is just a bonus."*
 
 ### Windrun Arrow — `Z00002_213`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Windrun** — Gain 4,8,12,16,20,24 stacks of Haste at turn start.
 - **Enhance Ability:** **Swift Pursuit** — Deal +1,1,1 Follow-Up DMG per 120,80,40 stacks of Haste.
 - **Description:** *"Windrunners swear by these. Looking good is just a bonus."*
 
 ### Windrun Gloves — `Z00002_214`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Windrun** — Gain 4,8,12,16,20,24 stacks of Haste at turn start.
 - **Enhance Ability:** **Swift Pursuit** — Deal +1,1,1 Follow-Up DMG per 120,80,40 stacks of Haste.
 - **Description:** *"Windrunners swear by these. Looking good is just a bonus."*
 
 ### Windwalker Leather — `Z20004_611`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Windrun** — Gain 4,8,12,16,20,24 stacks of Haste at turn start.
 - **Enhance Ability:** **Windrun Power** — Gain 1,2,3 more stacks of Haste and take 2,4,6 fewer stacks of Slow.
 - **Description:** *"Windrunners swear by these. Looking good is just a bonus."*
 
 ### Windwalker Belt — `Z20004_713`
-- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Windrun** — Gain 4,8,12,16,20,24 stacks of Haste at turn start.
 - **Enhance Ability:** **Windrun Power** — Gain 1,2,3 more stacks of Haste and take 2,4,6 fewer stacks of Slow.
 - **Description:** *"Windrunners swear by these. Looking good is just a bonus."*
 
 ### Windwalker Boots — `Z20004_711`
-- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Windrun** — Gain 4,8,12,16,20,24 stacks of Haste at turn start.
 - **Enhance Ability:** **Windrun Power** — Gain 1,2,3 more stacks of Haste and take 2,4,6 fewer stacks of Slow.
@@ -1283,21 +1283,21 @@
 - **Description:** *"Lets you speak with wind spirits."*
 
 ### Red Hood — `Z40001_521`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Prey On Weak** — Deal 1,2,3 more Follow-Up attacks to low HP targets, but deal 3,3,3 fewer Follow-Up attacks at low HP.
 - **Description:** *"Only elite goblin soldiers earned these."*
 
 ### Red Cape — `Z40001_621`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Prey On Weak** — Deal 1,2,3 more Follow-Up attacks to low HP targets, but deal 3,3,3 fewer Follow-Up attacks at low HP.
 - **Description:** *"Only elite goblin soldiers earned these."*
 
 ### Red Boots — `Z40001_721`
-- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Prey On Weak** — Deal 1,2,3 more Follow-Up attacks to low HP targets, but deal 3,3,3 fewer Follow-Up attacks at low HP.
@@ -1346,21 +1346,21 @@
 - **Description:** *"The plains tribes use these in sacred rites."*
 
 ### Armorbreak Crossbow — `Z20004_222`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Earth
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Earth
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Armor Break** — Apply 2,4,6,8,10,12 stacks of Vulnerable to target after a basic attack.
 - **Enhance Ability:** **Piercing Arrow** — Gain 1,1,1 basic attack targets but lose 10,5,0 Action Mana.
 - **Description:** *"Heavy as sin, hits twice as hard."*
 
 ### Armorbreak Bolts — `Z20004_223`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Earth
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Earth
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Armor Break** — Apply 2,4,6,8,10,12 stacks of Vulnerable to target after a basic attack.
 - **Enhance Ability:** **Piercing Arrow** — Gain 1,1,1 basic attack targets but lose 10,5,0 Action Mana.
 - **Description:** *"Heavy as sin, hits twice as hard."*
 
 ### Armorbreak Ring — `Z20004_224`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Earth
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Earth
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Armor Break** — Apply 2,4,6,8,10,12 stacks of Vulnerable to target after a basic attack.
 - **Enhance Ability:** **Piercing Arrow** — Gain 1,1,1 basic attack targets but lose 10,5,0 Action Mana.
@@ -1388,21 +1388,21 @@
 - **Description:** *"Dragon bones don't break. Neither does this."*
 
 ### Fluffy Gloves — `Z50005_722`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Archer, Mage | **Element:** Light
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer, Mage | **Element:** Light
 - **Stats:** INT: +2, DEX: +2, LUCK: +1
 - **Set Bond (Pure):** **Fortune** — Gain +1,2,3,4,5,6 Luck.
 - **Enhance Ability:** **Lucky Foot** — Gain 1,2,3 more stacks of Precision. Gain 1 extra stack of Precision when Luck is at least 15,10,5.
 - **Description:** *"So soft and warm, you can't help but smile."*
 
 ### Fluffy Belt — `Z50005_723`
-- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Archer, Mage | **Element:** Light
+- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer, Mage | **Element:** Light
 - **Stats:** INT: +2, DEX: +2, LUCK: +1
 - **Set Bond (Pure):** **Fortune** — Gain +1,2,3,4,5,6 Luck.
 - **Enhance Ability:** **Lucky Foot** — Gain 1,2,3 more stacks of Precision. Gain 1 extra stack of Precision when Luck is at least 15,10,5.
 - **Description:** *"So soft and warm, you can't help but smile."*
 
 ### Fluffy Shoes — `Z50005_721`
-- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Archer, Mage | **Element:** Light
+- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer, Mage | **Element:** Light
 - **Stats:** INT: +2, DEX: +2, LUCK: +1
 - **Set Bond (Pure):** **Fortune** — Gain +1,2,3,4,5,6 Luck.
 - **Enhance Ability:** **Lucky Foot** — Gain 1,2,3 more stacks of Precision. Gain 1 extra stack of Precision when Luck is at least 15,10,5.
@@ -1619,42 +1619,42 @@
 - **Description:** *"You can feel the maker's longing for home."*
 
 ### Simple Bracers — `Z00015_701`
-- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Earth, Wind
+- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Swift** — Gain 1,2,3,4,5,6 SPD.
 - **Enhance Ability:** **Restore Energy** — Gain 2,4,6 Mana after casting skill for the first time.
 - **Description:** *"Restores a bit of energy when you need it."*
 
 ### Simple Belt — `Z10028_711`
-- **Slot:** Belt | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Earth, Wind
+- **Slot:** Belt | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Swift** — Gain 1,2,3,4,5,6 SPD.
 - **Enhance Ability:** **Restore Energy** — Gain 2,4,6 Mana after casting skill for the first time.
 - **Description:** *"Restores a bit of energy when you need it."*
 
 ### Simple Shoes — `Z00015_702`
-- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Earth, Wind
+- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Swift** — Gain 1,2,3,4,5,6 SPD.
 - **Enhance Ability:** **Restore Energy** — Gain 2,4,6 Mana after casting skill for the first time.
 - **Description:** *"Restores a bit of energy when you need it."*
 
 ### Simple Blowdart — `Z10028_202`
-- **Slot:** Main Hand | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Earth, Wind
+- **Slot:** Main Hand | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Swift** — Gain 1,2,3,4,5,6 SPD.
 - **Enhance Ability:** **Paralysis Drug** — Apply 3,6,9 stacks of Stun to enemies after casting skill for the first time.
 - **Description:** *"Coated in herbs no one can identify."*
 
 ### Simple Needle — `Z10028_204`
-- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Earth, Wind
+- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Swift** — Gain 1,2,3,4,5,6 SPD.
 - **Enhance Ability:** **Paralysis Drug** — Apply 3,6,9 stacks of Stun to enemies after casting skill for the first time.
 - **Description:** *"Coated in herbs no one can identify."*
 
 ### Simple Ring — `Z10028_205`
-- **Slot:** Ring | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Earth, Wind
+- **Slot:** Ring | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Swift** — Gain 1,2,3,4,5,6 SPD.
 - **Enhance Ability:** **Paralysis Drug** — Apply 3,6,9 stacks of Stun to enemies after casting skill for the first time.
@@ -1696,14 +1696,14 @@
 - **Description:** *"One cut from this, and you're done."*
 
 ### Wasp Stinger — `Z10028_122`
-- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Earth, Wind
+- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Swarm** — Apply 2,4,6,8,10,12 stacks of Hinder to the nearest enemy at action start.
 - **Enhance Ability:** **Bee Swarm** — Apply 1,2,3 stacks of Hinder to target after attacking. Effect increases by 1,2,3 per attack this turn.
 - **Description:** *"One cut from this, and you're done."*
 
 ### Wasp Ring — `Z10028_921`
-- **Slot:** Ring | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Earth, Wind
+- **Slot:** Ring | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Swarm** — Apply 2,4,6,8,10,12 stacks of Hinder to the nearest enemy at action start.
 - **Enhance Ability:** **Bee Swarm** — Apply 1,2,3 stacks of Hinder to target after attacking. Effect increases by 1,2,3 per attack this turn.
@@ -1794,189 +1794,189 @@
 - **Description:** *"Built by a mad genius with too much time."*
 
 ### Firefeather Cape — `Z40022_621`
-- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Archer, Mage | **Element:** Fire
+- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer, Mage | **Element:** Fire
 - **Stats:** INT: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Wildfire** — Apply 2,4,6,8,10,12 stacks of Burn to the nearest enemy at action start.
 - **Enhance Ability:** **Hell's Joy** — Gain 1,2,3 Mana after applying Burn, up to 4,8,12 per turn.
 - **Description:** *"Woven from fire feathers, scattering flames with every move."*
 
 ### Firefeather Belt — `Z40022_722`
-- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Archer, Mage | **Element:** Fire
+- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer, Mage | **Element:** Fire
 - **Stats:** INT: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Wildfire** — Apply 2,4,6,8,10,12 stacks of Burn to the nearest enemy at action start.
 - **Enhance Ability:** **Hell's Joy** — Gain 1,2,3 Mana after applying Burn, up to 4,8,12 per turn.
 - **Description:** *"Woven from fire feathers, scattering flames with every move."*
 
 ### Firefeather Boots — `Z40022_721`
-- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Archer, Mage | **Element:** Fire
+- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer, Mage | **Element:** Fire
 - **Stats:** INT: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Wildfire** — Apply 2,4,6,8,10,12 stacks of Burn to the nearest enemy at action start.
 - **Enhance Ability:** **Hell's Joy** — Gain 1,2,3 Mana after applying Burn, up to 4,8,12 per turn.
 - **Description:** *"Woven from fire feathers, scattering flames with every move."*
 
 ### Skyfeather Blade — `Z20000_232`
-- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Speed** — +2,4,6,8,10,12 SPD. Deal +1,2,3,4,5,6 total DMG.
 - **Enhance Ability:** **Blade Feathers** — Gain 1,1,1 multi-hit skill hits after following up, up to 1,2,3. Effect is lost after casting skill.
 - **Description:** *"Grants the power of flight."*
 
 ### Skyfeather Cloak — `Z20026_732`
-- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Speed** — +2,4,6,8,10,12 SPD. Deal +1,2,3,4,5,6 total DMG.
 - **Enhance Ability:** **Blade Feathers** — Gain 1,1,1 multi-hit skill hits after following up, up to 1,2,3. Effect is lost after casting skill.
 - **Description:** *"Grants the power of flight."*
 
 ### Skyfeather Boots — `Z20026_731`
-- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Speed** — +2,4,6,8,10,12 SPD. Deal +1,2,3,4,5,6 total DMG.
 - **Enhance Ability:** **Blade Feathers** — Gain 1,1,1 multi-hit skill hits after following up, up to 1,2,3. Effect is lost after casting skill.
 - **Description:** *"Grants the power of flight."*
 
 ### Skyfeather Bracers — `Z20026_733`
-- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Speed** — +2,4,6,8,10,12 SPD. Deal +1,2,3,4,5,6 total DMG.
 - **Enhance Ability:** **Swift Feathers** — Deal 2,4,6 more Skill DMG. Deal 1 more Skill DMG per 75,50,25 SPD.
 - **Description:** *"Grants the power of flight."*
 
 ### Skyfeather Badge — `Z20026_734`
-- **Slot:** Badge | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Badge | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Speed** — +2,4,6,8,10,12 SPD. Deal +1,2,3,4,5,6 total DMG.
 - **Enhance Ability:** **Swift Feathers** — Deal 2,4,6 more Skill DMG. Deal 1 more Skill DMG per 75,50,25 SPD.
 - **Description:** *"Grants the power of flight."*
 
 ### Skyfeather Necklace — `Z20026_735`
-- **Slot:** Necklace | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Necklace | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Speed** — +2,4,6,8,10,12 SPD. Deal +1,2,3,4,5,6 total DMG.
 - **Enhance Ability:** **Swift Feathers** — Deal 2,4,6 more Skill DMG. Deal 1 more Skill DMG per 75,50,25 SPD.
 - **Description:** *"Grants the power of flight."*
 
 ### Packwolf Hood — `Z20008_521`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Order** — Gain 1,1,1,1,1,1 ATK per ally count, up to 2,4,6,8,10,12.
 - **Enhance Ability:** **Wolves Hunting** — Deal 1,1,1 more Follow-Up DMG per ally count, up to 4,8,16.
 - **Description:** *"Borrow the wolf spirit's strength, but only for a moment."*
 
 ### Packwolf Cloak — `Z20008_621`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Order** — Gain 1,1,1,1,1,1 ATK per ally count, up to 2,4,6,8,10,12.
 - **Enhance Ability:** **Wolves Hunting** — Deal 1,1,1 more Follow-Up DMG per ally count, up to 4,8,16.
 - **Description:** *"Borrow the wolf spirit's strength, but only for a moment."*
 
 ### Packwolf Gloves — `Z20008_731`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Order** — Gain 1,1,1,1,1,1 ATK per ally count, up to 2,4,6,8,10,12.
 - **Enhance Ability:** **Wolves Hunting** — Deal 1,1,1 more Follow-Up DMG per ally count, up to 4,8,16.
 - **Description:** *"Borrow the wolf spirit's strength, but only for a moment."*
 
 ### Packwolf Shieldbow — `Z00016_221`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Order** — Gain 1,1,1,1,1,1 ATK per ally count, up to 2,4,6,8,10,12.
 - **Enhance Ability:** **Spirit Howl** — Ally Count +1,2,3.
 - **Description:** *"Borrow the wolf spirit's strength, but only for a moment."*
 
 ### Packwolf Cape — `Z10002_621`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Order** — Gain 1,1,1,1,1,1 ATK per ally count, up to 2,4,6,8,10,12.
 - **Enhance Ability:** **Spirit Howl** — Ally Count +1,2,3.
 - **Description:** *"Borrow the wolf spirit's strength, but only for a moment."*
 
 ### Packwolf Sash — `Z10002_721`
-- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Order** — Gain 1,1,1,1,1,1 ATK per ally count, up to 2,4,6,8,10,12.
 - **Enhance Ability:** **Spirit Howl** — Ally Count +1,2,3.
 - **Description:** *"Borrow the wolf spirit's strength, but only for a moment."*
 
 ### Beastfang Dagger — `Z00016_121`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Slash** — Apply 2,4,6,8,10,12 stacks of Expose to target after a basic attack.
 - **Enhance Ability:** **Prey Track** — Deal 4,8,12 more Follow-Up DMG to targets with Expose.
 - **Description:** *"Carved from monster fangs."*
 
 ### Beastfang Hood — `Z00016_521`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Slash** — Apply 2,4,6,8,10,12 stacks of Expose to target after a basic attack.
 - **Enhance Ability:** **Prey Track** — Deal 4,8,12 more Follow-Up DMG to targets with Expose.
 - **Description:** *"Carved from monster fangs."*
 
 ### Beastfang Cloak — `Z00016_621`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Slash** — Apply 2,4,6,8,10,12 stacks of Expose to target after a basic attack.
 - **Enhance Ability:** **Prey Track** — Deal 4,8,12 more Follow-Up DMG to targets with Expose.
 - **Description:** *"Carved from monster fangs."*
 
 ### Beast Fang Necklace — `Z00016_811`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Slash** — Apply 2,4,6,8,10,12 stacks of Expose to target after a basic attack.
 - **Enhance Ability:** **Sharp Fangs** — Deal 2,4,6 more total DMG to targets with Expose.
 - **Description:** *"Carved from monster fangs."*
 
 ### Beast Fang Ring — `Z00016_911`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Slash** — Apply 2,4,6,8,10,12 stacks of Expose to target after a basic attack.
 - **Enhance Ability:** **Sharp Fangs** — Deal 2,4,6 more total DMG to targets with Expose.
 - **Description:** *"Carved from monster fangs."*
 
 ### Beast Fang Badge — `Z00016_011`
-- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Slash** — Apply 2,4,6,8,10,12 stacks of Expose to target after a basic attack.
 - **Enhance Ability:** **Sharp Fangs** — Deal 2,4,6 more total DMG to targets with Expose.
 - **Description:** *"Carved from monster fangs."*
 
 ### Hunt Crossbow — `Z20004_221`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Swift Arrow** — Deal 1,1,1 more Follow-Up attacks and 2,4,6 more Follow-Up DMG on successful attack.
 - **Description:** *"Only veteran hunters can afford gear like this."*
 
 ### Hunt Bolts — `Z10022_212`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Swift Arrow** — Deal 1,1,1 more Follow-Up attacks and 2,4,6 more Follow-Up DMG on successful attack.
 - **Description:** *"Only veteran hunters can afford gear like this."*
 
 ### Hunt Mask — `Z10002_521`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Swift Arrow** — Deal 1,1,1 more Follow-Up attacks and 2,4,6 more Follow-Up DMG on successful attack.
 - **Description:** *"Only veteran hunters can afford gear like this."*
 
 ### Hunt Necklace — `Z00016_921`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Cull Weak** — Deal +8,16,24 Follow-Up DMG to the lowest HP enemy.
 - **Description:** *"Only veteran hunters can afford gear like this."*
 
 ### Hunt Ring — `Z00016_821`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Cull Weak** — Deal +8,16,24 Follow-Up DMG to the lowest HP enemy.
 - **Description:** *"Only veteran hunters can afford gear like this."*
 
 ### Hunt Badge — `Z00016_021`
-- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Cull Weak** — Deal +8,16,24 Follow-Up DMG to the lowest HP enemy.
@@ -2172,42 +2172,42 @@
 - **Description:** *"Your ancestors' magic sleeps within."*
 
 ### Harpy Gauntlets — `Z10023_712`
-- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Earth, Wind
+- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Wind Pressure** — Apply 2,4,6,8,10,12 stacks of Expose to all enemies at battle start.
 - **Enhance Ability:** **Sharp Talons** — Gain 4,8,12 ATK when casting skill if target has Expose.
 - **Description:** *"Claws like a hunting bird's talons."*
 
 ### Harpy Belt — `Z10023_713`
-- **Slot:** Belt | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Earth, Wind
+- **Slot:** Belt | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Wind Pressure** — Apply 2,4,6,8,10,12 stacks of Expose to all enemies at battle start.
 - **Enhance Ability:** **Sharp Talons** — Gain 4,8,12 ATK when casting skill if target has Expose.
 - **Description:** *"Claws like a hunting bird's talons."*
 
 ### Harpy Boots — `Z10023_711`
-- **Slot:** Boots | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Earth, Wind
+- **Slot:** Boots | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Wind Pressure** — Apply 2,4,6,8,10,12 stacks of Expose to all enemies at battle start.
 - **Enhance Ability:** **Sharp Talons** — Gain 4,8,12 ATK when casting skill if target has Expose.
 - **Description:** *"Claws like a hunting bird's talons."*
 
 ### Wolf Fang Crossbow — `Z10022_211`
-- **Slot:** Main Hand | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Main Hand | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Wind Pressure** — Apply 2,4,6,8,10,12 stacks of Expose to all enemies at battle start.
 - **Enhance Ability:** **Life Siphon** — Gain 1,2,3 HP after applying Expose.
 - **Description:** *"Small and light, easy to carry."*
 
 ### Wolf Fang Bolts — `Z10028_211`
-- **Slot:** Off-hand / Shield | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Off-hand / Shield | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Wind Pressure** — Apply 2,4,6,8,10,12 stacks of Expose to all enemies at battle start.
 - **Enhance Ability:** **Life Siphon** — Gain 1,2,3 HP after applying Expose.
 - **Description:** *"Small and light, easy to carry."*
 
 ### Wolf Fang Ring — `Z10028_212`
-- **Slot:** Ring | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Ring | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Wind Pressure** — Apply 2,4,6,8,10,12 stacks of Expose to all enemies at battle start.
 - **Enhance Ability:** **Life Siphon** — Gain 1,2,3 HP after applying Expose.
@@ -2298,21 +2298,21 @@
 - **Description:** *"Standard hunter's kit."*
 
 ### Crude Helm — `Z10008_501`
-- **Slot:** Head | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Head | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Lightweight** — Gain 1,2,3,4,5,6 AGI.
 - **Enhance Ability:** **Cull the Weak** — Gain 1,2,3 ATK after attacking low HP target, up to 4,8,12.
 - **Description:** *"Rough work, but it gets the job done."*
 
 ### Crude Leather — `Z10008_601`
-- **Slot:** Body | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Body | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Lightweight** — Gain 1,2,3,4,5,6 AGI.
 - **Enhance Ability:** **Cull the Weak** — Gain 1,2,3 ATK after attacking low HP target, up to 4,8,12.
 - **Description:** *"Rough work, but it gets the job done."*
 
 ### Crude Boots — `Z10008_703`
-- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Lightweight** — Gain 1,2,3,4,5,6 AGI.
 - **Enhance Ability:** **Cull the Weak** — Gain 1,2,3 ATK after attacking low HP target, up to 4,8,12.
@@ -2326,35 +2326,35 @@
 - **Description:** *"Made from insect parts best left unnamed."*
 
 ### Worm Fang Dagger — `Z10028_101`
-- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Earth, Wind
+- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Diffuse** — Apply 2,4,6,8,10,12 stacks of Hinder to the nearest enemy when defeated.
 - **Enhance Ability:** **Wasp Bite** — Deal 1,2,3 more Follow-Up DMG to Hindered targets.
 - **Description:** *"Made from insect parts best left unnamed."*
 
 ### Worm Fang Ring — `Z10028_901`
-- **Slot:** Ring | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Earth, Wind
+- **Slot:** Ring | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Diffuse** — Apply 2,4,6,8,10,12 stacks of Hinder to the nearest enemy when defeated.
 - **Enhance Ability:** **Wasp Bite** — Deal 1,2,3 more Follow-Up DMG to Hindered targets.
 - **Description:** *"Made from insect parts best left unnamed."*
 
 ### Insect Fang Bow — `Z10028_201`
-- **Slot:** Main Hand | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Earth, Wind
+- **Slot:** Main Hand | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Diffuse** — Apply 2,4,6,8,10,12 stacks of Hinder to the nearest enemy when defeated.
 - **Enhance Ability:** **Toxin Burst** — Remove 2,2,2 stacks of Hinder from enemies and they lose 2,4,6 HP after casting skill.
 - **Description:** *"Made from insect parts best left unnamed."*
 
 ### Insect Fang Arrows — `Z10028_203`
-- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Earth, Wind
+- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Diffuse** — Apply 2,4,6,8,10,12 stacks of Hinder to the nearest enemy when defeated.
 - **Enhance Ability:** **Toxin Burst** — Remove 2,2,2 stacks of Hinder from enemies and they lose 2,4,6 HP after casting skill.
 - **Description:** *"Made from insect parts best left unnamed."*
 
 ### Insect Fang Necklace — `Z10028_206`
-- **Slot:** Necklace | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Earth, Wind
+- **Slot:** Necklace | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Diffuse** — Apply 2,4,6,8,10,12 stacks of Hinder to the nearest enemy when defeated.
 - **Enhance Ability:** **Toxin Burst** — Remove 2,2,2 stacks of Hinder from enemies and they lose 2,4,6 HP after casting skill.
@@ -2389,42 +2389,42 @@
 - **Description:** *"Commands frost bees that feast on warmth."*
 
 ### Frostfeather Blade — `Z00101_231`
-- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Cold Wave** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy at action start.
 - **Enhance Ability:** **Ice Blades** — Gain 1,1,1 Follow-Up DMG per 120,80,40 stacks of Chill inflicted after casting skill.
 - **Description:** *"Light as snow, but deadly as falling icicles."*
 
 ### Frostfeather Cloak — `Z00101_232`
-- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Cold Wave** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy at action start.
 - **Enhance Ability:** **Ice Blades** — Gain 1,1,1 Follow-Up DMG per 120,80,40 stacks of Chill inflicted after casting skill.
 - **Description:** *"Light as snow, but deadly as falling icicles."*
 
 ### Frostfeather Boots — `Z00101_732`
-- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Cold Wave** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy at action start.
 - **Enhance Ability:** **Ice Blades** — Gain 1,1,1 Follow-Up DMG per 120,80,40 stacks of Chill inflicted after casting skill.
 - **Description:** *"Light as snow, but deadly as falling icicles."*
 
 ### Frostfeather Bracers — `Z00101_233`
-- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Cold Wave** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy at action start.
 - **Enhance Ability:** **Frost Feathers** — Deal 2,4,6 more Follow-Up DMG. Deal 1 more Follow-Up DMG per 90,60,30 stacks of Chill on target.
 - **Description:** *"Light as snow, but deadly as falling icicles."*
 
 ### Frostfeather Badge — `Z00101_234`
-- **Slot:** Badge | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Badge | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Cold Wave** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy at action start.
 - **Enhance Ability:** **Frost Feathers** — Deal 2,4,6 more Follow-Up DMG. Deal 1 more Follow-Up DMG per 90,60,30 stacks of Chill on target.
 - **Description:** *"Light as snow, but deadly as falling icicles."*
 
 ### Frostfeather Necklace — `Z00101_235`
-- **Slot:** Necklace | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Necklace | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Cold Wave** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy at action start.
 - **Enhance Ability:** **Frost Feathers** — Deal 2,4,6 more Follow-Up DMG. Deal 1 more Follow-Up DMG per 90,60,30 stacks of Chill on target.
@@ -2536,21 +2536,21 @@
 - **Description:** *"Shields you from the world's corruption."*
 
 ### Frost Spider Mantle — `Z00101_831`
-- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Archer, Mage | **Element:** Wind, Water
+- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer, Mage | **Element:** Wind, Water
 - **Stats:** INT: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Cold Wind** — Apply 1,2,3,4,5,6 stacks of Chill to target after following up.
 - **Enhance Ability:** **Frost Thread** — Inflict +1,2,3 HP Loss but deal -1,1,1 total DMG after applying Chill.
 - **Description:** *"Woven from frost spider silk."*
 
 ### Frost Spider Gloves — `Z00101_832`
-- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Archer, Mage | **Element:** Wind, Water
+- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer, Mage | **Element:** Wind, Water
 - **Stats:** INT: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Cold Wind** — Apply 1,2,3,4,5,6 stacks of Chill to target after following up.
 - **Enhance Ability:** **Frost Thread** — Inflict +1,2,3 HP Loss but deal -1,1,1 total DMG after applying Chill.
 - **Description:** *"Woven from frost spider silk."*
 
 ### Frost Spider Emblem — `Z00101_833`
-- **Slot:** Badge | **Tier:** S (4★ Legendary) | **Class:** Archer, Mage | **Element:** Wind, Water
+- **Slot:** Badge | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer, Mage | **Element:** Wind, Water
 - **Stats:** INT: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Cold Wind** — Apply 1,2,3,4,5,6 stacks of Chill to target after following up.
 - **Enhance Ability:** **Frost Thread** — Inflict +1,2,3 HP Loss but deal -1,1,1 total DMG after applying Chill.
@@ -2599,42 +2599,42 @@
 - **Description:** *"The great shamans of the tundra wore this."*
 
 ### Storm Blade — `Z00101_621`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Storm Rage** — Deal +1,2,3 total DMG after applying Chill. Effect ends after casting skill.
 - **Description:** *"Unleashes storms at your command."*
 
 ### Storm Helm — `Z00101_622`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Storm Rage** — Deal +1,2,3 total DMG after applying Chill. Effect ends after casting skill.
 - **Description:** *"Unleashes storms at your command."*
 
 ### Storm Armor — `Z00101_623`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Storm Rage** — Deal +1,2,3 total DMG after applying Chill. Effect ends after casting skill.
 - **Description:** *"Unleashes storms at your command."*
 
 ### Storm Necklace — `Z00101_261`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Frost Corrode** — Deal 3,6,9 more total DMG to targets with Chill.
 - **Description:** *"Unleashes storms at your command."*
 
 ### Storm Ring — `Z00101_262`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Frost Corrode** — Deal 3,6,9 more total DMG to targets with Chill.
 - **Description:** *"Unleashes storms at your command."*
 
 ### Storm Badge — `Z00101_263`
-- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Frost Corrode** — Deal 3,6,9 more total DMG to targets with Chill.
@@ -2746,21 +2746,21 @@
 - **Description:** *"Heavy enough to leave a mark."*
 
 ### Heavy Shieldbow — `Z00101_221`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Glory** — Gain 2,4,6,8,10,12 stacks of Bloodlust after basic attack.
 - **Enhance Ability:** **Warm-Up Chase** — Deal 1,1,1 more Follow-Up DMG per 75,50,25 stacks of Bloodlust.
 - **Description:** *"Protects from all sides with sheer bulk."*
 
 ### Heavy Arrows — `Z00101_222`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Glory** — Gain 2,4,6,8,10,12 stacks of Bloodlust after basic attack.
 - **Enhance Ability:** **Warm-Up Chase** — Deal 1,1,1 more Follow-Up DMG per 75,50,25 stacks of Bloodlust.
 - **Description:** *"Protects from all sides with sheer bulk."*
 
 ### Heavy Bracers — `Z00101_223`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Glory** — Gain 2,4,6,8,10,12 stacks of Bloodlust after basic attack.
 - **Enhance Ability:** **Warm-Up Chase** — Deal 1,1,1 more Follow-Up DMG per 75,50,25 stacks of Bloodlust.
@@ -2914,63 +2914,63 @@
 - **Description:** *"Holds the chill of a thousand winters."*
 
 ### Icy Dagger — `Z00101_151`
-- **Slot:** Off-hand / Shield | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Off-hand / Shield | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +1, DEX: +1, CONS: +1
 - **Set Bond (Pure):** **Chill Air** — Apply 2,4,6,8,10,12 stacks of Chill to all enemies at battle start.
 - **Enhance Ability:** **Cold Ambush** — Apply 3,6,9 stacks of Chill per hit when casting skill for the first time.
 - **Description:** *"Carved from solid ice that never melts."*
 
 ### Icy Ring — `Z00101_152`
-- **Slot:** Ring | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Ring | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +1, DEX: +1, CONS: +1
 - **Set Bond (Pure):** **Chill Air** — Apply 2,4,6,8,10,12 stacks of Chill to all enemies at battle start.
 - **Enhance Ability:** **Cold Ambush** — Apply 3,6,9 stacks of Chill per hit when casting skill for the first time.
 - **Description:** *"Carved from solid ice that never melts."*
 
 ### Icy Badge — `Z00101_153`
-- **Slot:** Badge | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Badge | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +1, DEX: +1, CONS: +1
 - **Set Bond (Pure):** **Chill Air** — Apply 2,4,6,8,10,12 stacks of Chill to all enemies at battle start.
 - **Enhance Ability:** **Cold Ambush** — Apply 3,6,9 stacks of Chill per hit when casting skill for the first time.
 - **Description:** *"Carved from solid ice that never melts."*
 
 ### Frostbound Boots — `Z00101_711`
-- **Slot:** Boots | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Boots | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +1, DEX: +1, CONS: +1
 - **Set Bond (Pure):** **Chill Air** — Apply 2,4,6,8,10,12 stacks of Chill to all enemies at battle start.
 - **Enhance Ability:** **Cold Touch** — Gain 5,10,15 ATK when casting skill if target has Chill.
 - **Description:** *"Wearing this is like standing in a blizzard."*
 
 ### Frostbound Belt — `Z00101_713`
-- **Slot:** Belt | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Belt | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +1, DEX: +1, CONS: +1
 - **Set Bond (Pure):** **Chill Air** — Apply 2,4,6,8,10,12 stacks of Chill to all enemies at battle start.
 - **Enhance Ability:** **Cold Touch** — Gain 5,10,15 ATK when casting skill if target has Chill.
 - **Description:** *"Wearing this is like standing in a blizzard."*
 
 ### Frostbound Gloves — `Z00101_712`
-- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +1, DEX: +1, CONS: +1
 - **Set Bond (Pure):** **Chill Air** — Apply 2,4,6,8,10,12 stacks of Chill to all enemies at battle start.
 - **Enhance Ability:** **Cold Touch** — Gain 5,10,15 ATK when casting skill if target has Chill.
 - **Description:** *"Wearing this is like standing in a blizzard."*
 
 ### Frostfang Crossbow — `Z00101_211`
-- **Slot:** Main Hand | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Main Hand | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Cooldown** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy at battle start.
 - **Enhance Ability:** **Frost Fang Arrow** — Apply 1,1,1 stacks of Chill per Follow-Up hit. Max 3,6,9 times.
 - **Description:** *"Reinforced with ice magic, hard as diamond."*
 
 ### Frostfang Bolts — `Z10016_223`
-- **Slot:** Off-hand / Shield | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Off-hand / Shield | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Cooldown** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy at battle start.
 - **Enhance Ability:** **Frost Fang Arrow** — Apply 1,1,1 stacks of Chill per Follow-Up hit. Max 3,6,9 times.
 - **Description:** *"Reinforced with ice magic, hard as diamond."*
 
 ### Frostfang Ring — `Z00101_212`
-- **Slot:** Ring | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Ring | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Cooldown** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy at battle start.
 - **Enhance Ability:** **Frost Fang Arrow** — Apply 1,1,1 stacks of Chill per Follow-Up hit. Max 3,6,9 times.
@@ -2998,21 +2998,21 @@
 - **Description:** *"Frostwolves favor it, though no one knows why."*
 
 ### Beast Hide Helm — `Z00101_301`
-- **Slot:** Head | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Head | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** CONS: +1
 - **Set Bond (Pure):** **Overpowered** — Gain 1,2,3,4,5,6 HP.
 - **Enhance Ability:** **Tundra Hunt** — Gain 1,2,3 ATK after attacking targets with Chill, up to 3,6,9.
 - **Description:** *"Rough hide, barely counts as armor."*
 
 ### Beast Hide Leather — `Z00101_302`
-- **Slot:** Body | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Body | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** CONS: +1
 - **Set Bond (Pure):** **Overpowered** — Gain 1,2,3,4,5,6 HP.
 - **Enhance Ability:** **Tundra Hunt** — Gain 1,2,3 ATK after attacking targets with Chill, up to 3,6,9.
 - **Description:** *"Rough hide, barely counts as armor."*
 
 ### Beast Hide Boots — `Z00101_303`
-- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** CONS: +1
 - **Set Bond (Pure):** **Overpowered** — Gain 1,2,3,4,5,6 HP.
 - **Enhance Ability:** **Tundra Hunt** — Gain 1,2,3 ATK after attacking targets with Chill, up to 3,6,9.
@@ -3026,35 +3026,35 @@
 - **Description:** *"Cold enough to bite. Don't hold it too long."*
 
 ### Frostbee Dagger — `Z00101_102`
-- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** CONS: +1
 - **Set Bond (Pure):** **Ice Break** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy when defeated.
 - **Enhance Ability:** **Frost Slash** — Deal 2,4,6 more Counter DMG to targets with Chill.
 - **Description:** *"Cold enough to bite. Don't hold it too long."*
 
 ### Frostbee Gloves — `Z00101_103`
-- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Water
+- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Water
 - **Stats:** CONS: +1
 - **Set Bond (Pure):** **Ice Break** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy when defeated.
 - **Enhance Ability:** **Frost Slash** — Deal 2,4,6 more Counter DMG to targets with Chill.
 - **Description:** *"Cold enough to bite. Don't hold it too long."*
 
 ### Frostbee Bow — `Z00101_201`
-- **Slot:** Main Hand | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Main Hand | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** CONS: +1
 - **Set Bond (Pure):** **Ice Break** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy when defeated.
 - **Enhance Ability:** **Chill Surge** — Enemies with Chill lose 2,4,6 Toughness after casting skill.
 - **Description:** *"Cold enough to bite. Don't hold it too long."*
 
 ### Frostbee Arrows — `Z00101_202`
-- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** CONS: +1
 - **Set Bond (Pure):** **Ice Break** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy when defeated.
 - **Enhance Ability:** **Chill Surge** — Enemies with Chill lose 2,4,6 Toughness after casting skill.
 - **Description:** *"Cold enough to bite. Don't hold it too long."*
 
 ### Frostbee Shoes — `Z00101_203`
-- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Wind, Water
+- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Wind, Water
 - **Stats:** CONS: +1
 - **Set Bond (Pure):** **Ice Break** — Apply 2,4,6,8,10,12 stacks of Chill to the nearest enemy when defeated.
 - **Enhance Ability:** **Chill Surge** — Enemies with Chill lose 2,4,6 Toughness after casting skill.
@@ -3614,21 +3614,21 @@
 - **Description:** *"Regenerates endlessly, but hates fire."*
 
 ### Fairy Bow — `Z20026_211`
-- **Slot:** Main Hand | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind, Light
+- **Slot:** Main Hand | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind, Light
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Escort** — Gain 1,2,3,4,5,6 stacks of Precision after a Follow-Up.
 - **Enhance Ability:** **Ranged Pursuit** — Deal 3,6,9 more Follow-Up DMG to back targets.
 - **Description:** *"A fairy princess wore this once, or so they say."*
 
 ### Fairy Cloak — `Z20025_621`
-- **Slot:** Body | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind, Light
+- **Slot:** Body | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind, Light
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Escort** — Gain 1,2,3,4,5,6 stacks of Precision after a Follow-Up.
 - **Enhance Ability:** **Ranged Pursuit** — Deal 3,6,9 more Follow-Up DMG to back targets.
 - **Description:** *"A fairy princess wore this once, or so they say."*
 
 ### Fairy Bracers — `Z20025_721`
-- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind, Light
+- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind, Light
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Escort** — Gain 1,2,3,4,5,6 stacks of Precision after a Follow-Up.
 - **Enhance Ability:** **Ranged Pursuit** — Deal 3,6,9 more Follow-Up DMG to back targets.
@@ -3768,42 +3768,42 @@
 - **Description:** *"What you see in the mirror is me."*
 
 ### Boulder Crossbow — `Z10001_231`
-- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Earth, Dark
+- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** INT: +4, DEX: +4, TOUGH: +2
 - **Set Bond (Pure):** **Guard** — Gain 2,4,6,8,10,12 stacks of Shield at action start.
 - **Enhance Ability:** **Boulder Hurl** — Deal 1,1,1 more Follow-Up DMG per 30,20,10 stacks of Shield but deal exactly 1 Follow-Up attack.
 - **Description:** *"Ripped off some ancient statue."*
 
 ### Boulder Bolts — `Z10001_232`
-- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Earth, Dark
+- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** INT: +4, DEX: +4, TOUGH: +2
 - **Set Bond (Pure):** **Guard** — Gain 2,4,6,8,10,12 stacks of Shield at action start.
 - **Enhance Ability:** **Boulder Hurl** — Deal 1,1,1 more Follow-Up DMG per 30,20,10 stacks of Shield but deal exactly 1 Follow-Up attack.
 - **Description:** *"Ripped off some ancient statue."*
 
 ### Boulder Ring — `Z10001_931`
-- **Slot:** Ring | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Earth, Dark
+- **Slot:** Ring | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** INT: +4, DEX: +4, TOUGH: +2
 - **Set Bond (Pure):** **Guard** — Gain 2,4,6,8,10,12 stacks of Shield at action start.
 - **Enhance Ability:** **Boulder Hurl** — Deal 1,1,1 more Follow-Up DMG per 30,20,10 stacks of Shield but deal exactly 1 Follow-Up attack.
 - **Description:** *"Ripped off some ancient statue."*
 
 ### Boulder Gauntlets — `Z10001_233`
-- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Earth, Dark
+- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** INT: +4, DEX: +4, TOUGH: +2
 - **Set Bond (Pure):** **Guard** — Gain 2,4,6,8,10,12 stacks of Shield at action start.
 - **Enhance Ability:** **Boulder Body** — Take 5,10,15 fewer stacks of debuffs while having Shield.
 - **Description:** *"Ripped off some ancient statue."*
 
 ### Boulder Belt — `Z10001_234`
-- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Earth, Dark
+- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** INT: +4, DEX: +4, TOUGH: +2
 - **Set Bond (Pure):** **Guard** — Gain 2,4,6,8,10,12 stacks of Shield at action start.
 - **Enhance Ability:** **Boulder Body** — Take 5,10,15 fewer stacks of debuffs while having Shield.
 - **Description:** *"Ripped off some ancient statue."*
 
 ### Boulder Boots — `Z10001_235`
-- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Earth, Dark
+- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** INT: +4, DEX: +4, TOUGH: +2
 - **Set Bond (Pure):** **Guard** — Gain 2,4,6,8,10,12 stacks of Shield at action start.
 - **Enhance Ability:** **Boulder Body** — Take 5,10,15 fewer stacks of debuffs while having Shield.
@@ -4083,21 +4083,21 @@
 - **Description:** *"Steel forged. Worth more than the metal itself."*
 
 ### Gilt Leather — `Z50006_633`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Earth
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, TOUGH: +1
 - **Set Bond (Pure):** **Vigilance** — Gain 4,8,12,16,20,24 stacks of Shield at turn start.
 - **Enhance Ability:** **Unwavering** — Gain +1,2,3 stacks of Shield. Cannot lose Toughness while having Shield.
 - **Description:** *"Adjusts to fit anyone who wears it."*
 
 ### Gilt Gauntlets — `Z50006_634`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Earth
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, TOUGH: +1
 - **Set Bond (Pure):** **Vigilance** — Gain 4,8,12,16,20,24 stacks of Shield at turn start.
 - **Enhance Ability:** **Unwavering** — Gain +1,2,3 stacks of Shield. Cannot lose Toughness while having Shield.
 - **Description:** *"Adjusts to fit anyone who wears it."*
 
 ### Gilt Boots — `Z10021_722`
-- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Earth
+- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, TOUGH: +1
 - **Set Bond (Pure):** **Vigilance** — Gain 4,8,12,16,20,24 stacks of Shield at turn start.
 - **Enhance Ability:** **Unwavering** — Gain +1,2,3 stacks of Shield. Cannot lose Toughness while having Shield.
@@ -4167,21 +4167,21 @@
 - **Description:** *"Burns like magma fresh from the earth's core."*
 
 ### Obsidian Bow — `Z10027_221`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Dark
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Armor Break** — Apply 2,4,6,8,10,12 stacks of Vulnerable to target after a basic attack.
 - **Enhance Ability:** **Obsidian Slash** — Apply 1,2,3 stacks of Vulnerable per Follow-Up hit.
 - **Description:** *"Cuts through anything, but shatters easily."*
 
 ### Obsidian Necklace — `Z10027_821`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Dark
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Armor Break** — Apply 2,4,6,8,10,12 stacks of Vulnerable to target after a basic attack.
 - **Enhance Ability:** **Obsidian Slash** — Apply 1,2,3 stacks of Vulnerable per Follow-Up hit.
 - **Description:** *"Cuts through anything, but shatters easily."*
 
 ### Obsidian Ring — `Z10027_921`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Dark
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Armor Break** — Apply 2,4,6,8,10,12 stacks of Vulnerable to target after a basic attack.
 - **Enhance Ability:** **Obsidian Slash** — Apply 1,2,3 stacks of Vulnerable per Follow-Up hit.
@@ -4657,42 +4657,42 @@
 - **Description:** *"Stores the faith of ocean worshippers."*
 
 ### Deep Sea Staff — `Z30000_322`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Mage, Archer | **Element:** Water, Dark
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Mage, Ranger / Archer | **Element:** Water, Dark
 - **Stats:** INT: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Temperature Drop** — All enemies take 1,2,3 more stacks of Chill.
 - **Description:** *"Soaked in the deep sea's cold."*
 
 ### Deep Sea Orb — `Z30000_321`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Mage, Archer | **Element:** Water, Dark
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Mage, Ranger / Archer | **Element:** Water, Dark
 - **Stats:** INT: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Temperature Drop** — All enemies take 1,2,3 more stacks of Chill.
 - **Description:** *"Soaked in the deep sea's cold."*
 
 ### Deep Sea Crown — `Z30000_521`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Mage, Archer | **Element:** Water, Dark
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Mage, Ranger / Archer | **Element:** Water, Dark
 - **Stats:** INT: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Temperature Drop** — All enemies take 1,2,3 more stacks of Chill.
 - **Description:** *"Soaked in the deep sea's cold."*
 
 ### Deep Sea Necklace — `Z30000_821`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Mage, Archer | **Element:** Water, Dark
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Mage, Ranger / Archer | **Element:** Water, Dark
 - **Stats:** INT: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Dazed Mind** — Enemies with Chill lose 6,12,24 Toughness at turn start.
 - **Description:** *"Soaked in the deep sea's cold."*
 
 ### Deep Sea Ring — `Z30000_921`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Mage, Archer | **Element:** Water, Dark
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Mage, Ranger / Archer | **Element:** Water, Dark
 - **Stats:** INT: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Dazed Mind** — Enemies with Chill lose 6,12,24 Toughness at turn start.
 - **Description:** *"Soaked in the deep sea's cold."*
 
 ### Deep Sea Badge — `Z30000_021`
-- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Mage, Archer | **Element:** Water, Dark
+- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Mage, Ranger / Archer | **Element:** Water, Dark
 - **Stats:** INT: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Dazed Mind** — Enemies with Chill lose 6,12,24 Toughness at turn start.
@@ -4741,21 +4741,21 @@
 - **Description:** *"She watches you in dreams."*
 
 ### Chilling Bow — `Z10016_221`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Water, Wind
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Water, Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Split Arrow** — Gain 1,1,1 basic attack targets but deal 2,1,0 fewer Follow-Up attacks.
 - **Description:** *"Enchanted with frost magic."*
 
 ### Chilling Arrows — `Z30020_211`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Water, Wind
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Water, Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Split Arrow** — Gain 1,1,1 basic attack targets but deal 2,1,0 fewer Follow-Up attacks.
 - **Description:** *"Enchanted with frost magic."*
 
 ### Chilling Ring — `Z30019_911`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Water, Wind
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Water, Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Frost** — Apply 2,4,6,8,10,12 stacks of Chill to target after a basic attack.
 - **Enhance Ability:** **Split Arrow** — Gain 1,1,1 basic attack targets but deal 2,1,0 fewer Follow-Up attacks.
@@ -4783,21 +4783,21 @@
 - **Description:** *"Every pirate wears something like this."*
 
 ### Navigator Compass — `Z30018_821`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Water, Wind
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Water, Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Shadow** — After a Basic Attack, apply 1,2,3,4,5,6 stacks of Decay to the target.
 - **Enhance Ability:** **Deep Sea Curse** — Deal 1,2,3 more total DMG per 10,10,10 unused Mana on target when attacking.
 - **Description:** *"They say a cursed treasure map is hidden inside."*
 
 ### Navigator Badge — `Z30018_021`
-- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Water, Wind
+- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Water, Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Shadow** — After a Basic Attack, apply 1,2,3,4,5,6 stacks of Decay to the target.
 - **Enhance Ability:** **Deep Sea Curse** — Deal 1,2,3 more total DMG per 10,10,10 unused Mana on target when attacking.
 - **Description:** *"They say a cursed treasure map is hidden inside."*
 
 ### Navigator Ring — `Z30018_921`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Water, Wind
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Water, Wind
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Shadow** — After a Basic Attack, apply 1,2,3,4,5,6 stacks of Decay to the target.
 - **Enhance Ability:** **Deep Sea Curse** — Deal 1,2,3 more total DMG per 10,10,10 unused Mana on target when attacking.
@@ -4937,35 +4937,35 @@
 - **Description:** *"Pirates swear by this for sea battles."*
 
 ### Pirate Crossbow — `Z00005_211`
-- **Slot:** Main Hand | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Water, Dark
+- **Slot:** Main Hand | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Water, Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Pierce** — Deal 2,4,6,8,10,12 more basic DMG to targets with Weakness Exposed.
 - **Enhance Ability:** **Sneak Attack** — Deal 3,6,9 more basic DMG to targets without Shield.
 - **Description:** *"Pirates swear by this for sea battles."*
 
 ### Pirate Sash — `Z00005_712`
-- **Slot:** Belt | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Water, Dark
+- **Slot:** Belt | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Water, Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Pierce** — Deal 2,4,6,8,10,12 more basic DMG to targets with Weakness Exposed.
 - **Enhance Ability:** **Sneak Attack** — Deal 3,6,9 more basic DMG to targets without Shield.
 - **Description:** *"Pirates swear by this for sea battles."*
 
 ### Greed Bandana — `Z00005_511`
-- **Slot:** Head | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Water, Dark
+- **Slot:** Head | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Water, Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Greed** — Gain 2,4,6,8,10,12 stacks of Haste after basic attack.
 - **Enhance Ability:** **Endless Greed** — Gain 1,2,3 more stacks of all statuses.
 - **Description:** *"Greed always costs something in the end."*
 
 ### Greed Garb — `Z00005_611`
-- **Slot:** Body | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Water, Dark
+- **Slot:** Body | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Water, Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Greed** — Gain 2,4,6,8,10,12 stacks of Haste after basic attack.
 - **Enhance Ability:** **Endless Greed** — Gain 1,2,3 more stacks of all statuses.
 - **Description:** *"Greed always costs something in the end."*
 
 ### Greed Gloves — `Z00005_711`
-- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Water, Dark
+- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Water, Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Greed** — Gain 2,4,6,8,10,12 stacks of Haste after basic attack.
 - **Enhance Ability:** **Endless Greed** — Gain 1,2,3 more stacks of all statuses.
@@ -5210,21 +5210,21 @@
 - **Description:** *"Radiates hostility toward all things."*
 
 ### Nightmare Helm — `Z02001_341`
-- **Slot:** Head | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Head | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Intimidate** — Apply 2,4,6,8,10,12 stacks of Fear to the nearest enemy at action start.
 - **Enhance Ability:** **Nightmare Form** — Apply 2,4,6 stacks of Fear to target after attacking. Apply half effect to other enemies.
 - **Description:** *"You will haunt their nightmares."*
 
 ### Nightmare Mail — `Z02001_343`
-- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Intimidate** — Apply 2,4,6,8,10,12 stacks of Fear to the nearest enemy at action start.
 - **Enhance Ability:** **Nightmare Form** — Apply 2,4,6 stacks of Fear to target after attacking. Apply half effect to other enemies.
 - **Description:** *"You will haunt their nightmares."*
 
 ### Nightmare Claws — `Z02001_342`
-- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Intimidate** — Apply 2,4,6,8,10,12 stacks of Fear to the nearest enemy at action start.
 - **Enhance Ability:** **Nightmare Form** — Apply 2,4,6 stacks of Fear to target after attacking. Apply half effect to other enemies.
@@ -5315,21 +5315,21 @@
 - **Description:** *"Dragon scales forged with a trapped soul inside."*
 
 ### Kitty Hood — `Z02001_351`
-- **Slot:** Head | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Earth, Wind
+- **Slot:** Head | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Silent Move** — Deal +1,2,3 Follow-Up attacks and +2,4,6 Follow-Up DMG to back enemies.
 - **Description:** *"Real masters finish the fight before the bell rings."*
 
 ### Kitty Gloves — `Z02001_353`
-- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Earth, Wind
+- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Silent Move** — Deal +1,2,3 Follow-Up attacks and +2,4,6 Follow-Up DMG to back enemies.
 - **Description:** *"Real masters finish the fight before the bell rings."*
 
 ### Kitty Collar — `Z02001_352`
-- **Slot:** Necklace | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Earth, Wind
+- **Slot:** Necklace | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Silent Move** — Deal +1,2,3 Follow-Up attacks and +2,4,6 Follow-Up DMG to back enemies.
@@ -5357,42 +5357,42 @@
 - **Description:** *"Keep smiling."*
 
 ### Umbra Hood — `Z60002_521`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Shadow Strike** — Low HP enemies take +2,4,6 basic DMG after taking a hit.
 - **Description:** *"Makes you fade into the background."*
 
 ### Umbra Cape — `Z60002_623`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Shadow Strike** — Low HP enemies take +2,4,6 basic DMG after taking a hit.
 - **Description:** *"Makes you fade into the background."*
 
 ### Umbra Bracers — `Z60002_721`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Shadow Strike** — Low HP enemies take +2,4,6 basic DMG after taking a hit.
 - **Description:** *"Makes you fade into the background."*
 
 ### Umbra Necklace — `Z60002_821`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Shadow Moment** — Ignore 20,40,60 DEF of low HP targets when attacking.
 - **Description:** *"Makes you fade into the background."*
 
 ### Umbra Ring — `Z60002_921`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Shadow Moment** — Ignore 20,40,60 DEF of low HP targets when attacking.
 - **Description:** *"Makes you fade into the background."*
 
 ### Umbra Badge — `Z60002_021`
-- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Reap** — Deal 2,4,6,8,10,12 more total DMG to low HP targets.
 - **Enhance Ability:** **Shadow Moment** — Ignore 20,40,60 DEF of low HP targets when attacking.
@@ -5441,42 +5441,42 @@
 - **Description:** *"Malice seeps from every inch."*
 
 ### Jester Gloves — `Z02001_253`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Taunt** — Apply 2,4,6,8,10,12 stacks of Taunt to target after a basic attack.
 - **Enhance Ability:** **Vision Lure** — Apply 6,12,18 stacks of Taunt to back enemies first at action start.
 - **Description:** *"Controls where people look."*
 
 ### Jester Belt — `Z02001_252`
-- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Taunt** — Apply 2,4,6,8,10,12 stacks of Taunt to target after a basic attack.
 - **Enhance Ability:** **Vision Lure** — Apply 6,12,18 stacks of Taunt to back enemies first at action start.
 - **Description:** *"Controls where people look."*
 
 ### Jester Shoes — `Z02001_254`
-- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Taunt** — Apply 2,4,6,8,10,12 stacks of Taunt to target after a basic attack.
 - **Enhance Ability:** **Vision Lure** — Apply 6,12,18 stacks of Taunt to back enemies first at action start.
 - **Description:** *"Controls where people look."*
 
 ### Jester Throwing Knife — `Z60006_221`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Taunt** — Apply 2,4,6,8,10,12 stacks of Taunt to target after a basic attack.
 - **Enhance Ability:** **Phantom Trail** — Apply 1,2,3 more stacks of Taunt. Gain 1 more stack per 300,200,100 SPD.
 - **Description:** *"Makes you move in impossible ways."*
 
 ### Jester Mask — `Z60006_521`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Taunt** — Apply 2,4,6,8,10,12 stacks of Taunt to target after a basic attack.
 - **Enhance Ability:** **Phantom Trail** — Apply 1,2,3 more stacks of Taunt. Gain 1 more stack per 300,200,100 SPD.
 - **Description:** *"Makes you move in impossible ways."*
 
 ### Jester Cloak — `Z02001_251`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Taunt** — Apply 2,4,6,8,10,12 stacks of Taunt to target after a basic attack.
 - **Enhance Ability:** **Phantom Trail** — Apply 1,2,3 more stacks of Taunt. Gain 1 more stack per 300,200,100 SPD.
@@ -5504,42 +5504,42 @@
 - **Description:** *"Beautifully crafted, draws nature to you."*
 
 ### Tenacious Spear — `Z02001_271`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Earth, Fire
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Fire
 - **Stats:** STR: +2, DEX: +2, TOUGH: +1
 - **Set Bond (Pure):** **Reinvigorate** — Allies gain 1,2,3,4,5,6 stacks of Fortitude after casting skill.
 - **Enhance Ability:** **Full Toughness** — Gain 1,2,3 stacks of Bloodlust when losing Toughness.
 - **Description:** *"Layered materials make it nearly unbreakable."*
 
 ### Tenacious Javelin — `Z02001_272`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Earth, Fire
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Fire
 - **Stats:** STR: +2, DEX: +2, TOUGH: +1
 - **Set Bond (Pure):** **Reinvigorate** — Allies gain 1,2,3,4,5,6 stacks of Fortitude after casting skill.
 - **Enhance Ability:** **Full Toughness** — Gain 1,2,3 stacks of Bloodlust when losing Toughness.
 - **Description:** *"Layered materials make it nearly unbreakable."*
 
 ### Tenacious Leather — `Z02001_273`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Earth, Fire
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Earth, Fire
 - **Stats:** STR: +2, DEX: +2, TOUGH: +1
 - **Set Bond (Pure):** **Reinvigorate** — Allies gain 1,2,3,4,5,6 stacks of Fortitude after casting skill.
 - **Enhance Ability:** **Full Toughness** — Gain 1,2,3 stacks of Bloodlust when losing Toughness.
 - **Description:** *"Layered materials make it nearly unbreakable."*
 
 ### Yearning Belt — `Z20008_721`
-- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Plunder** — Gain 2,4,6,8,10,12 stacks of Regen after basic attack.
 - **Enhance Ability:** **Hunger Hunt** — Gain 8,16,24 HP after defeating a target. Effect increases by 8,16,24 per target defeated.
 - **Description:** *"They're always hungry."*
 
 ### Craving Necklace — `Z20008_821`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Plunder** — Gain 2,4,6,8,10,12 stacks of Regen after basic attack.
 - **Enhance Ability:** **Hunger Hunt** — Gain 8,16,24 HP after defeating a target. Effect increases by 8,16,24 per target defeated.
 - **Description:** *"They're always hungry."*
 
 ### Craving Ring — `Z20008_931`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Plunder** — Gain 2,4,6,8,10,12 stacks of Regen after basic attack.
 - **Enhance Ability:** **Hunger Hunt** — Gain 8,16,24 HP after defeating a target. Effect increases by 8,16,24 per target defeated.
@@ -5609,21 +5609,21 @@
 - **Description:** *"Bends time, just a little."*
 
 ### Magic Trick Top Hat — `Z02001_211`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Archer, Mage | **Element:** Dark
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer, Mage | **Element:** Dark
 - **Stats:** INT: +2, DEX: +2, LUCK: +1
 - **Set Bond (Pure):** **Taunt** — Apply 2,4,6,8,10,12 stacks of Taunt to target after a basic attack.
 - **Enhance Ability:** **Endless Cards** — Gain 1,1,1 basic attack targets but deal 40,20,0% less total DMG to extra targets.
 - **Description:** *"Endless cards appear in your hands."*
 
 ### Magic Trick Tuxedo — `Z02001_213`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Archer, Mage | **Element:** Dark
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer, Mage | **Element:** Dark
 - **Stats:** INT: +2, DEX: +2, LUCK: +1
 - **Set Bond (Pure):** **Taunt** — Apply 2,4,6,8,10,12 stacks of Taunt to target after a basic attack.
 - **Enhance Ability:** **Endless Cards** — Gain 1,1,1 basic attack targets but deal 40,20,0% less total DMG to extra targets.
 - **Description:** *"Endless cards appear in your hands."*
 
 ### Magic Trick Gloves — `Z02001_212`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Archer, Mage | **Element:** Dark
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer, Mage | **Element:** Dark
 - **Stats:** INT: +2, DEX: +2, LUCK: +1
 - **Set Bond (Pure):** **Taunt** — Apply 2,4,6,8,10,12 stacks of Taunt to target after a basic attack.
 - **Enhance Ability:** **Endless Cards** — Gain 1,1,1 basic attack targets but deal 40,20,0% less total DMG to extra targets.
@@ -5693,21 +5693,21 @@
 - **Description:** *"Carved from dead wood."*
 
 ### Stealth Hood — `Z02001_141`
-- **Slot:** Head | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Dark
+- **Slot:** Head | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Pierce** — Deal 2,4,6,8,10,12 more basic DMG to targets with Weakness Exposed.
 - **Enhance Ability:** **Every Hit Lethal** — Target loses 1,2,3 HP per hit after casting attack skill against targets with Weakness exposed.
 - **Description:** *"Masks your presence completely."*
 
 ### Stealth Cloak — `Z02001_142`
-- **Slot:** Body | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Dark
+- **Slot:** Body | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Pierce** — Deal 2,4,6,8,10,12 more basic DMG to targets with Weakness Exposed.
 - **Enhance Ability:** **Every Hit Lethal** — Target loses 1,2,3 HP per hit after casting attack skill against targets with Weakness exposed.
 - **Description:** *"Masks your presence completely."*
 
 ### Stealth Hidden Blade — `Z02001_143`
-- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Dark
+- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Pierce** — Deal 2,4,6,8,10,12 more basic DMG to targets with Weakness Exposed.
 - **Enhance Ability:** **Every Hit Lethal** — Target loses 1,2,3 HP per hit after casting attack skill against targets with Weakness exposed.
@@ -5735,21 +5735,21 @@
 - **Description:** *"Talent and effort—you need both."*
 
 ### Shadowveil Hood — `Z02001_111`
-- **Slot:** Head | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Earth, Wind
+- **Slot:** Head | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Riddle** — Apply 2,4,6,8,10,12 stacks of Taunt to all enemies at battle start.
 - **Enhance Ability:** **Shadow Step** — Gain 1,2,3 stacks of Haste per 1,1,1 taunted enemies at action start.
 - **Description:** *"Goes weightless when no one's watching."*
 
 ### Shadowveil Cloak — `Z02001_113`
-- **Slot:** Body | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Earth, Wind
+- **Slot:** Body | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Riddle** — Apply 2,4,6,8,10,12 stacks of Taunt to all enemies at battle start.
 - **Enhance Ability:** **Shadow Step** — Gain 1,2,3 stacks of Haste per 1,1,1 taunted enemies at action start.
 - **Description:** *"Goes weightless when no one's watching."*
 
 ### Shadowveil Boots — `Z02001_112`
-- **Slot:** Boots | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Earth, Wind
+- **Slot:** Boots | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Earth, Wind
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Riddle** — Apply 2,4,6,8,10,12 stacks of Taunt to all enemies at battle start.
 - **Enhance Ability:** **Shadow Step** — Gain 1,2,3 stacks of Haste per 1,1,1 taunted enemies at action start.
@@ -5840,21 +5840,21 @@
 - **Description:** *"The wearer cannot speak. Why? Who knows."*
 
 ### Throwing Stone — `Z02001_021`
-- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Earth
+- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** DEX: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Headshot** — Apply 4,8,12 stacks of Stun to target if the first basic attack deals at least 30,20,10 DMG.
 - **Description:** *"Perfect weight for throwing."*
 
 ### Throwing Gauntlets — `Z02001_023`
-- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Earth
+- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** DEX: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Headshot** — Apply 4,8,12 stacks of Stun to target if the first basic attack deals at least 30,20,10 DMG.
 - **Description:** *"Perfect weight for throwing."*
 
 ### Throwing Pouch — `Z02001_022`
-- **Slot:** Belt | **Tier:** C (1★ Common) | **Class:** Archer | **Element:** Earth
+- **Slot:** Belt | **Tier:** C (1★ Common) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** DEX: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Headshot** — Apply 4,8,12 stacks of Stun to target if the first basic attack deals at least 30,20,10 DMG.
@@ -5973,21 +5973,21 @@
 - **Description:** *"Only ocean royalty can wear this."*
 
 ### Angel Bow — `Z00201_471`
-- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Light
+- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Light
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Angel** — Gain 1,2,3,4,5,6 stacks of Cleanse at action start.
 - **Enhance Ability:** **Flawless Feathers** — Deal 1,1,1 more Follow-Up attacks and 5,10,15 more Follow-Up DMG when having no debuffs.
 - **Description:** *"Channels angelic power."*
 
 ### Angel Halo — `Z00201_472`
-- **Slot:** Head | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Light
+- **Slot:** Head | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Light
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Angel** — Gain 1,2,3,4,5,6 stacks of Cleanse at action start.
 - **Enhance Ability:** **Flawless Feathers** — Deal 1,1,1 more Follow-Up attacks and 5,10,15 more Follow-Up DMG when having no debuffs.
 - **Description:** *"Channels angelic power."*
 
 ### Angel Wings — `Z00201_473`
-- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Light
+- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Light
 - **Stats:** STR: +2, DEX: +6, SPD: +2
 - **Set Bond (Pure):** **Angel** — Gain 1,2,3,4,5,6 stacks of Cleanse at action start.
 - **Enhance Ability:** **Flawless Feathers** — Deal 1,1,1 more Follow-Up attacks and 5,10,15 more Follow-Up DMG when having no debuffs.
@@ -6225,21 +6225,21 @@
 - **Description:** *"Lets you speak with any aquatic creature."*
 
 ### Coco Shell — `Z00201_361`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, LUCK: +1
 - **Set Bond (Pure):** **Wreck** — Deal +2,4,6,8,10,12 total DMG to high HP targets.
 - **Enhance Ability:** **Center Blast** — Deal 5,10,15 more Skill DMG to mid targets.
 - **Description:** *"Heavy coconut wood, harder than stone."*
 
 ### Coco Gauntlets — `Z00201_362`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, LUCK: +1
 - **Set Bond (Pure):** **Wreck** — Deal +2,4,6,8,10,12 total DMG to high HP targets.
 - **Enhance Ability:** **Center Blast** — Deal 5,10,15 more Skill DMG to mid targets.
 - **Description:** *"Heavy coconut wood, harder than stone."*
 
 ### Coco Belt — `Z00201_363`
-- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth
+- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, LUCK: +1
 - **Set Bond (Pure):** **Wreck** — Deal +2,4,6,8,10,12 total DMG to high HP targets.
 - **Enhance Ability:** **Center Blast** — Deal 5,10,15 more Skill DMG to mid targets.
@@ -6610,7 +6610,7 @@
 - **Description:** *"All gears, with protruding pieces that connect to other parts."*
 
 ### Gear Bow — `Z03001_302`
-- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Earth, Fire
+- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Earth, Fire
 - **Stats:** STR: +4, INT: +3, DEX: +3
 - **Set Bond (Pure):** **Core** — +1,2,3,4,5,6 all stats. Deal +1,2,3,4,5,6 total DMG.
 - **Enhance Ability:** **Core Energy** — Gain 10,20,30 Starting Mana. Gain 1 more Starting Mana per 6,4,2 Max Mana.
@@ -6946,42 +6946,42 @@
 - **Description:** *"Fades away in suffering."*
 
 ### Focus Fire Necklace — `Z03001_263`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Light
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Light
 - **Stats:** INT: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Mark** — All allies gain 2,4,6,8,10,12 stacks of Precision at battle start.
 - **Enhance Ability:** **Focus Fire** — Deal +1,2,3 total DMG when attacking the same target. Effect ends after switching targets.
 - **Description:** *"Locks onto enemies instantly."*
 
 ### Focus Fire Ring — `Z03001_262`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Light
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Light
 - **Stats:** INT: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Mark** — All allies gain 2,4,6,8,10,12 stacks of Precision at battle start.
 - **Enhance Ability:** **Focus Fire** — Deal +1,2,3 total DMG when attacking the same target. Effect ends after switching targets.
 - **Description:** *"Locks onto enemies instantly."*
 
 ### Focus Fire Chip — `Z03001_261`
-- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Light
+- **Slot:** Badge | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Light
 - **Stats:** INT: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Mark** — All allies gain 2,4,6,8,10,12 stacks of Precision at battle start.
 - **Enhance Ability:** **Focus Fire** — Deal +1,2,3 total DMG when attacking the same target. Effect ends after switching targets.
 - **Description:** *"Locks onto enemies instantly."*
 
 ### Metal Crossbow — `Z03001_251`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Wreck** — Deal +2,4,6,8,10,12 total DMG to high HP targets.
 - **Enhance Ability:** **Metal Storm** — Deal +1,2,3 Follow-Up attacks but deal -50,50,50% Follow-Up DMG.
 - **Description:** *"Three thousand six hundred rounds per breath."*
 
 ### Metal Magazine — `Z03001_252`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Wreck** — Deal +2,4,6,8,10,12 total DMG to high HP targets.
 - **Enhance Ability:** **Metal Storm** — Deal +1,2,3 Follow-Up attacks but deal -50,50,50% Follow-Up DMG.
 - **Description:** *"Three thousand six hundred rounds per breath."*
 
 ### Metal Ring — `Z03001_253`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Wreck** — Deal +2,4,6,8,10,12 total DMG to high HP targets.
 - **Enhance Ability:** **Metal Storm** — Deal +1,2,3 Follow-Up attacks but deal -50,50,50% Follow-Up DMG.
@@ -7037,35 +7037,35 @@
 - **Description:** *"Pitch black, swallows light itself."*
 
 ### Amethyst Dagger — `Z03001_132`
-- **Slot:** Off-hand / Shield | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Off-hand / Shield | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Rush** — Deal 2,4,6,8,10,12 more basic DMG to high HP targets.
 - **Enhance Ability:** **Barely Noticed** — Immune to 1,2,3 instances of DMG on turn 1.
 - **Description:** *"Pitch black, swallows light itself."*
 
 ### Amethyst Ring — `Z03001_133`
-- **Slot:** Ring | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Ring | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Rush** — Deal 2,4,6,8,10,12 more basic DMG to high HP targets.
 - **Enhance Ability:** **Barely Noticed** — Immune to 1,2,3 instances of DMG on turn 1.
 - **Description:** *"Pitch black, swallows light itself."*
 
 ### Amethyst Gloves — `Z03001_101`
-- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Rush** — Deal 2,4,6,8,10,12 more basic DMG to high HP targets.
 - **Enhance Ability:** **Act Cautious** — Take 2,4,6 less total DMG but lose 8,8,8 SPD.
 - **Description:** *"Pitch black, swallows light itself."*
 
 ### Amethyst Belt — `Z03001_102`
-- **Slot:** Belt | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Belt | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Rush** — Deal 2,4,6,8,10,12 more basic DMG to high HP targets.
 - **Enhance Ability:** **Act Cautious** — Take 2,4,6 less total DMG but lose 8,8,8 SPD.
 - **Description:** *"Pitch black, swallows light itself."*
 
 ### Amethyst Shoes — `Z03001_103`
-- **Slot:** Boots | **Tier:** B (2★ Rare) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Boots | **Tier:** B (2★ Rare) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Rush** — Deal 2,4,6,8,10,12 more basic DMG to high HP targets.
 - **Enhance Ability:** **Act Cautious** — Take 2,4,6 less total DMG but lose 8,8,8 SPD.
@@ -7135,21 +7135,21 @@
 - **Description:** *"Converts offense to defense seamlessly."*
 
 ### Attacker Necklace — `Z03001_145`
-- **Slot:** Necklace | **Tier:** B (2★ Rare) | **Class:** Archer, Mage | **Element:** Earth, Light
+- **Slot:** Necklace | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer, Mage | **Element:** Earth, Light
 - **Stats:** INT: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Offense Protocol** — Gain 12,18,24 ATK but lose 4,4,4 DEF.
 - **Description:** *"Converts offense to defense seamlessly."*
 
 ### Attacker Ring — `Z03001_146`
-- **Slot:** Ring | **Tier:** B (2★ Rare) | **Class:** Archer, Mage | **Element:** Earth, Light
+- **Slot:** Ring | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer, Mage | **Element:** Earth, Light
 - **Stats:** INT: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Offense Protocol** — Gain 12,18,24 ATK but lose 4,4,4 DEF.
 - **Description:** *"Converts offense to defense seamlessly."*
 
 ### Attacker Chip — `Z03001_142`
-- **Slot:** Badge | **Tier:** B (2★ Rare) | **Class:** Archer, Mage | **Element:** Earth, Light
+- **Slot:** Badge | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer, Mage | **Element:** Earth, Light
 - **Stats:** INT: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Offense Protocol** — Gain 12,18,24 ATK but lose 4,4,4 DEF.
@@ -7499,42 +7499,42 @@
 - **Description:** *"Inherited copper's indestructibility, but weighs a ton."*
 
 ### Ascetic Staff — `Z20002_123`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharp Intent** — Gain 1,2,3,4,5,6 stacks of Bloodlust after following up.
 - **Enhance Ability:** **Speed Is Key** — Deal 1,1,1 more Follow-Up attacks and 2,4,6 more Follow-Up DMG while having Bloodlust.
 - **Description:** *"Speed is the only thing that matters."*
 
 ### Ascetic Headband — `Z20002_521`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharp Intent** — Gain 1,2,3,4,5,6 stacks of Bloodlust after following up.
 - **Enhance Ability:** **Speed Is Key** — Deal 1,1,1 more Follow-Up attacks and 2,4,6 more Follow-Up DMG while having Bloodlust.
 - **Description:** *"Speed is the only thing that matters."*
 
 ### Ascetic Garb — `Z20002_621`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharp Intent** — Gain 1,2,3,4,5,6 stacks of Bloodlust after following up.
 - **Enhance Ability:** **Speed Is Key** — Deal 1,1,1 more Follow-Up attacks and 2,4,6 more Follow-Up DMG while having Bloodlust.
 - **Description:** *"Speed is the only thing that matters."*
 
 ### Ascetic Bracers — `Z20002_722`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharp Intent** — Gain 1,2,3,4,5,6 stacks of Bloodlust after following up.
 - **Enhance Ability:** **Luck Balance** — Gain 1,2,3 HP and 1,2,3 Toughness after gaining Bloodlust.
 - **Description:** *"Speed is the only thing that matters."*
 
 ### Ascetic Sash — `Z20002_721`
-- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharp Intent** — Gain 1,2,3,4,5,6 stacks of Bloodlust after following up.
 - **Enhance Ability:** **Luck Balance** — Gain 1,2,3 HP and 1,2,3 Toughness after gaining Bloodlust.
 - **Description:** *"Speed is the only thing that matters."*
 
 ### Ascetic Shoes — `Z20002_723`
-- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Sharp Intent** — Gain 1,2,3,4,5,6 stacks of Bloodlust after following up.
 - **Enhance Ability:** **Luck Balance** — Gain 1,2,3 HP and 1,2,3 Toughness after gaining Bloodlust.
@@ -7688,21 +7688,21 @@
 - **Description:** *"Symbol of the beast king, or so someone claims."*
 
 ### Blooddrain Hood — `Z10018_521`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Fire, Dark
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Fire, Dark
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Plunder** — Gain 2,4,6,8,10,12 stacks of Regen after basic attack.
 - **Enhance Ability:** **Life Drain** — Drain 1,2,3 HP after dealing DMG, but total HP restored reduces by 5,5,5.
 - **Description:** *"They thirst for fresh blood."*
 
 ### Blooddrain Cape — `Z10018_621`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Fire, Dark
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Fire, Dark
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Plunder** — Gain 2,4,6,8,10,12 stacks of Regen after basic attack.
 - **Enhance Ability:** **Life Drain** — Drain 1,2,3 HP after dealing DMG, but total HP restored reduces by 5,5,5.
 - **Description:** *"They thirst for fresh blood."*
 
 ### Blooddrain Ring — `Z10018_921`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Fire, Dark
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Fire, Dark
 - **Stats:** STR: +2, DEX: +2, CONS: +1
 - **Set Bond (Pure):** **Plunder** — Gain 2,4,6,8,10,12 stacks of Regen after basic attack.
 - **Enhance Ability:** **Life Drain** — Drain 1,2,3 HP after dealing DMG, but total HP restored reduces by 5,5,5.
@@ -7835,21 +7835,21 @@
 - **Description:** *"Massively extends your reach."*
 
 ### Ranger Bow — `Z01003_131`
-- **Slot:** Main Hand | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Main Hand | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Rush** — Deal 2,4,6,8,10,12 more basic DMG to high HP targets.
 - **Enhance Ability:** **Arrow Recycle** — Gain +1,1,1 Follow-Up attacks for the next 1,2,3 hits after casting skill for the first time.
 - **Description:** *"Light and flexible, easy to carry."*
 
 ### Ranger Quiver — `Z01003_133`
-- **Slot:** Off-hand / Shield | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Off-hand / Shield | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Rush** — Deal 2,4,6,8,10,12 more basic DMG to high HP targets.
 - **Enhance Ability:** **Arrow Recycle** — Gain +1,1,1 Follow-Up attacks for the next 1,2,3 hits after casting skill for the first time.
 - **Description:** *"Light and flexible, easy to carry."*
 
 ### Ranger Bracers — `Z01003_132`
-- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Archer | **Element:** Wind, Fire
+- **Slot:** Hands | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** STR: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Rush** — Deal 2,4,6,8,10,12 more basic DMG to high HP targets.
 - **Enhance Ability:** **Arrow Recycle** — Gain +1,1,1 Follow-Up attacks for the next 1,2,3 hits after casting skill for the first time.
@@ -7898,21 +7898,21 @@
 - **Description:** *"Morale wins wars."*
 
 ### Legion Bracers — `Z01003_001`
-- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Entrust** — Other allies gain 1,2,3,4,5,6 stacks of Reversal when defeated.
 - **Enhance Ability:** **Fighting Spirit Trust** — Other allies gain 1,2,3 Toughness when defeated.
 - **Description:** *"Standard issue for legion recruits."*
 
 ### Legion Belt — `Z01003_002`
-- **Slot:** Belt | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Belt | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Entrust** — Other allies gain 1,2,3,4,5,6 stacks of Reversal when defeated.
 - **Enhance Ability:** **Fighting Spirit Trust** — Other allies gain 1,2,3 Toughness when defeated.
 - **Description:** *"Standard issue for legion recruits."*
 
 ### Legion Boots — `Z01003_003`
-- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Entrust** — Other allies gain 1,2,3,4,5,6 stacks of Reversal when defeated.
 - **Enhance Ability:** **Fighting Spirit Trust** — Other allies gain 1,2,3 Toughness when defeated.
@@ -8073,21 +8073,21 @@
 - **Description:** *"Only honor and faith last forever."*
 
 ### Dancer Veil — `Z05001_291`
-- **Slot:** Head | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind, Light
+- **Slot:** Head | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind, Light
 - **Stats:** INT: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Eagle Pride** — Gain 1,2,3,4,5,6 stacks of Inspire after following up.
 - **Enhance Ability:** **Fervor Dance** — Other allies gain 1,2,3 stacks of Inspire and 2,4,6 stacks of Bloodlust after casting skill.
 - **Description:** *"Exotic style from distant lands."*
 
 ### Dancer Bracelet — `Z05001_292`
-- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind, Light
+- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind, Light
 - **Stats:** INT: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Eagle Pride** — Gain 1,2,3,4,5,6 stacks of Inspire after following up.
 - **Enhance Ability:** **Fervor Dance** — Other allies gain 1,2,3 stacks of Inspire and 2,4,6 stacks of Bloodlust after casting skill.
 - **Description:** *"Exotic style from distant lands."*
 
 ### Dancer Sash — `Z05001_293`
-- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind, Light
+- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind, Light
 - **Stats:** INT: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Eagle Pride** — Gain 1,2,3,4,5,6 stacks of Inspire after following up.
 - **Enhance Ability:** **Fervor Dance** — Other allies gain 1,2,3 stacks of Inspire and 2,4,6 stacks of Bloodlust after casting skill.
@@ -8136,84 +8136,84 @@
 - **Description:** *"Light and shadow are inseparable."*
 
 ### Scorching Arrows — `Z06001_301`
-- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Light, Fire
+- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Light, Fire
 - **Stats:** INT: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Wildfire** — Apply 2,4,6,8,10,12 stacks of Burn to the nearest enemy at action start.
 - **Enhance Ability:** **Red Lotus** — Trigger 10,20,30% of Burn stacks on all enemies immediately after defeating a target. Stacks triggered cannot exceed Burn effect cap.
 - **Description:** *"Burns hot as the red lotus flame."*
 
 ### Scorching Badge — `Z06001_302`
-- **Slot:** Badge | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Light, Fire
+- **Slot:** Badge | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Light, Fire
 - **Stats:** INT: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Wildfire** — Apply 2,4,6,8,10,12 stacks of Burn to the nearest enemy at action start.
 - **Enhance Ability:** **Red Lotus** — Trigger 10,20,30% of Burn stacks on all enemies immediately after defeating a target. Stacks triggered cannot exceed Burn effect cap.
 - **Description:** *"Burns hot as the red lotus flame."*
 
 ### Scorching Ring — `Z06001_303`
-- **Slot:** Ring | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Light, Fire
+- **Slot:** Ring | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Light, Fire
 - **Stats:** INT: +4, DEX: +4, SPD: +2
 - **Set Bond (Pure):** **Wildfire** — Apply 2,4,6,8,10,12 stacks of Burn to the nearest enemy at action start.
 - **Enhance Ability:** **Red Lotus** — Trigger 10,20,30% of Burn stacks on all enemies immediately after defeating a target. Stacks triggered cannot exceed Burn effect cap.
 - **Description:** *"Burns hot as the red lotus flame."*
 
 ### Wind God Bow — `Z06001_371`
-- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +4, SPD: +4, LUCK: +2
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Wind Arrow** — Deal exactly 1 Follow-Up attack. Deal 50,100,150% more Follow-Up DMG per extra Follow-Up attack, up to 250,500,750%.
 - **Description:** *"Blessed by the wind god himself."*
 
 ### Wind God Cape — `Z06001_372`
-- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Body | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +4, SPD: +4, LUCK: +2
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Wind Arrow** — Deal exactly 1 Follow-Up attack. Deal 50,100,150% more Follow-Up DMG per extra Follow-Up attack, up to 250,500,750%.
 - **Description:** *"Blessed by the wind god himself."*
 
 ### Wind God Boots — `Z06001_373`
-- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Wind
+- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +4, SPD: +4, LUCK: +2
 - **Set Bond (Pure):** **Squall** — Gain 2,4,6,8,10,12 stacks of Haste at action start.
 - **Enhance Ability:** **Wind Arrow** — Deal exactly 1 Follow-Up attack. Deal 50,100,150% more Follow-Up DMG per extra Follow-Up attack, up to 250,500,750%.
 - **Description:** *"Blessed by the wind god himself."*
 
 ### Mercenary Hat — `Z05001_211`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Inferno** — Apply 2,4,6,8,10,12 stacks of Burn to target after a basic attack.
 - **Enhance Ability:** **First Strike** — Apply +1,2,3 stacks of Burn after acting first each turn.
 - **Description:** *"Desert mercs love this set. Lasts forever."*
 
 ### Mercenary Leather — `Z05001_212`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Inferno** — Apply 2,4,6,8,10,12 stacks of Burn to target after a basic attack.
 - **Enhance Ability:** **First Strike** — Apply +1,2,3 stacks of Burn after acting first each turn.
 - **Description:** *"Desert mercs love this set. Lasts forever."*
 
 ### Mercenary Boots — `Z05001_213`
-- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth
+- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Inferno** — Apply 2,4,6,8,10,12 stacks of Burn to target after a basic attack.
 - **Enhance Ability:** **First Strike** — Apply +1,2,3 stacks of Burn after acting first each turn.
 - **Description:** *"Desert mercs love this set. Lasts forever."*
 
 ### Mercenary Musket — `Z05001_214`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Inferno** — Apply 2,4,6,8,10,12 stacks of Burn to target after a basic attack.
 - **Enhance Ability:** **High Explosive** — Apply 1,2,3 stacks of Burn per hit when casting skill.
 - **Description:** *"Ammo ignites on impact."*
 
 ### Mercenary Gloves — `Z05001_215`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Inferno** — Apply 2,4,6,8,10,12 stacks of Burn to target after a basic attack.
 - **Enhance Ability:** **High Explosive** — Apply 1,2,3 stacks of Burn per hit when casting skill.
 - **Description:** *"Ammo ignites on impact."*
 
 ### Mercenary Belt — `Z05001_216`
-- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth
+- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Inferno** — Apply 2,4,6,8,10,12 stacks of Burn to target after a basic attack.
 - **Enhance Ability:** **High Explosive** — Apply 1,2,3 stacks of Burn per hit when casting skill.
@@ -8430,63 +8430,63 @@
 - **Description:** *"The moon always rises."*
 
 ### Petrify Helm — `Z05001_271`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Dark
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** INT: +2, DEX: +2, TOUGH: +1
 - **Set Bond (Pure):** **Shatter** — Apply 1,2,3,4,5,6 stacks of Vulnerable to target after following up.
 - **Enhance Ability:** **Petrify Gaze** — Apply 1,2,3 stacks of Stun to the nearest enemy after taking a hit. Effect doubles if target has Vulnerable.
 - **Description:** *"Don't look into her eyes..."*
 
 ### Petrify Mail — `Z05001_272`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Dark
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** INT: +2, DEX: +2, TOUGH: +1
 - **Set Bond (Pure):** **Shatter** — Apply 1,2,3,4,5,6 stacks of Vulnerable to target after following up.
 - **Enhance Ability:** **Petrify Gaze** — Apply 1,2,3 stacks of Stun to the nearest enemy after taking a hit. Effect doubles if target has Vulnerable.
 - **Description:** *"Don't look into her eyes..."*
 
 ### Petrify Necklace — `Z05001_273`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Dark
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** INT: +2, DEX: +2, TOUGH: +1
 - **Set Bond (Pure):** **Shatter** — Apply 1,2,3,4,5,6 stacks of Vulnerable to target after following up.
 - **Enhance Ability:** **Petrify Gaze** — Apply 1,2,3 stacks of Stun to the nearest enemy after taking a hit. Effect doubles if target has Vulnerable.
 - **Description:** *"Don't look into her eyes..."*
 
 ### Petrify Bow — `Z05001_274`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Dark
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** INT: +2, DEX: +2, TOUGH: +1
 - **Set Bond (Pure):** **Shatter** — Apply 1,2,3,4,5,6 stacks of Vulnerable to target after following up.
 - **Enhance Ability:** **Shatter Gaze** — Deal 1,2,3 more total DMG to vulnerable targets. Effect doubles if target is stunned.
 - **Description:** *"Don't look into her eyes..."*
 
 ### Petrify Quiver — `Z05001_275`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Dark
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** INT: +2, DEX: +2, TOUGH: +1
 - **Set Bond (Pure):** **Shatter** — Apply 1,2,3,4,5,6 stacks of Vulnerable to target after following up.
 - **Enhance Ability:** **Shatter Gaze** — Deal 1,2,3 more total DMG to vulnerable targets. Effect doubles if target is stunned.
 - **Description:** *"Don't look into her eyes..."*
 
 ### Petrify Bracers — `Z05001_276`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Dark
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** INT: +2, DEX: +2, TOUGH: +1
 - **Set Bond (Pure):** **Shatter** — Apply 1,2,3,4,5,6 stacks of Vulnerable to target after following up.
 - **Enhance Ability:** **Shatter Gaze** — Deal 1,2,3 more total DMG to vulnerable targets. Effect doubles if target is stunned.
 - **Description:** *"Don't look into her eyes..."*
 
 ### Plunder Gloves — `Z05001_281`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +3, SPD: +1, LUCK: +1
 - **Set Bond (Pure):** **Greed** — Gain 2,4,6,8,10,12 stacks of Haste after basic attack.
 - **Enhance Ability:** **Status Steal** — Absorb target's buff with most stacks after attacking. Stacks absorbed cannot exceed 10,20,30% of DMG dealt, up to 1,2,3.
 - **Description:** *"Desire without satisfaction."*
 
 ### Plunder Boots — `Z05001_282`
-- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +3, SPD: +1, LUCK: +1
 - **Set Bond (Pure):** **Greed** — Gain 2,4,6,8,10,12 stacks of Haste after basic attack.
 - **Enhance Ability:** **Status Steal** — Absorb target's buff with most stacks after attacking. Stacks absorbed cannot exceed 10,20,30% of DMG dealt, up to 1,2,3.
 - **Description:** *"Pursuit without rest."*
 
 ### Plunder Ring — `Z05001_283`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Archer | **Element:** Dark
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Warrior, Ranger / Archer | **Element:** Dark
 - **Stats:** STR: +3, SPD: +1, LUCK: +1
 - **Set Bond (Pure):** **Greed** — Gain 2,4,6,8,10,12 stacks of Haste after basic attack.
 - **Enhance Ability:** **Status Steal** — Absorb target's buff with most stacks after attacking. Stacks absorbed cannot exceed 10,20,30% of DMG dealt, up to 1,2,3.
@@ -8598,63 +8598,63 @@
 - **Description:** *"Fire tricks sealed inside common gear."*
 
 ### Thief Hood — `Z05001_001`
-- **Slot:** Head | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Head | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Sleight Of Hand** — Drain 2,4,6 HP from the nearest 1,1,1 enemies at turn start.
 - **Description:** *"Barely counts as protection."*
 
 ### Thief Cape — `Z05001_002`
-- **Slot:** Body | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Body | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Sleight Of Hand** — Drain 2,4,6 HP from the nearest 1,1,1 enemies at turn start.
 - **Description:** *"Barely counts as protection."*
 
 ### Thief Boots — `Z05001_003`
-- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Sleight Of Hand** — Drain 2,4,6 HP from the nearest 1,1,1 enemies at turn start.
 - **Description:** *"Barely counts as protection."*
 
 ### Dark Dagger — `Z05001_011`
-- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Deep Potion** — Apply 2,4,6 stacks of Decay to enemies after casting skill for the first time.
 - **Description:** *"Coated in shadow poison."*
 
 ### Dark Gauntlets — `Z05001_012`
-- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Deep Potion** — Apply 2,4,6 stacks of Decay to enemies after casting skill for the first time.
 - **Description:** *"Coated in shadow poison."*
 
 ### Dark Ring — `Z05001_013`
-- **Slot:** Ring | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Ring | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Deep Potion** — Apply 2,4,6 stacks of Decay to enemies after casting skill for the first time.
 - **Description:** *"Coated in shadow poison."*
 
 ### Nimble Dagger — `Z05001_021`
-- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind
+- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Nimble Counter** — Deal 1,2,3 more Counters but Counter DMG is capped at 1,1,1.
 - **Description:** *"Balanced for offense and defense."*
 
 ### Nimble Bracers — `Z05001_022`
-- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind
+- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Nimble Counter** — Deal 1,2,3 more Counters but Counter DMG is capped at 1,1,1.
 - **Description:** *"Balanced for offense and defense."*
 
 ### Nimble Boots — `Z05001_023`
-- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind
+- **Slot:** Boots | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Nimble Counter** — Deal 1,2,3 more Counters but Counter DMG is capped at 1,1,1.
@@ -9025,63 +9025,63 @@
 - **Description:** *"Incredibly heavy once you pick it up."*
 
 ### Ember Bow — `Z06001_231`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Fire
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Fire
 - **Stats:** DEX: +2, SPD: +2, INITIAL_MAGIC: +1
 - **Set Bond (Pure):** **Ignite** — Apply 1,2,3,4,5,6 stacks of Burn to enemies after casting skill.
 - **Enhance Ability:** **Blazing Impact** — Apply 1,2,3 stacks of Burn after attacking.
 - **Description:** *"Leaves a searing burn on anything it hits."*
 
 ### Ember Bolts — `Z06001_232`
-- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Fire
+- **Slot:** Off-hand / Shield | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Fire
 - **Stats:** DEX: +2, SPD: +2, INITIAL_MAGIC: +1
 - **Set Bond (Pure):** **Ignite** — Apply 1,2,3,4,5,6 stacks of Burn to enemies after casting skill.
 - **Enhance Ability:** **Blazing Impact** — Apply 1,2,3 stacks of Burn after attacking.
 - **Description:** *"Leaves a searing burn on anything it hits."*
 
 ### Ember Bracers — `Z06001_233`
-- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Fire
+- **Slot:** Hands | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Fire
 - **Stats:** DEX: +2, SPD: +2, INITIAL_MAGIC: +1
 - **Set Bond (Pure):** **Ignite** — Apply 1,2,3,4,5,6 stacks of Burn to enemies after casting skill.
 - **Enhance Ability:** **Blazing Impact** — Apply 1,2,3 stacks of Burn after attacking.
 - **Description:** *"Leaves a searing burn on anything it hits."*
 
 ### Ember Belt — `Z06001_234`
-- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Fire
+- **Slot:** Belt | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Fire
 - **Stats:** DEX: +2, SPD: +2, INITIAL_MAGIC: +1
 - **Set Bond (Pure):** **Ignite** — Apply 1,2,3,4,5,6 stacks of Burn to enemies after casting skill.
 - **Enhance Ability:** **Blazing Scorch** — Target loses 1,1,1 HP per 30,20,10 stacks of Burn applied.
 - **Description:** *"Leaves a searing burn on anything it hits."*
 
 ### Ember Necklace — `Z06001_235`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Fire
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Fire
 - **Stats:** DEX: +2, SPD: +2, INITIAL_MAGIC: +1
 - **Set Bond (Pure):** **Ignite** — Apply 1,2,3,4,5,6 stacks of Burn to enemies after casting skill.
 - **Enhance Ability:** **Blazing Scorch** — Target loses 1,1,1 HP per 30,20,10 stacks of Burn applied.
 - **Description:** *"Leaves a searing burn on anything it hits."*
 
 ### Ember Ring — `Z06001_236`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Fire
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Fire
 - **Stats:** DEX: +2, SPD: +2, INITIAL_MAGIC: +1
 - **Set Bond (Pure):** **Ignite** — Apply 1,2,3,4,5,6 stacks of Burn to enemies after casting skill.
 - **Enhance Ability:** **Blazing Scorch** — Target loses 1,1,1 HP per 30,20,10 stacks of Burn applied.
 - **Description:** *"Leaves a searing burn on anything it hits."*
 
 ### Windchaser Cloak — `Z06001_241`
-- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Body | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +2, SPD: +2, TOUGH: +1
 - **Set Bond (Pure):** **Windrun** — Gain 4,8,12,16,20,24 stacks of Haste at turn start.
 - **Enhance Ability:** **Swift as Wind** — Deal +1,1,1 Follow-Up DMG per 90,60,30 stacks of Haste.
 - **Description:** *"Makes the wearer swift as the wind."*
 
 ### Windchaser Hood — `Z06001_242`
-- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Head | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +2, SPD: +2, TOUGH: +1
 - **Set Bond (Pure):** **Windrun** — Gain 4,8,12,16,20,24 stacks of Haste at turn start.
 - **Enhance Ability:** **Swift as Wind** — Deal +1,1,1 Follow-Up DMG per 90,60,30 stacks of Haste.
 - **Description:** *"Makes the wearer swift as the wind."*
 
 ### Windchaser Boots — `Z06001_243`
-- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Wind
+- **Slot:** Boots | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Wind
 - **Stats:** DEX: +2, SPD: +2, TOUGH: +1
 - **Set Bond (Pure):** **Windrun** — Gain 4,8,12,16,20,24 stacks of Haste at turn start.
 - **Enhance Ability:** **Swift as Wind** — Deal +1,1,1 Follow-Up DMG per 90,60,30 stacks of Haste.
@@ -9204,14 +9204,14 @@
 - **Stats:** STR: +1, INT: +1, TOUGH: +1
 - **Set Bond (Pure):** **Heatwave** — Apply 2,4,6,8,10,12 stacks of Burn to the nearest enemy at battle start.
 - **Enhance Ability:** **Scorching Halo** — Apply 1,2,3 stacks of Burn to all enemies at turn start.
-- **Description:** *"this item Gear Equip shines brightly like the blazing sun 。"*
+- **Description:** *"this item Equipment Equip shines brightly like the blazing sun 。"*
 
 ### Sunblaze Mail — `Z06001_103`
 - **Slot:** Body | **Tier:** B (2★ Rare) | **Class:** Warrior | **Element:** Fire
 - **Stats:** STR: +1, INT: +1, TOUGH: +1
 - **Set Bond (Pure):** **Heatwave** — Apply 2,4,6,8,10,12 stacks of Burn to the nearest enemy at battle start.
 - **Enhance Ability:** **Scorching Halo** — Apply 1,2,3 stacks of Burn to all enemies at turn start.
-- **Description:** *"this item Gear Equip shines brightly like the blazing sun 。"*
+- **Description:** *"this item Equipment Equip shines brightly like the blazing sun 。"*
 
 ### Sandproof Mask — `Z06001_111`
 - **Slot:** Head | **Tier:** B (2★ Rare) | **Class:** All Classes | **Element:** Wind
@@ -9340,21 +9340,21 @@
 - **Description:** *"Standard gear for the road."*
 
 ### Thief Dagger — `Z06001_011`
-- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Off-hand / Shield | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Ruthless** — Deal +1,2,3 total DMG to high HP targets.
 - **Description:** *"Barely counts as protection."*
 
 ### Thief Gauntlets — `Z06001_012`
-- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Hands | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Ruthless** — Deal +1,2,3 total DMG to high HP targets.
 - **Description:** *"Barely counts as protection."*
 
 ### Thief Belt — `Z06001_013`
-- **Slot:** Belt | **Tier:** C (1★ Common) | **Class:** Warrior, Archer | **Element:** Wind, Fire
+- **Slot:** Belt | **Tier:** C (1★ Common) | **Class:** Warrior, Ranger / Archer | **Element:** Wind, Fire
 - **Stats:** SPD: +1
 - **Set Bond (Pure):** **Sharp** — Gain 1,2,3,4,5,6 ATK.
 - **Enhance Ability:** **Ruthless** — Deal +1,2,3 total DMG to high HP targets.
@@ -9452,42 +9452,42 @@
 - **Description:** *"Cast from flowing lava."*
 
 ### Magma Crossbow — `Z00102_301`
-- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Earth, Fire
+- **Slot:** Main Hand | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Earth, Fire
 - **Stats:** DEX: +6, CONS: +2, TOUGH: +2
 - **Set Bond (Pure):** **Vigilance** — Gain 4,8,12,16,20,24 stacks of Shield at turn start.
 - **Enhance Ability:** **Magma Buildup** — Apply +1 Burn stack per 90,60,30 stacks of Shield. Lose 100,50,50% of Shield stacks after Follow-Up.
 - **Description:** *"Once an ornament on a Magma statue."*
 
 ### Magma Bolts — `Z00102_302`
-- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Earth, Fire
+- **Slot:** Off-hand / Shield | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Earth, Fire
 - **Stats:** DEX: +6, CONS: +2, TOUGH: +2
 - **Set Bond (Pure):** **Vigilance** — Gain 4,8,12,16,20,24 stacks of Shield at turn start.
 - **Enhance Ability:** **Magma Buildup** — Apply +1 Burn stack per 90,60,30 stacks of Shield. Lose 100,50,50% of Shield stacks after Follow-Up.
 - **Description:** *"Once an ornament on a Magma statue."*
 
 ### Magma Ring — `Z00102_303`
-- **Slot:** Ring | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Earth, Fire
+- **Slot:** Ring | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Earth, Fire
 - **Stats:** DEX: +6, CONS: +2, TOUGH: +2
 - **Set Bond (Pure):** **Vigilance** — Gain 4,8,12,16,20,24 stacks of Shield at turn start.
 - **Enhance Ability:** **Magma Buildup** — Apply +1 Burn stack per 90,60,30 stacks of Shield. Lose 100,50,50% of Shield stacks after Follow-Up.
 - **Description:** *"Once an ornament on a Magma statue."*
 
 ### Magma Gauntlets — `Z00102_304`
-- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Earth, Fire
+- **Slot:** Hands | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Earth, Fire
 - **Stats:** DEX: +6, CONS: +2, TOUGH: +2
 - **Set Bond (Pure):** **Vigilance** — Gain 4,8,12,16,20,24 stacks of Shield at turn start.
 - **Enhance Ability:** **Magma Body** — Apply +4,8,12 Burn stacks while having Shield.
 - **Description:** *"Once an ornament on a Magma statue."*
 
 ### Magma Belt — `Z00102_305`
-- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Earth, Fire
+- **Slot:** Belt | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Earth, Fire
 - **Stats:** DEX: +6, CONS: +2, TOUGH: +2
 - **Set Bond (Pure):** **Vigilance** — Gain 4,8,12,16,20,24 stacks of Shield at turn start.
 - **Enhance Ability:** **Magma Body** — Apply +4,8,12 Burn stacks while having Shield.
 - **Description:** *"Once an ornament on a Magma statue."*
 
 ### Magma Boots — `Z00102_306`
-- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Archer | **Element:** Earth, Fire
+- **Slot:** Boots | **Tier:** S (4★ Legendary) | **Class:** Ranger / Archer | **Element:** Earth, Fire
 - **Stats:** DEX: +6, CONS: +2, TOUGH: +2
 - **Set Bond (Pure):** **Vigilance** — Gain 4,8,12,16,20,24 stacks of Shield at turn start.
 - **Enhance Ability:** **Magma Body** — Apply +4,8,12 Burn stacks while having Shield.
@@ -9620,21 +9620,21 @@
 - **Description:** *"Burns as bright as an undying beacon."*
 
 ### Crimson Bow — `Z00102_201`
-- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Dark
+- **Slot:** Main Hand | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Inferno** — Apply 2,4,6,8,10,12 stacks of Burn to target after a basic attack.
 - **Enhance Ability:** **Crimson Burn** — Apply 1,2,3 stacks of Burn per Follow-Up, up to 2,4,6 times.
 - **Description:** *"Enchanted to fire flaming arrows."*
 
 ### Crimson Necklace — `Z00102_202`
-- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Dark
+- **Slot:** Necklace | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Inferno** — Apply 2,4,6,8,10,12 stacks of Burn to target after a basic attack.
 - **Enhance Ability:** **Crimson Burn** — Apply 1,2,3 stacks of Burn per Follow-Up, up to 2,4,6 times.
 - **Description:** *"Enchanted to fire flaming arrows."*
 
 ### Crimson Ring — `Z00102_203`
-- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Archer | **Element:** Earth, Dark
+- **Slot:** Ring | **Tier:** A (3★ Epic) | **Class:** Ranger / Archer | **Element:** Earth, Dark
 - **Stats:** STR: +2, DEX: +2, SPD: +1
 - **Set Bond (Pure):** **Inferno** — Apply 2,4,6,8,10,12 stacks of Burn to target after a basic attack.
 - **Enhance Ability:** **Crimson Burn** — Apply 1,2,3 stacks of Burn per Follow-Up, up to 2,4,6 times.
@@ -10614,21 +10614,21 @@
 - **Description:** *"Stores unstable energy inside."*
 
 ### Alert Badge — `Z07001_113`
-- **Slot:** Badge | **Tier:** B (2★ Rare) | **Class:** Archer, Mage | **Element:** Wind
+- **Slot:** Badge | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer, Mage | **Element:** Wind
 - **Stats:** INT: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Alert** — All allies gain 2,4,6,8,10,12 stacks of Shield at battle start.
 - **Enhance Ability:** **Temp Guard** — Take -5,10,15 total DMG in the first turn.
 - **Description:** *"Offers a bit of protection in a pinch."*
 
 ### Alert Necklace — `Z07001_111`
-- **Slot:** Necklace | **Tier:** B (2★ Rare) | **Class:** Archer, Mage | **Element:** Wind
+- **Slot:** Necklace | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer, Mage | **Element:** Wind
 - **Stats:** INT: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Alert** — All allies gain 2,4,6,8,10,12 stacks of Shield at battle start.
 - **Enhance Ability:** **Temp Guard** — Take -5,10,15 total DMG in the first turn.
 - **Description:** *"Offers a bit of protection in a pinch."*
 
 ### Alert Ring — `Z07001_112`
-- **Slot:** Ring | **Tier:** B (2★ Rare) | **Class:** Archer, Mage | **Element:** Wind
+- **Slot:** Ring | **Tier:** B (2★ Rare) | **Class:** Ranger / Archer, Mage | **Element:** Wind
 - **Stats:** INT: +1, DEX: +1, SPD: +1
 - **Set Bond (Pure):** **Alert** — All allies gain 2,4,6,8,10,12 stacks of Shield at battle start.
 - **Enhance Ability:** **Temp Guard** — Take -5,10,15 total DMG in the first turn.
@@ -10983,109 +10983,109 @@
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Apply 1 stack of Burn | **Ур. 2:** Apply 2 stacks of Burn | **Ур. 3:** Apply 3 stacks of Burn
 
 ### Scavenger's Guide — `XD11001_002`
-- **Type:** Exclusive Insight | **Tier:** C | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** C | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Goblin Hunter (M12002)
 - **Base Effect:** Gain 2 AGI.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 2 AGI | **Ур. 2:** Gain 4 AGI | **Ур. 3:** Gain 6 AGI
 
 ### Throwing Arm — `XD11001_014`
-- **Type:** Exclusive Insight | **Tier:** C | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** C | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Wildcat Hunter (M12001)
 - **Base Effect:** Gain 2 AGI.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 2 AGI | **Ур. 2:** Gain 4 AGI | **Ур. 3:** Gain 6 AGI
 
 ### Honey Storage — `XD11001_022`
-- **Type:** Exclusive Insight | **Tier:** C | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** C | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Bee Hunter (M12003_001)
 - **Base Effect:** Gain 2 AGI.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 2 AGI | **Ур. 2:** Gain 4 AGI | **Ур. 3:** Gain 6 AGI
 
 ### Tea Ceremony — `XD12001_009`
-- **Type:** Exclusive Insight | **Tier:** B | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** B | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Fairy Archer (M32101)
 - **Base Effect:** Gain 4 HP.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 4 HP | **Ур. 2:** Gain 8 HP | **Ур. 3:** Gain 12 HP
 
 ### Fill Your Belly — `XD12001_038`
-- **Type:** Exclusive Insight | **Tier:** B | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** B | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Wolfkin Hunter (M12101_001)
 - **Base Effect:** Gain 4 HP.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 4 HP | **Ур. 2:** Gain 8 HP | **Ур. 3:** Gain 12 HP
 
 ### Tracking Skills — `XD12001_013`
-- **Type:** Exclusive Insight | **Tier:** B | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** B | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Wolfkin Hunter (M12101)
 - **Base Effect:** Gain 2 SPD.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 2 SPD | **Ур. 2:** Gain 4 SPD | **Ур. 3:** Gain 6 SPD
 
 ### Shoot on the Move — `XD12001_032`
-- **Type:** Exclusive Insight | **Tier:** B | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** B | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Legion Archer (M12105)
 - **Base Effect:** Gain 2 SPD.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 2 SPD | **Ур. 2:** Gain 4 SPD | **Ур. 3:** Gain 6 SPD
 
 ### Shooting Forms — `XD13001_024`
-- **Type:** Exclusive Insight | **Tier:** A | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** A | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Naga Archer (M12204)
 - **Base Effect:** Apply 1 more stack of Chill.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Apply 1 stack of Chill | **Ур. 2:** Apply 2 stacks of Chill | **Ур. 3:** Apply 3 stacks of Chill
 
 ### Sign Language — `XD13001_005`
-- **Type:** Exclusive Insight | **Tier:** A | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** A | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Candy (M12207)
 - **Base Effect:** Gain 1 more stack of Haste.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 1 more stack of Haste | **Ур. 2:** Gain 2 more stack of Haste | **Ур. 3:** Gain 3 more stack of Haste
 
 ### Antidote Recipes — `XD13001_017`
-- **Type:** Exclusive Insight | **Tier:** A | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** A | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Warg Archer (M12202)
 - **Base Effect:** Gain 1 more stack of Bloodlust.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 1 more stack of Bloodlust | **Ур. 2:** Gain 2 more stack of Bloodlust | **Ур. 3:** Gain 3 more stack of Bloodlust
 
 ### Frostbite Care — `XD13001_051`
-- **Type:** Exclusive Insight | **Tier:** A | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** A | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Warg Archer (M12202_001)
 - **Base Effect:** Apply 1 more stack of Chill.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Apply 1 stack of Chill | **Ур. 2:** Apply 2 stacks of Chill | **Ур. 3:** Apply 3 stacks of Chill
 
 ### Arrow Mastery — `XD13001_057`
-- **Type:** Exclusive Insight | **Tier:** A | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** A | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Candy (M12207_000)
 - **Base Effect:** Gain 1 more stack of Precision.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 1 more stack of Precision | **Ур. 2:** Gain 2 more stack of Precision | **Ур. 3:** Gain 3 more stack of Precision
 
 ### Burn Analysis — `XD13001_069`
-- **Type:** Exclusive Insight | **Tier:** A | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** A | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Boulder Gunner (M22201_002)
 - **Base Effect:** Apply 1 more stack of Burn.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Apply 1 stack of Burn | **Ур. 2:** Apply 2 stacks of Burn | **Ур. 3:** Apply 3 stacks of Burn
 
 ### Hide in Plain Sight — `XD04001_051`
-- **Type:** Exclusive Insight | **Tier:** A | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** A | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Silver Ranger (M12208)
 - **Base Effect:** Gain 1 more stack of Precision.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 1 more stack of Precision | **Ур. 2:** Gain 2 more stack of Precision | **Ур. 3:** Gain 3 more stack of Precision
 
 ### Windrunner Law — `XD14001_002`
-- **Type:** Exclusive Insight | **Tier:** S | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** S | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Windstrider (M12205)
 - **Base Effect:** Gain 1 more stack of Precision.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 1 more stack of Precision | **Ур. 2:** Gain 2 more stack of Precision | **Ур. 3:** Gain 3 more stack of Precision
 
 ### Cosmic Secrets — `XD04002_051`
-- **Type:** Exclusive Insight | **Tier:** S | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** S | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Stellar Archer (M52301)
 - **Base Effect:** Deal 1 more Follow-Up DMG.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Deal 1 more Follow-Up DMG | **Ур. 2:** Deal 1 more Follow-Up DMG (Lv. 2) | **Ур. 3:** Deal 1 more Follow-Up DMG (Lv. 3)
 
 ### Overpressure Manual — `XD14001_053`
-- **Type:** Exclusive Insight | **Tier:** S | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** S | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Windstrider (M12205)
 - **Base Effect:** Gain 1 more stack of Soothe.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Gain 1 more stack of Soothe | **Ур. 2:** Gain 2 more stack of Soothe | **Ур. 3:** Gain 3 more stack of Soothe
 
 ### Inner Fire — `XD04002_092`
-- **Type:** Exclusive Insight | **Tier:** S | **Class:** Archer | **Max Level:** 3
+- **Type:** Exclusive Insight | **Tier:** S | **Class:** Ranger / Archer | **Max Level:** 3
 - **Bound to Heroines:** Ghost Captain (M41301)
 - **Base Effect:** Apply 1 more stack of Burn.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Apply 1 stack of Burn | **Ур. 2:** Apply 2 stacks of Burn | **Ур. 3:** Apply 3 stacks of Burn
@@ -12025,3 +12025,894 @@
 - **Bound to Heroines:** Rose Sovereign (M13307_000)
 - **Base Effect:** Apply 1 more stack of Expose.
 - ⚡ **Upgrade Levels (1 - 3):** **Ур. 1:** Apply 1 stack of Expose | **Ур. 2:** Apply 2 stacks of Expose | **Ур. 3:** Apply 3 stacks of Expose
+
+
+---
+
+# 📦 8. Chests & Crates
+
+
+### Zongzi — `BX00010`
+- **Tier:** A | **Drop Type:** Special Item | **Content:** Random Item | **Quantity:** 1
+- **Description:** *"Sweet or savory? Take a guess!"*
+- 🎁 **Possible Drops (63):** Gold [D00000_000], Verdant Crystal [D00000_001], Azure Crystal [D00000_002], Violet Crystal [D00000_003], Divine Crystal [D00000_004], Blessed Crystal [D00000_005], Gem [D00001_000], Astral Stone [D00001_001], Clover [D00002_000], Talent Fruit [D00002_001], Stamina [D00004_000], Activity Point [D00005_001], Exploration Point [D00005_002], Peak Points [D00005_003], Activity Point [D00005_004] ...
+
+### Beginner's Bundle — `BX02002`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Special Universal Gear | **Quantity:** 1
+- **Description:** *"Lovingly packed by a retired adventurer for beginners."*
+- 🎁 **Possible Drops (48):** Unity Gloves [Z10016_711], Unity Belt [Z00008_711], Unity Boots [Z10016_712], Lucky Badge [Z00000_001], Lucky Necklace [Z00000_003], Lucky Ring [Z00000_002], Traveler Hood [Z20001_501], Traveler Cloak [Z20001_601], Traveler Boots [Z20001_701], Hasty Leather [Z40002_611], Hasty Belt [Z00012_712], Hasty Boots [Z00012_711], Isolate Hood [Z40013_511], Isolate Robe [Z40013_611], Isolate Gloves [Z40013_711] ...
+
+### Adventurer's Legacy — `BX02006`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random World Legacy Gear | **Quantity:** 1
+- **Description:** *"A parting gift from a retired heroine to the next generation."*
+- 🎁 **Possible Drops (603):** Bladedance Greatsword [Z00014_121], Bladedance Dagger [Z00014_122], Bladedance Badge [Z50002_021], Bladedance Helm [Z00014_521], Bladedance Armor [Z00014_621], Bladedance Necklace [Z00014_522], Bladedance Gauntlets [Z00014_721], Bladedance Belt [Z00014_722], Bladedance Boots [Z00014_723], Archmage Staff [Z00003_321], Archmage Orb [Z00003_322], Archmage Badge [Z00003_021], Archmage Hat [Z00003_521], Archmage Cape [Z00003_621], Archmage Necklace [Z00003_522] ...
+
+### Storage Crate — `BX01001`
+- **Tier:** C | **Drop Type:** Material | **Content:** Random Materials | **Quantity:** 5
+- **Description:** *"A sealed wooden crate with plenty of storage space."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Storage Crate — `BX01001`
+- **Tier:** B | **Drop Type:** Material | **Content:** Random Materials | **Quantity:** 5
+- **Description:** *"A sealed wooden crate with plenty of storage space."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Storage Crate — `BX01001`
+- **Tier:** A | **Drop Type:** Material | **Content:** Random Materials | **Quantity:** 5
+- **Description:** *"A sealed wooden crate with plenty of storage space."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Storage Crate — `BX01001`
+- **Tier:** S | **Drop Type:** Material | **Content:** Random Materials | **Quantity:** 5
+- **Description:** *"A sealed wooden crate with plenty of storage space."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Rubble Basket — `BX01003`
+- **Tier:** B | **Drop Type:** Material | **Content:** Random Ore Materials | **Quantity:** 5
+- **Description:** *"An abandoned frame stuffed with rubble."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Rubble Basket — `BX01003`
+- **Tier:** A | **Drop Type:** Material | **Content:** Random Ore Materials | **Quantity:** 5
+- **Description:** *"An abandoned frame stuffed with rubble."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Rubble Basket — `BX01003`
+- **Tier:** S | **Drop Type:** Material | **Content:** Random Ore Materials | **Quantity:** 5
+- **Description:** *"An abandoned frame stuffed with rubble."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Beastbone Chest — `BX01011`
+- **Tier:** B | **Drop Type:** Material | **Content:** Random Meat Materials | **Quantity:** 5
+- **Description:** *"Keeps meat fresh longer than you'd expect."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Beastbone Chest — `BX01011`
+- **Tier:** A | **Drop Type:** Material | **Content:** Random Meat Materials | **Quantity:** 5
+- **Description:** *"Keeps meat fresh longer than you'd expect."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Beastbone Chest — `BX01011`
+- **Tier:** S | **Drop Type:** Material | **Content:** Random Meat Materials | **Quantity:** 5
+- **Description:** *"Keeps meat fresh longer than you'd expect."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Mushroom Chest — `BX01015`
+- **Tier:** B | **Drop Type:** Material | **Content:** Random Mushroom Materials | **Quantity:** 5
+- **Description:** *"A mushroom-shaped chest covered in mushrooms. Naturally."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Mushroom Chest — `BX01015`
+- **Tier:** A | **Drop Type:** Material | **Content:** Random Mushroom Materials | **Quantity:** 5
+- **Description:** *"A mushroom-shaped chest covered in mushrooms. Naturally."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Mushroom Chest — `BX01015`
+- **Tier:** S | **Drop Type:** Material | **Content:** Random Mushroom Materials | **Quantity:** 5
+- **Description:** *"A mushroom-shaped chest covered in mushrooms. Naturally."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Plant Chest — `BX01012`
+- **Tier:** B | **Drop Type:** Material | **Content:** Random Plant Materials | **Quantity:** 5
+- **Description:** *"Woven from vines to keep plants from wilting."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Plant Chest — `BX01012`
+- **Tier:** A | **Drop Type:** Material | **Content:** Random Plant Materials | **Quantity:** 5
+- **Description:** *"Woven from vines to keep plants from wilting."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Plant Chest — `BX01012`
+- **Tier:** S | **Drop Type:** Material | **Content:** Random Plant Materials | **Quantity:** 5
+- **Description:** *"Woven from vines to keep plants from wilting."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Energy Chest — `BX01016`
+- **Tier:** B | **Drop Type:** Material | **Content:** Random Energy Materials | **Quantity:** 5
+- **Description:** *"Specially designed to store energy without loss."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Energy Chest — `BX01016`
+- **Tier:** A | **Drop Type:** Material | **Content:** Random Energy Materials | **Quantity:** 5
+- **Description:** *"Specially designed to store energy without loss."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Energy Chest — `BX01016`
+- **Tier:** S | **Drop Type:** Material | **Content:** Random Energy Materials | **Quantity:** 5
+- **Description:** *"Specially designed to store energy without loss."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Aqua Chest — `BX01007`
+- **Tier:** B | **Drop Type:** Material | **Content:** Random Fish Materials | **Quantity:** 5
+- **Description:** *"A transparent chest brimming with fish."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Aqua Chest — `BX01007`
+- **Tier:** A | **Drop Type:** Material | **Content:** Random Fish Materials | **Quantity:** 5
+- **Description:** *"A transparent chest brimming with fish."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Aqua Chest — `BX01007`
+- **Tier:** S | **Drop Type:** Material | **Content:** Random Fish Materials | **Quantity:** 5
+- **Description:** *"A transparent chest brimming with fish."*
+- 🎁 **Possible Drops (19):** Mana Crystal [D10000_005], Log [D10000_112], Spore Shroom [D10000_205], Beast Meat [D10000_301], Honey [D10000_110], Silverscale [D10000_103], Jade Greens [D10000_306], Cream Shroom [D10001_022], Mithril Ore [D10000_208], Glowfish [D10000_302], Prime Meat [D10000_104], Magic Stone [D10000_316], Flamegold Ore [D10000_207], Darkback [D10001_001], Sea Beast Meat [D10000_203] ...
+
+### Heavy Iron Chest — `BX02001`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Universal Gear | **Quantity:** 1
+- **Description:** *"A heavy iron chest that protects gear from wear and tear."*
+- 🎁 **Possible Drops (52):** Pristine Gloves [Z00006_712], Pristine Sash [Z00006_713], Pristine Shoes [Z00006_714], Valor Badge [Z00014_011], Valor Necklace [Z00014_811], Valor Ring [Z00014_911], Training Sword [Z00015_101], Training Shield [Z00015_102], Training Hood [Z00015_103], Training Cloak [Z00015_601], Newborn Circlet [Z10006_501], Newborn Sandals [Z50003_711], Newborn Necklace [Z10006_801], Mining Pouch [Z10016_701], Mining Gloves [Z10016_702] ...
+
+### Heavy Iron Chest — `BX02001`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Universal Gear | **Quantity:** 1
+- **Description:** *"A heavy iron chest that protects gear from wear and tear."*
+- 🎁 **Possible Drops (48):** Unity Gloves [Z10016_711], Unity Belt [Z00008_711], Unity Boots [Z10016_712], Lucky Badge [Z00000_001], Lucky Necklace [Z00000_003], Lucky Ring [Z00000_002], Traveler Hood [Z20001_501], Traveler Cloak [Z20001_601], Traveler Boots [Z20001_701], Hasty Leather [Z40002_611], Hasty Belt [Z00012_712], Hasty Boots [Z00012_711], Isolate Hood [Z40013_511], Isolate Robe [Z40013_611], Isolate Gloves [Z40013_711] ...
+
+### Heavy Iron Chest — `BX02001`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Universal Gear | **Quantity:** 1
+- **Description:** *"A heavy iron chest that protects gear from wear and tear."*
+- 🎁 **Possible Drops (54):** Magic Resist Badge [Z10012_032], Magic Resist Necklace [Z10012_921], Magic Resist Ring [Z10012_821], Warm Gloves [Z00101_723], Warm Boots [Z00101_722], Warm Sash [Z00101_721], Warm Charm [Z00101_821], Warm Ring [Z00101_921], Warm Badge [Z00101_021], Dissolve Gloves [Z60014_021], Dissolve Belt [Z60014_022], Dissolve Boots [Z60014_023], Diving Mask [Z00201_371], Diving Suit [Z00201_372], Diving Flippers [Z00201_373] ...
+
+### Heavy Iron Chest — `BX02001`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Universal Gear | **Quantity:** 1
+- **Description:** *"A heavy iron chest that protects gear from wear and tear."*
+- 🎁 **Possible Drops (53):** Authority Staff [Z10026_411], Authority Crown [Z10021_521], Authority Cape [Z10021_621], Authority Gloves [Z10021_727], Authority Sash [Z10021_724], Authority Boots [Z10021_728], Fate Bracers [Z00000_161], Fate Belt [Z00000_162], Fate Boots [Z00000_163], Fate Emblem [Z00000_164], Fate Necklace [Z00000_165], Fate Ring [Z00000_166], Frostbound Crown [Z00101_533], Frostbound Ring [Z00101_534], Insulated Helm [Z00101_641] ...
+
+### Weapon Chest — `BX02031`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Weapon Gear | **Quantity:** 1
+- **Description:** *"A case built specifically for weapons."*
+- 🎁 **Possible Drops (19):** Training Shield [Z00015_102], Warrior Shield [Z00018_101], Simple Needle [Z10028_204], Worm Fang Dagger [Z10028_101], Insect Fang Arrows [Z10028_203], Frostbee Dagger [Z00101_102], Frostbee Arrows [Z00101_202], Fresh Shield [Z30001_402], Rough Shield [Z00001_111], Mining Pouch [Z10016_701], Gladiator Shield [Z00008_112], Throwing Stone [Z02001_021], Legion Shield [Z01003_023], Dark Dagger [Z05001_011], Nimble Dagger [Z05001_021] ...
+
+### Weapon Chest — `BX02031`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Weapon Gear | **Quantity:** 1
+- **Description:** *"A case built specifically for weapons."*
+- 🎁 **Possible Drops (34):** Manacrystal Orb [Z00003_314], Fortitude Shield [Z00018_713], Life Shield [Z00004_414], Swift Arrows [Z00002_713], Broken Dagger [Z10023_113], Plunder Dagger [Z00005_111], Fireball Orb [Z40007_311], Wolf Fang Bolts [Z10028_211], Warg Spirit Shield [Z10011_111], Hunter Dagger [Z00011_111], Icy Dagger [Z00101_151], Frostfang Bolts [Z10016_223], Frostwolf Shield [Z00101_111], Protect Shield [Z02001_195], Spiritwood Shield [Z20003_112] ...
+
+### Weapon Chest — `BX02031`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Weapon Gear | **Quantity:** 1
+- **Description:** *"A case built specifically for weapons."*
+- 🎁 **Possible Drops (50):** Bladedance Dagger [Z00014_122], Archmage Orb [Z00003_322], Cleric Shield [Z50004_422], Marksman Quiver [Z00017_223], Starfall Tower Shield [Z60004_121], Starfall Throwing Blade [Z60004_122], Windrun Arrow [Z00002_213], Armorbreak Bolts [Z20004_223], Beastfang Dagger [Z00016_121], Hunt Bolts [Z10022_212], Witch Doctor Talisman [Z00010_422], Shaman Orb [Z00009_322], Ice Witch Talisman [Z00101_322], Icecrystal Orb [Z00101_522], Heavy Arrows [Z00101_222] ...
+
+### Weapon Chest — `BX02031`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Weapon Gear | **Quantity:** 1
+- **Description:** *"A case built specifically for weapons."*
+- 🎁 **Possible Drops (40):** Hero Shield [Z50006_132], Astral Orb [Z60004_332], Lost Holy Arrows [Z00003_231], Sleepy Doll [Z00000_151], Red Twin Blade [Z00000_172], Wind Spirit Orb [Z20026_321], Sniper Bolts [Z00017_231], Earth Orb [Z10015_332], Windlistener Arrows [Z00000_242], Wasp Stinger [Z10028_122], Chief Tower Shield [Z10015_131], Skyfeather Blade [Z20000_232], Frostfeather Blade [Z00101_231], Pristine Ice Shield [Z00101_131], Wood Spirit Orb [Z20003_332] ...
+
+### Armor Chest — `BX02032`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Armor Gear | **Quantity:** 1
+- **Description:** *"A chest designed to hold armor."*
+- 🎁 **Possible Drops (17):** Pristine Shoes [Z00006_714], Medic Shoes [Z00004_612], Newborn Sandals [Z50003_711], Simple Shoes [Z00015_702], Crude Boots [Z10008_703], Beast Hide Boots [Z00101_303], Frostbee Shoes [Z00101_203], Slime Shoes [Z30001_702], Mining Boots [Z10016_703], Breezy Sandals [Z30017_703], Vacation Sandals [Z00201_123], Legion Boots [Z01003_003], Thief Boots [Z05001_003], Nimble Boots [Z05001_023], Wayfarer Boots [Z06001_003] ...
+
+### Armor Chest — `BX02032`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Armor Gear | **Quantity:** 1
+- **Description:** *"A chest designed to hold armor."*
+- 🎁 **Possible Drops (28):** Unity Boots [Z10016_712], Broken Boots [Z10023_723], Traveler Boots [Z20001_701], Hasty Boots [Z00012_711], Harpy Boots [Z10023_711], Frostbound Boots [Z00101_711], Aid Shoes [Z50000_713], Pure Shoes [Z30001_711], Magnet Boots [Z00007_713], Quicksilver Boots [Z10012_713], Weighted Shoes [Z02001_132], Shadowveil Boots [Z02001_112], Blind Shoes [Z60006_701], Sapphire Boots [Z00201_233], Aquatic Boots [Z00201_226] ...
+
+### Armor Chest — `BX02032`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Armor Gear | **Quantity:** 1
+- **Description:** *"A chest designed to hold armor."*
+- 🎁 **Possible Drops (39):** Bladedance Boots [Z00014_723], Archmage Boots [Z00003_722], Cleric Shoes [Z50006_723], Marksman Boots [Z00017_624], Windwalker Boots [Z20004_711], Windwhisper Boots [Z20026_722], Red Boots [Z40001_721], Fluffy Shoes [Z50005_721], Warm Boots [Z00101_722], Awakened Boots [Z20003_725], Ancient Tree Boots [Z20003_713], Rending Boots [Z10024_721], Lost Boots [Z10012_722], Tempered Steel Boots [Z10012_725], Gilt Boots [Z10021_722] ...
+
+### Armor Chest — `BX02032`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Armor Gear | **Quantity:** 1
+- **Description:** *"A chest designed to hold armor."*
+- 🎁 **Possible Drops (30):** Authority Boots [Z10021_728], Fate Boots [Z00000_163], Performance Boots [Z00000_176], Windlistener Boots [Z00000_243], Chief Boots [Z10015_724], Firefeather Boots [Z40022_721], Skyfeather Boots [Z20026_731], Frostfeather Boots [Z00101_732], Pristine Ice Boots [Z00101_733], Jade Boots [Z10014_732], Divine Tree Boots [Z30001_306], Boulder Boots [Z10001_235], Meteorite Boots [Z10010_731], Captain Boots [Z30018_721], Navy Boots [Z30018_731] ...
+
+### Accessory Chest — `BX02033`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Accessory Gear | **Quantity:** 1
+- **Description:** *"A box meant for storing accessories."*
+- 🎁 **Possible Drops (24):** Valor Necklace [Z00014_811], Valor Ring [Z00014_911], Newborn Necklace [Z10006_801], Simple Ring [Z10028_205], Worm Fang Ring [Z10028_901], Insect Fang Necklace [Z10028_206], Slime Necklace [Z30001_801], Slime Ring [Z30001_901], Miner Compass [Z10016_801], Wooden Necklace [Z02001_002], Wooden Ring [Z02001_003], Fishbone Necklace [Z00201_114], Fishbone Ring [Z00201_115], Shell Necklace [Z00201_101], Shell Ring [Z00201_102] ...
+
+### Accessory Chest — `BX02033`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Accessory Gear | **Quantity:** 1
+- **Description:** *"A box meant for storing accessories."*
+- 🎁 **Possible Drops (63):** Lucky Necklace [Z00000_003], Lucky Ring [Z00000_002], Broken Ring [Z10023_911], Plunder Ring [Z10008_112], Fireball Ring [Z40003_811], Starfall Necklace [Z30020_811], Starfall Ring [Z30020_911], Ancestral Necklace [Z10015_821], Ancestral Ring [Z10015_921], Wolf Fang Ring [Z10028_212], Snare Necklace [Z00011_801], Snare Ring [Z00011_901], Hunter Ring [Z10028_911], Corrode Necklace [Z00101_141], Corrode Ring [Z00101_142] ...
+
+### Accessory Chest — `BX02033`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Accessory Gear | **Quantity:** 1
+- **Description:** *"A box meant for storing accessories."*
+- 🎁 **Possible Drops (131):** Bladedance Necklace [Z00014_522], Archmage Necklace [Z00003_522], Cleric Necklace [Z50002_522], Marksman Necklace [Z00017_625], Magic Resist Necklace [Z10012_921], Magic Resist Ring [Z10012_821], Windwhisper Necklace [Z20026_821], Windwhisper Ring [Z20026_921], Haste Necklace [Z10015_823], Armorbreak Ring [Z20004_224], Combat Necklace [Z00014_821], Combat Ring [Z00014_921], Beast Fang Necklace [Z00016_811], Beast Fang Ring [Z00016_911], Hunt Necklace [Z00016_921] ...
+
+### Accessory Chest — `BX02033`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Accessory Gear | **Quantity:** 1
+- **Description:** *"A box meant for storing accessories."*
+- 🎁 **Possible Drops (74):** Hero's Heart [Z50006_831], Hero Ring [Z50006_931], Starcore Necklace [Z60007_831], Starcore Ring [Z60008_921], Supreme Ring [Z60006_931], Elemental Heart [Z00000_841], Blazing Necklace [Z00000_131], Blazing Ring [Z00000_132], Sleepy Necklace [Z00000_155], Sleepy Ring [Z00000_156], Fate Necklace [Z00000_165], Fate Ring [Z00000_166], Sniper Necklace [Z00017_233], Sniper Ring [Z00017_236], Earth Ring [Z60010_931] ...
+
+### Rune Chest — `BX03001`
+- **Tier:** C | **Drop Type:** Rune | **Content:** Random Runes | **Quantity:** 1
+- **Description:** *"A stone chest carved with ancient runes, sealing unknown power within."*
+- 🎁 **Possible Drops (30):** ATK Rune [F10001_001], DEF Rune [F10002_001], ATK Rune [F10001_006], DEF Rune [F10002_006], ATK Rune [F10001_005], DEF Rune [F10002_005], ATK Rune [F10001_011], DEF Rune [F10002_011], ATK Rune [F10001_003], DEF Rune [F10002_003], ATK Rune [F10001_008], DEF Rune [F10002_008], ATK Rune [F10001_004], DEF Rune [F10002_004], ATK Rune [F10001_009] ...
+
+### Rune Chest — `BX03001`
+- **Tier:** B | **Drop Type:** Rune | **Content:** Random Runes | **Quantity:** 1
+- **Description:** *"A stone chest carved with ancient runes, sealing unknown power within."*
+- 🎁 **Possible Drops (30):** SPD Rune [F20001_001], HP Rune [F20002_001], SPD Rune [F20001_006], HP Rune [F20002_006], SPD Rune [F20001_005], HP Rune [F20002_005], SPD Rune [F20001_011], HP Rune [F20002_011], SPD Rune [F20001_003], HP Rune [F20002_003], SPD Rune [F20001_008], HP Rune [F20002_008], SPD Rune [F20001_004], HP Rune [F20002_004], SPD Rune [F20001_009] ...
+
+### Rune Chest — `BX03001`
+- **Tier:** A | **Drop Type:** Rune | **Content:** Random Runes | **Quantity:** 1
+- **Description:** *"A stone chest carved with ancient runes, sealing unknown power within."*
+- 🎁 **Possible Drops (30):** Mana Rune [F30001_001], Resilience Rune [F30002_001], Mana Rune [F30001_006], Resilience Rune [F30002_006], Mana Rune [F30001_005], Resilience Rune [F30002_005], Mana Rune [F30001_011], Resilience Rune [F30002_011], Mana Rune [F30001_003], Resilience Rune [F30002_003], Mana Rune [F30001_008], Resilience Rune [F30002_008], Mana Rune [F30001_004], Resilience Rune [F30002_004], Mana Rune [F30001_009] ...
+
+### Rune Chest — `BX03001`
+- **Tier:** S | **Drop Type:** Rune | **Content:** Random Runes | **Quantity:** 1
+- **Description:** *"A stone chest carved with ancient runes, sealing unknown power within."*
+- 🎁 **Possible Drops (64):** Ruin Rune [F40001_001], Eternal Rune [F40002_001], Nature Rune [F40003_001], Luck Rune [F20003_001], Ascetic Rune [F30004_001], Ruin Rune [F40001_006], Eternal Rune [F40002_006], Nature Rune [F40003_006], Luck Rune [F20003_006], Ruin Rune [F40001_005], Eternal Rune [F40002_005], Nature Rune [F40003_005], Luck Rune [F20003_005], Ruin Rune [F40001_011], Eternal Rune [F40002_011] ...
+
+### Gold Chest — `BX04001`
+- **Tier:** C | **Drop Type:** Gold | **Content:** A little Gold | **Quantity:** 120-240
+- **Description:** *"Full of gold coins. How many? Open it and find out."*
+- 🎁 **Possible Drops (1):** Gold [gold]
+
+### Gold Chest — `BX04001`
+- **Tier:** B | **Drop Type:** Gold | **Content:** Some Gold | **Quantity:** 600-1200
+- **Description:** *"Full of gold coins. How many? Open it and find out."*
+- 🎁 **Possible Drops (1):** Gold [gold]
+
+### Gold Chest — `BX04001`
+- **Tier:** A | **Drop Type:** Gold | **Content:** Plenty of Gold | **Quantity:** 3000-6000
+- **Description:** *"Full of gold coins. How many? Open it and find out."*
+- 🎁 **Possible Drops (1):** Gold [gold]
+
+### Gold Chest — `BX04001`
+- **Tier:** S | **Drop Type:** Gold | **Content:** Lots of Gold | **Quantity:** 15000-30000
+- **Description:** *"Full of gold coins. How many? Open it and find out."*
+- 🎁 **Possible Drops (1):** Gold [gold]
+
+### Gem Chest — `BX05001`
+- **Tier:** C | **Drop Type:** Gems | **Content:** A Few Gems | **Quantity:** 2-4
+- **Description:** *"Full of gems. How many? Open it and find out."*
+- 🎁 **Possible Drops (1):** Crystals / Gems [gems]
+
+### Gem Chest — `BX05001`
+- **Tier:** B | **Drop Type:** Gems | **Content:** Some Gems | **Quantity:** 10-20
+- **Description:** *"Full of gems. How many? Open it and find out."*
+- 🎁 **Possible Drops (1):** Crystals / Gems [gems]
+
+### Gem Chest — `BX05001`
+- **Tier:** A | **Drop Type:** Gems | **Content:** Plenty of Gems | **Quantity:** 50-100
+- **Description:** *"Full of gems. How many? Open it and find out."*
+- 🎁 **Possible Drops (1):** Crystals / Gems [gems]
+
+### Gem Chest — `BX05001`
+- **Tier:** S | **Drop Type:** Gems | **Content:** Lots of Gems | **Quantity:** 250-500
+- **Description:** *"Full of gems. How many? Open it and find out."*
+- 🎁 **Possible Drops (1):** Crystals / Gems [gems]
+
+### Fruit Treasure Chest — `BX01025`
+- **Tier:** A | **Drop Type:** Special Item | **Content:** Talent Fruit | **Quantity:** 3-5
+- **Description:** *"A chest full of fruit. How many? Only one way to find out."*
+- 🎁 **Possible Drops (1):** Talent Fruit [D00002_001]
+
+### Fruit Treasure Chest — `BX01025`
+- **Tier:** S | **Drop Type:** Special Item | **Content:** Talent Fruit | **Quantity:** 15-25
+- **Description:** *"A chest full of fruit. How many? Only one way to find out."*
+- 🎁 **Possible Drops (1):** Talent Fruit [D00002_001]
+
+### Lucky Treasure Chest — `BX05002`
+- **Tier:** A | **Drop Type:** Special Item | **Content:** Clover | **Quantity:** 1-2
+- **Description:** *"A chest full of Clovers. How many? Only one way to find out."*
+- 🎁 **Possible Drops (1):** Clover [D00002_000]
+
+### Lucky Treasure Chest — `BX05002`
+- **Tier:** S | **Drop Type:** Special Item | **Content:** Clover | **Quantity:** 5-10
+- **Description:** *"A chest full of Clovers. How many? Only one way to find out."*
+- 🎁 **Possible Drops (1):** Clover [D00002_000]
+
+### Crystal Pouch — `BX06001`
+- **Tier:** C | **Drop Type:** Gems | **Content:** Verdant Crystal | **Quantity:** 5-10
+- **Description:** *"Full of crystals. How many? Open it and find out."*
+- 🎁 **Possible Drops (1):** Crystals / Gems [gems]
+
+### Crystal Pouch — `BX06001`
+- **Tier:** B | **Drop Type:** Gems | **Content:** Azure Crystal | **Quantity:** 5-10
+- **Description:** *"Full of crystals. How many? Open it and find out."*
+- 🎁 **Possible Drops (1):** Crystals / Gems [gems]
+
+### Crystal Pouch — `BX06001`
+- **Tier:** A | **Drop Type:** Gems | **Content:** Violet Crystal | **Quantity:** 5-10
+- **Description:** *"Full of crystals. How many? Open it and find out."*
+- 🎁 **Possible Drops (1):** Crystals / Gems [gems]
+
+### Crystal Pouch — `BX06001`
+- **Tier:** S | **Drop Type:** Gems | **Content:** Divine Crystal | **Quantity:** 5-10
+- **Description:** *"Full of crystals. How many? Open it and find out."*
+- 🎁 **Possible Drops (1):** Crystals / Gems [gems]
+
+### Storage Crystal — `BX01019`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Mage Gear | **Quantity:** 1
+- **Description:** *"A spatial crystal used by academy mages to store magical items."*
+- 🎁 **Possible Drops (6):** Mage Staff [Z00003_311], Mage Hat [Z00003_511], Mage Cloak [Z00003_611], Flawed Staff [Z07001_021], Flawed Orb [Z07001_022], Flawed Belt [Z07001_023]
+
+### Storage Crystal — `BX01019`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Mage Gear | **Quantity:** 1
+- **Description:** *"A spatial crystal used by academy mages to store magical items."*
+- 🎁 **Possible Drops (36):** Manacrystal Staff [Z00003_312], Manacrystal Orb [Z00003_314], Manacrystal Badge [Z00003_912], Fireball Staff [Z40003_311], Fireball Orb [Z40007_311], Fireball Ring [Z40003_811], Starfall Staff [Z30020_311], Starfall Necklace [Z30020_811], Starfall Ring [Z30020_911], Erosion Staff [Z00101_311], Erosion Crown [Z00101_312], Erosion Robe [Z00101_313], Corrode Necklace [Z00101_141], Corrode Ring [Z00101_142], Corrode Badge [Z00101_143] ...
+
+### Storage Crystal — `BX01019`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Mage Gear | **Quantity:** 1
+- **Description:** *"A spatial crystal used by academy mages to store magical items."*
+- 🎁 **Possible Drops (94):** Archmage Staff [Z00003_321], Archmage Orb [Z00003_322], Archmage Badge [Z00003_021], Archmage Hat [Z00003_521], Archmage Cape [Z00003_621], Archmage Necklace [Z00003_522], Archmage Gloves [Z00003_723], Archmage Sash [Z00003_724], Archmage Boots [Z00003_722], Windwhisper Staff [Z20026_322], Shaman Staff [Z00009_321], Shaman Orb [Z00009_322], Shaman Mask [Z00009_521], Ice Witch Rod [Z00101_321], Ice Witch Talisman [Z00101_322] ...
+
+### Storage Crystal — `BX01019`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Mage Gear | **Quantity:** 1
+- **Description:** *"A spatial crystal used by academy mages to store magical items."*
+- 🎁 **Possible Drops (58):** Astral Wand [Z60004_331], Astral Orb [Z60004_332], Astral Cloak [Z60004_631], Supreme Cape [Z50003_631], Supreme Sash [Z50003_731], Supreme Ring [Z60006_931], Elemental Crown [Z00000_542], Elemental Badge [Z00000_031], Elemental Heart [Z00000_841], Wind Spirit Wand [Z20026_331], Wind Spirit Orb [Z20026_321], Wind Spirit Badge [Z20026_332], Earth Staff [Z10015_331], Earth Orb [Z10015_332], Wasp Wand [Z10028_331] ...
+
+### Ironblood Cache — `BX02007`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Archer Gear | **Quantity:** 1
+- **Description:** *"A reward from the Ironblood trial. Proof you've earned their respect."*
+- 🎁 **Possible Drops (18):** Archer Bow [Z00002_211], Archer Cape [Z00002_611], Archer Bracers [Z00002_711], Simple Blowdart [Z10028_202], Simple Needle [Z10028_204], Simple Ring [Z10028_205], Crude Helm [Z10008_501], Crude Leather [Z10008_601], Crude Boots [Z10008_703], Insect Fang Bow [Z10028_201], Insect Fang Arrows [Z10028_203], Insect Fang Necklace [Z10028_206], Frostbee Bow [Z00101_201], Frostbee Arrows [Z00101_202], Frostbee Shoes [Z00101_203] ...
+
+### Ironblood Cache — `BX02007`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Archer Gear | **Quantity:** 1
+- **Description:** *"A reward from the Ironblood trial. Proof you've earned their respect."*
+- 🎁 **Possible Drops (22):** Swift Bow [Z00002_212], Swift Arrows [Z00002_713], Swift Badge [Z00002_714], Wolf Fang Crossbow [Z10022_211], Wolf Fang Bolts [Z10028_211], Wolf Fang Ring [Z10028_212], Frostfang Crossbow [Z00101_211], Frostfang Bolts [Z10016_223], Frostfang Ring [Z00101_212], Fairy Bow [Z20026_211], Fairy Cloak [Z20025_621], Fairy Bracers [Z20025_721], Pirate Crossbow [Z00005_211], Stealth Hood [Z02001_141], Stealth Cloak [Z02001_142] ...
+
+### Ironblood Cache — `BX02007`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Archer Gear | **Quantity:** 1
+- **Description:** *"A reward from the Ironblood trial. Proof you've earned their respect."*
+- 🎁 **Possible Drops (75):** Marksman Bow [Z00017_221], Marksman Quiver [Z00017_223], Marksman Badge [Z00017_224], Marksman Hat [Z00017_521], Marksman Mantle [Z00017_622], Marksman Necklace [Z00017_625], Marksman Gloves [Z00017_621], Marksman Belt [Z00017_623], Marksman Boots [Z00017_624], Windrun Crossbow [Z20004_211], Windrun Arrow [Z00002_213], Windrun Gloves [Z00002_214], Windwalker Leather [Z20004_611], Windwalker Belt [Z20004_713], Windwalker Boots [Z20004_711] ...
+
+### Ironblood Cache — `BX02007`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Archer Gear | **Quantity:** 1
+- **Description:** *"A reward from the Ironblood trial. Proof you've earned their respect."*
+- 🎁 **Possible Drops (52):** Starcore Badge [Z60008_031], Starcore Necklace [Z60007_831], Starcore Ring [Z60008_921], Lost Holy Bow [Z60007_231], Lost Holy Arrows [Z00003_231], Lost Sash [Z00003_232], Sniper Crossbow [Z00017_222], Sniper Bolts [Z00017_231], Sniper Necklace [Z00017_233], Sniper Bracers [Z00017_234], Sniper Belt [Z00017_235], Sniper Ring [Z00017_236], Windlistener Bow [Z00000_241], Windlistener Arrows [Z00000_242], Windlistener Boots [Z00000_243] ...
+
+### Forest Treasure — `BX02011`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Priest Gear | **Quantity:** 1
+- **Description:** *"A curious chest that glimmers faintly with its own light."*
+- 🎁 **Possible Drops (9):** Medic Robe [Z00004_611], Medic Gloves [Z00006_711], Medic Shoes [Z00004_612], Fresh Rod [Z30001_401], Fresh Shield [Z30001_402], Fresh Belt [Z30001_705], Legion Staff [Z01003_021], Legion Shield [Z01003_023], Legion Ring [Z01003_024]
+
+### Forest Treasure — `BX02011`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Priest Gear | **Quantity:** 1
+- **Description:** *"A curious chest that glimmers faintly with its own light."*
+- 🎁 **Possible Drops (24):** Life Rod [Z00004_413], Life Shield [Z00004_414], Life Badge [Z00004_011], Ancestral Staff [Z00009_311], Ancestral Crown [Z00010_511], Ancestral Robe [Z00010_512], Ancestral Necklace [Z10015_821], Ancestral Ring [Z10015_921], Ancestral Badge [Z10015_021], Aid Gloves [Z50000_711], Aid Belt [Z50000_712], Aid Shoes [Z50000_713], Protect Rod [Z02001_194], Protect Shield [Z02001_195], Protect Necklace [Z50004_811] ...
+
+### Forest Treasure — `BX02011`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Priest Gear | **Quantity:** 1
+- **Description:** *"A curious chest that glimmers faintly with its own light."*
+- 🎁 **Possible Drops (72):** Cleric Rod [Z50004_421], Cleric Shield [Z50004_422], Cleric Badge [Z50004_423], Cleric Crown [Z50002_521], Cleric Robe [Z50002_611], Cleric Necklace [Z50002_522], Cleric Gloves [Z50006_721], Cleric Sash [Z50006_722], Cleric Shoes [Z50006_723], Haste Cape [Z10015_621], Haste Cord [Z10015_723], Haste Necklace [Z10015_823], Ritual Staff [Z10002_321], Ritual Mask [Z10005_021], Ritual Robe [Z10005_022] ...
+
+### Forest Treasure — `BX02011`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Priest Gear | **Quantity:** 1
+- **Description:** *"A curious chest that glimmers faintly with its own light."*
+- 🎁 **Possible Drops (37):** Jade Rod [Z10014_431], Loving Crown [Z00201_411], Loving Robe [Z00201_413], Loving Necklace [Z00201_412], Forest Relic [Z20025_431], Forest Crown [Z20025_531], Forest Heart [Z20025_831], Sea God Badge [Z30000_004], Sea God Necklace [Z30000_005], Sea God Ring [Z30000_006], Flawless Rod [Z00201_421], Flawless Shield [Z00201_423], Flawless Robe [Z00201_422], Flawless Bracers [Z00201_424], Flawless Sash [Z00201_425] ...
+
+### Veteran's Pack — `BX01018`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Warrior Gear | **Quantity:** 1
+- **Description:** *"An old pack left behind by a Steel Legion veteran."*
+- 🎁 **Possible Drops (17):** Warrior Sword [Z00018_111], Warrior Shield [Z00018_101], Warrior Armor [Z00018_611], Worm Fang Longsword [Z10028_112], Frostbee Sword [Z00101_101], Gladiator Trident [Z00008_111], Gladiator Shield [Z00008_112], Gladiator Sash [Z00008_113], Silent Blade [Z02001_011], Silent Hood [Z02001_013], Silent Cloak [Z02001_012], Scrap Helm [Z03001_001], Scrap Gloves [Z03001_002], Scrap Belt [Z03001_003], Legion Spear [Z01003_011] ...
+
+### Veteran's Pack — `BX01018`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Warrior Gear | **Quantity:** 1
+- **Description:** *"An old pack left behind by a Steel Legion veteran."*
+- 🎁 **Possible Drops (126):** Fortitude Greatsword [Z00018_112], Fortitude Shield [Z00018_713], Fortitude Badge [Z00018_011], Resolve Headband [Z00013_501], Resolve Garb [Z00013_611], Resolve Gloves [Z00013_711], Broken Sword [Z10023_111], Broken Dagger [Z10023_113], Broken Ring [Z10023_911], Broken Gloves [Z10023_721], Broken Belt [Z10023_722], Broken Boots [Z10023_723], Plunder Sword [Z10008_111], Plunder Dagger [Z00005_111], Plunder Ring [Z10008_112] ...
+
+### Veteran's Pack — `BX01018`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Warrior Gear | **Quantity:** 1
+- **Description:** *"An old pack left behind by a Steel Legion veteran."*
+- 🎁 **Possible Drops (150):** Bladedance Greatsword [Z00014_121], Bladedance Dagger [Z00014_122], Bladedance Badge [Z50002_021], Bladedance Helm [Z00014_521], Bladedance Armor [Z00014_621], Bladedance Necklace [Z00014_522], Bladedance Gauntlets [Z00014_721], Bladedance Belt [Z00014_722], Bladedance Boots [Z00014_723], Starfall Tower Shield [Z60004_121], Starfall Helm [Z60004_522], Starfall Armor [Z60004_521], Starfall Blade [Z60004_131], Starfall Throwing Blade [Z60004_122], Starfall Belt [Z60004_731] ...
+
+### Veteran's Pack — `BX01018`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Warrior Gear | **Quantity:** 1
+- **Description:** *"An old pack left behind by a Steel Legion veteran."*
+- 🎁 **Possible Drops (114):** Hero Sword [Z50006_131], Black Twin Blade [Z00000_171], Red Twin Blade [Z00000_172], Ace Badge [Z00000_173], Performance Gloves [Z00000_174], Performance Sash [Z00000_175], Performance Boots [Z00000_176], Crimson Blade [Z60003_131], Crimson Hood [Z60003_532], Crimson Cape [Z60003_621], Wasp Rapier [Z10028_121], Chief Greatsword [Z10015_121], Chief Tower Shield [Z10015_131], Chief Armor [Z10015_132], Chief Gauntlets [Z10015_722] ...
+
+### Tribal Hoard — `BX02021`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Plains Gear | **Quantity:** 1
+- **Description:** *"Where steppe tribes keep their valuables."*
+- 🎁 **Possible Drops (148):** Pristine Gloves [Z00006_712], Pristine Sash [Z00006_713], Pristine Shoes [Z00006_714], Valor Badge [Z00014_011], Valor Necklace [Z00014_811], Valor Ring [Z00014_911], Training Sword [Z00015_101], Training Shield [Z00015_102], Training Hood [Z00015_103], Training Cloak [Z00015_601], Medic Robe [Z00004_611], Medic Gloves [Z00006_711], Medic Shoes [Z00004_612], Mage Staff [Z00003_311], Mage Hat [Z00003_511] ...
+
+### Tribal Hoard — `BX02021`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Plains Gear | **Quantity:** 1
+- **Description:** *"Where steppe tribes keep their valuables."*
+- 🎁 **Possible Drops (327):** Unity Gloves [Z10016_711], Unity Belt [Z00008_711], Unity Boots [Z10016_712], Lucky Badge [Z00000_001], Lucky Necklace [Z00000_003], Lucky Ring [Z00000_002], Manacrystal Staff [Z00003_312], Manacrystal Orb [Z00003_314], Manacrystal Badge [Z00003_912], Fortitude Greatsword [Z00018_112], Fortitude Shield [Z00018_713], Fortitude Badge [Z00018_011], Life Rod [Z00004_413], Life Shield [Z00004_414], Life Badge [Z00004_011] ...
+
+### Tribal Hoard — `BX02021`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Plains Gear | **Quantity:** 1
+- **Description:** *"Where steppe tribes keep their valuables."*
+- 🎁 **Possible Drops (603):** Bladedance Greatsword [Z00014_121], Bladedance Dagger [Z00014_122], Bladedance Badge [Z50002_021], Bladedance Helm [Z00014_521], Bladedance Armor [Z00014_621], Bladedance Necklace [Z00014_522], Bladedance Gauntlets [Z00014_721], Bladedance Belt [Z00014_722], Bladedance Boots [Z00014_723], Archmage Staff [Z00003_321], Archmage Orb [Z00003_322], Archmage Badge [Z00003_021], Archmage Hat [Z00003_521], Archmage Cape [Z00003_621], Archmage Necklace [Z00003_522] ...
+
+### Tribal Hoard — `BX02021`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Plains Gear | **Quantity:** 1
+- **Description:** *"Where steppe tribes keep their valuables."*
+- 🎁 **Possible Drops (441):** Authority Staff [Z10026_411], Authority Crown [Z10021_521], Authority Cape [Z10021_621], Authority Gloves [Z10021_727], Authority Sash [Z10021_724], Authority Boots [Z10021_728], Hero Sword [Z50006_131], Hero Shield [Z50006_132], Hero Gauntlets [Z50006_133], Hero Badge [Z50006_031], Hero's Heart [Z50006_831], Hero Ring [Z50006_931], Astral Wand [Z60004_331], Astral Orb [Z60004_332], Astral Cloak [Z60004_631] ...
+
+### Deadwood Hoard — `BX02010`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Forest Gear | **Quantity:** 1
+- **Description:** *"Where forest elves keep their valuables."*
+- 🎁 **Possible Drops (148):** Pristine Gloves [Z00006_712], Pristine Sash [Z00006_713], Pristine Shoes [Z00006_714], Valor Badge [Z00014_011], Valor Necklace [Z00014_811], Valor Ring [Z00014_911], Training Sword [Z00015_101], Training Shield [Z00015_102], Training Hood [Z00015_103], Training Cloak [Z00015_601], Medic Robe [Z00004_611], Medic Gloves [Z00006_711], Medic Shoes [Z00004_612], Mage Staff [Z00003_311], Mage Hat [Z00003_511] ...
+
+### Deadwood Hoard — `BX02010`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Forest Gear | **Quantity:** 1
+- **Description:** *"Where forest elves keep their valuables."*
+- 🎁 **Possible Drops (327):** Unity Gloves [Z10016_711], Unity Belt [Z00008_711], Unity Boots [Z10016_712], Lucky Badge [Z00000_001], Lucky Necklace [Z00000_003], Lucky Ring [Z00000_002], Manacrystal Staff [Z00003_312], Manacrystal Orb [Z00003_314], Manacrystal Badge [Z00003_912], Fortitude Greatsword [Z00018_112], Fortitude Shield [Z00018_713], Fortitude Badge [Z00018_011], Life Rod [Z00004_413], Life Shield [Z00004_414], Life Badge [Z00004_011] ...
+
+### Deadwood Hoard — `BX02010`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Forest Gear | **Quantity:** 1
+- **Description:** *"Where forest elves keep their valuables."*
+- 🎁 **Possible Drops (603):** Bladedance Greatsword [Z00014_121], Bladedance Dagger [Z00014_122], Bladedance Badge [Z50002_021], Bladedance Helm [Z00014_521], Bladedance Armor [Z00014_621], Bladedance Necklace [Z00014_522], Bladedance Gauntlets [Z00014_721], Bladedance Belt [Z00014_722], Bladedance Boots [Z00014_723], Archmage Staff [Z00003_321], Archmage Orb [Z00003_322], Archmage Badge [Z00003_021], Archmage Hat [Z00003_521], Archmage Cape [Z00003_621], Archmage Necklace [Z00003_522] ...
+
+### Deadwood Hoard — `BX02010`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Forest Gear | **Quantity:** 1
+- **Description:** *"Where forest elves keep their valuables."*
+- 🎁 **Possible Drops (441):** Authority Staff [Z10026_411], Authority Crown [Z10021_521], Authority Cape [Z10021_621], Authority Gloves [Z10021_727], Authority Sash [Z10021_724], Authority Boots [Z10021_728], Hero Sword [Z50006_131], Hero Shield [Z50006_132], Hero Gauntlets [Z50006_133], Hero Badge [Z50006_031], Hero's Heart [Z50006_831], Hero Ring [Z50006_931], Astral Wand [Z60004_331], Astral Orb [Z60004_332], Astral Cloak [Z60004_631] ...
+
+### Stone Hoard — `BX01013`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Mountain Gear | **Quantity:** 1
+- **Description:** *"Where mountain folk keep their valuables."*
+- 🎁 **Possible Drops (148):** Pristine Gloves [Z00006_712], Pristine Sash [Z00006_713], Pristine Shoes [Z00006_714], Valor Badge [Z00014_011], Valor Necklace [Z00014_811], Valor Ring [Z00014_911], Training Sword [Z00015_101], Training Shield [Z00015_102], Training Hood [Z00015_103], Training Cloak [Z00015_601], Medic Robe [Z00004_611], Medic Gloves [Z00006_711], Medic Shoes [Z00004_612], Mage Staff [Z00003_311], Mage Hat [Z00003_511] ...
+
+### Stone Hoard — `BX01013`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Mountain Gear | **Quantity:** 1
+- **Description:** *"Where mountain folk keep their valuables."*
+- 🎁 **Possible Drops (327):** Unity Gloves [Z10016_711], Unity Belt [Z00008_711], Unity Boots [Z10016_712], Lucky Badge [Z00000_001], Lucky Necklace [Z00000_003], Lucky Ring [Z00000_002], Manacrystal Staff [Z00003_312], Manacrystal Orb [Z00003_314], Manacrystal Badge [Z00003_912], Fortitude Greatsword [Z00018_112], Fortitude Shield [Z00018_713], Fortitude Badge [Z00018_011], Life Rod [Z00004_413], Life Shield [Z00004_414], Life Badge [Z00004_011] ...
+
+### Stone Hoard — `BX01013`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Mountain Gear | **Quantity:** 1
+- **Description:** *"Where mountain folk keep their valuables."*
+- 🎁 **Possible Drops (603):** Bladedance Greatsword [Z00014_121], Bladedance Dagger [Z00014_122], Bladedance Badge [Z50002_021], Bladedance Helm [Z00014_521], Bladedance Armor [Z00014_621], Bladedance Necklace [Z00014_522], Bladedance Gauntlets [Z00014_721], Bladedance Belt [Z00014_722], Bladedance Boots [Z00014_723], Archmage Staff [Z00003_321], Archmage Orb [Z00003_322], Archmage Badge [Z00003_021], Archmage Hat [Z00003_521], Archmage Cape [Z00003_621], Archmage Necklace [Z00003_522] ...
+
+### Stone Hoard — `BX01013`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Mountain Gear | **Quantity:** 1
+- **Description:** *"Where mountain folk keep their valuables."*
+- 🎁 **Possible Drops (441):** Authority Staff [Z10026_411], Authority Crown [Z10021_521], Authority Cape [Z10021_621], Authority Gloves [Z10021_727], Authority Sash [Z10021_724], Authority Boots [Z10021_728], Hero Sword [Z50006_131], Hero Shield [Z50006_132], Hero Gauntlets [Z50006_133], Hero Badge [Z50006_031], Hero's Heart [Z50006_831], Hero Ring [Z50006_931], Astral Wand [Z60004_331], Astral Orb [Z60004_332], Astral Cloak [Z60004_631] ...
+
+### Seashell Chest — `BX01014`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Ocean Gear | **Quantity:** 1
+- **Description:** *"Where ocean dwellers keep their valuables."*
+- 🎁 **Possible Drops (148):** Pristine Gloves [Z00006_712], Pristine Sash [Z00006_713], Pristine Shoes [Z00006_714], Valor Badge [Z00014_011], Valor Necklace [Z00014_811], Valor Ring [Z00014_911], Training Sword [Z00015_101], Training Shield [Z00015_102], Training Hood [Z00015_103], Training Cloak [Z00015_601], Medic Robe [Z00004_611], Medic Gloves [Z00006_711], Medic Shoes [Z00004_612], Mage Staff [Z00003_311], Mage Hat [Z00003_511] ...
+
+### Seashell Chest — `BX01014`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Ocean Gear | **Quantity:** 1
+- **Description:** *"Where ocean dwellers keep their valuables."*
+- 🎁 **Possible Drops (327):** Unity Gloves [Z10016_711], Unity Belt [Z00008_711], Unity Boots [Z10016_712], Lucky Badge [Z00000_001], Lucky Necklace [Z00000_003], Lucky Ring [Z00000_002], Manacrystal Staff [Z00003_312], Manacrystal Orb [Z00003_314], Manacrystal Badge [Z00003_912], Fortitude Greatsword [Z00018_112], Fortitude Shield [Z00018_713], Fortitude Badge [Z00018_011], Life Rod [Z00004_413], Life Shield [Z00004_414], Life Badge [Z00004_011] ...
+
+### Seashell Chest — `BX01014`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Ocean Gear | **Quantity:** 1
+- **Description:** *"Where ocean dwellers keep their valuables."*
+- 🎁 **Possible Drops (603):** Bladedance Greatsword [Z00014_121], Bladedance Dagger [Z00014_122], Bladedance Badge [Z50002_021], Bladedance Helm [Z00014_521], Bladedance Armor [Z00014_621], Bladedance Necklace [Z00014_522], Bladedance Gauntlets [Z00014_721], Bladedance Belt [Z00014_722], Bladedance Boots [Z00014_723], Archmage Staff [Z00003_321], Archmage Orb [Z00003_322], Archmage Badge [Z00003_021], Archmage Hat [Z00003_521], Archmage Cape [Z00003_621], Archmage Necklace [Z00003_522] ...
+
+### Seashell Chest — `BX01014`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Ocean Gear | **Quantity:** 1
+- **Description:** *"Where ocean dwellers keep their valuables."*
+- 🎁 **Possible Drops (441):** Authority Staff [Z10026_411], Authority Crown [Z10021_521], Authority Cape [Z10021_621], Authority Gloves [Z10021_727], Authority Sash [Z10021_724], Authority Boots [Z10021_728], Hero Sword [Z50006_131], Hero Shield [Z50006_132], Hero Gauntlets [Z50006_133], Hero Badge [Z50006_031], Hero's Heart [Z50006_831], Hero Ring [Z50006_931], Astral Wand [Z60004_331], Astral Orb [Z60004_332], Astral Cloak [Z60004_631] ...
+
+### Amber Crystal Chest — `BX00015`
+- **Tier:** C | **Drop Type:** Rune | **Content:** Random Plains Rune | **Quantity:** 1
+- **Description:** *"An amber crystal chest perfect for storing Plains runes."*
+- 🎁 **Possible Drops (30):** ATK Rune [F10001_001], DEF Rune [F10002_001], ATK Rune [F10001_006], DEF Rune [F10002_006], ATK Rune [F10001_005], DEF Rune [F10002_005], ATK Rune [F10001_011], DEF Rune [F10002_011], ATK Rune [F10001_003], DEF Rune [F10002_003], ATK Rune [F10001_008], DEF Rune [F10002_008], ATK Rune [F10001_004], DEF Rune [F10002_004], ATK Rune [F10001_009] ...
+
+### Amber Crystal Chest — `BX00015`
+- **Tier:** B | **Drop Type:** Rune | **Content:** Random Plains Rune | **Quantity:** 1
+- **Description:** *"An amber crystal chest perfect for storing Plains runes."*
+- 🎁 **Possible Drops (30):** SPD Rune [F20001_001], HP Rune [F20002_001], SPD Rune [F20001_006], HP Rune [F20002_006], SPD Rune [F20001_005], HP Rune [F20002_005], SPD Rune [F20001_011], HP Rune [F20002_011], SPD Rune [F20001_003], HP Rune [F20002_003], SPD Rune [F20001_008], HP Rune [F20002_008], SPD Rune [F20001_004], HP Rune [F20002_004], SPD Rune [F20001_009] ...
+
+### Amber Crystal Chest — `BX00015`
+- **Tier:** A | **Drop Type:** Rune | **Content:** Random Plains Rune | **Quantity:** 1
+- **Description:** *"An amber crystal chest perfect for storing Plains runes."*
+- 🎁 **Possible Drops (30):** Mana Rune [F30001_001], Resilience Rune [F30002_001], Mana Rune [F30001_006], Resilience Rune [F30002_006], Mana Rune [F30001_005], Resilience Rune [F30002_005], Mana Rune [F30001_011], Resilience Rune [F30002_011], Mana Rune [F30001_003], Resilience Rune [F30002_003], Mana Rune [F30001_008], Resilience Rune [F30002_008], Mana Rune [F30001_004], Resilience Rune [F30002_004], Mana Rune [F30001_009] ...
+
+### Amber Crystal Chest — `BX00015`
+- **Tier:** S | **Drop Type:** Rune | **Content:** Random Plains Rune | **Quantity:** 1
+- **Description:** *"An amber crystal chest perfect for storing Plains runes."*
+- 🎁 **Possible Drops (64):** Ruin Rune [F40001_001], Eternal Rune [F40002_001], Nature Rune [F40003_001], Luck Rune [F20003_001], Ascetic Rune [F30004_001], Ruin Rune [F40001_006], Eternal Rune [F40002_006], Nature Rune [F40003_006], Luck Rune [F20003_006], Ruin Rune [F40001_005], Eternal Rune [F40002_005], Nature Rune [F40003_005], Luck Rune [F20003_005], Ruin Rune [F40001_011], Eternal Rune [F40002_011] ...
+
+### Jade Crystal Chest — `BX00012`
+- **Tier:** C | **Drop Type:** Rune | **Content:** Random Forest Rune | **Quantity:** 1
+- **Description:** *"A jade crystal chest perfect for storing Forest runes."*
+- 🎁 **Possible Drops (30):** ATK Rune [F10001_001], DEF Rune [F10002_001], ATK Rune [F10001_006], DEF Rune [F10002_006], ATK Rune [F10001_005], DEF Rune [F10002_005], ATK Rune [F10001_011], DEF Rune [F10002_011], ATK Rune [F10001_003], DEF Rune [F10002_003], ATK Rune [F10001_008], DEF Rune [F10002_008], ATK Rune [F10001_004], DEF Rune [F10002_004], ATK Rune [F10001_009] ...
+
+### Jade Crystal Chest — `BX00012`
+- **Tier:** B | **Drop Type:** Rune | **Content:** Random Forest Rune | **Quantity:** 1
+- **Description:** *"A jade crystal chest perfect for storing Forest runes."*
+- 🎁 **Possible Drops (30):** SPD Rune [F20001_001], HP Rune [F20002_001], SPD Rune [F20001_006], HP Rune [F20002_006], SPD Rune [F20001_005], HP Rune [F20002_005], SPD Rune [F20001_011], HP Rune [F20002_011], SPD Rune [F20001_003], HP Rune [F20002_003], SPD Rune [F20001_008], HP Rune [F20002_008], SPD Rune [F20001_004], HP Rune [F20002_004], SPD Rune [F20001_009] ...
+
+### Jade Crystal Chest — `BX00012`
+- **Tier:** A | **Drop Type:** Rune | **Content:** Random Forest Rune | **Quantity:** 1
+- **Description:** *"A jade crystal chest perfect for storing Forest runes."*
+- 🎁 **Possible Drops (30):** Mana Rune [F30001_001], Resilience Rune [F30002_001], Mana Rune [F30001_006], Resilience Rune [F30002_006], Mana Rune [F30001_005], Resilience Rune [F30002_005], Mana Rune [F30001_011], Resilience Rune [F30002_011], Mana Rune [F30001_003], Resilience Rune [F30002_003], Mana Rune [F30001_008], Resilience Rune [F30002_008], Mana Rune [F30001_004], Resilience Rune [F30002_004], Mana Rune [F30001_009] ...
+
+### Jade Crystal Chest — `BX00012`
+- **Tier:** S | **Drop Type:** Rune | **Content:** Random Forest Rune | **Quantity:** 1
+- **Description:** *"A jade crystal chest perfect for storing Forest runes."*
+- 🎁 **Possible Drops (64):** Ruin Rune [F40001_001], Eternal Rune [F40002_001], Nature Rune [F40003_001], Luck Rune [F20003_001], Ascetic Rune [F30004_001], Ruin Rune [F40001_006], Eternal Rune [F40002_006], Nature Rune [F40003_006], Luck Rune [F20003_006], Ruin Rune [F40001_005], Eternal Rune [F40002_005], Nature Rune [F40003_005], Luck Rune [F20003_005], Ruin Rune [F40001_011], Eternal Rune [F40002_011] ...
+
+### Stone Crystal Chest — `BX00011`
+- **Tier:** C | **Drop Type:** Rune | **Content:** Random Mountain Rune | **Quantity:** 1
+- **Description:** *"A stone crystal chest perfect for storing Mountain runes."*
+- 🎁 **Possible Drops (30):** ATK Rune [F10001_001], DEF Rune [F10002_001], ATK Rune [F10001_006], DEF Rune [F10002_006], ATK Rune [F10001_005], DEF Rune [F10002_005], ATK Rune [F10001_011], DEF Rune [F10002_011], ATK Rune [F10001_003], DEF Rune [F10002_003], ATK Rune [F10001_008], DEF Rune [F10002_008], ATK Rune [F10001_004], DEF Rune [F10002_004], ATK Rune [F10001_009] ...
+
+### Stone Crystal Chest — `BX00011`
+- **Tier:** B | **Drop Type:** Rune | **Content:** Random Mountain Rune | **Quantity:** 1
+- **Description:** *"A stone crystal chest perfect for storing Mountain runes."*
+- 🎁 **Possible Drops (30):** SPD Rune [F20001_001], HP Rune [F20002_001], SPD Rune [F20001_006], HP Rune [F20002_006], SPD Rune [F20001_005], HP Rune [F20002_005], SPD Rune [F20001_011], HP Rune [F20002_011], SPD Rune [F20001_003], HP Rune [F20002_003], SPD Rune [F20001_008], HP Rune [F20002_008], SPD Rune [F20001_004], HP Rune [F20002_004], SPD Rune [F20001_009] ...
+
+### Stone Crystal Chest — `BX00011`
+- **Tier:** A | **Drop Type:** Rune | **Content:** Random Mountain Rune | **Quantity:** 1
+- **Description:** *"A stone crystal chest perfect for storing Mountain runes."*
+- 🎁 **Possible Drops (30):** Mana Rune [F30001_001], Resilience Rune [F30002_001], Mana Rune [F30001_006], Resilience Rune [F30002_006], Mana Rune [F30001_005], Resilience Rune [F30002_005], Mana Rune [F30001_011], Resilience Rune [F30002_011], Mana Rune [F30001_003], Resilience Rune [F30002_003], Mana Rune [F30001_008], Resilience Rune [F30002_008], Mana Rune [F30001_004], Resilience Rune [F30002_004], Mana Rune [F30001_009] ...
+
+### Stone Crystal Chest — `BX00011`
+- **Tier:** S | **Drop Type:** Rune | **Content:** Random Mountain Rune | **Quantity:** 1
+- **Description:** *"A stone crystal chest perfect for storing Mountain runes."*
+- 🎁 **Possible Drops (64):** Ruin Rune [F40001_001], Eternal Rune [F40002_001], Nature Rune [F40003_001], Luck Rune [F20003_001], Ascetic Rune [F30004_001], Ruin Rune [F40001_006], Eternal Rune [F40002_006], Nature Rune [F40003_006], Luck Rune [F20003_006], Ruin Rune [F40001_005], Eternal Rune [F40002_005], Nature Rune [F40003_005], Luck Rune [F20003_005], Ruin Rune [F40001_011], Eternal Rune [F40002_011] ...
+
+### Aqua Crystal Chest — `BX00013`
+- **Tier:** C | **Drop Type:** Rune | **Content:** Random Ocean Rune | **Quantity:** 1
+- **Description:** *"An aqua crystal chest perfect for storing Ocean runes."*
+- 🎁 **Possible Drops (30):** ATK Rune [F10001_001], DEF Rune [F10002_001], ATK Rune [F10001_006], DEF Rune [F10002_006], ATK Rune [F10001_005], DEF Rune [F10002_005], ATK Rune [F10001_011], DEF Rune [F10002_011], ATK Rune [F10001_003], DEF Rune [F10002_003], ATK Rune [F10001_008], DEF Rune [F10002_008], ATK Rune [F10001_004], DEF Rune [F10002_004], ATK Rune [F10001_009] ...
+
+### Aqua Crystal Chest — `BX00013`
+- **Tier:** B | **Drop Type:** Rune | **Content:** Random Ocean Rune | **Quantity:** 1
+- **Description:** *"An aqua crystal chest perfect for storing Ocean runes."*
+- 🎁 **Possible Drops (30):** SPD Rune [F20001_001], HP Rune [F20002_001], SPD Rune [F20001_006], HP Rune [F20002_006], SPD Rune [F20001_005], HP Rune [F20002_005], SPD Rune [F20001_011], HP Rune [F20002_011], SPD Rune [F20001_003], HP Rune [F20002_003], SPD Rune [F20001_008], HP Rune [F20002_008], SPD Rune [F20001_004], HP Rune [F20002_004], SPD Rune [F20001_009] ...
+
+### Aqua Crystal Chest — `BX00013`
+- **Tier:** A | **Drop Type:** Rune | **Content:** Random Ocean Rune | **Quantity:** 1
+- **Description:** *"An aqua crystal chest perfect for storing Ocean runes."*
+- 🎁 **Possible Drops (30):** Mana Rune [F30001_001], Resilience Rune [F30002_001], Mana Rune [F30001_006], Resilience Rune [F30002_006], Mana Rune [F30001_005], Resilience Rune [F30002_005], Mana Rune [F30001_011], Resilience Rune [F30002_011], Mana Rune [F30001_003], Resilience Rune [F30002_003], Mana Rune [F30001_008], Resilience Rune [F30002_008], Mana Rune [F30001_004], Resilience Rune [F30002_004], Mana Rune [F30001_009] ...
+
+### Aqua Crystal Chest — `BX00013`
+- **Tier:** S | **Drop Type:** Rune | **Content:** Random Ocean Rune | **Quantity:** 1
+- **Description:** *"An aqua crystal chest perfect for storing Ocean runes."*
+- 🎁 **Possible Drops (64):** Ruin Rune [F40001_001], Eternal Rune [F40002_001], Nature Rune [F40003_001], Luck Rune [F20003_001], Ascetic Rune [F30004_001], Ruin Rune [F40001_006], Eternal Rune [F40002_006], Nature Rune [F40003_006], Luck Rune [F20003_006], Ruin Rune [F40001_005], Eternal Rune [F40002_005], Nature Rune [F40003_005], Luck Rune [F20003_005], Ruin Rune [F40001_011], Eternal Rune [F40002_011] ...
+
+### Starlight Chest — `BX02004`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random World Legacy Gear | **Quantity:** 1
+- **Description:** *"A radiant chest containing gifts from the astral realm."*
+- 🎁 **Possible Drops (148):** Pristine Gloves [Z00006_712], Pristine Sash [Z00006_713], Pristine Shoes [Z00006_714], Valor Badge [Z00014_011], Valor Necklace [Z00014_811], Valor Ring [Z00014_911], Training Sword [Z00015_101], Training Shield [Z00015_102], Training Hood [Z00015_103], Training Cloak [Z00015_601], Medic Robe [Z00004_611], Medic Gloves [Z00006_711], Medic Shoes [Z00004_612], Mage Staff [Z00003_311], Mage Hat [Z00003_511] ...
+
+### Starlight Chest — `BX02004`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random World Legacy Gear | **Quantity:** 1
+- **Description:** *"A radiant chest containing gifts from the astral realm."*
+- 🎁 **Possible Drops (327):** Unity Gloves [Z10016_711], Unity Belt [Z00008_711], Unity Boots [Z10016_712], Lucky Badge [Z00000_001], Lucky Necklace [Z00000_003], Lucky Ring [Z00000_002], Manacrystal Staff [Z00003_312], Manacrystal Orb [Z00003_314], Manacrystal Badge [Z00003_912], Fortitude Greatsword [Z00018_112], Fortitude Shield [Z00018_713], Fortitude Badge [Z00018_011], Life Rod [Z00004_413], Life Shield [Z00004_414], Life Badge [Z00004_011] ...
+
+### Starlight Chest — `BX02004`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random World Legacy Gear | **Quantity:** 1
+- **Description:** *"A radiant chest containing gifts from the astral realm."*
+- 🎁 **Possible Drops (603):** Bladedance Greatsword [Z00014_121], Bladedance Dagger [Z00014_122], Bladedance Badge [Z50002_021], Bladedance Helm [Z00014_521], Bladedance Armor [Z00014_621], Bladedance Necklace [Z00014_522], Bladedance Gauntlets [Z00014_721], Bladedance Belt [Z00014_722], Bladedance Boots [Z00014_723], Archmage Staff [Z00003_321], Archmage Orb [Z00003_322], Archmage Badge [Z00003_021], Archmage Hat [Z00003_521], Archmage Cape [Z00003_621], Archmage Necklace [Z00003_522] ...
+
+### Starlight Chest — `BX02004`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random World Legacy Gear | **Quantity:** 1
+- **Description:** *"A radiant chest containing gifts from the astral realm."*
+- 🎁 **Possible Drops (441):** Authority Staff [Z10026_411], Authority Crown [Z10021_521], Authority Cape [Z10021_621], Authority Gloves [Z10021_727], Authority Sash [Z10021_724], Authority Boots [Z10021_728], Hero Sword [Z50006_131], Hero Shield [Z50006_132], Hero Gauntlets [Z50006_133], Hero Badge [Z50006_031], Hero's Heart [Z50006_831], Hero Ring [Z50006_931], Astral Wand [Z60004_331], Astral Orb [Z60004_332], Astral Cloak [Z60004_631] ...
+
+### Sturdy Chest — `BX01021`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Dawnstep Plains Legacy Gear | **Quantity:** 1
+- **Description:** *"A sturdy chest abandoned by some caravan long ago."*
+- 🎁 **Possible Drops (9):** Newborn Circlet [Z10006_501], Newborn Sandals [Z50003_711], Newborn Necklace [Z10006_801], Simple Bracers [Z00015_701], Simple Belt [Z10028_711], Simple Shoes [Z00015_702], Simple Blowdart [Z10028_202], Simple Needle [Z10028_204], Simple Ring [Z10028_205]
+
+### Sturdy Chest — `BX01021`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Dawnstep Plains Legacy Gear | **Quantity:** 1
+- **Description:** *"A sturdy chest abandoned by some caravan long ago."*
+- 🎁 **Possible Drops (24):** Resolve Headband [Z00013_501], Resolve Garb [Z00013_611], Resolve Gloves [Z00013_711], Broken Sword [Z10023_111], Broken Dagger [Z10023_113], Broken Ring [Z10023_911], Broken Gloves [Z10023_721], Broken Belt [Z10023_722], Broken Boots [Z10023_723], Plunder Sword [Z10008_111], Plunder Dagger [Z00005_111], Plunder Ring [Z10008_112], Fireball Staff [Z40003_311], Fireball Orb [Z40007_311], Fireball Ring [Z40003_811] ...
+
+### Sturdy Chest — `BX01021`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Dawnstep Plains Legacy Gear | **Quantity:** 1
+- **Description:** *"A sturdy chest abandoned by some caravan long ago."*
+- 🎁 **Possible Drops (39):** Duelist Rapier [Z20004_111], Duelist Hood [Z00002_512], Duelist Cape [Z00002_612], Windrun Crossbow [Z20004_211], Windrun Arrow [Z00002_213], Windrun Gloves [Z00002_214], Windwalker Leather [Z20004_611], Windwalker Belt [Z20004_713], Windwalker Boots [Z20004_711], Windwhisper Staff [Z20026_322], Windwhisper Hat [Z20026_521], Windwhisper Robe [Z20026_621], Windwhisper Bracers [Z20026_723], Windwhisper Sash [Z20026_721], Windwhisper Boots [Z20026_722] ...
+
+### Sturdy Chest — `BX01021`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Dawnstep Plains Legacy Gear | **Quantity:** 1
+- **Description:** *"A sturdy chest abandoned by some caravan long ago."*
+- 🎁 **Possible Drops (27):** Wind Spirit Wand [Z20026_331], Wind Spirit Orb [Z20026_321], Wind Spirit Badge [Z20026_332], Rogue Hood [Z00017_232], Rogue Cape [Z20025_723], Rogue Sash [Z20025_722], Sniper Crossbow [Z00017_222], Sniper Bolts [Z00017_231], Sniper Necklace [Z00017_233], Sniper Bracers [Z00017_234], Sniper Belt [Z00017_235], Sniper Ring [Z00017_236], Earth Staff [Z10015_331], Earth Sash [Z60010_731], Earth Ring [Z60010_931] ...
+
+### Warrior's Trove — `BX01004`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Boundless Steppe Legacy Gear | **Quantity:** 1
+- **Description:** *"A specialized chest reserved for tribal warriors."*
+- 🎁 **Possible Drops (9):** Crude Helm [Z10008_501], Crude Leather [Z10008_601], Crude Boots [Z10008_703], Worm Fang Longsword [Z10028_112], Worm Fang Dagger [Z10028_101], Worm Fang Ring [Z10028_901], Insect Fang Bow [Z10028_201], Insect Fang Arrows [Z10028_203], Insect Fang Necklace [Z10028_206]
+
+### Warrior's Trove — `BX01004`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Boundless Steppe Legacy Gear | **Quantity:** 1
+- **Description:** *"A specialized chest reserved for tribal warriors."*
+- 🎁 **Possible Drops (24):** Ancestral Staff [Z00009_311], Ancestral Crown [Z00010_511], Ancestral Robe [Z00010_512], Ancestral Necklace [Z10015_821], Ancestral Ring [Z10015_921], Ancestral Badge [Z10015_021], Harpy Gauntlets [Z10023_712], Harpy Belt [Z10023_713], Harpy Boots [Z10023_711], Wolf Fang Crossbow [Z10022_211], Wolf Fang Bolts [Z10028_211], Wolf Fang Ring [Z10028_212], Warg Spirit Sword [Z10011_112], Warg Spirit Shield [Z10011_111], Warg Spirit Badge [Z10011_113] ...
+
+### Warrior's Trove — `BX01004`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Boundless Steppe Legacy Gear | **Quantity:** 1
+- **Description:** *"A specialized chest reserved for tribal warriors."*
+- 🎁 **Possible Drops (39):** Packwolf Hood [Z20008_521], Packwolf Cloak [Z20008_621], Packwolf Gloves [Z20008_731], Packwolf Shieldbow [Z00016_221], Packwolf Cape [Z10002_621], Packwolf Sash [Z10002_721], Beastfang Dagger [Z00016_121], Beastfang Hood [Z00016_521], Beastfang Cloak [Z00016_621], Beast Fang Necklace [Z00016_811], Beast Fang Ring [Z00016_911], Beast Fang Badge [Z00016_011], Hunt Crossbow [Z20004_221], Hunt Bolts [Z10022_212], Hunt Mask [Z10002_521] ...
+
+### Warrior's Trove — `BX01004`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Boundless Steppe Legacy Gear | **Quantity:** 1
+- **Description:** *"A specialized chest reserved for tribal warriors."*
+- 🎁 **Possible Drops (27):** Wasp Wand [Z10028_331], Wasp Bracers [Z10028_731], Wasp Necklace [Z10028_831], Wasp Rapier [Z10028_121], Wasp Stinger [Z10028_122], Wasp Ring [Z10028_921], Chief Greatsword [Z10015_121], Chief Tower Shield [Z10015_131], Chief Armor [Z10015_132], Chief Gauntlets [Z10015_722], Chief Belt [Z10015_721], Chief Boots [Z10015_724], Alchemy Blade [Z01003_531], Alchemy Gloves [Z01003_533], Alchemy Belt [Z01003_532] ...
+
+### Totem Chest — `BX01027`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Crimson Highlands Legacy Gear | **Quantity:** 1
+- **Description:** *"A ceremonial chest for storing ritual implements."*
+- 🎁 **Possible Drops (9):** Legion Bracers [Z01003_001], Legion Belt [Z01003_002], Legion Boots [Z01003_003], Legion Staff [Z01003_021], Legion Shield [Z01003_023], Legion Ring [Z01003_024], Legion Spear [Z01003_011], Legion Bandana [Z01003_012], Legion Cape [Z01003_022]
+
+### Totem Chest — `BX01027`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Crimson Highlands Legacy Gear | **Quantity:** 1
+- **Description:** *"A ceremonial chest for storing ritual implements."*
+- 🎁 **Possible Drops (24):** Minotaur Helm [Z01003_112], Minotaur Leather [Z01003_113], Minotaur Belt [Z01003_114], Minotaur Gauntlets [Z01003_116], Minotaur Boots [Z01003_117], Minotaur Necklace [Z01003_118], Fine Shield [Z01003_121], Fine Helm [Z01003_122], Fine Armor [Z01003_123], Fine Bracers [Z01003_127], Fine Belt [Z01003_128], Fine Boots [Z01003_124], Extend Greatsword [Z10005_122], Extend Gloves [Z10025_711], Extend Ring [Z10025_811] ...
+
+### Totem Chest — `BX01027`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Crimson Highlands Legacy Gear | **Quantity:** 1
+- **Description:** *"A ceremonial chest for storing ritual implements."*
+- 🎁 **Possible Drops (39):** Mountain Bronze Greatsword [Z01003_221], Mountain Bronze Heavy Helm [Z01003_222], Mountain Bronze Heavy Armor [Z01003_223], Mountain Bronze Bracers [Z01003_224], Mountain Bronze Sash [Z01003_225], Mountain Bronze Boots [Z01003_226], Ascetic Staff [Z20002_123], Ascetic Headband [Z20002_521], Ascetic Garb [Z20002_621], Ascetic Bracers [Z20002_722], Ascetic Sash [Z20002_721], Ascetic Shoes [Z20002_723], Bloodrush Necklace [Z01003_281], Bloodrush Ring [Z01003_282], Bloodrush Badge [Z01003_283] ...
+
+### Totem Chest — `BX01027`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Crimson Highlands Legacy Gear | **Quantity:** 1
+- **Description:** *"A ceremonial chest for storing ritual implements."*
+- 🎁 **Possible Drops (27):** Brave Axe [Z01003_351], Brave Helm [Z01003_353], Brave Boots [Z01003_352], Brave Armor [Z01003_354], Brave Bracers [Z01003_355], Brave Badge [Z01003_356], Commander Saber [Z01003_341], Commander Banner [Z01003_343], Commander Badge [Z01003_342], Commander Helm [Z01003_344], Commander Armor [Z01003_345], Commander Boots [Z01003_346], Hunger Blade [Z60003_133], Hunger Gauntlets [Z00005_721], Hunger Ring [Z00005_921] ...
+
+### Jade Queen's Treasure — `BX01035`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Wandering Woods Legacy Gear | **Quantity:** 1
+- **Description:** *"The Jade Queen's treasures, left behind for those bold enough to claim them."*
+- 🎁 **Possible Drops (9):** Slime Helm [Z30001_501], Slime Armor [Z30001_601], Slime Shoes [Z30001_702], Fresh Rod [Z30001_401], Fresh Shield [Z30001_402], Fresh Belt [Z30001_705], Slime Necklace [Z30001_801], Slime Ring [Z30001_901], Slime Badge [Z30001_001]
+
+### Jade Queen's Treasure — `BX01035`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Wandering Woods Legacy Gear | **Quantity:** 1
+- **Description:** *"The Jade Queen's treasures, left behind for those bold enough to claim them."*
+- 🎁 **Possible Drops (24):** Isolate Hood [Z40013_511], Isolate Robe [Z40013_611], Isolate Gloves [Z40013_711], Aid Gloves [Z50000_711], Aid Belt [Z50000_712], Aid Shoes [Z50000_713], Protect Rod [Z02001_194], Protect Shield [Z02001_195], Protect Necklace [Z50004_811], Spiritwood Sword [Z20003_113], Spiritwood Shield [Z20003_112], Spiritwood Badge [Z20003_114], Fairy Bow [Z20026_211], Fairy Cloak [Z20025_621], Fairy Bracers [Z20025_721] ...
+
+### Jade Queen's Treasure — `BX01035`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Wandering Woods Legacy Gear | **Quantity:** 1
+- **Description:** *"The Jade Queen's treasures, left behind for those bold enough to claim them."*
+- 🎁 **Possible Drops (39):** Awakened Shield [Z20003_111], Awakened Armor [Z20003_621], Awakened Boots [Z20003_725], Awakening Gloves [Z20003_722], Awakening Ring [Z20003_922], Awakening Badge [Z20003_021], Ancient Tree Shield [Z20003_121], Ancient Tree Helm [Z20003_511], Ancient Tree Armor [Z20003_611], Ancient Tree Gauntlets [Z20003_721], Ancient Tree Belt [Z20003_723], Ancient Tree Boots [Z20003_713], Rending Greatsword [Z10023_121], Rending Gloves [Z10024_711], Rending Boots [Z10024_721] ...
+
+### Jade Queen's Treasure — `BX01035`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Wandering Woods Legacy Gear | **Quantity:** 1
+- **Description:** *"The Jade Queen's treasures, left behind for those bold enough to claim them."*
+- 🎁 **Possible Drops (27):** Jade Blade [Z10014_131], Jade Armor [Z10014_632], Jade Boots [Z10014_732], Jade Rod [Z10014_431], Jade Crown [Z10014_531], Jade Necklace [Z10014_831], Divine Tree Badge [Z30001_301], Divine Tree Necklace [Z30001_302], Divine Tree Ring [Z30001_303], Divine Tree Bracers [Z30001_304], Divine Tree Sash [Z30001_305], Divine Tree Boots [Z30001_306], Loving Crown [Z00201_411], Loving Robe [Z00201_413], Loving Necklace [Z00201_412] ...
+
+### Dragon's Hoard — `BX02008`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Shadowveil Grove Legacy Gear | **Quantity:** 1
+- **Description:** *"A draconic hoard prepared to encourage adventurers to make things interesting."*
+- 🎁 **Possible Drops (9):** Wooden Necklace [Z02001_002], Wooden Ring [Z02001_003], Wooden Badge [Z02001_001], Silent Blade [Z02001_011], Silent Hood [Z02001_013], Silent Cloak [Z02001_012], Throwing Stone [Z02001_021], Throwing Gauntlets [Z02001_023], Throwing Pouch [Z02001_022]
+
+### Dragon's Hoard — `BX02008`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Shadowveil Grove Legacy Gear | **Quantity:** 1
+- **Description:** *"A draconic hoard prepared to encourage adventurers to make things interesting."*
+- 🎁 **Possible Drops (24):** Apprentice Staff [Z00003_411], Apprentice Hat [Z00003_512], Apprentice Cape [Z00003_612], Apprentice Crystal [Z02001_121], Apprentice Belt [Z02001_122], Apprentice Necklace [Z02001_123], Deadwood Helm [Z02001_101], Deadwood Armor [Z02001_102], Deadwood Bracers [Z02001_103], Stealth Hood [Z02001_141], Stealth Cloak [Z02001_142], Stealth Hidden Blade [Z02001_143], Weighted Bracers [Z02001_131], Weighted Belt [Z02001_133], Weighted Shoes [Z02001_132] ...
+
+### Dragon's Hoard — `BX02008`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Shadowveil Grove Legacy Gear | **Quantity:** 1
+- **Description:** *"A draconic hoard prepared to encourage adventurers to make things interesting."*
+- 🎁 **Possible Drops (39):** Umbra Hood [Z60002_521], Umbra Cape [Z60002_623], Umbra Bracers [Z60002_721], Umbra Necklace [Z60002_821], Umbra Ring [Z60002_921], Umbra Badge [Z60002_021], Cursed Staff [Z02001_221], Cursed Hood [Z02001_222], Cursed Robe [Z02001_223], Cursed Gloves [Z02001_224], Cursed Belt [Z02001_226], Cursed Boots [Z02001_225], Jester Gloves [Z02001_253], Jester Belt [Z02001_252], Jester Shoes [Z02001_254] ...
+
+### Dragon's Hoard — `BX02008`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Shadowveil Grove Legacy Gear | **Quantity:** 1
+- **Description:** *"A draconic hoard prepared to encourage adventurers to make things interesting."*
+- 🎁 **Possible Drops (27):** Malice Scythe [Z00000_141], Malice Bracers [Z00000_142], Malice Sash [Z00000_143], Malice Emblem [Z00000_144], Malice Necklace [Z00000_145], Malice Ring [Z00000_146], Nightmare Helm [Z02001_341], Nightmare Mail [Z02001_343], Nightmare Claws [Z02001_342], Manifesto Cane [Z02001_321], Manifesto Top Hat [Z02001_323], Manifesto Badge [Z02001_322], Darkness Wand [Z02001_301], Darkness Belt [Z02001_302], Darkness Necklace [Z02001_303] ...
+
+### Magnet Chest — `BX01031`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Forsaken Mines Legacy Gear | **Quantity:** 1
+- **Description:** *"This chest won't stop pulling you toward it. Literally."*
+- 🎁 **Possible Drops (9):** Rough Shield [Z00001_111], Rough Armor [Z00001_611], Rough Belt [Z00001_711], Mining Pouch [Z10016_701], Mining Gloves [Z10016_702], Mining Boots [Z10016_703], Miner Helm [Z00001_501], Miner Coat [Z00001_001], Miner Compass [Z10016_801]
+
+### Magnet Chest — `BX01031`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Forsaken Mines Legacy Gear | **Quantity:** 1
+- **Description:** *"This chest won't stop pulling you toward it. Literally."*
+- 🎁 **Possible Drops (24):** Magnet Shield [Z00007_111], Magnet Helm [Z00007_511], Magnet Mail [Z00007_611], Magnet Gloves [Z00007_712], Magnet Belt [Z00007_711], Magnet Boots [Z00007_713], Black Iron Hammer [Z00001_112], Black Iron Gauntlets [Z00001_713], Black Iron Ring [Z00001_911], Black Iron Pick [Z00001_113], Black Iron Belt [Z00001_114], Black Iron Badge [Z60003_021], Rocksolid Shield [Z10024_111], Rocksolid Helm [Z10000_501], Rocksolid Armor [Z10024_611] ...
+
+### Magnet Chest — `BX01031`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Forsaken Mines Legacy Gear | **Quantity:** 1
+- **Description:** *"This chest won't stop pulling you toward it. Literally."*
+- 🎁 **Possible Drops (39):** Thorn Necklace [Z10024_822], Thorn Circlet [Z10024_922], Thorn Badge [Z10024_021], Thorn Shield [Z10024_121], Thorn Helm [Z10024_521], Thorn Armor [Z10024_621], Tempered Steel Bracers [Z10012_721], Tempered Steel Belt [Z10012_723], Tempered Steel Boots [Z10012_725], Hold Greatsword [Z10012_122], Hold Heavy Helm [Z50006_532], Hold Heavy Armor [Z50006_631], Alloy Greatsword [Z10016_121], Alloy Gloves [Z10016_721], Alloy Ring [Z10016_921] ...
+
+### Magnet Chest — `BX01031`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Forsaken Mines Legacy Gear | **Quantity:** 1
+- **Description:** *"This chest won't stop pulling you toward it. Literally."*
+- 🎁 **Possible Drops (27):** Boulder Crossbow [Z10001_231], Boulder Bolts [Z10001_232], Boulder Ring [Z10001_931], Boulder Gauntlets [Z10001_233], Boulder Belt [Z10001_234], Boulder Boots [Z10001_235], Meteorite Greatsword [Z10010_131], Meteorite Gauntlets [Z10010_732], Meteorite Boots [Z10010_731], Meteorite Tower Shield [Z10010_132], Meteorite Heavy Helm [Z10010_531], Meteorite Heavy Armor [Z10010_631], Mountain Greatsword [Z10001_131], Mountain Tower Shield [Z10001_132], Mountain Body [Z00000_641] ...
+
+### Forgotten Treasure — `BX01033`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Deep Hollows Legacy Gear | **Quantity:** 1
+- **Description:** *"Forgotten in the darkness for ages untold."*
+- 🎁 **Possible Drops (9):** Scrap Helm [Z03001_001], Scrap Gloves [Z03001_002], Scrap Belt [Z03001_003], Spore Necklace [Z03001_111], Spore Ring [Z03001_112], Spore Badge [Z03001_113], Spore Rod [Z03001_011], Spore Cap [Z03001_013], Spore Gloves [Z03001_012]
+
+### Forgotten Treasure — `BX01033`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Deep Hollows Legacy Gear | **Quantity:** 1
+- **Description:** *"Forgotten in the darkness for ages untold."*
+- 🎁 **Possible Drops (24):** Amethyst Sword [Z03001_131], Amethyst Dagger [Z03001_132], Amethyst Ring [Z03001_133], Amethyst Gloves [Z03001_101], Amethyst Belt [Z03001_102], Amethyst Shoes [Z03001_103], Shroom Main Shield [Z03001_151], Shroom Off Shield [Z03001_152], Shroom Cap [Z03001_121], Shroom Gloves [Z03001_123], Shroom Belt [Z03001_124], Shroom Shoes [Z03001_122], Defender Necklace [Z03001_143], Defender Ring [Z03001_144], Defender Chip [Z03001_141] ...
+
+### Forgotten Treasure — `BX01033`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Deep Hollows Legacy Gear | **Quantity:** 1
+- **Description:** *"Forgotten in the darkness for ages untold."*
+- 🎁 **Possible Drops (39):** Manacrystal Greatsword [Z03001_211], Manacrystal Helm [Z03001_212], Manacrystal Armor [Z03001_213], Manacrystal Bracers [Z03001_221], Manacrystal Belt [Z03001_223], Manacrystal Ring [Z03001_222], Spellbreak Shield [Z03001_206], Spellbreak Helm [Z03001_201], Spellbreak Armor [Z03001_202], Spellbreak Gauntlets [Z03001_203], Spellbreak Belt [Z03001_204], Spellbreak Boots [Z03001_205], Heavy Broken Sword [Z03001_231], Heavy Helm [Z03001_233], Heavy Ring [Z03001_232] ...
+
+### Forgotten Treasure — `BX01033`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Deep Hollows Legacy Gear | **Quantity:** 1
+- **Description:** *"Forgotten in the darkness for ages untold."*
+- 🎁 **Possible Drops (27):** Gear Wand [Z03001_303], Gear Gauntlets [Z03001_305], Gear Belt [Z03001_306], Gear Greatsword [Z03001_301], Gear Helm [Z03001_311], Gear Mail [Z03001_312], Gear Bow [Z03001_302], Gear Necklace [Z03001_321], Gear Ring [Z03001_322], Crystal Wand [Z03001_341], Crystal Hat [Z03001_342], Crystal Necklace [Z03001_343], Tactical Shield [Z03001_333], Tactical Visor [Z03001_331], Tactical Armor [Z03001_332] ...
+
+### Deep Sea Treasure — `BX01032`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Sunken Sea Legacy Gear | **Quantity:** 1
+- **Description:** *"The temperature here keeps even fish away."*
+- 🎁 **Possible Drops (9):** Reef Helm [Z30004_501], Reef Mail [Z30004_601], Reef Belt [Z30004_702], Gladiator Trident [Z00008_111], Gladiator Shield [Z00008_112], Gladiator Sash [Z00008_113], Breezy Cape [Z30017_702], Breezy Skirt [Z30017_701], Breezy Sandals [Z30017_703]
+
+### Deep Sea Treasure — `BX01032`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Sunken Sea Legacy Gear | **Quantity:** 1
+- **Description:** *"The temperature here keeps even fish away."*
+- 🎁 **Possible Drops (24):** Pirate Sword [Z00005_112], Pirate Crossbow [Z00005_211], Pirate Sash [Z00005_712], Greed Bandana [Z00005_511], Greed Garb [Z00005_611], Greed Gloves [Z00005_711], Coral Sword [Z30017_111], Coral Shield [Z30017_112], Coral Belt [Z30017_712], Coral Circlet [Z30017_511], Coral Cape [Z30017_611], Coral Ring [Z00201_204], Bonechilling Staff [Z30004_302], Bonechilling Necklace [Z30012_811], Bonechilling Ring [Z30012_911] ...
+
+### Deep Sea Treasure — `BX01032`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Sunken Sea Legacy Gear | **Quantity:** 1
+- **Description:** *"The temperature here keeps even fish away."*
+- 🎁 **Possible Drops (39):** Deep Sea Staff [Z30000_322], Deep Sea Orb [Z30000_321], Deep Sea Crown [Z30000_521], Deep Sea Necklace [Z30000_821], Deep Sea Ring [Z30000_921], Deep Sea Badge [Z30000_021], Dissolve Gloves [Z60014_021], Dissolve Belt [Z60014_022], Dissolve Boots [Z60014_023], Nightmare Hat [Z60003_521], Nightmare Robe [Z60003_623], Nightmare Eye [Z60003_821], Chilling Bow [Z10016_221], Chilling Arrows [Z30020_211], Chilling Ring [Z30019_911] ...
+
+### Deep Sea Treasure — `BX01032`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Sunken Sea Legacy Gear | **Quantity:** 1
+- **Description:** *"The temperature here keeps even fish away."*
+- 🎁 **Possible Drops (27):** Waterflow Staff [Z30000_331], Waterflow Orb [Z30019_321], Waterflow Hat [Z30000_531], Waterflow Necklace [Z30000_831], Waterflow Ring [Z30000_931], Waterflow Badge [Z30000_031], Captain Belt [Z30018_722], Captain Gloves [Z30018_723], Captain Boots [Z30018_721], Captain Saber [Z30018_122], Captain Hat [Z30018_531], Captain Cape [Z30018_621], Navy Saber [Z30018_121], Navy Gloves [Z30018_732], Navy Belt [Z30018_733] ...
+
+### Picnic Basket — `BX01002`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Breezy Shores Legacy Gear | **Quantity:** 1
+- **Description:** *"A cat's picnic basket with nothing but fish bones left."*
+- 🎁 **Possible Drops (9):** Fishbone Necklace [Z00201_114], Fishbone Ring [Z00201_115], Fishbone Badge [Z00201_113], Shell Necklace [Z00201_101], Shell Ring [Z00201_102], Shell Badge [Z00201_103], Vacation Dress [Z00201_121], Vacation Gloves [Z00201_122], Vacation Sandals [Z00201_123]
+
+### Picnic Basket — `BX01002`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Breezy Shores Legacy Gear | **Quantity:** 1
+- **Description:** *"A cat's picnic basket with nothing but fish bones left."*
+- 🎁 **Possible Drops (24):** Sapphire Bracers [Z00201_231], Sapphire Belt [Z00201_232], Sapphire Boots [Z00201_233], Sapphire Necklace [Z00201_213], Sapphire Ring [Z00201_214], Sapphire Badge [Z00201_215], Aquatic Halberd [Z00201_221], Aquatic Helm [Z00201_222], Aquatic Armor [Z00201_223], Aquatic Shield [Z00201_224], Aquatic Gauntlets [Z00201_225], Aquatic Boots [Z00201_226], Conch Necklace [Z00201_242], Conch Ring [Z00201_241], Conch Badge [Z00201_243] ...
+
+### Picnic Basket — `BX01002`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Breezy Shores Legacy Gear | **Quantity:** 1
+- **Description:** *"A cat's picnic basket with nothing but fish bones left."*
+- 🎁 **Possible Drops (39):** Purple Thunder Hat [Z20027_521], Purple Thunder Robe [Z20027_621], Purple Thunder Sash [Z20027_722], Purple Thunder Necklace [Z20027_821], Purple Thunder Ring [Z20027_921], Purple Thunder Badge [Z20027_021], Love Necklace [Z50000_811], Love Ring [Z50000_921], Love Badge [Z50000_021], Hope Rod [Z50025_431], Hope Necklace [Z50006_821], Hope Badge [Z50006_021], Redemption Rod [Z20028_021], Redemption Shield [Z20028_022], Redemption Belt [Z20028_024] ...
+
+### Picnic Basket — `BX01002`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Breezy Shores Legacy Gear | **Quantity:** 1
+- **Description:** *"A cat's picnic basket with nothing but fish bones left."*
+- 🎁 **Possible Drops (27):** Flawless Rod [Z00201_421], Flawless Shield [Z00201_423], Flawless Robe [Z00201_422], Flawless Bracers [Z00201_424], Flawless Sash [Z00201_425], Flawless Necklace [Z00201_426], Water Spirit Rod [Z30000_431], Water Spirit Gloves [Z30000_731], Water Spirit Shoes [Z30000_732], Azure Dragon Spear [Z00201_431], Azure Dragon Robe [Z00201_432], Azure Dragon Sash [Z00201_433], Sea Queen Crown [Z00201_461], Sea Queen Armor [Z00201_462], Sea Queen Boots [Z00201_463] ...
+
+### Frostgem Chest — `BX06002`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Frostbound Tundra Legacy Gear | **Quantity:** 1
+- **Description:** *"A magical chest that doubles as a refrigerator."*
+- 🎁 **Possible Drops (9):** Beast Hide Helm [Z00101_301], Beast Hide Leather [Z00101_302], Beast Hide Boots [Z00101_303], Frostbee Sword [Z00101_101], Frostbee Dagger [Z00101_102], Frostbee Gloves [Z00101_103], Frostbee Bow [Z00101_201], Frostbee Arrows [Z00101_202], Frostbee Shoes [Z00101_203]
+
+### Frostgem Chest — `BX06002`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Frostbound Tundra Legacy Gear | **Quantity:** 1
+- **Description:** *"A magical chest that doubles as a refrigerator."*
+- 🎁 **Possible Drops (24):** Erosion Staff [Z00101_311], Erosion Crown [Z00101_312], Erosion Robe [Z00101_313], Corrode Necklace [Z00101_141], Corrode Ring [Z00101_142], Corrode Badge [Z00101_143], Cold Wave Helm [Z00101_411], Cold Wave Leather [Z00101_412], Cold Wave Belt [Z00101_413], Cold Wave Ring [Z00101_911], Cold Wave Necklace [Z00101_811], Cold Wave Badge [Z00101_011], Icy Dagger [Z00101_151], Icy Ring [Z00101_152], Icy Badge [Z00101_153] ...
+
+### Frostgem Chest — `BX06002`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Frostbound Tundra Legacy Gear | **Quantity:** 1
+- **Description:** *"A magical chest that doubles as a refrigerator."*
+- 🎁 **Possible Drops (39):** Ice Witch Rod [Z00101_321], Ice Witch Talisman [Z00101_322], Ice Witch Mask [Z00101_323], Icecrystal Staff [Z00101_521], Icecrystal Orb [Z00101_522], Icecrystal Mask [Z00101_523], Storm Blade [Z00101_621], Storm Helm [Z00101_622], Storm Armor [Z00101_623], Storm Necklace [Z00101_261], Storm Ring [Z00101_262], Storm Badge [Z00101_263], Icecrystal Hat [Z00201_311], Icecrystal Robe [Z00201_312], Icecrystal Sash [Z00201_314] ...
+
+### Frostgem Chest — `BX06002`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Frostbound Tundra Legacy Gear | **Quantity:** 1
+- **Description:** *"A magical chest that doubles as a refrigerator."*
+- 🎁 **Possible Drops (27):** Frostbee Wand [Z00101_331], Frostbee Cape [Z00101_632], Frostbee Hat [Z00101_532], Frostfeather Blade [Z00101_231], Frostfeather Cloak [Z00101_232], Frostfeather Boots [Z00101_732], Frostfeather Bracers [Z00101_233], Frostfeather Badge [Z00101_234], Frostfeather Necklace [Z00101_235], Pristine Ice Shield [Z00101_131], Pristine Ice Helm [Z00101_531], Pristine Ice Armor [Z00101_631], Pristine Ice Gauntlets [Z00101_731], Pristine Ice Belt [Z00101_734], Pristine Ice Boots [Z00101_733] ...
+
+### Heavy Vault — `BX01029`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Ashland Wastes Legacy Gear | **Quantity:** 1
+- **Description:** *"Carved from weathered stone."*
+- 🎁 **Possible Drops (9):** Thief Hood [Z05001_001], Thief Cape [Z05001_002], Thief Boots [Z05001_003], Dark Dagger [Z05001_011], Dark Gauntlets [Z05001_012], Dark Ring [Z05001_013], Nimble Dagger [Z05001_021], Nimble Bracers [Z05001_022], Nimble Boots [Z05001_023]
+
+### Heavy Vault — `BX01029`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Ashland Wastes Legacy Gear | **Quantity:** 1
+- **Description:** *"Carved from weathered stone."*
+- 🎁 **Possible Drops (15):** Wasteland Mail [Z05001_151], Wasteland Belt [Z05001_152], Wasteland Boots [Z05001_153], Wasteland Greatsword [Z05001_161], Wasteland Necklace [Z05001_162], Wasteland Ring [Z05001_163], Ruin Staff [Z05001_121], Ruin Orb [Z05001_122], Ruin Belt [Z05001_123], Faith Badge [Z05001_131], Faith Ring [Z05001_132], Faith Necklace [Z05001_133], Fireplay Scimitar [Z05001_141], Fireplay Bracers [Z05001_142], Fireplay Necklace [Z05001_143]
+
+### Heavy Vault — `BX01029`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Ashland Wastes Legacy Gear | **Quantity:** 1
+- **Description:** *"Carved from weathered stone."*
+- 🎁 **Possible Drops (45):** Mercenary Hat [Z05001_211], Mercenary Leather [Z05001_212], Mercenary Boots [Z05001_213], Mercenary Musket [Z05001_214], Mercenary Gloves [Z05001_215], Mercenary Belt [Z05001_216], Forbidden Hood [Z05001_221], Forbidden Robe [Z05001_222], Forbidden Gloves [Z05001_223], Forbidden Badge [Z05001_224], Forbidden Necklace [Z05001_225], Forbidden Ring [Z05001_226], Radiant Necklace [Z05001_241], Radiant Ring [Z05001_242], Radiant Badge [Z05001_243] ...
+
+### Heavy Vault — `BX01029`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Ashland Wastes Legacy Gear | **Quantity:** 1
+- **Description:** *"Carved from weathered stone."*
+- 🎁 **Possible Drops (30):** Titan Bracers [Z05001_351], Titan Belt [Z05001_352], Titan Necklace [Z05001_353], Titan Spear [Z05001_354], Titan Helm [Z05001_355], Titan Armor [Z05001_356], Glory Rod [Z05001_301], Glory Circlet [Z05001_302], Glory Haori [Z05001_303], Glory Emblem [Z05001_304], Glory Heart [Z05001_305], Glory Ring [Z05001_306], Honor Tower Shield [Z05001_311], Honor Gauntlets [Z05001_312], Honor Medal [Z05001_313] ...
+
+### Traveler's Satchel — `BX01023`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Desert Gear | **Quantity:** 1
+- **Description:** *"A satchel used by desert travelers to carry precious goods."*
+- 🎁 **Possible Drops (148):** Pristine Gloves [Z00006_712], Pristine Sash [Z00006_713], Pristine Shoes [Z00006_714], Valor Badge [Z00014_011], Valor Necklace [Z00014_811], Valor Ring [Z00014_911], Training Sword [Z00015_101], Training Shield [Z00015_102], Training Hood [Z00015_103], Training Cloak [Z00015_601], Medic Robe [Z00004_611], Medic Gloves [Z00006_711], Medic Shoes [Z00004_612], Mage Staff [Z00003_311], Mage Hat [Z00003_511] ...
+
+### Traveler's Satchel — `BX01023`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Desert Gear | **Quantity:** 1
+- **Description:** *"A satchel used by desert travelers to carry precious goods."*
+- 🎁 **Possible Drops (327):** Unity Gloves [Z10016_711], Unity Belt [Z00008_711], Unity Boots [Z10016_712], Lucky Badge [Z00000_001], Lucky Necklace [Z00000_003], Lucky Ring [Z00000_002], Manacrystal Staff [Z00003_312], Manacrystal Orb [Z00003_314], Manacrystal Badge [Z00003_912], Fortitude Greatsword [Z00018_112], Fortitude Shield [Z00018_713], Fortitude Badge [Z00018_011], Life Rod [Z00004_413], Life Shield [Z00004_414], Life Badge [Z00004_011] ...
+
+### Traveler's Satchel — `BX01023`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Desert Gear | **Quantity:** 1
+- **Description:** *"A satchel used by desert travelers to carry precious goods."*
+- 🎁 **Possible Drops (603):** Bladedance Greatsword [Z00014_121], Bladedance Dagger [Z00014_122], Bladedance Badge [Z50002_021], Bladedance Helm [Z00014_521], Bladedance Armor [Z00014_621], Bladedance Necklace [Z00014_522], Bladedance Gauntlets [Z00014_721], Bladedance Belt [Z00014_722], Bladedance Boots [Z00014_723], Archmage Staff [Z00003_321], Archmage Orb [Z00003_322], Archmage Badge [Z00003_021], Archmage Hat [Z00003_521], Archmage Cape [Z00003_621], Archmage Necklace [Z00003_522] ...
+
+### Traveler's Satchel — `BX01023`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Desert Gear | **Quantity:** 1
+- **Description:** *"A satchel used by desert travelers to carry precious goods."*
+- 🎁 **Possible Drops (441):** Authority Staff [Z10026_411], Authority Crown [Z10021_521], Authority Cape [Z10021_621], Authority Gloves [Z10021_727], Authority Sash [Z10021_724], Authority Boots [Z10021_728], Hero Sword [Z50006_131], Hero Shield [Z50006_132], Hero Gauntlets [Z50006_133], Hero Badge [Z50006_031], Hero's Heart [Z50006_831], Hero Ring [Z50006_931], Astral Wand [Z60004_331], Astral Orb [Z60004_332], Astral Cloak [Z60004_631] ...
+
+### Sandstone Chest — `BX03002`
+- **Tier:** C | **Drop Type:** Rune | **Content:** Random Desert Runes | **Quantity:** 1
+- **Description:** *"A chest made of weathered stone, ideal for storing desert-type runes."*
+- 🎁 **Possible Drops (30):** ATK Rune [F10001_001], DEF Rune [F10002_001], ATK Rune [F10001_006], DEF Rune [F10002_006], ATK Rune [F10001_005], DEF Rune [F10002_005], ATK Rune [F10001_011], DEF Rune [F10002_011], ATK Rune [F10001_003], DEF Rune [F10002_003], ATK Rune [F10001_008], DEF Rune [F10002_008], ATK Rune [F10001_004], DEF Rune [F10002_004], ATK Rune [F10001_009] ...
+
+### Sandstone Chest — `BX03002`
+- **Tier:** B | **Drop Type:** Rune | **Content:** Random Desert Runes | **Quantity:** 1
+- **Description:** *"A chest made of weathered stone, ideal for storing desert-type runes."*
+- 🎁 **Possible Drops (30):** SPD Rune [F20001_001], HP Rune [F20002_001], SPD Rune [F20001_006], HP Rune [F20002_006], SPD Rune [F20001_005], HP Rune [F20002_005], SPD Rune [F20001_011], HP Rune [F20002_011], SPD Rune [F20001_003], HP Rune [F20002_003], SPD Rune [F20001_008], HP Rune [F20002_008], SPD Rune [F20001_004], HP Rune [F20002_004], SPD Rune [F20001_009] ...
+
+### Sandstone Chest — `BX03002`
+- **Tier:** A | **Drop Type:** Rune | **Content:** Random Desert Runes | **Quantity:** 1
+- **Description:** *"A chest made of weathered stone, ideal for storing desert-type runes."*
+- 🎁 **Possible Drops (30):** Mana Rune [F30001_001], Resilience Rune [F30002_001], Mana Rune [F30001_006], Resilience Rune [F30002_006], Mana Rune [F30001_005], Resilience Rune [F30002_005], Mana Rune [F30001_011], Resilience Rune [F30002_011], Mana Rune [F30001_003], Resilience Rune [F30002_003], Mana Rune [F30001_008], Resilience Rune [F30002_008], Mana Rune [F30001_004], Resilience Rune [F30002_004], Mana Rune [F30001_009] ...
+
+### Sandstone Chest — `BX03002`
+- **Tier:** S | **Drop Type:** Rune | **Content:** Random Desert Runes | **Quantity:** 1
+- **Description:** *"A chest made of weathered stone, ideal for storing desert-type runes."*
+- 🎁 **Possible Drops (64):** Ruin Rune [F40001_001], Eternal Rune [F40002_001], Nature Rune [F40003_001], Luck Rune [F20003_001], Ascetic Rune [F30004_001], Ruin Rune [F40001_006], Eternal Rune [F40002_006], Nature Rune [F40003_006], Luck Rune [F20003_006], Ruin Rune [F40001_005], Eternal Rune [F40002_005], Nature Rune [F40003_005], Luck Rune [F20003_005], Ruin Rune [F40001_011], Eternal Rune [F40002_011] ...
+
+### Hidden Trove — `BX20003`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Endless Desert Legacy Gear | **Quantity:** 1
+- **Description:** *"A treasure buried deep beneath the desert sands."*
+- 🎁 **Possible Drops (9):** Wayfarer Hood [Z06001_001], Wayfarer Cloak [Z06001_002], Wayfarer Boots [Z06001_003], Wayfarer Rod [Z06001_004], Wayfarer Ring [Z06001_006], Wayfarer Necklace [Z06001_005], Thief Dagger [Z06001_011], Thief Gauntlets [Z06001_012], Thief Belt [Z06001_013]
+
+### Hidden Trove — `BX20003`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Endless Desert Legacy Gear | **Quantity:** 1
+- **Description:** *"A treasure buried deep beneath the desert sands."*
+- 🎁 **Possible Drops (15):** Sunblaze Scimitar [Z06001_101], Sunblaze Helm [Z06001_102], Sunblaze Mail [Z06001_103], Sandproof Mask [Z06001_111], Sandproof Cord [Z06001_112], Sandproof Boots [Z06001_113], Flight Necklace [Z06001_121], Flight Badge [Z06001_122], Flight Ring [Z06001_123], Weathered Sword [Z06001_131], Weathered Boots [Z06001_132], Weathered Ring [Z06001_133], Weathered Shield [Z06001_134], Weathered Helm [Z06001_135], Weathered Armor [Z06001_136]
+
+### Hidden Trove — `BX20003`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Endless Desert Legacy Gear | **Quantity:** 1
+- **Description:** *"A treasure buried deep beneath the desert sands."*
+- 🎁 **Possible Drops (42):** Fireproof Necklace [Z06001_201], Fireproof Ring [Z06001_202], Fireproof Badge [Z06001_203], Fireproof Gloves [Z06001_204], Fireproof Belt [Z06001_205], Fireproof Boots [Z06001_206], Dust Staff [Z06001_211], Dust Orb [Z06001_212], Dust Mask [Z06001_213], Dust Gloves [Z06001_214], Dust Sash [Z06001_215], Dust Boots [Z06001_216], Weighted Helm [Z06001_221], Weighted Armor [Z06001_222], Weighted Boots [Z06001_223] ...
+
+### Hidden Trove — `BX20003`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Endless Desert Legacy Gear | **Quantity:** 1
+- **Description:** *"A treasure buried deep beneath the desert sands."*
+- 🎁 **Possible Drops (33):** Blazing Hood [Z06001_311], Blazing Cloak [Z06001_312], Blazing Gloves [Z06001_313], Blazing Shield [Z06001_314], Blazing Belt [Z06001_315], Blazing Boots [Z06001_316], Scorpion Belt [Z06001_321], Scorpion Boots [Z06001_322], Scorpion Necklace [Z06001_323], Sandstorm Staff [Z06001_331], Sandstorm Hood [Z06001_332], Sandstorm Bracers [Z06001_333], Sovereign Bracers [Z06001_341], Sovereign Badge [Z06001_342], Sovereign Ring [Z06001_343] ...
+
+### Red Crystal Chest — `BX00014`
+- **Tier:** C | **Drop Type:** Rune | **Content:** Random Volcano Rune | **Quantity:** 1
+- **Description:** *"A fire crystal chest perfect for storing Volcano Runes."*
+- 🎁 **Possible Drops (30):** ATK Rune [F10001_001], DEF Rune [F10002_001], ATK Rune [F10001_006], DEF Rune [F10002_006], ATK Rune [F10001_005], DEF Rune [F10002_005], ATK Rune [F10001_011], DEF Rune [F10002_011], ATK Rune [F10001_003], DEF Rune [F10002_003], ATK Rune [F10001_008], DEF Rune [F10002_008], ATK Rune [F10001_004], DEF Rune [F10002_004], ATK Rune [F10001_009] ...
+
+### Red Crystal Chest — `BX00014`
+- **Tier:** B | **Drop Type:** Rune | **Content:** Random Volcano Rune | **Quantity:** 1
+- **Description:** *"A fire crystal chest perfect for storing Volcano Runes."*
+- 🎁 **Possible Drops (30):** SPD Rune [F20001_001], HP Rune [F20002_001], SPD Rune [F20001_006], HP Rune [F20002_006], SPD Rune [F20001_005], HP Rune [F20002_005], SPD Rune [F20001_011], HP Rune [F20002_011], SPD Rune [F20001_003], HP Rune [F20002_003], SPD Rune [F20001_008], HP Rune [F20002_008], SPD Rune [F20001_004], HP Rune [F20002_004], SPD Rune [F20001_009] ...
+
+### Red Crystal Chest — `BX00014`
+- **Tier:** A | **Drop Type:** Rune | **Content:** Random Volcano Rune | **Quantity:** 1
+- **Description:** *"A fire crystal chest perfect for storing Volcano Runes."*
+- 🎁 **Possible Drops (30):** Mana Rune [F30001_001], Resilience Rune [F30002_001], Mana Rune [F30001_006], Resilience Rune [F30002_006], Mana Rune [F30001_005], Resilience Rune [F30002_005], Mana Rune [F30001_011], Resilience Rune [F30002_011], Mana Rune [F30001_003], Resilience Rune [F30002_003], Mana Rune [F30001_008], Resilience Rune [F30002_008], Mana Rune [F30001_004], Resilience Rune [F30002_004], Mana Rune [F30001_009] ...
+
+### Red Crystal Chest — `BX00014`
+- **Tier:** S | **Drop Type:** Rune | **Content:** Random Volcano Rune | **Quantity:** 1
+- **Description:** *"A fire crystal chest perfect for storing Volcano Runes."*
+- 🎁 **Possible Drops (64):** Ruin Rune [F40001_001], Eternal Rune [F40002_001], Nature Rune [F40003_001], Luck Rune [F20003_001], Ascetic Rune [F30004_001], Ruin Rune [F40001_006], Eternal Rune [F40002_006], Nature Rune [F40003_006], Luck Rune [F20003_006], Ruin Rune [F40001_005], Eternal Rune [F40002_005], Nature Rune [F40003_005], Luck Rune [F20003_005], Ruin Rune [F40001_011], Eternal Rune [F40002_011] ...
+
+### Blaze Cache — `BX01026`
+- **Tier:** C | **Drop Type:** Equipment | **Content:** Random Volcano Legacy Gear | **Quantity:** 1
+- **Description:** *"A mysterious chest that seems forged from fire itself. It never stops burning hot."*
+- 🎁 **Possible Drops (9):** Insulated Helm [Z00102_014], Insulated Coat [Z00102_015], Insulated Compass [Z00102_016], Insulated Pouch [Z00102_011], Insulated Gloves [Z00102_012], Insulated Boots [Z00102_013], Pyroclast Buckler [Z00102_001], Pyroclast Armor [Z00102_002], Pyroclast Belt [Z00102_003]
+
+### Blaze Cache — `BX01026`
+- **Tier:** B | **Drop Type:** Equipment | **Content:** Random Volcano Legacy Gear | **Quantity:** 1
+- **Description:** *"A mysterious chest that seems forged from fire itself. It never stops burning hot."*
+- 🎁 **Possible Drops (24):** Cinder Hammer [Z00102_131], Cinder Gauntlets [Z00102_132], Cinder Ring [Z00102_133], Cinder Staff [Z00102_134], Cinder Belt [Z00102_135], Cinder Badge [Z00102_136], Ward Gauntlets [Z00102_151], Ward Belt [Z00102_152], Ward Boots [Z00102_153], Ruby Badge [Z00102_163], Ruby Necklace [Z00102_161], Ruby Ring [Z00102_162], Scanner Shield [Z00102_124], Scanner Helm [Z00102_125], Scanner Armor [Z00102_126] ...
+
+### Blaze Cache — `BX01026`
+- **Tier:** A | **Drop Type:** Equipment | **Content:** Random Volcano Legacy Gear | **Quantity:** 1
+- **Description:** *"A mysterious chest that seems forged from fire itself. It never stops burning hot."*
+- 🎁 **Possible Drops (39):** Fiend Whip [Z00102_271], Fiend Bracers [Z00102_272], Fiend Badge [Z00102_273], Beacon Armor [Z00102_264], Beacon Boots [Z00102_265], Beacon Ring [Z00102_266], Beacon Sword [Z00102_261], Beacon Shield [Z00102_262], Beacon Helm [Z00102_263], Crimson Bow [Z00102_201], Crimson Necklace [Z00102_202], Crimson Ring [Z00102_203], Scorching Badge [Z00102_216], Scorching Necklace [Z00102_214], Scorching Ring [Z00102_215] ...
+
+### Blaze Cache — `BX01026`
+- **Tier:** S | **Drop Type:** Equipment | **Content:** Random Volcano Legacy Gear | **Quantity:** 1
+- **Description:** *"A mysterious chest that seems forged from fire itself. It never stops burning hot."*
+- 🎁 **Possible Drops (27):** Infernal Shield [Z00102_311], Infernal Helm [Z00102_312], Infernal Armor [Z00102_313], Infernal Greatsword [Z00102_314], Infernal Gauntlets [Z00102_315], Infernal Boots [Z00102_316], Inferno Staff [Z00102_351], Inferno Badge [Z00102_352], Inferno Ring [Z00102_353], Forgeborn Bracers [Z00102_341], Forgeborn Belt [Z00102_342], Forgeborn Boots [Z00102_343], Magma Crossbow [Z00102_301], Magma Bolts [Z00102_302], Magma Ring [Z00102_303] ...

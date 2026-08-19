@@ -1338,20 +1338,59 @@ const App = {
   },
 
   openItemModal(category, id, updateHash = true) {
-    const lang = this.state.lang;
-    const list = this.state.data.items[lang]?.[category] || [];
-    const item = list.find(i => i.id === id || String(i.id) === String(id));
+    if (!id || id === 'gold' || id === 'gems') return;
+    const lang = this.state.lang || 'RU';
+    let targetCat = category;
+    let list = this.state.data.items?.[lang]?.[targetCat] || [];
+    
+    let item = list.find(i => i.id === id || String(i.id) === String(id) || i.key === id);
+    
+    // Multi-category search fallback if not found in targetCat
+    if (!item && this.state.data.items?.[lang]) {
+      for (const [catKey, catList] of Object.entries(this.state.data.items[lang])) {
+        if (Array.isArray(catList)) {
+          const found = catList.find(i => i.id === id || String(i.id) === String(id) || i.key === id);
+          if (found) {
+            item = found;
+            targetCat = catKey;
+            break;
+          }
+        }
+      }
+    }
+
+    // Language fallback
+    if (!item) {
+      for (const l of ['RU', 'EN', 'CN']) {
+        if (this.state.data.items?.[l]) {
+          for (const [catKey, catList] of Object.entries(this.state.data.items[l])) {
+            if (Array.isArray(catList)) {
+              const found = catList.find(i => i.id === id || String(i.id) === String(id) || i.key === id);
+              if (found) {
+                item = found;
+                targetCat = catKey;
+                break;
+              }
+            }
+          }
+        }
+        if (item) break;
+      }
+    }
+
     if (!item) return;
 
     const modal = document.getElementById('detailModal');
+    if (!modal) return;
     modal.dataset.modalType = 'item';
-    modal.dataset.itemCat = category;
+    modal.dataset.itemCat = targetCat;
     modal.dataset.itemId = item.id;
-    modal.innerHTML = ItemsView.renderModal(item, category, lang, this.state.imageMappings);
+    delete modal.dataset.charId;
+    modal.innerHTML = ItemsView.renderModal(item, targetCat, lang, this.state.imageMappings);
     modal.classList.add('active');
 
     if (updateHash) {
-      this.updateUrl('item', `${category}/${item.id}`);
+      this.updateUrl('item', `${targetCat}/${item.id}`);
     }
   },
 
