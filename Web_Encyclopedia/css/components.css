@@ -4356,3 +4356,35 @@
     box-shadow: none;
   }
 }
+
+/* Modal Back Navigation Button */
+.modal-back-btn {
+  background: rgba(168, 85, 247, 0.18);
+  color: #f3e8ff;
+  border: 1px solid rgba(168, 85, 247, 0.45);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 8px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  user-select: none;
+}
+
+.modal-back-btn:hover {
+  background: #a855f7;
+  color: #ffffff;
+  border-color: #c084fc;
+  transform: translateX(-2px);
+  box-shadow: 0 4px 14px rgba(168, 85, 247, 0.45);
+}
+
+.modal-back-btn:active {
+  transform: translateX(0);
+}

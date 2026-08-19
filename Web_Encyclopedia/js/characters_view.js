@@ -271,6 +271,7 @@ const CharactersView = {
       <div class="modal-dialog">
         <div class="modal-header">
           <div class="modal-title-area">
+            ${(typeof App !== 'undefined' && App.renderModalBackButton) ? App.renderModalBackButton(currentLang) : ''}
             ${portraitModalHtml}
             <div>
               <div style="display: flex; align-items: center; gap: 8px;">

@@ -546,6 +546,7 @@ const ItemsView = {
       <div class="modal-dialog">
         <div class="modal-header">
           <div class="modal-title-area">
+            ${(typeof App !== 'undefined' && App.renderModalBackButton) ? App.renderModalBackButton(currentLang) : ''}
             <div style="width: 52px; height: 52px; border-radius: var(--radius-md); border: 2px solid var(--border-subtle); background: radial-gradient(circle, #1e293b 0%, #0f172a 100%); display: flex; align-items: center; justify-content: center; padding: 4px; overflow: hidden; flex-shrink: 0;">
               ${iconSrc ? `
                 <img src="${iconSrc}" alt="Icon" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">

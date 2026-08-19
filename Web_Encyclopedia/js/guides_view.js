@@ -13644,6 +13644,7 @@ const GuidesView = {
       <div class="modal-dialog buff-modal-dialog">
         <div class="modal-header">
           <div class="modal-title-area">
+            ${(typeof App !== 'undefined' && App.renderModalBackButton) ? App.renderModalBackButton(currentLang) : ''}
             <div style="width: 52px; height: 52px; border-radius: var(--radius-md); border: 2px solid rgba(168, 85, 247, 0.4); background: radial-gradient(circle, #1e293b 0%, #0f172a 100%); display: flex; align-items: center; justify-content: center; font-size: 26px; flex-shrink: 0; box-shadow: 0 0 15px rgba(168, 85, 247, 0.25);">
               ${icon}
             </div>

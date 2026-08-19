@@ -147,10 +147,12 @@ const App = {
     let hash = `#${route}`;
     if (subRoute) hash += `/${subRoute}`;
     if (window.location.hash !== hash) {
-      if (updateHistory) {
-        history.pushState(null, '', hash);
-      } else {
-        history.replaceState(null, '', hash);
+      if (typeof window !== 'undefined' && window.history) {
+        if (updateHistory && window.history.pushState) {
+          window.history.pushState(null, '', hash);
+        } else if (window.history.replaceState) {
+          window.history.replaceState(null, '', hash);
+        }
       }
     }
   },
@@ -1293,7 +1295,51 @@ const App = {
     }
   },
 
-  openCharacterModal(id, updateHash = true) {
+  escapeHtml(str) {
+    if (!str || typeof str !== 'string') return '';
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  },
+
+  modalHistory: [],
+  currentModal: null,
+
+  renderModalBackButton(currentLang = 'RU') {
+    if (!this.modalHistory || this.modalHistory.length === 0) return '';
+    const prev = this.modalHistory[this.modalHistory.length - 1];
+    const prevName = prev.name ? ` (${prev.name})` : '';
+    const isRu = currentLang === 'RU';
+    const isCn = currentLang === 'CN';
+    const label = isRu ? 'Назад' : (isCn ? '返回' : 'Back');
+    const tooltip = isRu ? `Вернуться назад${prevName}` : (isCn ? `返回上一页${prevName}` : `Back to previous${prevName}`);
+
+    return `
+      <button class="modal-back-btn" onclick="App.modalGoBack()" title="${this.escapeHtml(tooltip)}">
+        <span style="font-size: 14px; font-weight: 900; line-height: 1;">←</span>
+        <span>${label}</span>
+      </button>
+    `;
+  },
+
+  modalGoBack() {
+    if (!this.modalHistory || this.modalHistory.length === 0) return;
+    const prev = this.modalHistory.pop();
+    if (!prev) return;
+
+    if (prev.type === 'char') {
+      this.openCharacterModal(prev.id, true, true);
+    } else if (prev.type === 'item') {
+      this.openItemModal(prev.category, prev.id, true, true);
+    } else if (prev.type === 'buff') {
+      this.openBuffModal(prev.id, true, true);
+    }
+  },
+
+  openCharacterModal(id, updateHash = true, isBack = false) {
     const lang = this.state.lang || 'RU';
     let char = (this.state.data.characters?.[lang] || []).find(c => c.id === id || String(c.id) === String(id) || c.key === id);
     if (!char) {
@@ -1303,6 +1349,11 @@ const App = {
       }
     }
     if (!char) return;
+
+    if (!isBack && this.currentModal && (this.currentModal.type !== 'char' || this.currentModal.id !== char.id)) {
+      this.modalHistory.push(this.currentModal);
+    }
+    this.currentModal = { type: 'char', id: char.id, name: char.name };
 
     const modal = document.getElementById('detailModal');
     if (!modal) return;
@@ -1366,7 +1417,7 @@ const App = {
     }
   },
 
-  openBuffModal(buffId, updateHash = true) {
+  openBuffModal(buffId, updateHash = true, isBack = false) {
     if (!buffId) return;
     const lang = this.state.lang || 'RU';
     const buffs = this.state.keywords || [];
@@ -1383,6 +1434,11 @@ const App = {
     );
     
     if (!buff) return;
+
+    if (!isBack && this.currentModal && (this.currentModal.type !== 'buff' || this.currentModal.id !== buff.id)) {
+      this.modalHistory.push(this.currentModal);
+    }
+    this.currentModal = { type: 'buff', id: buff.id, name: buff.name?.[lang] || buff.name?.RU || buff.id };
 
     const modal = document.getElementById('detailModal');
     if (!modal) return;
@@ -1509,7 +1565,7 @@ const App = {
     });
   },
 
-  openItemModal(category, id, updateHash = true) {
+  openItemModal(category, id, updateHash = true, isBack = false) {
     if (!id || id === 'gold' || id === 'gems') return;
     const lang = this.state.lang || 'RU';
     let targetCat = category;
@@ -1553,6 +1609,11 @@ const App = {
 
     if (!item) return;
 
+    if (!isBack && this.currentModal && (this.currentModal.type !== 'item' || this.currentModal.id !== (item.key || item.uid || item.id) || this.currentModal.category !== targetCat)) {
+      this.modalHistory.push(this.currentModal);
+    }
+    this.currentModal = { type: 'item', category: targetCat, id: (item.key || item.uid || item.id), name: item.name };
+
     const modal = document.getElementById('detailModal');
     if (!modal) return;
     modal.dataset.modalType = 'item';
@@ -1568,6 +1629,8 @@ const App = {
   },
 
   closeModal(updateHash = true) {
+    this.modalHistory = [];
+    this.currentModal = null;
     const modal = document.getElementById('detailModal');
     if (!modal) return;
     modal.classList.remove('active');
