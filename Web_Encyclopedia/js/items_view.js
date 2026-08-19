@@ -314,8 +314,9 @@ const ItemsView = {
     const iconSrc = this.getItemIcon(rel, 'relics', imageMappings);
     const fallbackEmoji = '🔮';
     const levels = rel.levels || [];
-    const isRu = (App.currentLanguage || 'RU') === 'RU';
-    const isCn = (App.currentLanguage || 'RU') === 'CN';
+    const currentLang = (dict.starMilestone4 || '').includes('прозрения') ? 'RU' : ((dict.starMilestone4 || '').includes('信物') ? 'CN' : 'EN');
+    const isRu = currentLang === 'RU';
+    const isCn = currentLang === 'CN';
 
     return `
       <div class="item-card" onclick="App.openItemModal('relics', '${rel.id}')">
@@ -371,10 +372,6 @@ const ItemsView = {
             ⭐ <strong>${dict.signatureRelic || 'Эксклюзивное прозрение'}:</strong> ${this.escapeHtml(rel.specify_roles.join(', '))}
           </div>
         ` : ''}
-        <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(rel, 'relics', isRu?'RU':(isCn?'CN':'EN')))}">
-          <span class="item-source-label">📍 ${dict.acquisitionLabel || 'Получение'}:</span>
-          <span class="item-source-text">${this.escapeHtml(this.getItemSourceSummary(rel, 'relics', isRu?'RU':(isCn?'CN':'EN')))}</span>
-        </div>
       </div>
     `;
   },
@@ -800,7 +797,7 @@ const ItemsView = {
             </div>
           ` : ''}
 
-          ${category !== 'chests' ? `
+          ${category !== 'chests' && category !== 'relics' ? `
             <div class="detail-section">
               <div class="section-heading">📍 ${dict.acquisitionTitle || 'Способ получения'}</div>
               <div class="item-source-box">

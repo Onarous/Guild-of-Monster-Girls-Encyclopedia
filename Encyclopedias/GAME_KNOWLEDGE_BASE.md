@@ -553,15 +553,59 @@
 
 ---
 
+### 🏆 4. Практические Кейсы Мета-Сборок Талантов (Meta Case Studies)
+
+#### 🐰 Кейс 1: Топ-Билд для Великой волшебницы [Зайчихи] (BGM / Bunny Grand Magician)
+Идеальная эндгейм-стратегия сборки 4 слотов:
+1. Роллим 1-ю страницу BGM плодами, пока не получим **любые 4 золотых слота**.
+2. Выбиваем эксклюзив *«9 жизней» (9 Lives / 9L)* на Чжаоцай (`M14203`) и переносим на BGM.
+3. Выбиваем эксклюзив *Зайчихи-Шагающей по ветру* (`M12205`) и переносим на BGM.
+4. Открываем 2-ю страницу талантов (Page 2), выбиваем **2 копии *«Счастливого удара» (Lucky Strike)*** через промежуточного донора и переносим обе копии на Page 1.
+5. **Итоговый билд BGM:** `2x Lucky Strike` + `1x 9 Lives` + `1x Bunny Windstrider Exclusive` (максимальный DPS-скейл от Удачи и выживаемость).
+
+#### 🧌 Кейс 2: Мульти-Скаут талантов (Talent Scout Duplication)
+* Если нужно передать 2 копии *«Скаута талантов» (Talent Scout)* от Тролля-надзирательницы (`Troll Overseer`) к Безупречной Мудреце (`Flawless Sage`):
+  * Выбиваем 1-й эксклюзив на 1-й странице Тролля ➔ переносим Мудреце.
+  * Так как слот освободился, продолжаем роллить 1-ю страницу Тролля до 2-го эксклюзива ➔ переносим 2-ю копию Мудреце.
+  * Открывать 2-ю страницу нужно **только если вы хотите оставить копию эксклюзива самому Троллю**.
+
+#### 💎 Редкий дроп: Философский камень (Philosopher's Stone)
+* Красный артефакт (Red Item), который может выпасть с элитных/красных монстров при высоких роллах кубика (d20). При выпадении 17–19 обязательно используйте Клевер, чтобы гарантировать его получение.
+
+---
+
 ## 14. Авторитетные Внешние Источники и Базы Данных (Community Resources & Wikis)
 
 Для получения актуальной информации о персонажах, механиках, симуляции талантов и расчетах вероятностей призыва рекомендуется использовать следующие проверенные внешние ресурсы сообщества:
 
+### 🌐 1. GMG Community Wiki & Tools ([gomg-wiki.pages.dev](https://gomg-wiki.pages.dev/))
+Главная англоязычная база данных и набор интерактивных веб-инструментов по *Guild of Monster Girls*:
+
+* **📖 Каталог Персонажей (Units Index):** [gomg-wiki.pages.dev/units/](https://gomg-wiki.pages.dev/units/)
+  * Полный список всех **204 героинь** (144 Standard + 60 Alter) с распределением по рангам (S/A/B/C), стихиям, типам атак и прямыми ссылками на карточки профилей.
+* **🔑 Глоссарий Механик и Ключевых Слов (Keywords):** [gomg-wiki.pages.dev/keywords/](https://gomg-wiki.pages.dev/keywords/)
+  * Детальный разбор всех игровых статусов (Bleed, Vulnerable, Decay, Tenacity, Lure, Taunt, Freeze и др.).
+* **🎲 Оптимизатор Гачи (Gacha Optimizer):** [gomg-wiki.pages.dev/gacha-optimizer.html](https://gomg-wiki.pages.dev/gacha-optimizer.html)
+  * Калькулятор вероятностей, расчет гаранта и симуляция расходов свитков и самоцветов.
+* **🧬 Симулятор и Менеджер Талантов (Talent Simulator & Manager):**
+  * [gomg-wiki.pages.dev/talent-simulator.html](https://gomg-wiki.pages.dev/talent-simulator.html) — симуляция реролла страниц талантов, расчет шансов выпадения золотых аффиксов и тест переноса эксклюзивов.
+  * [gomg-wiki.pages.dev/talent-manage.html](https://gomg-wiki.pages.dev/talent-manage.html) — сохранение и организация ваших индивидуальных билдов талантов.
+* **👥 Конструктор Команд и Анализатор Логов (Team Builder & Battle Logs):**
+  * [gomg-wiki.pages.dev/build-team.html](https://gomg-wiki.pages.dev/build-team.html) — интерактивная сборка и позиционирование отрядов с проверкой синергий.
+  * [gomg-wiki.pages.dev/battle-logs.html](https://gomg-wiki.pages.dev/battle-logs.html) — загрузка и разбор боевых логов с расчетом эффективности DPS и урона.
+* **🔍 Поисковые Базы Данных (Search Engines):**
+  * Поиск по героиням: [gomg-wiki.pages.dev/search-unit.html](https://gomg-wiki.pages.dev/search-unit.html)
+  * Полнотекстовый поиск по талантам: [gomg-wiki.pages.dev/search-talent-new.html](https://gomg-wiki.pages.dev/search-talent-new.html)
+  * База снаряжения (Gear): [gomg-wiki.pages.dev/search-gear.html](https://gomg-wiki.pages.dev/search-gear.html)
+  * База рун (Runes): [gomg-wiki.pages.dev/search-runes.html](https://gomg-wiki.pages.dev/search-runes.html)
+  * База Божественных Камней / Самоцветов (Godstones / Jewels): [gomg-wiki.pages.dev/search-godstone.html](https://gomg-wiki.pages.dev/search-godstone.html)
+  * База Благословений (Blessings): [gomg-wiki.pages.dev/search-blessing.html](https://gomg-wiki.pages.dev/search-blessing.html)
+
 ---
 
-### 🇨🇳 1. Официальный Форум и Гайды TapTap
-* **Официальный форум и гайды сообщества:** [TapTap Guild of Monster Girls Topics](https://www.taptap.cn/app/742940/topic)
-  * Глубокий разбор текущего состояния меты, аналитические статьи, T0 сборки и прохождение этапов от опытных игроков.
+### 🇨🇳 2. Аналитические Гайды и Мета TapTap
+* **Гайд по мета-билдам и тир-листам от 叶叶小飞花:** [TapTap Moment #825053452206868359](https://www.taptap.cn/moment/825053452206868359)
+  * Глубокий разбор текущего состояния меты, T0 сборок (Принцесса, Зайчиха, Ледяная Злодейка, Скоростной Мечник) и соло-джокеров (Неубиваемая Золотая Дева).
 
 ---
 
@@ -570,6 +614,7 @@
 
 ---
 *(Файл обновляется по мере поступления новых данных)*
+
 
 
 
