@@ -5,6 +5,8 @@ def get_core_nav_code():
   activeSection: 'tips',
   lastContainerId: 'guidesContainer',
   tilesFilter: 'all',
+  tilesBiomeFilter: 'all',
+  tilesSortBy: 'default',
   tilesSearchQuery: '',
   isNavCollapsedMobile: false,
   defaultMapTiles: (typeof defaultMapTiles !== 'undefined' ? defaultMapTiles : []),
@@ -27,6 +29,20 @@ def get_core_nav_code():
 
   setTilesFilter(filter) {
     this.tilesFilter = filter;
+    this.activeSection = 'tiles';
+    const lang = (typeof App !== 'undefined' && App.state?.lang) ? App.state.lang : 'RU';
+    this.render(this.lastContainerId || 'guidesContainer', lang);
+  },
+
+  setTilesBiomeFilter(biome) {
+    this.tilesBiomeFilter = biome;
+    this.activeSection = 'tiles';
+    const lang = (typeof App !== 'undefined' && App.state?.lang) ? App.state.lang : 'RU';
+    this.render(this.lastContainerId || 'guidesContainer', lang);
+  },
+
+  setTilesSortBy(sortBy) {
+    this.tilesSortBy = sortBy;
     this.activeSection = 'tiles';
     const lang = (typeof App !== 'undefined' && App.state?.lang) ? App.state.lang : 'RU';
     this.render(this.lastContainerId || 'guidesContainer', lang);
