@@ -23511,12 +23511,14 @@ const GuidesView = {
 
   setTilesFilter(filter) {
     this.tilesFilter = filter;
+    this.activeSection = 'tiles';
     const lang = (typeof App !== 'undefined' && App.state?.lang) ? App.state.lang : 'RU';
     this.render(this.lastContainerId || 'guidesContainer', lang);
   },
 
   setTilesSearch(query) {
     this.tilesSearchQuery = String(query).toLowerCase().trim();
+    this.activeSection = 'tiles';
     const lang = (typeof App !== 'undefined' && App.state?.lang) ? App.state.lang : 'RU';
     this.render(this.lastContainerId || 'guidesContainer', lang);
     const searchInput = document.getElementById('tilesSearchInput');
@@ -23787,71 +23789,79 @@ const GuidesView = {
                   ` : ''}
 
                   <!-- Drop Rates Section -->
-                  <div style="background: rgba(10, 14, 23, 0.6); padding: 10px 12px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; gap: 6px;">
-                    <div style="font-size: 11.5px; font-weight: 700; color: #f1f5f9; margin-bottom: 2px; display: flex; align-items: center; gap: 6px;">
-                      <span>🎁</span> <span>${isRu ? 'Шансы выпадения наград (Дроп):' : isCn ? '战利品掉落概率:' : 'Drop Probabilities:'}</span>
+                  ${(r.chest > 0 || r.equip > 0 || r.role > 0 || r.materials > 0 || r.stones > 0 || r.gold > 0) ? `
+                    <div style="background: rgba(10, 14, 23, 0.6); padding: 10px 12px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.05); display: flex; flex-direction: column; gap: 6px;">
+                      <div style="font-size: 11.5px; font-weight: 700; color: #f1f5f9; margin-bottom: 2px; display: flex; align-items: center; gap: 6px;">
+                        <span>🎁</span> <span>${isRu ? 'Шансы выпадения наград (Дроп):' : isCn ? '战利品掉落概率:' : 'Drop Probabilities:'}</span>
+                      </div>
+
+                      ${r.chest > 0 ? `
+                        <div>
+                          <div class="drop-rate-row">
+                            <span style="color: #fbbf24; font-weight: 600;">📦 ${isRu ? 'Сундуки сокровищ' : 'Chests'}</span>
+                            <span style="font-weight: 700; color: #ffffff;">${r.chest}%</span>
+                          </div>
+                          <div class="drop-rate-bar-bg"><div class="drop-rate-bar-fill" style="width: ${Math.min(100, r.chest)}%; background: #fbbf24;"></div></div>
+                        </div>
+                      ` : ''}
+
+                      ${r.equip > 0 ? `
+                        <div>
+                          <div class="drop-rate-row">
+                            <span style="color: #f472b6; font-weight: 600;">⚔️ ${isRu ? 'Экипировка (Напрямую)' : 'Gear Drop'}</span>
+                            <span style="font-weight: 700; color: #ffffff;">${r.equip}%</span>
+                          </div>
+                          <div class="drop-rate-bar-bg"><div class="drop-rate-bar-fill" style="width: ${Math.min(100, r.equip)}%; background: #f472b6;"></div></div>
+                        </div>
+                      ` : ''}
+
+                      ${r.role > 0 ? `
+                        <div>
+                          <div class="drop-rate-row">
+                            <span style="color: #c084fc; font-weight: 600;">👑 ${isRu ? 'Фрагменты героинь' : 'Heroine Shards'}</span>
+                            <span style="font-weight: 700; color: #ffffff;">${r.role}%</span>
+                          </div>
+                          <div class="drop-rate-bar-bg"><div class="drop-rate-bar-fill" style="width: ${Math.min(100, r.role)}%; background: #c084fc;"></div></div>
+                        </div>
+                      ` : ''}
+
+                      ${r.materials > 0 ? `
+                        <div>
+                          <div class="drop-rate-row">
+                            <span style="color: #4ade80; font-weight: 600;">🌿 ${isRu ? 'Материалы возвышения' : 'Materials'}</span>
+                            <span style="font-weight: 700; color: #ffffff;">${r.materials}%</span>
+                          </div>
+                          <div class="drop-rate-bar-bg"><div class="drop-rate-bar-fill" style="width: ${Math.min(100, r.materials)}%; background: #4ade80;"></div></div>
+                        </div>
+                      ` : ''}
+
+                      ${r.stones > 0 ? `
+                        <div>
+                          <div class="drop-rate-row">
+                            <span style="color: #60a5fa; font-weight: 600;">💎 ${isRu ? 'Камни Наследия / Самоцветы' : 'Legacy Stones'}</span>
+                            <span style="font-weight: 700; color: #ffffff;">${r.stones}%</span>
+                          </div>
+                          <div class="drop-rate-bar-bg"><div class="drop-rate-bar-fill" style="width: ${Math.min(100, r.stones)}%; background: #60a5fa;"></div></div>
+                        </div>
+                      ` : ''}
+
+                      ${r.gold > 0 ? `
+                        <div>
+                          <div class="drop-rate-row">
+                            <span style="color: #facc15; font-weight: 600;">🪙 ${isRu ? 'Золото / Слизь' : 'Gold/Slime'}</span>
+                            <span style="font-weight: 700; color: #ffffff;">${r.gold}%</span>
+                          </div>
+                          <div class="drop-rate-bar-bg"><div class="drop-rate-bar-fill" style="width: ${Math.min(100, r.gold)}%; background: #facc15;"></div></div>
+                        </div>
+                      ` : ''}
                     </div>
-
-                    ${r.chest > 0 ? `
-                      <div>
-                        <div class="drop-rate-row">
-                          <span style="color: #fbbf24; font-weight: 600;">📦 ${isRu ? 'Сундуки сокровищ' : 'Chests'}</span>
-                          <span style="font-weight: 700; color: #ffffff;">${r.chest}%</span>
-                        </div>
-                        <div class="drop-rate-bar-bg"><div class="drop-rate-bar-fill" style="width: ${Math.min(100, r.chest)}%; background: #fbbf24;"></div></div>
+                  ` : `
+                    <div style="background: rgba(255,255,255,0.02); padding: 10px 12px; border-radius: var(--radius-sm); border: 1px dashed rgba(255,255,255,0.08);">
+                      <div style="font-size: 11.5px; color: var(--text-muted); display: flex; align-items: center; gap: 6px;">
+                        <span>⚡</span> <span>${isRu ? 'Особое небоевое событие / Взаимодействие' : (isCn ? '特殊非战斗交互 / 事件' : 'Special Non-Combat Event / Interaction')}</span>
                       </div>
-                    ` : ''}
-
-                    ${r.equip > 0 ? `
-                      <div>
-                        <div class="drop-rate-row">
-                          <span style="color: #f472b6; font-weight: 600;">⚔️ ${isRu ? 'Экипировка (Напрямую)' : 'Gear Drop'}</span>
-                          <span style="font-weight: 700; color: #ffffff;">${r.equip}%</span>
-                        </div>
-                        <div class="drop-rate-bar-bg"><div class="drop-rate-bar-fill" style="width: ${Math.min(100, r.equip)}%; background: #f472b6;"></div></div>
-                      </div>
-                    ` : ''}
-
-                    ${r.role > 0 ? `
-                      <div>
-                        <div class="drop-rate-row">
-                          <span style="color: #c084fc; font-weight: 600;">👑 ${isRu ? 'Фрагменты героинь' : 'Heroine Shards'}</span>
-                          <span style="font-weight: 700; color: #ffffff;">${r.role}%</span>
-                        </div>
-                        <div class="drop-rate-bar-bg"><div class="drop-rate-bar-fill" style="width: ${Math.min(100, r.role)}%; background: #c084fc;"></div></div>
-                      </div>
-                    ` : ''}
-
-                    ${r.materials > 0 ? `
-                      <div>
-                        <div class="drop-rate-row">
-                          <span style="color: #4ade80; font-weight: 600;">🌿 ${isRu ? 'Материалы возвышения' : 'Materials'}</span>
-                          <span style="font-weight: 700; color: #ffffff;">${r.materials}%</span>
-                        </div>
-                        <div class="drop-rate-bar-bg"><div class="drop-rate-bar-fill" style="width: ${Math.min(100, r.materials)}%; background: #4ade80;"></div></div>
-                      </div>
-                    ` : ''}
-
-                    ${r.stones > 0 ? `
-                      <div>
-                        <div class="drop-rate-row">
-                          <span style="color: #60a5fa; font-weight: 600;">💎 ${isRu ? 'Камни Наследия / Самоцветы' : 'Legacy Stones'}</span>
-                          <span style="font-weight: 700; color: #ffffff;">${r.stones}%</span>
-                        </div>
-                        <div class="drop-rate-bar-bg"><div class="drop-rate-bar-fill" style="width: ${Math.min(100, r.stones)}%; background: #60a5fa;"></div></div>
-                      </div>
-                    ` : ''}
-
-                    ${r.gold > 0 ? `
-                      <div>
-                        <div class="drop-rate-row">
-                          <span style="color: #facc15; font-weight: 600;">🪙 ${isRu ? 'Золото / Слизь' : 'Gold/Slime'}</span>
-                          <span style="font-weight: 700; color: #ffffff;">${r.gold}%</span>
-                        </div>
-                        <div class="drop-rate-bar-bg"><div class="drop-rate-bar-fill" style="width: ${Math.min(100, r.gold)}%; background: #facc15;"></div></div>
-                      </div>
-                    ` : ''}
-                  </div>
+                    </div>
+                  `}
 
                   <!-- Specific Materials -->
                   ${matsList.length > 0 ? `

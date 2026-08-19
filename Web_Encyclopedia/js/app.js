@@ -816,48 +816,50 @@ const App = {
 
   matchClass(val, key) {
     if (!key || key === 'all') return true;
-    const v = String(val).toLowerCase();
+    const v = String(val || '').toLowerCase();
+    if (v.includes('все классы') || v.includes('all classes') || v.includes('全职业')) return true;
     if (key === 'warrior') return v.includes('воин') || v.includes('warrior') || v.includes('战士');
-    if (key === 'archer') return v.includes('стрелок') || v.includes('лучниц') || v.includes('archer') || v.includes('射手');
-    if (key === 'mage') return v.includes('маг') || v.includes('колдун') || v.includes('mage') || v.includes('法师');
-    if (key === 'cleric') return v.includes('жрица') || v.includes('клирик') || v.includes('priest') || v.includes('cleric') || v.includes('牧师');
+    if (key === 'archer') return v.includes('стрелок') || v.includes('лучниц') || v.includes('рейнджер') || v.includes('archer') || v.includes('ranger') || v.includes('射手');
+    if (key === 'mage') return v.includes('маг') || v.includes('колдун') || v.includes('mage') || v.includes('wizard') || v.includes('法师');
+    if (key === 'cleric') return v.includes('жрица') || v.includes('клирик') || v.includes('лекарь') || v.includes('priest') || v.includes('cleric') || v.includes('牧师');
     return true;
   },
 
   matchElement(val, key) {
     if (!key || key === 'all') return true;
-    const v = String(val).toLowerCase();
+    const v = String(val || '').toLowerCase();
     if (key === 'fire') return v.includes('огонь') || v.includes('плам') || v.includes('fire') || v.includes('火');
     if (key === 'water') return v.includes('вода') || v.includes('водн') || v.includes('water') || v.includes('水');
     if (key === 'wind') return v.includes('ветер') || v.includes('ветр') || v.includes('wind') || v.includes('风');
     if (key === 'earth') return v.includes('земля') || v.includes('землян') || v.includes('earth') || v.includes('地');
     if (key === 'light') return v.includes('свет') || v.includes('light') || v.includes('光');
-    if (key === 'dark') return v.includes('тьма') || v.includes('темн') || v.includes('dark') || v.includes('暗');
+    if (key === 'dark') return v.includes('тьма') || v.includes('тёмн') || v.includes('темн') || v.includes('dark') || v.includes('暗');
     return true;
   },
 
   matchRole(val, key) {
     if (!key || key === 'all') return true;
-    const v = String(val).toLowerCase();
-    if (key === 'dps') return v.includes('урон') || v.includes('увс') || v.includes('дд') || v.includes('damage') || v.includes('dps') || v.includes('输出');
-    if (key === 'tank') return v.includes('защит') || v.includes('танк') || v.includes('defense') || v.includes('tank') || v.includes('防御');
-    if (key === 'healer') return v.includes('исцелен') || v.includes('лекар') || v.includes('хил') || v.includes('healing') || v.includes('healer') || v.includes('治疗');
+    const v = String(val || '').toLowerCase();
+    if (key === 'tank') return v.includes('танк') || v.includes('защит') || v.includes('tank') || v.includes('defense') || v.includes('防御');
+    if (key === 'dps') return v.includes('увс') || v.includes('урон') || v.includes('атак') || v.includes('dps') || v.includes('damage') || v.includes('输出');
+    if (key === 'healer') return v.includes('лекарь') || v.includes('исцелен') || v.includes('восстановлен') || v.includes('healer') || v.includes('治疗');
     if (key === 'support') return v.includes('поддержк') || v.includes('саппорт') || v.includes('support') || v.includes('辅助');
     return true;
   },
 
   matchSlot(val, key) {
     if (!key || key === 'all') return true;
-    const v = String(val).toLowerCase();
-    if (key === 'main_hand') return v.includes('оружие') || v.includes('main') || v.includes('weapon') || v.includes('主手');
-    if (key === 'body') return v.includes('броня') || v.includes('доспех') || v.includes('body') || v.includes('armor') || v.includes('robe') || v.includes('身体');
-    if (key === 'head') return v.includes('шлем') || v.includes('головной') || v.includes('head') || v.includes('helmet') || v.includes('头部');
-    if (key === 'boots') return v.includes('обувь') || v.includes('сапог') || v.includes('boots') || v.includes('shoes') || v.includes('鞋子');
-    if (key === 'gloves') return v.includes('перчат') || v.includes('наруч') || v.includes('gloves') || v.includes('gauntlets') || v.includes('护手');
-    if (key === 'belt') return v.includes('пояс') || v.includes('belt') || v.includes('sash') || v.includes('腰带');
-    if (key === 'ring') return v.includes('кольцо') || v.includes('ring') || v.includes('戒指');
-    if (key === 'necklace') return v.includes('ожерелье') || v.includes('амулет') || v.includes('necklace') || v.includes('amulet') || v.includes('项链');
-    if (key === 'badge') return v.includes('эмблема') || v.includes('знак') || v.includes('badge') || v.includes('insignia') || v.includes('徽章');
+    const v = String(val || '').toLowerCase();
+    if (key === 'main_hand' || key === 'weapon') return v.includes('правая') || v.includes('оружие') || v.includes('main') || v.includes('weapon') || v.includes('主手');
+    if (key === 'off_hand' || key === 'shield') return v.includes('вторая') || v.includes('щит') || v.includes('левая') || v.includes('off') || v.includes('shield') || v.includes('副手');
+    if (key === 'body' || key === 'armor') return v.includes('тело') || v.includes('броня') || v.includes('доспех') || v.includes('роба') || v.includes('body') || v.includes('armor') || v.includes('robe') || v.includes('身体');
+    if (key === 'head' || key === 'helmet') return v.includes('голова') || v.includes('шлем') || v.includes('головной') || v.includes('корона') || v.includes('head') || v.includes('helmet') || v.includes('crown') || v.includes('头部');
+    if (key === 'boots' || key === 'shoes') return v.includes('обувь') || v.includes('сапог') || v.includes('ботинок') || v.includes('boots') || v.includes('shoes') || v.includes('鞋子');
+    if (key === 'gloves') return v.includes('руки') || v.includes('перчат') || v.includes('наруч') || v.includes('gloves') || v.includes('gauntlets') || v.includes('护手');
+    if (key === 'belt') return v.includes('пояс') || v.includes('кушак') || v.includes('belt') || v.includes('sash') || v.includes('腰带');
+    if (key === 'ring') return v.includes('кольцо') || v.includes('перстень') || v.includes('ring') || v.includes('戒指');
+    if (key === 'necklace') return v.includes('ожерелье') || v.includes('амулет') || v.includes('подвеска') || v.includes('necklace') || v.includes('amulet') || v.includes('项链');
+    if (key === 'badge') return v.includes('знак') || v.includes('эмблема') || v.includes('медаль') || v.includes('badge') || v.includes('insignia') || v.includes('徽章');
     return true;
   },
 
