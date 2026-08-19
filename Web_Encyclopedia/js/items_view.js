@@ -497,7 +497,7 @@ const ItemsView = {
 
   renderGenericItemCard(item, category, tierClass, dict, imageMappings = {}) {
     const iconSrc = this.getItemIcon(item, category, imageMappings);
-    const fallbackEmoji = this.getCategoryFallbackEmoji(category);
+    const fallbackEmoji = item.icon || this.getCategoryFallbackEmoji(category);
 
     return `
       <div class="item-card" onclick="App.openItemModal('${category}', '${item.id}')">
@@ -577,7 +577,7 @@ const ItemsView = {
     const step = item.step || item.Step || 'C';
     const tierClass = `tier-${step.toLowerCase()}`;
     const iconSrc = this.getItemIcon(item, category, imageMappings);
-    const fallbackEmoji = this.getCategoryFallbackEmoji(category);
+    const fallbackEmoji = item.icon || this.getCategoryFallbackEmoji(category);
 
     return `
       <div class="modal-dialog">
