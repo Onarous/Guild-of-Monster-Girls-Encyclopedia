@@ -500,6 +500,21 @@ const App = {
         console.error("Error loading items dataset:", e);
       }
     }
+
+    // Load keywords/buffs dataset
+    if (!this.state.keywords || this.state.keywords.length === 0) {
+      try {
+        const res = await fetch('data/keywords_full.json');
+        if (res.ok) {
+          this.state.keywords = await res.json();
+        }
+      } catch (e) {
+        console.warn("Could not fetch keywords_full.json, using fallback:", e);
+      }
+      if ((!this.state.keywords || this.state.keywords.length === 0) && typeof GuidesView !== 'undefined' && GuidesView.defaultKeywords) {
+        this.state.keywords = GuidesView.defaultKeywords;
+      }
+    }
   },
 
   openMobileDrawer() {
