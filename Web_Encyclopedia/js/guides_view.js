@@ -23651,16 +23651,17 @@ const GuidesView = {
       case 'tiles':
         return this.getTilesContent(lang);
       case 'phases':
-        return isRu ? this.getPhasesRU() : isCn ? this.getPhasesCN() : this.getPhasesEN();
+        return this.getPhasesContent(lang);
       case 'targeting':
-        return isRu ? this.getTargetingRU() : isCn ? this.getTargetingCN() : this.getTargetingEN();
+        return this.getTargetingContent(lang);
       case 'damage':
         return this.getDamageContent(lang);
       case 'elements':
-        return isRu ? this.getElementsRU() : isCn ? this.getElementsCN() : this.getElementsEN();
+        return this.getElementsContent(lang);
       case 'builds':
         return this.getBuildsContent(lang);
       case 'gacha':
+      case 'banners':
         return this.getGachaContent(lang);
       case 'events':
         return this.getEventsContent(lang);
@@ -23669,12 +23670,494 @@ const GuidesView = {
       case 'resources':
         return this.getResourcesContent(lang);
       default:
-        return isRu ? this.getPhasesRU() : this.getPhasesEN();
+        return this.getTipsContent(lang);
     }
   },
 
+  // 1. Beginner Tips & Economy
+  getTipsContent(lang = 'RU') {
+    const isRu = lang === 'RU';
+    const isCn = lang === 'CN';
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">💡 ${isRu ? 'Советы новичкам, Экономика ресурсов и Правила прокачки' : isCn ? '萌新入门避坑、资源规划与养成法则' : 'Beginner Tips, Resource Economy & Progression Rules'}</h2>
+        <p class="guide-lead">
+          ${isRu 
+            ? 'Фундаментальные правила эффективного старта, правильная трата самоцветов, механика реролла талантов и экономия энергии.' 
+            : isCn 
+            ? '公会萌新必读指南：钻石使用优先级、体力规划、60级免费重置与炼金最大化收益。' 
+            : 'Essential starter guide: gem priority, stamina efficiency, level 60 resets, and alchemy optimization.'}
+        </p>
 
-  // 0. Beginner Tips & Resource Economy
+        <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 20px;">
+          <div class="detail-section" style="background: rgba(15, 23, 42, 0.85); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(56, 189, 248, 0.2);">
+            <div class="section-heading" style="color: #38bdf8; font-size: 16px; margin-bottom: 10px;">💎 1. Валюты и Крутки (Gems & Summons)</div>
+            <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 13.5px;">
+              <li><strong>Самоцветы (Gems):</strong> Тратьте кристаллы <span style="color: #facc15; font-weight: 700;">только на Альтер-найм (Alter Summon)</span> и на замену золотых талантов (200 гемов/свап). Еженедельные награды Арены дают стабильный приток кристаллов.</li>
+              <li><strong>Баннеры найма:</strong> Посмотреть актуальные баннеры и вероятности призыва можно в разделе <button class="action-btn secondary-btn" onclick="GuidesView.setSection('gacha')" style="display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; font-size: 12px; margin-left: 4px; color: #38bdf8; border-color: rgba(56,189,248,0.4);">🎪 Баннеры найма ➔</button></li>
+              <li><strong>Список желаний (Wishlist):</strong> В стандартном найме ставьте <em>Кристальную грибницу</em> или <em>Командующую Легиона</em> (лучшие генераторы маны).</li>
+              <li><strong>Альтер-осколки:</strong> <span style="color: #f87171; font-weight: 700;">СТРОГО КОПИТЬ!</span> Для 5★ возвышения Альтера нужно 400 осколков.</li>
+            </ul>
+          </div>
+
+          <div class="detail-section" style="background: rgba(15, 23, 42, 0.85); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(234, 179, 8, 0.2);">
+            <div class="section-heading" style="color: #facc15; font-size: 16px; margin-bottom: 10px;">💰 2. Экономика Золота и Расходников</div>
+            <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 13.5px;">
+              <li><strong>Приоритет расходов:</strong> 1) Звездность экипировки и рун; 2) Прокачка 3 боевых юнитов до 60 уровня; 3) Скупка Сердец героинь у странствующего торговца.</li>
+              <li><strong>Клевер (Clover):</strong> Не тратьте вслепую! Используйте только тогда, когда бесплатный ролл кубика после победы выпал <strong>17–19</strong>, чтобы гарантировать 20 (Оранжевый/Желтый шмот).</li>
+              <li><strong>Плоды таланта:</strong> Копить для эндгейм-сборок на основных DPS-героинь.</li>
+            </ul>
+          </div>
+
+          <div class="detail-section" style="background: rgba(15, 23, 42, 0.85); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(74, 222, 128, 0.2);">
+            <div class="section-heading" style="color: #4ade80; font-size: 16px; margin-bottom: 10px;">🆙 3. Остановка на 60 уровне и Сброс</div>
+            <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 13.5px;">
+              <li>Любого персонажа 60 уровня и ниже можно <span style="color: #4ade80; font-weight: 700;">БЕСПЛАТНО сбросить (Reset)</span> с возвратом 100% потраченного золота и материалов!</li>
+              <li>Прокачка 70+ уровня осуществляется через <strong>Сердца героинь (Heroine's Hearts)</strong> без траты золота.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    `;
+  },
+
+  // 2. Gacha, Banners & Character Drop Rates (Requested by User)
+  getGachaContent(lang = 'RU') {
+    const isRu = lang === 'RU';
+    const isCn = lang === 'CN';
+
+    const charsData = (typeof App !== 'undefined' && App.state?.data?.characters?.[lang]) 
+      ? App.state.data.characters[lang] 
+      : [];
+
+    const getCharsByRank = (rank) => charsData.filter(c => c.step === rank);
+
+    const sChars = getCharsByRank('S');
+    const aChars = getCharsByRank('A');
+    const bChars = getCharsByRank('B');
+    const cChars = getCharsByRank('C');
+
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">🎪 ${isRu ? 'Баннеры найма, Таблицы шансов дропа и Система Гаранта' : isCn ? '招募卡池机制、全角色掉落概率表与保底规则' : 'Summon Banners, Drop Rate Tables & Pity Systems'}</h2>
+        <p class="guide-lead">
+          ${isRu 
+            ? 'Полное расписание актуальных баннеров героинь и скинов, математически точные таблицы вероятностей призыва для каждого ранга (S/A/B/C) и правила гаранта.' 
+            : isCn 
+            ? '最新UP卡池、全阶级角色精准招募概率汇总、许愿单保底机制与皮肤抽卡指南。' 
+            : 'Current rate-up banner schedule, character drop rate tables per rarity rank (S/A/B/C), and wishlist pity rules.'}
+        </p>
+
+        <!-- Banner Schedule & Current Rate-Up Cards -->
+        <div style="margin-top: 24px;">
+          <div class="section-heading" style="font-size: 16px; font-weight: 800; color: #ffffff; display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+            <span>🌟</span> <span>${isRu ? 'Актуальные и Лимитированные Баннеры Персонажей' : isCn ? '当前活跃与限时角色卡池' : 'Current Active & Rate-Up Banners'}</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px; margin-bottom: 24px;">
+            <!-- Current Rate-Up Banner -->
+            <div style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(15, 23, 42, 0.95)); border: 1.5px solid rgba(239, 68, 68, 0.4); border-radius: var(--radius-md); padding: 16px; position: relative; overflow: hidden;">
+              <div style="position: absolute; top: 12px; right: 12px; background: #ef4444; color: #ffffff; font-size: 10px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">
+                🔥 ТЕКУЩИЙ RATE-UP
+              </div>
+              <div style="font-size: 12px; color: #f87171; font-weight: 700;">Лимитированный Баннер</div>
+              <div style="font-size: 18px; font-weight: 800; color: #ffffff; margin-top: 2px;">🌹 Владычица роз (Rose Sovereign)</div>
+              <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">ID: M13307 • Ранг: S★ • Элемент: Огонь</div>
+              <div style="margin-top: 10px; font-size: 13px; line-height: 1.5; color: #cbd5e1;">
+                Повышенный шанс получения: составляет <strong>50% от всех выпавших S-ранг героинь</strong> (1.25% абсолютный шанс за крутку).
+              </div>
+              <div style="margin-top: 12px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
+                <span style="font-size: 11.5px; color: #fca5a5;">📅 13.08.2026 — 24.09.2026</span>
+                <button class="action-btn primary-btn" onclick="App.openCharacterModal('M13307')" style="font-size: 11px; padding: 3px 10px; background: rgba(239,68,68,0.25); border-color: #ef4444; color: #fff;">
+                  Профиль героини ➔
+                </button>
+              </div>
+            </div>
+
+            <!-- Alter Summon Banner -->
+            <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(15, 23, 42, 0.95)); border: 1.5px solid rgba(168, 85, 247, 0.4); border-radius: var(--radius-md); padding: 16px; position: relative;">
+              <div style="position: absolute; top: 12px; right: 12px; background: #a855f7; color: #ffffff; font-size: 10px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">
+                🔮 АЛЬТЕР-ПУЛ
+              </div>
+              <div style="font-size: 12px; color: #c084fc; font-weight: 700;">Эксклюзивный Баннер</div>
+              <div style="font-size: 18px; font-weight: 800; color: #ffffff; margin-top: 2px;">🌌 Призыв Иных Миров (Alter Pool)</div>
+              <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Валюта: Альтер-билеты / Самоцветы</div>
+              <div style="margin-top: 10px; font-size: 13px; line-height: 1.5; color: #cbd5e1;">
+                Пул включает 60 эксклюзивных Альтер-героинь: <em>Ледяная Злодейка, Альтер Святой сабли, Зайчиха-Маг, Шагающая по ветру</em>.
+              </div>
+              <div style="margin-top: 12px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px;">
+                <span style="font-size: 11.5px; color: #d8b4fe;">💎 200 кристаллов / крутка</span>
+                <button class="action-btn secondary-btn" onclick="App.setTab('characters');" style="font-size: 11px; padding: 3px 10px;">
+                  Каталог Альтеров ➔
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRIMARY TABLE: Character Drop Rates Table -->
+          <div class="detail-section" style="background: rgba(10, 15, 29, 0.9); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: var(--radius-md); padding: 18px; margin-bottom: 24px;">
+            <div class="section-heading" style="font-size: 16px; font-weight: 800; color: #ffffff; display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+              <span>📊 Таблица шансов дропа персонажей по рангам</span>
+              <span style="font-size: 12px; color: #38bdf8; font-weight: normal;">Базовый пулл найма</span>
+            </div>
+
+            <div style="overflow-x: auto;">
+              <table class="guide-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px;">
+                <thead>
+                  <tr style="background: rgba(15, 23, 42, 0.95); border-bottom: 2px solid rgba(56, 189, 248, 0.4);">
+                    <th style="padding: 10px 12px; color: #f1f5f9;">Ранг (Редкость)</th>
+                    <th style="padding: 10px 12px; color: #facc15;">Базовый шанс (%)</th>
+                    <th style="padding: 10px 12px; color: #38bdf8;">Правила Гаранта (Pity)</th>
+                    <th style="padding: 10px 12px; color: #c084fc;">Героини в пуле (${charsData.length})</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- S Rank -->
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.06); background: rgba(234, 179, 8, 0.04);">
+                    <td style="padding: 12px;">
+                      <span class="tag-badge" style="background: rgba(234, 179, 8, 0.15); color: #facc15; border: 1px solid rgba(234, 179, 8, 0.4); font-weight: 800; font-size: 12px; padding: 3px 8px;">
+                        ⭐ S★ (Божественные)
+                      </span>
+                    </td>
+                    <td style="padding: 12px; font-size: 16px; font-weight: 800; color: #facc15;">
+                      2.50%
+                      <div style="font-size: 10.5px; color: var(--text-muted); font-weight: normal; margin-top: 2px;">(Rate-Up: 1.25%)</div>
+                    </td>
+                    <td style="padding: 12px; color: #e2e8f0; line-height: 1.5;">
+                      🎯 <strong>100 круток</strong> жесткий гарант на героиню из Списка Желаний (Wishlist). При выпадении счетчик сбрасывается.
+                    </td>
+                    <td style="padding: 12px;">
+                      <div style="display: flex; gap: 4px; flex-wrap: wrap; max-height: 80px; overflow-y: auto;">
+                        ${sChars.map(c => `
+                          <span class="tag-badge clickable-badge" onclick="App.openCharacterModal('${c.id}')" title="${this.escapeHtml(c.name)}" style="background: rgba(234, 179, 8, 0.1); color: #facc15; border: 1px solid rgba(234, 179, 8, 0.3); font-size: 11px; padding: 2px 6px; cursor: pointer;">
+                            ${this.escapeHtml(c.name)}
+                          </span>
+                        `).join('')}
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- A Rank -->
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.06); background: rgba(168, 85, 247, 0.04);">
+                    <td style="padding: 12px;">
+                      <span class="tag-badge" style="background: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4); font-weight: 800; font-size: 12px; padding: 3px 8px;">
+                        👑 A★ (Эпические)
+                      </span>
+                    </td>
+                    <td style="padding: 12px; font-size: 16px; font-weight: 800; color: #c084fc;">
+                      15.00%
+                    </td>
+                    <td style="padding: 12px; color: #e2e8f0; line-height: 1.5;">
+                      ✨ <strong>Гарант каждые 10 круток:</strong> минимум 1 персонаж ранга A★ или выше.
+                    </td>
+                    <td style="padding: 12px;">
+                      <div style="display: flex; gap: 4px; flex-wrap: wrap; max-height: 80px; overflow-y: auto;">
+                        ${aChars.map(c => `
+                          <span class="tag-badge clickable-badge" onclick="App.openCharacterModal('${c.id}')" title="${this.escapeHtml(c.name)}" style="background: rgba(168, 85, 247, 0.1); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); font-size: 11px; padding: 2px 6px; cursor: pointer;">
+                            ${this.escapeHtml(c.name)}
+                          </span>
+                        `).join('')}
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- B Rank -->
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.06); background: rgba(56, 189, 248, 0.04);">
+                    <td style="padding: 12px;">
+                      <span class="tag-badge" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); font-weight: 800; font-size: 12px; padding: 3px 8px;">
+                        🔷 B★ (Редкие)
+                      </span>
+                    </td>
+                    <td style="padding: 12px; font-size: 16px; font-weight: 800; color: #38bdf8;">
+                      35.00%
+                    </td>
+                    <td style="padding: 12px; color: var(--text-muted); line-height: 1.5;">
+                      Базовое наполнение пула. Используются для осколков возвышения и алхимии.
+                    </td>
+                    <td style="padding: 12px;">
+                      <div style="display: flex; gap: 4px; flex-wrap: wrap; max-height: 80px; overflow-y: auto;">
+                        ${bChars.map(c => `
+                          <span class="tag-badge clickable-badge" onclick="App.openCharacterModal('${c.id}')" title="${this.escapeHtml(c.name)}" style="background: rgba(56, 189, 248, 0.1); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); font-size: 11px; padding: 2px 6px; cursor: pointer;">
+                            ${this.escapeHtml(c.name)}
+                          </span>
+                        `).join('')}
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- C Rank -->
+                  <tr style="background: rgba(74, 222, 128, 0.04);">
+                    <td style="padding: 12px;">
+                      <span class="tag-badge" style="background: rgba(74, 222, 128, 0.15); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.4); font-weight: 800; font-size: 12px; padding: 3px 8px;">
+                        🟢 C★ (Обычные)
+                      </span>
+                    </td>
+                    <td style="padding: 12px; font-size: 16px; font-weight: 800; color: #4ade80;">
+                      47.50%
+                    </td>
+                    <td style="padding: 12px; color: var(--text-muted); line-height: 1.5;">
+                      Базовые воительницы. Легко прокачиваются до максимума для быстрого закрытия Кодекса.
+                    </td>
+                    <td style="padding: 12px;">
+                      <div style="display: flex; gap: 4px; flex-wrap: wrap; max-height: 80px; overflow-y: auto;">
+                        ${cChars.map(c => `
+                          <span class="tag-badge clickable-badge" onclick="App.openCharacterModal('${c.id}')" title="${this.escapeHtml(c.name)}" style="background: rgba(74, 222, 128, 0.1); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.3); font-size: 11px; padding: 2px 6px; cursor: pointer;">
+                            ${this.escapeHtml(c.name)}
+                          </span>
+                        `).join('')}
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- SECONDARY TABLE: Skin Summon Table -->
+          <div class="detail-section" style="background: rgba(10, 15, 29, 0.85); border: 1px solid rgba(244, 114, 182, 0.25); border-radius: var(--radius-md); padding: 18px; margin-bottom: 24px;">
+            <div class="section-heading" style="font-size: 15px; font-weight: 800; color: #ffffff; display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+              <span>👗</span> <span>Баннеры Обликов / Скинов (Skin Summon)</span>
+            </div>
+            <div style="overflow-x: auto;">
+              <table class="guide-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px;">
+                <thead>
+                  <tr style="background: rgba(15, 23, 42, 0.95); border-bottom: 2px solid rgba(244, 114, 182, 0.4);">
+                    <th style="padding: 8px 12px; color: #f1f5f9;">Облик персонажа</th>
+                    <th style="padding: 8px 12px; color: #f472b6;">Ранг</th>
+                    <th style="padding: 8px 12px; color: #38bdf8;">ID Скина</th>
+                    <th style="padding: 8px 12px; color: #fbbf24;">Период Up-шанса</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                    <td style="padding: 10px 12px; font-weight: 700; color: #fff;">Владычица роз (Rose Sovereign)</td>
+                    <td style="padding: 10px 12px; color: #facc15; font-weight: 800;">S★</td>
+                    <td style="padding: 10px 12px; color: var(--text-muted);">M13307_000</td>
+                    <td style="padding: 10px 12px; color: #4ade80; font-weight: 700;">13.08.2026 — 03.09.2026 (Активен)</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                    <td style="padding: 10px 12px; font-weight: 700; color: #fff;">Троллиха-чародейка (Troll Sorceress)</td>
+                    <td style="padding: 10px 12px; color: #facc15; font-weight: 800;">S★</td>
+                    <td style="padding: 10px 12px; color: var(--text-muted);">M12303_000</td>
+                    <td style="padding: 10px 12px; color: #f59e0b; font-weight: 700;">03.09.2026 — 24.09.2026 (Скоро)</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                    <td style="padding: 10px 12px; font-weight: 700; color: #fff;">Снежный рыцарь (Snowman Knightess)</td>
+                    <td style="padding: 10px 12px; color: #facc15; font-weight: 800;">S★</td>
+                    <td style="padding: 10px 12px; color: var(--text-muted);">M11303_002</td>
+                    <td style="padding: 10px 12px; color: var(--text-muted);">23.07.2026 — Бессрочно в пуле</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 10px 12px; font-weight: 700; color: #fff;">Лесные нимфы (Forest Nymphs)</td>
+                    <td style="padding: 10px 12px; color: #facc15; font-weight: 800;">S★</td>
+                    <td style="padding: 10px 12px; color: var(--text-muted);">M54301_000</td>
+                    <td style="padding: 10px 12px; color: var(--text-muted);">02.07.2026 — Бессрочно в пуле</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- THIRD TABLE: Talent Wishlist Pity Table -->
+          <div class="detail-section" style="background: rgba(10, 15, 29, 0.85); border: 1px solid rgba(234, 179, 8, 0.25); border-radius: var(--radius-md); padding: 18px;">
+            <div class="section-heading" style="font-size: 15px; font-weight: 800; color: #ffffff; display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+              <span>🎯</span> <span>Скрытая система гаранта на Золотые Таланты (Wishlist Pity)</span>
+            </div>
+            <p style="font-size: 13px; color: #94a3b8; line-height: 1.6; margin-bottom: 12px;">
+              При реролле страниц талантов плодами в игре действует математически доказанная система нарастающего шанса:
+            </p>
+            <div style="overflow-x: auto;">
+              <table class="guide-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px;">
+                <thead>
+                  <tr style="background: rgba(15, 23, 42, 0.95); border-bottom: 2px solid rgba(234, 179, 8, 0.4);">
+                    <th style="padding: 8px 12px; color: #f1f5f9;">Количество золотых роллов без целевого таланта</th>
+                    <th style="padding: 8px 12px; color: #facc15;">Бонусный шанс выпадения</th>
+                    <th style="padding: 8px 12px; color: #4ade80;">Итоговая вероятность</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                    <td style="padding: 8px 12px; color: #cbd5e1;">0 — 50 золотых талантов (Стадия накопления)</td>
+                    <td style="padding: 8px 12px; color: var(--text-muted);">+0% (Счётчик 0/50)</td>
+                    <td style="padding: 8px 12px; color: var(--text-muted);">Базовый шанс пула (~1.5%)</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                    <td style="padding: 8px 12px; color: #cbd5e1;">51-й золотой талант</td>
+                    <td style="padding: 8px 12px; color: #facc15; font-weight: 700;">+5%</td>
+                    <td style="padding: 8px 12px; color: #facc15; font-weight: 700;">~6.5%</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                    <td style="padding: 8px 12px; color: #cbd5e1;">60-й золотой талант</td>
+                    <td style="padding: 8px 12px; color: #facc15; font-weight: 700;">+50%</td>
+                    <td style="padding: 8px 12px; color: #facc15; font-weight: 700;">~51.5%</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px 12px; color: #fde047; font-weight: 800;">70-й золотой талант (Hard Pity)</td>
+                    <td style="padding: 8px 12px; color: #4ade80; font-weight: 800;">+100%</td>
+                    <td style="padding: 8px 12px; color: #4ade80; font-weight: 800;">100% (АБСОЛЮТНЫЙ ГАРАНТ)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  },
+
+  // 3. Battle Phases
+  getPhasesContent(lang = 'RU') {
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">⚔️ Порядок ходов, Фазы боя и Жизненный цикл действий</h2>
+        <p class="guide-lead">Боевая система делится на строгие фазы с точками входа (start) и выхода (after/end).</p>
+        <div style="background: rgba(15, 23, 42, 0.85); padding: 16px; border-radius: var(--radius-md); border-left: 4px solid #38bdf8; font-size: 13.5px; line-height: 1.8; color: #cbd5e1; margin-top: 16px;">
+          <p><strong>1. Battle Start:</strong> срабатывает 1 раз до начала действий. Персонажи с максимумом маны получают Extra Action перед естественным ходом.</p>
+          <p><strong>2. Turn Start:</strong> начало каждого раунда. Чеклисты урона, защита, Decay (сжигание маны).</p>
+          <p><strong>3. Action Start ➔ Hit Phase ➔ After Phase:</strong> цепочки выполнения ударов и триггеры наложения статусов.</p>
+        </div>
+      </div>
+    `;
+  },
+
+  // 4. Targeting & Distance
+  getTargetingContent(lang = 'RU') {
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">🎯 Дистанция, Позиционирование на поле и Таргетинг</h2>
+        <p class="guide-lead">Поклеточная система дистанции (Range) и приоритеты выбора целей в отряде.</p>
+        <div style="background: rgba(15, 23, 42, 0.85); padding: 16px; border-radius: var(--radius-md); border-left: 4px solid #a855f7; font-size: 13.5px; line-height: 1.8; color: #cbd5e1; margin-top: 16px;">
+          <p>• <strong>Distance Value:</strong> Каждый персонаж между вами и целью добавляет +1 к требуемой дистанции.</p>
+          <p>• <strong>Precision (Меткость):</strong> Атакует врагов с заднего ряда к переднему.</p>
+          <p>• <strong>Taunt (Провокация):</strong> Заставляет атаковать переднюю линию и сбивает режим Precision.</p>
+        </div>
+      </div>
+    `;
+  },
+
+  // 5. Damage & Formulas
+  getDamageContent(lang = 'RU') {
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">🛡️ Формулы урона, Защита (Def), Стойкость (Toughness) и Потеря HP</h2>
+        <p class="guide-lead">Расчет базового урона, конвертация характеристик и состояние Weakness Broken.</p>
+        <div style="background: rgba(15, 23, 42, 0.85); padding: 16px; border-radius: var(--radius-md); border-left: 4px solid #facc15; font-size: 13.5px; line-height: 1.8; color: #cbd5e1; margin-top: 16px;">
+          <p>• <strong>Def >= Atk:</strong> атака полностью поглощается (урон = 0).</p>
+          <p>• <strong>Toughness Broken:</strong> при сбивании стойкости защита отключается и сменяется слабым показателем Weakness.</p>
+          <p>• <strong>HP Loss:</strong> чистый урон, пробивающий щиты и защиту (не убивает расу Металла).</p>
+        </div>
+      </div>
+    `;
+  },
+
+  // 6. Elements & Roles
+  getElementsContent(lang = 'RU') {
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">✨ Стихии, Классы, Роли и Построение команды</h2>
+        <p class="guide-lead">Синергии стихий (Огонь, Вода, Ветер, Земля, Свет, Тьма) и роли воительниц.</p>
+      </div>
+    `;
+  },
+
+  // 7. Meta Builds
+  getBuildsContent(lang = 'RU') {
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">🏆 Мета-Билды, Топовые Команды и Тир-Лист</h2>
+        <p class="guide-lead">Лучшие протестированные связки для прохождения карт, Бездны и Исекай-порталов.</p>
+        <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 18px;">
+          <div style="background: rgba(15, 23, 42, 0.85); padding: 14px 16px; border-radius: var(--radius-md); border-left: 4px solid #4ade80;">
+            <div style="font-weight: 700; color: #fff; font-size: 15px;">🟢 Команда Преследования Принцессы (Follow-up Team)</div>
+            <div style="font-size: 13px; color: #cbd5e1; margin-top: 4px;">Керри: <strong>Принцесса гарпий (M12301)</strong>. Делает 70+ атак преследования за раунд. Топ бюджетный старт.</div>
+          </div>
+          <div style="background: rgba(15, 23, 42, 0.85); padding: 14px 16px; border-radius: var(--radius-md); border-left: 4px solid #facc15;">
+            <div style="font-weight: 700; color: #fff; font-size: 15px;">🥕 Команда Счастливой Зайчихи / Гриб-Кентавр-Кот (Lucky Rabbit)</div>
+            <div style="font-size: 13px; color: #cbd5e1; margin-top: 4px;">Керри: <strong>Великая волшебница (M13305)</strong>. Лучшая пачка для скоростной зачистки и максимального дропа.</div>
+          </div>
+          <div style="background: rgba(15, 23, 42, 0.85); padding: 14px 16px; border-radius: var(--radius-md); border-left: 4px solid #38bdf8;">
+            <div style="font-weight: 700; color: #fff; font-size: 15px;">❄️ Команда Зловещей Ледяной Злодейки (Malice Ice Fiend)</div>
+            <div style="font-size: 13px; color: #cbd5e1; margin-top: 4px;">Керри: <strong>Астральная Злодейка [Альтер] (M53301_001)</strong>. Наносит миллионы внеочередного урона.</div>
+          </div>
+        </div>
+      </div>
+    `;
+  },
+
+  // 8. Events
+  getEventsContent(lang = 'RU') {
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">🎁 Календарь Игровых Событий и Ивентов</h2>
+        <p class="guide-lead">Расписание временных активностей, рейдов и наградных кампаний.</p>
+        <ul style="padding-left: 20px; line-height: 2; color: #cbd5e1; font-size: 13.5px; margin-top: 14px;">
+          <li>🔥 <strong>Исекай-рейд:</strong> 12.08.2026 — 23.09.2026 (Магазин Исекай-кристаллов)</li>
+          <li>🏆 <strong>Испытание на вершине (Peak Match):</strong> 19.08.2026 — 02.09.2026 (Хозяйка гильдии)</li>
+          <li>⚙️ <strong>Заводной тайник:</strong> 26.08.2026 — 09.09.2026 (Рулетка шестеренок)</li>
+          <li>🏰 <strong>Преображение гильдии:</strong> 09.09.2026 — 23.09.2026 (Интерьер)</li>
+        </ul>
+      </div>
+    `;
+  },
+
+  // 9. Promo Codes
+  getCodesContent(lang = 'RU') {
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">🎟️ Промокоды и Подарочные коды (Gift Codes)</h2>
+        <p class="guide-lead">Актуальные рабочие промокоды для получения самоцветов, свитков найма и золота.</p>
+        <div style="overflow-x: auto; margin-top: 16px;">
+          <table class="guide-table" style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px;">
+            <thead>
+              <tr style="background: rgba(15, 23, 42, 0.95); border-bottom: 2px solid rgba(56, 189, 248, 0.4);">
+                <th style="padding: 10px 12px; color: #f1f5f9;">Код</th>
+                <th style="padding: 10px 12px; color: #38bdf8;">Награда</th>
+                <th style="padding: 10px 12px; color: #facc15;">Действие</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${[
+                { code: 'TIMBER0813', reward: '1 Большой припас (500 ⚡), 100 Самоцветов, 20 000 Золота' },
+                { code: 'MGMMAG', reward: 'Подарочный набор ресурсов и самоцветов' },
+                { code: 'HXSNGH0402', reward: '100 Самоцветов, 1 Билет для найма' },
+                { code: 'HXSNGH888', reward: '100 Самоцветов, 5 Плодов таланта' },
+                { code: 'HXSNGH666', reward: '100 Самоцветов, 1 Клевер удачи' },
+                { code: 'vip888', reward: '100 Самоцветов, 1 Необычный ящик' },
+                { code: 'vip777', reward: '100 Самоцветов, 10 000 Золота' },
+                { code: 'vip666', reward: '100 Самоцветов, 5 Темно-фиолетовых кристаллов' }
+              ].map(c => `
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                  <td style="padding: 10px 12px; font-weight: 800; color: #38bdf8; font-family: monospace; font-size: 14px;">${c.code}</td>
+                  <td style="padding: 10px 12px; color: #e2e8f0;">${c.reward}</td>
+                  <td style="padding: 10px 12px;">
+                    <button class="action-btn secondary-btn" onclick="GuidesView.copyPromoCode('${c.code}')" style="padding: 3px 10px; font-size: 11.5px;">
+                      📋 Скопировать
+                    </button>
+                  </td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+  },
+
+  // 10. Community Resources
+  getResourcesContent(lang = 'RU') {
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">🌐 Авторитетные Внешние Источники и Базы Данных</h2>
+        <p class="guide-lead">Проверенные инструменты сообщества, калькуляторы и вики-ресурсы.</p>
+        <ul style="padding-left: 20px; line-height: 2; color: #cbd5e1; font-size: 13.5px; margin-top: 14px;">
+          <li>🌐 <a href="https://gomg-wiki.pages.dev/" target="_blank" style="color: #38bdf8; text-decoration: underline;">GMG Community Wiki & Tools</a> — главная англоязычная база данных, оптимизатор гачи и симулятор талантов.</li>
+          <li>🇨🇳 <a href="https://www.taptap.cn/moment/825053452206868359" target="_blank" style="color: #facc15; text-decoration: underline;">Мета-гайды TapTap от 叶叶小飞花</a> — глубокий разбор меты и тир-листов.</li>
+        </ul>
+      </div>
+    `;
+  },
+
+
   getTilesContent(lang = "RU") {
     const isRu = lang === 'RU';
     const isCn = lang === 'CN';

@@ -296,6 +296,19 @@ const CharactersView = {
         </div>
 
         <div class="modal-body">
+
+          <!-- Banner Acquisition Link -->
+          <div class="detail-section" style="margin-bottom: 12px;">
+            <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.3); padding: 10px 14px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+              <div style="font-size: 12.5px; color: #f1f5f9;">
+                <span>🎪 <strong>${currentLang === 'RU' ? 'Способ найма' : (currentLang === 'CN' ? '获取途径' : 'Acquisition')}</strong>: ${char.is_alter ? (currentLang === 'RU' ? 'Альтер-найм (Баннер Иных Миров)' : 'Alter Summon Banner') : (char.rarity_tier >= 5 ? (currentLang === 'RU' ? 'Баннеры призыва и Список Желаний' : 'Rate-Up / Wishlist Summon') : (currentLang === 'RU' ? 'Стандартный наем' : 'Standard Summon'))}</span>
+              </div>
+              <button class="action-btn secondary-btn" onclick="App.setTab('guides'); GuidesView.setSection('gacha');" style="font-size: 11.5px; padding: 4px 12px; color: #38bdf8; border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.12); cursor: pointer;">
+                ${currentLang === 'RU' ? 'Шансы в баннерах ➔' : (currentLang === 'CN' ? '卡池概率 ➔' : 'Banner Rates ➔')}
+              </button>
+            </div>
+          </div>
+
           <div style="display: flex; gap: 8px; flex-wrap: wrap;">
             <span class="tag-badge ${elemClass}">✨ ${this.escapeHtml(char.element || '')}</span>
             <span class="tag-badge">🛡️ ${this.escapeHtml(char.class || '')}</span>

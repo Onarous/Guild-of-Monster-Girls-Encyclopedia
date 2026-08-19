@@ -887,6 +887,24 @@ const ItemsView = {
           <!-- Map Tiles Drop Sources (for materials/ingredients) -->
           ${this.renderItemTileSources(item, currentLang)}
 
+          <!-- Banner link for summon tickets, wish stones, gems -->
+          ${(item.id === 'D00006_031' || item.id === 'D00006_032' || item.id === 'D00010_021' || item.id === 'D00010_031' || item.id === 'D00001_000' || (item.name && (item.name.includes('Билет') || item.name.includes('найм') || item.name.includes('Самоцвет') || item.name.includes('招募') || item.name.includes('Recruit')))) ? `
+            <div class="detail-section" style="margin-top: 10px;">
+              <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.3); padding: 12px 14px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+                <div style="font-size: 13px; color: #f1f5f9;">
+                  <span>🎪 <strong>${currentLang === 'RU' ? 'Баннеры найма и Расписание' : (currentLang === 'CN' ? '招募卡池与概率' : 'Summon Banners & Rates')}</strong></span>
+                  <div style="font-size: 11.5px; color: var(--text-muted); margin-top: 2px;">
+                    ${currentLang === 'RU' ? 'Посмотрите шансы дропа, правила гаранта и расписание баннеров' : 'Check drop rates, pity rules & banner schedule'}
+                  </div>
+                </div>
+                <button class="action-btn primary-btn" onclick="App.setTab('guides'); GuidesView.setSection('gacha');" style="font-size: 12px; padding: 5px 14px; background: rgba(56, 189, 248, 0.2); border-color: #38bdf8; color: #ffffff; cursor: pointer;">
+                  ${currentLang === 'RU' ? 'Перейти к баннерам' : (currentLang === 'CN' ? '前往卡池' : 'Open Banners')} ➔
+                </button>
+              </div>
+            </div>
+          ` : ''}
+
+
           ${item.description ? `
             <div class="detail-section">
               <div class="section-heading">📜 ${dict.description || 'Description'}</div>
