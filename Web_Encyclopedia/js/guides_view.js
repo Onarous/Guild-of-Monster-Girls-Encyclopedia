@@ -45308,19 +45308,23 @@ activeSection: 'tips',
       <aside class="guides-sidebar ${this.isNavCollapsedMobile ? 'nav-collapsed' : ''}">
         <div class="guides-sidebar-header" onclick="GuidesView.toggleNavMobile(event)">
           <div class="guides-sidebar-title">
-            <span>📖</span>
-            <span>${isRu ? 'Оглавление' : (isCn ? '攻略目录' : 'Contents')}</span>
+            <span class="guides-toc-label">📖 ${isRu ? 'Оглавление' : (isCn ? '攻略目录' : 'Contents')}</span>
+            <span class="guides-active-chapter-pill">
+              <span>${currentSec.icon}</span>
+              <span class="guides-pill-text">${currentSec.title}</span>
+            </span>
           </div>
           <button class="guides-toggle-btn" aria-label="Toggle navigation">
             <span class="guides-toggle-text">${this.isNavCollapsedMobile ? (isRu ? 'Развернуть ▾' : isCn ? '展开 ▾' : 'Expand ▾') : (isRu ? 'Скрыть ▴' : isCn ? '收起 ▴' : 'Hide ▴')}</span>
           </button>
         </div>
         <nav class="guides-nav-list">
-          ${sections.map(s => `
-            <button class="guide-nav-item ${s.id === this.activeSection ? 'active' : ''}" onclick="GuidesView.setSection('${s.id}')">
+          ${sections.map((s, idx) => `
+            <button class="guide-nav-btn ${s.id === this.activeSection ? 'active' : ''}" onclick="GuidesView.setSection('${s.id}')">
+              <span class="guide-nav-num">${String(idx + 1).padStart(2, '0')}</span>
               <span class="guide-nav-icon">${s.icon}</span>
               <span class="guide-nav-text">${s.title}</span>
-              <span class="guide-nav-arrow">›</span>
+              ${s.id === this.activeSection ? `<span class="guide-nav-active-mark">●</span>` : ''}
             </button>
           `).join('')}
         </nav>
@@ -45329,21 +45333,23 @@ activeSection: 'tips',
 
     const contentHtml = `
       <section class="guides-content-panel">
-        <header class="guide-header">
-          <div class="guide-icon-box">${currentSec.icon}</div>
-          <div>
-            <h2 class="guide-title">${currentSec.title}</h2>
-            <p class="guide-subtitle">${isRu ? 'Guild of Monster Girls — Интерактивная база знаний и практические руководства' : (isCn ? '魔女工会 — 进阶战斗机制与数据全解析' : 'Guild of Monster Girls — Comprehensive Mechanics & Meta Guides')}</p>
+        <article class="guide-article">
+          <div class="guide-card" style="background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.85) 100%); border-color: rgba(59, 130, 246, 0.3); margin-bottom: 14px;">
+            <div style="display: flex; align-items: center; gap: 14px;">
+              <div style="font-size: 32px; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); border-radius: var(--radius-md); flex-shrink: 0;">${currentSec.icon}</div>
+              <div>
+                <h2 class="guide-title" style="margin: 0; font-size: 22px; color: #ffffff;">${currentSec.title}</h2>
+                <p class="guide-lead" style="margin: 4px 0 0 0; font-size: 13px; color: var(--text-secondary);">${isRu ? 'Guild of Monster Girls — Интерактивная база знаний и гайды' : (isCn ? '魔女工会 — 进阶战斗机制与数据解析' : 'Guild of Monster Girls — Mechanics & Meta Guides')}</p>
+              </div>
+            </div>
           </div>
-        </header>
-        <div class="guide-body-content">
           ${this.getSectionContent(this.activeSection, currentLang)}
-        </div>
+        </article>
       </section>
     `;
 
     container.innerHTML = `
-      <div class="guides-layout-wrapper">
+      <div class="guides-wrapper">
         ${sidebarHtml}
         ${contentHtml}
       </div>
