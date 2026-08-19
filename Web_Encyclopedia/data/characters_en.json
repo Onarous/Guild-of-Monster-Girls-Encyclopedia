@@ -20,7 +20,7 @@
     "background": "Astral Realm",
     "special_effect": "Crack",
     "source": "",
-    "filter_tags": "反击输出,技能治疗",
+    "filter_tags": "Counter DMG, Skill Healing",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 2,
@@ -96,7 +96,7 @@
         "base_value": 12,
         "status_layers": 0,
         "description": "Summons astral energy around herself. Restores 12 HP and gains +1 Counter range.",
-        "positive_tags": "技能Recovery,反击输出"
+        "positive_tags": "SkillRecovery, Counter DMG"
       }
     ],
     "traits": {
@@ -213,7 +213,7 @@
     "background": "Frostbound Tundra",
     "special_effect": "Ice",
     "source": "Events",
-    "filter_tags": "反击输出,冰冷,技能治疗",
+    "filter_tags": "Counter DMG, Chill, Skill Healing",
     "base_stats": {
       "cons_hp": 14,
       "str_power": 4,
@@ -289,7 +289,7 @@
         "base_value": 12,
         "status_layers": 0,
         "description": "Summons frost energy around herself. Restores 12 HP and increases Chill applied by 2.",
-        "positive_tags": "技能Recovery,冰冷Synergy"
+        "positive_tags": "SkillRecovery, ChillSynergy"
       }
     ],
     "traits": {
@@ -406,7 +406,7 @@
     "background": "Astral Realm",
     "special_effect": "Crack",
     "source": "",
-    "filter_tags": "Attributestacking,恐惧,技能输出",
+    "filter_tags": "Attributestacking, Fear, Skill DMG",
     "base_stats": {
       "cons_hp": 13,
       "str_power": 2,
@@ -482,7 +482,7 @@
         "base_value": 4,
         "status_layers": 5,
         "description": "Gazes upon those who dare to look. Targets the enemy with lowest SPI first. Deals 3 hits of 4 DMG, applying 5 stacks of Fear and draining 5 Mana per hit. If the target's Weakness is exposed, doubles Mana gained.",
-        "positive_tags": "Standard星界邪神,技能输出,恐惧Synergy,Multi-hit技能,魔晶符文"
+        "positive_tags": "Standard星界邪神, Skill DMG, FearSynergy, Multi-hitSkill, 魔晶符文"
       }
     ],
     "traits": {
@@ -599,7 +599,7 @@
     "background": "Frostbound Tundra",
     "special_effect": "Ice",
     "source": "Events",
-    "filter_tags": "冰冷,技能输出",
+    "filter_tags": "Chill, Skill DMG",
     "base_stats": {
       "cons_hp": 11,
       "str_power": 4,
@@ -675,7 +675,7 @@
         "base_value": 2,
         "status_layers": 5,
         "description": "Gazes upon those who entered the tundra. Deals 2 hits of 2 DMG to all enemies and applies 5 stacks of Chill. Drains 2 Mana per hit. If the target has Chill, drains double Mana.",
-        "positive_tags": "极寒星界邪神,技能输出,冰冷Synergy,Multi-hit技能"
+        "positive_tags": "极寒星界邪神, Skill DMG, ChillSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -792,7 +792,7 @@
     "background": "Astral Realm",
     "special_effect": "Crack",
     "source": "Events",
-    "filter_tags": "反伤,技能治疗,强制行动",
+    "filter_tags": "Thorns, Skill Healing, Forced Action",
     "base_stats": {
       "cons_hp": 20,
       "str_power": 2,
@@ -868,7 +868,7 @@
         "base_value": 16,
         "status_layers": 16,
         "description": "Unleashes a brazen Astral Fiendaunt. Restores 16 HP and gains 16 stacks of Thorns. Forces all enemies to immediately take 1 Extra Actions against her. Neither side gains Mana from these actions.",
-        "positive_tags": "愚人星界邪神,技能Recovery,反伤Synergy"
+        "positive_tags": "愚人星界邪神, SkillRecovery, ThornsSynergy"
       }
     ],
     "traits": {
@@ -985,7 +985,7 @@
     "background": "Astral Realm",
     "special_effect": "Crack",
     "source": "",
-    "filter_tags": "追击输出,技能治疗,额外行动",
+    "filter_tags": "Follow-Up DMG, Skill Healing, Extra Action",
     "base_stats": {
       "cons_hp": 14,
       "str_power": 0,
@@ -1061,7 +1061,7 @@
         "base_value": 12,
         "status_layers": 0,
         "description": "Summons countless spectral arms. Restores 12 HP, gains +1 Follow-Up attacks, and reduces Action Mana by 2.",
-        "positive_tags": "Standard星灵射手,技能Recovery,追击输出,枫木符文"
+        "positive_tags": "Standard星灵射手, SkillRecovery, Follow-Up DMG, 枫木符文"
       }
     ],
     "traits": {
@@ -1178,7 +1178,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "spin风",
     "source": "",
-    "filter_tags": "普攻输出,技能治疗,额外行动",
+    "filter_tags": "Normal DMG, Skill Healing, Extra Action",
     "base_stats": {
       "cons_hp": 18,
       "str_power": 2,
@@ -1254,7 +1254,7 @@
         "base_value": 16,
         "status_layers": 0,
         "description": "Achieves perfect unity of blade and spirit. Restores 16 HP and immediately takes 1 Extra Actions. For each Follow-Up or Counter performed, the following Extra Action deals +4 total DMG.",
-        "positive_tags": "Cultivation星灵射手,技能Recovery,普通输出,追击输出,反击输出,额外行动"
+        "positive_tags": "Cultivation星灵射手, SkillRecovery, Normal DMG, Follow-Up DMG, Counter DMG, Extra Action"
       }
     ],
     "traits": {
@@ -1371,7 +1371,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "加速,速度stacking",
+    "filter_tags": "Haste, 速度stacking",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 2,
@@ -1431,13 +1431,13 @@
         "name": "Quick Draw",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Draws her blade swiftly. Targets the front enemy first. Deals 4 DMG and gains 4 stacks of Haste.",
-        "positive_tags": "技能输出,加速Synergy"
+        "positive_tags": "Skill DMG, HasteSynergy"
       }
     ],
     "traits": {
@@ -1547,7 +1547,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "剥离,速度stacking",
+    "filter_tags": "Expose, 速度stacking",
     "base_stats": {
       "cons_hp": 2,
       "str_power": 2,
@@ -1607,13 +1607,13 @@
         "name": "Sharp Dart",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Fires a poison dart. Targets the front enemy first. Deals 4 DMG and applies 4 stacks of Expose.",
-        "positive_tags": "技能输出,剥离Synergy"
+        "positive_tags": "Skill DMG, ExposeSynergy"
       }
     ],
     "traits": {
@@ -1723,7 +1723,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "加速,Attributestacking",
+    "filter_tags": "Haste, Attributestacking",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 2,
@@ -1788,13 +1788,13 @@
         "name": "Chi Strike",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 2,
         "base_value": 2,
         "status_layers": 6,
         "description": "Strikes with rapid punches. Targets the front enemy first. Deals 2 hits of 2 DMG and gains 6 stacks of Haste.",
-        "positive_tags": "技能输出,加速Synergy,Multi-hit技能"
+        "positive_tags": "Skill DMG, HasteSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -2085,7 +2085,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "精准,Attributestacking",
+    "filter_tags": "Precision, Attributestacking",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 2,
@@ -2156,7 +2156,7 @@
         "base_value": 6,
         "status_layers": 6,
         "description": "Focuses quickly. Restores 6 HP and gains 6 stacks of Precision.",
-        "positive_tags": "技能Recovery,精准Synergy"
+        "positive_tags": "SkillRecovery, PrecisionSynergy"
       }
     ],
     "traits": {
@@ -2175,8 +2175,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10105",
@@ -2266,7 +2266,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "灼烧,Attributestacking",
+    "filter_tags": "Burn, Attributestacking",
     "base_stats": {
       "cons_hp": 3,
       "str_power": 4,
@@ -2331,13 +2331,13 @@
         "name": "Greater Fireball",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 6,
         "status_layers": 6,
         "description": "Launches a massive fireball. Targets the front enemy first. Deals 6 DMG and applies 6 stacks of Burn.",
-        "positive_tags": "技能输出,灼烧Synergy"
+        "positive_tags": "Skill DMG, BurnSynergy"
       }
     ],
     "traits": {
@@ -2447,7 +2447,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "技能输出,Attributestacking",
+    "filter_tags": "Skill DMG, Attributestacking",
     "base_stats": {
       "cons_hp": 3,
       "str_power": 4,
@@ -2512,7 +2512,7 @@
         "name": "Starfall",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 6,
@@ -2628,7 +2628,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "技能治疗,防护",
+    "filter_tags": "Skill Healing, Protection",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 4,
@@ -2704,7 +2704,7 @@
         "base_value": 5,
         "status_layers": 3,
         "description": "Sounds a mighty horn. Restores 5 HP to all allies and grants 3 stacks of Shield. Gains an extra 3 stacks.",
-        "positive_tags": "技能Recovery,防护Synergy"
+        "positive_tags": "SkillRecovery, ProtectionSynergy"
       }
     ],
     "traits": {
@@ -2821,7 +2821,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Gold光",
     "source": "Permanent",
-    "filter_tags": "技能输出,防护",
+    "filter_tags": "Skill DMG, Protection",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 2,
@@ -2891,13 +2891,13 @@
         "name": "Wild Charge",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 12,
         "status_layers": 0,
         "description": "Charges with her greatsword. Targets the front enemy first. Deals 12 DMG. For every 10 stacks of Shield, deals +1 DMG.",
-        "positive_tags": "技能输出,防护Synergy"
+        "positive_tags": "Skill DMG, ProtectionSynergy"
       }
     ],
     "traits": {
@@ -3014,7 +3014,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Inferno",
     "source": "",
-    "filter_tags": "普通输出,追击输出,技能治疗,精准",
+    "filter_tags": "Normal DMG, Follow-Up DMG, Skill Healing, Precision",
     "base_stats": {
       "cons_hp": 6,
       "str_power": 4,
@@ -3090,7 +3090,7 @@
         "base_value": 12,
         "status_layers": 0,
         "description": "Enchants arrows with piercing magic. Restores herself 12 HP, increases basic attack targets by 1 and basic attack DMG by 2.",
-        "positive_tags": "技能Recovery,普通输出"
+        "positive_tags": "SkillRecovery, Normal DMG"
       }
     ],
     "traits": {
@@ -3207,7 +3207,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "spin风",
     "source": "Permanent",
-    "filter_tags": "普通输出,追击输出,技能治疗,额外行动",
+    "filter_tags": "Normal DMG, Follow-Up DMG, Skill Healing, Extra Action",
     "base_stats": {
       "cons_hp": 6,
       "str_power": 2,
@@ -3283,7 +3283,7 @@
         "base_value": 12,
         "status_layers": 0,
         "description": "Focuses all her concentration. Restores 12 HP and immediately takes 2 extra actions. These actions don't gain Mana.",
-        "positive_tags": "技能Recovery,额外行动"
+        "positive_tags": "SkillRecovery, Extra Action"
       }
     ],
     "traits": {
@@ -3400,7 +3400,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Gold光",
     "source": "",
-    "filter_tags": "技能输出,逆转",
+    "filter_tags": "Skill DMG, Reversal",
     "base_stats": {
       "cons_hp": 5,
       "str_power": 2,
@@ -3476,7 +3476,7 @@
         "base_value": 5,
         "status_layers": 4,
         "description": "Manipulates time briefly. Deals 5 DMG to all enemies and applies 4 stacks of Reversal.",
-        "positive_tags": "技能输出,逆转Synergy"
+        "positive_tags": "Skill DMG, ReversalSynergy"
       }
     ],
     "traits": {
@@ -3593,7 +3593,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Lightning",
     "source": "Permanent",
-    "filter_tags": "技能输出,灼烧,感电,冰冷",
+    "filter_tags": "Skill DMG, Burn, Shock, Chill",
     "base_stats": {
       "cons_hp": 5,
       "str_power": 4,
@@ -3669,7 +3669,7 @@
         "base_value": 5,
         "status_layers": 4,
         "description": "Unleashes all her Mana. Deals 5 DMG to all enemies and applies 4 stacks of Burn (front), Shock (mid), or Chill (back) based on position.",
-        "positive_tags": "技能输出,灼烧Synergy,感电Synergy,冰冷Synergy"
+        "positive_tags": "Skill DMG, BurnSynergy, ShockSynergy, ChillSynergy"
       }
     ],
     "traits": {
@@ -3786,7 +3786,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Gold光",
     "source": "",
-    "filter_tags": "技能治疗,鼓舞",
+    "filter_tags": "Skill Healing, Inspire",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 2,
@@ -3862,7 +3862,7 @@
         "base_value": 10,
         "status_layers": 10,
         "description": "Converts life energy into fortune. Targets the ally with least DMG taken. Restores 10 HP and grants 10 stacks of Inspire.",
-        "positive_tags": "技能Recovery,鼓舞Synergy"
+        "positive_tags": "SkillRecovery, InspireSynergy"
       }
     ],
     "traits": {
@@ -4055,7 +4055,7 @@
         "base_value": 4,
         "status_layers": 0,
         "description": "Summons dark orbs. Targets the enemy with lowest HP first. Deals 2 hits of 4 DMG. For every point of DMG dealt, restores 1 HP.",
-        "positive_tags": "技能输出,healing efficiency,Multi-hit技能"
+        "positive_tags": "Skill DMG, healing efficiency, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -4172,7 +4172,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Wraith",
     "source": "",
-    "filter_tags": "技能输出,速度stacking,加速",
+    "filter_tags": "Skill DMG, 速度stacking, Haste",
     "base_stats": {
       "cons_hp": 6,
       "str_power": 4,
@@ -4248,7 +4248,7 @@
         "base_value": 4,
         "status_layers": 0,
         "description": "Controls multiple flying blades. Targets the back enemy first. Deals 2 hits of 4 DMG. Deals +1 hits to targets with lower SPD.",
-        "positive_tags": "技能输出,速度stacking,Multi-hit技能"
+        "positive_tags": "Skill DMG, 速度stacking, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -4365,7 +4365,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Silver光",
     "source": "Permanent",
-    "filter_tags": "技能输出,幸运stacking",
+    "filter_tags": "Skill DMG, 幸运stacking",
     "base_stats": {
       "cons_hp": 6,
       "str_power": 2,
@@ -4441,7 +4441,7 @@
         "base_value": 1,
         "status_layers": 0,
         "description": "Throws a flurry of cards. Deals 2 hits of 1 DMG to all enemies. For every 5 Luck, deals +1 DMG.",
-        "positive_tags": "技能输出,幸运stacking,Multi-hit技能"
+        "positive_tags": "Skill DMG, 幸运stacking, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -4558,7 +4558,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Inferno",
     "source": "",
-    "filter_tags": "技能输出,击败Target,额外行动",
+    "filter_tags": "Skill DMG, 击败Target, Extra Action",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 4,
@@ -4751,7 +4751,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Ghost火",
     "source": "Permanent",
-    "filter_tags": "技能输出,恐惧,额外行动",
+    "filter_tags": "Skill DMG, Fear, Extra Action",
     "base_stats": {
       "cons_hp": 14,
       "str_power": 4,
@@ -4827,7 +4827,7 @@
         "base_value": 10,
         "status_layers": 0,
         "description": "Strikes at desperate prey. Targets the enemy with lowest Toughness first. Deals 10 DMG. For every 2 Toughness lost, deals +1 DMG.",
-        "positive_tags": "技能输出,toughness reduction effect"
+        "positive_tags": "Skill DMG, toughness reduction effect"
       }
     ],
     "traits": {
@@ -4944,7 +4944,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "spin风",
     "source": "",
-    "filter_tags": "技能治疗,加速",
+    "filter_tags": "Skill Healing, Haste",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 2,
@@ -5020,7 +5020,7 @@
         "base_value": 5,
         "status_layers": 4,
         "description": "Prays for ancestral power. Restores 5 HP to all allies and grants 4 stacks of Haste.",
-        "positive_tags": "技能Recovery,加速Synergy"
+        "positive_tags": "SkillRecovery, HasteSynergy"
       }
     ],
     "traits": {
@@ -5213,7 +5213,7 @@
         "base_value": 5,
         "status_layers": 4,
         "description": "Unleashes the prey's inner fear. Deals 5 DMG to all enemies and applies 4 stacks of Fear.",
-        "positive_tags": "技能输出,恐惧Synergy"
+        "positive_tags": "Skill DMG, FearSynergy"
       }
     ],
     "traits": {
@@ -5330,7 +5330,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "spin风",
     "source": "",
-    "filter_tags": "剥离,生命flow失",
+    "filter_tags": "Expose, 生命flow失",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 2,
@@ -5400,13 +5400,13 @@
         "name": "Rending Claw",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 12,
         "status_layers": 12,
         "description": "Claws at the enemy fiercely. Targets the front enemy first. Deals 12 DMG and applies 12 stacks of Expose.",
-        "positive_tags": "技能输出,剥离Synergy"
+        "positive_tags": "Skill DMG, ExposeSynergy"
       }
     ],
     "traits": {
@@ -5593,13 +5593,13 @@
         "name": "Thunder Claw",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 2,
         "base_value": 5,
         "status_layers": 6,
         "description": "Rakes with continuous claws. Targets the front enemy first. Deals 2 hits of 5 DMG, applying 6 stacks of Shock per hit.",
-        "positive_tags": "技能输出,感电Synergy,Multi-hit技能"
+        "positive_tags": "Skill DMG, ShockSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -5716,7 +5716,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "spin风",
     "source": "",
-    "filter_tags": "技能输出,剥离",
+    "filter_tags": "Skill DMG, Expose",
     "base_stats": {
       "cons_hp": 5,
       "str_power": 2,
@@ -5792,7 +5792,7 @@
         "base_value": 2,
         "status_layers": 12,
         "description": "Controls a tearing storm. Targets the enemy with highest SPD first. Deals 3 hits of 2 DMG and applies 12 stacks of Expose.",
-        "positive_tags": "技能输出,剥离Synergy,Multi-hit技能"
+        "positive_tags": "Skill DMG, ExposeSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -5909,7 +5909,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Lightning",
     "source": "Permanent",
-    "filter_tags": "技能输出,感电",
+    "filter_tags": "Skill DMG, Shock",
     "base_stats": {
       "cons_hp": 5,
       "str_power": 2,
@@ -5979,13 +5979,13 @@
         "name": "Thunderstrike",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 3,
         "base_value": 2,
         "status_layers": 4,
         "description": "Controls thundering storm clouds. Targets the front enemy first. Deals 3 hits of 2 DMG, applying 4 stacks of Shock per hit.",
-        "positive_tags": "技能输出,感电Synergy,Multi-hit技能"
+        "positive_tags": "Skill DMG, ShockSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -6102,7 +6102,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "spin风",
     "source": "",
-    "filter_tags": "技能输出,追击输出,精准",
+    "filter_tags": "Skill DMG, Follow-Up DMG, Precision",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 2,
@@ -6178,7 +6178,7 @@
         "base_value": 14,
         "status_layers": 0,
         "description": "Takes aim at her mark. Targets the back enemy first. Deals 14 DMG. For every 10 stacks of Precision, deals +1 DMG. Deals double DMG to the farthest target.",
-        "positive_tags": "Standard风行游侠,技能输出,精准Synergy,精准Synergy,追击输出,枫木符文"
+        "positive_tags": "Standard风行游侠, Skill DMG, PrecisionSynergy, PrecisionSynergy, Follow-Up DMG, 枫木符文"
       }
     ],
     "traits": {
@@ -6295,7 +6295,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Gold光",
     "source": "Permanent",
-    "filter_tags": "技能输出,追击输出,幸运stacking",
+    "filter_tags": "Skill DMG, Follow-Up DMG, 幸运stacking",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 2,
@@ -6371,7 +6371,7 @@
         "base_value": 10,
         "status_layers": 0,
         "description": "Shoots a golden card. Targets the nearest nearest target enemies first. Deals 10 DMG. For every 2 Luck above the target, deals +1 DMG. Deals double DMG to targets with lower Luck.",
-        "positive_tags": "兔女郎风行游侠,技能输出,幸运stacking"
+        "positive_tags": "兔女郎风行游侠, Skill DMG, 幸运stacking"
       }
     ],
     "traits": {
@@ -6488,7 +6488,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "技能输出,脆弱",
+    "filter_tags": "Skill DMG, Vulnerable",
     "base_stats": {
       "cons_hp": 9,
       "str_power": 4,
@@ -6564,7 +6564,7 @@
         "base_value": 2,
         "status_layers": 3,
         "description": "Guides earth spirits to sweep the ground. Deals 2 hits of 2 DMG to all enemies, applying 3 stacks of Vulnerable per hit. If the target has no Shield, deals +1 hits.",
-        "positive_tags": "Standard地灵makes者,技能输出,脆弱Synergy,Multi-hit技能,魔晶符文"
+        "positive_tags": "Standard地灵makes者, Skill DMG, VulnerableSynergy, Multi-hitSkill, 魔晶符文"
       }
     ],
     "traits": {
@@ -6681,7 +6681,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Ghost火",
     "source": "Permanent",
-    "filter_tags": "技能输出,恐惧",
+    "filter_tags": "Skill DMG, Fear",
     "base_stats": {
       "cons_hp": 11,
       "str_power": 4,
@@ -6757,7 +6757,7 @@
         "base_value": 4,
         "status_layers": 0,
         "description": "Drags prey into endless nightmares. Targets the enemy with lowest Toughness first. Deals 3 hits of 4 DMG. For every 4 Toughness lost, deals +1 DMG. Deals double DMG if the target's Weakness is exposed.",
-        "positive_tags": "梦魇地灵makes者,技能输出,恐惧Synergy,Multi-hit技能,魔晶符文"
+        "positive_tags": "梦魇地灵makes者, Skill DMG, FearSynergy, Multi-hitSkill, 魔晶符文"
       }
     ],
     "traits": {
@@ -6874,7 +6874,7 @@
     "background": "Dawnstep Plains",
     "special_effect": "Crack",
     "source": "",
-    "filter_tags": "技能输出,坚韧,防护,净化",
+    "filter_tags": "Skill DMG, Fortitude, Protection, Cleanse",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 4,
@@ -6950,7 +6950,7 @@
         "base_value": 16,
         "status_layers": 16,
         "description": "Pulls out a massive syringe to repair damage. Targets the most injured ally first. Restores 16 HP. If the target has Weakness exposed / high HP / debuffs, grants 16 stacks of Sturdy / Shield / Cleanse respectively.",
-        "positive_tags": "Standard异界旅人,技能Recovery,信念Synergy,鼓舞Synergy,魔晶符文"
+        "positive_tags": "Standard异界旅人, SkillRecovery, FaithSynergy, InspireSynergy, 魔晶符文"
       }
     ],
     "traits": {
@@ -7127,13 +7127,13 @@
         "name": "Burning Charge",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Charges with all her strength. Targets the front enemy first. Deals 4 DMG and applies 4 stacks of Burn.",
-        "positive_tags": "技能输出,灼烧Synergy"
+        "positive_tags": "Skill DMG, BurnSynergy"
       }
     ],
     "traits": {
@@ -7303,13 +7303,13 @@
         "name": "Slime Shot",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Fires a sticky slime shot. Targets the front enemy first. Deals 4 DMG and applies 4 stacks of Slow.",
-        "positive_tags": "技能输出,减速Synergy"
+        "positive_tags": "Skill DMG, SlowSynergy"
       }
     ],
     "traits": {
@@ -7419,7 +7419,7 @@
     "background": "Wandering Woods",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "鼓舞,技能治疗",
+    "filter_tags": "Inspire, Skill Healing",
     "base_stats": {
       "cons_hp": 6,
       "str_power": 0,
@@ -7485,7 +7485,7 @@
         "base_value": 4,
         "status_layers": 2,
         "description": "Channels life energy. Targets the most injured ally first. Restores 4 HP and grants 2 stacks of Inspire.",
-        "positive_tags": "技能Recovery,鼓舞Synergy"
+        "positive_tags": "SkillRecovery, InspireSynergy"
       }
     ],
     "traits": {
@@ -7666,7 +7666,7 @@
         "base_value": 4,
         "status_layers": 0,
         "description": "Uses a healing spell. Targets the most injured ally first. Restores 4 HP. Restores +6 HP to low HP targets.",
-        "positive_tags": "技能Recovery"
+        "positive_tags": "SkillRecovery"
       }
     ],
     "traits": {
@@ -7776,7 +7776,7 @@
     "background": "Wandering Woods",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "防护,技能治疗",
+    "filter_tags": "Protection, Skill Healing",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 2,
@@ -7847,7 +7847,7 @@
         "base_value": 2,
         "status_layers": 2,
         "description": "Hardens her bark. Restores 2 HP to all allies and grants 2 stacks of Shield.",
-        "positive_tags": "技能Recovery,防护Synergy"
+        "positive_tags": "SkillRecovery, ProtectionSynergy"
       }
     ],
     "traits": {
@@ -7957,7 +7957,7 @@
     "background": "Wandering Woods",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "净化,技能治疗",
+    "filter_tags": "Cleanse, Skill Healing",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 0,
@@ -8028,7 +8028,7 @@
         "base_value": 3,
         "status_layers": 2,
         "description": "Cleanses hearts with songs. Restores 3 HP to other allies and grants 2 stacks of Cleanse.",
-        "positive_tags": "技能Recovery,净化友方"
+        "positive_tags": "SkillRecovery, Cleanse Allies"
       }
     ],
     "traits": {
@@ -8390,7 +8390,7 @@
         "base_value": 2,
         "status_layers": 0,
         "description": "Emits a disorienting sound. Deals 2 DMG to all enemies and reduces their Toughness by 2.",
-        "positive_tags": "技能输出,失韧收益"
+        "positive_tags": "Skill DMG, Tenacity Loss Bonus"
       }
     ],
     "traits": {
@@ -8500,7 +8500,7 @@
     "background": "Wandering Woods",
     "special_effect": "水flow",
     "source": "",
-    "filter_tags": "技能输出,成长",
+    "filter_tags": "Skill DMG, Growth",
     "base_stats": {
       "cons_hp": 14,
       "str_power": 2,
@@ -8570,13 +8570,13 @@
         "name": "Devour's Bite",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 12,
         "status_layers": 12,
         "description": "Swells to devour prey. Targets the front enemy first. Deals 12 DMG and gains 12 stacks of Growth.",
-        "positive_tags": "技能输出,成长Synergy"
+        "positive_tags": "Skill DMG, GrowthSynergy"
       }
     ],
     "traits": {
@@ -8693,7 +8693,7 @@
     "background": "Wandering Woods",
     "special_effect": "Luminescent火",
     "source": "",
-    "filter_tags": "技能输出,成长",
+    "filter_tags": "Skill DMG, Growth",
     "base_stats": {
       "cons_hp": 7,
       "str_power": 2,
@@ -8769,7 +8769,7 @@
         "base_value": 5,
         "status_layers": 4,
         "description": "Grows trees to bind enemies. Deals 5 DMG to all enemies. Each hit grants self 4 stacks of Growth.",
-        "positive_tags": "技能输出,成长Synergy"
+        "positive_tags": "Skill DMG, GrowthSynergy"
       }
     ],
     "traits": {
@@ -8886,7 +8886,7 @@
     "background": "Wandering Woods",
     "special_effect": "Luminescent火",
     "source": "",
-    "filter_tags": "技能输出,减速,生命flow失",
+    "filter_tags": "Skill DMG, Slow, 生命flow失",
     "base_stats": {
       "cons_hp": 7,
       "str_power": 2,
@@ -8962,7 +8962,7 @@
         "base_value": 4,
         "status_layers": 12,
         "description": "Ensnares prey with vines. Targets the enemy with highest SPD first. Deals 2 hits of 4 DMG and applies 12 stacks of Slow.",
-        "positive_tags": "技能输出,减速Synergy,Multi-hit技能"
+        "positive_tags": "Skill DMG, SlowSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -9155,7 +9155,7 @@
         "base_value": 5,
         "status_layers": 4,
         "description": "Sends blades scattering. Deals 5 DMG to all enemies and applies 4 stacks of Expose.",
-        "positive_tags": "技能输出,剥离Synergy"
+        "positive_tags": "Skill DMG, ExposeSynergy"
       }
     ],
     "traits": {
@@ -9342,13 +9342,13 @@
         "name": "Shield Bash",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 12,
         "status_layers": 12,
         "description": "Bashes with her shield. Targets the front enemy first. Deals 12 DMG and gains 12 stacks of Thorns.",
-        "positive_tags": "技能输出,反伤Synergy"
+        "positive_tags": "Skill DMG, ThornsSynergy"
       }
     ],
     "traits": {
@@ -9465,7 +9465,7 @@
     "background": "Wandering Woods",
     "special_effect": "Gold光",
     "source": "",
-    "filter_tags": "技能输出,净化,魔力stacking",
+    "filter_tags": "Skill DMG, Cleanse, 魔力stacking",
     "base_stats": {
       "cons_hp": 11,
       "str_power": 0,
@@ -9541,7 +9541,7 @@
         "base_value": 4,
         "status_layers": 5,
         "description": "Unleashes a barrage of magic missiles. Targets the enemy with highest SPI first. Deals 3 hits of 4 DMG, applying 5 stacks of Cleanse per hit. For every 2 Max Mana, deals +1 DMG.",
-        "positive_tags": "Standard史莱姆王,技能输出,净化敌方,魔力stacking,Multi-hit技能,魔晶符文"
+        "positive_tags": "Standard史莱姆王, Skill DMG, Cleanse Enemies, 魔力stacking, Multi-hitSkill, 魔晶符文"
       }
     ],
     "traits": {
@@ -9658,7 +9658,7 @@
     "background": "Wandering Woods",
     "special_effect": "Silver光",
     "source": "Permanent",
-    "filter_tags": "技能输出,泯灭",
+    "filter_tags": "Skill DMG, Decay",
     "base_stats": {
       "cons_hp": 11,
       "str_power": 0,
@@ -9734,7 +9734,7 @@
         "base_value": 7,
         "status_layers": 5,
         "description": "Summons a crystal shooting rainbow light. Deals 7 DMG to all enemies and applies 5 stacks of Decay. Each skill cast increases skill DMG by 2.",
-        "positive_tags": "水晶史莱姆王,技能输出,泯灭Synergy,魔晶符文"
+        "positive_tags": "水晶史莱姆王, Skill DMG, DecaySynergy, 魔晶符文"
       }
     ],
     "traits": {
@@ -9851,7 +9851,7 @@
     "background": "Magma Passage",
     "special_effect": "Inferno",
     "source": "Events",
-    "filter_tags": "技能输出,灼烧",
+    "filter_tags": "Skill DMG, Burn",
     "base_stats": {
       "cons_hp": 9,
       "str_power": 4,
@@ -9927,7 +9927,7 @@
         "base_value": 2,
         "status_layers": 2,
         "description": "Calls down a storm of meteors. Deals 2 hits of 2 DMG to all enemies, applying 2 stacks of Burn per hit. Targets lose DEF equal to 100% of Burn stacks applied.",
-        "positive_tags": "熔岩史莱姆王,技能输出,灼烧Synergy,Multi-hit技能"
+        "positive_tags": "熔岩史莱姆王, Skill DMG, BurnSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -10044,7 +10044,7 @@
     "background": "Wandering Woods",
     "special_effect": "Gold光",
     "source": "",
-    "filter_tags": "技能输出,友方count",
+    "filter_tags": "Skill DMG, 友方count",
     "base_stats": {
       "cons_hp": 18,
       "str_power": 2,
@@ -10120,7 +10120,7 @@
         "base_value": 8,
         "status_layers": 0,
         "description": "Turns courage to protect allies into power. Deals 8 DMG to all enemies. For every ally count, deals +2 DMG. Deals double DMG at low HP.",
-        "positive_tags": "Standard圣剑之灵,技能输出,友方count"
+        "positive_tags": "Standard圣剑之灵, Skill DMG, 友方count"
       }
     ],
     "traits": {
@@ -10237,7 +10237,7 @@
     "background": "Frostbound Tundra",
     "special_effect": "Ice",
     "source": "Intel",
-    "filter_tags": "技能输出,友方count,冰冷",
+    "filter_tags": "Skill DMG, 友方count, Chill",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 6,
@@ -10313,7 +10313,7 @@
         "base_value": 2,
         "status_layers": 0,
         "description": "Converts frost magic into her power. Deals 2 hits of 2 DMG to all enemies. For every ally count, deals +2 DMG. Deals +2 hits at low HP.",
-        "positive_tags": "极寒圣剑之灵,技能输出,友方count,Multi-hit技能"
+        "positive_tags": "极寒圣剑之灵, Skill DMG, 友方count, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -10423,14 +10423,14 @@
     "element": "Light",
     "creature_type": "Divine",
     "type": "Divine",
-    "combat_role": "治疗,防御",
-    "character_role": "治疗,防御",
+    "combat_role": "治疗, Defense",
+    "character_role": "治疗, Defense",
     "map_terrain": "Forest",
     "map": "Forest",
     "background": "Wandering Woods",
     "special_effect": "Gold光",
     "source": "",
-    "filter_tags": "友方count,成长,技能治疗",
+    "filter_tags": "友方count, Growth, Skill Healing",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 0,
@@ -10506,7 +10506,7 @@
         "base_value": 8,
         "status_layers": 0,
         "description": "Commands life energy like no other. Restores 8 HP to all allies, plus 2 for each ally count. Restores double HP to low HP targets.",
-        "positive_tags": "Standard林中仙女,技能Recovery,友方count"
+        "positive_tags": "Standard林中仙女, SkillRecovery, 友方count"
       }
     ],
     "traits": {
@@ -10616,14 +10616,14 @@
     "element": "Fire",
     "creature_type": "Divine",
     "type": "Divine",
-    "combat_role": "输出,治疗",
-    "character_role": "输出,治疗",
+    "combat_role": "DMG, 治疗",
+    "character_role": "DMG, 治疗",
     "map_terrain": "Volcano",
     "map": "Volcano",
     "background": "Magma Passage",
     "special_effect": "Inferno",
     "source": "Events",
-    "filter_tags": "灼烧,技能治疗",
+    "filter_tags": "Burn, Skill Healing",
     "base_stats": {
       "cons_hp": 14,
       "str_power": 4,
@@ -10699,7 +10699,7 @@
         "base_value": 2,
         "status_layers": 0,
         "description": "Transforms eternal fire into life energy. Restores 2 hits of 2 HP to all allies, and targets take -2 Burn stacks. For every ally count, restores +2 HP.",
-        "positive_tags": "烈焰林中仙女,技能Recovery,友方count,mana recovery gain,鼓舞Synergy,mana regen effect,mana reduction,魔晶符文"
+        "positive_tags": "烈焰林中仙女, SkillRecovery, 友方count, mana recovery gain, InspireSynergy, mana regen effect, mana reduction, 魔晶符文"
       }
     ],
     "traits": {
@@ -10876,13 +10876,13 @@
         "name": "Rapid Sting",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 2,
         "base_value": 1,
         "status_layers": 4,
         "description": "Coats blades with unknown toxins (slurp). Targets the front enemy first. Deals 2 hits of 1 DMG and applies 4 stacks of Hinder per hit.",
-        "positive_tags": "技能输出,阻碍Synergy,Multi-hit技能"
+        "positive_tags": "Skill DMG, HinderSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -11052,13 +11052,13 @@
         "name": "Iceshard Pierce",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Her blade is icy cold (sticky). Targets the front enemy first. Deals 4 DMG and applies 4 stacks of Chill.",
-        "positive_tags": "技能输出,冰冷Synergy"
+        "positive_tags": "Skill DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -11228,13 +11228,13 @@
         "name": "Stinger Shot",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Coats arrows with unknown toxins. Targets the front enemy first. Deals 4 DMG and applies 4 stacks of Hinder.",
-        "positive_tags": "技能输出,阻碍Synergy"
+        "positive_tags": "Skill DMG, HinderSynergy"
       }
     ],
     "traits": {
@@ -11404,13 +11404,13 @@
         "name": "Iceshard Bolt",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Shoots an icy cold arrow. Targets the front enemy first. Deals 4 DMG and applies 4 stacks of Chill.",
-        "positive_tags": "技能输出,冰冷Synergy"
+        "positive_tags": "Skill DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -11772,7 +11772,7 @@
         "base_value": 2,
         "status_layers": 2,
         "description": "Roars with freezing breath. Deals 2 DMG to all enemies and applies 2 stacks of Chill.",
-        "positive_tags": "技能输出,冰冷Synergy"
+        "positive_tags": "Skill DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -11947,13 +11947,13 @@
         "name": "Aerial Kick",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 6,
         "status_layers": 6,
         "description": "Dives with a fierce kick. Targets the front enemy first. Deals 6 DMG and gains 6 stacks of Haste.",
-        "positive_tags": "技能输出,加速Synergy"
+        "positive_tags": "Skill DMG, HasteSynergy"
       }
     ],
     "traits": {
@@ -12128,13 +12128,13 @@
         "name": "Glacial Kick",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 6,
         "status_layers": 6,
         "description": "Dives with a cold kick. Targets the front enemy first. Deals 6 DMG and applies 6 stacks of Chill.",
-        "positive_tags": "技能输出,冰冷Synergy"
+        "positive_tags": "Skill DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -12309,13 +12309,13 @@
         "name": "Fang Flurry",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 2,
         "base_value": 2,
         "status_layers": 6,
         "description": "Fires rapidly. Targets the front enemy first. Deals 2 hits of 2 DMG and applies 6 stacks of Expose.",
-        "positive_tags": "技能输出,剥离Synergy,Multi-hit技能"
+        "positive_tags": "Skill DMG, ExposeSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -12496,7 +12496,7 @@
         "base_value": 4,
         "status_layers": 6,
         "description": "Shoots a magic ice arrow. Targets the enemy with highest ATK first. Deals 4 DMG and applies 6 stacks of Chill.",
-        "positive_tags": "技能输出,冰冷Synergy"
+        "positive_tags": "Skill DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -12606,7 +12606,7 @@
     "background": "Boundless Steppe",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "净化,技能治疗",
+    "filter_tags": "Cleanse, Skill Healing",
     "base_stats": {
       "cons_hp": 3,
       "str_power": 4,
@@ -12677,7 +12677,7 @@
         "base_value": 4,
         "status_layers": 2,
         "description": "Awakens allies' enhancement abilities. Targets the most injured ally first. Restores 4 HP and grants 2 stacks of Cleanse to self and target.",
-        "positive_tags": "技能Recovery,净化自身,净化友方"
+        "positive_tags": "SkillRecovery, Cleanse Self, Cleanse Allies"
       }
     ],
     "traits": {
@@ -12787,7 +12787,7 @@
     "background": "Frostbound Tundra",
     "special_effect": "Ice",
     "source": "Events",
-    "filter_tags": "冰冷,技能治疗",
+    "filter_tags": "Chill, Skill Healing",
     "base_stats": {
       "cons_hp": 3,
       "str_power": 4,
@@ -12858,7 +12858,7 @@
         "base_value": 4,
         "status_layers": 0,
         "description": "Awakens allies' cold resistance. Targets the most injured ally first. Restores 4 HP and removes all Chill.",
-        "positive_tags": "技能Recovery,冰冷Synergy"
+        "positive_tags": "SkillRecovery, ChillSynergy"
       }
     ],
     "traits": {
@@ -12968,7 +12968,7 @@
     "background": "Boundless Steppe",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "技能输出,速度stacking,加速",
+    "filter_tags": "Skill DMG, 速度stacking, Haste",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 2,
@@ -13038,13 +13038,13 @@
         "name": "Fang Breaker",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 2,
         "base_value": 5,
         "status_layers": 0,
         "description": "Launches a storm of attacks. Targets the front enemy first. Deals 2 hits of 5 DMG. Deals +1 hits to targets with lower SPD.",
-        "positive_tags": "技能输出,速度stacking,Multi-hit技能"
+        "positive_tags": "Skill DMG, 速度stacking, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -13161,7 +13161,7 @@
     "background": "Frostbound Tundra",
     "special_effect": "Ice",
     "source": "Events",
-    "filter_tags": "技能输出,冰冷",
+    "filter_tags": "Skill DMG, Chill",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 4,
@@ -13231,13 +13231,13 @@
         "name": "Icebreaker Strike",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "冰冷stacks数target with most value",
+        "target": "Chillstacks数target with most value",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 10,
         "status_layers": 0,
         "description": "Charges with a powerful strike. Targets the enemy with most Chill first. Deals 10 DMG. For every 10 stacks of Chill, deals +1 DMG.",
-        "positive_tags": "技能输出,冰冷Synergy"
+        "positive_tags": "Skill DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -13354,7 +13354,7 @@
     "background": "Boundless Steppe",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "追击输出,眩晕",
+    "filter_tags": "Follow-Up DMG, Stun",
     "base_stats": {
       "cons_hp": 6,
       "str_power": 4,
@@ -13430,7 +13430,7 @@
         "base_value": 10,
         "status_layers": 0,
         "description": "Shoots a heavy arrow. Targets the back enemy first. Deals 10 DMG and increases Follow-Up DMG by 4.",
-        "positive_tags": "技能输出,追击输出"
+        "positive_tags": "Skill DMG, Follow-Up DMG"
       }
     ],
     "traits": {
@@ -13547,7 +13547,7 @@
     "background": "Frostbound Tundra",
     "special_effect": "Ice",
     "source": "Events",
-    "filter_tags": "追击输出,冰冷",
+    "filter_tags": "Follow-Up DMG, Chill",
     "base_stats": {
       "cons_hp": 6,
       "str_power": 2,
@@ -13617,13 +13617,13 @@
         "name": "Frost Mark",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "冰冷stacks数target with most value",
+        "target": "Chillstacks数target with most value",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 10,
         "status_layers": 0,
         "description": "Shoots a tracking ice arrow. Targets the enemy with most Chill first. Deals 10 DMG and increases Chill received by 2 this battle.",
-        "positive_tags": "技能输出,冰冷Synergy"
+        "positive_tags": "Skill DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -13740,7 +13740,7 @@
     "background": "Boundless Steppe",
     "special_effect": "Inferno",
     "source": "",
-    "filter_tags": "热血,技能治疗",
+    "filter_tags": "Bloodlust, Skill Healing",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 4,
@@ -13816,7 +13816,7 @@
         "base_value": 5,
         "status_layers": 3,
         "description": "Awakens wolf spirits. Restores 5 HP to all allies and grants 3 stacks of Bloodlust. Grants an extra 3 stacks to the ally with highest ATK.",
-        "positive_tags": "技能Recovery,热血Synergy"
+        "positive_tags": "SkillRecovery, BloodlustSynergy"
       }
     ],
     "traits": {
@@ -13933,7 +13933,7 @@
     "background": "Frostbound Tundra",
     "special_effect": "Ice",
     "source": "Events",
-    "filter_tags": "技能输出,冰冷",
+    "filter_tags": "Skill DMG, Chill",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 4,
@@ -14009,7 +14009,7 @@
         "base_value": 5,
         "status_layers": 3,
         "description": "Awakens frozen undead. Deals 5 DMG to all enemies and applies 3 stacks of Chill. Applies an extra 3 stacks to the enemy with highest ATK.",
-        "positive_tags": "技能输出,冰冷Synergy"
+        "positive_tags": "Skill DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -14126,7 +14126,7 @@
     "background": "Boundless Steppe",
     "special_effect": "spin风",
     "source": "",
-    "filter_tags": "技能输出,追击输出",
+    "filter_tags": "Skill DMG, Follow-Up DMG",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 2,
@@ -14202,7 +14202,7 @@
         "base_value": 6,
         "status_layers": 0,
         "description": "Shoots blade-sharp feathers. Targets the enemy with lowest HP first and deals 2 hits of 6 DMG. Each hit grants +1 instances for the next 1 Follow-Ups.",
-        "positive_tags": "Standard鹰身公主,技能输出,追击输出,Multi-hit技能,枫木符文"
+        "positive_tags": "Standard鹰身公主, Skill DMG, Follow-Up DMG, Multi-hitSkill, 枫木符文"
       }
     ],
     "traits": {
@@ -14319,7 +14319,7 @@
     "background": "Frostbound Tundra",
     "special_effect": "Ice",
     "source": "Events",
-    "filter_tags": "技能输出,追击输出,冰冷",
+    "filter_tags": "Skill DMG, Follow-Up DMG, Chill",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 2,
@@ -14395,7 +14395,7 @@
         "base_value": 8,
         "status_layers": 5,
         "description": "Shoots sharp ice feathers. Deals 8 DMG to all enemies and applies 5 stacks of Chill. For every 50 stacks of Chill on all enemies, increases next Follow-Up DMG by 1.",
-        "positive_tags": "极寒鹰身公主,技能输出,追击输出,冰冷Synergy"
+        "positive_tags": "极寒鹰身公主, Skill DMG, Follow-Up DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -14512,7 +14512,7 @@
     "background": "Boundless Steppe",
     "special_effect": "Toxic Fog",
     "source": "",
-    "filter_tags": "生命flow失,阻碍",
+    "filter_tags": "生命flow失, Hinder",
     "base_stats": {
       "cons_hp": 9,
       "str_power": 4,
@@ -14588,7 +14588,7 @@
         "base_value": 8,
         "status_layers": 5,
         "description": "Summons wasps to break enemy resistance. Deals 8 DMG to all enemies and applies 5 stacks of Hinder. For every 2 stacks of Hinder applied, the target loses 1 HP.",
-        "positive_tags": "Standard黄蜂魔女,技能输出,阻碍Synergy,失血收益"
+        "positive_tags": "Standard黄蜂魔女, Skill DMG, HinderSynergy, HP Loss Bonus"
       }
     ],
     "traits": {
@@ -14705,7 +14705,7 @@
     "background": "Frostbound Tundra",
     "special_effect": "Ice",
     "source": "Events",
-    "filter_tags": "生命flow失,冰冷",
+    "filter_tags": "生命flow失, Chill",
     "base_stats": {
       "cons_hp": 9,
       "str_power": 4,
@@ -14781,7 +14781,7 @@
         "base_value": 8,
         "status_layers": 5,
         "description": "Summons frostbees to freeze enemies. Deals 8 DMG to all enemies and applies 5 stacks of Chill. For every 2 stacks of Chill applied, the target loses 1 HP.",
-        "positive_tags": "极寒黄蜂魔女,技能输出,冰冷Synergy,失血收益"
+        "positive_tags": "极寒黄蜂魔女, Skill DMG, ChillSynergy, HP Loss Bonus"
       }
     ],
     "traits": {
@@ -14974,7 +14974,7 @@
         "base_value": 16,
         "status_layers": 0,
         "description": "Devours surrounding cold. Restores 16 HP and gains 10 Toughness and max Toughness. Removes Chill from all allies equal to their current Toughness.",
-        "positive_tags": "Standard雪人骑士,技能Recovery,韧性stacking"
+        "positive_tags": "Standard雪人骑士, SkillRecovery, 韧性stacking"
       }
     ],
     "traits": {
@@ -15167,7 +15167,7 @@
         "base_value": 16,
         "status_layers": 0,
         "description": "Devours surrounding flames. Restores 16 HP and gains 20 max HP. Removes Burn from all allies equal to half of own max HP.",
-        "positive_tags": "熔岩雪人骑士,技能Recovery,生命stacking,成长Synergy,血石符文"
+        "positive_tags": "熔岩雪人骑士, SkillRecovery, 生命stacking, GrowthSynergy, 血石符文"
       }
     ],
     "traits": {
@@ -15277,14 +15277,14 @@
     "element": "Water",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "输出,推荐",
-    "character_role": "输出,推荐",
+    "combat_role": "DMG, Recommended",
+    "character_role": "DMG, Recommended",
     "map_terrain": "Tundra",
     "map": "Tundra",
     "background": "Frostbound Tundra",
     "special_effect": "Ice",
     "source": "",
-    "filter_tags": "追击输出,生命flow失,冰冷",
+    "filter_tags": "Follow-Up DMG, 生命flow失, Chill",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 4,
@@ -15360,7 +15360,7 @@
         "base_value": 4,
         "status_layers": 0,
         "description": "Wraps enemies in layers of webs. Targets the enemy with highest ATK first. Deals 3 hits of 4 DMG. Each hit causes the target to lose 5 HP and applies Chill equal to HP lost.",
-        "positive_tags": "Standard冰蛛女王,技能输出,冰冷Synergy,失血收益,Multi-hit技能"
+        "positive_tags": "Standard冰蛛女王, Skill DMG, ChillSynergy, HP Loss Bonus, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -15537,13 +15537,13 @@
         "name": "Power Smash",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 0,
         "description": "Slams down her pickaxe. Targets the front enemy first. Deals 4 DMG. Deals +4 DMG to targets without Shield.",
-        "positive_tags": "技能输出,防护Synergy"
+        "positive_tags": "Skill DMG, ProtectionSynergy"
       }
     ],
     "traits": {
@@ -15562,8 +15562,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10105",
@@ -15713,13 +15713,13 @@
         "name": "Shovel Slam",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 0,
         "description": "Slams down her shovel. Targets the front enemy first. Deals 4 DMG. Deals +4 DMG to targets with Burn.",
-        "positive_tags": "技能输出,灼烧Synergy"
+        "positive_tags": "Skill DMG, BurnSynergy"
       }
     ],
     "traits": {
@@ -15738,8 +15738,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10105",
@@ -15889,13 +15889,13 @@
         "name": "Hurl",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Hurls a rock. Targets the front enemy first. Deals 4 DMG and applies 4 stacks of Vulnerable.",
-        "positive_tags": "技能输出,脆弱Synergy"
+        "positive_tags": "Skill DMG, VulnerableSynergy"
       }
     ],
     "traits": {
@@ -15914,8 +15914,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10105",
@@ -16065,13 +16065,13 @@
         "name": "Crystal Hurl",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Hurls a fire crystal. Targets the front enemy first. Deals 4 DMG and applies 4 stacks of Burn.",
-        "positive_tags": "技能输出,灼烧Synergy"
+        "positive_tags": "Skill DMG, BurnSynergy"
       }
     ],
     "traits": {
@@ -16090,8 +16090,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10105",
@@ -16246,13 +16246,13 @@
         "name": "Concussive Blow",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 6,
         "status_layers": 0,
         "description": "Swings her hammer to smash the ground. Targets the front enemy first. Deals 6 DMG and reduces the target's Toughness by 6.",
-        "positive_tags": "技能输出,失韧收益"
+        "positive_tags": "Skill DMG, Tenacity Loss Bonus"
       }
     ],
     "traits": {
@@ -16433,7 +16433,7 @@
         "base_value": 3,
         "status_layers": 3,
         "description": "Swings her hammer to smash the ground. Targets the nearest nearest target enemies. Deals 3 DMG and applies 3 stacks of Burn.",
-        "positive_tags": "技能输出,灼烧Synergy"
+        "positive_tags": "Skill DMG, BurnSynergy"
       }
     ],
     "traits": {
@@ -16608,13 +16608,13 @@
         "name": "Boulder Toss",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "中排Target",
+        "target": "Mid RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 0,
         "description": "Hurls a boulder with force. Targets the mid enemy first. Deals 4 DMG and reduces the target's Toughness by 6.",
-        "positive_tags": "技能输出,失韧收益"
+        "positive_tags": "Skill DMG, Tenacity Loss Bonus"
       }
     ],
     "traits": {
@@ -16789,13 +16789,13 @@
         "name": "Magma Hurl",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 2,
         "status_layers": 10,
         "description": "Hurls molten rock with force. Targets the front enemy first. Deals 2 DMG and applies 10 stacks of Burn.",
-        "positive_tags": "技能输出,灼烧Synergy"
+        "positive_tags": "Skill DMG, BurnSynergy"
       }
     ],
     "traits": {
@@ -16976,7 +16976,7 @@
         "base_value": 3,
         "status_layers": 2,
         "description": "Cheers on her teammates. Restores 3 HP to other allies and grants 2 stacks of Inspire.",
-        "positive_tags": "技能Recovery,鼓舞Synergy"
+        "positive_tags": "SkillRecovery, InspireSynergy"
       }
     ],
     "traits": {
@@ -16995,8 +16995,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10102",
@@ -17086,7 +17086,7 @@
     "background": "Forsaken Mines",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "信念,净化",
+    "filter_tags": "Faith, Cleanse",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 2,
@@ -17157,7 +17157,7 @@
         "base_value": 2,
         "status_layers": 6,
         "description": "Radiates holy light. Restores 2 HP to all allies and gains 6 stacks of Faith.",
-        "positive_tags": "技能Recovery,信念Synergy"
+        "positive_tags": "SkillRecovery, FaithSynergy"
       }
     ],
     "traits": {
@@ -17267,7 +17267,7 @@
     "background": "Forsaken Mines",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "鼓舞,额外行动",
+    "filter_tags": "Inspire, Extra Action",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 4,
@@ -17343,7 +17343,7 @@
         "base_value": 7,
         "status_layers": 0,
         "description": "Constantly pushes her teammates. Restores 7 HP to other allies and each takes 1 extra actions, but reduces Action Mana by 2.",
-        "positive_tags": "技能Recovery,额外行动"
+        "positive_tags": "SkillRecovery, Extra Action"
       }
     ],
     "traits": {
@@ -17453,14 +17453,14 @@
     "element": "Fire",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "输出,辅助",
-    "character_role": "输出,辅助",
+    "combat_role": "DMG, Support",
+    "character_role": "DMG, Support",
     "map_terrain": "Volcano",
     "map": "Volcano",
     "background": "Magma Passage",
     "special_effect": "Inferno",
     "source": "Events",
-    "filter_tags": "灼烧,强制行动",
+    "filter_tags": "Burn, Forced Action",
     "base_stats": {
       "cons_hp": 5,
       "str_power": 4,
@@ -17536,7 +17536,7 @@
         "base_value": 7,
         "status_layers": 0,
         "description": "Provokes enemies into a fury. Targets the nearest nearest target enemies. Deals 7 DMG. Each target immediately takes 1 Extra Actions without gaining Mana.",
-        "positive_tags": "技能输出,灼烧Synergy"
+        "positive_tags": "Skill DMG, BurnSynergy"
       }
     ],
     "traits": {
@@ -17653,7 +17653,7 @@
     "background": "Forsaken Mines",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "防护,技能治疗",
+    "filter_tags": "Protection, Skill Healing",
     "base_stats": {
       "cons_hp": 14,
       "str_power": 4,
@@ -17729,7 +17729,7 @@
         "base_value": 12,
         "status_layers": 12,
         "description": "Forms a stone shield. Restores 12 HP and gains 12 stacks of Shield.",
-        "positive_tags": "技能Recovery,防护Synergy"
+        "positive_tags": "SkillRecovery, ProtectionSynergy"
       }
     ],
     "traits": {
@@ -17839,14 +17839,14 @@
     "element": "Fire",
     "creature_type": "Demon",
     "type": "Demon",
-    "combat_role": "输出,防御",
-    "character_role": "输出,防御",
+    "combat_role": "DMG, Defense",
+    "character_role": "DMG, Defense",
     "map_terrain": "Volcano",
     "map": "Volcano",
     "background": "Magma Passage",
     "special_effect": "Inferno",
     "source": "Events",
-    "filter_tags": "防护,灼烧,技能治疗",
+    "filter_tags": "Protection, Burn, Skill Healing",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 4,
@@ -17922,7 +17922,7 @@
         "base_value": 12,
         "status_layers": 6,
         "description": "Forms a shield from molten rock. Restores 12 HP and gains 6 stacks of Shield. For the rest of this battle, applies 4 stacks of Burn to attackers when hit.",
-        "positive_tags": "技能Recovery,灼烧Synergy"
+        "positive_tags": "SkillRecovery, BurnSynergy"
       }
     ],
     "traits": {
@@ -18115,7 +18115,7 @@
         "base_value": 5,
         "status_layers": 4,
         "description": "Lashes with a flame whip to burn everything. Deals 5 DMG to all enemies and applies 4 stacks of Burn.",
-        "positive_tags": "技能输出,灼烧Synergy"
+        "positive_tags": "Skill DMG, BurnSynergy"
       }
     ],
     "traits": {
@@ -18232,7 +18232,7 @@
     "background": "Forsaken Mines",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "技能输出,脆弱",
+    "filter_tags": "Skill DMG, Vulnerable",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 4,
@@ -18308,7 +18308,7 @@
         "base_value": 5,
         "status_layers": 4,
         "description": "Fires a piercing cannonball. Deals 5 DMG to all enemies and applies 4 stacks of Vulnerable.",
-        "positive_tags": "技能输出,脆弱Synergy"
+        "positive_tags": "Skill DMG, VulnerableSynergy"
       }
     ],
     "traits": {
@@ -18425,7 +18425,7 @@
     "background": "Magma Passage",
     "special_effect": "Inferno",
     "source": "Events",
-    "filter_tags": "技能输出,灼烧",
+    "filter_tags": "Skill DMG, Burn",
     "base_stats": {
       "cons_hp": 6,
       "str_power": 4,
@@ -18495,13 +18495,13 @@
         "name": "Incendiary Shell",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 12,
         "status_layers": 12,
         "description": "Fires an incendiary shell. Targets the front enemy first. Deals 12 DMG and applies 12 stacks of Burn. If the target already has Burn, increases existing Burn stacks by 25%.",
-        "positive_tags": "技能输出,灼烧Synergy"
+        "positive_tags": "Skill DMG, BurnSynergy"
       }
     ],
     "traits": {
@@ -18618,7 +18618,7 @@
     "background": "Forsaken Mines",
     "special_effect": "Gold光",
     "source": "",
-    "filter_tags": "技能输出,精准",
+    "filter_tags": "Skill DMG, Precision",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 2,
@@ -18694,7 +18694,7 @@
         "base_value": 4,
         "status_layers": 0,
         "description": "Fires a volley of light arrows. Targets the back enemy first. Deals 2 hits of 4 DMG. Deals +1 hits to back enemies.",
-        "positive_tags": "技能输出,Multi-hit技能"
+        "positive_tags": "Skill DMG, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -18811,7 +18811,7 @@
     "background": "Magma Passage",
     "special_effect": "Inferno",
     "source": "Events",
-    "filter_tags": "技能输出,灼烧",
+    "filter_tags": "Skill DMG, Burn",
     "base_stats": {
       "cons_hp": 6,
       "str_power": 4,
@@ -18887,7 +18887,7 @@
         "base_value": 2,
         "status_layers": 8,
         "description": "Rains fire across the battlefield. Deals 2 DMG to all enemies and applies 8 stacks of Burn. Applies double Burn stacks to targets already afflicted with Burn.",
-        "positive_tags": "技能输出,灼烧Synergy"
+        "positive_tags": "Skill DMG, BurnSynergy"
       }
     ],
     "traits": {
@@ -19004,7 +19004,7 @@
     "background": "Forsaken Mines",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "技能输出,脆弱",
+    "filter_tags": "Skill DMG, Vulnerable",
     "base_stats": {
       "cons_hp": 11,
       "str_power": 4,
@@ -19080,7 +19080,7 @@
         "base_value": 8,
         "status_layers": 5,
         "description": "Forms countless stone pillars with earth power. Deals 8 DMG and applies 5 stacks of Vulnerable to all enemies. For each skill target, deals +50% DMG. Each point of DMG consumes 2 stacks of Vulnerable.",
-        "positive_tags": "Standard大地魔女,技能输出,脆弱Synergy,魔晶符文"
+        "positive_tags": "Standard大地魔女, Skill DMG, VulnerableSynergy, 魔晶符文"
       }
     ],
     "traits": {
@@ -19099,8 +19099,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10422",
@@ -19197,7 +19197,7 @@
     "background": "Endless Desert",
     "special_effect": "Flying Sand",
     "source": "Events",
-    "filter_tags": "技能输出,减速",
+    "filter_tags": "Skill DMG, Slow",
     "base_stats": {
       "cons_hp": 9,
       "str_power": 2,
@@ -19273,7 +19273,7 @@
         "base_value": 2,
         "status_layers": 2,
         "description": "Commands endless sand to crush her foes. Deals 2 hits of 2 DMG and applies 2 stacks of Slow per hit to all enemies. For each skill target, deals +1 hits. Deals +1 DMG per 10 stacks of Slow on the target.",
-        "positive_tags": "黄沙大地魔女,技能输出,减速Synergy,失血收益,黄沙符文"
+        "positive_tags": "黄沙大地魔女, Skill DMG, SlowSynergy, HP Loss Bonus, 黄沙符文"
       }
     ],
     "traits": {
@@ -19292,8 +19292,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10422_001",
@@ -19390,7 +19390,7 @@
     "background": "Magma Passage",
     "special_effect": "Inferno",
     "source": "Events",
-    "filter_tags": "技能输出,灼烧",
+    "filter_tags": "Skill DMG, Burn",
     "base_stats": {
       "cons_hp": 9,
       "str_power": 4,
@@ -19466,7 +19466,7 @@
         "base_value": 1,
         "status_layers": 4,
         "description": "Shapes flames into a blazing sun. Deals 2 hits of 1 DMG and applies 4 stacks of Burn per hit to all enemies. For each skill target, increases Burn stacks applied by 100%.",
-        "positive_tags": "熔岩大地魔女,技能输出,Multi-hit技能,灼烧Synergy"
+        "positive_tags": "熔岩大地魔女, Skill DMG, Multi-hitSkill, BurnSynergy"
       }
     ],
     "traits": {
@@ -19485,8 +19485,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10422_002",
@@ -19583,7 +19583,7 @@
     "background": "Forsaken Mines",
     "special_effect": "Gold光",
     "source": "",
-    "filter_tags": "技能治疗,防护",
+    "filter_tags": "Skill Healing, Protection",
     "base_stats": {
       "cons_hp": 18,
       "str_power": 2,
@@ -19659,7 +19659,7 @@
         "base_value": 16,
         "status_layers": 0,
         "description": "Repairs herself with gold. Restores 16 HP. Excess HP converts to double Shield.",
-        "positive_tags": "Standard黄Gold之女,技能Recovery,防护Synergy"
+        "positive_tags": "Standard黄Gold之女, SkillRecovery, ProtectionSynergy"
       }
     ],
     "traits": {
@@ -19769,14 +19769,14 @@
     "element": "Fire",
     "creature_type": "Demon",
     "type": "Demon",
-    "combat_role": "输出,防御",
-    "character_role": "输出,防御",
+    "combat_role": "DMG, Defense",
+    "character_role": "DMG, Defense",
     "map_terrain": "Volcano",
     "map": "Volcano",
     "background": "Magma Passage",
     "special_effect": "Inferno",
     "source": "Events",
-    "filter_tags": "韧性stacking,灼烧",
+    "filter_tags": "韧性stacking, Burn",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 4,
@@ -19852,7 +19852,7 @@
         "base_value": 8,
         "status_layers": 0,
         "description": "Shatters molten rock everywhere. Deals 8 DMG to all enemies. Gains +10 Max Toughness and applies Burn stacks equal to own current Toughness stacks to targets.",
-        "positive_tags": "熔岩黄Gold之女,技能输出,韧性stacking,灼烧Synergy"
+        "positive_tags": "熔岩黄Gold之女, Skill DMG, 韧性stacking, BurnSynergy"
       }
     ],
     "traits": {
@@ -19969,7 +19969,7 @@
     "background": "Magma Passage",
     "special_effect": "Inferno",
     "source": "Events",
-    "filter_tags": "韧性stacking,灼烧",
+    "filter_tags": "韧性stacking, Burn",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 4,
@@ -20045,7 +20045,7 @@
         "base_value": 4,
         "status_layers": 10,
         "description": "Breathes deadly scorching dragonfire. Deals 4 DMG and applies 10 stacks of Burn to all enemies. If the target's Burn is at max stacks, the target loses HP equal to 100% of their Burn stacks.",
-        "positive_tags": "Standard赤焰龙女,技能输出,灼烧Synergy"
+        "positive_tags": "Standard赤焰龙女, Skill DMG, BurnSynergy"
       }
     ],
     "traits": {
@@ -20222,13 +20222,13 @@
         "name": "Harpoon Strike",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Thrusts her harpoon. Targets the front enemy first. Deals 4 DMG and applies 4 stacks of Chill.",
-        "positive_tags": "技能输出,冰冷Synergy"
+        "positive_tags": "Skill DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -20247,8 +20247,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10001",
@@ -20404,7 +20404,7 @@
         "base_value": 2,
         "status_layers": 2,
         "description": "Thrusts her harpoon forcefully. Targets the nearest nearest target enemies first. Deals 2 DMG and applies 2 stacks of Chill.",
-        "positive_tags": "技能输出,冰冷Synergy"
+        "positive_tags": "Skill DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -20423,8 +20423,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10005",
@@ -20574,13 +20574,13 @@
         "name": "Bloodlust Blessing",
         "skill_type": "Support",
         "action_type": "生命Recovery",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Stirs allies' fighting spirit. Targets the front ally first. Restores 4 HP and grants 4 stacks of Bloodlust.",
-        "positive_tags": "技能Recovery,热血Synergy"
+        "positive_tags": "SkillRecovery, BloodlustSynergy"
       }
     ],
     "traits": {
@@ -20599,8 +20599,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10102",
@@ -20761,7 +20761,7 @@
         "base_value": 6,
         "status_layers": 4,
         "description": "Cleanses herself with ocean power. Restores 6 HP and gains 4 stacks of Cleanse.",
-        "positive_tags": "技能Recovery,净化自身"
+        "positive_tags": "SkillRecovery, Cleanse Self"
       }
     ],
     "traits": {
@@ -20780,8 +20780,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10003",
@@ -20942,7 +20942,7 @@
         "base_value": 3,
         "status_layers": 3,
         "description": "Cracks a whip to rally teammates. Restores 3 HP to other allies and grants 3 stacks of Bloodlust.",
-        "positive_tags": "技能Recovery,热血Synergy"
+        "positive_tags": "SkillRecovery, BloodlustSynergy"
       }
     ],
     "traits": {
@@ -20961,8 +20961,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10001",
@@ -21123,7 +21123,7 @@
         "base_value": 3,
         "status_layers": 3,
         "description": "Heals with flowing water. Restores 3 HP to the most injured most damaged target allies and grants 3 stacks of Soothe.",
-        "positive_tags": "技能Recovery,滋润Synergy"
+        "positive_tags": "SkillRecovery, SootheSynergy"
       }
     ],
     "traits": {
@@ -21142,8 +21142,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10104",
@@ -21298,13 +21298,13 @@
         "name": "Lifesteal Strike",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 6,
         "status_layers": 6,
         "description": "Launches a swift assault. Targets the front enemy first. Deals 6 DMG and gains 6 stacks of Reversal.",
-        "positive_tags": "技能输出,逆转Synergy"
+        "positive_tags": "Skill DMG, ReversalSynergy"
       }
     ],
     "traits": {
@@ -21484,7 +21484,7 @@
         "hit_times": 1,
         "base_value": 2,
         "status_layers": 0,
-        "description": "幽灵枪手instantly fires a barrage of projectiles，against敌方deals to all targets2DMG pts，for each missing1targets to increase currentdealsDMG+3。",
+        "description": "幽灵枪手instantly fires a barrage of projectiles, against敌方deals to all targets2DMG pts, for each missing1targets to increase currentdealsDMG+3。",
         "positive_tags": "Skill DMG"
       }
     ],
@@ -21595,7 +21595,7 @@
     "background": "The Sunken Sea",
     "special_effect": "水flow",
     "source": "",
-    "filter_tags": "冰冷,眩晕",
+    "filter_tags": "Chill, Stun",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 2,
@@ -21671,7 +21671,7 @@
         "base_value": 5,
         "status_layers": 4,
         "description": "Quickly locks onto enemy weaknesses. Deals 5 DMG to all enemies and applies 4 stacks of Chill.",
-        "positive_tags": "技能输出,冰冷Synergy"
+        "positive_tags": "Skill DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -21690,8 +21690,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10409",
@@ -21788,7 +21788,7 @@
     "background": "The Sunken Sea",
     "special_effect": "水flow",
     "source": "",
-    "filter_tags": "反击输出,净化",
+    "filter_tags": "Counter DMG, Cleanse",
     "base_stats": {
       "cons_hp": 14,
       "str_power": 2,
@@ -21864,7 +21864,7 @@
         "base_value": 7,
         "status_layers": 5,
         "description": "Calls forth a tidal wave. Targets the nearest nearest target enemies first. Deals 7 DMG and applies 5 stacks of Cleanse.",
-        "positive_tags": "技能输出,净化敌方"
+        "positive_tags": "Skill DMG, Cleanse Enemies"
       }
     ],
     "traits": {
@@ -21981,7 +21981,7 @@
     "background": "The Sunken Sea",
     "special_effect": "水flow",
     "source": "",
-    "filter_tags": "技能输出,净化",
+    "filter_tags": "Skill DMG, Cleanse",
     "base_stats": {
       "cons_hp": 7,
       "str_power": 2,
@@ -22051,13 +22051,13 @@
         "name": "Aqua Volley",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 2,
         "base_value": 5,
         "status_layers": 10,
         "description": "Fires a stream of water bullets. Targets the front enemy first. Deals 2 hits of 5 DMG and applies 10 stacks of Cleanse per hit.",
-        "positive_tags": "技能输出,净化敌方,Multi-hit技能"
+        "positive_tags": "Skill DMG, Cleanse Enemies, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -22174,7 +22174,7 @@
     "background": "The Sunken Sea",
     "special_effect": "Ghost火",
     "source": "",
-    "filter_tags": "反击输出,诱导",
+    "filter_tags": "Counter DMG, Taunt",
     "base_stats": {
       "cons_hp": 14,
       "str_power": 4,
@@ -22250,7 +22250,7 @@
         "base_value": 5,
         "status_layers": 4,
         "description": "Roars with magical power. Deals 5 DMG to all enemies and applies 4 stacks of Lure.",
-        "positive_tags": "技能输出,诱导Synergy"
+        "positive_tags": "Skill DMG, TauntSynergy"
       }
     ],
     "traits": {
@@ -22367,7 +22367,7 @@
     "background": "The Sunken Sea",
     "special_effect": "Ghost火",
     "source": "",
-    "filter_tags": "技能输出,剥离",
+    "filter_tags": "Skill DMG, Expose",
     "base_stats": {
       "cons_hp": 18,
       "str_power": 4,
@@ -22443,7 +22443,7 @@
         "base_value": 2,
         "status_layers": 4,
         "description": "Controls spirit blades to cut those who dare offend her. Targets the enemy with highest HP first. Deals 4 hits of 2 DMG, applying 4 stacks of Expose per hit. Gains HP equal to stacks applied.",
-        "positive_tags": "Standard幽灵船长,技能输出,剥离Synergy,Multi-hit技能"
+        "positive_tags": "Standard幽灵船长, Skill DMG, ExposeSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -22553,14 +22553,14 @@
     "element": "Earth",
     "creature_type": "Undead",
     "type": "Undead",
-    "combat_role": "输出,防御",
-    "character_role": "输出,防御",
+    "combat_role": "DMG, Defense",
+    "character_role": "DMG, Defense",
     "map_terrain": "Ocean",
     "map": "Ocean",
     "background": "The Sunken Sea",
     "special_effect": "Silver光",
     "source": "Permanent",
-    "filter_tags": "技能输出,诱导",
+    "filter_tags": "Skill DMG, Taunt",
     "base_stats": {
       "cons_hp": 18,
       "str_power": 4,
@@ -22636,7 +22636,7 @@
         "base_value": 2,
         "status_layers": 4,
         "description": "Controls flying blades to pierce confused enemies. Targets the enemy with highest ATK first. Deals 4 hits of 2 DMG, applying 4 stacks of Lure per hit. Gains HP equal to stacks applied.",
-        "positive_tags": "马戏团幽灵船长,技能输出,诱导Synergy,Multi-hit技能"
+        "positive_tags": "马戏团幽灵船长, Skill DMG, TauntSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -22753,7 +22753,7 @@
     "background": "The Sunken Sea",
     "special_effect": "水flow",
     "source": "",
-    "filter_tags": "滋润,技能治疗",
+    "filter_tags": "Soothe, Skill Healing",
     "base_stats": {
       "cons_hp": 14,
       "str_power": 2,
@@ -22829,7 +22829,7 @@
         "base_value": 6,
         "status_layers": 16,
         "description": "Controls water orbs rich in life energy. Prioritizes the most injured ally, restoring 6 HP 2 times and granting 16 stacks of Soothe. For every 10 stacks of Soothe the target has, this heal increases by 1.",
-        "positive_tags": "Standard宁静水灵,技能Recovery,滋润Synergy"
+        "positive_tags": "Standard宁静水灵, SkillRecovery, SootheSynergy"
       }
     ],
     "traits": {
@@ -22946,7 +22946,7 @@
     "background": "Forsaken Mines",
     "special_effect": "Silver光",
     "source": "Permanent",
-    "filter_tags": "技能治疗,净化",
+    "filter_tags": "Skill Healing, Cleanse",
     "base_stats": {
       "cons_hp": 14,
       "str_power": 2,
@@ -23022,7 +23022,7 @@
         "base_value": 7,
         "status_layers": 5,
         "description": "Radiates silver light full of purity. Restores 7 HP to all allies and grants 5 stacks of Cleanse. For every 2 stacks of debuffs cleansed, the target gains 1 Toughness. If the target has no debuffs, restores double HP.",
-        "positive_tags": "白Silver宁静水灵,技能Recovery,净化友方,净化自身,toughness recovery gain"
+        "positive_tags": "白Silver宁静水灵, SkillRecovery, Cleanse Allies, Cleanse Self, toughness recovery gain"
       }
     ],
     "traits": {
@@ -23205,7 +23205,7 @@
         "base_value": 4,
         "status_layers": 4,
         "description": "Focuses quickly. Restores 4 HP and gains 4 stacks of Precision.",
-        "positive_tags": "技能Recovery,精准Synergy"
+        "positive_tags": "SkillRecovery, PrecisionSynergy"
       }
     ],
     "traits": {
@@ -23375,13 +23375,13 @@
         "name": "Rock Throw",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 0,
         "description": "Hurls a rock with all her might. Targets the front enemy first. Deals 4 DMG and reduces the target's Toughness by 4.",
-        "positive_tags": "技能输出,失韧收益"
+        "positive_tags": "Skill DMG, Tenacity Loss Bonus"
       }
     ],
     "traits": {
@@ -23556,13 +23556,13 @@
         "name": "Magic Missile",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 2,
         "base_value": 2,
         "status_layers": 0,
         "description": "Fires tracking missiles. Targets the front enemy first. Deals 2 hits of 2 DMG. Deals +6 DMG if the target's Weakness is exposed.",
-        "positive_tags": "技能输出,toughness reduction effect,Multi-hit技能"
+        "positive_tags": "Skill DMG, toughness reduction effect, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -23737,13 +23737,13 @@
         "name": "Haymaker",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 6,
         "status_layers": 0,
         "description": "Charges up a strike. Targets the front enemy first. Deals 6 DMG. Deals +6 DMG if the target's Weakness is exposed.",
-        "positive_tags": "技能输出,toughness reduction effect"
+        "positive_tags": "Skill DMG, toughness reduction effect"
       }
     ],
     "traits": {
@@ -23853,7 +23853,7 @@
     "background": "Shadowveil Grove",
     "special_effect": "Wraith",
     "source": "",
-    "filter_tags": "自身战败,净化",
+    "filter_tags": "Defeat, Cleanse",
     "base_stats": {
       "cons_hp": 7,
       "str_power": 2,
@@ -23929,7 +23929,7 @@
         "base_value": 10,
         "status_layers": 0,
         "description": "Sacrifices her own soul. Targets the enemy with lowest HP first. Deals 10 DMG and triggers own defeat effect. Max 2 times per turn.",
-        "positive_tags": "Standard魂能法师,技能输出,自身战败"
+        "positive_tags": "Standard魂能法师, Skill DMG, Defeat"
       }
     ],
     "traits": {
@@ -24046,7 +24046,7 @@
     "background": "Shadowveil Grove",
     "special_effect": "Inferno",
     "source": "",
-    "filter_tags": "技能输出,额外行动",
+    "filter_tags": "Skill DMG, Extra Action",
     "base_stats": {
       "cons_hp": 7,
       "str_power": 2,
@@ -24239,7 +24239,7 @@
     "background": "Shadowveil Grove",
     "special_effect": "Luminescent火",
     "source": "",
-    "filter_tags": "技能输出,诱导",
+    "filter_tags": "Skill DMG, Taunt",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 2,
@@ -24315,7 +24315,7 @@
         "base_value": 4,
         "status_layers": 12,
         "description": "Throws cards to mislead. Targets the back enemy first. Deals 2 hits of 4 DMG and applies 12 stacks of Lure.",
-        "positive_tags": "技能输出,诱导Synergy,Multi-hit技能"
+        "positive_tags": "Skill DMG, TauntSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -24328,8 +24328,8 @@
       "Feature": {
         "code": "BD40945",
         "name": "Spell Bait",
-        "effect": "【DMG boost】for each stack on target15stacks诱导makes自身deals to it技能DMG+1。",
-        "description": "【DMG boost】for each stack on target15stacks诱导makes自身deals to it技能DMG+1。"
+        "effect": "【DMG boost】for each stack on target15stacksTauntmakes自身deals to itSkillDMG+1。",
+        "description": "【DMG boost】for each stack on target15stacksTauntmakes自身deals to itSkillDMG+1。"
       },
       "Race": {
         "code": "BD20105",
@@ -24508,7 +24508,7 @@
         "base_value": 5,
         "status_layers": 0,
         "description": "Shares cultivated fruits with all allies to restore them 5 HP, and grants 4 HP Gain to the target.",
-        "positive_tags": "技能Recovery,healing efficiency"
+        "positive_tags": "SkillRecovery, healing efficiency"
       }
     ],
     "traits": {
@@ -24625,7 +24625,7 @@
     "background": "Shadowveil Grove",
     "special_effect": "Lightning",
     "source": "",
-    "filter_tags": "技能输出,韧性stacking",
+    "filter_tags": "Skill DMG, 韧性stacking",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 0,
@@ -24695,13 +24695,13 @@
         "name": "Rage Sweep",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 12,
         "status_layers": 0,
         "description": "Swings her spear wildly. Targets the front enemy first. Deals 12 DMG. For every 5 Toughness lost this battle, deals +1 DMG.",
-        "positive_tags": "技能输出,韧性stacking,toughness regen effect"
+        "positive_tags": "Skill DMG, 韧性stacking, toughness regen effect"
       }
     ],
     "traits": {
@@ -24894,7 +24894,7 @@
         "base_value": 8,
         "status_layers": 0,
         "description": "Takes a final bow for the performance. Deals 8 DMG to all enemies. For every 1 fewer enemies, deals +100% DMG. Deals an extra +100% DMG to the sole survivor.",
-        "positive_tags": "Standard魔术大师,技能输出,魔晶符文"
+        "positive_tags": "Standard魔术大师, Skill DMG, 魔晶符文"
       }
     ],
     "traits": {
@@ -25011,7 +25011,7 @@
     "background": "Shadowveil Grove",
     "special_effect": "Gold光",
     "source": "Permanent",
-    "filter_tags": "技能输出,幸运stacking",
+    "filter_tags": "Skill DMG, 幸运stacking",
     "base_stats": {
       "cons_hp": 11,
       "str_power": 0,
@@ -25087,7 +25087,7 @@
         "base_value": 2,
         "status_layers": 0,
         "description": "Holds a grand carnival party. Deals 2 hits of 2 DMG to all enemies. For every 25 Luck, deals +1 hits. Deals double DMG to the sole surviving enemy.",
-        "positive_tags": "兔女郎魔术大师,技能输出,幸运stacking,Multi-hit技能"
+        "positive_tags": "兔女郎魔术大师, Skill DMG, 幸运stacking, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -25197,14 +25197,14 @@
     "element": "Dark",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "防御,辅助",
-    "character_role": "防御,辅助",
+    "combat_role": "Defense, Support",
+    "character_role": "Defense, Support",
     "map_terrain": "Forest",
     "map": "Forest",
     "background": "Shadowveil Grove",
     "special_effect": "Ghost火",
     "source": "",
-    "filter_tags": "技能输出,恐惧,眩晕",
+    "filter_tags": "Skill DMG, Fear, Stun",
     "base_stats": {
       "cons_hp": 18,
       "str_power": 2,
@@ -25280,7 +25280,7 @@
         "base_value": 2,
         "status_layers": 2,
         "description": "Roars deafeningly. Deals 2 hits of 2 DMG to all enemies, applying 2 stacks of Fear per hit. If the target's Weakness is exposed, each hit applies an extra 2 stacks of Stun.",
-        "positive_tags": "Standard幽暗龙女,技能输出,眩晕Synergy,恐惧Synergy,Multi-hit技能"
+        "positive_tags": "Standard幽暗龙女, Skill DMG, StunSynergy, FearSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -25397,7 +25397,7 @@
     "background": "Shadowveil Grove",
     "special_effect": "Wraith",
     "source": "Permanent",
-    "filter_tags": "防护,自身战败",
+    "filter_tags": "Protection, Defeat",
     "base_stats": {
       "cons_hp": 18,
       "str_power": 4,
@@ -25473,7 +25473,7 @@
         "base_value": 7,
         "status_layers": 0,
         "description": "Commands bones to invade the battlefield. Deals 7 DMG to all enemies, but loses 25% of Max HP and gains Shield equal to HP lost. Triggers all allies' defeat effects.",
-        "positive_tags": "苍白幽暗龙女,技能输出,防护Synergy,自身战败"
+        "positive_tags": "苍白幽暗龙女, Skill DMG, ProtectionSynergy, Defeat"
       }
     ],
     "traits": {
@@ -25590,7 +25590,7 @@
     "background": "Shadowveil Grove",
     "special_effect": "Dark Mist",
     "source": "",
-    "filter_tags": "技能输出,脆弱",
+    "filter_tags": "Skill DMG, Vulnerable",
     "base_stats": {
       "cons_hp": 20,
       "str_power": 2,
@@ -25666,7 +25666,7 @@
         "base_value": 4,
         "status_layers": 4,
         "description": "Swings a giant scythe wildly. Targets the nearest nearest target enemies first. Deals 2 hits of 4 DMG, applying 4 stacks of Vulnerable per hit. Increases multi-hit skill count by 1, up to +2.",
-        "positive_tags": "Standard淘气恶魔,技能输出,脆弱Synergy,Multi-hit技能"
+        "positive_tags": "Standard淘气恶魔, Skill DMG, VulnerableSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -25783,7 +25783,7 @@
     "background": "Shadowveil Grove",
     "special_effect": "Gold光",
     "source": "Permanent",
-    "filter_tags": "技能输出,恐惧",
+    "filter_tags": "Skill DMG, Fear",
     "base_stats": {
       "cons_hp": 20,
       "str_power": 2,
@@ -25859,7 +25859,7 @@
         "base_value": 1,
         "status_layers": 8,
         "description": "Swings a giant doll wildly. Targets the nearest nearest target enemies first. Deals 3 hits of 1 DMG and applies 8 stacks of Fear. Gains 5 Mana per target, or 10 Mana if the target's Weakness is exposed.",
-        "positive_tags": "睡衣淘气恶魔,技能输出,恐惧Synergy,Multi-hit技能"
+        "positive_tags": "睡衣淘气恶魔, Skill DMG, FearSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -26041,13 +26041,13 @@
         "name": "Hit & Run",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "中排Target",
+        "target": "Mid RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 6,
         "description": "Fires a giant pearl. Targets the mid enemy first. Deals 4 DMG and gains 6 stacks of Shield.",
-        "positive_tags": "技能输出,防护Synergy"
+        "positive_tags": "Skill DMG, ProtectionSynergy"
       }
     ],
     "traits": {
@@ -26066,8 +26066,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10105",
@@ -26157,7 +26157,7 @@
     "background": "Breezy Shores",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "普通输出,技能治疗",
+    "filter_tags": "Normal DMG, Skill Healing",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 4,
@@ -26228,7 +26228,7 @@
         "base_value": 6,
         "status_layers": 0,
         "description": "Builds power in secret. Restores herself 6 HP and increases the DMG of her next basic attack by 6.",
-        "positive_tags": "技能Recovery,普通输出"
+        "positive_tags": "SkillRecovery, Normal DMG"
       }
     ],
     "traits": {
@@ -26247,8 +26247,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10101",
@@ -26338,7 +26338,7 @@
     "background": "Breezy Shores",
     "special_effect": "水flow",
     "source": "",
-    "filter_tags": "技能输出,友方count",
+    "filter_tags": "Skill DMG, 友方count",
     "base_stats": {
       "cons_hp": 5,
       "str_power": 4,
@@ -26408,13 +26408,13 @@
         "name": "School Rush",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 2,
         "base_value": 5,
         "status_layers": 0,
         "description": "Commands a school of fish to charge. Targets the front enemy first. Deals 2 hits of 5 DMG. For every ally count, deals +1 DMG.",
-        "positive_tags": "技能输出,友方count,Multi-hit技能"
+        "positive_tags": "Skill DMG, 友方count, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -26531,7 +26531,7 @@
     "background": "Breezy Shores",
     "special_effect": "水flow",
     "source": "",
-    "filter_tags": "反伤,技能治疗",
+    "filter_tags": "Thorns, Skill Healing",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 4,
@@ -26607,7 +26607,7 @@
         "base_value": 12,
         "status_layers": 12,
         "description": "Changes her armor's shape. Restores 12 HP and gains 12 stacks of Thorns.",
-        "positive_tags": "技能Recovery,反伤Synergy"
+        "positive_tags": "SkillRecovery, ThornsSynergy"
       }
     ],
     "traits": {
@@ -26626,8 +26626,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10523",
@@ -26724,7 +26724,7 @@
     "background": "Breezy Shores",
     "special_effect": "spin风",
     "source": "",
-    "filter_tags": "技能输出,加速,优先行动",
+    "filter_tags": "Skill DMG, Haste, Act First",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 2,
@@ -26819,8 +26819,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10525",
@@ -26987,13 +26987,13 @@
         "name": "Coco Barrage",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "中排Target",
+        "target": "Mid RowTarget",
         "max_targets": 1,
         "hit_times": 2,
         "base_value": 4,
         "status_layers": 0,
         "description": "Throws multiple giant coconuts. Targets the mid enemy first. Deals 2 hits of 4 DMG. For every hit, deals +2 DMG.",
-        "positive_tags": "技能输出,Multi-hit技能"
+        "positive_tags": "Skill DMG, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -27110,7 +27110,7 @@
     "background": "Breezy Shores",
     "special_effect": "Gold光",
     "source": "",
-    "filter_tags": "技能治疗,净化,防护",
+    "filter_tags": "Skill Healing, Cleanse, Protection",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 2,
@@ -27186,7 +27186,7 @@
         "base_value": 8,
         "status_layers": 3,
         "description": "Opens a protective barrier. Restores 8 HP to all allies and applies 3 stacks of Cleanse. Restores double HP to targets without debuffs.",
-        "positive_tags": "Standard无瑕贤者,技能Recovery,净化友方,净化自身"
+        "positive_tags": "Standard无瑕贤者, SkillRecovery, Cleanse Allies, Cleanse Self"
       }
     ],
     "traits": {
@@ -27205,8 +27205,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10524",
@@ -27296,14 +27296,14 @@
     "element": "Light",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "治疗,辅助",
-    "character_role": "治疗,辅助",
+    "combat_role": "治疗, Support",
+    "character_role": "治疗, Support",
     "map_terrain": "Beach",
     "map": "Beach",
     "background": "Breezy Shores",
     "special_effect": "Gold光",
     "source": "Permanent",
-    "filter_tags": "技能治疗,鼓舞,热血",
+    "filter_tags": "Skill Healing, Inspire, Bloodlust",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 2,
@@ -27379,7 +27379,7 @@
         "base_value": 4,
         "status_layers": 2,
         "description": "Rallies teammates' morale. Restores 4 HP 2 times to all allies and grants 2 stacks of Inspire and Bloodlust to others. This healing increases by 1 per 20 Bloodlust stacks the unit has.",
-        "positive_tags": "王权无瑕贤者,技能Recovery,鼓舞Synergy,热血Synergy"
+        "positive_tags": "王权无瑕贤者, SkillRecovery, InspireSynergy, BloodlustSynergy"
       }
     ],
     "traits": {
@@ -27398,8 +27398,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10524_000",
@@ -27496,7 +27496,7 @@
     "background": "Breezy Shores",
     "special_effect": "Lightning",
     "source": "",
-    "filter_tags": "技能输出,感电,滋润",
+    "filter_tags": "Skill DMG, Shock, Soothe",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 4,
@@ -27572,7 +27572,7 @@
         "base_value": 2,
         "status_layers": 3,
         "description": "Calls down thunder with the dragon pearl. Deals 2 hits of 2 DMG to all enemies, applying 3 stacks of Shock per hit. For every 10 stacks of Soothe, deals +1 DMG.",
-        "positive_tags": "Standard辰龙,技能输出,滋润Synergy,感电Synergy,Multi-hit技能"
+        "positive_tags": "Standard辰龙, Skill DMG, SootheSynergy, ShockSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -27689,7 +27689,7 @@
     "background": "Breezy Shores",
     "special_effect": "水flow",
     "source": "Events",
-    "filter_tags": "技能输出,净化,再生",
+    "filter_tags": "Skill DMG, Cleanse, Regen",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 4,
@@ -27764,8 +27764,8 @@
         "hit_times": 1,
         "base_value": 7,
         "status_layers": 7,
-        "description": "辰龙awakens滔天巨浪surges like a tide，against敌方deals to all targets7DMG pts，and deals to target7stacks净化，for each dealt15stacks净化makes自身deals技能DMG+1，each移except3stacks正面状态makes自身获得1stacks再生。",
-        "positive_tags": "泳装辰龙,技能Recovery,滋润Synergy,再生Synergy,Multi-hit技能"
+        "description": "辰龙awakens滔天巨浪surges like a tide, against敌方deals to all targets7DMG pts, and deals to target7stacksCleanse, for each dealt15stacksCleansemakes自身dealsSkillDMG+1, each移except3stacksBuffsmakesGain1stacksRegen。",
+        "positive_tags": "泳装辰龙, SkillRecovery, SootheSynergy, RegenSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -27784,8 +27784,8 @@
       "Race": {
         "code": "BD20007",
         "name": "Aquatic",
-        "effect": "全Attribute+8，located at海洋地effect on map is doubled。",
-        "description": "全Attribute+8，located at海洋地effect on map is doubled。"
+        "effect": "全Attribute+8, located at海洋地effect on map is doubled。",
+        "description": "全Attribute+8, located at海洋地effect on map is doubled。"
       },
       "Characteristic": {
         "code": "BD10509_001",
@@ -27948,7 +27948,7 @@
         "base_value": 1,
         "status_layers": 1,
         "description": "Rapidly spreads toxic spores. Deals 1 DMG to all enemies and applies 1 stacks of Hinder.",
-        "positive_tags": "技能输出,阻碍Synergy"
+        "positive_tags": "Skill DMG, HinderSynergy"
       }
     ],
     "traits": {
@@ -28124,7 +28124,7 @@
         "base_value": 1,
         "status_layers": 1,
         "description": "Rapidly spreads chilling spores. Deals 1 DMG to all enemies and applies 1 stacks of Chill.",
-        "positive_tags": "技能输出,冰冷Synergy"
+        "positive_tags": "Skill DMG, ChillSynergy"
       }
     ],
     "traits": {
@@ -28299,13 +28299,13 @@
         "name": "Spore Ram",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 6,
         "status_layers": 6,
         "description": "Rams with force. Targets the front enemy first. Deals 6 DMG and applies 6 stacks of Hinder.",
-        "positive_tags": "技能输出,阻碍Synergy"
+        "positive_tags": "Skill DMG, HinderSynergy"
       }
     ],
     "traits": {
@@ -28480,13 +28480,13 @@
         "name": "Spore Burst",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 6,
         "status_layers": 6,
         "description": "Sprays spores. Targets the front enemy first. Deals 6 DMG and applies 6 stacks of Hinder.",
-        "positive_tags": "技能输出,阻碍Synergy"
+        "positive_tags": "Skill DMG, HinderSynergy"
       }
     ],
     "traits": {
@@ -28777,7 +28777,7 @@
     "background": "The Deep Hollows",
     "special_effect": "Toxic Fog",
     "source": "",
-    "filter_tags": "阻碍,生命flow失",
+    "filter_tags": "Hinder, 生命flow失",
     "base_stats": {
       "cons_hp": 7,
       "str_power": 4,
@@ -28853,7 +28853,7 @@
         "base_value": 5,
         "status_layers": 0,
         "description": "Activates all spores. Deals 5 DMG to all enemies. Consumes 50% of Hinder stacks to deal equal HP loss.",
-        "positive_tags": "技能输出,阻碍Synergy,失血收益"
+        "positive_tags": "Skill DMG, HinderSynergy, HP Loss Bonus"
       }
     ],
     "traits": {
@@ -28970,7 +28970,7 @@
     "background": "The Deep Hollows",
     "special_effect": "spin风",
     "source": "",
-    "filter_tags": "技能治疗,加速,额外行动",
+    "filter_tags": "Skill Healing, Haste, Extra Action",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 2,
@@ -29046,7 +29046,7 @@
         "base_value": 1,
         "status_layers": 0,
         "description": "Continuously releases spores that restores 1 HP 2 times to all allies. For every 10 stacks of Haste the unit has, this heal increases by 1.",
-        "positive_tags": "技能Recovery,加速Synergy"
+        "positive_tags": "SkillRecovery, HasteSynergy"
       }
     ],
     "traits": {
@@ -29233,13 +29233,13 @@
         "name": "Mana Surge",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 12,
         "status_layers": 0,
         "description": "Unleashes all stored energy. Targets the front enemy first. Deals 12 DMG. For every 10 HP lost, deals +1 DMG.",
-        "positive_tags": "技能输出,生命stacking"
+        "positive_tags": "Skill DMG, 生命stacking"
       }
     ],
     "traits": {
@@ -29356,7 +29356,7 @@
     "background": "The Deep Hollows",
     "special_effect": "spin风",
     "source": "",
-    "filter_tags": "技能输出,泯灭",
+    "filter_tags": "Skill DMG, Decay",
     "base_stats": {
       "cons_hp": 7,
       "str_power": 4,
@@ -29432,7 +29432,7 @@
         "base_value": 10,
         "status_layers": 10,
         "description": "Disrupts nearby Mana. Targets the enemy with highest Mana first. Deals 10 DMG and applies 10 stacks of Decay.",
-        "positive_tags": "技能输出,泯灭Synergy"
+        "positive_tags": "Skill DMG, DecaySynergy"
       }
     ],
     "traits": {
@@ -29542,14 +29542,14 @@
     "element": "Light",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "辅助,推荐",
-    "character_role": "辅助,推荐",
+    "combat_role": "Support, Recommended",
+    "character_role": "Support, Recommended",
     "map_terrain": "Mounts",
     "map": "Mounts",
     "background": "The Deep Hollows",
     "special_effect": "Gold光",
     "source": "",
-    "filter_tags": "技能治疗,魔力stacking",
+    "filter_tags": "Skill Healing, 魔力stacking",
     "base_stats": {
       "cons_hp": 11,
       "str_power": 2,
@@ -29625,7 +29625,7 @@
         "base_value": 10,
         "status_layers": 0,
         "description": "Creates a crystal that releases Mana. Restores 10 HP to other allies and grants Mana equal to 50% of their max Mana to the target. Excess Mana converts to Shield.",
-        "positive_tags": "Standard水晶菇娘,技能Recovery,mana recovery gain,鼓舞Synergy,mana regen effect,mana reduction,魔晶符文,魔晶符文"
+        "positive_tags": "Standard水晶菇娘, SkillRecovery, mana recovery gain, InspireSynergy, mana regen effect, mana reduction, 魔晶符文, 魔晶符文"
       }
     ],
     "traits": {
@@ -29742,7 +29742,7 @@
     "background": "Astral Realm",
     "special_effect": "Crack",
     "source": "Limited",
-    "filter_tags": "技能输出,泯灭",
+    "filter_tags": "Skill DMG, Decay",
     "base_stats": {
       "cons_hp": 11,
       "str_power": 2,
@@ -29818,7 +29818,7 @@
         "base_value": 1,
         "status_layers": 3,
         "description": "Summons a massive black hole that deals 4 hits of 1 damage to all enemies. Applies 3 stacks of Decay per hit to the target. Increases the enemy target's max mana by 1 per hit.",
-        "positive_tags": "暗星水晶菇娘,技能输出,泯灭Synergy"
+        "positive_tags": "暗星水晶菇娘, Skill DMG, DecaySynergy"
       }
     ],
     "traits": {
@@ -29928,14 +29928,14 @@
     "element": "Earth",
     "creature_type": "Construct",
     "type": "Construct",
-    "combat_role": "防御,输出",
-    "character_role": "防御,输出",
+    "combat_role": "Defense, DMG",
+    "character_role": "Defense, DMG",
     "map_terrain": "Mounts",
     "map": "Mounts",
     "background": "The Deep Hollows",
     "special_effect": "Lightning",
     "source": "",
-    "filter_tags": "反击输出,技能输出",
+    "filter_tags": "Counter DMG, Skill DMG",
     "base_stats": {
       "cons_hp": 18,
       "str_power": 6,
@@ -30011,7 +30011,7 @@
         "base_value": 14,
         "status_layers": 0,
         "description": "Slams the ground with her fists. Targets the enemy with highest ATK first. Deals 14 DMG. For every counter this battle, deals +1 DMG. For every point of Counter range, deals +50% DMG.",
-        "positive_tags": "Standard核心魔偶,技能输出,反击输出"
+        "positive_tags": "Standard核心魔偶, Skill DMG, Counter DMG"
       }
     ],
     "traits": {
@@ -30128,7 +30128,7 @@
     "background": "The Deep Hollows",
     "special_effect": "Lightning",
     "source": "Limited",
-    "filter_tags": "追击输出,技能输出",
+    "filter_tags": "Follow-Up DMG, Skill DMG",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 4,
@@ -30204,7 +30204,7 @@
         "base_value": 1,
         "status_layers": 0,
         "description": "Removes restrictions to go all out. Deals 3 hits of 1 DMG to all enemies. For every action taken by any target this battle, deals +2 DMG. For every 2 Follow-Up attack, deals +1 hits.",
-        "positive_tags": "机甲核心魔偶,技能输出,追击输出"
+        "positive_tags": "机甲核心魔偶, Skill DMG, Follow-Up DMG"
       }
     ],
     "traits": {
@@ -30381,13 +30381,13 @@
         "name": "Mighty Throw",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Throws her weapon. Targets the front enemy first. Deals 4 DMG and gains 4 stacks of Bloodlust.",
-        "positive_tags": "技能输出,热血Synergy"
+        "positive_tags": "Skill DMG, BloodlustSynergy"
       }
     ],
     "traits": {
@@ -30497,7 +30497,7 @@
     "background": "Crimson Highlands",
     "special_effect": "Empty",
     "source": "",
-    "filter_tags": "技能治疗,热血",
+    "filter_tags": "Skill Healing, Bloodlust",
     "base_stats": {
       "cons_hp": 4,
       "str_power": 2,
@@ -30563,7 +30563,7 @@
         "base_value": 1,
         "status_layers": 2,
         "description": "Calls upon ancestral power. Restores 1 HP to the most injured most damaged target allies and grants 2 stacks of Bloodlust.",
-        "positive_tags": "技能Recovery,热血Synergy"
+        "positive_tags": "SkillRecovery, BloodlustSynergy"
       }
     ],
     "traits": {
@@ -30744,7 +30744,7 @@
         "base_value": 2,
         "status_layers": 6,
         "description": "Shoots splitting arrows. Deals 2 DMG to all enemies and gains 6 stacks of Haste.",
-        "positive_tags": "技能输出,加速Synergy"
+        "positive_tags": "Skill DMG, HasteSynergy"
       }
     ],
     "traits": {
@@ -30919,13 +30919,13 @@
         "name": "Seismic Slam",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 6,
         "status_layers": 6,
         "description": "Swings her hammer with full force. Targets the front enemy first. Deals 6 DMG and applies 6 stacks of Stun.",
-        "positive_tags": "技能输出,眩晕Synergy"
+        "positive_tags": "Skill DMG, StunSynergy"
       }
     ],
     "traits": {
@@ -31035,7 +31035,7 @@
     "background": "Crimson Highlands",
     "special_effect": "Lightning",
     "source": "",
-    "filter_tags": "击败Target,技能输出",
+    "filter_tags": "击败Target, Skill DMG",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 2,
@@ -31228,7 +31228,7 @@
     "background": "Crimson Highlands",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "技能治疗,热血",
+    "filter_tags": "Skill Healing, Bloodlust",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 4,
@@ -31304,7 +31304,7 @@
         "base_value": 5,
         "status_layers": 3,
         "description": "Greatly stirs fighting spirit. Restores 5 HP to all allies and grants 3 stacks of Bloodlust. If the target has no Bloodlust, grants 6 stacks instead.",
-        "positive_tags": "技能Recovery,热血Synergy"
+        "positive_tags": "SkillRecovery, BloodlustSynergy"
       }
     ],
     "traits": {
@@ -31421,7 +31421,7 @@
     "background": "Crimson Highlands",
     "special_effect": "Inferno",
     "source": "",
-    "filter_tags": "技能输出,额外行动,速度stacking,加速",
+    "filter_tags": "Skill DMG, Extra Action, 速度stacking, Haste",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 4,
@@ -31491,13 +31491,13 @@
         "name": "Fearless Charge",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 12,
         "status_layers": 0,
         "description": "Charges at the enemy. Targets the front enemy first. Deals 12 DMG. Deals +12 DMG to targets with lower SPD.",
-        "positive_tags": "技能输出,速度stacking"
+        "positive_tags": "Skill DMG, 速度stacking"
       }
     ],
     "traits": {
@@ -31614,7 +31614,7 @@
     "background": "Crimson Highlands",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "技能输出,韧性stacking",
+    "filter_tags": "Skill DMG, 韧性stacking",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 4,
@@ -31684,13 +31684,13 @@
         "name": "Desperate Flurry",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 2,
         "base_value": 5,
         "status_layers": 0,
         "description": "Swings her sword wildly with everything she has. Targets the front enemy first. Deals 2 hits of 5 DMG. If her Weakness is exposed, deals +2 hits.",
-        "positive_tags": "技能输出,自身暴露,Multi-hit技能"
+        "positive_tags": "Skill DMG, Weakness, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -31703,8 +31703,8 @@
       "Feature": {
         "code": "BD40960",
         "name": "Full Opening",
-        "effect": "【buff】战斗开始before makes自身loses全部韧性，and获得equal amountstacks数成长。",
-        "description": "【buff】战斗开始before makes自身loses全部韧性，and获得equal amountstacks数成长。"
+        "effect": "【buff】Battle Startbefore makes自身losesAll Tenacity, and获得equal amountstacks数Growth。",
+        "description": "【buff】Battle Startbefore makes自身losesAll Tenacity, and获得equal amountstacks数Growth。"
       },
       "Race": {
         "code": "BD20102",
@@ -31800,14 +31800,14 @@
     "element": "Earth",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "辅助,防御,推荐",
-    "character_role": "辅助,防御,推荐",
+    "combat_role": "Support, Defense, Recommended",
+    "character_role": "Support, Defense, Recommended",
     "map_terrain": "Plains",
     "map": "Plains",
     "background": "Crimson Highlands",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "技能治疗,鼓舞,优先行动",
+    "filter_tags": "Skill Healing, Inspire, Act First",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 4,
@@ -31883,7 +31883,7 @@
         "base_value": 14,
         "status_layers": 14,
         "description": "Commands teammates with her banner. Targets the ally with highest ATK (excluding self) first. Restores 14 HP and grants 14 stacks of Inspire. If the target isn't self, they immediately take 1 extra actions.",
-        "positive_tags": "Standard军团统领,技能Recovery,鼓舞Synergy"
+        "positive_tags": "StandardLegion Commander, SkillRecovery, InspireSynergy"
       }
     ],
     "traits": {
@@ -32000,7 +32000,7 @@
     "background": "Crimson Highlands",
     "special_effect": "Inferno",
     "source": "Permanent",
-    "filter_tags": "技能输出,热血",
+    "filter_tags": "Skill DMG, Bloodlust",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 4,
@@ -32070,13 +32070,13 @@
         "name": "Crushing Stomp",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 14,
         "status_layers": 16,
         "description": "Tramples enemies with fierce might. Targets the front enemy first. Deals 14 DMG and gains 16 stacks of Bloodlust. For every 10 stacks of Bloodlust, deals +1 DMG. Deals double DMG to the nearest enemy.",
-        "positive_tags": "部落军团统领,技能输出,热血Synergy"
+        "positive_tags": "部落Legion Commander, Skill DMG, BloodlustSynergy"
       }
     ],
     "traits": {
@@ -32186,8 +32186,8 @@
     "element": "Fire",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "输出,防御",
-    "character_role": "输出,防御",
+    "combat_role": "DMG, Defense",
+    "character_role": "DMG, Defense",
     "map_terrain": "Plains",
     "map": "Plains",
     "background": "Crimson Highlands",
@@ -32269,7 +32269,7 @@
         "base_value": 16,
         "status_layers": 0,
         "description": "Devours all her Mana. Restores 16 HP, gains +1 Counter attacks, but receives -1 Mana.",
-        "positive_tags": "Standard蛮牛勇士,技能Recovery,反击输出,血石符文"
+        "positive_tags": "Standard蛮牛勇士, SkillRecovery, Counter DMG, 血石符文"
       }
     ],
     "traits": {
@@ -32379,14 +32379,14 @@
     "element": "Earth",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "输出,防御",
-    "character_role": "输出,防御",
+    "combat_role": "DMG, Defense",
+    "character_role": "DMG, Defense",
     "map_terrain": "Plains",
     "map": "Plains",
     "background": "Crimson Highlands",
     "special_effect": "Flying Sand",
     "source": "Permanent",
-    "filter_tags": "反击输出,友方count,强制行动",
+    "filter_tags": "Counter DMG, 友方count, Forced Action",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 4,
@@ -32462,7 +32462,7 @@
         "base_value": 7,
         "status_layers": 0,
         "description": "Calls legion spirits to form a charging formation. Deals 7 DMG to all enemies and increases ally count by 2. Each target immediately takes 1 extra actions against the unit and neither side gains Mana during this action.",
-        "positive_tags": "军团蛮牛勇士,技能输出,反击输出,友方count"
+        "positive_tags": "军团蛮牛勇士, Skill DMG, Counter DMG, 友方count"
       }
     ],
     "traits": {
@@ -32645,7 +32645,7 @@
         "base_value": 4,
         "status_layers": 4,
         "description": "Ambushes from behind. Targets the back enemy first. Deals 4 DMG and applies 4 stacks of Decay.",
-        "positive_tags": "技能输出,泯灭Synergy"
+        "positive_tags": "Skill DMG, DecaySynergy"
       }
     ],
     "traits": {
@@ -32664,8 +32664,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10001",
@@ -32815,13 +32815,13 @@
         "name": "Flame Slash",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 4,
         "status_layers": 4,
         "description": "Slashes the enemy. Targets the front enemy first. Deals 4 DMG and applies 4 stacks of Burn.",
-        "positive_tags": "技能输出,灼烧Synergy"
+        "positive_tags": "Skill DMG, BurnSynergy"
       }
     ],
     "traits": {
@@ -32996,13 +32996,13 @@
         "name": "Focused Beam",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "中排Target",
+        "target": "Mid RowTarget",
         "max_targets": 1,
         "hit_times": 2,
         "base_value": 2,
         "status_layers": 3,
         "description": "Throws ancient machines to focus fire. Targets the mid enemy first. Deals 2 hits of 2 DMG, applying 3 stacks of Burn per hit.",
-        "positive_tags": "技能输出,灼烧Synergy,Multi-hit技能"
+        "positive_tags": "Skill DMG, BurnSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -33183,7 +33183,7 @@
         "base_value": 2,
         "status_layers": 0,
         "description": "Activates the sun's protection. Restores 2 HP to all allies and reduces their Burn and Chill received by 2. Deactivates upon defeat.",
-        "positive_tags": "技能Recovery,damage reduction"
+        "positive_tags": "SkillRecovery, damage reduction"
       }
     ],
     "traits": {
@@ -33202,8 +33202,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10004",
@@ -33293,7 +33293,7 @@
     "background": "Ashland Wastes",
     "special_effect": "Inferno",
     "source": "",
-    "filter_tags": "技能输出,灼烧",
+    "filter_tags": "Skill DMG, Burn",
     "base_stats": {
       "cons_hp": 6,
       "str_power": 2,
@@ -33363,7 +33363,7 @@
         "name": "Quick Shot",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 6,
         "base_value": 1,
@@ -33388,8 +33388,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10530",
@@ -33486,7 +33486,7 @@
     "background": "Ashland Wastes",
     "special_effect": "Gold光",
     "source": "",
-    "filter_tags": "技能输出,灼烧,净化",
+    "filter_tags": "Skill DMG, Burn, Cleanse",
     "base_stats": {
       "cons_hp": 5,
       "str_power": 0,
@@ -33562,7 +33562,7 @@
         "base_value": 1,
         "status_layers": 2,
         "description": "Summons the sun's radiance. Deals 2 hits of 1 DMG to all enemies, applying 2 stacks of Cleanse and Burn per hit.",
-        "positive_tags": "技能输出,净化敌方,灼烧Synergy,Multi-hit技能"
+        "positive_tags": "Skill DMG, Cleanse Enemies, BurnSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -33679,7 +33679,7 @@
     "background": "Ashland Wastes",
     "special_effect": "Silver光",
     "source": "",
-    "filter_tags": "技能输出,泯灭,净化",
+    "filter_tags": "Skill DMG, Decay, Cleanse",
     "base_stats": {
       "cons_hp": 5,
       "str_power": 2,
@@ -33755,7 +33755,7 @@
         "base_value": 5,
         "status_layers": 4,
         "description": "Summons the moon's radiance. Deals 5 DMG to all enemies and applies 4 stacks of Cleanse and Decay.",
-        "positive_tags": "技能输出,净化敌方,泯灭Synergy"
+        "positive_tags": "Skill DMG, Cleanse Enemies, DecaySynergy"
       }
     ],
     "traits": {
@@ -33774,8 +33774,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10533",
@@ -33942,13 +33942,13 @@
         "name": "Blazing Rush",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 2,
         "base_value": 5,
         "status_layers": 12,
         "description": "Rapidly thrusts in succession. Targets the front enemy first. Deals 2 hits of 5 DMG and gains 12 stacks of Bloodlust.",
-        "positive_tags": "技能输出,热血Synergy,Multi-hit技能"
+        "positive_tags": "Skill DMG, BloodlustSynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -34058,14 +34058,14 @@
     "element": "Fire",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "辅助,输出,推荐",
-    "character_role": "辅助,输出,推荐",
+    "combat_role": "Support, DMG, Recommended",
+    "character_role": "Support, DMG, Recommended",
     "map_terrain": "Desert",
     "map": "Desert",
     "background": "Ashland Wastes",
     "special_effect": "Gold光",
     "source": "",
-    "filter_tags": "技能输出,鼓舞",
+    "filter_tags": "Skill DMG, Inspire",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 2,
@@ -34141,7 +34141,7 @@
         "base_value": 7,
         "status_layers": 5,
         "description": "Throws a spinning giant shuriken. Deals 7 DMG to all enemies. For each enemy hit, gains 5 stacks of Inspire. Each cast increases skill DMG by 2.",
-        "positive_tags": "Standard荒漠舞姬,技能输出,鼓舞Synergy,魔晶符文"
+        "positive_tags": "Standard荒漠舞姬, Skill DMG, InspireSynergy, 魔晶符文"
       }
     ],
     "traits": {
@@ -34258,7 +34258,7 @@
     "background": "Ashland Wastes",
     "special_effect": "Silver光",
     "source": "Permanent",
-    "filter_tags": "技能输出,泯灭",
+    "filter_tags": "Skill DMG, Decay",
     "base_stats": {
       "cons_hp": 9,
       "str_power": 2,
@@ -34334,7 +34334,7 @@
         "base_value": 4,
         "status_layers": 5,
         "description": "Spins moon blades to cut. Targets the enemy with highest Mana first. Deals 3 hits of 4 DMG, applying 5 stacks of Decay per hit. For every 10 stacks of Decay applied, increases skill DMG by 1.",
-        "positive_tags": "月影荒漠舞姬,技能输出,泯灭Synergy,Multi-hit技能"
+        "positive_tags": "月影荒漠舞姬, Skill DMG, DecaySynergy, Multi-hitSkill"
       }
     ],
     "traits": {
@@ -34451,7 +34451,7 @@
     "background": "Ashland Wastes",
     "special_effect": "Lightning",
     "source": "",
-    "filter_tags": "普通输出,额外行动",
+    "filter_tags": "Normal DMG, Extra Action",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 4,
@@ -34527,7 +34527,7 @@
         "base_value": 16,
         "status_layers": 0,
         "description": "Activates the core's full power. Restores herself 16 HP and increases basic attack targets by 1. Each additional target increases basic attack DMG by 2.",
-        "positive_tags": "Standard巨灵之枪,技能Recovery,普通输出"
+        "positive_tags": "Standard巨灵之枪, SkillRecovery, Normal DMG"
       }
     ],
     "traits": {
@@ -34644,7 +34644,7 @@
     "background": "Ashland Wastes",
     "special_effect": "Lightning",
     "source": "Permanent",
-    "filter_tags": "技能输出,感电",
+    "filter_tags": "Skill DMG, Shock",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 0,
@@ -34720,7 +34720,7 @@
         "base_value": 7,
         "status_layers": 5,
         "description": "Wields thunder to pierce enemies. Deals 7 DMG to all enemies and applies 5 stacks of Shock. For every 10 stacks of Shock on all enemies, increases next basic attack DMG by 1. This attack cannot be Countered.",
-        "positive_tags": "雷霆巨灵之枪,技能输出,感电Synergy,普通输出"
+        "positive_tags": "雷霆巨灵之枪, Skill DMG, ShockSynergy, Normal DMG"
       }
     ],
     "traits": {
@@ -34907,7 +34907,7 @@
         "name": "Feint",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "前排Target",
+        "target": "Front RowTarget",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 16,
@@ -35057,7 +35057,7 @@
         "base_value": 5,
         "status_layers": 0,
         "description": "Sends countless sand blades through the enemy. Targets the lowest SPD enemy first, dealing 2 hits of 5 DMG. Deals +2 hits to Slowed targets.",
-        "positive_tags": "技能输出,减速Synergy"
+        "positive_tags": "Skill DMG, SlowSynergy"
       }
     ],
     "traits": {
@@ -35174,7 +35174,7 @@
     "background": "Endless Desert",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "技能输出,减速",
+    "filter_tags": "Skill DMG, Slow",
     "base_stats": {
       "cons_hp": 5,
       "str_power": 2,
@@ -35250,7 +35250,7 @@
         "base_value": 5,
         "status_layers": 0,
         "description": "Crushes enemies with compressed sand. Targets the lowest SPD enemy first, dealing 2 hits of 5 DMG. Deals +1 DMG per 10 stacks of Slow on target.",
-        "positive_tags": "技能输出,减速Synergy"
+        "positive_tags": "Skill DMG, SlowSynergy"
       }
     ],
     "traits": {
@@ -35437,13 +35437,13 @@
         "name": "Ambush Sting",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "阻碍stacks数target with most value",
+        "target": "Hinderstacks数target with most value",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 12,
         "status_layers": 0,
         "description": "Launches her tail stinger at blinding speed. Targets the enemy with most Hinder stacks first, dealing 12 DMG. Target loses 1 HP per 3 stacks of Hinder.",
-        "positive_tags": "技能输出,阻碍Synergy,失血收益"
+        "positive_tags": "Skill DMG, HinderSynergy, HP Loss Bonus"
       }
     ],
     "traits": {
@@ -35560,7 +35560,7 @@
     "background": "Endless Desert",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "技能输出,反伤",
+    "filter_tags": "Skill DMG, Thorns",
     "base_stats": {
       "cons_hp": 6,
       "str_power": 2,
@@ -35636,7 +35636,7 @@
         "base_value": 5,
         "status_layers": 0,
         "description": "Unleashes every spine from her body. Deals 5 DMG to all enemies. Deals +1 DMG per 10 stacks of Thorns.",
-        "positive_tags": "技能输出,反伤Synergy"
+        "positive_tags": "Skill DMG, ThornsSynergy"
       }
     ],
     "traits": {
@@ -35746,14 +35746,14 @@
     "element": "Earth",
     "creature_type": "Demon",
     "type": "Demon",
-    "combat_role": "输出,防御",
-    "character_role": "输出,防御",
+    "combat_role": "DMG, Defense",
+    "character_role": "DMG, Defense",
     "map_terrain": "Desert",
     "map": "Desert",
     "background": "Endless Desert",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "技能输出,减速",
+    "filter_tags": "Skill DMG, Slow",
     "base_stats": {
       "cons_hp": 16,
       "str_power": 2,
@@ -35829,7 +35829,7 @@
         "base_value": 7,
         "status_layers": 0,
         "description": "Swings a blade forged from condensed sand. Deals 7 DMG to all enemies. Deals +1 DMG per 10 stacks of Slow across all enemies. Deals double DMG to targets with SPD below 0.",
-        "positive_tags": "Standard无尽领主,技能输出,减速Synergy"
+        "positive_tags": "Standard无尽领主, Skill DMG, SlowSynergy"
       }
     ],
     "traits": {
@@ -35939,14 +35939,14 @@
     "element": "Light",
     "creature_type": "Demon",
     "type": "Demon",
-    "combat_role": "输出,防御",
-    "character_role": "输出,防御",
+    "combat_role": "DMG, Defense",
+    "character_role": "DMG, Defense",
     "map_terrain": "Mounts",
     "map": "Mounts",
     "background": "The Deep Hollows",
     "special_effect": "Gold光",
     "source": "Permanent",
-    "filter_tags": "技能输出,防护",
+    "filter_tags": "Skill DMG, Protection",
     "base_stats": {
       "cons_hp": 18,
       "str_power": 2,
@@ -36016,13 +36016,13 @@
         "name": "Hanging Blade",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "防护stacks数target with lowest value",
+        "target": "Protectionstacks数target with lowest value",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 16,
         "status_layers": 0,
         "description": "Summons a golden blade crashing from above. Targets the enemy with the least Shield, dealing 16 DMG. For every 5 stacks of Shield the unit has, deals +1 DMG. Deals +50% DMG per enemy action this turn.",
-        "positive_tags": "黄Gold无尽领主,技能输出,防护Synergy"
+        "positive_tags": "黄Gold无尽领主, Skill DMG, ProtectionSynergy"
       }
     ],
     "traits": {
@@ -36132,14 +36132,14 @@
     "element": "Wind",
     "creature_type": "Construct",
     "type": "Construct",
-    "combat_role": "治疗,辅助",
-    "character_role": "治疗,辅助",
+    "combat_role": "治疗, Support",
+    "character_role": "治疗, Support",
     "map_terrain": "Desert",
     "map": "Desert",
     "background": "Endless Desert",
     "special_effect": "spin风",
     "source": "",
-    "filter_tags": "技能治疗,幸运stacking,再生,信念,加速",
+    "filter_tags": "Skill Healing, 幸运stacking, Regen, Faith, Haste",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 2,
@@ -36215,7 +36215,7 @@
         "base_value": 10,
         "status_layers": 8,
         "description": "Grants different wishes to each ally. Restores 10 HP to other allies. Grants 8 stacks of Regen, Faith, or Haste based on Front, Mid, or Back position. Grants +1 stacks of these statuses per 5 Luck. At the highest Luck, grants all statuses regardless of position.",
-        "positive_tags": "Standard许愿灯灵,技能Recovery,幸运stacking"
+        "positive_tags": "Standard许愿灯灵, SkillRecovery, 幸运stacking"
       }
     ],
     "traits": {
@@ -36325,14 +36325,14 @@
     "element": "Light",
     "creature_type": "Construct",
     "type": "Construct",
-    "combat_role": "治疗,辅助",
-    "character_role": "治疗,辅助",
+    "combat_role": "治疗, Support",
+    "character_role": "治疗, Support",
     "map_terrain": "Astral",
     "map": "Astral",
     "background": "Astral Realm",
     "special_effect": "Crack",
     "source": "Limited",
-    "filter_tags": "技能治疗,Attributestacking",
+    "filter_tags": "Skill Healing, Attributestacking",
     "base_stats": {
       "cons_hp": 14,
       "str_power": 2,
@@ -36408,7 +36408,7 @@
         "base_value": 10,
         "status_layers": 5,
         "description": "Grants different wishes to each ally. Restores 10 HP to other allies. Grants 5 STR, SPI, or AGI based on Front, Mid, or Back position. Grants +1 stat bonus per 50 SPI. At the highest SPI, grants all stats regardless of position.",
-        "positive_tags": "星界许愿灯灵,技能Recovery"
+        "positive_tags": "星界许愿灯灵, SkillRecovery"
       }
     ],
     "traits": {
@@ -36525,7 +36525,7 @@
     "background": "Withered Timberland",
     "special_effect": "spin风",
     "source": "",
-    "filter_tags": "诱导,精准",
+    "filter_tags": "Taunt, Precision",
     "base_stats": {
       "cons_hp": 8,
       "str_power": 0,
@@ -36601,7 +36601,7 @@
         "base_value": 6,
         "status_layers": 10,
         "description": "Fires a surprise shot. Targets the back enemy first. Deals 6 DMG and applies 10 stacks of Taunt. Gains 10 stacks of Precision.",
-        "positive_tags": "技能输出,诱导Synergy,精准Synergy"
+        "positive_tags": "Skill DMG, TauntSynergy, PrecisionSynergy"
       }
     ],
     "traits": {
@@ -36711,14 +36711,14 @@
     "element": "Light",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "治疗,辅助",
-    "character_role": "治疗,辅助",
+    "combat_role": "治疗, Support",
+    "character_role": "治疗, Support",
     "map_terrain": "Forest",
     "map": "Forest",
     "background": "Withered Timberland",
     "special_effect": "Gold光",
     "source": "",
-    "filter_tags": "技能治疗,净化",
+    "filter_tags": "Skill Healing, Cleanse",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 0,
@@ -36788,13 +36788,13 @@
         "name": "Begone!",
         "skill_type": "Support",
         "action_type": "生命Recovery",
-        "target": "负面状态target with most value",
+        "target": "Debuffstarget with most value",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 12,
         "status_layers": 10,
         "description": "Despises all impurities. Targets the ally with most debuffs first. Restores 12 HP and applies 10 stacks of Cleanse. Grants the target HP equal to 25% of debuff stacks removed.",
-        "positive_tags": "技能Recovery,净化友方,净化自身,healing efficiency"
+        "positive_tags": "SkillRecovery, Cleanse Allies, Cleanse Self, healing efficiency"
       }
     ],
     "traits": {
@@ -36904,14 +36904,14 @@
     "element": "Earth",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "治疗,辅助",
-    "character_role": "治疗,辅助",
+    "combat_role": "治疗, Support",
+    "character_role": "治疗, Support",
     "map_terrain": "Forest",
     "map": "Forest",
     "background": "Withered Timberland",
     "special_effect": "Luminescent火",
     "source": "",
-    "filter_tags": "技能治疗,幸运stacking",
+    "filter_tags": "Skill Healing, 幸运stacking",
     "base_stats": {
       "cons_hp": 10,
       "str_power": 2,
@@ -36986,8 +36986,8 @@
         "hit_times": 1,
         "base_value": 5,
         "status_layers": 0,
-        "description": "红狐祭司with幸运performs in the name of the Goddess祝福，prioritizes making友方restores to all targets5pts生命，and makes target幸运+5，for each stack on target10pts幸运makes it获得1mana pts。",
-        "positive_tags": "技能Recovery,stacking幸运"
+        "description": "红狐祭司with幸运performs in the name of the Goddess祝福, prioritizes making友方restores to all targets5pts生命, and makes target幸运+5, for each stack on target10pts幸运makes it获得1mana pts。",
+        "positive_tags": "SkillRecovery, stacking幸运"
       }
     ],
     "traits": {
@@ -37104,7 +37104,7 @@
     "background": "Withered Timberland",
     "special_effect": "Flying Sand",
     "source": "",
-    "filter_tags": "技能输出,脆弱",
+    "filter_tags": "Skill DMG, Vulnerable",
     "base_stats": {
       "cons_hp": 7,
       "str_power": 2,
@@ -37174,13 +37174,13 @@
         "name": "Decompose",
         "skill_type": "Attack",
         "action_type": "Special Attack",
-        "target": "防护stacks数target with most value",
+        "target": "Protectionstacks数target with most value",
         "max_targets": 1,
         "hit_times": 1,
         "base_value": 12,
         "status_layers": 12,
         "description": "Breaks matter down to fragments. Targets the enemy with most Shield first. Deals 12 DMG and applies 12 stacks of Vulnerable. Removes 25% of the target's Shield stacks.",
-        "positive_tags": "技能输出,脆弱Synergy"
+        "positive_tags": "Skill DMG, VulnerableSynergy"
       }
     ],
     "traits": {
@@ -37199,8 +37199,8 @@
       "Race": {
         "code": "BD20106",
         "name": "Rodent",
-        "effect": "弱pts暴露when自身反击距离+2。",
-        "description": "弱pts暴露when自身反击距离+2。"
+        "effect": "弱pts暴露whenCounter Range+2。",
+        "description": "弱pts暴露whenCounter Range+2。"
       },
       "Characteristic": {
         "code": "BD10557",
@@ -37290,14 +37290,14 @@
     "element": "Earth",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "输出,防御",
-    "character_role": "输出,防御",
+    "combat_role": "DMG, Defense",
+    "character_role": "DMG, Defense",
     "map_terrain": "Forest",
     "map": "Forest",
     "background": "Withered Timberland",
     "special_effect": "Luminescent火",
     "source": "Limited",
-    "filter_tags": "技能输出,反伤,成长",
+    "filter_tags": "Skill DMG, Thorns, Growth",
     "base_stats": {
       "cons_hp": 11,
       "str_power": 2,
@@ -37373,7 +37373,7 @@
         "base_value": 7,
         "status_layers": 8,
         "description": "Rose Sovereign summons a field of thorny roses across the battlefield. Deals 7 DMG to all enemies and grants 8 stacks of Thorns to all allies. For every 1 stacks of Thorns applied this way, gains 1 stacks of Growth.",
-        "positive_tags": "技能输出,反伤Synergy,成长Synergy,healing effect,healing efficiency,血石符文"
+        "positive_tags": "Skill DMG, ThornsSynergy, GrowthSynergy, healing effect, healing efficiency, 血石符文"
       }
     ],
     "traits": {
@@ -37490,7 +37490,7 @@
     "background": "Withered Timberland",
     "special_effect": "Ghost火",
     "source": "Limited",
-    "filter_tags": "技能输出,生命flow失,剥离",
+    "filter_tags": "Skill DMG, 生命flow失, Expose",
     "base_stats": {
       "cons_hp": 11,
       "str_power": 4,
@@ -37566,7 +37566,7 @@
         "base_value": 2,
         "status_layers": 2,
         "description": "Rose Sovereign summons a swarm of bats across the battlefield. Deals 2 hits of 2 DMG to all enemies, applying 2 stacks of Expose per hit. For every 1 stacks of Expose applied, drain 1 HP from target.",
-        "positive_tags": "技能输出,剥离Synergy,失血收益,healing efficiency,healing efficiency,血石符文"
+        "positive_tags": "Skill DMG, ExposeSynergy, HP Loss Bonus, healing efficiency, healing efficiency, 血石符文"
       }
     ],
     "traits": {
@@ -37683,7 +37683,7 @@
     "background": "Withered Timberland",
     "special_effect": "Lightning",
     "source": "",
-    "filter_tags": "技能输出,魔力stacking",
+    "filter_tags": "Skill DMG, 魔力stacking",
     "base_stats": {
       "cons_hp": 12,
       "str_power": 0,
@@ -37759,7 +37759,7 @@
         "base_value": 16,
         "status_layers": 0,
         "description": "Hurls a custom-made Mana Bomb. Targets the enemy with highest Mana first, dealing 16 DMG. Increases Max Mana by 5 for both sides. For every 1 total Max Mana of both sides, deals +1 DMG.",
-        "positive_tags": "技能输出,魔力stacking,感电Synergy,泯灭Synergy,山铜符文"
+        "positive_tags": "Skill DMG, 魔力stacking, ShockSynergy, DecaySynergy, 山铜符文"
       }
     ],
     "traits": {
@@ -37784,8 +37784,8 @@
       "Characteristic": {
         "code": "BD10560",
         "name": "Nosy",
-        "effect": "【Attribute】each10mana ptscapmakes自身行动回魔+1。",
-        "description": "【Attribute】each10mana ptscapmakes自身行动回魔+1。"
+        "effect": "【Attribute】each10mana ptscapmakesAction Mana+1。",
+        "description": "【Attribute】each10mana ptscapmakesAction Mana+1。"
       },
       "SubClass": {
         "code": "BD51045",
@@ -37876,7 +37876,7 @@
     "background": "Withered Timberland",
     "special_effect": "Toxic Fog",
     "source": "Limited",
-    "filter_tags": "技能输出,阻碍",
+    "filter_tags": "Skill DMG, Hinder",
     "base_stats": {
       "cons_hp": 11,
       "str_power": 2,
@@ -37952,7 +37952,7 @@
         "base_value": 7,
         "status_layers": 5,
         "description": "The Troll Warlock hurls a custom-made alchemy potion, dealing 7 DMG to all enemies and applying 5 stacks of Hinder to each target every time. For every 10 stacks of Hinder on all enemies, this attack deals +1 DMG. Additionally, for each enemy at max Hinder stacks, this attack deals +100% DMG.",
-        "positive_tags": "技能输出,阻碍"
+        "positive_tags": "Skill DMG, Hinder"
       }
     ],
     "traits": {
@@ -38062,14 +38062,14 @@
     "element": "Earth",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "治疗,辅助",
-    "character_role": "治疗,辅助",
+    "combat_role": "治疗, Support",
+    "character_role": "治疗, Support",
     "map_terrain": "Forest",
     "map": "Forest",
     "background": "Withered Timberland",
     "special_effect": "Luminescent火",
     "source": "Limited",
-    "filter_tags": "技能治疗,反伤",
+    "filter_tags": "Skill Healing, Thorns",
     "base_stats": {
       "cons_hp": 14,
       "str_power": 2,
@@ -38145,7 +38145,7 @@
         "base_value": 7,
         "status_layers": 8,
         "description": "Wraps allies in a soft, spiny blanket. Restores 7 HP to all allies and grants 8 stacks of Thorns. For every 10 stacks of Thorns on her, grants +1 Thorns stacks.",
-        "positive_tags": "技能Recovery,反伤Synergy"
+        "positive_tags": "SkillRecovery, ThornsSynergy"
       }
     ],
     "traits": {
@@ -38158,8 +38158,8 @@
       "Feature": {
         "code": "BD40997",
         "name": "Guard Instinct",
-        "effect": "【buff】友方all targets反伤trigger limit+10%。",
-        "description": "【buff】友方all targets反伤trigger limit+10%。"
+        "effect": "【buff】友方all targetsThornstrigger limit+10%。",
+        "description": "【buff】友方all targetsThornstrigger limit+10%。"
       },
       "Race": {
         "code": "BD20106_000",
@@ -38255,8 +38255,8 @@
     "element": "Water",
     "creature_type": "Spirit",
     "type": "Spirit",
-    "combat_role": "输出,防御",
-    "character_role": "输出,防御",
+    "combat_role": "DMG, Defense",
+    "character_role": "DMG, Defense",
     "map_terrain": "Beach",
     "map": "Beach",
     "background": "Breezy Shores",
@@ -38338,7 +38338,7 @@
         "base_value": 16,
         "status_layers": 0,
         "description": "Braces for a counterattack. Restores 16 HP and deals +50% Counter DMG this turn.",
-        "positive_tags": "黑帆蛮牛勇士,技能Recovery,反击输出,血石符文"
+        "positive_tags": "黑帆蛮牛勇士, SkillRecovery, Counter DMG, 血石符文"
       }
     ],
     "traits": {
