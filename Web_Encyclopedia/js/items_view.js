@@ -424,53 +424,46 @@ const ItemsView = {
     const step = ch.step || ch.Step || 'C';
     const isRu = (dict.starMilestone4 || '').includes('прозрения');
     const isCn = (dict.starMilestone4 || '').includes('信物');
-    const dropCount = ch.drop_table ? ch.drop_table.length : 0;
 
     return `
-      <div class="item-card" onclick="App.openItemModal('chests', '${ch.key || ch.uid || ch.id}')" style="cursor: pointer;">
-        <div class="item-card-header">
-          <div class="item-card-icon-box">
-            ${iconSrc ? `
-              <img src="${iconSrc}" alt="Chest" class="item-card-img" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
-              <span style="display: none; font-size: 26px;">${fallbackEmoji}</span>
-            ` : `<span style="font-size: 26px;">${fallbackEmoji}</span>`}
-          </div>
-          <div class="item-card-header-info">
-            <div class="item-card-title-row">
-              <span class="tier-badge ${tierClass}">${step}</span>
-              <span class="item-card-name" title="${this.escapeHtml(ch.name)}">${this.escapeHtml(ch.name)}</span>
+      <div class="item-card" onclick="App.openItemModal('chests', '${ch.key || ch.uid || ch.id}')">
+        <div class="item-header">
+          <div class="item-header-left">
+            <div class="item-icon-container">
+              ${iconSrc ? `
+                <img src="${iconSrc}" alt="${this.escapeHtml(ch.name)}" class="item-icon-img" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+                <span class="item-fallback-icon" style="display: none; font-size: 20px;">${fallbackEmoji}</span>
+              ` : `<span class="item-fallback-icon" style="font-size: 20px;">${fallbackEmoji}</span>`}
             </div>
-            <div class="item-card-id">ID: ${ch.id}</div>
+            <div>
+              <div class="item-name">${this.escapeHtml(ch.name)}</div>
+              <div style="font-size: 11px; color: var(--text-muted); font-family: monospace;">ID: ${ch.id}</div>
+            </div>
           </div>
+          <span class="tier-badge ${tierClass}">${step}</span>
         </div>
 
-        <div class="item-card-tags">
-          ${ch.drop_type ? `<span class="tag-badge">🎁 ${this.escapeHtml(ch.drop_type)}</span>` : ''}
+        <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+          ${ch.drop_type ? `<span class="item-slot-badge">🎁 ${this.escapeHtml(ch.drop_type)}</span>` : ''}
           ${ch.drop_content ? `<span class="tag-badge">📋 ${this.escapeHtml(ch.drop_content)}</span>` : ''}
           ${ch.num ? `<span class="tag-badge">🔢 ×${this.escapeHtml(ch.num)}</span>` : ''}
         </div>
 
         ${ch.description ? `
-          <div class="item-card-desc" style="margin-top: 6px; line-height: 1.35; font-size: 12.5px; color: var(--text-secondary);">
+          <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">
             ${this.escapeHtml(ch.description)}
           </div>
         ` : ''}
-        <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(ch, 'chests', isRu?'RU':(isCn?'CN':'EN')))}">
-          <span class="item-source-label">📍 ${dict.acquisitionLabel || 'Получение'}:</span>
-          <span class="item-source-text">${this.escapeHtml(this.getItemSourceSummary(ch, 'chests', isRu?'RU':(isCn?'CN':'EN')))}</span>
-        </div>
 
-        ${dropCount > 0 ? `
-          <div style="font-size: 11.5px; color: #a855f7; background: rgba(168, 85, 247, 0.08); padding: 6px 9px; border-radius: var(--radius-sm); border: 1px solid rgba(168, 85, 247, 0.25); display: flex; align-items: center; justify-content: space-between; margin-top: auto;">
-            <span>🎁 <strong>${dict.chestDropCount || 'Возможный дроп'}:</strong> ${dropCount} ${isRu ? 'предм.' : (isCn ? '件' : 'items')}</span>
-            <span style="color: #38bdf8; font-weight: 700;">➔</span>
-          </div>
-        ` : ''}
+        <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(ch, 'chests', isRu ? 'RU' : (isCn ? 'CN' : 'EN')))}">
+          <span class="item-source-label">📍 ${dict.acquisitionLabel || 'Получение'}:</span>
+          <span class="item-source-text">${this.escapeHtml(this.getItemSourceSummary(ch, 'chests', isRu ? 'RU' : (isCn ? 'CN' : 'EN')))}</span>
+        </div>
       </div>
     `;
   },
 
-  renderBondCard(bd, tierClass, dict, imageMappings = {}) {
+    renderBondCard(bd, tierClass, dict, imageMappings = {}) {
     return `
       <div class="item-card" onclick="App.openItemModal('bonds', '${bd.id}')">
         <div class="item-header">
