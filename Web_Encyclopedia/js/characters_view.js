@@ -102,6 +102,23 @@ const CharactersView = {
           <div class="ultimate-snippet">
             ⚡ <strong>${char.unique_skills && char.unique_skills[0] ? this.escapeHtml(char.unique_skills[0].name) : 'Active'}:</strong> ${this.escapeHtml(ultSnippet)}
           </div>
+
+          ${(() => {
+            const relicsList = char.exclusive_relics || (char.exclusive_relic ? [char.exclusive_relic] : []);
+            const primaryRelic = relicsList.length > 0 ? relicsList[0] : null;
+            if (!primaryRelic) return '';
+
+            return `
+              <div class="card-relic-snippet" onclick="event.stopPropagation(); App.openItemModal('relics', '${primaryRelic.id}')" title="${currentLang === 'RU' ? 'Нажмите, чтобы открыть реликвию в каталоге' : (currentLang === 'CN' ? '点击查看专属圣物详情' : 'Click to view relic details')}">
+                <div class="card-relic-header">
+                  <span style="font-size: 12px;">🔮</span>
+                  <span class="card-relic-name">${this.escapeHtml(primaryRelic.name)}</span>
+                  <span class="tier-badge tier-${(primaryRelic.step || 's').toLowerCase()}" style="font-size: 9px; padding: 1px 5px;">${primaryRelic.step || 'S'}★</span>
+                </div>
+                <div class="card-relic-desc">${this.escapeHtml(primaryRelic.effect || primaryRelic.description || '')}</div>
+              </div>
+            `;
+          })()}
         </div>
       `;
     }).join('');
@@ -231,16 +248,9 @@ const CharactersView = {
 
     // Exclusive Relic HTML
     let relicHtml = '';
-    const er = char.exclusive_relic;
-    if (er && er.name) {
-      relicHtml = `
-        <div class="trait-card-item" style="border-left: 3px solid #ec4899;">
-          <div class="trait-name-row">
-            <span>🔮 ${this.escapeHtml(er.name)} <span style="font-size: 11px; opacity: 0.7;">(Tier: ${er.step}, Max Lv: ${er.max_level})</span></span>
-          </div>
-          <div class="trait-desc">${this.escapeHtml(er.effect)}</div>
-        </div>
-      `;
+    const relicsList = char.exclusive_relics || (char.exclusive_relic ? [char.exclusive_relic] : []);
+    if (relicsList && relicsList.length > 0) {
+      relicHtml = relicsList.map(r => this.renderEmbeddedRelicCard(r, currentLang, imageMappings, char)).join('');
     }
 
     // Ingredients HTML
@@ -344,8 +354,8 @@ const CharactersView = {
           <!-- Signature Relics -->
           ${relicHtml ? `
             <div class="detail-section">
-              <div class="section-heading">🔮 ${dict.signatureRelic}</div>
-              <div class="traits-container">
+              <div class="section-heading">🔮 ${dict.signatureRelic || 'Эксклюзивная реликвия'}</div>
+              <div class="embedded-relics-grid">
                 ${relicHtml}
               </div>
             </div>
@@ -510,6 +520,60 @@ const CharactersView = {
     return (descs[type] && descs[type][lang]) || (descs.standard && descs.standard[lang]) || descs.standard.RU;
   },
 
+  renderEmbeddedRelicCard(relic, currentLang = "RU", imageMappings = {}, char = null) {
+    if (!relic) return '';
+    const dict = I18N[currentLang] || I18N.RU;
+    const step = relic.step || relic.Step || 'S';
+    const tierClass = `tier-${step.toLowerCase()}`;
+    const isRu = currentLang === 'RU';
+    const isCn = currentLang === 'CN';
+
+    const itemMap = imageMappings && imageMappings.items ? imageMappings.items : {};
+    const iconSrc = itemMap[relic.id] || (relic.id ? `assets/img/items/${relic.id}.png` : null);
+    const fallbackEmoji = '🔮';
+
+    return `
+      <div class="embedded-relic-card" onclick="event.stopPropagation(); App.openItemModal('relics', '${relic.id}')" title="${isRu ? 'Нажмите, чтобы открыть реликвию в каталоге' : isCn ? '点击查看圣物详情' : 'Click to view relic details'}">
+        <div class="embedded-relic-header">
+          <div class="embedded-relic-icon-wrap">
+            ${iconSrc ? `
+              <img src="${iconSrc}" alt="${this.escapeHtml(relic.name)}" class="embedded-relic-img" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+              <span class="embedded-relic-fallback" style="display: none; font-size: 22px;">${fallbackEmoji}</span>
+            ` : `<span class="embedded-relic-fallback" style="font-size: 22px;">${fallbackEmoji}</span>`}
+          </div>
+
+          <div class="embedded-relic-info">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 6px;">
+              <div class="embedded-relic-name">${this.escapeHtml(relic.name)}</div>
+              <span class="tier-badge ${tierClass}" style="font-size: 11px; padding: 2px 7px;">${step}★</span>
+            </div>
+            <div style="font-size: 11px; color: var(--text-muted); font-family: monospace;">ID: ${relic.id}</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0;">
+          <span class="tag-badge" style="background: rgba(236, 72, 153, 0.15); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.3); font-size: 10.5px; font-weight: 700;">
+            🔮 ${isRu ? 'Эксклюзивная реликвия' : isCn ? '专属圣物' : 'Signature Relic'}
+          </span>
+          <span class="tag-badge" style="font-size: 10.5px;">Max Lv: ${relic.max_level || 3}</span>
+          ${relic.class_limit ? `<span class="tag-badge" style="font-size: 10.5px;">⚔️ ${this.escapeHtml(relic.class_limit)}</span>` : ''}
+          ${char ? `<span class="tag-badge" style="font-size: 10.5px; color: #a5f3fc;">👤 ${this.escapeHtml(char.name)}</span>` : ''}
+        </div>
+
+        <div class="embedded-relic-effect">
+          ${this.escapeHtml(relic.effect || relic.description || '')}
+        </div>
+
+        <div class="embedded-relic-footer">
+          <span style="font-size: 11px; color: var(--text-muted);">${isRu ? 'Категория: Реликвии' : isCn ? '分类: 专属圣物' : 'Category: Relics'}</span>
+          <span style="font-size: 11.5px; color: #38bdf8; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+            🔍 ${isRu ? 'Открыть в предметах' : isCn ? '在图鉴中查看' : 'View in Items'} ➔
+          </span>
+        </div>
+      </div>
+    `;
+  },
+
   getElementClass(element) {
     if (!element) return '';
     const el = element.toLowerCase();
@@ -532,3 +596,7 @@ const CharactersView = {
       .replace(/'/g, "&#039;");
   }
 };
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = CharactersView;
+}
