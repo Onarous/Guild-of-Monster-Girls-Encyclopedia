@@ -90,398 +90,7 @@ const defaultMapTiles = [
       "gold": 0.0
     },
     "possible_chests": [],
-    "possible_equips": [
-      {
-        "id": "Z60006_532",
-        "category": "equipment",
-        "key": "equip_335",
-        "name": {
-          "RU": "Рог зимы",
-          "EN": "Horn of Winter",
-          "CN": "极寒之角"
-        },
-        "step": "SS",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_331",
-        "category": "equipment",
-        "key": "equip_336",
-        "name": {
-          "RU": "Жезл Ледяной пчелы",
-          "EN": "Frostbee Wand",
-          "CN": "冰蜂魔杖"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_632",
-        "category": "equipment",
-        "key": "equip_337",
-        "name": {
-          "RU": "Накидка Ледяной пчелы",
-          "EN": "Frostbee Cape",
-          "CN": "冰蜂披风"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_532",
-        "category": "equipment",
-        "key": "equip_338",
-        "name": {
-          "RU": "Шляпа Ледяной пчелы",
-          "EN": "Frostbee Hat",
-          "CN": "冰蜂法帽"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_231",
-        "category": "equipment",
-        "key": "equip_339",
-        "name": {
-          "RU": "Клинок Морозного пера",
-          "EN": "Frostfeather Blade",
-          "CN": "冰羽利刃"
-        },
-        "step": "S",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_232",
-        "category": "equipment",
-        "key": "equip_340",
-        "name": {
-          "RU": "Плащ Морозного пера",
-          "EN": "Frostfeather Cloak",
-          "CN": "冰羽斗篷"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_732",
-        "category": "equipment",
-        "key": "equip_341",
-        "name": {
-          "RU": "Сапоги Морозного пера",
-          "EN": "Frostfeather Boots",
-          "CN": "冰羽神靴"
-        },
-        "step": "S",
-        "slot": "Обувь / Сапоги",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_233",
-        "category": "equipment",
-        "key": "equip_342",
-        "name": {
-          "RU": "Наручи Морозного пера",
-          "EN": "Frostfeather Bracers",
-          "CN": "冰羽护臂"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_234",
-        "category": "equipment",
-        "key": "equip_343",
-        "name": {
-          "RU": "Знак Морозного пера",
-          "EN": "Frostfeather Badge",
-          "CN": "冰羽徽章"
-        },
-        "step": "S",
-        "slot": "Знак",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_235",
-        "category": "equipment",
-        "key": "equip_344",
-        "name": {
-          "RU": "Ожерелье Морозного пера",
-          "EN": "Frostfeather Necklace",
-          "CN": "冰羽项链"
-        },
-        "step": "S",
-        "slot": "Ожерелье / Амулет",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_131",
-        "category": "equipment",
-        "key": "equip_345",
-        "name": {
-          "RU": "Чистейший ледяной щит",
-          "EN": "Pristine Ice Shield",
-          "CN": "臻冰魔盾"
-        },
-        "step": "S",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_531",
-        "category": "equipment",
-        "key": "equip_346",
-        "name": {
-          "RU": "Чистейший ледяной шлем",
-          "EN": "Pristine Ice Helm",
-          "CN": "臻冰战盔"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_631",
-        "category": "equipment",
-        "key": "equip_347",
-        "name": {
-          "RU": "Чистейшая ледяная броня",
-          "EN": "Pristine Ice Armor",
-          "CN": "臻冰战甲"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_731",
-        "category": "equipment",
-        "key": "equip_348",
-        "name": {
-          "RU": "Чистейшие ледяные латные рукавицы",
-          "EN": "Pristine Ice Gauntlets",
-          "CN": "臻冰护手"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_734",
-        "category": "equipment",
-        "key": "equip_349",
-        "name": {
-          "RU": "Чистейший ледяной пояс",
-          "EN": "Pristine Ice Belt",
-          "CN": "臻冰腰带"
-        },
-        "step": "S",
-        "slot": "Пояс",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_733",
-        "category": "equipment",
-        "key": "equip_350",
-        "name": {
-          "RU": "Чистейшие ледяные сапоги",
-          "EN": "Pristine Ice Boots",
-          "CN": "臻冰战靴"
-        },
-        "step": "S",
-        "slot": "Обувь / Сапоги",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_332",
-        "category": "equipment",
-        "key": "equip_351",
-        "name": {
-          "RU": "Замороженный жезл",
-          "EN": "Frostbound Wand",
-          "CN": "极寒魔杖"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_533",
-        "category": "equipment",
-        "key": "equip_352",
-        "name": {
-          "RU": "Замороженная корона",
-          "EN": "Frostbound Crown",
-          "CN": "极寒王冠"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_534",
-        "category": "equipment",
-        "key": "equip_353",
-        "name": {
-          "RU": "Замороженное кольцо",
-          "EN": "Frostbound Ring",
-          "CN": "极寒指环"
-        },
-        "step": "S",
-        "slot": "Кольцо",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_132",
-        "category": "equipment",
-        "key": "equip_354",
-        "name": {
-          "RU": "Замороженный клинок",
-          "EN": "Frostbound Blade",
-          "CN": "极寒魔剑"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_633",
-        "category": "equipment",
-        "key": "equip_355",
-        "name": {
-          "RU": "Замороженная броня",
-          "EN": "Frostbound Armor",
-          "CN": "极寒战甲"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_634",
-        "category": "equipment",
-        "key": "equip_356",
-        "name": {
-          "RU": "Замороженное ожерелье",
-          "EN": "Frostbound Necklace",
-          "CN": "极寒项链"
-        },
-        "step": "S",
-        "slot": "Ожерелье / Амулет",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_641",
-        "category": "equipment",
-        "key": "equip_357",
-        "name": {
-          "RU": "Утепленный шлем",
-          "EN": "Insulated Helm",
-          "CN": "隔温头盔"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_642",
-        "category": "equipment",
-        "key": "equip_358",
-        "name": {
-          "RU": "Утепленный плащ",
-          "EN": "Insulated Coat",
-          "CN": "隔温外衣"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_643",
-        "category": "equipment",
-        "key": "equip_359",
-        "name": {
-          "RU": "Утепленные перчатки",
-          "EN": "Insulated Gloves",
-          "CN": "隔温手套"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_831",
-        "category": "equipment",
-        "key": "equip_360",
-        "name": {
-          "RU": "Мантия Ледяной паучихи",
-          "EN": "Frost Spider Mantle",
-          "CN": "冰蛛披肩"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_832",
-        "category": "equipment",
-        "key": "equip_361",
-        "name": {
-          "RU": "Перчатки Ледяной паучихи",
-          "EN": "Frost Spider Gloves",
-          "CN": "冰蛛手套"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_833",
-        "category": "equipment",
-        "key": "equip_362",
-        "name": {
-          "RU": "Эмблема Ледяной паучихи",
-          "EN": "Frost Spider Emblem",
-          "CN": "冰蛛纹章"
-        },
-        "step": "S",
-        "slot": "Знак",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_321",
-        "category": "equipment",
-        "key": "equip_363",
-        "name": {
-          "RU": "Жезл Ледяной ведьмы",
-          "EN": "Ice Witch Rod",
-          "CN": "冰巫权杖"
-        },
-        "step": "A",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_322",
-        "category": "equipment",
-        "key": "equip_364",
-        "name": {
-          "RU": "Талисман Ледяной ведьмы",
-          "EN": "Ice Witch Talisman",
-          "CN": "冰巫法宝"
-        },
-        "step": "A",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      }
-    ],
+    "possible_equips": [],
     "drops_summary": {
       "RU": [
         "⛺ Точка высадки и старта экспедиции",
@@ -505,54 +114,13 @@ const defaultMapTiles = [
       "CN": "⛺ 远征出发点与安全大本营。队伍在此完成初始部署与站位调整，无战斗威胁。"
     },
     "gold_drop": {
-      "min": 800,
-      "max": 2500,
-      "amount_str": "800 – 2 500 🪙",
-      "rate": 15.0
+      "amount_str": "0 🪙",
+      "min": 0,
+      "max": 0,
+      "rate": 0.0
     },
-    "possible_resources": [
-      {
-        "id": "D00000_000",
-        "category": "consumables",
-        "step": "C",
-        "name": {
-          "RU": "Золото",
-          "EN": "Gold",
-          "CN": "金币"
-        },
-        "amount_str": "800 – 2 500 🪙"
-      },
-      {
-        "id": "D00002_000",
-        "category": "consumables",
-        "step": "S",
-        "name": {
-          "RU": "Клевер",
-          "EN": "Clover",
-          "CN": "四叶草"
-        }
-      },
-      {
-        "id": "D00002_001",
-        "category": "consumables",
-        "step": "S",
-        "name": {
-          "RU": "Плод таланта",
-          "EN": "Talent Fruit",
-          "CN": "天赋果实"
-        }
-      },
-      {
-        "id": "D00004_000",
-        "category": "consumables",
-        "step": "C",
-        "name": {
-          "RU": "Выносливость",
-          "EN": "Stamina",
-          "CN": "体力"
-        }
-      }
-    ]
+    "possible_resources": [],
+    "interactive_type": "camp"
   },
   {
     "id": "tile_2",
@@ -3600,544 +3168,8 @@ const defaultMapTiles = [
       "equip": 0.0,
       "gold": 0.0
     },
-    "possible_chests": [
-      {
-        "id": "BX06002",
-        "category": "chests",
-        "key": "chest_153",
-        "name": {
-          "RU": "Сундук с Морозным самоцветом",
-          "EN": "Frostgem Chest",
-          "CN": "冰晶宝箱"
-        },
-        "step": "C",
-        "drop_type": "Снаряжение"
-      },
-      {
-        "id": "BX01021",
-        "category": "chests",
-        "key": "chest_117",
-        "name": {
-          "RU": "Крепкий сундук",
-          "EN": "Sturdy Chest",
-          "CN": "坚固宝箱"
-        },
-        "step": "C",
-        "drop_type": "Снаряжение"
-      },
-      {
-        "id": "BX01004",
-        "category": "chests",
-        "key": "chest_121",
-        "name": {
-          "RU": "Клад воина",
-          "EN": "Warrior's Trove",
-          "CN": "勇士秘宝"
-        },
-        "step": "C",
-        "drop_type": "Снаряжение"
-      },
-      {
-        "id": "BX01027",
-        "category": "chests",
-        "key": "chest_125",
-        "name": {
-          "RU": "Тотемный сундук",
-          "EN": "Totem Chest",
-          "CN": "图腾宝箱"
-        },
-        "step": "C",
-        "drop_type": "Снаряжение"
-      },
-      {
-        "id": "BX01035",
-        "category": "chests",
-        "key": "chest_129",
-        "name": {
-          "RU": "Сокровище Нефритовой королевы",
-          "EN": "Jade Queen's Treasure",
-          "CN": "翡翠宝藏"
-        },
-        "step": "C",
-        "drop_type": "Снаряжение"
-      },
-      {
-        "id": "BX02008",
-        "category": "chests",
-        "key": "chest_133",
-        "name": {
-          "RU": "Клад дракона",
-          "EN": "Dragon's Hoard",
-          "CN": "龙之密宝"
-        },
-        "step": "C",
-        "drop_type": "Снаряжение"
-      },
-      {
-        "id": "BX01031",
-        "category": "chests",
-        "key": "chest_137",
-        "name": {
-          "RU": "Магнитный сундук",
-          "EN": "Magnet Chest",
-          "CN": "磁石宝箱"
-        },
-        "step": "C",
-        "drop_type": "Снаряжение"
-      },
-      {
-        "id": "BX01033",
-        "category": "chests",
-        "key": "chest_141",
-        "name": {
-          "RU": "Забытое сокровище",
-          "EN": "Forgotten Treasure",
-          "CN": "遗忘宝藏"
-        },
-        "step": "C",
-        "drop_type": "Снаряжение"
-      },
-      {
-        "id": "BX01032",
-        "category": "chests",
-        "key": "chest_145",
-        "name": {
-          "RU": "Сокровище Глубоководья",
-          "EN": "Deep Sea Treasure",
-          "CN": "深海宝藏"
-        },
-        "step": "C",
-        "drop_type": "Снаряжение"
-      },
-      {
-        "id": "BX01002",
-        "category": "chests",
-        "key": "chest_149",
-        "name": {
-          "RU": "Корзина для пикника",
-          "EN": "Picnic Basket",
-          "CN": "野餐篮"
-        },
-        "step": "C",
-        "drop_type": "Снаряжение"
-      },
-      {
-        "id": "BX01029",
-        "category": "chests",
-        "key": "chest_157",
-        "name": {
-          "RU": "Тяжелое хранилище",
-          "EN": "Heavy Vault",
-          "CN": "沉重密宝"
-        },
-        "step": "C",
-        "drop_type": "Снаряжение"
-      },
-      {
-        "id": "BX20003",
-        "category": "chests",
-        "key": "chest_169",
-        "name": {
-          "RU": "Тайный клад",
-          "EN": "Hidden Trove",
-          "CN": "隐秘宝藏"
-        },
-        "step": "C",
-        "drop_type": "Снаряжение"
-      }
-    ],
-    "possible_equips": [
-      {
-        "id": "Z60006_532",
-        "category": "equipment",
-        "key": "equip_335",
-        "name": {
-          "RU": "Рог зимы",
-          "EN": "Horn of Winter",
-          "CN": "极寒之角"
-        },
-        "step": "SS",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_331",
-        "category": "equipment",
-        "key": "equip_336",
-        "name": {
-          "RU": "Жезл Ледяной пчелы",
-          "EN": "Frostbee Wand",
-          "CN": "冰蜂魔杖"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_632",
-        "category": "equipment",
-        "key": "equip_337",
-        "name": {
-          "RU": "Накидка Ледяной пчелы",
-          "EN": "Frostbee Cape",
-          "CN": "冰蜂披风"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_532",
-        "category": "equipment",
-        "key": "equip_338",
-        "name": {
-          "RU": "Шляпа Ледяной пчелы",
-          "EN": "Frostbee Hat",
-          "CN": "冰蜂法帽"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_231",
-        "category": "equipment",
-        "key": "equip_339",
-        "name": {
-          "RU": "Клинок Морозного пера",
-          "EN": "Frostfeather Blade",
-          "CN": "冰羽利刃"
-        },
-        "step": "S",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_232",
-        "category": "equipment",
-        "key": "equip_340",
-        "name": {
-          "RU": "Плащ Морозного пера",
-          "EN": "Frostfeather Cloak",
-          "CN": "冰羽斗篷"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_732",
-        "category": "equipment",
-        "key": "equip_341",
-        "name": {
-          "RU": "Сапоги Морозного пера",
-          "EN": "Frostfeather Boots",
-          "CN": "冰羽神靴"
-        },
-        "step": "S",
-        "slot": "Обувь / Сапоги",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_233",
-        "category": "equipment",
-        "key": "equip_342",
-        "name": {
-          "RU": "Наручи Морозного пера",
-          "EN": "Frostfeather Bracers",
-          "CN": "冰羽护臂"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_234",
-        "category": "equipment",
-        "key": "equip_343",
-        "name": {
-          "RU": "Знак Морозного пера",
-          "EN": "Frostfeather Badge",
-          "CN": "冰羽徽章"
-        },
-        "step": "S",
-        "slot": "Знак",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_235",
-        "category": "equipment",
-        "key": "equip_344",
-        "name": {
-          "RU": "Ожерелье Морозного пера",
-          "EN": "Frostfeather Necklace",
-          "CN": "冰羽项链"
-        },
-        "step": "S",
-        "slot": "Ожерелье / Амулет",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_131",
-        "category": "equipment",
-        "key": "equip_345",
-        "name": {
-          "RU": "Чистейший ледяной щит",
-          "EN": "Pristine Ice Shield",
-          "CN": "臻冰魔盾"
-        },
-        "step": "S",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_531",
-        "category": "equipment",
-        "key": "equip_346",
-        "name": {
-          "RU": "Чистейший ледяной шлем",
-          "EN": "Pristine Ice Helm",
-          "CN": "臻冰战盔"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_631",
-        "category": "equipment",
-        "key": "equip_347",
-        "name": {
-          "RU": "Чистейшая ледяная броня",
-          "EN": "Pristine Ice Armor",
-          "CN": "臻冰战甲"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_731",
-        "category": "equipment",
-        "key": "equip_348",
-        "name": {
-          "RU": "Чистейшие ледяные латные рукавицы",
-          "EN": "Pristine Ice Gauntlets",
-          "CN": "臻冰护手"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_734",
-        "category": "equipment",
-        "key": "equip_349",
-        "name": {
-          "RU": "Чистейший ледяной пояс",
-          "EN": "Pristine Ice Belt",
-          "CN": "臻冰腰带"
-        },
-        "step": "S",
-        "slot": "Пояс",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_733",
-        "category": "equipment",
-        "key": "equip_350",
-        "name": {
-          "RU": "Чистейшие ледяные сапоги",
-          "EN": "Pristine Ice Boots",
-          "CN": "臻冰战靴"
-        },
-        "step": "S",
-        "slot": "Обувь / Сапоги",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_332",
-        "category": "equipment",
-        "key": "equip_351",
-        "name": {
-          "RU": "Замороженный жезл",
-          "EN": "Frostbound Wand",
-          "CN": "极寒魔杖"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_533",
-        "category": "equipment",
-        "key": "equip_352",
-        "name": {
-          "RU": "Замороженная корона",
-          "EN": "Frostbound Crown",
-          "CN": "极寒王冠"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_534",
-        "category": "equipment",
-        "key": "equip_353",
-        "name": {
-          "RU": "Замороженное кольцо",
-          "EN": "Frostbound Ring",
-          "CN": "极寒指环"
-        },
-        "step": "S",
-        "slot": "Кольцо",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_132",
-        "category": "equipment",
-        "key": "equip_354",
-        "name": {
-          "RU": "Замороженный клинок",
-          "EN": "Frostbound Blade",
-          "CN": "极寒魔剑"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_633",
-        "category": "equipment",
-        "key": "equip_355",
-        "name": {
-          "RU": "Замороженная броня",
-          "EN": "Frostbound Armor",
-          "CN": "极寒战甲"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_634",
-        "category": "equipment",
-        "key": "equip_356",
-        "name": {
-          "RU": "Замороженное ожерелье",
-          "EN": "Frostbound Necklace",
-          "CN": "极寒项链"
-        },
-        "step": "S",
-        "slot": "Ожерелье / Амулет",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_641",
-        "category": "equipment",
-        "key": "equip_357",
-        "name": {
-          "RU": "Утепленный шлем",
-          "EN": "Insulated Helm",
-          "CN": "隔温头盔"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_642",
-        "category": "equipment",
-        "key": "equip_358",
-        "name": {
-          "RU": "Утепленный плащ",
-          "EN": "Insulated Coat",
-          "CN": "隔温外衣"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_643",
-        "category": "equipment",
-        "key": "equip_359",
-        "name": {
-          "RU": "Утепленные перчатки",
-          "EN": "Insulated Gloves",
-          "CN": "隔温手套"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_831",
-        "category": "equipment",
-        "key": "equip_360",
-        "name": {
-          "RU": "Мантия Ледяной паучихи",
-          "EN": "Frost Spider Mantle",
-          "CN": "冰蛛披肩"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_832",
-        "category": "equipment",
-        "key": "equip_361",
-        "name": {
-          "RU": "Перчатки Ледяной паучихи",
-          "EN": "Frost Spider Gloves",
-          "CN": "冰蛛手套"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_833",
-        "category": "equipment",
-        "key": "equip_362",
-        "name": {
-          "RU": "Эмблема Ледяной паучихи",
-          "EN": "Frost Spider Emblem",
-          "CN": "冰蛛纹章"
-        },
-        "step": "S",
-        "slot": "Знак",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_321",
-        "category": "equipment",
-        "key": "equip_363",
-        "name": {
-          "RU": "Жезл Ледяной ведьмы",
-          "EN": "Ice Witch Rod",
-          "CN": "冰巫权杖"
-        },
-        "step": "A",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_322",
-        "category": "equipment",
-        "key": "equip_364",
-        "name": {
-          "RU": "Талисман Ледяной ведьмы",
-          "EN": "Ice Witch Talisman",
-          "CN": "冰巫法宝"
-        },
-        "step": "A",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      }
-    ],
+    "possible_chests": [],
+    "possible_equips": [],
     "drops_summary": {
       "RU": [
         "💖 Сердца героинь (мгновенный ап 70+ уровней): 30.0%",
@@ -4164,10 +3196,10 @@ const defaultMapTiles = [
       "CN": "🧙‍♂️ 游荡于荒野各区域的神秘商人。售卖角色好感爱心（30%）、神石（25%）、大份干粮（500体力）及招募契约书（20%）。"
     },
     "gold_drop": {
-      "min": 800,
-      "max": 2500,
-      "amount_str": "800 – 2 500 🪙",
-      "rate": 10.0
+      "amount_str": "0 🪙 (Магазин)",
+      "min": 0,
+      "max": 0,
+      "rate": 0.0
     },
     "possible_resources": [
       {
@@ -4201,7 +3233,8 @@ const defaultMapTiles = [
           "CN": "星界石"
         }
       }
-    ]
+    ],
+    "interactive_type": "merchant"
   },
   {
     "id": "tile_10",
@@ -5528,398 +4561,7 @@ const defaultMapTiles = [
       "gold": 0.0
     },
     "possible_chests": [],
-    "possible_equips": [
-      {
-        "id": "Z60006_532",
-        "category": "equipment",
-        "key": "equip_335",
-        "name": {
-          "RU": "Рог зимы",
-          "EN": "Horn of Winter",
-          "CN": "极寒之角"
-        },
-        "step": "SS",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_331",
-        "category": "equipment",
-        "key": "equip_336",
-        "name": {
-          "RU": "Жезл Ледяной пчелы",
-          "EN": "Frostbee Wand",
-          "CN": "冰蜂魔杖"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_632",
-        "category": "equipment",
-        "key": "equip_337",
-        "name": {
-          "RU": "Накидка Ледяной пчелы",
-          "EN": "Frostbee Cape",
-          "CN": "冰蜂披风"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_532",
-        "category": "equipment",
-        "key": "equip_338",
-        "name": {
-          "RU": "Шляпа Ледяной пчелы",
-          "EN": "Frostbee Hat",
-          "CN": "冰蜂法帽"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_231",
-        "category": "equipment",
-        "key": "equip_339",
-        "name": {
-          "RU": "Клинок Морозного пера",
-          "EN": "Frostfeather Blade",
-          "CN": "冰羽利刃"
-        },
-        "step": "S",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_232",
-        "category": "equipment",
-        "key": "equip_340",
-        "name": {
-          "RU": "Плащ Морозного пера",
-          "EN": "Frostfeather Cloak",
-          "CN": "冰羽斗篷"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_732",
-        "category": "equipment",
-        "key": "equip_341",
-        "name": {
-          "RU": "Сапоги Морозного пера",
-          "EN": "Frostfeather Boots",
-          "CN": "冰羽神靴"
-        },
-        "step": "S",
-        "slot": "Обувь / Сапоги",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_233",
-        "category": "equipment",
-        "key": "equip_342",
-        "name": {
-          "RU": "Наручи Морозного пера",
-          "EN": "Frostfeather Bracers",
-          "CN": "冰羽护臂"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_234",
-        "category": "equipment",
-        "key": "equip_343",
-        "name": {
-          "RU": "Знак Морозного пера",
-          "EN": "Frostfeather Badge",
-          "CN": "冰羽徽章"
-        },
-        "step": "S",
-        "slot": "Знак",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_235",
-        "category": "equipment",
-        "key": "equip_344",
-        "name": {
-          "RU": "Ожерелье Морозного пера",
-          "EN": "Frostfeather Necklace",
-          "CN": "冰羽项链"
-        },
-        "step": "S",
-        "slot": "Ожерелье / Амулет",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_131",
-        "category": "equipment",
-        "key": "equip_345",
-        "name": {
-          "RU": "Чистейший ледяной щит",
-          "EN": "Pristine Ice Shield",
-          "CN": "臻冰魔盾"
-        },
-        "step": "S",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_531",
-        "category": "equipment",
-        "key": "equip_346",
-        "name": {
-          "RU": "Чистейший ледяной шлем",
-          "EN": "Pristine Ice Helm",
-          "CN": "臻冰战盔"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_631",
-        "category": "equipment",
-        "key": "equip_347",
-        "name": {
-          "RU": "Чистейшая ледяная броня",
-          "EN": "Pristine Ice Armor",
-          "CN": "臻冰战甲"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_731",
-        "category": "equipment",
-        "key": "equip_348",
-        "name": {
-          "RU": "Чистейшие ледяные латные рукавицы",
-          "EN": "Pristine Ice Gauntlets",
-          "CN": "臻冰护手"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_734",
-        "category": "equipment",
-        "key": "equip_349",
-        "name": {
-          "RU": "Чистейший ледяной пояс",
-          "EN": "Pristine Ice Belt",
-          "CN": "臻冰腰带"
-        },
-        "step": "S",
-        "slot": "Пояс",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_733",
-        "category": "equipment",
-        "key": "equip_350",
-        "name": {
-          "RU": "Чистейшие ледяные сапоги",
-          "EN": "Pristine Ice Boots",
-          "CN": "臻冰战靴"
-        },
-        "step": "S",
-        "slot": "Обувь / Сапоги",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_332",
-        "category": "equipment",
-        "key": "equip_351",
-        "name": {
-          "RU": "Замороженный жезл",
-          "EN": "Frostbound Wand",
-          "CN": "极寒魔杖"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_533",
-        "category": "equipment",
-        "key": "equip_352",
-        "name": {
-          "RU": "Замороженная корона",
-          "EN": "Frostbound Crown",
-          "CN": "极寒王冠"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_534",
-        "category": "equipment",
-        "key": "equip_353",
-        "name": {
-          "RU": "Замороженное кольцо",
-          "EN": "Frostbound Ring",
-          "CN": "极寒指环"
-        },
-        "step": "S",
-        "slot": "Кольцо",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_132",
-        "category": "equipment",
-        "key": "equip_354",
-        "name": {
-          "RU": "Замороженный клинок",
-          "EN": "Frostbound Blade",
-          "CN": "极寒魔剑"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_633",
-        "category": "equipment",
-        "key": "equip_355",
-        "name": {
-          "RU": "Замороженная броня",
-          "EN": "Frostbound Armor",
-          "CN": "极寒战甲"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_634",
-        "category": "equipment",
-        "key": "equip_356",
-        "name": {
-          "RU": "Замороженное ожерелье",
-          "EN": "Frostbound Necklace",
-          "CN": "极寒项链"
-        },
-        "step": "S",
-        "slot": "Ожерелье / Амулет",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_641",
-        "category": "equipment",
-        "key": "equip_357",
-        "name": {
-          "RU": "Утепленный шлем",
-          "EN": "Insulated Helm",
-          "CN": "隔温头盔"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_642",
-        "category": "equipment",
-        "key": "equip_358",
-        "name": {
-          "RU": "Утепленный плащ",
-          "EN": "Insulated Coat",
-          "CN": "隔温外衣"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_643",
-        "category": "equipment",
-        "key": "equip_359",
-        "name": {
-          "RU": "Утепленные перчатки",
-          "EN": "Insulated Gloves",
-          "CN": "隔温手套"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_831",
-        "category": "equipment",
-        "key": "equip_360",
-        "name": {
-          "RU": "Мантия Ледяной паучихи",
-          "EN": "Frost Spider Mantle",
-          "CN": "冰蛛披肩"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_832",
-        "category": "equipment",
-        "key": "equip_361",
-        "name": {
-          "RU": "Перчатки Ледяной паучихи",
-          "EN": "Frost Spider Gloves",
-          "CN": "冰蛛手套"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_833",
-        "category": "equipment",
-        "key": "equip_362",
-        "name": {
-          "RU": "Эмблема Ледяной паучихи",
-          "EN": "Frost Spider Emblem",
-          "CN": "冰蛛纹章"
-        },
-        "step": "S",
-        "slot": "Знак",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_321",
-        "category": "equipment",
-        "key": "equip_363",
-        "name": {
-          "RU": "Жезл Ледяной ведьмы",
-          "EN": "Ice Witch Rod",
-          "CN": "冰巫权杖"
-        },
-        "step": "A",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_322",
-        "category": "equipment",
-        "key": "equip_364",
-        "name": {
-          "RU": "Талисман Ледяной ведьмы",
-          "EN": "Ice Witch Talisman",
-          "CN": "冰巫法宝"
-        },
-        "step": "A",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      }
-    ],
+    "possible_equips": [],
     "drops_summary": {
       "RU": [
         "✨ Воскрешение павших союзниц и +100 выносливости: 40.0%",
@@ -5943,10 +4585,10 @@ const defaultMapTiles = [
       "CN": "⚰️ 远古英雄长眠的长眠之地。交互可提供复活神迹（40%）、全队属性大祝福（35%）及传承碎片（25%）。"
     },
     "gold_drop": {
-      "min": 2000,
-      "max": 8000,
-      "amount_str": "2 000 – 8 000 🪙",
-      "rate": 10.0
+      "amount_str": "0 🪙 (Алтарь)",
+      "min": 0,
+      "max": 0,
+      "rate": 0.0
     },
     "possible_resources": [
       {
@@ -5980,7 +4622,8 @@ const defaultMapTiles = [
           "CN": "星界石"
         }
       }
-    ]
+    ],
+    "interactive_type": "blessing"
   },
   {
     "id": "tile_13",
@@ -6450,398 +5093,7 @@ const defaultMapTiles = [
       "gold": 0.0
     },
     "possible_chests": [],
-    "possible_equips": [
-      {
-        "id": "Z60006_532",
-        "category": "equipment",
-        "key": "equip_335",
-        "name": {
-          "RU": "Рог зимы",
-          "EN": "Horn of Winter",
-          "CN": "极寒之角"
-        },
-        "step": "SS",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_331",
-        "category": "equipment",
-        "key": "equip_336",
-        "name": {
-          "RU": "Жезл Ледяной пчелы",
-          "EN": "Frostbee Wand",
-          "CN": "冰蜂魔杖"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_632",
-        "category": "equipment",
-        "key": "equip_337",
-        "name": {
-          "RU": "Накидка Ледяной пчелы",
-          "EN": "Frostbee Cape",
-          "CN": "冰蜂披风"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_532",
-        "category": "equipment",
-        "key": "equip_338",
-        "name": {
-          "RU": "Шляпа Ледяной пчелы",
-          "EN": "Frostbee Hat",
-          "CN": "冰蜂法帽"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_231",
-        "category": "equipment",
-        "key": "equip_339",
-        "name": {
-          "RU": "Клинок Морозного пера",
-          "EN": "Frostfeather Blade",
-          "CN": "冰羽利刃"
-        },
-        "step": "S",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_232",
-        "category": "equipment",
-        "key": "equip_340",
-        "name": {
-          "RU": "Плащ Морозного пера",
-          "EN": "Frostfeather Cloak",
-          "CN": "冰羽斗篷"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_732",
-        "category": "equipment",
-        "key": "equip_341",
-        "name": {
-          "RU": "Сапоги Морозного пера",
-          "EN": "Frostfeather Boots",
-          "CN": "冰羽神靴"
-        },
-        "step": "S",
-        "slot": "Обувь / Сапоги",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_233",
-        "category": "equipment",
-        "key": "equip_342",
-        "name": {
-          "RU": "Наручи Морозного пера",
-          "EN": "Frostfeather Bracers",
-          "CN": "冰羽护臂"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_234",
-        "category": "equipment",
-        "key": "equip_343",
-        "name": {
-          "RU": "Знак Морозного пера",
-          "EN": "Frostfeather Badge",
-          "CN": "冰羽徽章"
-        },
-        "step": "S",
-        "slot": "Знак",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_235",
-        "category": "equipment",
-        "key": "equip_344",
-        "name": {
-          "RU": "Ожерелье Морозного пера",
-          "EN": "Frostfeather Necklace",
-          "CN": "冰羽项链"
-        },
-        "step": "S",
-        "slot": "Ожерелье / Амулет",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_131",
-        "category": "equipment",
-        "key": "equip_345",
-        "name": {
-          "RU": "Чистейший ледяной щит",
-          "EN": "Pristine Ice Shield",
-          "CN": "臻冰魔盾"
-        },
-        "step": "S",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_531",
-        "category": "equipment",
-        "key": "equip_346",
-        "name": {
-          "RU": "Чистейший ледяной шлем",
-          "EN": "Pristine Ice Helm",
-          "CN": "臻冰战盔"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_631",
-        "category": "equipment",
-        "key": "equip_347",
-        "name": {
-          "RU": "Чистейшая ледяная броня",
-          "EN": "Pristine Ice Armor",
-          "CN": "臻冰战甲"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_731",
-        "category": "equipment",
-        "key": "equip_348",
-        "name": {
-          "RU": "Чистейшие ледяные латные рукавицы",
-          "EN": "Pristine Ice Gauntlets",
-          "CN": "臻冰护手"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_734",
-        "category": "equipment",
-        "key": "equip_349",
-        "name": {
-          "RU": "Чистейший ледяной пояс",
-          "EN": "Pristine Ice Belt",
-          "CN": "臻冰腰带"
-        },
-        "step": "S",
-        "slot": "Пояс",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_733",
-        "category": "equipment",
-        "key": "equip_350",
-        "name": {
-          "RU": "Чистейшие ледяные сапоги",
-          "EN": "Pristine Ice Boots",
-          "CN": "臻冰战靴"
-        },
-        "step": "S",
-        "slot": "Обувь / Сапоги",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_332",
-        "category": "equipment",
-        "key": "equip_351",
-        "name": {
-          "RU": "Замороженный жезл",
-          "EN": "Frostbound Wand",
-          "CN": "极寒魔杖"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_533",
-        "category": "equipment",
-        "key": "equip_352",
-        "name": {
-          "RU": "Замороженная корона",
-          "EN": "Frostbound Crown",
-          "CN": "极寒王冠"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_534",
-        "category": "equipment",
-        "key": "equip_353",
-        "name": {
-          "RU": "Замороженное кольцо",
-          "EN": "Frostbound Ring",
-          "CN": "极寒指环"
-        },
-        "step": "S",
-        "slot": "Кольцо",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_132",
-        "category": "equipment",
-        "key": "equip_354",
-        "name": {
-          "RU": "Замороженный клинок",
-          "EN": "Frostbound Blade",
-          "CN": "极寒魔剑"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_633",
-        "category": "equipment",
-        "key": "equip_355",
-        "name": {
-          "RU": "Замороженная броня",
-          "EN": "Frostbound Armor",
-          "CN": "极寒战甲"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_634",
-        "category": "equipment",
-        "key": "equip_356",
-        "name": {
-          "RU": "Замороженное ожерелье",
-          "EN": "Frostbound Necklace",
-          "CN": "极寒项链"
-        },
-        "step": "S",
-        "slot": "Ожерелье / Амулет",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_641",
-        "category": "equipment",
-        "key": "equip_357",
-        "name": {
-          "RU": "Утепленный шлем",
-          "EN": "Insulated Helm",
-          "CN": "隔温头盔"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_642",
-        "category": "equipment",
-        "key": "equip_358",
-        "name": {
-          "RU": "Утепленный плащ",
-          "EN": "Insulated Coat",
-          "CN": "隔温外衣"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_643",
-        "category": "equipment",
-        "key": "equip_359",
-        "name": {
-          "RU": "Утепленные перчатки",
-          "EN": "Insulated Gloves",
-          "CN": "隔温手套"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_831",
-        "category": "equipment",
-        "key": "equip_360",
-        "name": {
-          "RU": "Мантия Ледяной паучихи",
-          "EN": "Frost Spider Mantle",
-          "CN": "冰蛛披肩"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_832",
-        "category": "equipment",
-        "key": "equip_361",
-        "name": {
-          "RU": "Перчатки Ледяной паучихи",
-          "EN": "Frost Spider Gloves",
-          "CN": "冰蛛手套"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_833",
-        "category": "equipment",
-        "key": "equip_362",
-        "name": {
-          "RU": "Эмблема Ледяной паучихи",
-          "EN": "Frost Spider Emblem",
-          "CN": "冰蛛纹章"
-        },
-        "step": "S",
-        "slot": "Знак",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_321",
-        "category": "equipment",
-        "key": "equip_363",
-        "name": {
-          "RU": "Жезл Ледяной ведьмы",
-          "EN": "Ice Witch Rod",
-          "CN": "冰巫权杖"
-        },
-        "step": "A",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_322",
-        "category": "equipment",
-        "key": "equip_364",
-        "name": {
-          "RU": "Талисман Ледяной ведьмы",
-          "EN": "Ice Witch Talisman",
-          "CN": "冰巫法宝"
-        },
-        "step": "A",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      }
-    ],
+    "possible_equips": [],
     "drops_summary": {
       "RU": [
         "🔮 Баффы Оракула (+20% урона, +15% крита): 50.0%",
@@ -6865,10 +5117,10 @@ const defaultMapTiles = [
       "CN": "📜 刻有远古先知预言的神秘石刻。激活后获得战斗预知加成（50%）、全图视野探明（30%）及直通Boss捷径（20%）。"
     },
     "gold_drop": {
-      "min": 2000,
-      "max": 8000,
-      "amount_str": "2 000 – 8 000 🪙",
-      "rate": 10.0
+      "amount_str": "0 🪙 (Оракул)",
+      "min": 0,
+      "max": 0,
+      "rate": 0.0
     },
     "possible_resources": [
       {
@@ -6902,7 +5154,8 @@ const defaultMapTiles = [
           "CN": "星界石"
         }
       }
-    ]
+    ],
+    "interactive_type": "oracle"
   },
   {
     "id": "tile_15",
@@ -6982,406 +5235,15 @@ const defaultMapTiles = [
       "CN": []
     },
     "rates": {
+      "materials": 0.0,
+      "stones": 0.0,
+      "role": 0.0,
       "chest": 0.0,
       "equip": 0.0,
-      "role": 0.0,
-      "materials": 100.0,
-      "gold": 0.0,
-      "stones": 0.0
+      "gold": 0.0
     },
     "possible_chests": [],
-    "possible_equips": [
-      {
-        "id": "Z60006_532",
-        "category": "equipment",
-        "key": "equip_335",
-        "name": {
-          "RU": "Рог зимы",
-          "EN": "Horn of Winter",
-          "CN": "极寒之角"
-        },
-        "step": "SS",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_331",
-        "category": "equipment",
-        "key": "equip_336",
-        "name": {
-          "RU": "Жезл Ледяной пчелы",
-          "EN": "Frostbee Wand",
-          "CN": "冰蜂魔杖"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_632",
-        "category": "equipment",
-        "key": "equip_337",
-        "name": {
-          "RU": "Накидка Ледяной пчелы",
-          "EN": "Frostbee Cape",
-          "CN": "冰蜂披风"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_532",
-        "category": "equipment",
-        "key": "equip_338",
-        "name": {
-          "RU": "Шляпа Ледяной пчелы",
-          "EN": "Frostbee Hat",
-          "CN": "冰蜂法帽"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_231",
-        "category": "equipment",
-        "key": "equip_339",
-        "name": {
-          "RU": "Клинок Морозного пера",
-          "EN": "Frostfeather Blade",
-          "CN": "冰羽利刃"
-        },
-        "step": "S",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_232",
-        "category": "equipment",
-        "key": "equip_340",
-        "name": {
-          "RU": "Плащ Морозного пера",
-          "EN": "Frostfeather Cloak",
-          "CN": "冰羽斗篷"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_732",
-        "category": "equipment",
-        "key": "equip_341",
-        "name": {
-          "RU": "Сапоги Морозного пера",
-          "EN": "Frostfeather Boots",
-          "CN": "冰羽神靴"
-        },
-        "step": "S",
-        "slot": "Обувь / Сапоги",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_233",
-        "category": "equipment",
-        "key": "equip_342",
-        "name": {
-          "RU": "Наручи Морозного пера",
-          "EN": "Frostfeather Bracers",
-          "CN": "冰羽护臂"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_234",
-        "category": "equipment",
-        "key": "equip_343",
-        "name": {
-          "RU": "Знак Морозного пера",
-          "EN": "Frostfeather Badge",
-          "CN": "冰羽徽章"
-        },
-        "step": "S",
-        "slot": "Знак",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_235",
-        "category": "equipment",
-        "key": "equip_344",
-        "name": {
-          "RU": "Ожерелье Морозного пера",
-          "EN": "Frostfeather Necklace",
-          "CN": "冰羽项链"
-        },
-        "step": "S",
-        "slot": "Ожерелье / Амулет",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_131",
-        "category": "equipment",
-        "key": "equip_345",
-        "name": {
-          "RU": "Чистейший ледяной щит",
-          "EN": "Pristine Ice Shield",
-          "CN": "臻冰魔盾"
-        },
-        "step": "S",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_531",
-        "category": "equipment",
-        "key": "equip_346",
-        "name": {
-          "RU": "Чистейший ледяной шлем",
-          "EN": "Pristine Ice Helm",
-          "CN": "臻冰战盔"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_631",
-        "category": "equipment",
-        "key": "equip_347",
-        "name": {
-          "RU": "Чистейшая ледяная броня",
-          "EN": "Pristine Ice Armor",
-          "CN": "臻冰战甲"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_731",
-        "category": "equipment",
-        "key": "equip_348",
-        "name": {
-          "RU": "Чистейшие ледяные латные рукавицы",
-          "EN": "Pristine Ice Gauntlets",
-          "CN": "臻冰护手"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_734",
-        "category": "equipment",
-        "key": "equip_349",
-        "name": {
-          "RU": "Чистейший ледяной пояс",
-          "EN": "Pristine Ice Belt",
-          "CN": "臻冰腰带"
-        },
-        "step": "S",
-        "slot": "Пояс",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_733",
-        "category": "equipment",
-        "key": "equip_350",
-        "name": {
-          "RU": "Чистейшие ледяные сапоги",
-          "EN": "Pristine Ice Boots",
-          "CN": "臻冰战靴"
-        },
-        "step": "S",
-        "slot": "Обувь / Сапоги",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_332",
-        "category": "equipment",
-        "key": "equip_351",
-        "name": {
-          "RU": "Замороженный жезл",
-          "EN": "Frostbound Wand",
-          "CN": "极寒魔杖"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_533",
-        "category": "equipment",
-        "key": "equip_352",
-        "name": {
-          "RU": "Замороженная корона",
-          "EN": "Frostbound Crown",
-          "CN": "极寒王冠"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_534",
-        "category": "equipment",
-        "key": "equip_353",
-        "name": {
-          "RU": "Замороженное кольцо",
-          "EN": "Frostbound Ring",
-          "CN": "极寒指环"
-        },
-        "step": "S",
-        "slot": "Кольцо",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_132",
-        "category": "equipment",
-        "key": "equip_354",
-        "name": {
-          "RU": "Замороженный клинок",
-          "EN": "Frostbound Blade",
-          "CN": "极寒魔剑"
-        },
-        "step": "S",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_633",
-        "category": "equipment",
-        "key": "equip_355",
-        "name": {
-          "RU": "Замороженная броня",
-          "EN": "Frostbound Armor",
-          "CN": "极寒战甲"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_634",
-        "category": "equipment",
-        "key": "equip_356",
-        "name": {
-          "RU": "Замороженное ожерелье",
-          "EN": "Frostbound Necklace",
-          "CN": "极寒项链"
-        },
-        "step": "S",
-        "slot": "Ожерелье / Амулет",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_641",
-        "category": "equipment",
-        "key": "equip_357",
-        "name": {
-          "RU": "Утепленный шлем",
-          "EN": "Insulated Helm",
-          "CN": "隔温头盔"
-        },
-        "step": "S",
-        "slot": "Голова",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_642",
-        "category": "equipment",
-        "key": "equip_358",
-        "name": {
-          "RU": "Утепленный плащ",
-          "EN": "Insulated Coat",
-          "CN": "隔温外衣"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_643",
-        "category": "equipment",
-        "key": "equip_359",
-        "name": {
-          "RU": "Утепленные перчатки",
-          "EN": "Insulated Gloves",
-          "CN": "隔温手套"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_831",
-        "category": "equipment",
-        "key": "equip_360",
-        "name": {
-          "RU": "Мантия Ледяной паучихи",
-          "EN": "Frost Spider Mantle",
-          "CN": "冰蛛披肩"
-        },
-        "step": "S",
-        "slot": "Тело",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_832",
-        "category": "equipment",
-        "key": "equip_361",
-        "name": {
-          "RU": "Перчатки Ледяной паучихи",
-          "EN": "Frost Spider Gloves",
-          "CN": "冰蛛手套"
-        },
-        "step": "S",
-        "slot": "Руки",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_833",
-        "category": "equipment",
-        "key": "equip_362",
-        "name": {
-          "RU": "Эмблема Ледяной паучихи",
-          "EN": "Frost Spider Emblem",
-          "CN": "冰蛛纹章"
-        },
-        "step": "S",
-        "slot": "Знак",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_321",
-        "category": "equipment",
-        "key": "equip_363",
-        "name": {
-          "RU": "Жезл Ледяной ведьмы",
-          "EN": "Ice Witch Rod",
-          "CN": "冰巫权杖"
-        },
-        "step": "A",
-        "slot": "Правая",
-        "element": "Ветер, Вода"
-      },
-      {
-        "id": "Z00101_322",
-        "category": "equipment",
-        "key": "equip_364",
-        "name": {
-          "RU": "Талисман Ледяной ведьмы",
-          "EN": "Ice Witch Talisman",
-          "CN": "冰巫法宝"
-        },
-        "step": "A",
-        "slot": "Вторая рука / Щит",
-        "element": "Ветер, Вода"
-      }
-    ],
+    "possible_equips": [],
     "drops_summary": {
       "RU": [
         "🌿 Добыча материалов: 100.0%"
@@ -7399,54 +5261,13 @@ const defaultMapTiles = [
       "CN": "🎁 探索中随机触发的限时特惠补给包，提供高性价比体力与稀有资源。"
     },
     "gold_drop": {
-      "min": 800,
-      "max": 2500,
-      "amount_str": "800 – 2 500 🪙",
-      "rate": 15.0
+      "amount_str": "0 🪙",
+      "min": 0,
+      "max": 0,
+      "rate": 0.0
     },
-    "possible_resources": [
-      {
-        "id": "D00000_000",
-        "category": "consumables",
-        "step": "C",
-        "name": {
-          "RU": "Золото",
-          "EN": "Gold",
-          "CN": "金币"
-        },
-        "amount_str": "800 – 2 500 🪙"
-      },
-      {
-        "id": "D00002_000",
-        "category": "consumables",
-        "step": "S",
-        "name": {
-          "RU": "Клевер",
-          "EN": "Clover",
-          "CN": "四叶草"
-        }
-      },
-      {
-        "id": "D00002_001",
-        "category": "consumables",
-        "step": "S",
-        "name": {
-          "RU": "Плод таланта",
-          "EN": "Talent Fruit",
-          "CN": "天赋果实"
-        }
-      },
-      {
-        "id": "D00004_000",
-        "category": "consumables",
-        "step": "C",
-        "name": {
-          "RU": "Выносливость",
-          "EN": "Stamina",
-          "CN": "体力"
-        }
-      }
-    ]
+    "possible_resources": [],
+    "interactive_type": "offer"
   },
   {
     "id": "tile_16",
@@ -81162,9 +78983,10 @@ const GuidesView = {
             const icon = t.icon || (t.category === 'altar' ? '🏛️' : t.category === 'mimic' ? '🧰' : t.category === 'resource' ? '💎' : t.category === 'merchant' ? '🛒' : '🌟');
             const sizeBadge = t.size_str || (t.sizes ? t.sizes.join('x') : '1x1');
             const biomes = Array.isArray(t.biomes) ? t.biomes : (t.biomes?.[lang] || t.biomes?.RU || t.biomes?.CN || []);
-            const goldAmount = t.gold_drop?.amount_str || '800 – 2 500 🪙';
+            const goldAmount = t.gold_drop?.amount_str || '0 🪙';
             const equipsCount = (t.possible_equips || []).length;
             const chestsCount = (t.possible_chests || []).length;
+            const iType = t.interactive_type || '';
 
             return `
               <div class="guide-card" style="padding: 14px; margin: 0; background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.15s ease, border-color 0.15s ease;" onclick="App.openTileModal('${t.id}')" onmouseover="this.style.borderColor='#38bdf8'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='var(--border-subtle)'; this.style.transform='translateY(0)';">
@@ -81199,16 +79021,38 @@ const GuidesView = {
                     </div>
                   ` : ''}
 
-                  <!-- Drop Summary Stats Preview -->
-                  <div style="background: rgba(0,0,0,0.25); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between;">
-                    <span style="color: #facc15; font-weight: 700;">🪙 ${goldAmount}</span>
-                    <span style="color: #cbd5e1;">⚔️ ${equipsCount} ${isRu ? 'предметов' : isCn ? '件装备' : 'items'}</span>
-                    ${chestsCount > 0 ? `<span style="color: #c084fc;">📦 ${chestsCount} ${isRu ? 'сунд.' : isCn ? '宝箱' : 'chests'}</span>` : ''}
-                  </div>
+                  <!-- Drop Summary Stats Preview or Interactive Notice -->
+                  ${iType === 'offer' ? `
+                    <div style="background: rgba(236, 72, 153, 0.12); border: 1px solid rgba(236, 72, 153, 0.3); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; color: #f472b6; font-weight: 700;">
+                      🎁 ${isRu ? 'Лимитированное спецпредложение (Магазин)' : isCn ? '限时特惠礼包 (专属商店)' : 'Special Limited Offer Shop'}
+                    </div>
+                  ` : iType === 'camp' ? `
+                    <div style="background: rgba(34, 197, 94, 0.12); border: 1px solid rgba(34, 197, 94, 0.3); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; color: #86efac; font-weight: 700;">
+                      ⛺ ${isRu ? 'База экспедиции (Свободная расстановка)' : isCn ? '安全整备据点 (无战斗)' : 'Expedition Base Camp'}
+                    </div>
+                  ` : iType === 'merchant' ? `
+                    <div style="background: rgba(234, 179, 8, 0.12); border: 1px solid rgba(234, 179, 8, 0.3); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; color: #facc15; font-weight: 700;">
+                      🛒 ${isRu ? 'Странствующий торговец (Покупка за монеты)' : isCn ? '游商地精商店 (金币兑换)' : 'Merchant Shop (Purchase)'}
+                    </div>
+                  ` : iType === 'blessing' ? `
+                    <div style="background: rgba(168, 85, 247, 0.12); border: 1px solid rgba(168, 85, 247, 0.3); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; color: #c084fc; font-weight: 700;">
+                      ✨ ${isRu ? 'Воскрешение отряда +100 выносливости' : isCn ? '英灵复活 + 100体力' : 'Party Revive & +100 Stamina'}
+                    </div>
+                  ` : iType === 'oracle' ? `
+                    <div style="background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.3); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; color: #38bdf8; font-weight: 700;">
+                      🔮 ${isRu ? 'Разведка тумана войны + Боевой бафф' : isCn ? '驱散战争迷雾 + 全队增益' : 'Fog Reveal & Combat Buff'}
+                    </div>
+                  ` : `
+                    <div style="background: rgba(0,0,0,0.25); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between;">
+                      <span style="color: #facc15; font-weight: 700;">🪙 ${goldAmount}</span>
+                      <span style="color: #cbd5e1;">⚔️ ${equipsCount} ${isRu ? 'предметов' : isCn ? '件装备' : 'items'}</span>
+                      ${chestsCount > 0 ? `<span style="color: #c084fc;">📦 ${chestsCount} ${isRu ? 'сунд.' : isCn ? '宝箱' : 'chests'}</span>` : ''}
+                    </div>
+                  `}
 
                   <!-- Description -->
                   <div style="font-size: 12px; color: #94a3b8; line-height: 1.5; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                    ${this.escapeHtml(desc) || (isRu ? 'Нажмите для подробного описания наград и шансов.' : 'Click for loot details and mechanics.')}
+                    ${this.escapeHtml(desc) || (isRu ? 'Нажмите для подробного описания механики клетки.' : 'Click for mechanics and details.')}
                   </div>
                 </div>
 
@@ -81218,7 +79062,7 @@ const GuidesView = {
                     ${t.is_special ? '✨ ' + (isRu ? 'Особый тайл' : 'Special Spot') : '🗺️ ' + (isRu ? 'Обычный тайл' : 'Standard Spot')}
                   </span>
                   <button class="action-btn" onclick="event.stopPropagation(); App.openTileModal('${t.id}')" style="font-size: 11px; padding: 4px 10px; background: rgba(56, 189, 248, 0.2); border: 1px solid #38bdf8; color: #38bdf8; border-radius: 4px; cursor: pointer; font-weight: 700;">
-                    ${isRu ? 'Таблица дропа' : isCn ? '掉落全貌' : 'Drop Table'} ➔
+                    ${iType ? (isRu ? 'Механика клетки' : isCn ? '查看机制' : 'Spot Details') : (isRu ? 'Таблица дропа' : isCn ? '掉落全貌' : 'Drop Table')} ➔
                   </button>
                 </div>
               </div>
@@ -83291,14 +81135,16 @@ const GuidesView = {
     const equips = tile.possible_equips || [];
     const chests = tile.possible_chests || [];
     const resources = tile.possible_resources || [];
-    const goldDrop = tile.gold_drop || { amount_str: '800 – 2 500 🪙', rate: rates.gold || 15.0 };
+    const goldDrop = tile.gold_drop || { amount_str: '0 🪙', rate: 0.0 };
     const dropsSummary = Array.isArray(tile.drops_summary) ? tile.drops_summary : (tile.drops_summary?.[lang] || tile.drops_summary?.RU || tile.drops_summary?.CN || []);
     const biomesList = Array.isArray(tile.biomes) ? tile.biomes : (tile.biomes?.[lang] || tile.biomes?.RU || tile.biomes?.CN || []);
+    const iType = tile.interactive_type || '';
 
     const equipRate = rates.equip || (equips.length > 0 ? 10.0 : 0);
     const chestRate = rates.chest || (chests.length > 0 ? 35.0 : 0);
     const matRate = rates.materials || rates.stones || (resources.length > 0 ? 40.0 : 0);
-    const goldRate = goldDrop.rate || rates.gold || 15.0;
+    const goldRate = goldDrop.rate || 0.0;
+    const hasCombatDrop = (equips.length > 0 || chests.length > 0 || (goldRate > 0 && !iType));
 
     return `
       <div class="modal-dialog" style="max-width: 680px;">
@@ -83319,6 +81165,69 @@ const GuidesView = {
             ${this.escapeHtml(desc) || (isRu ? 'Особое интерактивное место на карте приключений.' : isCn ? '大地图探索专属地块。' : 'Special adventure map location.')}
           </div>
 
+          <!-- Interactive Mechanic Banner (for non-combat spots: Camp, Offer, Merchant, Altar) -->
+          ${iType === 'offer' ? `
+            <div style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(15, 23, 42, 0.95)); border: 1.5px solid rgba(236, 72, 153, 0.45); border-radius: var(--radius-md); padding: 14px 16px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                <span style="font-size: 24px;">🎁</span>
+                <span style="font-size: 14px; font-weight: 800; color: #f472b6;">
+                  ${isRu ? 'Лимитированное предложение (Магазин на карте)' : isCn ? '限时特惠礼包 (地图专属商店)' : 'Limited Special Offer (Map Shop)'}
+                </span>
+              </div>
+              <p style="font-size: 12.5px; color: #cbd5e1; line-height: 1.6; margin: 0;">
+                ${isRu ? 'На этой клетке нет боевого дропа. При активации тайла открывается окно покупки редких акционных наборов за кристаллы (свитков найма, фрагментов героинь и ценных ресурсов со скидкой).' : isCn ? '该地块不产生战斗掉落。激活后将弹出专属限时特惠购买界面，可使用钻石折扣购买招募券、英雄碎片与高阶资源。' : 'This spot has no battle loot. Interacting opens a special discount shop to purchase summons, shards, and resources.'}
+              </p>
+            </div>
+          ` : iType === 'camp' ? `
+            <div style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(15, 23, 42, 0.95)); border: 1.5px solid rgba(34, 197, 94, 0.45); border-radius: var(--radius-md); padding: 14px 16px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                <span style="font-size: 24px;">⛺</span>
+                <span style="font-size: 14px; font-weight: 800; color: #86efac;">
+                  ${isRu ? 'Безопасная база экспедиции (Лагерь)' : isCn ? '安全整备据点 (营地)' : 'Expedition Base Camp'}
+                </span>
+              </div>
+              <p style="font-size: 12.5px; color: #cbd5e1; line-height: 1.6; margin: 0;">
+                ${isRu ? 'Точка старта и перегруппировки на карте. На этой клетке нет врагов и боевого дропа — здесь игрок может свободно менять состав отряда, экипировку и планировать маршрут.' : isCn ? '探索的安全出发与整备据点。无战斗掉落，可在此自由调整编队阵容与装备配置。' : 'Safe starting and staging camp. No combat drops; configure party and equipment freely.'}
+              </p>
+            </div>
+          ` : iType === 'merchant' ? `
+            <div style="background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(15, 23, 42, 0.95)); border: 1.5px solid rgba(234, 179, 8, 0.45); border-radius: var(--radius-md); padding: 14px 16px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                <span style="font-size: 24px;">🛒</span>
+                <span style="font-size: 14px; font-weight: 800; color: #facc15;">
+                  ${isRu ? 'Магазин странствующего торговца' : isCn ? '游商地精商店' : 'Wandering Merchant Shop'}
+                </span>
+              </div>
+              <p style="font-size: 12.5px; color: #cbd5e1; line-height: 1.6; margin: 0;">
+                ${isRu ? 'Предметы не выпадают в бою, а покупаются в магазине за золото, самоцветы и рыбьи фишки (сундуки со снаряжением, фрагменты героинь и материалы).' : isCn ? '物品非战斗掉落，而是通过消耗金币、钻石或鱼干在商店中直接兑换购买。' : 'Items do not drop from battle; purchase them directly with gold, gems, and fish tokens.'}
+              </p>
+            </div>
+          ` : iType === 'blessing' ? `
+            <div style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.15), rgba(15, 23, 42, 0.95)); border: 1.5px solid rgba(168, 85, 247, 0.45); border-radius: var(--radius-md); padding: 14px 16px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                <span style="font-size: 24px;">✨</span>
+                <span style="font-size: 14px; font-weight: 800; color: #c084fc;">
+                  ${isRu ? 'Священный алтарь возрождения' : isCn ? '英灵复活祭坛' : 'Heroine Resurrection Altar'}
+                </span>
+              </div>
+              <p style="font-size: 12.5px; color: #cbd5e1; line-height: 1.6; margin: 0;">
+                ${isRu ? 'Интерактивный алтарь. Мгновенно воскрешает всех павших героинь вашего отряда с полным здоровьем, восстанавливает 100 выносливости и наделяет боевым благословением.' : isCn ? '交互式祭坛。瞬间复活队伍中所有阵亡英雄并补满生命，恢复100体力并赋予强力祝福。' : 'Instantly revives all fallen party members with full HP, restores 100 stamina, and grants combat blessings.'}
+              </p>
+            </div>
+          ` : iType === 'oracle' ? `
+            <div style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(15, 23, 42, 0.95)); border: 1.5px solid rgba(56, 189, 248, 0.45); border-radius: var(--radius-md); padding: 14px 16px;">
+              <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                <span style="font-size: 24px;">🔮</span>
+                <span style="font-size: 14px; font-weight: 800; color: #38bdf8;">
+                  ${isRu ? 'Стела пророчества и оракула' : isCn ? '预言与斥候石碑' : 'Prophecy Oracle Stele'}
+                </span>
+              </div>
+              <p style="font-size: 12.5px; color: #cbd5e1; line-height: 1.6; margin: 0;">
+                ${isRu ? 'Интерактивная стела. Развеивает туман войны на 5 клеток вокруг, подсвечивает спрятанные сокровища и наделяет отряд баффом (+20% к общему урону и +15% к шансу крита).' : isCn ? '预言石碑。驱散周围5格战争迷雾，探测隐藏宝箱，并赋予全队全伤害+20%与暴击率+15%增益。' : 'Dispels fog of war in 5 tiles, reveals hidden chests, and grants +20% DMG & +15% CRIT rate.'}
+              </p>
+            </div>
+          ` : ''}
+
           <!-- Drops Summary Highlights -->
           ${dropsSummary.length > 0 ? `
             <div style="background: rgba(56, 189, 248, 0.08); border-left: 3px solid #38bdf8; padding: 10px 14px; border-radius: var(--radius-sm); font-size: 12.5px; line-height: 1.6; color: #bae6fd;">
@@ -83329,25 +81238,27 @@ const GuidesView = {
             </div>
           ` : ''}
 
-          <!-- Gold Drop Highlight Card -->
-          <div style="background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(15, 23, 42, 0.95)); border: 1.5px solid rgba(234, 179, 8, 0.4); border-radius: var(--radius-md); padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
-            <div style="display: flex; align-items: center; gap: 10px;">
-              <span style="font-size: 26px;">🪙</span>
-              <div>
-                <div style="font-size: 13px; font-weight: 800; color: #facc15;">
-                  ${isRu ? 'Дроп Золота с клетки' : isCn ? '地块金币产出' : 'Gold Drop Output'}
-                </div>
-                <div style="font-size: 12px; color: #fef08a; margin-top: 2px;">
-                  ${isRu ? 'Возможная сумма:' : isCn ? '预估产出金额：' : 'Estimated Amount:'} <strong style="font-size: 14px; color: #ffffff; font-family: monospace;">${goldDrop.amount_str}</strong>
+          <!-- Gold Drop Highlight Card (only if tile can drop gold) -->
+          ${(goldRate > 0 && !iType) ? `
+            <div style="background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(15, 23, 42, 0.95)); border: 1.5px solid rgba(234, 179, 8, 0.4); border-radius: var(--radius-md); padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 26px;">🪙</span>
+                <div>
+                  <div style="font-size: 13px; font-weight: 800; color: #facc15;">
+                    ${isRu ? 'Дроп Золота с клетки' : isCn ? '地块金币产出' : 'Gold Drop Output'}
+                  </div>
+                  <div style="font-size: 12px; color: #fef08a; margin-top: 2px;">
+                    ${isRu ? 'Возможная сумма:' : isCn ? '预估产出金额：' : 'Estimated Amount:'} <strong style="font-size: 14px; color: #ffffff; font-family: monospace;">${goldDrop.amount_str}</strong>
+                  </div>
                 </div>
               </div>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <span class="tag-badge" style="background: rgba(234, 179, 8, 0.25); color: #facc15; border: 1px solid rgba(234, 179, 8, 0.5); font-size: 12px; font-weight: 800; padding: 3px 10px; border-radius: 6px;">
+                  ${isRu ? 'Шанс выпадения' : isCn ? '掉落概率' : 'Drop Rate'}: ${goldRate}%
+                </span>
+              </div>
             </div>
-            <div style="display: flex; align-items: center; gap: 6px;">
-              <span class="tag-badge" style="background: rgba(234, 179, 8, 0.25); color: #facc15; border: 1px solid rgba(234, 179, 8, 0.5); font-size: 12px; font-weight: 800; padding: 3px 10px; border-radius: 6px;">
-                ${isRu ? 'Шанс выпадения' : isCn ? '掉落概率' : 'Drop Rate'}: ${goldRate}%
-              </span>
-            </div>
-          </div>
+          ` : ''}
 
           <!-- 1. Equipment Drop Table (Chest-Loot-Grid) -->
           ${equips.length > 0 ? `
@@ -83457,6 +81368,7 @@ const GuidesView = {
                         <div class="fallback-thumb" style="display: none; font-size: 16px;">💎</div>
                       </div>
                       <div class="loot-tile-tier">${resStep}★</div>
+                      ${res.amount_str ? `<div class="loot-tile-qty" style="font-size: 8.5px;">${res.amount_str.split(' ')[0]}</div>` : ''}
                     </div>
                   `;
                 }).join('')}

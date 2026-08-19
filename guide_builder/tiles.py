@@ -180,9 +180,10 @@ def get_tiles_code():
             const icon = t.icon || (t.category === 'altar' ? '🏛️' : t.category === 'mimic' ? '🧰' : t.category === 'resource' ? '💎' : t.category === 'merchant' ? '🛒' : '🌟');
             const sizeBadge = t.size_str || (t.sizes ? t.sizes.join('x') : '1x1');
             const biomes = Array.isArray(t.biomes) ? t.biomes : (t.biomes?.[lang] || t.biomes?.RU || t.biomes?.CN || []);
-            const goldAmount = t.gold_drop?.amount_str || '800 – 2 500 🪙';
+            const goldAmount = t.gold_drop?.amount_str || '0 🪙';
             const equipsCount = (t.possible_equips || []).length;
             const chestsCount = (t.possible_chests || []).length;
+            const iType = t.interactive_type || '';
 
             return `
               <div class="guide-card" style="padding: 14px; margin: 0; background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.15s ease, border-color 0.15s ease;" onclick="App.openTileModal('${t.id}')" onmouseover="this.style.borderColor='#38bdf8'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='var(--border-subtle)'; this.style.transform='translateY(0)';">
@@ -217,16 +218,38 @@ def get_tiles_code():
                     </div>
                   ` : ''}
 
-                  <!-- Drop Summary Stats Preview -->
-                  <div style="background: rgba(0,0,0,0.25); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between;">
-                    <span style="color: #facc15; font-weight: 700;">🪙 ${goldAmount}</span>
-                    <span style="color: #cbd5e1;">⚔️ ${equipsCount} ${isRu ? 'предметов' : isCn ? '件装备' : 'items'}</span>
-                    ${chestsCount > 0 ? `<span style="color: #c084fc;">📦 ${chestsCount} ${isRu ? 'сунд.' : isCn ? '宝箱' : 'chests'}</span>` : ''}
-                  </div>
+                  <!-- Drop Summary Stats Preview or Interactive Notice -->
+                  ${iType === 'offer' ? `
+                    <div style="background: rgba(236, 72, 153, 0.12); border: 1px solid rgba(236, 72, 153, 0.3); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; color: #f472b6; font-weight: 700;">
+                      🎁 ${isRu ? 'Лимитированное спецпредложение (Магазин)' : isCn ? '限时特惠礼包 (专属商店)' : 'Special Limited Offer Shop'}
+                    </div>
+                  ` : iType === 'camp' ? `
+                    <div style="background: rgba(34, 197, 94, 0.12); border: 1px solid rgba(34, 197, 94, 0.3); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; color: #86efac; font-weight: 700;">
+                      ⛺ ${isRu ? 'База экспедиции (Свободная расстановка)' : isCn ? '安全整备据点 (无战斗)' : 'Expedition Base Camp'}
+                    </div>
+                  ` : iType === 'merchant' ? `
+                    <div style="background: rgba(234, 179, 8, 0.12); border: 1px solid rgba(234, 179, 8, 0.3); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; color: #facc15; font-weight: 700;">
+                      🛒 ${isRu ? 'Странствующий торговец (Покупка за монеты)' : isCn ? '游商地精商店 (金币兑换)' : 'Merchant Shop (Purchase)'}
+                    </div>
+                  ` : iType === 'blessing' ? `
+                    <div style="background: rgba(168, 85, 247, 0.12); border: 1px solid rgba(168, 85, 247, 0.3); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; color: #c084fc; font-weight: 700;">
+                      ✨ ${isRu ? 'Воскрешение отряда +100 выносливости' : isCn ? '英灵复活 + 100体力' : 'Party Revive & +100 Stamina'}
+                    </div>
+                  ` : iType === 'oracle' ? `
+                    <div style="background: rgba(56, 189, 248, 0.12); border: 1px solid rgba(56, 189, 248, 0.3); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; color: #38bdf8; font-weight: 700;">
+                      🔮 ${isRu ? 'Разведка тумана войны + Боевой бафф' : isCn ? '驱散战争迷雾 + 全队增益' : 'Fog Reveal & Combat Buff'}
+                    </div>
+                  ` : `
+                    <div style="background: rgba(0,0,0,0.25); padding: 6px 8px; border-radius: var(--radius-sm); margin-bottom: 8px; font-size: 11.5px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between;">
+                      <span style="color: #facc15; font-weight: 700;">🪙 ${goldAmount}</span>
+                      <span style="color: #cbd5e1;">⚔️ ${equipsCount} ${isRu ? 'предметов' : isCn ? '件装备' : 'items'}</span>
+                      ${chestsCount > 0 ? `<span style="color: #c084fc;">📦 ${chestsCount} ${isRu ? 'сунд.' : isCn ? '宝箱' : 'chests'}</span>` : ''}
+                    </div>
+                  `}
 
                   <!-- Description -->
                   <div style="font-size: 12px; color: #94a3b8; line-height: 1.5; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                    ${this.escapeHtml(desc) || (isRu ? 'Нажмите для подробного описания наград и шансов.' : 'Click for loot details and mechanics.')}
+                    ${this.escapeHtml(desc) || (isRu ? 'Нажмите для подробного описания механики клетки.' : 'Click for mechanics and details.')}
                   </div>
                 </div>
 
@@ -236,7 +259,7 @@ def get_tiles_code():
                     ${t.is_special ? '✨ ' + (isRu ? 'Особый тайл' : 'Special Spot') : '🗺️ ' + (isRu ? 'Обычный тайл' : 'Standard Spot')}
                   </span>
                   <button class="action-btn" onclick="event.stopPropagation(); App.openTileModal('${t.id}')" style="font-size: 11px; padding: 4px 10px; background: rgba(56, 189, 248, 0.2); border: 1px solid #38bdf8; color: #38bdf8; border-radius: 4px; cursor: pointer; font-weight: 700;">
-                    ${isRu ? 'Таблица дропа' : isCn ? '掉落全貌' : 'Drop Table'} ➔
+                    ${iType ? (isRu ? 'Механика клетки' : isCn ? '查看机制' : 'Spot Details') : (isRu ? 'Таблица дропа' : isCn ? '掉落全貌' : 'Drop Table')} ➔
                   </button>
                 </div>
               </div>
