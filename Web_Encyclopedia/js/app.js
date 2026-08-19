@@ -1403,33 +1403,93 @@ const App = {
   linkifyBuffs(text, lang = null) {
     if (!text || typeof text !== 'string') return text || '';
     const currentLang = lang || this.state.lang || 'RU';
-    const buffs = this.state.keywords || [];
-    if (!buffs || buffs.length === 0) return text;
 
     if (!this._buffRegexMap) this._buffRegexMap = {};
     if (!this._buffRegexMap[currentLang]) {
-      const excluded = new Set([
-        'при атаке', 'при получении урона', 'действие', 'урон', 'цель', 'ход', 'стаки', 'стак',
-        'атака', 'защита', 'скорость', 'здоровье', 'макс. оз', 'оз', 'мана', 'прочность',
+      const BUFF_INFLECTIONS_RU = {
+        bloodlust: ['Жажда крови', 'Жажды крови', 'Жажду крови', 'Жаждой крови', 'Жажде крови'],
+        faith: ['Вера', 'Веры', 'Веру', 'Верой', 'Вере'],
+        growth: ['Рост', 'Роста', 'Росту', 'Ростом', 'Росте'],
+        haste: ['Ускорение', 'Ускорения', 'Ускорению', 'Ускорением', 'Ускорении'],
+        precision: ['Точность', 'Точности', 'Точностью'],
+        regen: ['Регенерация', 'Регенерации', 'Регенерацию', 'Регенерацией'],
+        shield: ['Щит', 'Щита', 'Щиту', 'Щитом', 'Щите', 'Щиты', 'Щитов'],
+        soothe: ['Успокоение', 'Успокоения', 'Успокоению', 'Успокоением'],
+        thorns: ['Шипы', 'Шипов', 'Шипам', 'Шипами', 'Возмездие', 'Возмездия', 'Возмездию', 'Возмездием'],
+        stun: ['Оглушение', 'Оглушения', 'Оглушению', 'Оглушением', 'Оглушении'],
+        taunt: ['Провокация', 'Провокации', 'Провокацию', 'Провокацией'],
+        slow: ['Замедление', 'Замедления', 'Замедлению', 'Замедлением'],
+        vulnerable: ['Уязвимость', 'Уязвимости', 'Уязвимостью'],
+        chill: ['Охлаждение', 'Охлаждения', 'Охлаждению', 'Охлаждением'],
+        healing_block: ['Помеха', 'Помехи', 'Помеху', 'Помехой', 'Подавление лечения', 'Подавления лечения'],
+        decay_peel: ['Вялость', 'Вялости', 'Вялостью', 'Истончение', 'Истончения'],
+        burn: ['Ожог', 'Ожога', 'Ожогу', 'Ожогом', 'Ожоге', 'Ожоги', 'Ожогов'],
+        shock: ['Шок', 'Шока', 'Шоку', 'Шоком', 'Шоке', 'Шоки', 'Шоков'],
+        keyword_1: ['Обращение', 'Обращения', 'Обращению', 'Обращением'],
+        keyword_2: ['Очищение', 'Очищения', 'Очищению', 'Очищением'],
+        keyword_3: ['Вдохновение', 'Вдохновения', 'Вдохновению', 'Вдохновением'],
+        keyword_4: ['Распад', 'Распада', 'Распаду', 'Распадом'],
+        keyword_5: ['Страх', 'Страха', 'Страху', 'Страхом'],
+        keyword_6: ['Стойкость', 'Стойкости', 'Стойкостью'],
+        keyword_26: ['Повторный удар', 'Повторного удара', 'Повторному удару', 'Повторным ударом', 'Повторные удары'],
+        keyword_25: ['Контратака', 'Контратаки', 'Контратаку', 'Контратакой', 'Контратаке']
+      };
+
+      const BUFF_INFLECTIONS_EN = {
+        bloodlust: ['Bloodlust'],
+        faith: ['Faith'],
+        growth: ['Growth'],
+        haste: ['Haste'],
+        precision: ['Precision'],
+        regen: ['Regen'],
+        shield: ['Shield', 'Shields'],
+        soothe: ['Soothe'],
+        thorns: ['Thorns'],
+        stun: ['Stun', 'Stunned'],
+        taunt: ['Taunt', 'Taunted'],
+        slow: ['Slow', 'Slowed'],
+        vulnerable: ['Vulnerable', 'Vulnerability'],
+        chill: ['Chill', 'Chilled'],
+        healing_block: ['Hinder', 'Healing Block'],
+        decay_peel: ['Expose', 'Decay Peel'],
+        burn: ['Burn', 'Burned', 'Burning'],
+        shock: ['Shock', 'Shocked'],
+        keyword_1: ['Reversal'],
+        keyword_2: ['Cleanse'],
+        keyword_3: ['Inspire'],
+        keyword_4: ['Decay'],
+        keyword_5: ['Fear'],
+        keyword_6: ['Fortitude'],
+        keyword_26: ['Follow-Up', 'Follow-up', 'Follow up'],
+        keyword_25: ['Counter', 'Counter-Attack', 'Counter-attack', 'Counterattack']
+      };
+
+      const EXCLUDED = new Set([
+        'заряды', 'заряд', 'зар', 'зар.', 'слой', 'слоя', 'стихия', 'снятие', 'лечение', 'урон', 'действие', 'ход',
+        'атака', 'защита', 'скорость', 'здоровье', 'макс. оз', 'оз', 'мана', 'прочность', 'союзницы',
+        'союзник', 'враг', 'врага', 'врагов', 'цель', 'цели', 'дистанция', 'поглощение', 'фиксированное', 'число', 'при атаке',
+        'при получении урона', 'все характеристики', 'боевые характеристики', '1-й ход', 'много оз', 'мало оз',
         'action', 'turn', 'target', 'stacks', 'stack', 'damage', 'attack', 'defense', 'speed', 'hp', 'mana'
       ]);
 
+      const sourceDict = currentLang === 'EN' ? BUFF_INFLECTIONS_EN : BUFF_INFLECTIONS_RU;
       const termList = [];
-      for (const b of buffs) {
-        const rawName = (b.name && b.name[currentLang]) ? b.name[currentLang].split('(')[0].trim() : '';
-        if (rawName && rawName.length >= 2 && !excluded.has(rawName.toLowerCase())) {
-          termList.push({
-            term: rawName,
-            id: b.id,
-            name: b.name[currentLang],
-            icon: b.icon || '✨'
-          });
+
+      for (const [buffId, forms] of Object.entries(sourceDict)) {
+        for (const f of forms) {
+          if (!EXCLUDED.has(f.toLowerCase())) {
+            termList.push({
+              term: f,
+              id: buffId,
+              name: forms[0]
+            });
+          }
         }
       }
+
       termList.sort((a, b) => b.term.length - a.term.length);
 
       if (termList.length > 0) {
-        // Unicode lookaround boundary pattern
         const regexStr = '(?<=^|[^\\p{L}\\p{N}_])(' + termList.map(t => t.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')(?=$|[^\\p{L}\\p{N}_])';
         const termMap = {};
         termList.forEach(t => { termMap[t.term.toLowerCase()] = t; });
