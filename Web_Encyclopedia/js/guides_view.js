@@ -23678,42 +23678,80 @@ const GuidesView = {
   getTipsContent(lang = 'RU') {
     const isRu = lang === 'RU';
     const isCn = lang === 'CN';
+
     return `
       <div class="guide-article">
-        <h2 class="guide-title">💡 ${isRu ? 'Советы новичкам, Экономика ресурсов и Правила прокачки' : isCn ? '萌新入门避坑、资源规划与养成法则' : 'Beginner Tips, Resource Economy & Progression Rules'}</h2>
+        <h2 class="guide-title">💡 ${isRu ? 'Советы новичкам, Экономика ресурсов и Гайд по Сундукам' : isCn ? '萌新避坑、资源经济与全套宝箱解析' : 'Beginner Tips, Resource Economy & Full Chest Guide'}</h2>
         <p class="guide-lead">
           ${isRu 
-            ? 'Фундаментальные правила эффективного старта, правильная трата самоцветов, механика реролла талантов и экономия энергии.' 
+            ? 'Полный свод практических правил развития аккаунта, грамотного расхода ресурсов, прокачки талантов, звездности экипировки и математики сундуков от теоретиков сообщества (Theorycraft baosbanhbao, Versailles, Yomemamo).' 
             : isCn 
-            ? '公会萌新必读指南：钻石使用优先级、体力规划、60级免费重置与炼金最大化收益。' 
-            : 'Essential starter guide: gem priority, stamina efficiency, level 60 resets, and alchemy optimization.'}
+            ? '资深公会玩家实测总结的钻石规划、卡池心愿、60级免费重置、装备升星偷位、四叶草绝杀20点与七大类宝箱深度解析。' 
+            : 'Comprehensive progression guide covering gem priority, wishlist pity, gear star-ups, true luck formulas, and the 7-chest mathematical opening strategy.'}
         </p>
 
         <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 20px;">
-          <div class="detail-section" style="background: rgba(15, 23, 42, 0.85); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(56, 189, 248, 0.2);">
-            <div class="section-heading" style="color: #38bdf8; font-size: 16px; margin-bottom: 10px;">💎 1. Валюты и Крутки (Gems & Summons)</div>
-            <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 13.5px;">
-              <li><strong>Самоцветы (Gems):</strong> Тратьте кристаллы <span style="color: #facc15; font-weight: 700;">только на Альтер-найм (Alter Summon)</span> и на замену золотых талантов (200 гемов/свап). Еженедельные награды Арены дают стабильный приток кристаллов.</li>
-              <li><strong>Баннеры найма:</strong> Посмотреть актуальные баннеры и вероятности призыва можно в разделе <button class="action-btn secondary-btn" onclick="GuidesView.setSection('gacha')" style="display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; font-size: 12px; margin-left: 4px; color: #38bdf8; border-color: rgba(56,189,248,0.4);">🎪 Баннеры найма ➔</button></li>
-              <li><strong>Список желаний (Wishlist):</strong> В стандартном найме ставьте <em>Кристальную грибницу</em> или <em>Командующую Легиона</em> (лучшие генераторы маны).</li>
-              <li><strong>Альтер-осколки:</strong> <span style="color: #f87171; font-weight: 700;">СТРОГО КОПИТЬ!</span> Для 5★ возвышения Альтера нужно 400 осколков.</li>
+          <!-- 1. Gems & Recruits -->
+          <div class="detail-section" style="background: rgba(15, 23, 42, 0.85); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(56, 189, 248, 0.25);">
+            <div class="section-heading" style="color: #38bdf8; font-size: 16px; margin-bottom: 10px; font-weight: 700;">💎 1. ${isRu ? 'Самоцветы, Крутки и Осколки' : isCn ? '钻石规划、卡池心愿与碎片管理' : 'Gems, Wishlist & Shards'}</div>
+            <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 13.5px; margin: 0;">
+              <li><strong>${isRu ? 'Самоцветы (Gems):' : isCn ? '钻石规划:' : 'Gems Priority:'}</strong> ${isRu ? 'Тратьте кристаллы <span style="color: #facc15; font-weight: 700;">только на Альтер-найм (Alter summon)</span>. В эндгейме они понадобятся для реролла золотых талантов (200 гемов/свап). Еженедельная Арена и Астрал дают стабильный доход кристаллов.' : isCn ? '钻石<span style="color: #facc15; font-weight: 700;">只用于抽取异化卡池</span>。大后期用于更换极品金色天赋（每次200钻）。每周竞技场与星界领域均有丰厚钻石进账。' : 'Spend gems <span style="color: #facc15; font-weight: 700;">only on Alter summon</span>. Late-game gems are used for gold talent swapping (200 gems each).'}</li>
+              <li><strong>${isRu ? 'Список желаний (Wishlist):' : isCn ? '常规心愿推荐:' : 'Wishlist Targets:'}</strong> ${isRu ? 'Ставьте <em>Кристальную грибницу</em> или <em>Командующую Легиона</em> — лучшие батарейки маны для спама ультимейтами. Если выбили цель до 100 круток гаранта — сразу меняйте на другую не полученную девочку!' : isCn ? '常规心愿首选<em>水晶菇娘</em>或<em>军团统领</em>（队伍回能核心）。若在100抽保底前出货，立即更换其他未拥有角色！' : 'Wish-pick <em>Crystal Shroom</em> or <em>Legion Commander</em> for mana battery sustain. Swap target immediately if pulled before 100 pity!'}</li>
+              <li><strong>${isRu ? 'Альтер-осколки:' : isCn ? '异化碎片:' : 'Alter Shards:'}</strong> <span style="color: #f87171; font-weight: 700;">${isRu ? 'СТРОГО КОПИТЬ!' : isCn ? '严禁随意消耗！' : 'STRICTLY SAVE!'}</span> ${isRu ? 'Для 5★ альтера нужно 400 альтер-осколков. Тратьте только на проверенного главного керри.' : isCn ? '将异化角色升满5星需要整整400个异化碎片，仅留给确定重度培养的T0核心。' : 'Takes 400 alter shards to 5-star an alter girl. Invest only in your absolute main carry.'}</li>
+              <li><strong>${isRu ? 'Приоритеты Альтера:' : isCn ? '异化优先目标:' : 'Alter Targets:'}</strong> ${isRu ? 'В первую очередь ловите <em>Шагающую по ветру [Зайчиху]</em> и <em>Великую волшебницу [Зайчиху]</em> (LUK-юниты для разгона дропа шмота и рун).' : isCn ? '优先获取【兔耳】<em>风行游侠</em>与【兔耳】<em>魔术大师</em>（极品幸运角色，刷神装与符文核心）。' : 'Prioritize <em>[Bunny] Windstrider</em> and <em>[Bunny] Grand Magician</em> for high LUK farming.'}</li>
             </ul>
           </div>
 
-          <div class="detail-section" style="background: rgba(15, 23, 42, 0.85); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(234, 179, 8, 0.2);">
-            <div class="section-heading" style="color: #facc15; font-size: 16px; margin-bottom: 10px;">💰 2. Экономика Золота и Расходников</div>
-            <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 13.5px;">
-              <li><strong>Приоритет расходов:</strong> 1) Звездность экипировки и рун; 2) Прокачка 3 боевых юнитов до 60 уровня; 3) Скупка Сердец героинь у странствующего торговца.</li>
-              <li><strong>Клевер (Clover):</strong> Не тратьте вслепую! Используйте только тогда, когда бесплатный ролл кубика после победы выпал <strong>17–19</strong>, чтобы гарантировать 20 (Оранжевый/Желтый шмот).</li>
-              <li><strong>Плоды таланта:</strong> Копить для эндгейм-сборок на основных DPS-героинь.</li>
+          <!-- 2. Gold & Upgrades -->
+          <div class="detail-section" style="background: rgba(15, 23, 42, 0.85); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(234, 179, 8, 0.25);">
+            <div class="section-heading" style="color: #facc15; font-size: 16px; margin-bottom: 10px; font-weight: 700;">💰 2. ${isRu ? 'Золото, Прокачка и Сброс до 60 уровня' : isCn ? '金币消费、60级免费重置与心之升级' : 'Gold, Level 60 Reset & Hearts'}</div>
+            <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 13.5px; margin: 0;">
+              <li><strong>${isRu ? 'Приоритет золота:' : isCn ? '金币消耗顺序:' : 'Gold Priority:'}</strong> ${isRu ? '1) Звездность экипировки и рун ➔ 2) Прокачка 3 боевых юнитов до 60 ур. ➔ 3) Скупка Сердец героинь у странствующего гоблина.' : isCn ? '1) 装备与符文升星 ➔ 2) 随图鉴将3名主力升至60级 ➔ 3) 游商地精处扫货与购买勇者之心。' : '1) Star up gear & runes ➔ 2) Level 3 units to Lv 60 ➔ 3) Buy Heroine Hearts from goblin.'}</li>
+              <li><strong>${isRu ? 'Бесплатный сброс 60 ур.:' : isCn ? '60级无损重置:' : 'Free Lv 60 Reset:'}</strong> ${isRu ? 'Любого персонажа 60 уровня и ниже можно <span style="color: #4ade80; font-weight: 700;">БЕСПЛАТНО сбросить (Reset)</span> со 100% возвратом всех ресурсов! Экспериментируйте с пачками без штрафов.' : isCn ? '60级及以下角色均支持<span style="color: #4ade80; font-weight: 700;">100%无损免费重置</span>，全额返还金币材料，零成本尝试各种阵容。' : 'Units Lv 60 and below can be <span style="color: #4ade80; font-weight: 700;">freely reset for a 100% refund</span> of all gold and mats.'}</li>
+              <li><strong>${isRu ? 'Прокачка 70+ через Сердца:' : isCn ? '70级以上心之升级:' : '70+ with Hearts:'}</strong> ${isRu ? 'После 70 уровня качайтесь с помощью <em>Сердец героинь</em> (повышают уровень на 1/5/10 мгновенно без золота и материалов).' : isCn ? '70级以上通过游商购买<em>勇者之心</em>直升1/5/10级，无需金币与进阶材料。' : 'Use <em>Heroine Hearts</em> from the merchant to instantly level up 70+ units without gold/mats.'}</li>
             </ul>
           </div>
 
-          <div class="detail-section" style="background: rgba(15, 23, 42, 0.85); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(74, 222, 128, 0.2);">
-            <div class="section-heading" style="color: #4ade80; font-size: 16px; margin-bottom: 10px;">🆙 3. Остановка на 60 уровне и Сброс</div>
-            <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 13.5px;">
-              <li>Любого персонажа 60 уровня и ниже можно <span style="color: #4ade80; font-weight: 700;">БЕСПЛАТНО сбросить (Reset)</span> с возвратом 100% потраченного золота и материалов!</li>
-              <li>Прокачка 70+ уровня осуществляется через <strong>Сердца героинь (Heroine's Hearts)</strong> без траты золота.</li>
+          <!-- 3. Star-Up & Multi-Set Resonance -->
+          <div class="detail-section" style="background: rgba(15, 23, 42, 0.85); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(236, 72, 153, 0.25);">
+            <div class="section-heading" style="color: #f472b6; font-size: 16px; margin-bottom: 10px; font-weight: 700;">⭐ 3. ${isRu ? 'Звездность Экипировки (1★–3★), Наследие и Секрет Резонансов' : isCn ? '装备升星(1★–3★)、传承与套装偷位神技' : 'Gear Star-Up (1★–3★), Legacy & Multi-Set Resonance'}</div>
+            <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 13.5px; margin: 0;">
+              <li><strong>${isRu ? 'Шкала улучшения:' : isCn ? '升星收益明细:' : 'Upgrade Progression:'}</strong> ${isRu ? '• <strong>Legacy (Камень наследия):</strong> +1 ко всем 3 строкам талантов.<br>• <strong>1★ (1 дубль):</strong> +1 к 1-й строке.<br>• <strong>2★ (5 дублей):</strong> +1 ко 2-й строке.<br>• <strong>3★ (10 дублей):</strong> +1 к 3-й строке.<br>• <strong>MAX (Legacy + 3★):</strong> +3 очка ко ВСЕМ строкам талантов предмета!' : isCn ? '• <strong>传承 (传承石):</strong> 全词条+1点。<br>• <strong>1星 (1个同名装备):</strong> 第1行+1点。<br>• <strong>2星 (5个同名装备):</strong> 第2行+1点。<br>• <strong>3星 (10个同名装备):</strong> 第3行+1点。<br>• <strong>满配 (传承+3星):</strong> 全词条总计+3点！' : '• <strong>Legacy:</strong> +1 all rows.<br>• <strong>1-Star:</strong> +1 row 1.<br>• <strong>2-Star:</strong> +1 row 2.<br>• <strong>3-Star:</strong> +1 row 3.<br>• <strong>MAX:</strong> +3 to ALL talent rows!'}</li>
+              <li><strong>${isRu ? 'Секрет 3★ — Активация 3-предметного сета 2 вещами:' : isCn ? '3星核心价值——2件装备激活满层套装:' : '3-Star Secret: 2-Piece Full Activation:'}</strong> ${isRu ? 'Прокачанная до 3★ вещь дает достаточно сетовых очков, чтобы полностью активировать 3-предметный сет <span style="color: #f472b6; font-weight: 700;">всего двумя надетыми предметами</span>! 3-й слот освобождается под второй мощный сет.' : isCn ? '满3星装备提供的高额词条点数，能让原本需要穿戴3件的套装仅凭<span style="color: #f472b6; font-weight: 700;">2件装备即可完全激活满层套装效果</span>！腾出第3个装备槽自由混搭其他强力套装。' : '3-Star gear provides so many points that only <span style="color: #f472b6; font-weight: 700;">2 pieces are needed to fully activate a 3-piece set</span>, freeing up the 3rd slot for another set!'}</li>
+              <li><strong>${isRu ? 'Запрет на распыление до 3★:' : isCn ? '未满3星绝不当狗粮:' : 'Never Fodder Below 3-Star:'}</strong> <span style="color: #f87171; font-weight: 700;">${isRu ? 'НИКОГДА не скармливайте в алхимию экипировку и руны, пока они не прокачаны до 3★ для Кодекса!' : isCn ? '未满3星的装备/符文严禁送进炼金炉！必须先满3星填满图鉴。' : 'NEVER use gear as alchemy fodder until it reaches 3-Star for your codex!'}</span></li>
+            </ul>
+          </div>
+
+          <!-- 4. True Luck Mechanics -->
+          <div class="detail-section" style="background: rgba(15, 23, 42, 0.85); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(249, 115, 22, 0.25);">
+            <div class="section-heading" style="color: #fb923c; font-size: 16px; margin-bottom: 10px; font-weight: 700;">🎲 4. ${isRu ? 'Реальная Механика Удачи (LUK), Клевер и Дроп d20' : isCn ? '幸运值 (LUK) 真实机制、四叶草重骰与深渊额外掉落' : 'True Luck (LUK) Mechanics, Clovers & Abyss Drops'}</div>
+            <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 13.5px; margin: 0;">
+              <li><strong>${isRu ? 'Как реально работает LUK:' : isCn ? '幸运值真实作用机制:' : 'How LUK Truly Works:'}</strong> ${isRu ? 'Удача <span style="color: #f87171; font-weight: 700;">НЕ влияет</span> на первый бесплатный бросок кубика (чистый RNG). Удача дает <strong>+1 к результату броска за каждые 15 суммарной Удачи команды ПРИ ТРАТЕ КЛЕВЕРА</strong>!' : isCn ? '全队幸运值<span style="color: #f87171; font-weight: 700;">完全不影响</span>战后首次免费掷骰。幸运值的真实机制为：<strong>在使用四叶草重骰时，全队每有15点幸运值，重骰点数固定+1</strong>！' : 'Team LUK <span style="color: #f87171; font-weight: 700;">does NOT affect</span> the initial free roll. Every 15 team LUK grants <strong>+1 to your dice roll WHEN SPENDING A CLOVER</strong>!'}</li>
+              <li><strong>${isRu ? 'Стратегия Клевера на Натуральную 20-ку:' : isCn ? '四叶草绝杀20点策略:' : 'Clover Strategy for 20s:'}</strong> ${isRu ? 'Только ролл 20 гарантирует Оранжевый/Желтый шмот. Тратьте клевер только тогда, когда бесплатный ролл выпал <strong>17–19</strong> — с бонусом LUK вы гарантированно за 1–2 клевера добьете кубик до 20!' : isCn ? '投出20点是必定掉落橙装与黄晶传承装的唯一途径。初次掷出<strong>17-19点</strong>时再使用四叶草，依靠幸运加成只需1-2个四叶草即可稳稳保底20点神装！' : 'Only dice roll 20 guarantees Orange/Yellow Legacy drops. Only spend clovers when the initial roll is 17-19 to easily hit 20.'}</li>
+              <li><strong>${isRu ? 'Экстра-дроп в Бездне (Abyss):' : isCn ? '深渊额外掉落加成:' : 'Abyss Extra Drops:'}</strong> ${isRu ? '• <strong>Бездна 20+:</strong> +1 дополнительный предмет дропа.<br>• <strong>Бездна 40+:</strong> +2 дополнительных предмета дропа.' : isCn ? '• <strong>深渊20+层：</strong>额外多掉落1件装备。<br>• <strong>深渊40+层：</strong>额外多掉落2件装备。' : '• <strong>Abyss 20+:</strong> +1 extra gear drop.<br>• <strong>Abyss 40+:</strong> +2 extra gear drops.'}</li>
+            </ul>
+          </div>
+
+          <!-- 5. Talent Fruit Pity & Duplication -->
+          <div class="detail-section" style="background: rgba(15, 23, 42, 0.85); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(20, 184, 166, 0.25);">
+            <div class="section-heading" style="color: #2dd4bf; font-size: 16px; margin-bottom: 10px; font-weight: 700;">🧬 5. ${isRu ? 'Плоды Таланта: Скрытый Гарант (Wishlist Pity) и Дублирование Эксклюзивов' : isCn ? '天赋果实心愿保底机制与专属天赋转移/复制秘籍' : 'Talent Fruit Wishlist Pity & Duplication'}</div>
+            <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 13.5px; margin: 0;">
+              <li><strong>${isRu ? 'Формула гаранта (Wishlist Pity):' : isCn ? '心愿天赋保底递增公式:' : 'Wishlist Pity Formula:'}</strong> ${isRu ? 'Шанс на целевой золотой талант начинает расти <strong>ТОЛЬКО ПОСЛЕ 50 золотых талантов-промахов</strong>. С 51-го ролла шанс растет на <strong>+5% за каждый последующий золотой реролл</strong> (на 70-м золотом таланте достигается 100% гарант).' : isCn ? '心愿金天赋的保底概率<strong>只有在连续歪掉50个非心愿金天赋后才开始递增</strong>。从第51个金天赋开始，每次洗练概率递增<strong>+5%</strong>，第70个金天赋必定100%出心愿目标！' : 'Pity chance begins increasing ONLY after 50 non-wishlist gold talents. From roll 51 onwards, chance increases by +5% per gold reroll, hitting 100% hard pity at roll 70.'}</li>
+              <li><strong>${isRu ? 'Секрет дублирования (2x–4x одинаковых эксклюзивов):' : isCn ? '多重专属天赋同页叠加技巧:' : 'Talent Duplication Secret:'}</strong> ${isRu ? 'Реролл не дает выбить два одинаковых таланта на одной странице, но <strong>Перенос талантов (за 200 кристаллов) игнорирует это правило</strong>! Чтобы собрать 2x копии собственного эксклюзива: откройте 2-ю страницу ➔ выбейте эксклюзив ➔ перенесите на донора ➔ перенесите с донора обратно на 1-ю страницу!' : isCn ? '常规洗练无法在同页洗出同名天赋，但<strong>【天赋转移】完全不受该限制</strong>！若想让角色拥有双重自身专属天赋：开启第2页天赋 ➔ 在第2页洗出自身专属 ➔ 转移给中介角色 ➔ 再从中介转回第1页，实现多重专属暴力叠加！' : 'Regular rerolling forbids dupes on one page, but <strong>Talent Transfer bypasses this rule</strong>! Use Page 2 -> donor -> Page 1 to stack multiple copies of the same top exclusive!'}</li>
+              <li><strong>${isRu ? 'Фарм плодов (Ручной vs Блиц):' : isCn ? '果实刷取效率最大化:' : 'Fruit Farming:'}</strong> ${isRu ? '• <em>Ручной фарм:</em> бейте только фиолетовых и золотых врагов (максимум плодов на стамину).<br>• <em>Блиц 10x (500 энергии):</em> дает ~360 плодов в неделю + горы клевера и прокачку всей экипировки.' : isCn ? '• <em>手动攻坚：</em>只打紫色与金色精英怪（每点体力产出最高）。<br>• <em>10连扫荡(500体力)：</em>每周稳定产出约360果实，兼顾大量四叶草与全图装备升星。' : '• <em>Manual:</em> Target only purple & gold enemies.<br>• <em>10x Blitz:</em> Yields ~360 fruits/week plus tons of clovers.'}</li>
+            </ul>
+          </div>
+
+          <!-- 6. Complete 7 Chest Categories Guide -->
+          <div class="detail-section" style="background: rgba(15, 23, 42, 0.85); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(99, 102, 241, 0.25);">
+            <div class="section-heading" style="color: #818cf8; font-size: 16px; margin-bottom: 10px; font-weight: 700;">📦 6. ${isRu ? 'Полный Гайд по 7 Типам Сундуков: Сливать или Открывать?' : isCn ? '七大类宝箱深度解析：合成还是直接开？' : '7 Chest Categories: To Merge or Not to Merge?'}</div>
+            <ul style="padding-left: 20px; line-height: 1.8; color: #cbd5e1; font-size: 13.5px; margin: 0;">
+              <li><strong>${isRu ? 'Базовый шанс экстра-дропа (~20%):' : isCn ? '额外掉落机制:' : 'Extra Drop Chance (~20%):'}</strong> ${isRu ? 'Все сундуки имеют шанс ~20% дать дополнительный предмет. При открытии сундуков низкого ранга работает вероятность выпадения предметов более высокого тира.' : isCn ? '全品类宝箱均有约20%概率触发额外掉落，低阶宝箱在开启时存在天然跳阶升级机制。' : 'All chests have a ~20% extra drop rate with natural probability to roll higher-tier items.'}</li>
+              <li><strong>${isRu ? '📦 Сундуки Материалов (Опыта):' : isCn ? '📦 材料/经验宝箱:' : '📦 Material Chests:'}</strong> <span style="color: #38bdf8; font-weight: 700;">${isRu ? 'Сливать Зеленые ➔ в Синие. Синие и выше открывать сразу!' : isCn ? '绿合成到蓝，蓝及以上直接开！' : 'Merge Green -> Blue. Open Blue & above immediately!'}</span> ${isRu ? 'Зеленый дает 55 опыта, Синий — 5100 (4x выгода). В синих есть шанс прока 500/2500 опыта. Сливая в Оранжевый, вы теряете эти мультипликаторы.' : isCn ? '绿箱给55经验，蓝箱给5100（4倍收益）。蓝箱开出500/2500大额经验的概率极高，合到橙色反而丢失期望。' : 'Blue chests frequently proc 500/2500 EXP.'}</li>
+              <li><strong>${isRu ? '🔮 Сундуки Рун и ⚔️ Экипировки:' : isCn ? '🔮 符文与 ⚔️ 装备宝箱:' : '🔮 Runes & ⚔️ Gear Chests:'}</strong> <span style="color: #a78bfa; font-weight: 700;">${isRu ? 'Сливать до Фиолетового и открывать.' : isCn ? '合成到紫色直接开！' : 'Merge to Purple and open.'}</span> ${isRu ? 'Оранжевые вещи выбиваются клевером в боях. Фиолетовые сундуки быстро закрывают пробелы в Кодексе (в игре ~30 типов фиолетового шмота). В эндгейме с блицем — авто-слияние до оранжевого.' : isCn ? '橙装靠四叶草手动打，图鉴卡点往往在30多种紫色装备上。中后期扫荡溢出后再一路全自动合成到橙。' : 'Purple chests quickly fill your codex for gear/runes.'}</li>
+              <li><strong>${isRu ? '💰 Золото и 💎 Самоцветы:' : isCn ? '💰 金币与 💎 钻石宝箱:' : '💰 Gold & 💎 Gem Chests:'}</strong> <span style="color: #facc15; font-weight: 700;">${isRu ? 'СЛИВАТЬ ДО ОРАНЖЕВОГО!' : isCn ? '必须合成到最高橙色品阶再开！' : 'ALWAYS merge to Orange!'}</span> ${isRu ? 'Оранжевый сундук золота дает 15 000 – 30 000 золота без скачков качества. Математическое ожидание на оранжевом ранге максимально.' : isCn ? '橙色金币箱产出1.5万-3万，无跳阶机制，高阶方差收益最大。' : 'Orange gold chests yield 15k-30k gold with peak mathematical value.'}</li>
+              <li><strong>${isRu ? '🔮 Сундуки Кристаллов:' : isCn ? '🔮 晶石宝箱:' : '🔮 Crystal Chests:'}</strong> <span style="color: #34d399; font-weight: 700;">${isRu ? 'ОТКРЫВАТЬ СРАЗУ БЕЗ СЛИЯНИЯ!' : isCn ? '无需合成，直接原样开启！' : 'Open as-is without merging!'}</span> ${isRu ? 'Шанс выпадения фиолетовых/божественных кристаллов из сундуков низкого ранга значительно превосходит курс слияния 5:1.' : isCn ? '低阶晶石箱跳出高级晶石的概率收益远超5:1合成汇率。' : 'High-tier crystal procs from low-tier chests beat the 5:1 merge ratio.'}</li>
+              <li><strong>${isRu ? '⚠️ Миф об Удаче:' : isCn ? '⚠️ 避坑常识:' : '⚠️ LUK Myth:'}</strong> ${isRu ? 'Характеристика Удачи (LUK) <strong>НЕ РАБОТАЕТ</strong> на открытие сундуков или алхимию. Она действует исключительно в бою при трате Клевера!' : isCn ? '全队幸运值 (LUK) <strong>完全不影响开箱与炼金</strong>，仅在战斗内消耗四叶草时生效，无需换装开箱！' : 'Team LUK has ZERO impact on chest opening. It only applies in battle when using clovers!'}</li>
             </ul>
           </div>
         </div>
@@ -23721,7 +23759,6 @@ const GuidesView = {
     `;
   },
 
-  // 2. Gacha, Banners & Character Drop Rates (Requested by User)
   getGachaContent(lang = 'RU') {
     const isRu = lang === 'RU';
     const isCn = lang === 'CN';
@@ -24553,6 +24590,9 @@ const GuidesView = {
                   const chName = ch.name?.[currentLang] || ch.name?.RU || ch.id;
                   const chStep = ch.step || 'A';
                   const tierClass = chStep ? `loot-tier-${chStep.toLowerCase()}` : '';
+                  const chIcon = (typeof ItemsView !== 'undefined' && ItemsView.getItemIcon) 
+                    ? ItemsView.getItemIcon(ch, 'chests', imageMappings) 
+                    : (ch.id ? `assets/img/items/${ch.id}.png` : '');
                   const tooltipText = `📦 ${chName} [${chStep}★] • ${ch.drop_type || 'Сундук'}`;
                   
                   return `
@@ -24561,7 +24601,10 @@ const GuidesView = {
                          title="${this.escapeHtml(tooltipText)}"
                          data-tooltip="${this.escapeHtml(tooltipText)}">
                       <div class="loot-tile-icon-box">
-                        <span style="font-size: 24px;">📦</span>
+                        ${chIcon ? `
+                          <img src="${chIcon}" alt="${this.escapeHtml(chName)}" class="loot-tile-img" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+                          <span style="display: none; font-size: 24px;">📦</span>
+                        ` : `<span style="font-size: 24px;">📦</span>`}
                       </div>
                       <span class="loot-tile-tier">${chStep}</span>
                     </div>
