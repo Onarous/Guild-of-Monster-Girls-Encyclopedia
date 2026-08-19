@@ -1503,7 +1503,8 @@ const App = {
         keyword_5: ['Страх', 'Страха', 'Страху', 'Страхом'],
         keyword_6: ['Стойкость', 'Стойкости', 'Стойкостью'],
         keyword_26: ['Повторный удар', 'Повторного удара', 'Повторному удару', 'Повторным ударом', 'Повторные удары'],
-        keyword_25: ['Контратака', 'Контратаки', 'Контратаку', 'Контратакой', 'Контратаке']
+        keyword_25: ['Контратака', 'Контратаки', 'Контратаку', 'Контратакой', 'Контратаке'],
+        keyword_83: ['Уровень порчи', 'Уровня порчи', 'Уровню порчи', 'Уровнем порчи']
       };
 
       const BUFF_INFLECTIONS_EN = {
@@ -1532,7 +1533,8 @@ const App = {
         keyword_5: ['Fear'],
         keyword_6: ['Fortitude'],
         keyword_26: ['Follow-Up', 'Follow-up', 'Follow up'],
-        keyword_25: ['Counter', 'Counter-Attack', 'Counter-attack', 'Counterattack']
+        keyword_25: ['Counter', 'Counter-Attack', 'Counter-attack', 'Counterattack'],
+        keyword_83: ['Corruption Level', 'Corruption']
       };
 
       const EXCLUDED = new Set([

@@ -14125,8 +14125,8 @@ const GuidesView = {
       "CN": "反伤"
     },
     "desc": {
-      "RU": "【正面】каждыйзар.заставляетАтакацель теряет1ед.生命，каждый раз生效зар.数最多不超过цель20%生命максимум，МногоударныйАтака只生效1раз，持续生效。",
-      "EN": "【正面】eachstacksmakesAttacktarget loses1pts生命，each time生效stacks数最多不超过Target20%生命cap，Multi-hitAttack只生效1time，持续生效。",
+      "RU": "【Усиление】 Каждый стак заставляет атаковавшего врага потерять 1 ед. здоровья при ударе. За одно срабатывание эффект не может превышать 20% от макс. здоровья цели. При многоударных атаках срабатывает только 1 раз. Постоянный эффект.",
+      "EN": "【Buff】 Each stack causes the attacking enemy to lose 1 HP upon hit. Max HP loss per trigger cannot exceed 20% of the target's Max HP. For multi-hit attacks, triggers only once. Permanent effect.",
       "CN": "【正面】每层使攻击目标失去1点生命，每次生效层数最多不超过目标20%生命上限，多段攻击只生效1次，持续生效。"
     },
     "aliases": {
@@ -15210,9 +15210,9 @@ const GuidesView = {
       "CN": "剥离"
     },
     "desc": {
-      "RU": "【负面】каждыйзар.заставляетцель行动结束затем теряет1ед.生命максимум，каждый раз生效зар.数最多不超过цель20%生命максимум，持续生效。",
-      "EN": "【负面】eachstacksmakesTarget行动结束then loses1pts生命cap，each time生效stacks数最多不超过Target20%生命cap，持续生效。",
-      "CN": "【负面】每层使目标行动结束后失去1点生命上限，每次生效层数最多不超过目标20%生命上限，持续生效。"
+      "RU": "【Ослабление】 Каждый стак заставляет цель в конце своего действия потерять 1 ед. максимального здоровья. За одно срабатывание эффект не может превышать 20% от макс. здоровья цели. Постоянный эффект.",
+      "EN": "【Debuff】 Each stack causes the target to lose 1 Max HP at the end of their turn/action. Max HP loss per trigger cannot exceed 20% of the target's Max HP. Permanent effect.",
+      "CN": "【负面】每层使目标行动结束时失去1点生命上限，每次生效层数最多不超过目标20%生命上限，持续生效。"
     },
     "aliases": {
       "RU": [
@@ -23456,105 +23456,39 @@ const GuidesView = {
       "CN": "腐化等级"
     },
     "desc": {
-      "RU": "каждый20级заставляет战斗装备掉落количество+1，最多+2。\nкаждый级заставляет敌方角色получает全部уронитеряет生命-1。\nкаждый级заставляет敌方角色наносит全部урониВосстановление+1。\nкаждый级заставляет敌方角色наносит全部状态зар.数+1。\nкаждый级заставляет敌方角色行动回魔+1。",
-      "EN": "each20级makes战斗装备掉落count+1，最多+2。\neach级makes敌方角色takes全部DMGandloses生命-1。\neach级makes敌方角色deals全部DMGandRecovery+1。\neach级makes敌方角色deals全部状态stacks数+1。\neach级makes敌方角色行动回魔+1。",
+      "RU": "Каждые 20 уровней увеличивают количество выпадающей в бою экипировки на +1 (максимум +2).\nКаждый уровень снижает получаемый врагами урон и потерю ОЗ на -1.\nКаждый уровень увеличивает наносимый врагами урон и исцеление на +1.\nКаждый уровень увеличивает количество накладываемых врагами зарядов статусов на +1.\nКаждый уровень увеличивает восстановление маны врагов за действие на +1.",
+      "EN": "Every 20 levels increases combat equipment drop count by +1 (max +2).\nEach level reduces all damage received and HP lost by enemy units by -1.\nEach level increases all damage dealt and healing performed by enemy units by +1.\nEach level increases stacks of all status effects applied by enemy units by +1.\nEach level increases action mana recovery of enemy units by +1.",
       "CN": "每20级使战斗装备掉落数量+1，最多+2。\n每级使敌方角色受到全部伤害和失去生命-1。\n每级使敌方角色造成全部伤害和恢复+1。\n每级使敌方角色造成全部状态层数+1。\n每级使敌方角色行动回魔+1。"
     },
     "aliases": {
       "RU": [
         "уровень порчи",
-        "Уровень порчи"
+        "Уровень порчи",
+        "порча",
+        "порчи",
+        "порчу",
+        "порчей",
+        "Уровня порчи",
+        "Уровню порчи",
+        "Уровнем порчи"
       ],
       "EN": [
         "corruption level",
-        "Corruption Level"
+        "Corruption Level",
+        "corruption",
+        "Corruption"
       ],
       "CN": [
-        "腐化等级"
+        "腐化等级",
+        "腐化"
       ]
     },
     "related_characters": [],
     "related_items": []
   }
 ],
-  activeSection: 'phases',
-  isNavCollapsedMobile: false,
-  gachaFilter: 'all',
-  eventsFilter: 'all',
-  buildsFilter: 'all',
-  codesFilter: 'all',
-  keywordsFilter: 'all',
-  keywordsSearchQuery: '',
 
-  toggleNavMobile(e) {
-    if (e) {
-      e.stopPropagation();
-      e.preventDefault();
-    }
-    this.isNavCollapsedMobile = !this.isNavCollapsedMobile;
-    const sidebar = document.querySelector('.guides-sidebar');
-    if (sidebar) {
-      if (this.isNavCollapsedMobile) {
-        sidebar.classList.add('nav-collapsed');
-      } else {
-        sidebar.classList.remove('nav-collapsed');
-      }
-      const toggleText = sidebar.querySelector('.guides-toggle-text');
-      const isRu = App.state.lang === 'RU';
-      const isCn = App.state.lang === 'CN';
-      if (toggleText) {
-        toggleText.textContent = this.isNavCollapsedMobile 
-          ? (isRu ? 'Развернуть ▾' : isCn ? '展开 ▾' : 'Expand ▾') 
-          : (isRu ? 'Скрыть ▴' : isCn ? '收起 ▴' : 'Hide ▴');
-      }
-    }
-  },
-
-  setSection(sectionId) {
-    this.activeSection = sectionId;
-    if (window.innerWidth <= 900) {
-      this.isNavCollapsedMobile = true;
-    }
-    const container = document.getElementById('guidesContainer');
-    if (container) {
-      this.render(container.id, App.state.lang);
-      if (typeof App !== 'undefined' && App.updateUrl) {
-        App.updateUrl('guides', sectionId);
-      }
-      if (window.innerWidth <= 900) {
-        const contentPanel = container.querySelector('.guides-content-panel');
-        if (contentPanel) {
-          contentPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }
-    }
-  },
-
-  setGachaFilter(filter) {
-    this.gachaFilter = filter;
-    const container = document.getElementById('guidesContainer');
-    if (container) {
-      this.render(container.id, App.state.lang);
-    }
-  },
-
-  setEventsFilter(filter) {
-    this.eventsFilter = filter;
-    const container = document.getElementById('guidesContainer');
-    if (container) {
-      this.render(container.id, App.state.lang);
-    }
-  },
-
-  setBuildsFilter(filter) {
-    this.buildsFilter = filter;
-    const container = document.getElementById('guidesContainer');
-    if (container) {
-      this.render(container.id, App.state.lang);
-    }
-  },
-
-    tilesFilter: 'all',
+  tilesFilter: 'all',
   tilesSearchQuery: '',
 
   setTilesFilter(filter) {
