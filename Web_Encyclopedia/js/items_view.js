@@ -55,6 +55,91 @@ const ItemsView = {
     return null;
   },
 
+  _reverseChestMap: null,
+
+  buildReverseChestMap(itemsData) {
+    if (this._reverseChestMap) return this._reverseChestMap;
+    const map = {};
+    const chests = itemsData?.chests || [];
+    for (const ch of chests) {
+      const drops = ch.drop_table || [];
+      for (const d of drops) {
+        const did = d.id;
+        if (did) {
+          if (!map[did]) map[did] = [];
+          if (!map[did].some(c => c.key === ch.key)) {
+            map[did].push({
+              key: ch.key,
+              uid: ch.uid || `${ch.id}_${ch.step}`,
+              id: ch.id,
+              name: ch.name,
+              step: ch.step || 'C'
+            });
+          }
+        }
+      }
+    }
+    if (chests.length > 0) {
+      this._reverseChestMap = map;
+    }
+    return map;
+  },
+
+  getItemSourceSummary(item, category, currentLang = 'RU', itemsData = null) {
+    if (!item) return '';
+    const isRu = currentLang === 'RU';
+    const isCn = currentLang === 'CN';
+    const chestMap = this.buildReverseChestMap(itemsData || (typeof App !== 'undefined' ? App.state?.data?.items?.[currentLang] : null));
+    const chestsFound = chestMap[item.id] || [];
+
+    if (category === 'equipment') {
+      const parts = [];
+      const area = item.area_name;
+      const src = item.source;
+      if (area && area !== '不限' && area !== 'Все зоны' && area !== 'Any Zone') {
+        parts.push(`🗺️ ${area}`);
+      }
+      if (src) {
+        parts.push(src);
+      } else {
+        parts.push(isRu ? 'Исследование мира' : isCn ? '世界探索' : 'World Exploration');
+      }
+      if (chestsFound.length > 0) {
+        parts.push(isRu ? `🎁 ${chestsFound.length} сунд.` : isCn ? `🎁 ${chestsFound.length}个宝箱` : `🎁 ${chestsFound.length} chests`);
+      }
+      return parts.join(' • ');
+    } else if (category === 'relics') {
+      const roles = item.specify_roles || [];
+      if (roles.length > 0) {
+        const rName = roles[0].split('(')[0].trim();
+        return isRu ? `👑 4★ Возвышение (${rName})` : isCn ? `👑 4★突破专属 (${rName})` : `👑 4★ Ascension (${rName})`;
+      }
+      return isRu ? '🔮 Магазин прозрения / Подземелья' : isCn ? '🔮 信物商店 / 秘境奖励' : '🔮 Insight Shop / Dungeons';
+    } else if (category === 'runes') {
+      const chStr = chestsFound.length > 0 ? (isRu ? ` • 🎁 ${chestsFound.length} сунд.` : ` • 🎁 ${chestsFound.length} chests`) : '';
+      return (isRu ? '🪨 Рунический алтарь / Награды битв' : isCn ? '🪨 符文祭坛 / 战斗掉落' : '🪨 Rune Altar / Battles') + chStr;
+    } else if (category === 'ingredients') {
+      const chStr = chestsFound.length > 0 ? (isRu ? ` • 🎁 ${chestsFound.length} сунд.` : ` • 🎁 ${chestsFound.length} chests`) : '';
+      return (isRu ? '🌿 Сбор ресурсов / Дроп с монстров' : isCn ? '🌿 采集 / 怪物掉落' : '🌿 Gathering / Monsters') + chStr;
+    } else if (category === 'special_items') {
+      return isRu ? '✨ Задания / События / Магазин' : isCn ? '✨ 任务 / 活动 / 商店' : '✨ Quests / Events / Shop';
+    } else if (category === 'chests') {
+      const area = item.area_name;
+      const areaStr = (area && area !== '不限' && area !== 'Все зоны' && area !== 'Any Zone') ? ` (${area})` : '';
+      return (isRu ? `📦 Исследование мира${areaStr} / Квесты` : isCn ? `📦 世界探索${areaStr} / 战令 / 任务` : `📦 World Exploration${areaStr} / Quests`);
+    } else if (category === 'godstones') {
+      return isRu ? '💎 Алхимия / Божественный алтарь' : isCn ? '💎 炼金 / 神石祭坛' : '💎 Alchemy / Divine Altar';
+    } else if (category === 'dungeon_relics') {
+      const diff = item.difficulty ? ` (${item.difficulty})` : '';
+      return isRu ? `🗝️ Roguelike-подземелья${diff}` : isCn ? `🗝️ 秘境肉鸽${diff}` : `🗝️ Roguelike Dungeons${diff}`;
+    } else if (category === 'prefixes') {
+      return isRu ? '🏷️ Ковка и перековка в кузнице' : isCn ? '🏷️ 铁匠铺锻造重铸' : '🏷️ Blacksmith Forging & Reforging';
+    } else if (category === 'bonds') {
+      return isRu ? '🔗 Комплект снаряжения (2, 4, 6 шт)' : isCn ? '🔗 装备套装羁绊 (2/4/6件)' : '🔗 Gear Set Synergy (2, 4, 6 pcs)';
+    }
+    return isRu ? '📦 Игровые активности' : '📦 Game Activities';
+  },
+
   getCategoryLabel(category, currentLang = 'RU') {
     const isRu = currentLang === 'RU';
     const isCn = currentLang === 'CN';
@@ -217,6 +302,10 @@ const ItemsView = {
             ⚡ <strong>${this.escapeHtml(eq.enhance_ability.name)}:</strong> ${this.escapeHtml(eq.enhance_ability.effect)}
           </div>
         ` : ''}
+        <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(eq, 'equipment', (dict.starMilestone4||'').includes('прозрения')?'RU':((dict.starMilestone4||'').includes('信物')?'CN':'EN')))}">
+          <span class="item-source-label">📍 ${dict.acquisitionLabel || 'Получение'}:</span>
+          <span class="item-source-text">${this.escapeHtml(this.getItemSourceSummary(eq, 'equipment', (dict.starMilestone4||'').includes('прозрения')?'RU':((dict.starMilestone4||'').includes('信物')?'CN':'EN')))}</span>
+        </div>
       </div>
     `;
   },
@@ -282,6 +371,10 @@ const ItemsView = {
             ⭐ <strong>${dict.signatureRelic || 'Эксклюзивное прозрение'}:</strong> ${this.escapeHtml(rel.specify_roles.join(', '))}
           </div>
         ` : ''}
+        <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(rel, 'relics', isRu?'RU':(isCn?'CN':'EN')))}">
+          <span class="item-source-label">📍 ${dict.acquisitionLabel || 'Получение'}:</span>
+          <span class="item-source-text">${this.escapeHtml(this.getItemSourceSummary(rel, 'relics', isRu?'RU':(isCn?'CN':'EN')))}</span>
+        </div>
       </div>
     `;
   },
@@ -316,6 +409,10 @@ const ItemsView = {
 
         <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">
           ${this.escapeHtml(rn.description)}
+        </div>
+        <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(rn, 'runes', (dict.starMilestone4||'').includes('прозрения')?'RU':((dict.starMilestone4||'').includes('信物')?'CN':'EN')))}">
+          <span class="item-source-label">📍 ${dict.acquisitionLabel || 'Получение'}:</span>
+          <span class="item-source-text">${this.escapeHtml(this.getItemSourceSummary(rn, 'runes', (dict.starMilestone4||'').includes('прозрения')?'RU':((dict.starMilestone4||'').includes('信物')?'CN':'EN')))}</span>
         </div>
       </div>
     `;
@@ -358,6 +455,10 @@ const ItemsView = {
             ${this.escapeHtml(ch.description)}
           </div>
         ` : ''}
+        <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(ch, 'chests', isRu?'RU':(isCn?'CN':'EN')))}">
+          <span class="item-source-label">📍 ${dict.acquisitionLabel || 'Получение'}:</span>
+          <span class="item-source-text">${this.escapeHtml(this.getItemSourceSummary(ch, 'chests', isRu?'RU':(isCn?'CN':'EN')))}</span>
+        </div>
 
         ${dropCount > 0 ? `
           <div style="font-size: 11.5px; color: #a855f7; background: rgba(168, 85, 247, 0.08); padding: 6px 9px; border-radius: var(--radius-sm); border: 1px solid rgba(168, 85, 247, 0.25); display: flex; align-items: center; justify-content: space-between; margin-top: auto;">
@@ -396,6 +497,10 @@ const ItemsView = {
         <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">
           ${this.escapeHtml(bd.effect_desc || bd.basic_desc)}
         </div>
+        <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(bd, 'bonds', (dict.starMilestone4||'').includes('прозрения')?'RU':((dict.starMilestone4||'').includes('信物')?'CN':'EN')))}">
+          <span class="item-source-label">📍 ${dict.acquisitionLabel || 'Получение'}:</span>
+          <span class="item-source-text">${this.escapeHtml(this.getItemSourceSummary(bd, 'bonds', (dict.starMilestone4||'').includes('прозрения')?'RU':((dict.starMilestone4||'').includes('信物')?'CN':'EN')))}</span>
+        </div>
       </div>
     `;
   },
@@ -430,6 +535,10 @@ const ItemsView = {
 
         <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">
           ${this.escapeHtml(item.description || item.effect || '')}
+        </div>
+        <div class="item-card-source" title="${this.escapeHtml(this.getItemSourceSummary(item, category, (dict.starMilestone4||'').includes('прозрения')?'RU':((dict.starMilestone4||'').includes('信物')?'CN':'EN')))}">
+          <span class="item-source-label">📍 ${dict.acquisitionLabel || 'Получение'}:</span>
+          <span class="item-source-text">${this.escapeHtml(this.getItemSourceSummary(item, category, (dict.starMilestone4||'').includes('прозрения')?'RU':((dict.starMilestone4||'').includes('信物')?'CN':'EN')))}</span>
         </div>
       </div>
     `;
@@ -694,6 +803,55 @@ const ItemsView = {
                     </div>
                   `;
                 }).join('')}
+              </div>
+            </div>
+          ` : ''}
+
+          ${category !== 'chests' ? `
+            <div class="detail-section">
+              <div class="section-heading">📍 ${dict.acquisitionTitle || 'Способ получения'}</div>
+              <div class="item-source-box">
+                <div style="font-size: 13.5px; font-weight: 600; color: #ffffff; display: flex; align-items: center; gap: 8px;">
+                  <span style="font-size: 18px;">🗺️</span>
+                  <span>${this.getItemSourceSummary(item, category, currentLang)}</span>
+                </div>
+
+                ${(() => {
+                  const chestMap = this.buildReverseChestMap(typeof App !== 'undefined' ? App.state?.data?.items?.[currentLang] : null);
+                  const chestsThatDropThis = chestMap[item.id] || [];
+                  if (chestsThatDropThis.length === 0) return '';
+                  return `
+                    <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 10px; margin-top: 10px;">
+                      <div style="font-size: 12px; color: #c084fc; font-weight: 700; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between;">
+                        <span>📦 ${dict.droppedFromChests || 'Выпадает из сундуков'} (${chestsThatDropThis.length})</span>
+                        <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">
+                          ${currentLang === 'RU' ? 'Кликните на сундук для просмотра' : currentLang === 'CN' ? '点击宝箱查看掉落' : 'Click chest to view drops'}
+                        </span>
+                      </div>
+                      <div class="chest-loot-grid" style="max-height: 180px;">
+                        ${chestsThatDropThis.map(ch => {
+                          const chStep = ch.step || 'C';
+                          const chTierClass = `loot-tier-${chStep.toLowerCase()}`;
+                          const chIcon = this.getItemIcon(ch, 'chests', imageMappings);
+                          return `
+                            <div class="loot-tile ${chTierClass}" 
+                                 onclick="App.openItemModal('chests', '${ch.key || ch.uid || ch.id}')" 
+                                 title="${this.escapeHtml(ch.name)} [${chStep}★]" 
+                                 data-tooltip="${this.escapeHtml(ch.name)} [${chStep}★]">
+                              <div class="loot-tile-icon-box">
+                                ${chIcon ? `
+                                  <img src="${chIcon}" alt="${this.escapeHtml(ch.name)}" class="loot-tile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                                  <span style="display: none; font-size: 20px;">📦</span>
+                                ` : `<span style="font-size: 20px;">📦</span>`}
+                              </div>
+                              <span class="loot-tile-tier">${chStep}</span>
+                            </div>
+                          `;
+                        }).join('')}
+                      </div>
+                    </div>
+                  `;
+                })()}
               </div>
             </div>
           ` : ''}

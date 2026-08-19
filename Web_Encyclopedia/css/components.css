@@ -4191,3 +4191,43 @@
   color: #4ade80;
   border: 1px solid rgba(34, 197, 94, 0.5);
 }
+
+/* Item Acquisition Badges & Boxes */
+.item-card-source {
+  font-size: 11.5px;
+  color: #94a3b8;
+  background: rgba(15, 23, 42, 0.55);
+  padding: 4.5px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-source-label {
+  color: #c084fc;
+  font-weight: 700;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.item-source-text {
+  color: #cbd5e1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-source-box {
+  background: rgba(10, 14, 23, 0.6);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  line-height: 1.5;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
+}
