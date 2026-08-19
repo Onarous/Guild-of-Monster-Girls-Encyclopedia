@@ -1638,19 +1638,42 @@ const App = {
   },
 
   openItemModal(category, id, updateHash = true, isBack = false) {
-    if (!id || id === 'gold' || id === 'gems') return;
+    if (!id) return;
     const lang = this.state.lang || 'RU';
-    let targetCat = category;
+    let targetCat = category || 'consumables';
+    let searchId = String(id).trim();
+
+    const aliasMap = {
+      'gold': { cat: 'consumables', key: 'special_item_1' },
+      'gem': { cat: 'consumables', key: 'special_item_7' },
+      'gems': { cat: 'consumables', key: 'special_item_7' },
+      'clover': { cat: 'consumables', key: 'special_item_9' },
+      'fruit': { cat: 'consumables', key: 'special_item_10' },
+      'talent_fruit': { cat: 'consumables', key: 'special_item_10' },
+      'talents': { cat: 'consumables', key: 'special_item_10' },
+      'fish': { cat: 'consumables', key: 'special_item_18' },
+      'ticket': { cat: 'consumables', key: 'special_item_19' },
+      'alter_ticket': { cat: 'consumables', key: 'special_item_20' },
+      'standard_shard': { cat: 'consumables', key: 'special_item_25' },
+      'alter_shard': { cat: 'consumables', key: 'special_item_26' },
+      'heart': { cat: 'consumables', key: 'special_item_27' }
+    };
+
+    if (aliasMap[searchId.toLowerCase()]) {
+      targetCat = aliasMap[searchId.toLowerCase()].cat;
+      searchId = aliasMap[searchId.toLowerCase()].key;
+    }
+
     let list = this.state.data.items?.[lang]?.[targetCat] || [];
     
     // Prioritize key, uid, id_step exact match to resolve exact rarity variant
-    let item = list.find(i => i.key === id || i.uid === id || (i.id && i.step && `${i.id}_${i.step}` === id) || i.id === id);
+    let item = list.find(i => i.key === searchId || i.uid === searchId || (i.id && i.step && `${i.id}_${i.step}` === searchId) || i.id === searchId);
     
     // Multi-category search fallback if not found in targetCat
     if (!item && this.state.data.items?.[lang]) {
       for (const [catKey, catList] of Object.entries(this.state.data.items[lang])) {
         if (Array.isArray(catList)) {
-          const found = catList.find(i => i.key === id || i.uid === id || (i.id && i.step && `${i.id}_${i.step}` === id) || i.id === id);
+          const found = catList.find(i => i.key === searchId || i.uid === searchId || (i.id && i.step && `${i.id}_${i.step}` === searchId) || i.id === searchId);
           if (found) {
             item = found;
             targetCat = catKey;
