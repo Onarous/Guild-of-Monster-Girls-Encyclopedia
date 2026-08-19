@@ -3879,3 +3879,146 @@
 
 
 
+
+
+/* =========================================================================
+   Relic / Insight Upgrade Levels (Уровни прокачки Прозрения 1 - 3 MAX)
+   ========================================================================= */
+.relic-levels-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.relic-level-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 10px;
+  border-radius: var(--radius-sm);
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.15s ease;
+}
+
+.relic-level-row:hover {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(236, 72, 153, 0.3);
+}
+
+.relic-level-row.lvl-1 {
+  border-left: 3px solid #a855f7;
+}
+
+.relic-level-row.lvl-2 {
+  border-left: 3px solid #c084fc;
+  background: rgba(168, 85, 247, 0.06);
+}
+
+.relic-level-row.lvl-3 {
+  border-left: 3.5px solid #ec4899;
+  background: linear-gradient(90deg, rgba(236, 72, 153, 0.12) 0%, rgba(168, 85, 247, 0.08) 100%);
+  border-color: rgba(236, 72, 153, 0.35);
+  box-shadow: 0 0 12px rgba(236, 72, 153, 0.08);
+}
+
+.relic-level-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2.5px 8px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.relic-level-badge.lvl-1 {
+  background: rgba(168, 85, 247, 0.2);
+  color: #d8b4fe;
+  border: 1px solid rgba(168, 85, 247, 0.35);
+}
+
+.relic-level-badge.lvl-2 {
+  background: rgba(192, 132, 252, 0.25);
+  color: #f3e8ff;
+  border: 1px solid rgba(192, 132, 252, 0.45);
+}
+
+.relic-level-badge.lvl-3 {
+  background: linear-gradient(135deg, #ec4899 0%, #a855f7 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 8px rgba(236, 72, 153, 0.35);
+}
+
+.relic-level-effect {
+  font-size: 12.5px;
+  color: #f1f5f9;
+  font-weight: 600;
+  text-align: right;
+  flex: 1;
+}
+
+.relic-level-effect.lvl-3 {
+  color: #fbcfe8;
+  font-weight: 700;
+}
+
+/* Compact level stepper in item catalog cards */
+.relic-stepper-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(236, 72, 153, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 6px 8px;
+  font-size: 11.5px;
+  flex-wrap: wrap;
+}
+
+.relic-step-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+}
+
+.relic-step-pill strong {
+  color: #fce7f3;
+}
+
+.relic-step-pill.max-pill {
+  color: #f472b6;
+  font-weight: 700;
+}
+
+.relic-step-arrow {
+  color: var(--text-muted);
+  font-size: 10px;
+}
+
+/* Bound Heroine Box in Item Detail Modal */
+.relic-bound-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(168, 85, 247, 0.08) 100%);
+  border: 1px solid rgba(236, 72, 153, 0.3);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.relic-bound-box:hover {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(168, 85, 247, 0.18) 100%);
+  border-color: #ec4899;
+  transform: translateY(-1px);
+}

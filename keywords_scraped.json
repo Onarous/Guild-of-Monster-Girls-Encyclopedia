@@ -1,0 +1,338 @@
+[
+  {
+    "path": "buff-bloodlust.html",
+    "cat": "Buff",
+    "name": "Bloodlust",
+    "text": "Bloodlust `T20005` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Bloodlust T20005 [Buff] Each stack increases total DMG dealt by 1. Applies to each hit in multi-hit attacks and scales per target based on DMG dealt. Consumed after taking effect. Field Value Status ID T20005 Loc Key Buff/Noun_Name_08 Element Fire Tag Buff Priority 5 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_08 StatusDataTable row: T20005 Localization: Buff/Noun_Name_08 / Buff/Noun_Des_08 Static export from Obsidian vault · datamine version 1.1.1.0 · buff-bloodlust.md"
+  },
+  {
+    "path": "buff-faith.html",
+    "cat": "Buff",
+    "name": "Faith",
+    "text": "Faith `T20008` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Faith T20008 [Buff] Every 5 stacks on the unit increases their total HP restored to other targets by 1. Persistent. Field Value Status ID T20008 Loc Key Buff/Noun_Name_11 Element Light Tag Buff Priority 8 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_11 StatusDataTable row: T20008 Localization: Buff/Noun_Name_11 / Buff/Noun_Des_11_new01 Static export from Obsidian vault · datamine version 1.1.1.0 · buff-faith.md"
+  },
+  {
+    "path": "buff-growth.html",
+    "cat": "Buff",
+    "name": "Growth",
+    "text": "Growth `T20011` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Growth T20011 [Buff] Each stack increases Max HP by 1. Persistent effect. Field Value Status ID T20011 Loc Key Buff/Noun_Name_12 Element Earth Tag Buff Priority 2 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_12 StatusDataTable row: T20011 Localization: Buff/Noun_Name_12 / Buff/Noun_Des_12 Static export from Obsidian vault · datamine version 1.1.1.0 · buff-growth.md"
+  },
+  {
+    "path": "buff-haste.html",
+    "cat": "Buff",
+    "name": "Haste",
+    "text": "Haste `T20003` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Haste T20003 [Buff] Each stack grants the target 1 SPD. Persistent effect. Field Value Status ID T20003 Loc Key Buff/Noun_Name_07 Element Wind Tag Buff Priority 10 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_07 StatusDataTable row: T20003 Localization: Buff/Noun_Name_07 / Buff/Noun_Des_07 Static export from Obsidian vault · datamine version 1.1.1.0 · buff-haste.md"
+  },
+  {
+    "path": "buff-precision.html",
+    "cat": "Buff",
+    "name": "Precision",
+    "text": "Precision `T10008` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Precision T10008 [Buff] Every 5 stacks increase Follow-Up DMG by 1. Target prioritizes attacking back position. Persistent effect. Field Value Status ID T10008 Loc Key Buff/Noun_Name_10 Element Wind Tag Buff Priority 3 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_10 StatusDataTable row: T10008 Localization: Buff/Noun_Name_10 / Buff/Noun_Des_10 Static export from Obsidian vault · datamine version 1.1.1.0 · buff-precision.md"
+  },
+  {
+    "path": "buff-regen.html",
+    "cat": "Buff",
+    "name": "Regen",
+    "text": "Regen `T20007` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Regen T20007 [Buff] Each stack restores 1 HP at action end, up to 20% of Max HP per instance. Consumed after taking effect. Field Value Status ID T20007 Loc Key Buff/Noun_Name_13 Element Fire Tag Buff Priority 9 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_13 StatusDataTable row: T20007 Localization: Buff/Noun_Name_13 / Buff/Noun_Des_13_new01 Static export from Obsidian vault · datamine version 1.1.1.0 · buff-regen.md"
+  },
+  {
+    "path": "buff-shield.html",
+    "cat": "Buff",
+    "name": "Shield",
+    "text": "Shield `T20006` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Shield T20006 [Buff] Each stack reduces total DMG taken by 1. Applies to each hit in multi-hit attacks. Consumed after taking effect. Field Value Status ID T20006 Loc Key Buff/Noun_Name_09 Element Earth Tag Buff Priority 6 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_09 StatusDataTable row: T20006 Localization: Buff/Noun_Name_09 / Buff/Noun_Des_09 Static export from Obsidian vault · datamine version 1.1.1.0 · buff-shield.md"
+  },
+  {
+    "path": "buff-soothe.html",
+    "cat": "Buff",
+    "name": "Soothe",
+    "text": "Soothe `T30001` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Soothe T30001 [Buff] Each stack reduces HP loss by 1. Consumed after taking effect. Field Value Status ID T30001 Loc Key Buff/Noun_Name_14 Element Water Tag Buff Priority 7 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_14 StatusDataTable row: T30001 Localization: Buff/Noun_Name_14 / Buff/Noun_Des_14 Static export from Obsidian vault · datamine version 1.1.1.0 · buff-soothe.md"
+  },
+  {
+    "path": "buff-thorns.html",
+    "cat": "Buff",
+    "name": "Thorns",
+    "text": "Thorns `T20009` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Thorns T20009 [CN: 【正面】每层使攻击目标失去1点生命],[CN: 每次生效层数最多不超过目标20%生命上限],[CN: 多段攻击只生效1次],[CN: 持续生效。] Field Value Status ID T20009 Loc Key Buff/Noun_Name_15 Element Earth Tag Buff Priority 4 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_15 StatusDataTable row: T20009 Localization: Buff/Noun_Name_15 / Buff/Noun_Des_15_new01 Static export from Obsidian vault · datamine version 1.1.1.0 · buff-thorns.md"
+  },
+  {
+    "path": "debuff-burn.html",
+    "cat": "Debuff",
+    "name": "Burn",
+    "text": "Burn `T40003` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Burn T40003 [CN: 【负面】每层使目标行动开始前失去1点生命],[CN: 每次生效层数最多不超过目标20%生命上限],[CN: 持续生效。] Field Value Status ID T40003 Loc Key Buff/Noun_Name_23 Element Fire Tag Debuff Priority 4 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_23 StatusDataTable row: T40003 Localization: Buff/Noun_Name_23 / Buff/Noun_Des_23_new01 Static export from Obsidian vault · datamine version 1.1.1.0 · debuff-burn.md"
+  },
+  {
+    "path": "debuff-chill.html",
+    "cat": "Debuff",
+    "name": "Chill",
+    "text": "Chill `T40004` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Chill T40004 [Debuff] Each stack reduces the target's total DMG by 1. Applies to each hit of multi-hit attacks. When affecting multiple targets, each target is affected separately based on DMG. Consumed after taking effect. Field Value Status ID T40004 Loc Key Buff/Noun_Name_20 Element Water Tag Debuff Priority 8 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_20 StatusDataTable row: T40004 Localization: Buff/Noun_Name_20 / Buff/Noun_Des_20 Static export from Obsidian vault · datamine version 1.1.1.0 · debuff-chill.md"
+  },
+  {
+    "path": "debuff-expose.html",
+    "cat": "Debuff",
+    "name": "Expose",
+    "text": "Expose `T40001` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Expose T40001 [CN: 【负面】每层使目标行动结束后失去1点生命上限],[CN: 每次生效层数最多不超过目标20%生命上限],[CN: 持续生效。] Field Value Status ID T40001 Loc Key Buff/Noun_Name_22 Element Wind Tag Debuff Priority 5 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_22 StatusDataTable row: T40001 Localization: Buff/Noun_Name_22 / Buff/Noun_Des_22_new01 Static export from Obsidian vault · datamine version 1.1.1.0 · debuff-expose.md"
+  },
+  {
+    "path": "debuff-hinder.html",
+    "cat": "Debuff",
+    "name": "Hinder",
+    "text": "Hinder `T40002` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Hinder T40002 [Debuff] Each stack reduces the target's total HP restored and HP Gain by 1. Applies to each instance of multi-heal effects. Consumed after taking effect. Field Value Status ID T40002 Loc Key Buff/Noun_Name_21 Element Dark Tag Debuff Priority 7 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_21 StatusDataTable row: T40002 Localization: Buff/Noun_Name_21 / Buff/Noun_Des_21 Static export from Obsidian vault · datamine version 1.1.1.0 · debuff-hinder.md"
+  },
+  {
+    "path": "debuff-shock.html",
+    "cat": "Debuff",
+    "name": "Shock",
+    "text": "Shock `T40005` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Shock T40005 [Debuff] Each stack reduces Mana gained by 1, up to 20% of Max Mana per instance. Consumed after taking effect. Field Value Status ID T40005 Loc Key Buff/Noun_Name_24 Element Light Tag Debuff Priority 3 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_24 StatusDataTable row: T40005 Localization: Buff/Noun_Name_24 / Buff/Noun_Des_24 Static export from Obsidian vault · datamine version 1.1.1.0 · debuff-shock.md"
+  },
+  {
+    "path": "debuff-slow.html",
+    "cat": "Debuff",
+    "name": "Slow",
+    "text": "Slow `T40006` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Slow T40006 [Debuff] Each stack reduces SPD by 1. Persistent effect. Field Value Status ID T40006 Loc Key Buff/Noun_Name_18 Element Earth Tag Debuff Priority 9 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_18 StatusDataTable row: T40006 Localization: Buff/Noun_Name_18 / Buff/Noun_Des_18 Static export from Obsidian vault · datamine version 1.1.1.0 · debuff-slow.md"
+  },
+  {
+    "path": "debuff-stun.html",
+    "cat": "Debuff",
+    "name": "Stun",
+    "text": "Stun `T10001` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Stun T10001 [Debuff] Each stack reduces DEF by 1. Target cannot act. Lasts 1 turn. Field Value Status ID T10001 Loc Key Buff/Noun_Name_16 Element All Tag Debuff Priority 0 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_16 StatusDataTable row: T10001 Localization: Buff/Noun_Name_16 / Buff/Noun_Des_16 Static export from Obsidian vault · datamine version 1.1.1.0 · debuff-stun.md"
+  },
+  {
+    "path": "debuff-taunt.html",
+    "cat": "Debuff",
+    "name": "Taunt",
+    "text": "Taunt `T10009` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Taunt T10009 [Debuff] Every 5 stacks increase the target's Counter DMG taken by 1. The front position will be prioritized as the target for this debuff. Persistent effect. Field Value Status ID T10009 Loc Key Buff/Noun_Name_17 Element Dark Tag Debuff Priority 2 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_17 StatusDataTable row: T10009 Localization: Buff/Noun_Name_17 / Buff/Noun_Des_17 Static export from Obsidian vault · datamine version 1.1.1.0 · debuff-taunt.md"
+  },
+  {
+    "path": "debuff-vulnerable.html",
+    "cat": "Debuff",
+    "name": "Vulnerable",
+    "text": "Vulnerable `T40007` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Vulnerable T40007 [Debuff] Each stack increases total DMG taken by 1. Applies to each hit in multi-hit attacks. Consumed after taking effect. Field Value Status ID T40007 Loc Key Buff/Noun_Name_19 Element Earth Tag Debuff Priority 6 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_19 StatusDataTable row: T40007 Localization: Buff/Noun_Name_19 / Buff/Noun_Des_19 Static export from Obsidian vault · datamine version 1.1.1.0 · debuff-vulnerable.md"
+  },
+  {
+    "path": "instant-cleanse.html",
+    "cat": "Instant",
+    "name": "Cleanse",
+    "text": "Cleanse `T50005` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Cleanse T50005 [Instant] Each stack removes 2 stacks of all debuffs from allies or 2 stacks of all buffs from enemies. Field Value Status ID T50005 Loc Key Buff/Noun_Name_02 Element Light Tag Instant Priority 1 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_02 StatusDataTable row: T50005 Localization: Buff/Noun_Name_02 / Buff/Noun_Des_02 Static export from Obsidian vault · datamine version 1.1.1.0 · instant-cleanse.md"
+  },
+  {
+    "path": "instant-decay.html",
+    "cat": "Instant",
+    "name": "Decay",
+    "text": "Decay `T50002` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Decay T50002 [Instant] Each stack drains 1 Mana from the target. Field Value Status ID T50002 Loc Key Buff/Noun_Name_04 Element Dark Tag Instant Priority 1 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_04 StatusDataTable row: T50002 Localization: Buff/Noun_Name_04 / Buff/Noun_Des_04 Static export from Obsidian vault · datamine version 1.1.1.0 · instant-decay.md"
+  },
+  {
+    "path": "instant-fear.html",
+    "cat": "Instant",
+    "name": "Fear",
+    "text": "Fear `T10006` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Fear T10006 [Instant] Each stack drains 1 Toughness from the target. Field Value Status ID T10006 Loc Key Buff/Noun_Name_05 Element Dark Tag Instant Priority 1 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_05 StatusDataTable row: T10006 Localization: Buff/Noun_Name_05 / Buff/Noun_Des_05 Static export from Obsidian vault · datamine version 1.1.1.0 · instant-fear.md"
+  },
+  {
+    "path": "instant-fortitude.html",
+    "cat": "Instant",
+    "name": "Fortitude",
+    "text": "Fortitude `T20016` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Fortitude T20016 [Instant] Each stack grants the target 1 Toughness. Field Value Status ID T20016 Loc Key Buff/Noun_Name_06 Element Light Tag Instant Priority 1 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_06 StatusDataTable row: T20016 Localization: Buff/Noun_Name_06 / Buff/Noun_Des_06 Static export from Obsidian vault · datamine version 1.1.1.0 · instant-fortitude.md"
+  },
+  {
+    "path": "instant-inspire.html",
+    "cat": "Instant",
+    "name": "Inspire",
+    "text": "Inspire `T50003` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Inspire T50003 [Instant] Each stack grants the target 1 Mana. Field Value Status ID T50003 Loc Key Buff/Noun_Name_03 Element Light Tag Instant Priority 0 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_03 StatusDataTable row: T50003 Localization: Buff/Noun_Name_03 / Buff/Noun_Des_03 Static export from Obsidian vault · datamine version 1.1.1.0 · instant-inspire.md"
+  },
+  {
+    "path": "instant-reversal.html",
+    "cat": "Instant",
+    "name": "Reversal",
+    "text": "Reversal `T50004` — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Reversal T50004 [Instant] Each stack restores 1 HP to allies or deals 1 HP loss to enemies. Field Value Status ID T50004 Loc Key Buff/Noun_Name_01 Element All Tag Instant Priority 0 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_01 StatusDataTable row: T50004 Localization: Buff/Noun_Name_01 / Buff/Noun_Des_01 Static export from Obsidian vault · datamine version 1.1.1.0 · instant-reversal.md"
+  },
+  {
+    "path": "stat-all-stats.html",
+    "cat": "Stat",
+    "name": "All Stats",
+    "text": "All Stats — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; All Stats Includes STR, SPI, and AGI. Field Value Name All Stats Category Stat Loc Key Buff/Noun_Name_80 / Buff/Noun_Des_80 Cross-references KeywordDataTable row: Buff/Noun_Name_80 Static export from Obsidian vault · datamine version 1.1.1.0 · stat-all-stats.md"
+  },
+  {
+    "path": "stat-atk.html",
+    "cat": "Stat",
+    "name": "Atk",
+    "text": "ATK — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; ATK Red-bordered stat used for attacking and healing. When attacking, basic and skill DMG increase by 1 for every 5 ATK above the target's DEF. When healing, gain 1 basic and skill healing per 10 ATK. Field Value Name ATK Category Stat Loc Key Buff/Noun_Name_27 / Buff/Noun_Des_27 Cross-references KeywordDataTable row: Buff/Noun_Name_27 Static export from Obsidian vault · datamine version 1.1.1.0 · stat-atk.md"
+  },
+  {
+    "path": "stat-def.html",
+    "cat": "Stat",
+    "name": "Def",
+    "text": "DEF — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; DEF Blue-bordered stat used for defense. Reduce DMG taken by 1 for every 5 DEF above the target's ATK while defending. Field Value Name DEF Category Stat Loc Key Buff/Noun_Name_28 / Buff/Noun_Des_28 Cross-references KeywordDataTable row: Buff/Noun_Name_28 Static export from Obsidian vault · datamine version 1.1.1.0 · stat-def.md"
+  },
+  {
+    "path": "stat-luck.html",
+    "cat": "Stat",
+    "name": "Luck",
+    "text": "Luck — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Luck Every 15 Luck across the team (non-combat) grants +1 extra Clover reroll in battle results. Field Value Name Luck Category Stat Loc Key Buff/Noun_Name_32 / Buff/Noun_Des_32 Cross-references KeywordDataTable row: Buff/Noun_Name_32 Static export from Obsidian vault · datamine version 1.1.1.0 · stat-luck.md"
+  },
+  {
+    "path": "stat-spd.html",
+    "cat": "Stat",
+    "name": "Spd",
+    "text": "SPD — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; SPD Determines the turn order in battle. Field Value Name SPD Category Stat Loc Key Buff/Noun_Name_31 / Buff/Noun_Des_31 Cross-references KeywordDataTable row: Buff/Noun_Name_31 Static export from Obsidian vault · datamine version 1.1.1.0 · stat-spd.md"
+  },
+  {
+    "path": "stat-toughness.html",
+    "cat": "Stat",
+    "name": "Toughness",
+    "text": "Toughness — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Toughness Each hit taken reduces Toughness by 1. At 0, the girl's Weakness is exposed. Field Value Name Toughness Category Stat Loc Key Buff/Noun_Name_30 / Buff/Noun_Des_30 Cross-references KeywordDataTable row: Buff/Noun_Name_30 Static export from Obsidian vault · datamine version 1.1.1.0 · stat-toughness.md"
+  },
+  {
+    "path": "stat-weakness.html",
+    "cat": "Stat",
+    "name": "Weakness",
+    "text": "Weakness — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Weakness Brown-bordered stat that replaces DEF when Weakness is exposed. Field Value Name Weakness Category Stat Loc Key Buff/Noun_Name_29 / Buff/Noun_Des_29 Cross-references KeywordDataTable row: Buff/Noun_Name_29 Static export from Obsidian vault · datamine version 1.1.1.0 · stat-weakness.md"
+  },
+  {
+    "path": "mechanic-absorb.html",
+    "cat": "Mechanic",
+    "name": "Absorb",
+    "text": "Absorb — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Absorb Gain the specified effect for self and remove it from target. Field Value Name Absorb Category Mechanic Loc Key Buff/Noun_Name_73 / Buff/Noun_Des_73 Cross-references KeywordDataTable row: Buff/Noun_Name_73 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-absorb.md"
+  },
+  {
+    "path": "mechanic-act-first.html",
+    "cat": "Mechanic",
+    "name": "Act First",
+    "text": "Act First — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Act First When not at full Mana, prioritize basic attack or basic heal. When at full Mana, prioritize casting skill. When both act first, higher SPD acts first. Field Value Name Act First Category Mechanic Loc Key Buff/Noun_Name_68 / Buff/Noun_Des_68 Cross-references KeywordDataTable row: Buff/Noun_Name_68 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-act-first.md"
+  },
+  {
+    "path": "mechanic-action-mana.html",
+    "cat": "Mechanic",
+    "name": "Action Mana",
+    "text": "Action Mana — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Action Mana Mana gained at action end from non-skill actions. Field Value Name Action Mana Category Mechanic Loc Key Buff/Noun_Name_78 / Buff/Noun_Des_78 Cross-references KeywordDataTable row: Buff/Noun_Name_78 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-action-mana.md"
+  },
+  {
+    "path": "mechanic-ally-count.html",
+    "cat": "Mechanic",
+    "name": "Ally Count",
+    "text": "Ally Count — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Ally Count This value applies to the entire team, but becomes inactive when the providing girl is defeated. Team limit: 99. Field Value Name Ally Count Category Mechanic Loc Key Buff/Noun_Name_70 / Buff/Noun_Des_70 Cross-references KeywordDataTable row: Buff/Noun_Name_70 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-ally-count.md"
+  },
+  {
+    "path": "mechanic-corruption-level.html",
+    "cat": "Mechanic",
+    "name": "Corruption Level",
+    "text": "Corruption Level — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Corruption Level [CN: 每20级使战斗装备掉落数量+1],[CN: 最多+2。] [CN: 每级使敌方角色受到全部伤害和失去生命-1。] [CN: 每级使敌方角色造成全部伤害和恢复+1。] [CN: 每级使敌方角色造成全部状态层数+1。] [CN: 每级使敌方角色行动回魔+1。] Field Value Name Corruption Level Category Mechanic Loc Key Buff/Noun_Name_83 / Buff/Noun_Des_83 Cross-references KeywordDataTable row: Buff/Noun_Name_83 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-corruption-level.md"
+  },
+  {
+    "path": "mechanic-counter.html",
+    "cat": "Mechanic",
+    "name": "Counter",
+    "text": "Counter — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Counter When taking a hit and within Counter range, deal 1 Counter DMG to the attacker. Counter DMG increases by 1 for every 5 DEF above the target's ATK. Only Warriors have base Counter range of 1. Field Value Name Counter Category Mechanic Loc Key Buff/Noun_Name_25 / Buff/Noun_Des_25 Cross-references KeywordDataTable row: Buff/Noun_Name_25 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-counter.md"
+  },
+  {
+    "path": "mechanic-distance.html",
+    "cat": "Mechanic",
+    "name": "Distance",
+    "text": "Distance — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Distance Base distance between a girl and target is 1. Distance increases by 1 for each girl between them. Field Value Name Distance Category Mechanic Loc Key Buff/Noun_Name_72 / Buff/Noun_Des_72 Cross-references KeywordDataTable row: Buff/Noun_Name_72 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-distance.md"
+  },
+  {
+    "path": "mechanic-extra-action.html",
+    "cat": "Mechanic",
+    "name": "Extra Action",
+    "text": "Extra Action — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Extra Action Each girl can take up to 5 extra actions per turn (casting skills also counts as extra actions). Field Value Name Extra Action Category Mechanic Loc Key Buff/Noun_Name_69 / Buff/Noun_Des_69 Cross-references KeywordDataTable row: Buff/Noun_Name_69 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-extra-action.md"
+  },
+  {
+    "path": "mechanic-fixed.html",
+    "cat": "Mechanic",
+    "name": "Fixed Damage",
+    "text": "Fixed — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Fixed Effect must equal the specified value. Field Value Name Fixed Category Mechanic Loc Key Buff/Noun_Name_74 / Buff/Noun_Des_74 Cross-references KeywordDataTable row: Buff/Noun_Name_74 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-fixed.md"
+  },
+  {
+    "path": "mechanic-follow-up.html",
+    "cat": "Mechanic",
+    "name": "Follow Up",
+    "text": "Follow-Up — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Follow-Up When performing a basic attack, if SPD exceeds the target's, deal 1 Follow-Up DMG. Only Archers have a base Follow-Up count of 1. Field Value Name Follow-Up Category Mechanic Loc Key Buff/Noun_Name_26 / Buff/Noun_Des_26 Cross-references KeywordDataTable row: Buff/Noun_Name_26 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-follow-up.md"
+  },
+  {
+    "path": "mechanic-healing.html",
+    "cat": "Mechanic",
+    "name": "Healing",
+    "text": "Healing — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Healing Includes basic healing and skill healing. Field Value Name Healing Category Mechanic Loc Key Buff/Noun_Name_61 / Buff/Noun_Des_61 Cross-references KeywordDataTable row: Buff/Noun_Name_61 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-healing.md"
+  },
+  {
+    "path": "mechanic-high-hp.html",
+    "cat": "Mechanic",
+    "name": "High Hp",
+    "text": "High HP — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; High HP Current HP above 50% of Max HP. Field Value Name High HP Category Mechanic Loc Key Buff/Noun_Name_34 / Buff/Noun_Des_34 Cross-references KeywordDataTable row: Buff/Noun_Name_34 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-high-hp.md"
+  },
+  {
+    "path": "mechanic-hit-mana.html",
+    "cat": "Mechanic",
+    "name": "Hit Mana",
+    "text": "Hit Mana — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Hit Mana Mana gained per attack taken. Field Value Name Hit Mana Category Mechanic Loc Key Buff/Noun_Name_79 / Buff/Noun_Des_79 Cross-references KeywordDataTable row: Buff/Noun_Name_79 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-hit-mana.md"
+  },
+  {
+    "path": "mechanic-hp-gain.html",
+    "cat": "Mechanic",
+    "name": "Hp Gain",
+    "text": "HP Gain — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; HP Gain HP increase from non-healing sources. Field Value Name HP Gain Category Mechanic Loc Key Buff/Noun_Name_65 / Buff/Noun_Des_65 Cross-references KeywordDataTable row: Buff/Noun_Name_65 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-hp-gain.md"
+  },
+  {
+    "path": "mechanic-hp-loss.html",
+    "cat": "Mechanic",
+    "name": "Hp Loss",
+    "text": "HP Loss — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; HP Loss HP reduction from non-attack sources. Field Value Name HP Loss Category Mechanic Loc Key Buff/Noun_Name_64 / Buff/Noun_Des_64 Cross-references KeywordDataTable row: Buff/Noun_Name_64 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-hp-loss.md"
+  },
+  {
+    "path": "mechanic-low-hp.html",
+    "cat": "Mechanic",
+    "name": "Low Hp",
+    "text": "Low HP — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Low HP Current HP at or below 50% of Max HP. Field Value Name Low HP Category Mechanic Loc Key Buff/Noun_Name_33 / Buff/Noun_Des_33 Cross-references KeywordDataTable row: Buff/Noun_Name_33 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-low-hp.md"
+  },
+  {
+    "path": "mechanic-mana-gain.html",
+    "cat": "Mechanic",
+    "name": "Mana Gain",
+    "text": "Mana Gain — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Mana Gain Mana increase from any source. Field Value Name Mana Gain Category Mechanic Loc Key Buff/Noun_Name_67 / Buff/Noun_Des_67 Cross-references KeywordDataTable row: Buff/Noun_Name_67 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-mana-gain.md"
+  },
+  {
+    "path": "mechanic-mana-loss.html",
+    "cat": "Mechanic",
+    "name": "Mana Loss",
+    "text": "Mana Loss — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Mana Loss Mana reduction from any source. Field Value Name Mana Loss Category Mechanic Loc Key Buff/Noun_Name_66 / Buff/Noun_Des_66 Cross-references KeywordDataTable row: Buff/Noun_Name_66 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-mana-loss.md"
+  },
+  {
+    "path": "mechanic-max-mana.html",
+    "cat": "Mechanic",
+    "name": "Max Mana",
+    "text": "Max Mana — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Max Mana Mana required to cast skill. Field Value Name Max Mana Category Mechanic Loc Key Buff/Noun_Name_77 / Buff/Noun_Des_77 Cross-references KeywordDataTable row: Buff/Noun_Name_77 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-max-mana.md"
+  },
+  {
+    "path": "mechanic-remove.html",
+    "cat": "Mechanic",
+    "name": "Remove",
+    "text": "Remove — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Remove Statuses that are directly removed are not considered consumed. Field Value Name Remove Category Mechanic Loc Key Buff/Noun_Name_75 / Buff/Noun_Des_75 Cross-references KeywordDataTable row: Buff/Noun_Name_75 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-remove.md"
+  },
+  {
+    "path": "mechanic-stacks.html",
+    "cat": "Mechanic",
+    "name": "Stacks",
+    "text": "Stacks — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Stacks Affects the amount of status changes. Max 999. Field Value Name Stacks Category Mechanic Loc Key Buff/Noun_Name_71 / Buff/Noun_Des_71_new01 Cross-references KeywordDataTable row: Buff/Noun_Name_71 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-stacks.md"
+  },
+  {
+    "path": "mechanic-starting-mana.html",
+    "cat": "Mechanic",
+    "name": "Starting Mana",
+    "text": "Starting Mana — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Starting Mana Mana possessed when entering battle. Amounts exceeding Max Mana have no effect. Field Value Name Starting Mana Category Mechanic Loc Key Buff/Noun_Name_76 / Buff/Noun_Des_76 Cross-references KeywordDataTable row: Buff/Noun_Name_76 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-starting-mana.md"
+  },
+  {
+    "path": "mechanic-total-dmg.html",
+    "cat": "Mechanic",
+    "name": "Total Dmg",
+    "text": "Total DMG — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Total DMG Includes basic DMG, skill DMG, Follow-Up DMG, and counter DMG. Field Value Name Total DMG Category Mechanic Loc Key Buff/Noun_Name_62 / Buff/Noun_Des_62 Cross-references KeywordDataTable row: Buff/Noun_Name_62 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-total-dmg.md"
+  },
+  {
+    "path": "mechanic-total-hp-restored.html",
+    "cat": "Mechanic",
+    "name": "Total Hp Restored",
+    "text": "Total HP Restored — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Total HP Restored Includes basic healing and skill healing. Field Value Name Total HP Restored Category Mechanic Loc Key Buff/Noun_Name_63 / Buff/Noun_Des_63 Cross-references KeywordDataTable row: Buff/Noun_Name_63 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-total-hp-restored.md"
+  },
+  {
+    "path": "mechanic-weakness-exposed.html",
+    "cat": "Mechanic",
+    "name": "Weakness Exposed",
+    "text": "Weakness Exposed — Guild of Monster Girls Wiki &#8249; GMG Wiki Units Keywords Gacha Optimizer Talent Simulator My Talents Build Team Battle Logs Search &middot; Units Search &middot; Talents (facet) Search &middot; Talents (fulltext) Search &middot; Gear Search &middot; Runes Search &middot; Jewels Search &middot; Blessings News &#9776; Weakness Exposed When Toughness reaches 0, Weakness is exposed. Weakness replaces DEF as the defensive stat. Field Value Name Weakness Exposed Category Mechanic Loc Key Buff/Noun_Name_81 / Buff/Noun_Des_81 Cross-references KeywordDataTable row: Buff/Noun_Name_81 Static export from Obsidian vault · datamine version 1.1.1.0 · mechanic-weakness-exposed.md"
+  }
+]

@@ -205,6 +205,9 @@ const ItemsView = {
   renderRelicCard(rel, tierClass, dict, imageMappings = {}) {
     const iconSrc = this.getItemIcon(rel, 'relics', imageMappings);
     const fallbackEmoji = '🔮';
+    const levels = rel.levels || [];
+    const isRu = (App.currentLanguage || 'RU') === 'RU';
+    const isCn = (App.currentLanguage || 'RU') === 'CN';
 
     return `
       <div class="item-card" onclick="App.openItemModal('relics', '${rel.id}')">
@@ -221,22 +224,43 @@ const ItemsView = {
               <div style="font-size: 11px; color: var(--text-muted); font-family: monospace;">ID: ${rel.id}</div>
             </div>
           </div>
-          <span class="tier-badge ${tierClass}">${rel.step}</span>
+          <span class="tier-badge ${tierClass}">${rel.step}★</span>
         </div>
 
         <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-          <span class="item-slot-badge">${this.escapeHtml(rel.type)}</span>
+          <span class="item-slot-badge" style="background: rgba(236, 72, 153, 0.18); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.35);">
+            🔮 ${this.escapeHtml(rel.type || (isRu ? 'Эксклюзивное прозрение' : isCn ? '专属信物' : 'Signature Insight'))}
+          </span>
           ${rel.class_limit ? `<span class="tag-badge">⚔️ ${this.escapeHtml(rel.class_limit)}</span>` : ''}
-          <span class="tag-badge">Max Lv: ${rel.max_level}</span>
+          <span class="tag-badge">Max Lv: ${rel.max_level || 3}</span>
         </div>
 
-        <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">
-          ${this.escapeHtml(rel.effect)}
-        </div>
+        <!-- 3-Level Progression List -->
+        ${levels.length > 0 ? `
+          <div class="relic-levels-container" style="margin: 6px 0;">
+            ${levels.map((lv, idx) => {
+              const isMax = lv.level === 3 || idx === levels.length - 1;
+              const lvlClass = `lvl-${lv.level}`;
+              const badgeLabel = isMax 
+                ? (isRu ? 'Ур. 3 👑' : isCn ? '3阶 MAX' : 'Lv. 3 MAX')
+                : (isRu ? `Ур. ${lv.level}` : isCn ? `${lv.level}阶` : `Lv. ${lv.level}`);
+              return `
+                <div class="relic-level-row ${lvlClass}" style="padding: 4px 8px; font-size: 11.5px;">
+                  <span class="relic-level-badge ${lvlClass}" style="font-size: 10px; padding: 1.5px 6px;">${badgeLabel}</span>
+                  <span class="relic-level-effect ${isMax ? 'lvl-3' : ''}" style="font-size: 11.5px;">${this.escapeHtml(lv.effect)}</span>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        ` : `
+          <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">
+            ${this.escapeHtml(rel.effect)}
+          </div>
+        `}
 
         ${rel.specify_roles && rel.specify_roles.length > 0 ? `
-          <div style="font-size: 11px; color: #fbbf24;">
-            ⭐ <strong>${dict.signatureRelic}:</strong> ${this.escapeHtml(rel.specify_roles.join(', '))}
+          <div style="font-size: 11.5px; color: #fbbf24; background: rgba(251, 191, 36, 0.08); padding: 5px 8px; border-radius: var(--radius-sm); border: 1px solid rgba(251, 191, 36, 0.2);">
+            ⭐ <strong>${dict.signatureRelic || 'Эксклюзивное прозрение'}:</strong> ${this.escapeHtml(rel.specify_roles.join(', '))}
           </div>
         ` : ''}
       </div>
@@ -415,11 +439,86 @@ const ItemsView = {
             </div>
           ` : ''}
 
-          ${item.effect ? `
+          ${item.effect && category !== 'relics' ? `
             <div class="detail-section">
               <div class="section-heading">🔮 ${dict.effects || 'Effect'}</div>
               <div style="background: var(--bg-surface-elevated); padding: 12px; border-radius: var(--radius-md); font-size: 13px; line-height: 1.5; color: var(--text-primary);">
                 ${this.escapeHtml(item.effect)}
+              </div>
+            </div>
+          ` : ''}
+
+          <!-- Relic / Insight Upgrade Levels (1 - 3 MAX) -->
+          ${category === 'relics' ? `
+            <div class="detail-section">
+              <div class="section-heading">🔮 ${dict.relicUpgradeTitle || 'Прокачка Прозрения (Уровни 1 — 3)'}</div>
+              <div class="star-gear-card">
+                <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;">
+                  ${dict.relicUpgradeDesc || 'Эксклюзивное прозрение масштабирует свою мощь при повышении уровня:'}
+                </div>
+
+                <div class="star-gear-table-wrapper">
+                  <table class="star-gear-table">
+                    <thead>
+                      <tr>
+                        <th>${currentLang === 'RU' ? 'Уровень' : (currentLang === 'CN' ? '强化等级' : 'Level')}</th>
+                        <th>${currentLang === 'RU' ? 'Статус' : (currentLang === 'CN' ? '阶段' : 'Status')}</th>
+                        <th>${currentLang === 'RU' ? 'Эффект Прозрения' : (currentLang === 'CN' ? '信物特性加成' : 'Insight Effect')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${(item.levels || [
+                        { level: 1, effect: item.effect || '—' },
+                        { level: 2, effect: `${item.effect || ''} (Ур. 2)` },
+                        { level: 3, effect: `${item.effect || ''} (Ур. 3 MAX)` }
+                      ]).map((lv, idx) => {
+                        const isMax = lv.level === 3 || idx === (item.levels ? item.levels.length - 1 : 2);
+                        return `
+                          <tr class="${isMax ? 'legacy-row' : ''}">
+                            <td>
+                              <span class="star-step-badge ${isMax ? 'legacy-badge' : ''}">
+                                ${isMax ? '👑 Ур. 3' : `Ур. ${lv.level}`}
+                              </span>
+                            </td>
+                            <td>
+                              ${lv.level === 1 ? (currentLang === 'RU' ? 'Базовый старт' : (currentLang === 'CN' ? '初始激活' : 'Base Unlock')) : ''}
+                              ${lv.level === 2 ? (currentLang === 'RU' ? 'Усиление (+100%)' : (currentLang === 'CN' ? '进阶强化' : 'Enhanced (+100%)')) : ''}
+                              ${isMax ? (currentLang === 'RU' ? '🔥 MAX Потенциал (+200%)' : (currentLang === 'CN' ? '🔥 巅峰潜能突破' : '🔥 MAX Potential (+200%)')) : ''}
+                            </td>
+                            <td>
+                              <strong style="color: ${isMax ? '#fbbf24' : (lv.level === 2 ? '#60a5fa' : '#e2e8f0')};">
+                                ${this.escapeHtml(lv.effect)}
+                              </strong>
+                            </td>
+                          </tr>
+                        `;
+                      }).join('')}
+                    </tbody>
+                  </table>
+                </div>
+
+                ${item.specify_roles && item.specify_roles.length > 0 ? `
+                  <div class="relic-bound-box" style="cursor: pointer;" onclick="App.openCharacterFromRelic(this.getAttribute('data-role'))" data-role="${this.escapeHtml(item.specify_roles[0])}">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                      <span style="font-size: 24px;">👤</span>
+                      <div>
+                        <div style="font-size: 11px; color: #f472b6; font-weight: 700; text-transform: uppercase;">
+                          ${dict.relicBoundHeroine || 'Эксклюзивное прозрение героини:'}
+                        </div>
+                        <div style="font-size: 14px; font-weight: 700; color: #ffffff;">
+                          ${this.escapeHtml(item.specify_roles.join(', '))}
+                        </div>
+                      </div>
+                    </div>
+                    <span style="font-size: 12px; color: #38bdf8; font-weight: 700;">
+                      ${currentLang === 'RU' ? 'Открыть героиню' : currentLang === 'CN' ? '查看角色' : 'View Heroine'} ➔
+                    </span>
+                  </div>
+                ` : ''}
+
+                <div class="star-tip-box tip-standard" style="margin-top: 10px;">
+                  💡 ${currentLang === 'RU' ? 'Слот эксклюзивного прозрения открывается при достижении героиней 4★ возвышения. Прокачка уровней прозрения значительно увеличивает боевую мощь персонажа!' : currentLang === 'CN' ? '专属核心信物槽位在角色达到4★星级突破时开启，提升信物等级可极大增强战斗力！' : 'Signature insight slot unlocks when the heroine reaches 4★ ascension. Leveling up insight substantially increases combat effectiveness!'}
+                </div>
               </div>
             </div>
           ` : ''}

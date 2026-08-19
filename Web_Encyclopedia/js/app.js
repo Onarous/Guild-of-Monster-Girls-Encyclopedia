@@ -1265,18 +1265,75 @@ const App = {
   },
 
   openCharacterModal(id, updateHash = true) {
-    const lang = this.state.lang;
-    const char = (this.state.data.characters[lang] || []).find(c => c.id === id || String(c.id) === String(id) || c.key === id);
+    const lang = this.state.lang || 'RU';
+    let char = (this.state.data.characters?.[lang] || []).find(c => c.id === id || String(c.id) === String(id) || c.key === id);
+    if (!char) {
+      for (const l of ['RU', 'EN', 'CN']) {
+        char = (this.state.data.characters?.[l] || []).find(c => c.id === id || String(c.id) === String(id) || c.key === id);
+        if (char) break;
+      }
+    }
     if (!char) return;
 
     const modal = document.getElementById('detailModal');
+    if (!modal) return;
     modal.dataset.modalType = 'character';
     modal.dataset.charId = char.id;
+    delete modal.dataset.itemCat;
+    delete modal.dataset.itemId;
     modal.innerHTML = CharactersView.renderModal(char, lang, this.state.imageMappings, this.state.ownedRoleIds);
     modal.classList.add('active');
 
     if (updateHash) {
       this.updateUrl('character', char.id);
+    }
+  },
+
+  openCharacterFromRelic(roleStr) {
+    if (!roleStr) return;
+    try {
+      let decoded = roleStr;
+      try { decoded = decodeURIComponent(roleStr); } catch (e) {}
+      
+      const lang = this.state.lang || 'RU';
+      let chars = this.state.data.characters?.[lang] || [];
+      if (!chars || chars.length === 0) {
+        for (const l of ['RU', 'EN', 'CN']) {
+          if (this.state.data.characters?.[l]?.length > 0) {
+            chars = this.state.data.characters[l];
+            break;
+          }
+        }
+      }
+      
+      // Extract ID from parentheses like "Вечная владычица (M21302_000)" or "M21302_000"
+      const m = decoded.match(/\((M[\w\d_]+)\)/i) || decoded.match(/(M\d+(?:_\d+)?)/i);
+      const targetId = m ? m[1] : decoded.trim();
+      
+      // 1. Find character by exact ID or key
+      let char = chars.find(c => c.id === targetId || String(c.id).toLowerCase() === targetId.toLowerCase() || c.key === targetId);
+      
+      // 2. If not found, try base prefix e.g. "M12205" from "M12205_001"
+      if (!char && targetId.includes('_')) {
+        const basePrefix = targetId.split('_')[0];
+        char = chars.find(c => c.id === basePrefix || c.id.startsWith(basePrefix));
+      }
+      
+      // 3. If not found, try matching by name
+      if (!char) {
+        const namePart = decoded.split('(')[0].trim();
+        if (namePart) {
+          char = chars.find(c => c.name === namePart || (c.name && c.name.includes(namePart)) || (c.name_cn && c.name_cn.includes(namePart)));
+        }
+      }
+      
+      if (char) {
+        this.openCharacterModal(char.id, true);
+      } else if (targetId) {
+        this.openCharacterModal(targetId, true);
+      }
+    } catch (err) {
+      console.error("Error opening character from relic:", err);
     }
   },
 

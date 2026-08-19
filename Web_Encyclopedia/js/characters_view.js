@@ -354,7 +354,7 @@ const CharactersView = {
           <!-- Signature Relics -->
           ${relicHtml ? `
             <div class="detail-section">
-              <div class="section-heading">🔮 ${dict.signatureRelic || 'Эксклюзивная реликвия'}</div>
+              <div class="section-heading">🔮 ${dict.signatureRelic || 'Эксклюзивное прозрение'}</div>
               <div class="embedded-relics-grid">
                 ${relicHtml}
               </div>
@@ -432,7 +432,7 @@ const CharactersView = {
                 <div class="star-milestone-step">
                   <div class="star-step-badge">4★</div>
                   <div class="star-step-content">
-                    <div class="star-step-title">${currentLang === 'RU' ? '🔮 Реликвия (+25% Мощи)' : (currentLang === 'CN' ? '🔮 专属信物槽位' : '🔮 Signature Relic Slot')}</div>
+                    <div class="star-step-title">${currentLang === 'RU' ? '🔮 Прозрение (+25% Мощи)' : (currentLang === 'CN' ? '🔮 专属信物槽位' : '🔮 Signature Insight Slot')}</div>
                     <div class="star-step-desc">${dict.starMilestone4}</div>
                   </div>
                 </div>
@@ -532,8 +532,22 @@ const CharactersView = {
     const iconSrc = itemMap[relic.id] || (relic.id ? `assets/img/items/${relic.id}.png` : null);
     const fallbackEmoji = '🔮';
 
+    const levels = relic.levels || (isRu ? [
+      { level: 1, effect: relic.effect || relic.description || '—' },
+      { level: 2, effect: `${relic.effect || ''} (Ур. 2)` },
+      { level: 3, effect: `${relic.effect || ''} (Ур. 3 MAX)` }
+    ] : isCn ? [
+      { level: 1, effect: relic.effect || relic.description || '—' },
+      { level: 2, effect: `${relic.effect || ''} (2阶)` },
+      { level: 3, effect: `${relic.effect || ''} (3阶 MAX)` }
+    ] : [
+      { level: 1, effect: relic.effect || relic.description || '—' },
+      { level: 2, effect: `${relic.effect || ''} (Lv. 2)` },
+      { level: 3, effect: `${relic.effect || ''} (Lv. 3 MAX)` }
+    ]);
+
     return `
-      <div class="embedded-relic-card" onclick="event.stopPropagation(); App.openItemModal('relics', '${relic.id}')" title="${isRu ? 'Нажмите, чтобы открыть реликвию в каталоге' : isCn ? '点击查看圣物详情' : 'Click to view relic details'}">
+      <div class="embedded-relic-card" onclick="event.stopPropagation(); App.openItemModal('relics', '${relic.id}')" title="${isRu ? 'Нажмите, чтобы открыть прозрение в каталоге' : isCn ? '点击查看信物详情' : 'Click to view insight details'}">
         <div class="embedded-relic-header">
           <div class="embedded-relic-icon-wrap">
             ${iconSrc ? `
@@ -553,19 +567,32 @@ const CharactersView = {
 
         <div style="display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0;">
           <span class="tag-badge" style="background: rgba(236, 72, 153, 0.15); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.3); font-size: 10.5px; font-weight: 700;">
-            🔮 ${isRu ? 'Эксклюзивная реликвия' : isCn ? '专属圣物' : 'Signature Relic'}
+            🔮 ${isRu ? 'Эксклюзивное прозрение' : isCn ? '专属信物' : 'Signature Insight'}
           </span>
           <span class="tag-badge" style="font-size: 10.5px;">Max Lv: ${relic.max_level || 3}</span>
           ${relic.class_limit ? `<span class="tag-badge" style="font-size: 10.5px;">⚔️ ${this.escapeHtml(relic.class_limit)}</span>` : ''}
           ${char ? `<span class="tag-badge" style="font-size: 10.5px; color: #a5f3fc;">👤 ${this.escapeHtml(char.name)}</span>` : ''}
         </div>
 
-        <div class="embedded-relic-effect">
-          ${this.escapeHtml(relic.effect || relic.description || '')}
+        <!-- Upgrade Levels Container -->
+        <div class="relic-levels-container">
+          ${levels.map((lv, idx) => {
+            const isMax = lv.level === 3 || idx === levels.length - 1;
+            const lvlClass = `lvl-${lv.level}`;
+            const badgeLabel = isMax 
+              ? (isRu ? 'Ур. 3 👑 MAX' : isCn ? '3阶 MAX' : 'Lv. 3 MAX')
+              : (isRu ? `Ур. ${lv.level}` : isCn ? `${lv.level}阶` : `Lv. ${lv.level}`);
+            return `
+              <div class="relic-level-row ${lvlClass}">
+                <span class="relic-level-badge ${lvlClass}">${badgeLabel}</span>
+                <span class="relic-level-effect ${isMax ? 'lvl-3' : ''}">${this.escapeHtml(lv.effect)}</span>
+              </div>
+            `;
+          }).join('')}
         </div>
 
         <div class="embedded-relic-footer">
-          <span style="font-size: 11px; color: var(--text-muted);">${isRu ? 'Категория: Реликвии' : isCn ? '分类: 专属圣物' : 'Category: Relics'}</span>
+          <span style="font-size: 11px; color: var(--text-muted);">${isRu ? 'Категория: Прозрение' : isCn ? '分类: 专属信物' : 'Category: Insight'}</span>
           <span style="font-size: 11.5px; color: #38bdf8; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
             🔍 ${isRu ? 'Открыть в предметах' : isCn ? '在图鉴中查看' : 'View in Items'} ➔
           </span>

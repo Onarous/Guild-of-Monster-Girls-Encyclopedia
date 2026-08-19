@@ -272,7 +272,21 @@
         "name": "战略图集",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能伤害+1。"
+        "effect": "造成技能伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -425,7 +439,21 @@
         "name": "战场回顾",
         "step": "S",
         "max_level": 3,
-        "effect": "造成鼓舞层数+1。"
+        "effect": "造成鼓舞层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成鼓舞层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成鼓舞层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成鼓舞层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -578,7 +606,21 @@
         "name": "魔力编织",
         "step": "S",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -731,7 +773,21 @@
         "name": "水晶法典",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能伤害+1。"
+        "effect": "造成技能伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -884,7 +940,21 @@
         "name": "熔岩法典",
         "step": "S",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1037,7 +1107,21 @@
         "name": "至高魔力",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能伤害+1。"
+        "effect": "造成技能伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1190,7 +1274,21 @@
         "name": "极寒誓约",
         "step": "S",
         "max_level": 3,
-        "effect": "受到冰冷层数-1。"
+        "effect": "受到冰冷层数-1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "受到冰冷层数-1"
+          },
+          {
+            "level": 2,
+            "effect": "受到冰冷层数-2"
+          },
+          {
+            "level": 3,
+            "effect": "受到冰冷层数-3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1343,7 +1441,21 @@
         "name": "神圣誓约",
         "step": "S",
         "max_level": 3,
-        "effect": "获得成长层数+1。"
+        "effect": "获得成长层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得成长层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得成长层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得成长层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1496,7 +1608,21 @@
         "name": "噩梦契约",
         "step": "S",
         "max_level": 3,
-        "effect": "造成恐惧层数+1。"
+        "effect": "造成恐惧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成恐惧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成恐惧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成恐惧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1649,7 +1775,21 @@
         "name": "地灵契约",
         "step": "S",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1802,7 +1942,21 @@
         "name": "烈阳秘法",
         "step": "S",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1955,7 +2109,21 @@
         "name": "封印之书",
         "step": "S",
         "max_level": 3,
-        "effect": "造成减速层数+1。"
+        "effect": "造成减速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成减速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成减速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成减速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2108,7 +2276,21 @@
         "name": "魔女秘法",
         "step": "S",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2261,7 +2443,21 @@
         "name": "白银之书",
         "step": "S",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2414,7 +2610,21 @@
         "name": "静水之书",
         "step": "S",
         "max_level": 3,
-        "effect": "造成滋润层数+1。"
+        "effect": "造成滋润层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成滋润层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成滋润层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成滋润层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2567,7 +2777,21 @@
         "name": "御雷秘术",
         "step": "S",
         "max_level": 3,
-        "effect": "造成感电层数+1。"
+        "effect": "造成感电层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成感电层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成感电层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成感电层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2720,7 +2944,21 @@
         "name": "枪术总要",
         "step": "S",
         "max_level": 3,
-        "effect": "造成普通伤害+1。"
+        "effect": "造成普通伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成普通伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成普通伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成普通伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2873,7 +3111,21 @@
         "name": "炼金笔记",
         "step": "S",
         "max_level": 3,
-        "effect": "造成阻碍层数+1。"
+        "effect": "造成阻碍层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成阻碍层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成阻碍层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成阻碍层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3026,7 +3278,21 @@
         "name": "特制配方",
         "step": "S",
         "max_level": 3,
-        "effect": "造成感电层数+1。"
+        "effect": "造成感电层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成感电层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成感电层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成感电层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3179,7 +3445,21 @@
         "name": "亡灵之书",
         "step": "S",
         "max_level": 3,
-        "effect": "获得防护层数+1。"
+        "effect": "获得防护层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得防护层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得防护层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得防护层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3332,7 +3612,21 @@
         "name": "龙之怒",
         "step": "S",
         "max_level": 3,
-        "effect": "造成恐惧层数+1。"
+        "effect": "造成恐惧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成恐惧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成恐惧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成恐惧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3485,7 +3779,21 @@
         "name": "杂技大全",
         "step": "S",
         "max_level": 3,
-        "effect": "造成诱导层数+1。"
+        "effect": "造成诱导层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成诱导层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成诱导层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成诱导层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3638,7 +3946,21 @@
         "name": "藏身图集",
         "step": "S",
         "max_level": 3,
-        "effect": "造成剥离层数+1。"
+        "effect": "造成剥离层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成剥离层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成剥离层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成剥离层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3791,7 +4113,21 @@
         "name": "异界画集",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能恢复+1。"
+        "effect": "造成技能恢复+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能恢复+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能恢复+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能恢复+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3944,7 +4280,21 @@
         "name": "勇气之书",
         "step": "S",
         "max_level": 3,
-        "effect": "获得防护层数+1。"
+        "effect": "获得防护层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得防护层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得防护层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得防护层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4097,7 +4447,21 @@
         "name": "黄沙之书",
         "step": "S",
         "max_level": 3,
-        "effect": "造成减速层数+1。"
+        "effect": "造成减速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成减速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成减速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成减速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4250,7 +4614,21 @@
         "name": "权力宝典",
         "step": "S",
         "max_level": 3,
-        "effect": "造成鼓舞层数+1。"
+        "effect": "造成鼓舞层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成鼓舞层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成鼓舞层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成鼓舞层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4403,7 +4781,21 @@
         "name": "美容大全",
         "step": "S",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4556,7 +4948,21 @@
         "name": "分光剑谱",
         "step": "S",
         "max_level": 3,
-        "effect": "造成普通伤害+1。"
+        "effect": "造成普通伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成普通伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成普通伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成普通伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4709,7 +5115,21 @@
         "name": "星空奥秘",
         "step": "S",
         "max_level": 3,
-        "effect": "造成追击伤害+1。"
+        "effect": "造成追击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成追击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成追击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成追击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4862,7 +5282,21 @@
         "name": "邪恶语录",
         "step": "S",
         "max_level": 3,
-        "effect": "获得反伤层数+1。"
+        "effect": "获得反伤层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得反伤层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得反伤层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得反伤层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5015,7 +5449,21 @@
         "name": "极寒法典",
         "step": "S",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5168,7 +5616,21 @@
         "name": "星界法典",
         "step": "S",
         "max_level": 3,
-        "effect": "造成恐惧层数+1。"
+        "effect": "造成恐惧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成恐惧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成恐惧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成恐惧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5321,7 +5783,21 @@
         "name": "烈焰法则",
         "step": "S",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5474,7 +5950,21 @@
         "name": "生命法则",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能恢复+1。"
+        "effect": "造成技能恢复+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能恢复+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能恢复+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能恢复+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5627,7 +6117,21 @@
         "name": "自动编程",
         "step": "S",
         "max_level": 3,
-        "effect": "造成追击伤害+1。"
+        "effect": "造成追击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成追击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成追击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成追击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5780,7 +6284,21 @@
         "name": "核心编程",
         "step": "S",
         "max_level": 3,
-        "effect": "造成反击伤害+1。"
+        "effect": "造成反击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成反击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成反击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成反击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5933,7 +6451,21 @@
         "name": "暗星解析",
         "step": "S",
         "max_level": 3,
-        "effect": "造成泯灭层数+1。"
+        "effect": "造成泯灭层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成泯灭层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成泯灭层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成泯灭层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6086,7 +6618,21 @@
         "name": "魔晶制造",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能恢复+1。"
+        "effect": "造成技能恢复+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能恢复+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能恢复+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能恢复+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6239,7 +6785,21 @@
         "name": "梦境遨游",
         "step": "S",
         "max_level": 3,
-        "effect": "造成恐惧层数+1。"
+        "effect": "造成恐惧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成恐惧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成恐惧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成恐惧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6392,7 +6952,21 @@
         "name": "熊孩子笔记",
         "step": "S",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6545,7 +7119,21 @@
         "name": "针毯保养",
         "step": "S",
         "max_level": 3,
-        "effect": "获得反伤层数+1。"
+        "effect": "获得反伤层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得反伤层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得反伤层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得反伤层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6698,7 +7286,21 @@
         "name": "皎月之舞",
         "step": "S",
         "max_level": 3,
-        "effect": "造成泯灭层数+1。"
+        "effect": "造成泯灭层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成泯灭层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成泯灭层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成泯灭层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6851,7 +7453,21 @@
         "name": "战舞合集",
         "step": "S",
         "max_level": 3,
-        "effect": "造成鼓舞层数+1。"
+        "effect": "造成鼓舞层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成鼓舞层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成鼓舞层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成鼓舞层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7004,7 +7620,21 @@
         "name": "鲜血之书",
         "step": "S",
         "max_level": 3,
-        "effect": "造成剥离层数+1。"
+        "effect": "造成剥离层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成剥离层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成剥离层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成剥离层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7157,7 +7787,21 @@
         "name": "花园护理",
         "step": "S",
         "max_level": 3,
-        "effect": "获得成长层数+1。"
+        "effect": "获得成长层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得成长层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得成长层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得成长层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7310,7 +7954,21 @@
         "name": "英灵战书",
         "step": "S",
         "max_level": 3,
-        "effect": "受到普通伤害-1。"
+        "effect": "受到普通伤害-1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "受到普通伤害-1。"
+          },
+          {
+            "level": 2,
+            "effect": "受到普通伤害-1。 (Lv. 2)"
+          },
+          {
+            "level": 3,
+            "effect": "受到普通伤害-1。 (Lv. 3)"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7463,7 +8121,21 @@
         "name": "弹反精通",
         "step": "S",
         "max_level": 3,
-        "effect": "造成反击伤害+1。"
+        "effect": "造成反击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成反击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成反击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成反击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7616,7 +8288,21 @@
         "name": "旋转秘诀",
         "step": "S",
         "max_level": 3,
-        "effect": "造成反击伤害+1。"
+        "effect": "造成反击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成反击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成反击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成反击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7769,7 +8455,21 @@
         "name": "光辉之书",
         "step": "S",
         "max_level": 3,
-        "effect": "精神+5。"
+        "effect": "精神+5。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+5"
+          },
+          {
+            "level": 2,
+            "effect": "精神+10"
+          },
+          {
+            "level": 3,
+            "effect": "精神+15"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7922,7 +8622,21 @@
         "name": "愿望大全",
         "step": "S",
         "max_level": 3,
-        "effect": "幸运+1。"
+        "effect": "幸运+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "幸运+1"
+          },
+          {
+            "level": 2,
+            "effect": "幸运+2"
+          },
+          {
+            "level": 3,
+            "effect": "幸运+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8075,7 +8789,21 @@
         "name": "龙族秘史",
         "step": "S",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8228,7 +8956,21 @@
         "name": "夏日笔记",
         "step": "S",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8381,7 +9123,21 @@
         "name": "西游见闻",
         "step": "S",
         "max_level": 3,
-        "effect": "获得滋润层数+1。"
+        "effect": "获得滋润层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得滋润层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得滋润层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得滋润层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8534,7 +9290,21 @@
         "name": "恶魔之书",
         "step": "S",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8687,7 +9457,21 @@
         "name": "抗争精神",
         "step": "S",
         "max_level": 3,
-        "effect": "受到冰冷层数-1。"
+        "effect": "受到冰冷层数-1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "受到冰冷层数-1"
+          },
+          {
+            "level": 2,
+            "effect": "受到冰冷层数-2"
+          },
+          {
+            "level": 3,
+            "effect": "受到冰冷层数-3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8840,7 +9624,21 @@
         "name": "命运法典",
         "step": "S",
         "max_level": 3,
-        "effect": "幸运+1。"
+        "effect": "幸运+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "幸运+1"
+          },
+          {
+            "level": 2,
+            "effect": "幸运+2"
+          },
+          {
+            "level": 3,
+            "effect": "幸运+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8993,7 +9791,21 @@
         "name": "风行法典",
         "step": "S",
         "max_level": 3,
-        "effect": "获得精准层数+1。"
+        "effect": "获得精准层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得精准层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得精准层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得精准层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9146,7 +9958,21 @@
         "name": "派对大全",
         "step": "S",
         "max_level": 3,
-        "effect": "幸运+1。"
+        "effect": "幸运+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "幸运+1"
+          },
+          {
+            "level": 2,
+            "effect": "幸运+2"
+          },
+          {
+            "level": 3,
+            "effect": "幸运+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9299,7 +10125,21 @@
         "name": "魔术大全",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能伤害+1。"
+        "effect": "造成技能伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9452,7 +10292,21 @@
         "name": "悬疑故事",
         "step": "S",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9605,7 +10459,21 @@
         "name": "亲热天堂",
         "step": "S",
         "max_level": 3,
-        "effect": "造成追击伤害+1。"
+        "effect": "造成追击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成追击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成追击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成追击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9758,7 +10626,21 @@
         "name": "极寒配方",
         "step": "S",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9911,7 +10793,21 @@
         "name": "药剂大全",
         "step": "S",
         "max_level": 3,
-        "effect": "造成阻碍层数+1。"
+        "effect": "造成阻碍层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成阻碍层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成阻碍层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成阻碍层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10064,7 +10960,21 @@
         "name": "熔岩秘术",
         "step": "S",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10217,7 +11127,21 @@
         "name": "终极防御",
         "step": "S",
         "max_level": 3,
-        "effect": "获得防护层数+1。"
+        "effect": "获得防护层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得防护层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得防护层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得防护层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10370,7 +11294,21 @@
         "name": "近战技巧",
         "step": "A",
         "max_level": 3,
-        "effect": "获得坚韧层数+1。"
+        "effect": "获得坚韧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得坚韧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得坚韧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得坚韧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10523,7 +11461,21 @@
         "name": "火药配方",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10676,7 +11628,21 @@
         "name": "鼓点笔记",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10829,7 +11795,21 @@
         "name": "生命封存",
         "step": "A",
         "max_level": 3,
-        "effect": "获得成长层数+1。"
+        "effect": "获得成长层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得成长层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得成长层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得成长层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10982,7 +11962,21 @@
         "name": "梦境编织",
         "step": "A",
         "max_level": 3,
-        "effect": "造成恐惧层数+1。"
+        "effect": "造成恐惧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成恐惧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成恐惧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成恐惧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11135,7 +12129,21 @@
         "name": "先祖族谱",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11288,7 +12296,21 @@
         "name": "学院教材",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11441,7 +12463,21 @@
         "name": "时间旅行",
         "step": "A",
         "max_level": 3,
-        "effect": "造成逆转层数+1。"
+        "effect": "造成逆转层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成逆转层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成逆转层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成逆转层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11594,7 +12630,21 @@
         "name": "箭术精通",
         "step": "A",
         "max_level": 3,
-        "effect": "获得精准层数+1。"
+        "effect": "获得精准层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得精准层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得精准层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得精准层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11747,7 +12797,21 @@
         "name": "手语精通",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11900,7 +12964,21 @@
         "name": "射击手法",
         "step": "A",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12053,7 +13131,21 @@
         "name": "祖传配方",
         "step": "A",
         "max_level": 3,
-        "effect": "造成阻碍层数+1。"
+        "effect": "造成阻碍层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成阻碍层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成阻碍层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成阻碍层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12206,7 +13298,21 @@
         "name": "魔道精选",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12359,7 +13465,21 @@
         "name": "纵火指南",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12512,7 +13632,21 @@
         "name": "防身指南",
         "step": "A",
         "max_level": 3,
-        "effect": "获得防护层数+1。"
+        "effect": "获得防护层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得防护层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得防护层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得防护层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12665,7 +13799,21 @@
         "name": "营养均衡",
         "step": "A",
         "max_level": 3,
-        "effect": "获得再生层数+1。"
+        "effect": "获得再生层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得再生层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得再生层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得再生层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12818,7 +13966,21 @@
         "name": "焚烧解析",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12971,7 +14133,21 @@
         "name": "拆迁解析",
         "step": "A",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -13124,7 +14300,21 @@
         "name": "充分燃烧",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -13277,7 +14467,21 @@
         "name": "资本积累",
         "step": "A",
         "max_level": 3,
-        "effect": "获得再生层数+1。"
+        "effect": "获得再生层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得再生层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得再生层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得再生层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -13430,7 +14634,21 @@
         "name": "航线地图",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -13583,7 +14801,21 @@
         "name": "破冰拳法",
         "step": "A",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -13736,7 +14968,21 @@
         "name": "截拳秘法",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -13889,7 +15135,21 @@
         "name": "极寒史书",
         "step": "A",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14042,7 +15302,21 @@
         "name": "战争法典",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14195,7 +15469,21 @@
         "name": "宣传手册",
         "step": "A",
         "max_level": 3,
-        "effect": "获得信念层数+1。"
+        "effect": "获得信念层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得信念层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得信念层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得信念层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14348,7 +15636,21 @@
         "name": "理财陷阱",
         "step": "A",
         "max_level": 3,
-        "effect": "获得信念层数+1。"
+        "effect": "获得信念层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得信念层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得信念层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得信念层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14501,7 +15803,21 @@
         "name": "日耀法典",
         "step": "A",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14654,7 +15970,21 @@
         "name": "极寒坐标",
         "step": "A",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14807,7 +16137,21 @@
         "name": "星门坐标",
         "step": "A",
         "max_level": 3,
-        "effect": "造成反击伤害+1。"
+        "effect": "造成反击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成反击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成反击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成反击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14960,7 +16304,21 @@
         "name": "月影诗篇",
         "step": "A",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -15113,7 +16471,21 @@
         "name": "尖刺异变",
         "step": "A",
         "max_level": 3,
-        "effect": "获得反伤层数+1。"
+        "effect": "获得反伤层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得反伤层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得反伤层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得反伤层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -15266,7 +16638,21 @@
         "name": "植物栽培",
         "step": "A",
         "max_level": 3,
-        "effect": "获得成长层数+1。"
+        "effect": "获得成长层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得成长层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得成长层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得成长层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -15419,7 +16805,21 @@
         "name": "秘制法门",
         "step": "A",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -15572,7 +16972,21 @@
         "name": "兵法要诀",
         "step": "A",
         "max_level": 3,
-        "effect": "获得反伤层数+1。"
+        "effect": "获得反伤层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得反伤层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得反伤层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得反伤层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -15725,7 +17139,21 @@
         "name": "保湿秘诀",
         "step": "A",
         "max_level": 3,
-        "effect": "获得滋润层数+1。"
+        "effect": "获得滋润层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得滋润层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得滋润层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得滋润层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -15878,7 +17306,21 @@
         "name": "净水指南",
         "step": "A",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16031,7 +17473,21 @@
         "name": "古老誓言",
         "step": "A",
         "max_level": 3,
-        "effect": "造成减速层数+1。"
+        "effect": "造成减速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成减速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成减速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成减速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16184,7 +17640,21 @@
         "name": "温度控制",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16337,7 +17807,21 @@
         "name": "炼金百科",
         "step": "A",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16490,7 +17974,21 @@
         "name": "极致艺术",
         "step": "A",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16643,7 +18141,21 @@
         "name": "驯养指南",
         "step": "A",
         "max_level": 3,
-        "effect": "获得滋润层数+1。"
+        "effect": "获得滋润层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得滋润层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得滋润层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得滋润层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16796,7 +18308,21 @@
         "name": "控电秘诀",
         "step": "A",
         "max_level": 3,
-        "effect": "造成感电层数+1。"
+        "effect": "造成感电层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成感电层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成感电层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成感电层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16949,7 +18475,21 @@
         "name": "控风秘诀",
         "step": "A",
         "max_level": 3,
-        "effect": "造成剥离层数+1。"
+        "effect": "造成剥离层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成剥离层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成剥离层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成剥离层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -17102,7 +18642,21 @@
         "name": "入梦指南",
         "step": "A",
         "max_level": 3,
-        "effect": "造成恐惧层数+1。"
+        "effect": "造成恐惧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成恐惧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成恐惧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成恐惧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -17255,7 +18809,21 @@
         "name": "狩猎指南",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -17408,7 +18976,21 @@
         "name": "冻伤防范",
         "step": "A",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -17561,7 +19143,21 @@
         "name": "解药配置",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -17714,7 +19310,21 @@
         "name": "修复技法",
         "step": "A",
         "max_level": 3,
-        "effect": "获得坚韧层数+1。"
+        "effect": "获得坚韧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得坚韧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得坚韧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得坚韧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -17867,7 +19477,21 @@
         "name": "好运仪式",
         "step": "A",
         "max_level": 3,
-        "effect": "幸运+1。"
+        "effect": "幸运+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "幸运+1"
+          },
+          {
+            "level": 2,
+            "effect": "幸运+2"
+          },
+          {
+            "level": 3,
+            "effect": "幸运+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18020,7 +19644,21 @@
         "name": "气流原理",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18173,7 +19811,21 @@
         "name": "魔力利用",
         "step": "A",
         "max_level": 3,
-        "effect": "受到泯灭层数-1。"
+        "effect": "受到泯灭层数-1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "受到泯灭层数-1"
+          },
+          {
+            "level": 2,
+            "effect": "受到泯灭层数-2"
+          },
+          {
+            "level": 3,
+            "effect": "受到泯灭层数-3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18326,7 +19978,21 @@
         "name": "冒险指南",
         "step": "A",
         "max_level": 3,
-        "effect": "获得防护层数+1。"
+        "effect": "获得防护层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得防护层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得防护层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得防护层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18479,7 +20145,21 @@
         "name": "美食大全",
         "step": "A",
         "max_level": 3,
-        "effect": "获得成长层数+1。"
+        "effect": "获得成长层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得成长层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得成长层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得成长层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18632,7 +20312,21 @@
         "name": "荆棘花园",
         "step": "A",
         "max_level": 3,
-        "effect": "获得反伤层数+1。"
+        "effect": "获得反伤层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得反伤层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得反伤层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得反伤层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18785,7 +20479,21 @@
         "name": "强者自述",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18938,7 +20646,21 @@
         "name": "热血周刊",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19091,7 +20813,21 @@
         "name": "美食笔记",
         "step": "A",
         "max_level": 3,
-        "effect": "获得成长层数+1。"
+        "effect": "获得成长层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得成长层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得成长层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得成长层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19244,7 +20980,21 @@
         "name": "血脉秘书",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19397,7 +21147,21 @@
         "name": "生物制毒",
         "step": "A",
         "max_level": 3,
-        "effect": "造成阻碍层数+1。"
+        "effect": "造成阻碍层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成阻碍层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成阻碍层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成阻碍层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19550,7 +21314,21 @@
         "name": "厄运防范",
         "step": "A",
         "max_level": 3,
-        "effect": "幸运+1。"
+        "effect": "幸运+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "幸运+1"
+          },
+          {
+            "level": 2,
+            "effect": "幸运+2"
+          },
+          {
+            "level": 3,
+            "effect": "幸运+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19703,7 +21481,21 @@
         "name": "笑话合集",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19856,7 +21648,21 @@
         "name": "记忆强化",
         "step": "A",
         "max_level": 3,
-        "effect": "获得反伤层数+1。"
+        "effect": "获得反伤层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得反伤层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得反伤层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得反伤层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20009,7 +21815,21 @@
         "name": "燃烧奥秘",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20162,7 +21982,21 @@
         "name": "精准奥秘",
         "step": "A",
         "max_level": 3,
-        "effect": "获得精准层数+1。"
+        "effect": "获得精准层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得精准层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得精准层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得精准层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20315,7 +22149,21 @@
         "name": "空灵之书",
         "step": "A",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20468,7 +22316,21 @@
         "name": "隐蔽教学",
         "step": "A",
         "max_level": 3,
-        "effect": "获得精准层数+1。"
+        "effect": "获得精准层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得精准层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得精准层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得精准层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20621,7 +22483,21 @@
         "name": "雷霆词典",
         "step": "A",
         "max_level": 3,
-        "effect": "造成感电层数+1。"
+        "effect": "造成感电层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成感电层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成感电层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成感电层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20774,7 +22650,21 @@
         "name": "风语词典",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20927,7 +22817,21 @@
         "name": "墓志铭合集",
         "step": "A",
         "max_level": 3,
-        "effect": "造成泯灭层数+1。"
+        "effect": "造成泯灭层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成泯灭层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成泯灭层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成泯灭层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21080,7 +22984,21 @@
         "name": "视线诱导",
         "step": "A",
         "max_level": 3,
-        "effect": "造成诱导层数+1。"
+        "effect": "造成诱导层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成诱导层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成诱导层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成诱导层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21233,7 +23151,21 @@
         "name": "祖传秘法",
         "step": "A",
         "max_level": 3,
-        "effect": "获得再生层数+1。"
+        "effect": "获得再生层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得再生层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得再生层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得再生层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21386,7 +23318,21 @@
         "name": "沙漠史书",
         "step": "A",
         "max_level": 3,
-        "effect": "造成减速层数+1。"
+        "effect": "造成减速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成减速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成减速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成减速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21527,7 +23473,21 @@
         "name": "移动射击",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21668,7 +23628,21 @@
         "name": "女仆礼仪",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21809,7 +23783,21 @@
         "name": "锻炼心得",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21950,7 +23938,21 @@
         "name": "火球笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22091,7 +24093,21 @@
         "name": "地图总汇",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22232,7 +24248,21 @@
         "name": "茶道入门",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22373,7 +24403,21 @@
         "name": "蘑菇培育",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22514,7 +24558,21 @@
         "name": "蘑菇繁殖",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22655,7 +24713,21 @@
         "name": "学院教材",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22796,7 +24868,21 @@
         "name": "医疗笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22937,7 +25023,21 @@
         "name": "饮食笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23078,7 +25178,21 @@
         "name": "武器图鉴",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23219,7 +25333,21 @@
         "name": "寓教于乐",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23360,7 +25488,21 @@
         "name": "魔纹入门",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23501,7 +25643,21 @@
         "name": "锻炼合集",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23642,7 +25798,21 @@
         "name": "防潮指南",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23783,7 +25953,21 @@
         "name": "航海笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23924,7 +26108,21 @@
         "name": "星图笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24065,7 +26263,21 @@
         "name": "补水技巧",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24206,7 +26418,21 @@
         "name": "毅力锻炼",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24347,7 +26573,21 @@
         "name": "军队日记",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24488,7 +26728,21 @@
         "name": "任务名单",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24629,7 +26883,21 @@
         "name": "求存预言",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24770,7 +27038,21 @@
         "name": "草药笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24911,7 +27193,21 @@
         "name": "果腹心得",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25052,7 +27348,21 @@
         "name": "追踪心得",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25193,7 +27503,21 @@
         "name": "霜狼日记",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25334,7 +27658,21 @@
         "name": "狼灵日记",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25475,7 +27813,21 @@
         "name": "杂技技巧",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25616,7 +27968,21 @@
         "name": "热门歌单",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25757,7 +28123,21 @@
         "name": "荒野生存",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25898,7 +28278,21 @@
         "name": "新兵教学",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26039,7 +28433,21 @@
         "name": "珍珠保养",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26180,7 +28588,21 @@
         "name": "恐怖小说",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26321,7 +28743,21 @@
         "name": "考古笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26462,7 +28898,21 @@
         "name": "剑术入门",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26603,7 +29053,21 @@
         "name": "污染防范",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26744,7 +29208,21 @@
         "name": "心念归一",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26885,7 +29363,21 @@
         "name": "寒流心得",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27026,7 +29518,21 @@
         "name": "飞行心得",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27162,7 +29668,21 @@
         "name": "刀具保暖",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27298,7 +29818,21 @@
         "name": "拔刀入门",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27434,7 +29968,21 @@
         "name": "蜂蜜储存",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27570,7 +30118,21 @@
         "name": "蜂蜜妙用",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27706,7 +30268,21 @@
         "name": "旅行日记",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27842,7 +30418,21 @@
         "name": "草药笔记",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27978,7 +30568,21 @@
         "name": "入睡指南",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28114,7 +30718,21 @@
         "name": "拖延秘诀",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28250,7 +30868,21 @@
         "name": "恋爱话本",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28386,7 +31018,21 @@
         "name": "拉面菜谱",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28522,7 +31168,21 @@
         "name": "拾荒指南",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28658,7 +31318,21 @@
         "name": "肢体语言",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28794,7 +31468,21 @@
         "name": "锻炼心得",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28930,7 +31618,21 @@
         "name": "淘金指南",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29066,7 +31768,21 @@
         "name": "隐蔽心得",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29202,7 +31918,21 @@
         "name": "矿石分辨",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29338,7 +32068,21 @@
         "name": "周边地图",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29474,7 +32218,21 @@
         "name": "察言观色",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29610,7 +32368,21 @@
         "name": "避暑妙招",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29746,7 +32518,21 @@
         "name": "梦境日记",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29882,7 +32668,21 @@
         "name": "投掷心得",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -30018,7 +32818,21 @@
         "name": "摸鱼心得",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -30154,7 +32968,21 @@
         "name": "舞棍技法",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -30290,7 +33118,21 @@
         "name": "基本话术",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [

@@ -1,0 +1,722 @@
+[
+  {
+    "path": "buff-bloodlust.html",
+    "category": "buff",
+    "name": "Bloodlust",
+    "code": "T20005",
+    "icon": "🩸",
+    "definition": "[Buff] Each stack increases total DMG dealt by 1. Applies to each hit in multi-hit attacks and scales per target based on DMG dealt. Consumed after taking effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_08",
+      "StatusDataTable row": "T20005",
+      "Localization": "Buff/Noun_Name_08  /  Buff/Noun_Des_08"
+    },
+    "fullText": "Bloodlust T20005 [Buff] Each stack increases total DMG dealt by 1. Applies to each hit in multi-hit attacks and scales per target based on DMG dealt. Consumed after taking effect. Field Value Status ID T20005 Loc Key Buff/Noun_Name_08 Element Fire Tag Buff Priority 5 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_08 StatusDataTable row: T20005 Localization: Buff/Noun_Name_08 / Buff/Noun_Des_08"
+  },
+  {
+    "path": "buff-faith.html",
+    "category": "buff",
+    "name": "Faith",
+    "code": "T20008",
+    "icon": "🙏",
+    "definition": "[Buff] Every 5 stacks on the unit increases their total HP restored to other targets by 1. Persistent.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_11",
+      "StatusDataTable row": "T20008",
+      "Localization": "Buff/Noun_Name_11  /  Buff/Noun_Des_11_new01"
+    },
+    "fullText": "Faith T20008 [Buff] Every 5 stacks on the unit increases their total HP restored to other targets by 1. Persistent. Field Value Status ID T20008 Loc Key Buff/Noun_Name_11 Element Light Tag Buff Priority 8 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_11 StatusDataTable row: T20008 Localization: Buff/Noun_Name_11 / Buff/Noun_Des_11_new01"
+  },
+  {
+    "path": "buff-growth.html",
+    "category": "buff",
+    "name": "Growth",
+    "code": "T20015",
+    "icon": "🌱",
+    "definition": "[Buff] Each stack increases Max HP by 1. Persistent effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_12",
+      "StatusDataTable row": "T20011",
+      "Localization": "Buff/Noun_Name_12  /  Buff/Noun_Des_12"
+    },
+    "fullText": "Growth T20011 [Buff] Each stack increases Max HP by 1. Persistent effect. Field Value Status ID T20011 Loc Key Buff/Noun_Name_12 Element Earth Tag Buff Priority 2 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_12 StatusDataTable row: T20011 Localization: Buff/Noun_Name_12 / Buff/Noun_Des_12"
+  },
+  {
+    "path": "buff-haste.html",
+    "category": "buff",
+    "name": "Haste",
+    "code": "T20003",
+    "icon": "⚡",
+    "definition": "[Buff] Each stack grants the target 1 SPD. Persistent effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_07",
+      "StatusDataTable row": "T20003",
+      "Localization": "Buff/Noun_Name_07  /  Buff/Noun_Des_07"
+    },
+    "fullText": "Haste T20003 [Buff] Each stack grants the target 1 SPD. Persistent effect. Field Value Status ID T20003 Loc Key Buff/Noun_Name_07 Element Wind Tag Buff Priority 10 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_07 StatusDataTable row: T20003 Localization: Buff/Noun_Name_07 / Buff/Noun_Des_07"
+  },
+  {
+    "path": "buff-precision.html",
+    "category": "buff",
+    "name": "Precision",
+    "code": "T20004",
+    "icon": "🎯",
+    "definition": "[Buff] Every 5 stacks increase Follow-Up DMG by 1. Target prioritizes attacking back position. Persistent effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_10",
+      "StatusDataTable row": "T10008",
+      "Localization": "Buff/Noun_Name_10  /  Buff/Noun_Des_10"
+    },
+    "fullText": "Precision T10008 [Buff] Every 5 stacks increase Follow-Up DMG by 1. Target prioritizes attacking back position. Persistent effect. Field Value Status ID T10008 Loc Key Buff/Noun_Name_10 Element Wind Tag Buff Priority 3 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_10 StatusDataTable row: T10008 Localization: Buff/Noun_Name_10 / Buff/Noun_Des_10"
+  },
+  {
+    "path": "buff-regen.html",
+    "category": "buff",
+    "name": "Regen",
+    "code": "T30002",
+    "icon": "💚",
+    "definition": "[Buff] Each stack restores 1 HP at action end, up to 20% of Max HP per instance. Consumed after taking effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_13",
+      "StatusDataTable row": "T20007",
+      "Localization": "Buff/Noun_Name_13  /  Buff/Noun_Des_13_new01"
+    },
+    "fullText": "Regen T20007 [Buff] Each stack restores 1 HP at action end, up to 20% of Max HP per instance. Consumed after taking effect. Field Value Status ID T20007 Loc Key Buff/Noun_Name_13 Element Fire Tag Buff Priority 9 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_13 StatusDataTable row: T20007 Localization: Buff/Noun_Name_13 / Buff/Noun_Des_13_new01"
+  },
+  {
+    "path": "buff-shield.html",
+    "category": "buff",
+    "name": "Shield",
+    "code": "T20006",
+    "icon": "🛡️",
+    "definition": "[Buff] Each stack reduces total DMG taken by 1. Applies to each hit in multi-hit attacks. Consumed after taking effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_09",
+      "StatusDataTable row": "T20006",
+      "Localization": "Buff/Noun_Name_09  /  Buff/Noun_Des_09"
+    },
+    "fullText": "Shield T20006 [Buff] Each stack reduces total DMG taken by 1. Applies to each hit in multi-hit attacks. Consumed after taking effect. Field Value Status ID T20006 Loc Key Buff/Noun_Name_09 Element Earth Tag Buff Priority 6 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_09 StatusDataTable row: T20006 Localization: Buff/Noun_Name_09 / Buff/Noun_Des_09"
+  },
+  {
+    "path": "buff-soothe.html",
+    "category": "buff",
+    "name": "Soothe",
+    "code": "T30001",
+    "icon": "🕊️",
+    "definition": "[Buff] Each stack reduces HP loss by 1. Consumed after taking effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_14",
+      "StatusDataTable row": "T30001",
+      "Localization": "Buff/Noun_Name_14  /  Buff/Noun_Des_14"
+    },
+    "fullText": "Soothe T30001 [Buff] Each stack reduces HP loss by 1. Consumed after taking effect. Field Value Status ID T30001 Loc Key Buff/Noun_Name_14 Element Water Tag Buff Priority 7 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_14 StatusDataTable row: T30001 Localization: Buff/Noun_Name_14 / Buff/Noun_Des_14"
+  },
+  {
+    "path": "buff-thorns.html",
+    "category": "buff",
+    "name": "Thorns",
+    "code": "T20009",
+    "icon": "🌵",
+    "definition": "[CN: 【正面】每层使攻击目标失去1点生命],[CN: 每次生效层数最多不超过目标20%生命上限],[CN: 多段攻击只生效1次],[CN: 持续生效。]",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_15",
+      "StatusDataTable row": "T20009",
+      "Localization": "Buff/Noun_Name_15  /  Buff/Noun_Des_15_new01"
+    },
+    "fullText": "Thorns T20009 [CN: 【正面】每层使攻击目标失去1点生命],[CN: 每次生效层数最多不超过目标20%生命上限],[CN: 多段攻击只生效1次],[CN: 持续生效。] Field Value Status ID T20009 Loc Key Buff/Noun_Name_15 Element Earth Tag Buff Priority 4 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_15 StatusDataTable row: T20009 Localization: Buff/Noun_Name_15 / Buff/Noun_Des_15_new01"
+  },
+  {
+    "path": "debuff-burn.html",
+    "category": "debuff",
+    "name": "Burn",
+    "code": "T40003",
+    "icon": "🔥",
+    "definition": "[CN: 【负面】每层使目标行动开始前失去1点生命],[CN: 每次生效层数最多不超过目标20%生命上限],[CN: 持续生效。]",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_23",
+      "StatusDataTable row": "T40003",
+      "Localization": "Buff/Noun_Name_23  /  Buff/Noun_Des_23_new01"
+    },
+    "fullText": "Burn T40003 [CN: 【负面】每层使目标行动开始前失去1点生命],[CN: 每次生效层数最多不超过目标20%生命上限],[CN: 持续生效。] Field Value Status ID T40003 Loc Key Buff/Noun_Name_23 Element Fire Tag Debuff Priority 4 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_23 StatusDataTable row: T40003 Localization: Buff/Noun_Name_23 / Buff/Noun_Des_23_new01"
+  },
+  {
+    "path": "debuff-chill.html",
+    "category": "debuff",
+    "name": "Chill",
+    "code": "T40004",
+    "icon": "❄️",
+    "definition": "[Debuff] Each stack reduces the target's total DMG by 1. Applies to each hit of multi-hit attacks. When affecting multiple targets, each target is affected separately based on DMG. Consumed after taking effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_20",
+      "StatusDataTable row": "T40004",
+      "Localization": "Buff/Noun_Name_20  /  Buff/Noun_Des_20"
+    },
+    "fullText": "Chill T40004 [Debuff] Each stack reduces the target's total DMG by 1. Applies to each hit of multi-hit attacks. When affecting multiple targets, each target is affected separately based on DMG. Consumed after taking effect. Field Value Status ID T40004 Loc Key Buff/Noun_Name_20 Element Water Tag Debuff Priority 8 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_20 StatusDataTable row: T40004 Localization: Buff/Noun_Name_20 / Buff/Noun_Des_20"
+  },
+  {
+    "path": "debuff-expose.html",
+    "category": "debuff",
+    "name": "Expose",
+    "code": "T40001",
+    "icon": "👁️",
+    "definition": "[CN: 【负面】每层使目标行动结束后失去1点生命上限],[CN: 每次生效层数最多不超过目标20%生命上限],[CN: 持续生效。]",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_22",
+      "StatusDataTable row": "T40001",
+      "Localization": "Buff/Noun_Name_22  /  Buff/Noun_Des_22_new01"
+    },
+    "fullText": "Expose T40001 [CN: 【负面】每层使目标行动结束后失去1点生命上限],[CN: 每次生效层数最多不超过目标20%生命上限],[CN: 持续生效。] Field Value Status ID T40001 Loc Key Buff/Noun_Name_22 Element Wind Tag Debuff Priority 5 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_22 StatusDataTable row: T40001 Localization: Buff/Noun_Name_22 / Buff/Noun_Des_22_new01"
+  },
+  {
+    "path": "debuff-hinder.html",
+    "category": "debuff",
+    "name": "Hinder",
+    "code": "T40002",
+    "icon": "⛓️",
+    "definition": "[Debuff] Each stack reduces the target's total HP restored and HP Gain by 1. Applies to each instance of multi-heal effects. Consumed after taking effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_21",
+      "StatusDataTable row": "T40002",
+      "Localization": "Buff/Noun_Name_21  /  Buff/Noun_Des_21"
+    },
+    "fullText": "Hinder T40002 [Debuff] Each stack reduces the target's total HP restored and HP Gain by 1. Applies to each instance of multi-heal effects. Consumed after taking effect. Field Value Status ID T40002 Loc Key Buff/Noun_Name_21 Element Dark Tag Debuff Priority 7 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_21 StatusDataTable row: T40002 Localization: Buff/Noun_Name_21 / Buff/Noun_Des_21"
+  },
+  {
+    "path": "debuff-shock.html",
+    "category": "debuff",
+    "name": "Shock",
+    "code": "T40005",
+    "icon": "⚡",
+    "definition": "[Debuff] Each stack reduces Mana gained by 1, up to 20% of Max Mana per instance. Consumed after taking effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_24",
+      "StatusDataTable row": "T40005",
+      "Localization": "Buff/Noun_Name_24  /  Buff/Noun_Des_24"
+    },
+    "fullText": "Shock T40005 [Debuff] Each stack reduces Mana gained by 1, up to 20% of Max Mana per instance. Consumed after taking effect. Field Value Status ID T40005 Loc Key Buff/Noun_Name_24 Element Light Tag Debuff Priority 3 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_24 StatusDataTable row: T40005 Localization: Buff/Noun_Name_24 / Buff/Noun_Des_24"
+  },
+  {
+    "path": "debuff-slow.html",
+    "category": "debuff",
+    "name": "Slow",
+    "code": "T40006",
+    "icon": "🐌",
+    "definition": "[Debuff] Each stack reduces SPD by 1. Persistent effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_18",
+      "StatusDataTable row": "T40006",
+      "Localization": "Buff/Noun_Name_18  /  Buff/Noun_Des_18"
+    },
+    "fullText": "Slow T40006 [Debuff] Each stack reduces SPD by 1. Persistent effect. Field Value Status ID T40006 Loc Key Buff/Noun_Name_18 Element Earth Tag Debuff Priority 9 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_18 StatusDataTable row: T40006 Localization: Buff/Noun_Name_18 / Buff/Noun_Des_18"
+  },
+  {
+    "path": "debuff-stun.html",
+    "category": "debuff",
+    "name": "Stun",
+    "code": "T10001",
+    "icon": "💫",
+    "definition": "[Debuff] Each stack reduces DEF by 1. Target cannot act. Lasts 1 turn.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_16",
+      "StatusDataTable row": "T10001",
+      "Localization": "Buff/Noun_Name_16  /  Buff/Noun_Des_16"
+    },
+    "fullText": "Stun T10001 [Debuff] Each stack reduces DEF by 1. Target cannot act. Lasts 1 turn. Field Value Status ID T10001 Loc Key Buff/Noun_Name_16 Element All Tag Debuff Priority 0 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_16 StatusDataTable row: T10001 Localization: Buff/Noun_Name_16 / Buff/Noun_Des_16"
+  },
+  {
+    "path": "debuff-taunt.html",
+    "category": "debuff",
+    "name": "Taunt",
+    "code": "T10009",
+    "icon": "📢",
+    "definition": "[Debuff] Every 5 stacks increase the target's Counter DMG taken by 1. The front position will be prioritized as the target for this debuff. Persistent effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_17",
+      "StatusDataTable row": "T10009",
+      "Localization": "Buff/Noun_Name_17  /  Buff/Noun_Des_17"
+    },
+    "fullText": "Taunt T10009 [Debuff] Every 5 stacks increase the target's Counter DMG taken by 1. The front position will be prioritized as the target for this debuff. Persistent effect. Field Value Status ID T10009 Loc Key Buff/Noun_Name_17 Element Dark Tag Debuff Priority 2 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_17 StatusDataTable row: T10009 Localization: Buff/Noun_Name_17 / Buff/Noun_Des_17"
+  },
+  {
+    "path": "debuff-vulnerable.html",
+    "category": "debuff",
+    "name": "Vulnerable",
+    "code": "T40007",
+    "icon": "💔",
+    "definition": "[Debuff] Each stack increases total DMG taken by 1. Applies to each hit in multi-hit attacks. Consumed after taking effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_19",
+      "StatusDataTable row": "T40007",
+      "Localization": "Buff/Noun_Name_19  /  Buff/Noun_Des_19"
+    },
+    "fullText": "Vulnerable T40007 [Debuff] Each stack increases total DMG taken by 1. Applies to each hit in multi-hit attacks. Consumed after taking effect. Field Value Status ID T40007 Loc Key Buff/Noun_Name_19 Element Earth Tag Debuff Priority 6 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_19 StatusDataTable row: T40007 Localization: Buff/Noun_Name_19 / Buff/Noun_Des_19"
+  },
+  {
+    "path": "instant-cleanse.html",
+    "category": "instant",
+    "name": "Cleanse",
+    "code": "T50005",
+    "icon": "✨",
+    "definition": "[Instant] Each stack removes 2 stacks of all debuffs from allies or 2 stacks of all buffs from enemies.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_02",
+      "StatusDataTable row": "T50005",
+      "Localization": "Buff/Noun_Name_02  /  Buff/Noun_Des_02"
+    },
+    "fullText": "Cleanse T50005 [Instant] Each stack removes 2 stacks of all debuffs from allies or 2 stacks of all buffs from enemies. Field Value Status ID T50005 Loc Key Buff/Noun_Name_02 Element Light Tag Instant Priority 1 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_02 StatusDataTable row: T50005 Localization: Buff/Noun_Name_02 / Buff/Noun_Des_02"
+  },
+  {
+    "path": "instant-decay.html",
+    "category": "instant",
+    "name": "Decay",
+    "code": "T50002",
+    "icon": "💀",
+    "definition": "[Instant] Each stack drains 1 Mana from the target.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_04",
+      "StatusDataTable row": "T50002",
+      "Localization": "Buff/Noun_Name_04  /  Buff/Noun_Des_04"
+    },
+    "fullText": "Decay T50002 [Instant] Each stack drains 1 Mana from the target. Field Value Status ID T50002 Loc Key Buff/Noun_Name_04 Element Dark Tag Instant Priority 1 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_04 StatusDataTable row: T50002 Localization: Buff/Noun_Name_04 / Buff/Noun_Des_04"
+  },
+  {
+    "path": "instant-fear.html",
+    "category": "instant",
+    "name": "Fear",
+    "code": "T10006",
+    "icon": "😱",
+    "definition": "[Instant] Each stack drains 1 Toughness from the target.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_05",
+      "StatusDataTable row": "T10006",
+      "Localization": "Buff/Noun_Name_05  /  Buff/Noun_Des_05"
+    },
+    "fullText": "Fear T10006 [Instant] Each stack drains 1 Toughness from the target. Field Value Status ID T10006 Loc Key Buff/Noun_Name_05 Element Dark Tag Instant Priority 1 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_05 StatusDataTable row: T10006 Localization: Buff/Noun_Name_05 / Buff/Noun_Des_05"
+  },
+  {
+    "path": "instant-fortitude.html",
+    "category": "instant",
+    "name": "Fortitude",
+    "code": "T20016",
+    "icon": "🏰",
+    "definition": "[Instant] Each stack grants the target 1 Toughness.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_06",
+      "StatusDataTable row": "T20016",
+      "Localization": "Buff/Noun_Name_06  /  Buff/Noun_Des_06"
+    },
+    "fullText": "Fortitude T20016 [Instant] Each stack grants the target 1 Toughness. Field Value Status ID T20016 Loc Key Buff/Noun_Name_06 Element Light Tag Instant Priority 1 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_06 StatusDataTable row: T20016 Localization: Buff/Noun_Name_06 / Buff/Noun_Des_06"
+  },
+  {
+    "path": "instant-inspire.html",
+    "category": "instant",
+    "name": "Inspire",
+    "code": "T50003",
+    "icon": "🎺",
+    "definition": "[Instant] Each stack grants the target 1 Mana.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_03",
+      "StatusDataTable row": "T50003",
+      "Localization": "Buff/Noun_Name_03  /  Buff/Noun_Des_03"
+    },
+    "fullText": "Inspire T50003 [Instant] Each stack grants the target 1 Mana. Field Value Status ID T50003 Loc Key Buff/Noun_Name_03 Element Light Tag Instant Priority 0 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_03 StatusDataTable row: T50003 Localization: Buff/Noun_Name_03 / Buff/Noun_Des_03"
+  },
+  {
+    "path": "instant-reversal.html",
+    "category": "instant",
+    "name": "Reversal",
+    "code": "T50004",
+    "icon": "🔄",
+    "definition": "[Instant] Each stack restores 1 HP to allies or deals 1 HP loss to enemies.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_01",
+      "StatusDataTable row": "T50004",
+      "Localization": "Buff/Noun_Name_01  /  Buff/Noun_Des_01"
+    },
+    "fullText": "Reversal T50004 [Instant] Each stack restores 1 HP to allies or deals 1 HP loss to enemies. Field Value Status ID T50004 Loc Key Buff/Noun_Name_01 Element All Tag Instant Priority 0 Priority = resolution order when multiple statuses tick on the same trigger (lower = earlier). Not a stack cap (universal stack cap = 999, see Stacks ). Sources / Interactions To be filled in as units / talents / bonds / runes that apply or interact with this status are documented. Cross-references KeywordDataTable row: Buff/Noun_Name_01 StatusDataTable row: T50004 Localization: Buff/Noun_Name_01 / Buff/Noun_Des_01"
+  },
+  {
+    "path": "stat-all-stats.html",
+    "category": "stat",
+    "name": "All Stats",
+    "code": "",
+    "icon": "📊",
+    "definition": "Includes STR, SPI, and AGI.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_80"
+    },
+    "fullText": "All Stats Includes STR, SPI, and AGI. Field Value Name All Stats Category Stat Loc Key Buff/Noun_Name_80 / Buff/Noun_Des_80 Cross-references KeywordDataTable row: Buff/Noun_Name_80"
+  },
+  {
+    "path": "stat-atk.html",
+    "category": "stat",
+    "name": "ATK",
+    "code": "",
+    "icon": "⚔️",
+    "definition": "Red-bordered stat used for attacking and healing. When attacking, basic and skill DMG increase by 1 for every 5 ATK above the target's DEF. When healing, gain 1 basic and skill healing per 10 ATK.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_27"
+    },
+    "fullText": "ATK Red-bordered stat used for attacking and healing. When attacking, basic and skill DMG increase by 1 for every 5 ATK above the target's DEF. When healing, gain 1 basic and skill healing per 10 ATK. Field Value Name ATK Category Stat Loc Key Buff/Noun_Name_27 / Buff/Noun_Des_27 Cross-references KeywordDataTable row: Buff/Noun_Name_27"
+  },
+  {
+    "path": "stat-def.html",
+    "category": "stat",
+    "name": "DEF",
+    "code": "",
+    "icon": "🛡️",
+    "definition": "Blue-bordered stat used for defense. Reduce DMG taken by 1 for every 5 DEF above the target's ATK while defending.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_28"
+    },
+    "fullText": "DEF Blue-bordered stat used for defense. Reduce DMG taken by 1 for every 5 DEF above the target's ATK while defending. Field Value Name DEF Category Stat Loc Key Buff/Noun_Name_28 / Buff/Noun_Des_28 Cross-references KeywordDataTable row: Buff/Noun_Name_28"
+  },
+  {
+    "path": "stat-luck.html",
+    "category": "stat",
+    "name": "Luck",
+    "code": "",
+    "icon": "🍀",
+    "definition": "Every 15 Luck across the team (non-combat) grants +1 extra Clover reroll in battle results.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_32"
+    },
+    "fullText": "Luck Every 15 Luck across the team (non-combat) grants +1 extra Clover reroll in battle results. Field Value Name Luck Category Stat Loc Key Buff/Noun_Name_32 / Buff/Noun_Des_32 Cross-references KeywordDataTable row: Buff/Noun_Name_32"
+  },
+  {
+    "path": "stat-spd.html",
+    "category": "stat",
+    "name": "SPD",
+    "code": "",
+    "icon": "👟",
+    "definition": "Determines the turn order in battle.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_31"
+    },
+    "fullText": "SPD Determines the turn order in battle. Field Value Name SPD Category Stat Loc Key Buff/Noun_Name_31 / Buff/Noun_Des_31 Cross-references KeywordDataTable row: Buff/Noun_Name_31"
+  },
+  {
+    "path": "stat-toughness.html",
+    "category": "stat",
+    "name": "Toughness",
+    "code": "",
+    "icon": "💎",
+    "definition": "Each hit taken reduces Toughness by 1. At 0, the girl's Weakness is exposed.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_30"
+    },
+    "fullText": "Toughness Each hit taken reduces Toughness by 1. At 0, the girl's Weakness is exposed. Field Value Name Toughness Category Stat Loc Key Buff/Noun_Name_30 / Buff/Noun_Des_30 Cross-references KeywordDataTable row: Buff/Noun_Name_30"
+  },
+  {
+    "path": "stat-weakness.html",
+    "category": "stat",
+    "name": "Weakness",
+    "code": "",
+    "icon": "🎯",
+    "definition": "Brown-bordered stat that replaces DEF when Weakness is exposed.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_29"
+    },
+    "fullText": "Weakness Brown-bordered stat that replaces DEF when Weakness is exposed. Field Value Name Weakness Category Stat Loc Key Buff/Noun_Name_29 / Buff/Noun_Des_29 Cross-references KeywordDataTable row: Buff/Noun_Name_29"
+  },
+  {
+    "path": "mechanic-absorb.html",
+    "category": "mechanic",
+    "name": "Absorb",
+    "code": "",
+    "icon": "🧲",
+    "definition": "Gain the specified effect for self and remove it from target.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_73"
+    },
+    "fullText": "Absorb Gain the specified effect for self and remove it from target. Field Value Name Absorb Category Mechanic Loc Key Buff/Noun_Name_73 / Buff/Noun_Des_73 Cross-references KeywordDataTable row: Buff/Noun_Name_73"
+  },
+  {
+    "path": "mechanic-act-first.html",
+    "category": "mechanic",
+    "name": "Act First",
+    "code": "",
+    "icon": "🥇",
+    "definition": "When not at full Mana, prioritize basic attack or basic heal. When at full Mana, prioritize casting skill. When both act first, higher SPD acts first.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_68"
+    },
+    "fullText": "Act First When not at full Mana, prioritize basic attack or basic heal. When at full Mana, prioritize casting skill. When both act first, higher SPD acts first. Field Value Name Act First Category Mechanic Loc Key Buff/Noun_Name_68 / Buff/Noun_Des_68 Cross-references KeywordDataTable row: Buff/Noun_Name_68"
+  },
+  {
+    "path": "mechanic-action-mana.html",
+    "category": "mechanic",
+    "name": "Action Mana",
+    "code": "",
+    "icon": "🔷",
+    "definition": "Mana gained at action end from non-skill actions.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_78"
+    },
+    "fullText": "Action Mana Mana gained at action end from non-skill actions. Field Value Name Action Mana Category Mechanic Loc Key Buff/Noun_Name_78 / Buff/Noun_Des_78 Cross-references KeywordDataTable row: Buff/Noun_Name_78"
+  },
+  {
+    "path": "mechanic-ally-count.html",
+    "category": "mechanic",
+    "name": "Ally Count",
+    "code": "",
+    "icon": "👥",
+    "definition": "This value applies to the entire team, but becomes inactive when the providing girl is defeated. Team limit: 99.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_70"
+    },
+    "fullText": "Ally Count This value applies to the entire team, but becomes inactive when the providing girl is defeated. Team limit: 99. Field Value Name Ally Count Category Mechanic Loc Key Buff/Noun_Name_70 / Buff/Noun_Des_70 Cross-references KeywordDataTable row: Buff/Noun_Name_70"
+  },
+  {
+    "path": "mechanic-corruption-level.html",
+    "category": "mechanic",
+    "name": "Corruption Level",
+    "code": "",
+    "icon": "☣️",
+    "definition": "[CN: 每20级使战斗装备掉落数量+1],[CN: 最多+2。] [CN: 每级使敌方角色受到全部伤害和失去生命-1。] [CN: 每级使敌方角色造成全部伤害和恢复+1。] [CN: 每级使敌方角色造成全部状态层数+1。] [CN: 每级使敌方角色行动回魔+1。]",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_83"
+    },
+    "fullText": "Corruption Level [CN: 每20级使战斗装备掉落数量+1],[CN: 最多+2。] [CN: 每级使敌方角色受到全部伤害和失去生命-1。] [CN: 每级使敌方角色造成全部伤害和恢复+1。] [CN: 每级使敌方角色造成全部状态层数+1。] [CN: 每级使敌方角色行动回魔+1。] Field Value Name Corruption Level Category Mechanic Loc Key Buff/Noun_Name_83 / Buff/Noun_Des_83 Cross-references KeywordDataTable row: Buff/Noun_Name_83"
+  },
+  {
+    "path": "mechanic-counter.html",
+    "category": "mechanic",
+    "name": "Counter",
+    "code": "",
+    "icon": "⚔️",
+    "definition": "When taking a hit and within Counter range, deal 1 Counter DMG to the attacker. Counter DMG increases by 1 for every 5 DEF above the target's ATK. Only Warriors have base Counter range of 1.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_25"
+    },
+    "fullText": "Counter When taking a hit and within Counter range, deal 1 Counter DMG to the attacker. Counter DMG increases by 1 for every 5 DEF above the target's ATK. Only Warriors have base Counter range of 1. Field Value Name Counter Category Mechanic Loc Key Buff/Noun_Name_25 / Buff/Noun_Des_25 Cross-references KeywordDataTable row: Buff/Noun_Name_25"
+  },
+  {
+    "path": "mechanic-distance.html",
+    "category": "mechanic",
+    "name": "Distance",
+    "code": "",
+    "icon": "📏",
+    "definition": "Base distance between a girl and target is 1. Distance increases by 1 for each girl between them.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_72"
+    },
+    "fullText": "Distance Base distance between a girl and target is 1. Distance increases by 1 for each girl between them. Field Value Name Distance Category Mechanic Loc Key Buff/Noun_Name_72 / Buff/Noun_Des_72 Cross-references KeywordDataTable row: Buff/Noun_Name_72"
+  },
+  {
+    "path": "mechanic-extra-action.html",
+    "category": "mechanic",
+    "name": "Extra Action",
+    "code": "",
+    "icon": "⏩",
+    "definition": "Each girl can take up to 5 extra actions per turn (casting skills also counts as extra actions).",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_69"
+    },
+    "fullText": "Extra Action Each girl can take up to 5 extra actions per turn (casting skills also counts as extra actions). Field Value Name Extra Action Category Mechanic Loc Key Buff/Noun_Name_69 / Buff/Noun_Des_69 Cross-references KeywordDataTable row: Buff/Noun_Name_69"
+  },
+  {
+    "path": "mechanic-fixed.html",
+    "category": "mechanic",
+    "name": "Fixed Damage",
+    "code": "",
+    "icon": "🗡️",
+    "definition": "Effect must equal the specified value.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_74"
+    },
+    "fullText": "Fixed Effect must equal the specified value. Field Value Name Fixed Category Mechanic Loc Key Buff/Noun_Name_74 / Buff/Noun_Des_74 Cross-references KeywordDataTable row: Buff/Noun_Name_74"
+  },
+  {
+    "path": "mechanic-follow-up.html",
+    "category": "mechanic",
+    "name": "Follow-Up",
+    "code": "",
+    "icon": "🎯",
+    "definition": "When performing a basic attack, if SPD exceeds the target's, deal 1 Follow-Up DMG. Only Archers have a base Follow-Up count of 1.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_26"
+    },
+    "fullText": "Follow-Up When performing a basic attack, if SPD exceeds the target's, deal 1 Follow-Up DMG. Only Archers have a base Follow-Up count of 1. Field Value Name Follow-Up Category Mechanic Loc Key Buff/Noun_Name_26 / Buff/Noun_Des_26 Cross-references KeywordDataTable row: Buff/Noun_Name_26"
+  },
+  {
+    "path": "mechanic-healing.html",
+    "category": "mechanic",
+    "name": "Healing",
+    "code": "",
+    "icon": "💖",
+    "definition": "Includes basic healing and skill healing.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_61"
+    },
+    "fullText": "Healing Includes basic healing and skill healing. Field Value Name Healing Category Mechanic Loc Key Buff/Noun_Name_61 / Buff/Noun_Des_61 Cross-references KeywordDataTable row: Buff/Noun_Name_61"
+  },
+  {
+    "path": "mechanic-high-hp.html",
+    "category": "mechanic",
+    "name": "High HP",
+    "code": "",
+    "icon": "🟢",
+    "definition": "Current HP above 50% of Max HP.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_34"
+    },
+    "fullText": "High HP Current HP above 50% of Max HP. Field Value Name High HP Category Mechanic Loc Key Buff/Noun_Name_34 / Buff/Noun_Des_34 Cross-references KeywordDataTable row: Buff/Noun_Name_34"
+  },
+  {
+    "path": "mechanic-hit-mana.html",
+    "category": "mechanic",
+    "name": "Hit Mana",
+    "code": "",
+    "icon": "🔷",
+    "definition": "Mana gained per attack taken.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_79"
+    },
+    "fullText": "Hit Mana Mana gained per attack taken. Field Value Name Hit Mana Category Mechanic Loc Key Buff/Noun_Name_79 / Buff/Noun_Des_79 Cross-references KeywordDataTable row: Buff/Noun_Name_79"
+  },
+  {
+    "path": "mechanic-hp-gain.html",
+    "category": "mechanic",
+    "name": "HP Gain",
+    "code": "",
+    "icon": "📈",
+    "definition": "HP increase from non-healing sources.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_65"
+    },
+    "fullText": "HP Gain HP increase from non-healing sources. Field Value Name HP Gain Category Mechanic Loc Key Buff/Noun_Name_65 / Buff/Noun_Des_65 Cross-references KeywordDataTable row: Buff/Noun_Name_65"
+  },
+  {
+    "path": "mechanic-hp-loss.html",
+    "category": "mechanic",
+    "name": "HP Loss",
+    "code": "",
+    "icon": "📉",
+    "definition": "HP reduction from non-attack sources.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_64"
+    },
+    "fullText": "HP Loss HP reduction from non-attack sources. Field Value Name HP Loss Category Mechanic Loc Key Buff/Noun_Name_64 / Buff/Noun_Des_64 Cross-references KeywordDataTable row: Buff/Noun_Name_64"
+  },
+  {
+    "path": "mechanic-low-hp.html",
+    "category": "mechanic",
+    "name": "Low HP",
+    "code": "",
+    "icon": "🔴",
+    "definition": "Current HP at or below 50% of Max HP.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_33"
+    },
+    "fullText": "Low HP Current HP at or below 50% of Max HP. Field Value Name Low HP Category Mechanic Loc Key Buff/Noun_Name_33 / Buff/Noun_Des_33 Cross-references KeywordDataTable row: Buff/Noun_Name_33"
+  },
+  {
+    "path": "mechanic-mana-gain.html",
+    "category": "mechanic",
+    "name": "Mana Gain",
+    "code": "",
+    "icon": "🔷",
+    "definition": "Mana increase from any source.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_67"
+    },
+    "fullText": "Mana Gain Mana increase from any source. Field Value Name Mana Gain Category Mechanic Loc Key Buff/Noun_Name_67 / Buff/Noun_Des_67 Cross-references KeywordDataTable row: Buff/Noun_Name_67"
+  },
+  {
+    "path": "mechanic-mana-loss.html",
+    "category": "mechanic",
+    "name": "Mana Loss",
+    "code": "",
+    "icon": "🔻",
+    "definition": "Mana reduction from any source.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_66"
+    },
+    "fullText": "Mana Loss Mana reduction from any source. Field Value Name Mana Loss Category Mechanic Loc Key Buff/Noun_Name_66 / Buff/Noun_Des_66 Cross-references KeywordDataTable row: Buff/Noun_Name_66"
+  },
+  {
+    "path": "mechanic-max-mana.html",
+    "category": "mechanic",
+    "name": "Max Mana",
+    "code": "",
+    "icon": "🌀",
+    "definition": "Mana required to cast skill.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_77"
+    },
+    "fullText": "Max Mana Mana required to cast skill. Field Value Name Max Mana Category Mechanic Loc Key Buff/Noun_Name_77 / Buff/Noun_Des_77 Cross-references KeywordDataTable row: Buff/Noun_Name_77"
+  },
+  {
+    "path": "mechanic-remove.html",
+    "category": "mechanic",
+    "name": "Remove",
+    "code": "",
+    "icon": "❌",
+    "definition": "Statuses that are directly removed are not considered consumed.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_75"
+    },
+    "fullText": "Remove Statuses that are directly removed are not considered consumed. Field Value Name Remove Category Mechanic Loc Key Buff/Noun_Name_75 / Buff/Noun_Des_75 Cross-references KeywordDataTable row: Buff/Noun_Name_75"
+  },
+  {
+    "path": "mechanic-stacks.html",
+    "category": "mechanic",
+    "name": "Stacks",
+    "code": "",
+    "icon": "🔢",
+    "definition": "Affects the amount of status changes. Max 999.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_71"
+    },
+    "fullText": "Stacks Affects the amount of status changes. Max 999. Field Value Name Stacks Category Mechanic Loc Key Buff/Noun_Name_71 / Buff/Noun_Des_71_new01 Cross-references KeywordDataTable row: Buff/Noun_Name_71"
+  },
+  {
+    "path": "mechanic-starting-mana.html",
+    "category": "mechanic",
+    "name": "Starting Mana",
+    "code": "",
+    "icon": "⚡",
+    "definition": "Mana possessed when entering battle. Amounts exceeding Max Mana have no effect.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_76"
+    },
+    "fullText": "Starting Mana Mana possessed when entering battle. Amounts exceeding Max Mana have no effect. Field Value Name Starting Mana Category Mechanic Loc Key Buff/Noun_Name_76 / Buff/Noun_Des_76 Cross-references KeywordDataTable row: Buff/Noun_Name_76"
+  },
+  {
+    "path": "mechanic-total-dmg.html",
+    "category": "mechanic",
+    "name": "Total DMG",
+    "code": "",
+    "icon": "💥",
+    "definition": "Includes basic DMG, skill DMG, Follow-Up DMG, and counter DMG.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_62"
+    },
+    "fullText": "Total DMG Includes basic DMG, skill DMG, Follow-Up DMG, and counter DMG. Field Value Name Total DMG Category Mechanic Loc Key Buff/Noun_Name_62 / Buff/Noun_Des_62 Cross-references KeywordDataTable row: Buff/Noun_Name_62"
+  },
+  {
+    "path": "mechanic-total-hp-restored.html",
+    "category": "mechanic",
+    "name": "Total HP Restored",
+    "code": "",
+    "icon": "💚",
+    "definition": "Includes basic healing and skill healing.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_63"
+    },
+    "fullText": "Total HP Restored Includes basic healing and skill healing. Field Value Name Total HP Restored Category Mechanic Loc Key Buff/Noun_Name_63 / Buff/Noun_Des_63 Cross-references KeywordDataTable row: Buff/Noun_Name_63"
+  },
+  {
+    "path": "mechanic-weakness-exposed.html",
+    "category": "mechanic",
+    "name": "Weakness Exposed",
+    "code": "",
+    "icon": "🎯",
+    "definition": "When Toughness reaches 0, Weakness is exposed. Weakness replaces DEF as the defensive stat.",
+    "meta": {
+      "KeywordDataTable row": "Buff/Noun_Name_81"
+    },
+    "fullText": "Weakness Exposed When Toughness reaches 0, Weakness is exposed. Weakness replaces DEF as the defensive stat. Field Value Name Weakness Exposed Category Mechanic Loc Key Buff/Noun_Name_81 / Buff/Noun_Des_81 Cross-references KeywordDataTable row: Buff/Noun_Name_81"
+  }
+]

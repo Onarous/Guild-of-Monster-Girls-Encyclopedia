@@ -135,10 +135,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "adventure",
-    "banner_name": "冒险·主线掉落",
-    "banner_badge": "🗺️ 掉落"
+    }
   },
   {
     "id": "M11301_000",
@@ -275,7 +272,21 @@
         "name": "战略图集",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能伤害+1。"
+        "effect": "造成技能伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -291,10 +302,7 @@
       "recommended_character": "M14201",
       "recommended_subclass": "M11206",
       "recommended_feature": "M11202"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M11301",
@@ -431,7 +439,21 @@
         "name": "战场回顾",
         "step": "S",
         "max_level": 3,
-        "effect": "造成鼓舞层数+1。"
+        "effect": "造成鼓舞层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成鼓舞层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成鼓舞层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成鼓舞层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -447,10 +469,7 @@
       "recommended_character": "M14206",
       "recommended_subclass": "M12211",
       "recommended_feature": "M31301"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M22301",
@@ -587,7 +606,21 @@
         "name": "魔力编织",
         "step": "S",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -603,10 +636,7 @@
       "recommended_character": "M12301_001",
       "recommended_subclass": "M13201",
       "recommended_feature": "M13304_001"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M23301_000",
@@ -743,7 +773,21 @@
         "name": "水晶法典",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能伤害+1。"
+        "effect": "造成技能伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -759,10 +803,7 @@
       "recommended_character": "M12211_000",
       "recommended_subclass": "M12211",
       "recommended_feature": "M11301_000"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M23301_001",
@@ -899,7 +940,21 @@
         "name": "熔岩法典",
         "step": "S",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -915,10 +970,7 @@
       "recommended_character": "M21205",
       "recommended_subclass": "M13305",
       "recommended_feature": "M22201_002"
-    },
-    "banner_type": "skin_limited",
-    "banner_name": "限时异化UP招募卡池",
-    "banner_badge": "👑 限时异化"
+    }
   },
   {
     "id": "M23301",
@@ -1055,7 +1107,21 @@
         "name": "至高魔力",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能伤害+1。"
+        "effect": "造成技能伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1071,10 +1137,7 @@
       "recommended_character": "M13305",
       "recommended_subclass": "M23201",
       "recommended_feature": "M14213"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M31301_001",
@@ -1211,7 +1274,21 @@
         "name": "极寒誓约",
         "step": "S",
         "max_level": 3,
-        "effect": "受到冰冷层数-1。"
+        "effect": "受到冰冷层数-1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "受到冰冷层数-1"
+          },
+          {
+            "level": 2,
+            "effect": "受到冰冷层数-2"
+          },
+          {
+            "level": 3,
+            "effect": "受到冰冷层数-3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1227,10 +1304,7 @@
       "recommended_character": "M14201_001",
       "recommended_subclass": "M22301",
       "recommended_feature": "M31301"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M31301",
@@ -1367,7 +1441,21 @@
         "name": "神圣誓约",
         "step": "S",
         "max_level": 3,
-        "effect": "获得成长层数+1。"
+        "effect": "获得成长层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得成长层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得成长层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得成长层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1383,10 +1471,7 @@
       "recommended_character": "M14204",
       "recommended_subclass": "M11304_000",
       "recommended_feature": "M11301_000"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13302_000",
@@ -1523,7 +1608,21 @@
         "name": "噩梦契约",
         "step": "S",
         "max_level": 3,
-        "effect": "造成恐惧层数+1。"
+        "effect": "造成恐惧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成恐惧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成恐惧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成恐惧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1539,10 +1638,7 @@
       "recommended_character": "M53301",
       "recommended_subclass": "M11201_000",
       "recommended_feature": "M51303_000"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M13302",
@@ -1679,7 +1775,21 @@
         "name": "地灵契约",
         "step": "S",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1695,10 +1805,7 @@
       "recommended_character": "M13305",
       "recommended_subclass": "M13201_000",
       "recommended_feature": "M51303"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13303_002",
@@ -1835,7 +1942,21 @@
         "name": "烈阳秘法",
         "step": "S",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -1851,10 +1972,7 @@
       "recommended_character": "M54301_000",
       "recommended_subclass": "M12210",
       "recommended_feature": "M22202_002"
-    },
-    "banner_type": "skin_limited",
-    "banner_name": "限时异化UP招募卡池",
-    "banner_badge": "👑 限时异化"
+    }
   },
   {
     "id": "M13303_001",
@@ -1991,7 +2109,21 @@
         "name": "封印之书",
         "step": "S",
         "max_level": 3,
-        "effect": "造成减速层数+1。"
+        "effect": "造成减速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成减速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成减速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成减速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2007,10 +2139,7 @@
       "recommended_character": "M23205",
       "recommended_subclass": "M21302",
       "recommended_feature": "M22203"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M13303",
@@ -2147,7 +2276,21 @@
         "name": "魔女秘法",
         "step": "S",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2163,10 +2306,7 @@
       "recommended_character": "M51303",
       "recommended_subclass": "M14204",
       "recommended_feature": "M13302"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M24301_000",
@@ -2303,7 +2443,21 @@
         "name": "白银之书",
         "step": "S",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2319,10 +2473,7 @@
       "recommended_character": "M14213",
       "recommended_subclass": "M23301",
       "recommended_feature": "M51302_001"
-    },
-    "banner_type": "skin_limited",
-    "banner_name": "限时异化UP招募卡池",
-    "banner_badge": "👑 限时异化"
+    }
   },
   {
     "id": "M24301",
@@ -2459,7 +2610,21 @@
         "name": "静水之书",
         "step": "S",
         "max_level": 3,
-        "effect": "造成滋润层数+1。"
+        "effect": "造成滋润层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成滋润层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成滋润层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成滋润层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2475,10 +2640,7 @@
       "recommended_character": "M12211",
       "recommended_subclass": "M11301",
       "recommended_feature": "M14203"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M31303_000",
@@ -2615,7 +2777,21 @@
         "name": "御雷秘术",
         "step": "S",
         "max_level": 3,
-        "effect": "造成感电层数+1。"
+        "effect": "造成感电层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成感电层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成感电层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成感电层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2631,10 +2807,7 @@
       "recommended_character": "M13201_000",
       "recommended_subclass": "M51302",
       "recommended_feature": "M31303"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M31303",
@@ -2771,7 +2944,21 @@
         "name": "枪术总要",
         "step": "S",
         "max_level": 3,
-        "effect": "造成普通伤害+1。"
+        "effect": "造成普通伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成普通伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成普通伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成普通伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2787,10 +2974,7 @@
       "recommended_character": "M11208",
       "recommended_subclass": "M12207_000",
       "recommended_feature": "M11301"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12303_000",
@@ -2927,7 +3111,21 @@
         "name": "炼金笔记",
         "step": "S",
         "max_level": 3,
-        "effect": "造成阻碍层数+1。"
+        "effect": "造成阻碍层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成阻碍层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成阻碍层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成阻碍层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -2943,10 +3141,7 @@
       "recommended_character": "M13206",
       "recommended_subclass": "M13304",
       "recommended_feature": "M11301_000"
-    },
-    "banner_type": "skin_limited",
-    "banner_name": "限时异化UP招募卡池",
-    "banner_badge": "👑 限时异化"
+    }
   },
   {
     "id": "M12303",
@@ -3083,7 +3278,21 @@
         "name": "特制配方",
         "step": "S",
         "max_level": 3,
-        "effect": "造成感电层数+1。"
+        "effect": "造成感电层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成感电层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成感电层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成感电层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3099,10 +3308,7 @@
       "recommended_character": "M22203",
       "recommended_subclass": "M31303_000",
       "recommended_feature": "M23301"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11302_000",
@@ -3239,7 +3445,21 @@
         "name": "亡灵之书",
         "step": "S",
         "max_level": 3,
-        "effect": "获得防护层数+1。"
+        "effect": "获得防护层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得防护层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得防护层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得防护层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3255,10 +3475,7 @@
       "recommended_character": "M21201",
       "recommended_subclass": "M21301",
       "recommended_feature": "M13202"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M11302",
@@ -3395,7 +3612,21 @@
         "name": "龙之怒",
         "step": "S",
         "max_level": 3,
-        "effect": "造成恐惧层数+1。"
+        "effect": "造成恐惧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成恐惧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成恐惧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成恐惧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3411,10 +3642,7 @@
       "recommended_character": "M51303_000",
       "recommended_subclass": "M11201_000",
       "recommended_feature": "M12301"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M41301_000",
@@ -3551,7 +3779,21 @@
         "name": "杂技大全",
         "step": "S",
         "max_level": 3,
-        "effect": "造成诱导层数+1。"
+        "effect": "造成诱导层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成诱导层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成诱导层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成诱导层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3567,10 +3809,7 @@
       "recommended_character": "M12301_001",
       "recommended_subclass": "M13304_001",
       "recommended_feature": "M41201"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M41301",
@@ -3707,7 +3946,21 @@
         "name": "藏身图集",
         "step": "S",
         "max_level": 3,
-        "effect": "造成剥离层数+1。"
+        "effect": "造成剥离层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成剥离层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成剥离层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成剥离层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3723,10 +3976,7 @@
       "recommended_character": "M23204",
       "recommended_subclass": "M21202",
       "recommended_feature": "M31201"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14303",
@@ -3863,7 +4113,21 @@
         "name": "异界画集",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能恢复+1。"
+        "effect": "造成技能恢复+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能恢复+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能恢复+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能恢复+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -3879,10 +4143,7 @@
       "recommended_character": "M14203",
       "recommended_subclass": "M11301",
       "recommended_feature": "M52301"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M21302_000",
@@ -4019,7 +4280,21 @@
         "name": "勇气之书",
         "step": "S",
         "max_level": 3,
-        "effect": "获得防护层数+1。"
+        "effect": "获得防护层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得防护层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得防护层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得防护层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4035,10 +4310,7 @@
       "recommended_character": "M23301_000",
       "recommended_subclass": "M21201",
       "recommended_feature": "M21301"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M21302",
@@ -4175,7 +4447,21 @@
         "name": "黄沙之书",
         "step": "S",
         "max_level": 3,
-        "effect": "造成减速层数+1。"
+        "effect": "造成减速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成减速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成减速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成减速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4191,10 +4477,7 @@
       "recommended_character": "M23205",
       "recommended_subclass": "M22203",
       "recommended_feature": "M11301_000"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14301_000",
@@ -4331,7 +4614,21 @@
         "name": "权力宝典",
         "step": "S",
         "max_level": 3,
-        "effect": "造成鼓舞层数+1。"
+        "effect": "造成鼓舞层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成鼓舞层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成鼓舞层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成鼓舞层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4347,10 +4644,7 @@
       "recommended_character": "M14205",
       "recommended_subclass": "M11301_000",
       "recommended_feature": "M52301"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M14301",
@@ -4487,7 +4781,21 @@
         "name": "美容大全",
         "step": "S",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4503,10 +4811,7 @@
       "recommended_character": "M21201",
       "recommended_subclass": "M23301",
       "recommended_feature": "M52301"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M52301_000",
@@ -4643,7 +4948,21 @@
         "name": "分光剑谱",
         "step": "S",
         "max_level": 3,
-        "effect": "造成普通伤害+1。"
+        "effect": "造成普通伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成普通伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成普通伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成普通伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4659,10 +4978,7 @@
       "recommended_character": "M12301_001",
       "recommended_subclass": "M22301",
       "recommended_feature": "M12202_001"
-    },
-    "banner_type": "adventure",
-    "banner_name": "冒险·主线掉落",
-    "banner_badge": "🗺️ 掉落"
+    }
   },
   {
     "id": "M52301",
@@ -4799,7 +5115,21 @@
         "name": "星空奥秘",
         "step": "S",
         "max_level": 3,
-        "effect": "造成追击伤害+1。"
+        "effect": "造成追击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成追击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成追击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成追击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4815,10 +5145,7 @@
       "recommended_character": "M12301_001",
       "recommended_subclass": "M13304_001",
       "recommended_feature": "M12202"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M53301_002",
@@ -4955,7 +5282,21 @@
         "name": "邪恶语录",
         "step": "S",
         "max_level": 3,
-        "effect": "获得反伤层数+1。"
+        "effect": "获得反伤层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得反伤层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得反伤层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得反伤层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -4971,10 +5312,7 @@
       "recommended_character": "M31202",
       "recommended_subclass": "M11207",
       "recommended_feature": "M11201_000"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M53301_001",
@@ -5111,7 +5449,21 @@
         "name": "极寒法典",
         "step": "S",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5127,10 +5479,7 @@
       "recommended_character": "M14201_001",
       "recommended_subclass": "M13302_000",
       "recommended_feature": "M11205_001"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M53301",
@@ -5267,7 +5616,21 @@
         "name": "星界法典",
         "step": "S",
         "max_level": 3,
-        "effect": "造成恐惧层数+1。"
+        "effect": "造成恐惧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成恐惧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成恐惧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成恐惧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5283,10 +5646,7 @@
       "recommended_character": "M51303_000",
       "recommended_subclass": "M13302_000",
       "recommended_feature": "M12301"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M54301_000",
@@ -5423,7 +5783,21 @@
         "name": "烈焰法则",
         "step": "S",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5439,10 +5813,7 @@
       "recommended_character": "M13105",
       "recommended_subclass": "M11304_000",
       "recommended_feature": "M11302"
-    },
-    "banner_type": "skin_limited",
-    "banner_name": "限时异化UP招募卡池",
-    "banner_badge": "👑 限时异化"
+    }
   },
   {
     "id": "M54301",
@@ -5579,7 +5950,21 @@
         "name": "生命法则",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能恢复+1。"
+        "effect": "造成技能恢复+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能恢复+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能恢复+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能恢复+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5595,10 +5980,7 @@
       "recommended_character": "M14203",
       "recommended_subclass": "M21203",
       "recommended_feature": "M52301"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M31302_000",
@@ -5735,7 +6117,21 @@
         "name": "自动编程",
         "step": "S",
         "max_level": 3,
-        "effect": "造成追击伤害+1。"
+        "effect": "造成追击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成追击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成追击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成追击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5751,10 +6147,7 @@
       "recommended_character": "M12301_001",
       "recommended_subclass": "M22301",
       "recommended_feature": "M31301_001"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M31302",
@@ -5891,7 +6284,21 @@
         "name": "核心编程",
         "step": "S",
         "max_level": 3,
-        "effect": "造成反击伤害+1。"
+        "effect": "造成反击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成反击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成反击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成反击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -5907,10 +6314,7 @@
       "recommended_character": "M11203",
       "recommended_subclass": "M41301_000",
       "recommended_feature": "M11304"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13306_000",
@@ -6047,7 +6451,21 @@
         "name": "暗星解析",
         "step": "S",
         "max_level": 3,
-        "effect": "造成泯灭层数+1。"
+        "effect": "造成泯灭层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成泯灭层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成泯灭层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成泯灭层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6063,10 +6481,7 @@
       "recommended_character": "M12211_000",
       "recommended_subclass": "M33101",
       "recommended_feature": "M12203"
-    },
-    "banner_type": "skin_limited",
-    "banner_name": "限时异化UP招募卡池",
-    "banner_badge": "👑 限时异化"
+    }
   },
   {
     "id": "M13306",
@@ -6203,7 +6618,21 @@
         "name": "魔晶制造",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能恢复+1。"
+        "effect": "造成技能恢复+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能恢复+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能恢复+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能恢复+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6219,10 +6648,7 @@
       "recommended_character": "M33101",
       "recommended_subclass": "M11301",
       "recommended_feature": "M52301"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M51303_000",
@@ -6359,7 +6785,21 @@
         "name": "梦境遨游",
         "step": "S",
         "max_level": 3,
-        "effect": "造成恐惧层数+1。"
+        "effect": "造成恐惧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成恐惧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成恐惧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成恐惧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6375,10 +6815,7 @@
       "recommended_character": "M11302",
       "recommended_subclass": "M11201_000",
       "recommended_feature": "M13302_000"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M51303",
@@ -6515,7 +6952,21 @@
         "name": "熊孩子笔记",
         "step": "S",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6531,10 +6982,7 @@
       "recommended_character": "M13303",
       "recommended_subclass": "M13305",
       "recommended_feature": "M13302"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14215",
@@ -6671,7 +7119,21 @@
         "name": "针毯保养",
         "step": "S",
         "max_level": 3,
-        "effect": "获得反伤层数+1。"
+        "effect": "获得反伤层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得反伤层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得反伤层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得反伤层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6687,10 +7149,7 @@
       "recommended_character": "M53301_002",
       "recommended_subclass": "M11207",
       "recommended_feature": "M13307"
-    },
-    "banner_type": "adventure",
-    "banner_name": "冒险·主线掉落",
-    "banner_badge": "🗺️ 掉落"
+    }
   },
   {
     "id": "M12211_000",
@@ -6827,7 +7286,21 @@
         "name": "皎月之舞",
         "step": "S",
         "max_level": 3,
-        "effect": "造成泯灭层数+1。"
+        "effect": "造成泯灭层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成泯灭层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成泯灭层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成泯灭层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6843,10 +7316,7 @@
       "recommended_character": "M13305",
       "recommended_subclass": "M33101",
       "recommended_feature": "M52301"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M12211",
@@ -6983,7 +7453,21 @@
         "name": "战舞合集",
         "step": "S",
         "max_level": 3,
-        "effect": "造成鼓舞层数+1。"
+        "effect": "造成鼓舞层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成鼓舞层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成鼓舞层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成鼓舞层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -6999,10 +7483,7 @@
       "recommended_character": "M11302",
       "recommended_subclass": "M13302_000",
       "recommended_feature": "M33101"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13307_000",
@@ -7139,7 +7620,21 @@
         "name": "鲜血之书",
         "step": "S",
         "max_level": 3,
-        "effect": "造成剥离层数+1。"
+        "effect": "造成剥离层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成剥离层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成剥离层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成剥离层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7155,10 +7650,7 @@
       "recommended_character": "M21301",
       "recommended_subclass": "M52301_000",
       "recommended_feature": "M14207"
-    },
-    "banner_type": "skin_limited",
-    "banner_name": "限时异化UP招募卡池",
-    "banner_badge": "👑 限时异化"
+    }
   },
   {
     "id": "M13307",
@@ -7295,7 +7787,21 @@
         "name": "花园护理",
         "step": "S",
         "max_level": 3,
-        "effect": "获得成长层数+1。"
+        "effect": "获得成长层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得成长层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得成长层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得成长层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7311,10 +7817,7 @@
       "recommended_character": "M21301",
       "recommended_subclass": "M21203",
       "recommended_feature": "M11303_002"
-    },
-    "banner_type": "limited",
-    "banner_name": "限时UP招募",
-    "banner_badge": "⏳ 限时UP"
+    }
   },
   {
     "id": "M11304_000",
@@ -7451,7 +7954,21 @@
         "name": "英灵战书",
         "step": "S",
         "max_level": 3,
-        "effect": "受到普通伤害-1。"
+        "effect": "受到普通伤害-1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "受到普通伤害-1。"
+          },
+          {
+            "level": 2,
+            "effect": "受到普通伤害-1。 (Lv. 2)"
+          },
+          {
+            "level": 3,
+            "effect": "受到普通伤害-1。 (Lv. 3)"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7467,10 +7984,7 @@
       "recommended_character": "M31302",
       "recommended_subclass": "M41301_000",
       "recommended_feature": "M11304"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M11304_001",
@@ -7607,7 +8121,21 @@
         "name": "弹反精通",
         "step": "S",
         "max_level": 3,
-        "effect": "造成反击伤害+1。"
+        "effect": "造成反击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成反击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成反击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成反击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7623,10 +8151,7 @@
       "recommended_character": "M51201",
       "recommended_subclass": "M31302",
       "recommended_feature": "M11304"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M11304",
@@ -7763,7 +8288,21 @@
         "name": "旋转秘诀",
         "step": "S",
         "max_level": 3,
-        "effect": "造成反击伤害+1。"
+        "effect": "造成反击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成反击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成反击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成反击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7779,10 +8318,7 @@
       "recommended_character": "M31302",
       "recommended_subclass": "M41301_000",
       "recommended_feature": "M11304_000"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M34301_000",
@@ -7919,7 +8455,21 @@
         "name": "光辉之书",
         "step": "S",
         "max_level": 3,
-        "effect": "精神+5。"
+        "effect": "精神+5。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+5"
+          },
+          {
+            "level": 2,
+            "effect": "精神+10"
+          },
+          {
+            "level": 3,
+            "effect": "精神+15"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -7935,10 +8485,7 @@
       "recommended_character": "M53301",
       "recommended_subclass": "M14301_000",
       "recommended_feature": "M52301"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M34301",
@@ -8075,7 +8622,21 @@
         "name": "愿望大全",
         "step": "S",
         "max_level": 3,
-        "effect": "幸运+1。"
+        "effect": "幸运+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "幸运+1"
+          },
+          {
+            "level": 2,
+            "effect": "幸运+2"
+          },
+          {
+            "level": 3,
+            "effect": "幸运+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8091,10 +8652,7 @@
       "recommended_character": "M13305_000",
       "recommended_subclass": "M12211",
       "recommended_feature": "M52301"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13310",
@@ -8231,7 +8789,21 @@
         "name": "龙族秘史",
         "step": "S",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8247,10 +8819,7 @@
       "recommended_character": "M14206_002",
       "recommended_subclass": "M54301_000",
       "recommended_feature": "M21301_000"
-    },
-    "banner_type": "limited",
-    "banner_name": "限时UP招募",
-    "banner_badge": "⏳ 限时UP"
+    }
   },
   {
     "id": "M51302_001",
@@ -8387,7 +8956,21 @@
         "name": "夏日笔记",
         "step": "S",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8403,10 +8986,7 @@
       "recommended_character": "M13207",
       "recommended_subclass": "M23301",
       "recommended_feature": "M14213"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M51302",
@@ -8543,7 +9123,21 @@
         "name": "西游见闻",
         "step": "S",
         "max_level": 3,
-        "effect": "获得滋润层数+1。"
+        "effect": "获得滋润层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得滋润层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得滋润层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得滋润层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8559,10 +9153,7 @@
       "recommended_character": "M24301",
       "recommended_subclass": "M23204_000",
       "recommended_feature": "M31303_000"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11303_002",
@@ -8699,7 +9290,21 @@
         "name": "恶魔之书",
         "step": "S",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8715,10 +9320,7 @@
       "recommended_character": "M14206_002",
       "recommended_subclass": "M52301_000",
       "recommended_feature": "M11303"
-    },
-    "banner_type": "skin_limited",
-    "banner_name": "限时异化UP招募卡池",
-    "banner_badge": "👑 限时异化"
+    }
   },
   {
     "id": "M11303",
@@ -8855,7 +9457,21 @@
         "name": "抗争精神",
         "step": "S",
         "max_level": 3,
-        "effect": "受到冰冷层数-1。"
+        "effect": "受到冰冷层数-1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "受到冰冷层数-1"
+          },
+          {
+            "level": 2,
+            "effect": "受到冰冷层数-2"
+          },
+          {
+            "level": 3,
+            "effect": "受到冰冷层数-3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -8871,10 +9487,7 @@
       "recommended_character": "M11203",
       "recommended_subclass": "M13306",
       "recommended_feature": "M31301_001"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12205_000",
@@ -9011,7 +9624,21 @@
         "name": "命运法典",
         "step": "S",
         "max_level": 3,
-        "effect": "幸运+1。"
+        "effect": "幸运+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "幸运+1"
+          },
+          {
+            "level": 2,
+            "effect": "幸运+2"
+          },
+          {
+            "level": 3,
+            "effect": "幸运+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9027,10 +9654,7 @@
       "recommended_character": "M13305_000",
       "recommended_subclass": "M12201_000",
       "recommended_feature": "M11301_000"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M12205",
@@ -9167,7 +9791,21 @@
         "name": "风行法典",
         "step": "S",
         "max_level": 3,
-        "effect": "获得精准层数+1。"
+        "effect": "获得精准层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得精准层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得精准层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得精准层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9183,10 +9821,7 @@
       "recommended_character": "M52301",
       "recommended_subclass": "M12207",
       "recommended_feature": "M22202"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13305_000",
@@ -9323,7 +9958,21 @@
         "name": "派对大全",
         "step": "S",
         "max_level": 3,
-        "effect": "幸运+1。"
+        "effect": "幸运+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "幸运+1"
+          },
+          {
+            "level": 2,
+            "effect": "幸运+2"
+          },
+          {
+            "level": 3,
+            "effect": "幸运+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9339,10 +9988,7 @@
       "recommended_character": "M13305",
       "recommended_subclass": "M12201_000",
       "recommended_feature": "M12205_000"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M13305",
@@ -9479,7 +10125,21 @@
         "name": "魔术大全",
         "step": "S",
         "max_level": 3,
-        "effect": "造成技能伤害+1。"
+        "effect": "造成技能伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成技能伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成技能伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成技能伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9495,10 +10155,7 @@
       "recommended_character": "M11206",
       "recommended_subclass": "M13203",
       "recommended_feature": "M11301_000"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12301_001",
@@ -9635,7 +10292,21 @@
         "name": "悬疑故事",
         "step": "S",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9651,10 +10322,7 @@
       "recommended_character": "M12205",
       "recommended_subclass": "M12207",
       "recommended_feature": "M12202_001"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M12301",
@@ -9791,7 +10459,21 @@
         "name": "亲热天堂",
         "step": "S",
         "max_level": 3,
-        "effect": "造成追击伤害+1。"
+        "effect": "造成追击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成追击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成追击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成追击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9807,10 +10489,7 @@
       "recommended_character": "M52301",
       "recommended_subclass": "M12205",
       "recommended_feature": "M12202"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13304_001",
@@ -9947,7 +10626,21 @@
         "name": "极寒配方",
         "step": "S",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -9963,10 +10656,7 @@
       "recommended_character": "M13201",
       "recommended_subclass": "M23301",
       "recommended_feature": "M22301"
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M13304",
@@ -10103,7 +10793,21 @@
         "name": "药剂大全",
         "step": "S",
         "max_level": 3,
-        "effect": "造成阻碍层数+1。"
+        "effect": "造成阻碍层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成阻碍层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成阻碍层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成阻碍层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10119,10 +10823,7 @@
       "recommended_character": "M13201",
       "recommended_subclass": "M12301_001",
       "recommended_feature": "M13304_001"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M21301_000",
@@ -10259,7 +10960,21 @@
         "name": "熔岩秘术",
         "step": "S",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10275,10 +10990,7 @@
       "recommended_character": "M13310",
       "recommended_subclass": "M21205",
       "recommended_feature": "M11303"
-    },
-    "banner_type": "adventure",
-    "banner_name": "冒险·主线掉落",
-    "banner_badge": "🗺️ 掉落"
+    }
   },
   {
     "id": "M21301",
@@ -10415,7 +11127,21 @@
         "name": "终极防御",
         "step": "S",
         "max_level": 3,
-        "effect": "获得防护层数+1。"
+        "effect": "获得防护层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得防护层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得防护层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得防护层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10431,10 +11157,7 @@
       "recommended_character": "M21201",
       "recommended_subclass": "M14301",
       "recommended_feature": "M11203_000"
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13205",
@@ -10571,7 +11294,21 @@
         "name": "近战技巧",
         "step": "A",
         "max_level": 3,
-        "effect": "获得坚韧层数+1。"
+        "effect": "获得坚韧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得坚韧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得坚韧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得坚韧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10587,10 +11324,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12210",
@@ -10727,7 +11461,21 @@
         "name": "火药配方",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10743,10 +11491,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11204",
@@ -10883,7 +11628,21 @@
         "name": "鼓点笔记",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -10899,10 +11658,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M23202",
@@ -11039,7 +11795,21 @@
         "name": "生命封存",
         "step": "A",
         "max_level": 3,
-        "effect": "获得成长层数+1。"
+        "effect": "获得成长层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得成长层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得成长层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得成长层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11055,10 +11825,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14202_000",
@@ -11195,7 +11962,21 @@
         "name": "梦境编织",
         "step": "A",
         "max_level": 3,
-        "effect": "造成恐惧层数+1。"
+        "effect": "造成恐惧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成恐惧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成恐惧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成恐惧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11211,10 +11992,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M14202",
@@ -11351,7 +12129,21 @@
         "name": "先祖族谱",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11367,10 +12159,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13201_000",
@@ -11507,7 +12296,21 @@
         "name": "学院教材",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11523,10 +12326,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M13201",
@@ -11663,7 +12463,21 @@
         "name": "时间旅行",
         "step": "A",
         "max_level": 3,
-        "effect": "造成逆转层数+1。"
+        "effect": "造成逆转层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成逆转层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成逆转层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成逆转层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11679,10 +12493,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12207_000",
@@ -11819,7 +12630,21 @@
         "name": "箭术精通",
         "step": "A",
         "max_level": 3,
-        "effect": "获得精准层数+1。"
+        "effect": "获得精准层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得精准层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得精准层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得精准层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11835,10 +12660,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M12207",
@@ -11975,7 +12797,21 @@
         "name": "手语精通",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -11991,10 +12827,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12204",
@@ -12131,7 +12964,21 @@
         "name": "射击手法",
         "step": "A",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12147,10 +12994,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13206",
@@ -12287,7 +13131,21 @@
         "name": "祖传配方",
         "step": "A",
         "max_level": 3,
-        "effect": "造成阻碍层数+1。"
+        "effect": "造成阻碍层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成阻碍层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成阻碍层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成阻碍层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12303,10 +13161,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13203",
@@ -12443,7 +13298,21 @@
         "name": "魔道精选",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12459,10 +13328,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M21201_002",
@@ -12599,7 +13465,21 @@
         "name": "纵火指南",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12615,10 +13495,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M21201",
@@ -12755,7 +13632,21 @@
         "name": "防身指南",
         "step": "A",
         "max_level": 3,
-        "effect": "获得防护层数+1。"
+        "effect": "获得防护层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得防护层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得防护层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得防护层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12771,10 +13662,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M21203",
@@ -12911,7 +13799,21 @@
         "name": "营养均衡",
         "step": "A",
         "max_level": 3,
-        "effect": "获得再生层数+1。"
+        "effect": "获得再生层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得再生层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得再生层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得再生层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -12927,10 +13829,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M22201_002",
@@ -13067,7 +13966,21 @@
         "name": "焚烧解析",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -13083,10 +13996,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M22201",
@@ -13223,7 +14133,21 @@
         "name": "拆迁解析",
         "step": "A",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -13239,10 +14163,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14206_002",
@@ -13379,7 +14300,21 @@
         "name": "充分燃烧",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -13395,10 +14330,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M14206",
@@ -13535,7 +14467,21 @@
         "name": "资本积累",
         "step": "A",
         "max_level": 3,
-        "effect": "获得再生层数+1。"
+        "effect": "获得再生层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得再生层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得再生层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得再生层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -13551,10 +14497,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M41201",
@@ -13691,7 +14634,21 @@
         "name": "航线地图",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -13707,10 +14664,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11205_001",
@@ -13847,7 +14801,21 @@
         "name": "破冰拳法",
         "step": "A",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -13863,10 +14831,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M11205",
@@ -14003,7 +14968,21 @@
         "name": "截拳秘法",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14019,10 +14998,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14201_001",
@@ -14159,7 +15135,21 @@
         "name": "极寒史书",
         "step": "A",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14175,10 +15165,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M14201",
@@ -14315,7 +15302,21 @@
         "name": "战争法典",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14331,10 +15332,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14203_000",
@@ -14471,7 +15469,21 @@
         "name": "宣传手册",
         "step": "A",
         "max_level": 3,
-        "effect": "获得信念层数+1。"
+        "effect": "获得信念层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得信念层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得信念层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得信念层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14487,10 +15499,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M14203",
@@ -14627,7 +15636,21 @@
         "name": "理财陷阱",
         "step": "A",
         "max_level": 3,
-        "effect": "获得信念层数+1。"
+        "effect": "获得信念层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得信念层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得信念层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得信念层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14643,10 +15666,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13207",
@@ -14783,7 +15803,21 @@
         "name": "日耀法典",
         "step": "A",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14799,10 +15833,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M51201_001",
@@ -14939,7 +15970,21 @@
         "name": "极寒坐标",
         "step": "A",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -14955,10 +16000,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M51201",
@@ -15095,7 +16137,21 @@
         "name": "星门坐标",
         "step": "A",
         "max_level": 3,
-        "effect": "造成反击伤害+1。"
+        "effect": "造成反击伤害+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成反击伤害+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成反击伤害+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成反击伤害+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -15111,10 +16167,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14213",
@@ -15251,7 +16304,21 @@
         "name": "月影诗篇",
         "step": "A",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -15267,10 +16334,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12304",
@@ -15407,7 +16471,21 @@
         "name": "尖刺异变",
         "step": "A",
         "max_level": 3,
-        "effect": "获得反伤层数+1。"
+        "effect": "获得反伤层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得反伤层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得反伤层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得反伤层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -15423,10 +16501,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14207",
@@ -15563,7 +16638,21 @@
         "name": "植物栽培",
         "step": "A",
         "max_level": 3,
-        "effect": "获得成长层数+1。"
+        "effect": "获得成长层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得成长层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得成长层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得成长层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -15579,10 +16668,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12203",
@@ -15719,7 +16805,21 @@
         "name": "秘制法门",
         "step": "A",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -15735,10 +16835,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11207",
@@ -15875,7 +16972,21 @@
         "name": "兵法要诀",
         "step": "A",
         "max_level": 3,
-        "effect": "获得反伤层数+1。"
+        "effect": "获得反伤层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得反伤层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得反伤层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得反伤层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -15891,10 +17002,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M21204",
@@ -16031,7 +17139,21 @@
         "name": "保湿秘诀",
         "step": "A",
         "max_level": 3,
-        "effect": "获得滋润层数+1。"
+        "effect": "获得滋润层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得滋润层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得滋润层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得滋润层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16047,10 +17169,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M23201",
@@ -16187,7 +17306,21 @@
         "name": "净水指南",
         "step": "A",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16203,10 +17336,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M22203",
@@ -16343,7 +17473,21 @@
         "name": "古老誓言",
         "step": "A",
         "max_level": 3,
-        "effect": "造成减速层数+1。"
+        "effect": "造成减速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成减速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成减速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成减速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16359,10 +17503,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M21205",
@@ -16499,7 +17640,21 @@
         "name": "温度控制",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16515,10 +17670,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13210",
@@ -16655,7 +17807,21 @@
         "name": "炼金百科",
         "step": "A",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16671,10 +17837,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14204",
@@ -16811,7 +17974,21 @@
         "name": "极致艺术",
         "step": "A",
         "max_level": 3,
-        "effect": "造成脆弱层数+1。"
+        "effect": "造成脆弱层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成脆弱层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成脆弱层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成脆弱层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16827,10 +18004,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13105",
@@ -16967,7 +18141,21 @@
         "name": "驯养指南",
         "step": "A",
         "max_level": 3,
-        "effect": "获得滋润层数+1。"
+        "effect": "获得滋润层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得滋润层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得滋润层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得滋润层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -16983,10 +18171,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M21202_000",
@@ -17123,7 +18308,21 @@
         "name": "控电秘诀",
         "step": "A",
         "max_level": 3,
-        "effect": "造成感电层数+1。"
+        "effect": "造成感电层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成感电层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成感电层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成感电层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -17139,10 +18338,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M21202",
@@ -17279,7 +18475,21 @@
         "name": "控风秘诀",
         "step": "A",
         "max_level": 3,
-        "effect": "造成剥离层数+1。"
+        "effect": "造成剥离层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成剥离层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成剥离层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成剥离层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -17295,10 +18505,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11201_000",
@@ -17435,7 +18642,21 @@
         "name": "入梦指南",
         "step": "A",
         "max_level": 3,
-        "effect": "造成恐惧层数+1。"
+        "effect": "造成恐惧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成恐惧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成恐惧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成恐惧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -17451,10 +18672,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M11201",
@@ -17591,7 +18809,21 @@
         "name": "狩猎指南",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -17607,10 +18839,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12202_001",
@@ -17747,7 +18976,21 @@
         "name": "冻伤防范",
         "step": "A",
         "max_level": 3,
-        "effect": "造成冰冷层数+1。"
+        "effect": "造成冰冷层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成冰冷层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成冰冷层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成冰冷层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -17763,10 +19006,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M12202",
@@ -17903,7 +19143,21 @@
         "name": "解药配置",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -17919,10 +19173,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M31201",
@@ -18059,7 +19310,21 @@
         "name": "修复技法",
         "step": "A",
         "max_level": 3,
-        "effect": "获得坚韧层数+1。"
+        "effect": "获得坚韧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得坚韧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得坚韧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得坚韧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18075,10 +19340,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14211",
@@ -18215,7 +19477,21 @@
         "name": "好运仪式",
         "step": "A",
         "max_level": 3,
-        "effect": "幸运+1。"
+        "effect": "幸运+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "幸运+1"
+          },
+          {
+            "level": 2,
+            "effect": "幸运+2"
+          },
+          {
+            "level": 3,
+            "effect": "幸运+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18231,10 +19507,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14208",
@@ -18371,7 +19644,21 @@
         "name": "气流原理",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18387,10 +19674,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M33101",
@@ -18527,7 +19811,21 @@
         "name": "魔力利用",
         "step": "A",
         "max_level": 3,
-        "effect": "受到泯灭层数-1。"
+        "effect": "受到泯灭层数-1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "受到泯灭层数-1"
+          },
+          {
+            "level": 2,
+            "effect": "受到泯灭层数-2"
+          },
+          {
+            "level": 3,
+            "effect": "受到泯灭层数-3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18543,10 +19841,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11203_000",
@@ -18683,7 +19978,21 @@
         "name": "冒险指南",
         "step": "A",
         "max_level": 3,
-        "effect": "获得防护层数+1。"
+        "effect": "获得防护层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得防护层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得防护层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得防护层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18699,10 +20008,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M11203",
@@ -18839,7 +20145,21 @@
         "name": "美食大全",
         "step": "A",
         "max_level": 3,
-        "effect": "获得成长层数+1。"
+        "effect": "获得成长层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得成长层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得成长层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得成长层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -18855,10 +20175,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M23203",
@@ -18995,7 +20312,21 @@
         "name": "荆棘花园",
         "step": "A",
         "max_level": 3,
-        "effect": "获得反伤层数+1。"
+        "effect": "获得反伤层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得反伤层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得反伤层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得反伤层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19011,10 +20342,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11206",
@@ -19151,7 +20479,21 @@
         "name": "强者自述",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19167,10 +20509,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11202",
@@ -19307,7 +20646,21 @@
         "name": "热血周刊",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19323,10 +20676,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11209",
@@ -19463,7 +20813,21 @@
         "name": "美食笔记",
         "step": "A",
         "max_level": 3,
-        "effect": "获得成长层数+1。"
+        "effect": "获得成长层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得成长层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得成长层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得成长层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19479,10 +20843,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14205",
@@ -19619,7 +20980,21 @@
         "name": "血脉秘书",
         "step": "A",
         "max_level": 3,
-        "effect": "获得热血层数+1。"
+        "effect": "获得热血层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得热血层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得热血层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得热血层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19635,10 +21010,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11210",
@@ -19775,7 +21147,21 @@
         "name": "生物制毒",
         "step": "A",
         "max_level": 3,
-        "effect": "造成阻碍层数+1。"
+        "effect": "造成阻碍层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成阻碍层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成阻碍层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成阻碍层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19791,10 +21177,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12201_000",
@@ -19931,7 +21314,21 @@
         "name": "厄运防范",
         "step": "A",
         "max_level": 3,
-        "effect": "幸运+1。"
+        "effect": "幸运+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "幸运+1"
+          },
+          {
+            "level": 2,
+            "effect": "幸运+2"
+          },
+          {
+            "level": 3,
+            "effect": "幸运+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -19947,10 +21344,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M12201",
@@ -20087,7 +21481,21 @@
         "name": "笑话合集",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20103,10 +21511,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M31202",
@@ -20243,7 +21648,21 @@
         "name": "记忆强化",
         "step": "A",
         "max_level": 3,
-        "effect": "获得反伤层数+1。"
+        "effect": "获得反伤层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得反伤层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得反伤层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得反伤层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20259,10 +21678,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M22202_002",
@@ -20399,7 +21815,21 @@
         "name": "燃烧奥秘",
         "step": "A",
         "max_level": 3,
-        "effect": "造成灼烧层数+1。"
+        "effect": "造成灼烧层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成灼烧层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成灼烧层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成灼烧层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20415,10 +21845,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M22202",
@@ -20555,7 +21982,21 @@
         "name": "精准奥秘",
         "step": "A",
         "max_level": 3,
-        "effect": "获得精准层数+1。"
+        "effect": "获得精准层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得精准层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得精准层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得精准层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20571,10 +22012,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14210",
@@ -20711,7 +22149,21 @@
         "name": "空灵之书",
         "step": "A",
         "max_level": 3,
-        "effect": "造成净化层数+1。"
+        "effect": "造成净化层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成净化层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成净化层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成净化层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20727,10 +22179,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12208",
@@ -20867,7 +22316,21 @@
         "name": "隐蔽教学",
         "step": "A",
         "max_level": 3,
-        "effect": "获得精准层数+1。"
+        "effect": "获得精准层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得精准层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得精准层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得精准层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -20883,10 +22346,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M23204_000",
@@ -21023,7 +22483,21 @@
         "name": "雷霆词典",
         "step": "A",
         "max_level": 3,
-        "effect": "造成感电层数+1。"
+        "effect": "造成感电层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成感电层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成感电层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成感电层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21039,10 +22513,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M23204",
@@ -21179,7 +22650,21 @@
         "name": "风语词典",
         "step": "A",
         "max_level": 3,
-        "effect": "获得加速层数+1。"
+        "effect": "获得加速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得加速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得加速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得加速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21195,10 +22680,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13202",
@@ -21335,7 +22817,21 @@
         "name": "墓志铭合集",
         "step": "A",
         "max_level": 3,
-        "effect": "造成泯灭层数+1。"
+        "effect": "造成泯灭层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成泯灭层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成泯灭层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成泯灭层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21351,10 +22847,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13204",
@@ -21491,7 +22984,21 @@
         "name": "视线诱导",
         "step": "A",
         "max_level": 3,
-        "effect": "造成诱导层数+1。"
+        "effect": "造成诱导层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成诱导层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成诱导层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成诱导层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21507,10 +23014,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11208",
@@ -21647,7 +23151,21 @@
         "name": "祖传秘法",
         "step": "A",
         "max_level": 3,
-        "effect": "获得再生层数+1。"
+        "effect": "获得再生层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "获得再生层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "获得再生层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "获得再生层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21663,10 +23181,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M23205",
@@ -21803,7 +23318,21 @@
         "name": "沙漠史书",
         "step": "A",
         "max_level": 3,
-        "effect": "造成减速层数+1。"
+        "effect": "造成减速层数+1。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "造成减速层数+1"
+          },
+          {
+            "level": 2,
+            "effect": "造成减速层数+2"
+          },
+          {
+            "level": 3,
+            "effect": "造成减速层数+3"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21819,10 +23348,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12105",
@@ -21947,7 +23473,21 @@
         "name": "移动射击",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -21963,10 +23503,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M24101",
@@ -22091,7 +23628,21 @@
         "name": "女仆礼仪",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22107,10 +23658,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11105",
@@ -22235,7 +23783,21 @@
         "name": "锻炼心得",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22251,10 +23813,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13102",
@@ -22379,7 +23938,21 @@
         "name": "火球笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22395,10 +23968,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12104",
@@ -22523,7 +24093,21 @@
         "name": "地图总汇",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22539,10 +24123,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M32101",
@@ -22667,7 +24248,21 @@
         "name": "茶道入门",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22683,10 +24278,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11112",
@@ -22811,7 +24403,21 @@
         "name": "蘑菇培育",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22827,10 +24433,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12106",
@@ -22955,7 +24558,21 @@
         "name": "蘑菇繁殖",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -22971,10 +24588,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13106",
@@ -23099,7 +24713,21 @@
         "name": "学院教材",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23115,10 +24743,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14101",
@@ -23243,7 +24868,21 @@
         "name": "医疗笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23259,10 +24898,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11114",
@@ -23387,7 +25023,21 @@
         "name": "饮食笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23403,10 +25053,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11106_002",
@@ -23531,7 +25178,21 @@
         "name": "武器图鉴",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23547,10 +25208,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M11106",
@@ -23675,7 +25333,21 @@
         "name": "寓教于乐",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23691,10 +25363,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12102_002",
@@ -23819,7 +25488,21 @@
         "name": "魔纹入门",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23835,10 +25518,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M12102",
@@ -23963,7 +25643,21 @@
         "name": "锻炼合集",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -23979,10 +25673,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M42101",
@@ -24107,7 +25798,21 @@
         "name": "防潮指南",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24123,10 +25828,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M41101",
@@ -24251,7 +25953,21 @@
         "name": "航海笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24267,10 +25983,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13103",
@@ -24395,7 +26108,21 @@
         "name": "星图笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24411,10 +26138,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M21101",
@@ -24539,7 +26263,21 @@
         "name": "补水技巧",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24555,10 +26293,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11111",
@@ -24683,7 +26418,21 @@
         "name": "毅力锻炼",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24699,10 +26448,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11113",
@@ -24827,7 +26573,21 @@
         "name": "军队日记",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24843,10 +26603,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M32103",
@@ -24971,7 +26728,21 @@
         "name": "任务名单",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -24987,10 +26758,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13104_001",
@@ -25115,7 +26883,21 @@
         "name": "求存预言",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25131,10 +26913,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M13104",
@@ -25259,7 +27038,21 @@
         "name": "草药笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25275,10 +27068,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12101_001",
@@ -25403,7 +27193,21 @@
         "name": "果腹心得",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25419,10 +27223,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M12101",
@@ -25547,7 +27348,21 @@
         "name": "追踪心得",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25563,10 +27378,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11103_001",
@@ -25691,7 +27503,21 @@
         "name": "霜狼日记",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25707,10 +27533,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M11103",
@@ -25835,7 +27658,21 @@
         "name": "狼灵日记",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25851,10 +27688,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11108",
@@ -25979,7 +27813,21 @@
         "name": "杂技技巧",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -25995,10 +27843,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M24102",
@@ -26123,7 +27968,21 @@
         "name": "热门歌单",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26139,10 +27998,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11115",
@@ -26267,7 +28123,21 @@
         "name": "荒野生存",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26283,10 +28153,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11110",
@@ -26411,7 +28278,21 @@
         "name": "新兵教学",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26427,10 +28308,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12103",
@@ -26555,7 +28433,21 @@
         "name": "珍珠保养",
         "step": "B",
         "max_level": 3,
-        "effect": "生命+4。"
+        "effect": "生命+4。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "生命+4"
+          },
+          {
+            "level": 2,
+            "effect": "生命+8"
+          },
+          {
+            "level": 3,
+            "effect": "生命+12"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26571,10 +28463,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M43101",
@@ -26699,7 +28588,21 @@
         "name": "恐怖小说",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26715,10 +28618,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13107",
@@ -26843,7 +28743,21 @@
         "name": "考古笔记",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -26859,10 +28773,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11107",
@@ -26987,7 +28898,21 @@
         "name": "剑术入门",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27003,10 +28928,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14104",
@@ -27131,7 +29053,21 @@
         "name": "污染防范",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27147,10 +29083,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11102",
@@ -27275,7 +29208,21 @@
         "name": "心念归一",
         "step": "B",
         "max_level": 3,
-        "effect": "韧性+2。"
+        "effect": "韧性+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "韧性+2"
+          },
+          {
+            "level": 2,
+            "effect": "韧性+4"
+          },
+          {
+            "level": 3,
+            "effect": "韧性+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27291,10 +29238,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11109_001",
@@ -27419,7 +29363,21 @@
         "name": "寒流心得",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27435,10 +29393,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M11109",
@@ -27563,7 +29518,21 @@
         "name": "飞行心得",
         "step": "B",
         "max_level": 3,
-        "effect": "速度+2。"
+        "effect": "速度+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "速度+2"
+          },
+          {
+            "level": 2,
+            "effect": "速度+4"
+          },
+          {
+            "level": 3,
+            "effect": "速度+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27579,10 +29548,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11005_001",
@@ -27702,7 +29668,21 @@
         "name": "刀具保暖",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27718,10 +29698,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M11005",
@@ -27841,7 +29818,21 @@
         "name": "拔刀入门",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27857,10 +29848,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12003_001",
@@ -27980,7 +29968,21 @@
         "name": "蜂蜜储存",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -27996,10 +29998,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M12003",
@@ -28119,7 +30118,21 @@
         "name": "蜂蜜妙用",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28135,10 +30148,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11006",
@@ -28258,7 +30268,21 @@
         "name": "旅行日记",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28274,10 +30298,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14103",
@@ -28397,7 +30418,21 @@
         "name": "草药笔记",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28413,10 +30448,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M21001",
@@ -28536,7 +30568,21 @@
         "name": "入睡指南",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28552,10 +30598,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M23001",
@@ -28675,7 +30718,21 @@
         "name": "拖延秘诀",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28691,10 +30748,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M24001",
@@ -28814,7 +30868,21 @@
         "name": "恋爱话本",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28830,10 +30898,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11002",
@@ -28953,7 +31018,21 @@
         "name": "拉面菜谱",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -28969,10 +31048,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12002",
@@ -29092,7 +31168,21 @@
         "name": "拾荒指南",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29108,10 +31198,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11101",
@@ -29231,7 +31318,21 @@
         "name": "肢体语言",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29247,10 +31348,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11007_002",
@@ -29370,7 +31468,21 @@
         "name": "锻炼心得",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29386,10 +31498,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M11007",
@@ -29509,7 +31618,21 @@
         "name": "淘金指南",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29525,10 +31648,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12004_002",
@@ -29648,7 +31768,21 @@
         "name": "隐蔽心得",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29664,10 +31798,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "skin",
-    "banner_name": "异化招募卡池 (常驻)",
-    "banner_badge": "🎭 异化"
+    }
   },
   {
     "id": "M12004",
@@ -29787,7 +31918,21 @@
         "name": "矿石分辨",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29803,10 +31948,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11009",
@@ -29926,7 +32068,21 @@
         "name": "周边地图",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -29942,10 +32098,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11008",
@@ -30065,7 +32218,21 @@
         "name": "察言观色",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -30081,10 +32248,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13002",
@@ -30204,7 +32368,21 @@
         "name": "避暑妙招",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -30220,10 +32398,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M14102",
@@ -30343,7 +32518,21 @@
         "name": "梦境日记",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -30359,10 +32548,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M12001",
@@ -30482,7 +32668,21 @@
         "name": "投掷心得",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -30498,10 +32698,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11003",
@@ -30621,7 +32818,21 @@
         "name": "摸鱼心得",
         "step": "C",
         "max_level": 3,
-        "effect": "敏捷+2。"
+        "effect": "敏捷+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "敏捷+2"
+          },
+          {
+            "level": 2,
+            "effect": "敏捷+4"
+          },
+          {
+            "level": 3,
+            "effect": "敏捷+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -30637,10 +32848,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M11004",
@@ -30760,7 +32968,21 @@
         "name": "舞棍技法",
         "step": "C",
         "max_level": 3,
-        "effect": "力量+2。"
+        "effect": "力量+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "力量+2"
+          },
+          {
+            "level": 2,
+            "effect": "力量+4"
+          },
+          {
+            "level": 3,
+            "effect": "力量+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -30776,10 +32998,7 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   },
   {
     "id": "M13001",
@@ -30899,7 +33118,21 @@
         "name": "基本话术",
         "step": "C",
         "max_level": 3,
-        "effect": "精神+2。"
+        "effect": "精神+2。",
+        "levels": [
+          {
+            "level": 1,
+            "effect": "精神+2"
+          },
+          {
+            "level": 2,
+            "effect": "精神+4"
+          },
+          {
+            "level": 3,
+            "effect": "精神+6"
+          }
+        ]
       }
     ],
     "upgrade_ingredients": [
@@ -30915,9 +33148,6 @@
       "recommended_character": "",
       "recommended_subclass": "",
       "recommended_feature": ""
-    },
-    "banner_type": "standard",
-    "banner_name": "常规招募 (常驻)",
-    "banner_badge": "🔮 常规"
+    }
   }
 ]

@@ -55238,6 +55238,20 @@
       "description": "",
       "specify_roles": [
         "史莱姆战士 (M21001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "力量+2"
+        },
+        {
+          "level": 2,
+          "effect": "力量+4"
+        },
+        {
+          "level": 3,
+          "effect": "力量+6"
+        }
       ]
     },
     {
@@ -55252,6 +55266,20 @@
       "description": "",
       "specify_roles": [
         "沉默猎手 (M11101)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "力量+2"
+        },
+        {
+          "level": 2,
+          "effect": "力量+4"
+        },
+        {
+          "level": 3,
+          "effect": "力量+6"
+        }
       ]
     },
     {
@@ -55266,6 +55294,20 @@
       "description": "",
       "specify_roles": [
         "兵蜂战士 (M11005_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "力量+2"
+        },
+        {
+          "level": 2,
+          "effect": "力量+4"
+        },
+        {
+          "level": 3,
+          "effect": "力量+6"
+        }
       ]
     },
     {
@@ -55280,6 +55322,20 @@
       "description": "",
       "specify_roles": [
         "武者学徒 (M11111)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "韧性+2"
+        },
+        {
+          "level": 2,
+          "effect": "韧性+4"
+        },
+        {
+          "level": 3,
+          "effect": "韧性+6"
+        }
       ]
     },
     {
@@ -55294,6 +55350,20 @@
       "description": "",
       "specify_roles": [
         "狼灵战士 (M11103_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "韧性+2"
+        },
+        {
+          "level": 2,
+          "effect": "韧性+4"
+        },
+        {
+          "level": 3,
+          "effect": "韧性+6"
+        }
       ]
     },
     {
@@ -55308,6 +55378,20 @@
       "description": "",
       "specify_roles": [
         "哥布林战士 (M11105)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -55322,6 +55406,20 @@
       "description": "",
       "specify_roles": [
         "巨力少女 (M11114)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -55336,6 +55434,20 @@
       "description": "",
       "specify_roles": [
         "胡椒 (M11203)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得成长层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得成长层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得成长层数+3"
+        }
       ]
     },
     {
@@ -55350,6 +55462,20 @@
       "description": "",
       "specify_roles": [
         "狩猎勇士 (M11201)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得热血层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得热血层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得热血层数+3"
+        }
       ]
     },
     {
@@ -55364,6 +55490,20 @@
       "description": "",
       "specify_roles": [
         "恶狼勇士 (M11205_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成冰冷层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成冰冷层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成冰冷层数+3"
+        }
       ]
     },
     {
@@ -55378,6 +55518,20 @@
       "description": "",
       "specify_roles": [
         "星界守卫 (M51201_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成冰冷层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成冰冷层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成冰冷层数+3"
+        }
       ]
     },
     {
@@ -55392,6 +55546,20 @@
       "description": "",
       "specify_roles": [
         "胡椒 (M11203_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得防护层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得防护层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得防护层数+3"
+        }
       ]
     },
     {
@@ -55406,6 +55574,20 @@
       "description": "",
       "specify_roles": [
         "岩石守卫 (M21201_002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -55420,6 +55602,20 @@
       "description": "",
       "specify_roles": [
         "圣剑之灵 (M31301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得成长层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得成长层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得成长层数+3"
+        }
       ]
     },
     {
@@ -55434,6 +55630,20 @@
       "description": "",
       "specify_roles": [
         "军团统领 (M11301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成鼓舞层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成鼓舞层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成鼓舞层数+3"
+        }
       ]
     },
     {
@@ -55448,6 +55658,20 @@
       "description": "",
       "specify_roles": [
         "蛮牛勇士 (M11304)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成反击伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成反击伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成反击伤害+3"
+        }
       ]
     },
     {
@@ -55462,6 +55686,20 @@
       "description": "",
       "specify_roles": [
         "星界邪神 (M53301_002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得反伤层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得反伤层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得反伤层数+3"
+        }
       ]
     },
     {
@@ -55476,6 +55714,20 @@
       "description": "",
       "specify_roles": [
         "M11306"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成逆转层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成逆转层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成逆转层数+3"
+        }
       ]
     },
     {
@@ -55490,6 +55742,20 @@
       "description": "",
       "specify_roles": [
         "蛮牛勇士 (M11304_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成反击伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成反击伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成反击伤害+3"
+        }
       ]
     },
     {
@@ -55504,6 +55770,20 @@
       "description": "",
       "specify_roles": [
         "蓝灵菇娘 (M13002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "精神+2"
+        },
+        {
+          "level": 2,
+          "effect": "精神+4"
+        },
+        {
+          "level": 3,
+          "effect": "精神+6"
+        }
       ]
     },
     {
@@ -55518,6 +55798,20 @@
       "description": "",
       "specify_roles": [
         "史莱姆法师 (M23001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "精神+2"
+        },
+        {
+          "level": 2,
+          "effect": "精神+4"
+        },
+        {
+          "level": 3,
+          "effect": "精神+6"
+        }
       ]
     },
     {
@@ -55532,6 +55826,20 @@
       "description": "",
       "specify_roles": [
         "哥布林法师 (M13102)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -55546,6 +55854,20 @@
       "description": "",
       "specify_roles": [
         "星象学徒 (M13103)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -55560,6 +55882,20 @@
       "description": "",
       "specify_roles": [
         "学院学徒 (M13106)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -55574,6 +55910,20 @@
       "description": "",
       "specify_roles": [
         "飓风使者 (M23204)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得加速层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得加速层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得加速层数+3"
+        }
       ]
     },
     {
@@ -55588,6 +55938,20 @@
       "description": "",
       "specify_roles": [
         "啵啵 (M13201)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成逆转层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成逆转层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成逆转层数+3"
+        }
       ]
     },
     {
@@ -55602,6 +55966,20 @@
       "description": "",
       "specify_roles": [
         "流水法师 (M23201)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成净化层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成净化层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成净化层数+3"
+        }
       ]
     },
     {
@@ -55616,6 +55994,20 @@
       "description": "",
       "specify_roles": [
         "学院导师 (M13203)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -55630,6 +56022,20 @@
       "description": "",
       "specify_roles": [
         "啵啵 (M13201_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -55644,6 +56050,20 @@
       "description": "",
       "specify_roles": [
         "炼金魔女 (M13210)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成脆弱层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成脆弱层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成脆弱层数+3"
+        }
       ]
     },
     {
@@ -55658,6 +56078,20 @@
       "description": "",
       "specify_roles": [
         "魔术大师 (M13305)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成技能伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成技能伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成技能伤害+3"
+        }
       ]
     },
     {
@@ -55672,6 +56106,20 @@
       "description": "",
       "specify_roles": [
         "黄蜂魔女 (M13304_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成冰冷层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成冰冷层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成冰冷层数+3"
+        }
       ]
     },
     {
@@ -55686,6 +56134,20 @@
       "description": "",
       "specify_roles": [
         "地灵使者 (M13302_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成恐惧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成恐惧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成恐惧层数+3"
+        }
       ]
     },
     {
@@ -55700,6 +56162,20 @@
       "description": "",
       "specify_roles": [
         "大地魔女 (M13303_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成减速层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成减速层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成减速层数+3"
+        }
       ]
     },
     {
@@ -55714,6 +56190,20 @@
       "description": "",
       "specify_roles": [
         "荒漠舞姬 (M12211_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成泯灭层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成泯灭层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成泯灭层数+3"
+        }
       ]
     },
     {
@@ -55728,6 +56218,20 @@
       "description": "",
       "specify_roles": [
         "史莱姆王 (M23301_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -55742,6 +56246,20 @@
       "description": "",
       "specify_roles": [
         "哥布林猎手 (M12002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "敏捷+2"
+        },
+        {
+          "level": 2,
+          "effect": "敏捷+4"
+        },
+        {
+          "level": 3,
+          "effect": "敏捷+6"
+        }
       ]
     },
     {
@@ -55756,6 +56274,20 @@
       "description": "",
       "specify_roles": [
         "野猫猎手 (M12001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "敏捷+2"
+        },
+        {
+          "level": 2,
+          "effect": "敏捷+4"
+        },
+        {
+          "level": 3,
+          "effect": "敏捷+6"
+        }
       ]
     },
     {
@@ -55770,6 +56302,20 @@
       "description": "",
       "specify_roles": [
         "兵蜂猎手 (M12003_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "敏捷+2"
+        },
+        {
+          "level": 2,
+          "effect": "敏捷+4"
+        },
+        {
+          "level": 3,
+          "effect": "敏捷+6"
+        }
       ]
     },
     {
@@ -55784,6 +56330,20 @@
       "description": "",
       "specify_roles": [
         "妖精弓灵 (M32101)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -55798,6 +56358,20 @@
       "description": "",
       "specify_roles": [
         "狼族猎手 (M12101_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -55812,6 +56386,20 @@
       "description": "",
       "specify_roles": [
         "狼族猎手 (M12101)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -55826,6 +56414,20 @@
       "description": "",
       "specify_roles": [
         "军团射手 (M12105)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -55840,6 +56442,20 @@
       "description": "",
       "specify_roles": [
         "娜迦射手 (M12204)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成冰冷层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成冰冷层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成冰冷层数+3"
+        }
       ]
     },
     {
@@ -55854,6 +56470,20 @@
       "description": "",
       "specify_roles": [
         "奶糖 (M12207)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得加速层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得加速层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得加速层数+3"
+        }
       ]
     },
     {
@@ -55868,6 +56498,20 @@
       "description": "",
       "specify_roles": [
         "狼灵射手 (M12202)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得热血层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得热血层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得热血层数+3"
+        }
       ]
     },
     {
@@ -55882,6 +56526,20 @@
       "description": "",
       "specify_roles": [
         "狼灵射手 (M12202_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成冰冷层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成冰冷层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成冰冷层数+3"
+        }
       ]
     },
     {
@@ -55896,6 +56554,20 @@
       "description": "",
       "specify_roles": [
         "奶糖 (M12207_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得精准层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得精准层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得精准层数+3"
+        }
       ]
     },
     {
@@ -55910,6 +56582,20 @@
       "description": "",
       "specify_roles": [
         "巨岩炮手 (M22201_002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -55924,6 +56610,20 @@
       "description": "",
       "specify_roles": [
         "银色游侠 (M12208)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得精准层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得精准层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得精准层数+3"
+        }
       ]
     },
     {
@@ -55938,6 +56638,20 @@
       "description": "",
       "specify_roles": [
         "风行游侠 (M12205)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得精准层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得精准层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得精准层数+3"
+        }
       ]
     },
     {
@@ -55952,6 +56666,20 @@
       "description": "",
       "specify_roles": [
         "星灵射手 (M52301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成追击伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成追击伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成追击伤害+3"
+        }
       ]
     },
     {
@@ -55966,6 +56694,20 @@
       "description": "",
       "specify_roles": [
         "M12205_001"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得滋润层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得滋润层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得滋润层数+3"
+        }
       ]
     },
     {
@@ -55980,6 +56722,20 @@
       "description": "",
       "specify_roles": [
         "M41301_001"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -55994,6 +56750,20 @@
       "description": "",
       "specify_roles": [
         "鱼人祭司 (M13001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "精神+2"
+        },
+        {
+          "level": 2,
+          "effect": "精神+4"
+        },
+        {
+          "level": 3,
+          "effect": "精神+6"
+        }
       ]
     },
     {
@@ -56008,6 +56778,20 @@
       "description": "",
       "specify_roles": [
         "军团祭司 (M14103)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "精神+2"
+        },
+        {
+          "level": 2,
+          "effect": "精神+4"
+        },
+        {
+          "level": 3,
+          "effect": "精神+6"
+        }
       ]
     },
     {
@@ -56022,6 +56806,20 @@
       "description": "",
       "specify_roles": [
         "学院牧师 (M14101)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -56036,6 +56834,20 @@
       "description": "",
       "specify_roles": [
         "狼族先知 (M13104)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -56050,6 +56862,20 @@
       "description": "",
       "specify_roles": [
         "银鳞鲛姬 (M14104)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -56064,6 +56890,20 @@
       "description": "",
       "specify_roles": [
         "狼族先知 (M13104_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "韧性+2"
+        },
+        {
+          "level": 2,
+          "effect": "韧性+4"
+        },
+        {
+          "level": 3,
+          "effect": "韧性+6"
+        }
       ]
     },
     {
@@ -56078,6 +56918,20 @@
       "description": "",
       "specify_roles": [
         "植物学者 (M14207)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得成长层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得成长层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得成长层数+3"
+        }
       ]
     },
     {
@@ -56092,6 +56946,20 @@
       "description": "",
       "specify_roles": [
         "战争祭司 (M14201)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得热血层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得热血层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得热血层数+3"
+        }
       ]
     },
     {
@@ -56106,6 +56974,20 @@
       "description": "",
       "specify_roles": [
         "招财 (M14203)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得信念层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得信念层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得信念层数+3"
+        }
       ]
     },
     {
@@ -56120,6 +57002,20 @@
       "description": "",
       "specify_roles": [
         "哥布林祭司 (M14202)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得加速层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得加速层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得加速层数+3"
+        }
       ]
     },
     {
@@ -56134,6 +57030,20 @@
       "description": "",
       "specify_roles": [
         "招财 (M14203_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得信念层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得信念层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得信念层数+3"
+        }
       ]
     },
     {
@@ -56148,6 +57058,20 @@
       "description": "",
       "specify_roles": [
         "无瑕贤者 (M14301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成净化层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成净化层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成净化层数+3"
+        }
       ]
     },
     {
@@ -56162,6 +57086,20 @@
       "description": "",
       "specify_roles": [
         "异界旅人 (M14303)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成技能恢复+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成技能恢复+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成技能恢复+3"
+        }
       ]
     },
     {
@@ -56176,6 +57114,20 @@
       "description": "",
       "specify_roles": [
         "无瑕贤者 (M14301_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成鼓舞层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成鼓舞层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成鼓舞层数+3"
+        }
       ]
     },
     {
@@ -56190,6 +57142,20 @@
       "description": "",
       "specify_roles": [
         "M14301_001"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成滋润层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成滋润层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成滋润层数+3"
+        }
       ]
     },
     {
@@ -56204,6 +57170,20 @@
       "description": "",
       "specify_roles": [
         "绒针少女 (M14215)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得反伤层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得反伤层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得反伤层数+3"
+        }
       ]
     },
     {
@@ -56218,6 +57198,20 @@
       "description": "",
       "specify_roles": [
         "蛮牛祭司 (M14205)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得热血层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得热血层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得热血层数+3"
+        }
       ]
     },
     {
@@ -56232,6 +57226,20 @@
       "description": "",
       "specify_roles": [
         "巨魔监工 (M14206)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得再生层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得再生层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得再生层数+3"
+        }
       ]
     },
     {
@@ -56246,6 +57254,20 @@
       "description": "",
       "specify_roles": [
         "巨魔监工 (M14206_002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -56260,6 +57282,20 @@
       "description": "",
       "specify_roles": [
         "椰树投手 (M12203)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成脆弱层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成脆弱层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成脆弱层数+3"
+        }
       ]
     },
     {
@@ -56274,6 +57310,20 @@
       "description": "",
       "specify_roles": [
         "蝎尾刺客 (M11210)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成阻碍层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成阻碍层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成阻碍层数+3"
+        }
       ]
     },
     {
@@ -56288,6 +57338,20 @@
       "description": "",
       "specify_roles": [
         "棘刺射手 (M12304)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得反伤层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得反伤层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得反伤层数+3"
+        }
       ]
     },
     {
@@ -56302,6 +57366,20 @@
       "description": "",
       "specify_roles": [
         "红狐祭司 (M14211)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "幸运+1"
+        },
+        {
+          "level": 2,
+          "effect": "幸运+2"
+        },
+        {
+          "level": 3,
+          "effect": "幸运+3"
+        }
       ]
     },
     {
@@ -56316,6 +57394,20 @@
       "description": "",
       "specify_roles": [
         "水晶菇娘 (M13306)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成技能恢复+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成技能恢复+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成技能恢复+3"
+        }
       ]
     },
     {
@@ -56330,6 +57422,20 @@
       "description": "",
       "specify_roles": [
         "蛮牛勇士 (M11304_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "受到普通伤害-1。"
+        },
+        {
+          "level": 2,
+          "effect": "受到普通伤害-1。 (Lv. 2)"
+        },
+        {
+          "level": 3,
+          "effect": "受到普通伤害-1。 (Lv. 3)"
+        }
       ]
     },
     {
@@ -56344,6 +57450,20 @@
       "description": "",
       "specify_roles": [
         "风行游侠 (M12205_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "幸运+1"
+        },
+        {
+          "level": 2,
+          "effect": "幸运+2"
+        },
+        {
+          "level": 3,
+          "effect": "幸运+3"
+        }
       ]
     },
     {
@@ -56358,6 +57478,20 @@
       "description": "",
       "specify_roles": [
         "M51302_000"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得成长层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得成长层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得成长层数+3"
+        }
       ]
     },
     {
@@ -56372,6 +57506,20 @@
       "description": "",
       "specify_roles": [
         "赤焰龙女 (M13310)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -56386,6 +57534,20 @@
       "description": "",
       "specify_roles": [
         "巨魔术士 (M12303)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成感电层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成感电层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成感电层数+3"
+        }
       ]
     },
     {
@@ -56400,6 +57562,20 @@
       "description": "",
       "specify_roles": [
         "鎏金射手 (M22202)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得精准层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得精准层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得精准层数+3"
+        }
       ]
     },
     {
@@ -56414,6 +57590,20 @@
       "description": "",
       "specify_roles": [
         "巨大史莱姆 (M21203)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得再生层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得再生层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得再生层数+3"
+        }
       ]
     },
     {
@@ -56428,6 +57618,20 @@
       "description": "",
       "specify_roles": [
         "流沙刺客 (M22203)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成减速层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成减速层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成减速层数+3"
+        }
       ]
     },
     {
@@ -56442,6 +57646,20 @@
       "description": "",
       "specify_roles": [
         "鎏金射手 (M22202_002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -56456,6 +57674,20 @@
       "description": "",
       "specify_roles": [
         "黄金之女 (M21301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得防护层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得防护层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得防护层数+3"
+        }
       ]
     },
     {
@@ -56470,6 +57702,20 @@
       "description": "",
       "specify_roles": [
         "雪人骑士 (M11303)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "受到冰冷层数-1"
+        },
+        {
+          "level": 2,
+          "effect": "受到冰冷层数-2"
+        },
+        {
+          "level": 3,
+          "effect": "受到冰冷层数-3"
+        }
       ]
     },
     {
@@ -56484,6 +57730,20 @@
       "description": "",
       "specify_roles": [
         "史莱姆王 (M23301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成技能伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成技能伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成技能伤害+3"
+        }
       ]
     },
     {
@@ -56498,6 +57758,20 @@
       "description": "",
       "specify_roles": [
         "破碎剑灵 (M31201)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得坚韧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得坚韧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得坚韧层数+3"
+        }
       ]
     },
     {
@@ -56512,6 +57786,20 @@
       "description": "",
       "specify_roles": [
         "迷失盾灵 (M31202)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得反伤层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得反伤层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得反伤层数+3"
+        }
       ]
     },
     {
@@ -56526,6 +57814,20 @@
       "description": "",
       "specify_roles": [
         "翡翠魔偶 (M33101)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "受到泯灭层数-1"
+        },
+        {
+          "level": 2,
+          "effect": "受到泯灭层数-2"
+        },
+        {
+          "level": 3,
+          "effect": "受到泯灭层数-3"
+        }
       ]
     },
     {
@@ -56540,6 +57842,20 @@
       "description": "",
       "specify_roles": [
         "核心魔偶 (M31302)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成反击伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成反击伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成反击伤害+3"
+        }
       ]
     },
     {
@@ -56554,6 +57870,20 @@
       "description": "",
       "specify_roles": [
         "巨灵之枪 (M31303)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成普通伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成普通伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成普通伤害+3"
+        }
       ]
     },
     {
@@ -56568,6 +57898,20 @@
       "description": "",
       "specify_roles": [
         "圣剑之灵 (M31301_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "受到冰冷层数-1"
+        },
+        {
+          "level": 2,
+          "effect": "受到冰冷层数-2"
+        },
+        {
+          "level": 3,
+          "effect": "受到冰冷层数-3"
+        }
       ]
     },
     {
@@ -56582,6 +57926,20 @@
       "description": "",
       "specify_roles": [
         "许愿灯灵 (M34301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "幸运+1"
+        },
+        {
+          "level": 2,
+          "effect": "幸运+2"
+        },
+        {
+          "level": 3,
+          "effect": "幸运+3"
+        }
       ]
     },
     {
@@ -56596,6 +57954,20 @@
       "description": "",
       "specify_roles": [
         "M31301_000"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成滋润层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成滋润层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成滋润层数+3"
+        }
       ]
     },
     {
@@ -56610,6 +57982,20 @@
       "description": "",
       "specify_roles": [
         "幽灵大副 (M41201)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得加速层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得加速层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得加速层数+3"
+        }
       ]
     },
     {
@@ -56624,6 +58010,20 @@
       "description": "",
       "specify_roles": [
         "魂能法师 (M13202)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成泯灭层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成泯灭层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成泯灭层数+3"
+        }
       ]
     },
     {
@@ -56638,6 +58038,20 @@
       "description": "",
       "specify_roles": [
         "幽灵船长 (M41301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成剥离层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成剥离层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成剥离层数+3"
+        }
       ]
     },
     {
@@ -56652,6 +58066,20 @@
       "description": "",
       "specify_roles": [
         "幽灵船长 (M41301_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成诱导层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成诱导层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成诱导层数+3"
+        }
       ]
     },
     {
@@ -56666,6 +58094,20 @@
       "description": "",
       "specify_roles": [
         "幽暗龙女 (M11302_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得防护层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得防护层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得防护层数+3"
+        }
       ]
     },
     {
@@ -56680,6 +58122,20 @@
       "description": "",
       "specify_roles": [
         "星界守卫 (M51201)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成反击伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成反击伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成反击伤害+3"
+        }
       ]
     },
     {
@@ -56694,6 +58150,20 @@
       "description": "",
       "specify_roles": [
         "狩猎勇士 (M11201_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成恐惧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成恐惧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成恐惧层数+3"
+        }
       ]
     },
     {
@@ -56708,6 +58178,20 @@
       "description": "",
       "specify_roles": [
         "哥布林祭司 (M14202_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成恐惧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成恐惧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成恐惧层数+3"
+        }
       ]
     },
     {
@@ -56722,6 +58206,20 @@
       "description": "",
       "specify_roles": [
         "林中仙女 (M54301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成技能恢复+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成技能恢复+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成技能恢复+3"
+        }
       ]
     },
     {
@@ -56736,6 +58234,20 @@
       "description": "",
       "specify_roles": [
         "星界邪神 (M53301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成恐惧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成恐惧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成恐惧层数+3"
+        }
       ]
     },
     {
@@ -56750,6 +58262,20 @@
       "description": "",
       "specify_roles": [
         "星界邪神 (M53301_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成冰冷层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成冰冷层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成冰冷层数+3"
+        }
       ]
     },
     {
@@ -56764,6 +58290,20 @@
       "description": "",
       "specify_roles": [
         "林中仙女 (M54301_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -56778,6 +58318,20 @@
       "description": "",
       "specify_roles": [
         "M53301_000"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成滋润层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成滋润层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成滋润层数+3"
+        }
       ]
     },
     {
@@ -56792,6 +58346,20 @@
       "description": "",
       "specify_roles": [
         "矿洞采集者 (M12004)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "精神+2"
+        },
+        {
+          "level": 2,
+          "effect": "精神+4"
+        },
+        {
+          "level": 3,
+          "effect": "精神+6"
+        }
       ]
     },
     {
@@ -56806,6 +58374,20 @@
       "description": "",
       "specify_roles": [
         "矿洞淘金者 (M11007)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "力量+2"
+        },
+        {
+          "level": 2,
+          "effect": "力量+4"
+        },
+        {
+          "level": 3,
+          "effect": "力量+6"
+        }
       ]
     },
     {
@@ -56820,6 +58402,20 @@
       "description": "",
       "specify_roles": [
         "树人守卫 (M21101)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "韧性+2"
+        },
+        {
+          "level": 2,
+          "effect": "韧性+4"
+        },
+        {
+          "level": 3,
+          "effect": "韧性+6"
+        }
       ]
     },
     {
@@ -56834,6 +58430,20 @@
       "description": "",
       "specify_roles": [
         "孢子卫士 (M11112)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "韧性+2"
+        },
+        {
+          "level": 2,
+          "effect": "韧性+4"
+        },
+        {
+          "level": 3,
+          "effect": "韧性+6"
+        }
       ]
     },
     {
@@ -56848,6 +58458,20 @@
       "description": "",
       "specify_roles": [
         "巨魔守卫 (M11106)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -56862,6 +58486,20 @@
       "description": "",
       "specify_roles": [
         "巨魔投手 (M12102)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -56876,6 +58514,20 @@
       "description": "",
       "specify_roles": [
         "蛮牛剑豪 (M11209)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得成长层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得成长层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得成长层数+3"
+        }
       ]
     },
     {
@@ -56890,6 +58542,20 @@
       "description": "",
       "specify_roles": [
         "荆棘树妖 (M23203)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得反伤层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得反伤层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得反伤层数+3"
+        }
       ]
     },
     {
@@ -56904,6 +58570,20 @@
       "description": "",
       "specify_roles": [
         "岩石守卫 (M21201)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得防护层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得防护层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得防护层数+3"
+        }
       ]
     },
     {
@@ -56918,6 +58598,20 @@
       "description": "",
       "specify_roles": [
         "古树妖精 (M23202)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得成长层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得成长层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得成长层数+3"
+        }
       ]
     },
     {
@@ -56932,6 +58626,20 @@
       "description": "",
       "specify_roles": [
         "巨岩炮手 (M22201)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成脆弱层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成脆弱层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成脆弱层数+3"
+        }
       ]
     },
     {
@@ -56946,6 +58654,20 @@
       "description": "",
       "specify_roles": [
         "黄沙使者 (M23205)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成减速层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成减速层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成减速层数+3"
+        }
       ]
     },
     {
@@ -56960,6 +58682,20 @@
       "description": "",
       "specify_roles": [
         "地灵使者 (M13302)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成脆弱层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成脆弱层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成脆弱层数+3"
+        }
       ]
     },
     {
@@ -56974,6 +58710,20 @@
       "description": "",
       "specify_roles": [
         "大地魔女 (M13303)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成脆弱层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成脆弱层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成脆弱层数+3"
+        }
       ]
     },
     {
@@ -56988,6 +58738,20 @@
       "description": "",
       "specify_roles": [
         "淘气恶魔 (M51303_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成恐惧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成恐惧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成恐惧层数+3"
+        }
       ]
     },
     {
@@ -57002,6 +58766,20 @@
       "description": "",
       "specify_roles": [
         "无尽领主 (M21302)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成减速层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成减速层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成减速层数+3"
+        }
       ]
     },
     {
@@ -57016,6 +58794,20 @@
       "description": "",
       "specify_roles": [
         "巨魔术士 (M12303_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成阻碍层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成阻碍层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成阻碍层数+3"
+        }
       ]
     },
     {
@@ -57030,6 +58822,20 @@
       "description": "",
       "specify_roles": [
         "蔷薇领主 (M13307)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得成长层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得成长层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得成长层数+3"
+        }
       ]
     },
     {
@@ -57044,6 +58850,20 @@
       "description": "",
       "specify_roles": [
         "哥布林哨兵 (M11002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "力量+2"
+        },
+        {
+          "level": 2,
+          "effect": "力量+4"
+        },
+        {
+          "level": 3,
+          "effect": "力量+6"
+        }
       ]
     },
     {
@@ -57058,6 +58878,20 @@
       "description": "",
       "specify_roles": [
         "军团哨兵 (M11006)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "敏捷+2"
+        },
+        {
+          "level": 2,
+          "effect": "敏捷+4"
+        },
+        {
+          "level": 3,
+          "effect": "敏捷+6"
+        }
       ]
     },
     {
@@ -57072,6 +58906,20 @@
       "description": "",
       "specify_roles": [
         "闪灵少女 (M11102)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "韧性+2"
+        },
+        {
+          "level": 2,
+          "effect": "韧性+4"
+        },
+        {
+          "level": 3,
+          "effect": "韧性+6"
+        }
       ]
     },
     {
@@ -57086,6 +58934,20 @@
       "description": "",
       "specify_roles": [
         "鹰身少女 (M11109)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -57100,6 +58962,20 @@
       "description": "",
       "specify_roles": [
         "孢子射手 (M12106)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -57114,6 +58990,20 @@
       "description": "",
       "specify_roles": [
         "鹰身少女 (M11109_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -57128,6 +59018,20 @@
       "description": "",
       "specify_roles": [
         "丛林猎手 (M13205)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得坚韧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得坚韧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得坚韧层数+3"
+        }
       ]
     },
     {
@@ -57142,6 +59046,20 @@
       "description": "",
       "specify_roles": [
         "绿伞菇娘 (M14208)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得加速层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得加速层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得加速层数+3"
+        }
       ]
     },
     {
@@ -57156,6 +59074,20 @@
       "description": "",
       "specify_roles": [
         "荒野兽王 (M11206)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得热血层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得热血层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得热血层数+3"
+        }
       ]
     },
     {
@@ -57170,6 +59102,20 @@
       "description": "",
       "specify_roles": [
         "恶狼勇士 (M11205)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得加速层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得加速层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得加速层数+3"
+        }
       ]
     },
     {
@@ -57184,6 +59130,20 @@
       "description": "",
       "specify_roles": [
         "狂风战士 (M21202)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成剥离层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成剥离层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成剥离层数+3"
+        }
       ]
     },
     {
@@ -57198,6 +59158,20 @@
       "description": "",
       "specify_roles": [
         "鹰身公主 (M12301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成追击伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成追击伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成追击伤害+3"
+        }
       ]
     },
     {
@@ -57212,6 +59186,20 @@
       "description": "",
       "specify_roles": [
         "巨灵之枪 (M31303_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成感电层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成感电层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成感电层数+3"
+        }
       ]
     },
     {
@@ -57226,6 +59214,20 @@
       "description": "",
       "specify_roles": [
         "鹰身公主 (M12301_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成冰冷层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成冰冷层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成冰冷层数+3"
+        }
       ]
     },
     {
@@ -57240,6 +59242,20 @@
       "description": "",
       "specify_roles": [
         "核心魔偶 (M31302_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成追击伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成追击伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成追击伤害+3"
+        }
       ]
     },
     {
@@ -57254,6 +59270,20 @@
       "description": "",
       "specify_roles": [
         "星灵射手 (M52301_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成普通伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成普通伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成普通伤害+3"
+        }
       ]
     },
     {
@@ -57268,6 +59298,20 @@
       "description": "",
       "specify_roles": [
         "鱼人战士 (M11004)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "力量+2"
+        },
+        {
+          "level": 2,
+          "effect": "力量+4"
+        },
+        {
+          "level": 3,
+          "effect": "力量+6"
+        }
       ]
     },
     {
@@ -57282,6 +59326,20 @@
       "description": "",
       "specify_roles": [
         "鱼人哨兵 (M11003)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "敏捷+2"
+        },
+        {
+          "level": 2,
+          "effect": "敏捷+4"
+        },
+        {
+          "level": 3,
+          "effect": "敏捷+6"
+        }
       ]
     },
     {
@@ -57296,6 +59354,20 @@
       "description": "",
       "specify_roles": [
         "水族士兵 (M11113)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "韧性+2"
+        },
+        {
+          "level": 2,
+          "effect": "韧性+4"
+        },
+        {
+          "level": 3,
+          "effect": "韧性+6"
+        }
       ]
     },
     {
@@ -57310,6 +59382,20 @@
       "description": "",
       "specify_roles": [
         "银鳞守卫 (M11107)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "韧性+2"
+        },
+        {
+          "level": 2,
+          "effect": "韧性+4"
+        },
+        {
+          "level": 3,
+          "effect": "韧性+6"
+        }
       ]
     },
     {
@@ -57324,6 +59410,20 @@
       "description": "",
       "specify_roles": [
         "蓝鲨教官 (M11110)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -57338,6 +59438,20 @@
       "description": "",
       "specify_roles": [
         "贝壳少女 (M12103)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -57352,6 +59466,20 @@
       "description": "",
       "specify_roles": [
         "水族统领 (M11207)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得反伤层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得反伤层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得反伤层数+3"
+        }
       ]
     },
     {
@@ -57366,6 +59494,20 @@
       "description": "",
       "specify_roles": [
         "鱼人先锋 (M11208)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得再生层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得再生层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得再生层数+3"
+        }
       ]
     },
     {
@@ -57380,6 +59522,20 @@
       "description": "",
       "specify_roles": [
         "波涛守卫 (M21204)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得滋润层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得滋润层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得滋润层数+3"
+        }
       ]
     },
     {
@@ -57394,6 +59550,20 @@
       "description": "",
       "specify_roles": [
         "牧鱼少女 (M13105)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得滋润层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得滋润层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得滋润层数+3"
+        }
       ]
     },
     {
@@ -57408,6 +59578,20 @@
       "description": "",
       "specify_roles": [
         "战争祭司 (M14201_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成冰冷层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成冰冷层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成冰冷层数+3"
+        }
       ]
     },
     {
@@ -57422,6 +59606,20 @@
       "description": "",
       "specify_roles": [
         "辰龙 (M51302)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得滋润层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得滋润层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得滋润层数+3"
+        }
       ]
     },
     {
@@ -57436,6 +59634,20 @@
       "description": "",
       "specify_roles": [
         "宁静水灵 (M24301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成滋润层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成滋润层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成滋润层数+3"
+        }
       ]
     },
     {
@@ -57450,6 +59662,20 @@
       "description": "",
       "specify_roles": [
         "冰蛛女王 (M22301)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成冰冷层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成冰冷层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成冰冷层数+3"
+        }
       ]
     },
     {
@@ -57464,6 +59690,20 @@
       "description": "",
       "specify_roles": [
         "辰龙 (M51302_001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成净化层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成净化层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成净化层数+3"
+        }
       ]
     },
     {
@@ -57478,6 +59718,20 @@
       "description": "",
       "specify_roles": [
         "荒漠盗贼 (M11008)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "力量+2"
+        },
+        {
+          "level": 2,
+          "effect": "力量+4"
+        },
+        {
+          "level": 3,
+          "effect": "力量+6"
+        }
       ]
     },
     {
@@ -57492,6 +59746,20 @@
       "description": "",
       "specify_roles": [
         "荒漠猎手 (M11009)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "敏捷+2"
+        },
+        {
+          "level": 2,
+          "effect": "敏捷+4"
+        },
+        {
+          "level": 3,
+          "effect": "敏捷+6"
+        }
       ]
     },
     {
@@ -57506,6 +59774,20 @@
       "description": "",
       "specify_roles": [
         "矿洞淘金者 (M11007_002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "力量+2"
+        },
+        {
+          "level": 2,
+          "effect": "力量+4"
+        },
+        {
+          "level": 3,
+          "effect": "力量+6"
+        }
       ]
     },
     {
@@ -57520,6 +59802,20 @@
       "description": "",
       "specify_roles": [
         "矿洞采集者 (M12004_002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "敏捷+2"
+        },
+        {
+          "level": 2,
+          "effect": "敏捷+4"
+        },
+        {
+          "level": 3,
+          "effect": "敏捷+6"
+        }
       ]
     },
     {
@@ -57534,6 +59830,20 @@
       "description": "",
       "specify_roles": [
         "狼灵战士 (M11103)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -57548,6 +59858,20 @@
       "description": "",
       "specify_roles": [
         "荒漠守卫 (M11115)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -57562,6 +59886,20 @@
       "description": "",
       "specify_roles": [
         "遗迹猎人 (M13107)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -57576,6 +59914,20 @@
       "description": "",
       "specify_roles": [
         "巨魔守卫 (M11106_002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -57590,6 +59942,20 @@
       "description": "",
       "specify_roles": [
         "巨魔投手 (M12102_002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "生命+4"
+        },
+        {
+          "level": 2,
+          "effect": "生命+8"
+        },
+        {
+          "level": 3,
+          "effect": "生命+12"
+        }
       ]
     },
     {
@@ -57604,6 +59970,20 @@
       "description": "",
       "specify_roles": [
         "军团铁骑 (M11204)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得热血层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得热血层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得热血层数+3"
+        }
       ]
     },
     {
@@ -57618,6 +59998,20 @@
       "description": "",
       "specify_roles": [
         "爆炸菇娘 (M14204)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成脆弱层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成脆弱层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成脆弱层数+3"
+        }
       ]
     },
     {
@@ -57632,6 +60026,20 @@
       "description": "",
       "specify_roles": [
         "火焰女妖 (M21205)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -57646,6 +60054,20 @@
       "description": "",
       "specify_roles": [
         "佣兵枪手 (M12210)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -57660,6 +60082,20 @@
       "description": "",
       "specify_roles": [
         "荒野猎人 (M11202)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得热血层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得热血层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得热血层数+3"
+        }
       ]
     },
     {
@@ -57674,6 +60110,20 @@
       "description": "",
       "specify_roles": [
         "荒漠舞姬 (M12211)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成鼓舞层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成鼓舞层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成鼓舞层数+3"
+        }
       ]
     },
     {
@@ -57688,6 +60138,20 @@
       "description": "",
       "specify_roles": [
         "军团统领 (M11301_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成技能伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成技能伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成技能伤害+3"
+        }
       ]
     },
     {
@@ -57702,6 +60166,20 @@
       "description": "",
       "specify_roles": [
         "黄金之女 (M21301_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -57716,6 +60194,20 @@
       "description": "",
       "specify_roles": [
         "大地魔女 (M13303_002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -57730,6 +60222,20 @@
       "description": "",
       "specify_roles": [
         "雪人骑士 (M11303_002)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成灼烧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成灼烧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成灼烧层数+3"
+        }
       ]
     },
     {
@@ -57744,6 +60250,20 @@
       "description": "",
       "specify_roles": [
         "史莱姆牧师 (M24001)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "精神+2"
+        },
+        {
+          "level": 2,
+          "effect": "精神+4"
+        },
+        {
+          "level": 3,
+          "effect": "精神+6"
+        }
       ]
     },
     {
@@ -57758,6 +60278,20 @@
       "description": "",
       "specify_roles": [
         "史莱姆侍女 (M24101)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "韧性+2"
+        },
+        {
+          "level": 2,
+          "effect": "韧性+4"
+        },
+        {
+          "level": 3,
+          "effect": "韧性+6"
+        }
       ]
     },
     {
@@ -57772,6 +60306,20 @@
       "description": "",
       "specify_roles": [
         "白银歌姬 (M24102)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "韧性+2"
+        },
+        {
+          "level": 2,
+          "effect": "韧性+4"
+        },
+        {
+          "level": 3,
+          "effect": "韧性+6"
+        }
       ]
     },
     {
@@ -57786,6 +60334,20 @@
       "description": "",
       "specify_roles": [
         "疾行闪光 (M11108)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -57800,6 +60362,20 @@
       "description": "",
       "specify_roles": [
         "大探险家 (M12104)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -57814,6 +60390,20 @@
       "description": "",
       "specify_roles": [
         "日耀祭司 (M13207)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成净化层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成净化层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成净化层数+3"
+        }
       ]
     },
     {
@@ -57828,6 +60418,20 @@
       "description": "",
       "specify_roles": [
         "飓风使者 (M23204_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成感电层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成感电层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成感电层数+3"
+        }
       ]
     },
     {
@@ -57842,6 +60446,20 @@
       "description": "",
       "specify_roles": [
         "诡秘之影 (M12201_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "幸运+1"
+        },
+        {
+          "level": 2,
+          "effect": "幸运+2"
+        },
+        {
+          "level": 3,
+          "effect": "幸运+3"
+        }
       ]
     },
     {
@@ -57856,6 +60474,20 @@
       "description": "",
       "specify_roles": [
         "狂风战士 (M21202_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成感电层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成感电层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成感电层数+3"
+        }
       ]
     },
     {
@@ -57870,6 +60502,20 @@
       "description": "",
       "specify_roles": [
         "银狐神官 (M14210)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成净化层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成净化层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成净化层数+3"
+        }
       ]
     },
     {
@@ -57884,6 +60530,20 @@
       "description": "",
       "specify_roles": [
         "史莱姆王 (M23301_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成技能伤害+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成技能伤害+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成技能伤害+3"
+        }
       ]
     },
     {
@@ -57898,6 +60558,20 @@
       "description": "",
       "specify_roles": [
         "魔术大师 (M13305_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "幸运+1"
+        },
+        {
+          "level": 2,
+          "effect": "幸运+2"
+        },
+        {
+          "level": 3,
+          "effect": "幸运+3"
+        }
       ]
     },
     {
@@ -57912,6 +60586,20 @@
       "description": "",
       "specify_roles": [
         "宁静水灵 (M24301_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成净化层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成净化层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成净化层数+3"
+        }
       ]
     },
     {
@@ -57926,6 +60614,20 @@
       "description": "",
       "specify_roles": [
         "许愿灯灵 (M34301_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "精神+5"
+        },
+        {
+          "level": 2,
+          "effect": "精神+10"
+        },
+        {
+          "level": 3,
+          "effect": "精神+15"
+        }
       ]
     },
     {
@@ -57940,6 +60642,20 @@
       "description": "",
       "specify_roles": [
         "无尽领主 (M21302_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得防护层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得防护层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得防护层数+3"
+        }
       ]
     },
     {
@@ -57954,6 +60670,20 @@
       "description": "",
       "specify_roles": [
         "迷幻菇娘 (M14102)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "精神+2"
+        },
+        {
+          "level": 2,
+          "effect": "精神+4"
+        },
+        {
+          "level": 3,
+          "effect": "精神+6"
+        }
       ]
     },
     {
@@ -57968,6 +60698,20 @@
       "description": "",
       "specify_roles": [
         "兵蜂战士 (M11005)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "力量+2"
+        },
+        {
+          "level": 2,
+          "effect": "力量+4"
+        },
+        {
+          "level": 3,
+          "effect": "力量+6"
+        }
       ]
     },
     {
@@ -57982,6 +60726,20 @@
       "description": "",
       "specify_roles": [
         "兵蜂猎手 (M12003)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "敏捷+2"
+        },
+        {
+          "level": 2,
+          "effect": "敏捷+4"
+        },
+        {
+          "level": 3,
+          "effect": "敏捷+6"
+        }
       ]
     },
     {
@@ -57996,6 +60754,20 @@
       "description": "",
       "specify_roles": [
         "迷失之魂 (M43101)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "韧性+2"
+        },
+        {
+          "level": 2,
+          "effect": "韧性+4"
+        },
+        {
+          "level": 3,
+          "effect": "韧性+6"
+        }
       ]
     },
     {
@@ -58010,6 +60782,20 @@
       "description": "",
       "specify_roles": [
         "幽灵枪手 (M42101)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "韧性+2"
+        },
+        {
+          "level": 2,
+          "effect": "韧性+4"
+        },
+        {
+          "level": 3,
+          "effect": "韧性+6"
+        }
       ]
     },
     {
@@ -58024,6 +60810,20 @@
       "description": "",
       "specify_roles": [
         "幽灵水手 (M41101)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -58038,6 +60838,20 @@
       "description": "",
       "specify_roles": [
         "游荡人偶 (M32103)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "速度+2"
+        },
+        {
+          "level": 2,
+          "effect": "速度+4"
+        },
+        {
+          "level": 3,
+          "effect": "速度+6"
+        }
       ]
     },
     {
@@ -58052,6 +60866,20 @@
       "description": "",
       "specify_roles": [
         "诡秘之影 (M12201)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "获得加速层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "获得加速层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "获得加速层数+3"
+        }
       ]
     },
     {
@@ -58066,6 +60894,20 @@
       "description": "",
       "specify_roles": [
         "魔术侍从 (M13204)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成诱导层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成诱导层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成诱导层数+3"
+        }
       ]
     },
     {
@@ -58080,6 +60922,20 @@
       "description": "",
       "specify_roles": [
         "孢子女巫 (M13206)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成阻碍层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成阻碍层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成阻碍层数+3"
+        }
       ]
     },
     {
@@ -58094,6 +60950,20 @@
       "description": "",
       "specify_roles": [
         "月影祭司 (M14213)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成净化层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成净化层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成净化层数+3"
+        }
       ]
     },
     {
@@ -58108,6 +60978,20 @@
       "description": "",
       "specify_roles": [
         "黄蜂魔女 (M13304)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成阻碍层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成阻碍层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成阻碍层数+3"
+        }
       ]
     },
     {
@@ -58122,6 +61006,20 @@
       "description": "",
       "specify_roles": [
         "幽暗龙女 (M11302)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成恐惧层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成恐惧层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成恐惧层数+3"
+        }
       ]
     },
     {
@@ -58136,6 +61034,20 @@
       "description": "",
       "specify_roles": [
         "淘气恶魔 (M51303)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成脆弱层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成脆弱层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成脆弱层数+3"
+        }
       ]
     },
     {
@@ -58150,6 +61062,20 @@
       "description": "",
       "specify_roles": [
         "水晶菇娘 (M13306_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成泯灭层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成泯灭层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成泯灭层数+3"
+        }
       ]
     },
     {
@@ -58164,6 +61090,20 @@
       "description": "",
       "specify_roles": [
         "蔷薇领主 (M13307_000)"
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "effect": "造成剥离层数+1"
+        },
+        {
+          "level": 2,
+          "effect": "造成剥离层数+2"
+        },
+        {
+          "level": 3,
+          "effect": "造成剥离层数+3"
+        }
       ]
     }
   ],
