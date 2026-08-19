@@ -23956,6 +23956,8 @@ const GuidesView = {
     const descText = tile.description?.[currentLang] || tile.description?.RU || '';
     const hasDrops = (rates.chest > 0 || rates.equip > 0 || rates.role > 0 || rates.materials > 0 || rates.stones > 0 || rates.gold > 0);
 
+    const imageMappings = (typeof App !== 'undefined' && App.state?.imageMappings) ? App.state.imageMappings : {};
+
     const catBadges = {
       chest: { bg: 'rgba(234, 179, 8, 0.15)', text: '#facc15', border: 'rgba(234, 179, 8, 0.3)', icon: '📦' },
       resource: { bg: 'rgba(34, 197, 94, 0.15)', text: '#4ade80', border: 'rgba(34, 197, 94, 0.3)', icon: '🌿' },
@@ -23968,15 +23970,15 @@ const GuidesView = {
     const currentCatStyle = catBadges[cat] || catBadges.terrain;
 
     return `
-      <div class="modal-dialog map-tile-modal-dialog" style="max-width: 720px; background: #0b1329; border: 1px solid rgba(56, 189, 248, 0.25); border-radius: var(--radius-lg); box-shadow: 0 20px 60px rgba(0,0,0,0.7);">
-        <div class="modal-header" style="padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: space-between;">
+      <div class="modal-dialog map-tile-modal-dialog" style="max-width: 760px; background: #0b1329; border: 1px solid rgba(56, 189, 248, 0.25); border-radius: var(--radius-lg); box-shadow: 0 20px 60px rgba(0,0,0,0.75);">
+        <div class="modal-header" style="padding: 16px 22px; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: space-between;">
           <div class="modal-title-area" style="display: flex; align-items: center; gap: 14px;">
             ${(typeof App !== 'undefined' && App.renderModalBackButton) ? App.renderModalBackButton(currentLang) : ''}
-            <div class="char-portrait-container" style="width: 52px; height: 52px; font-size: 28px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.4); border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.1); flex-shrink: 0;">
+            <div class="char-portrait-container" style="width: 54px; height: 54px; font-size: 28px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.45); border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.1); flex-shrink: 0;">
               ${icon}
             </div>
             <div>
-              <div class="char-modal-name" style="font-size: 20px; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 8px;">
+              <div class="char-modal-name" style="font-size: 21px; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 8px;">
                 <span>${this.escapeHtml(name)}</span>
                 ${isSpec ? `<span style="font-size: 10px; background: rgba(250, 204, 21, 0.15); color: #fde047; padding: 2px 7px; border-radius: 4px; font-weight: 800; border: 1px solid rgba(250, 204, 21, 0.35);">⭐ ОСОБАЯ</span>` : ''}
               </div>
@@ -23996,24 +23998,24 @@ const GuidesView = {
           <button class="modal-close-btn" onclick="App.closeDetailModal()" title="Закрыть" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); color: #94a3b8; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.15s ease;">✕</button>
         </div>
 
-        <div class="modal-body" style="padding: 20px; display: flex; flex-direction: column; gap: 16px; max-height: 75vh; overflow-y: auto;">
-          <!-- Description & Lore -->
+        <div class="modal-body" style="padding: 20px 22px; display: flex; flex-direction: column; gap: 18px; max-height: 75vh; overflow-y: auto;">
+          <!-- Description & Mechanics -->
           ${descText ? `
             <div class="detail-section" style="margin-bottom: 0;">
-              <div style="background: rgba(0,0,0,0.3); padding: 12px 16px; border-radius: var(--radius-md); font-size: 13.5px; line-height: 1.6; color: #cbd5e1; border-left: 3.5px solid ${isSpec ? '#facc15' : '#38bdf8'}; border: 1px solid rgba(255,255,255,0.06); border-left-width: 3.5px;">
+              <div style="background: rgba(0,0,0,0.35); padding: 13px 16px; border-radius: var(--radius-md); font-size: 13.5px; line-height: 1.6; color: #cbd5e1; border-left: 4px solid ${isSpec ? '#facc15' : '#38bdf8'}; border: 1px solid rgba(255,255,255,0.06); border-left-width: 4px;">
                 ${this.escapeHtml(descText)}
               </div>
             </div>
           ` : ''}
 
-          <!-- Drop Rates Breakdown -->
+          <!-- Drop Rates Breakdown (Cards) -->
           ${hasDrops ? `
             <div class="detail-section" style="margin-bottom: 0;">
               <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 10px;">
-                <span>📊 ${isRu ? 'Шансы и категории дропа' : (isCn ? '掉落概率与类别' : 'Drop Rates Breakdown')}</span>
-                <span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">Таблица вероятностей</span>
+                <span>📊 ${isRu ? 'Вероятности категорий дропа' : (isCn ? '掉落类别与概率' : 'Category Drop Rates')}</span>
+                <span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">Таблица весов</span>
               </div>
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 8px;">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(105px, 1fr)); gap: 8px;">
                 ${rates.chest > 0 ? `
                   <div style="background: rgba(234, 179, 8, 0.08); border: 1px solid rgba(234, 179, 8, 0.25); border-radius: var(--radius-sm); padding: 8px 10px; text-align: center;">
                     <div style="font-size: 11px; color: var(--text-muted);">📦 ${isRu ? 'Сундуки' : 'Chests'}</div>
@@ -24022,7 +24024,7 @@ const GuidesView = {
                 ` : ''}
                 ${rates.equip > 0 ? `
                   <div style="background: rgba(244, 114, 182, 0.08); border: 1px solid rgba(244, 114, 182, 0.25); border-radius: var(--radius-sm); padding: 8px 10px; text-align: center;">
-                    <div style="font-size: 11px; color: var(--text-muted);">⚔️ ${isRu ? 'Экипировка' : 'Gear'}</div>
+                    <div style="font-size: 11px; color: var(--text-muted);">⚔️ ${isRu ? 'Снаряжение' : 'Gear'}</div>
                     <div style="font-size: 16px; font-weight: 800; color: #f472b6; margin-top: 2px;">${rates.equip}%</div>
                   </div>
                 ` : ''}
@@ -24054,77 +24056,105 @@ const GuidesView = {
             </div>
           ` : ''}
 
-          <!-- Drop Summary List -->
-          ${dropsSummary.length > 0 ? `
+          <!-- CHEST-STYLE LOOT GRID: Possible Chests -->
+          ${possibleChests.length > 0 && rates.chest > 0 ? `
             <div class="detail-section" style="margin-bottom: 0;">
-              <div class="section-heading" style="font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 8px;">
-                🎁 ${isRu ? 'Таблица наград и дропа' : (isCn ? '掉落战利品清单' : 'Drops & Rewards Table')}
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                <span>📦 ${isRu ? 'Возможные сундуки на тайле' : (isCn ? '可能出现的宝箱' : 'Possible Chests')} (${possibleChests.length})</span>
+                <span style="font-size: 11.5px; font-weight: normal; color: var(--text-muted);">
+                  💡 ${isRu ? 'Наведите для названия • Кликните для просмотра лута сундука' : (isCn ? '悬停查看名称 • 点击查看宝箱掉落' : 'Hover for name • Click to view chest loot')}
+                </span>
               </div>
-              <div style="background: rgba(10, 15, 29, 0.7); border: 1px solid rgba(255,255,255,0.06); padding: 12px 16px; border-radius: var(--radius-md); font-size: 13px; line-height: 1.8; color: #e2e8f0; display: flex; flex-direction: column; gap: 4px;">
-                ${dropsSummary.map(d => `<div style="display: flex; align-items: center; gap: 8px;"><span>•</span> <span>${this.escapeHtml(d)}</span></div>`).join('')}
+              <div class="chest-loot-grid" style="background: rgba(10, 14, 23, 0.7); border: 1px solid rgba(234, 179, 8, 0.3); max-height: 220px;">
+                ${possibleChests.map(ch => {
+                  const chName = ch.name?.[currentLang] || ch.name?.RU || ch.id;
+                  const chStep = ch.step || 'A';
+                  const tierClass = chStep ? `loot-tier-${chStep.toLowerCase()}` : '';
+                  const tooltipText = `📦 ${chName} [${chStep}★] • ${ch.drop_type || 'Сундук'}`;
+                  
+                  return `
+                    <div class="loot-tile ${tierClass}" 
+                         onclick="App.openItemModal('chests', '${ch.id}')" 
+                         title="${this.escapeHtml(tooltipText)}"
+                         data-tooltip="${this.escapeHtml(tooltipText)}">
+                      <div class="loot-tile-icon-box">
+                        <span style="font-size: 24px;">📦</span>
+                      </div>
+                      <span class="loot-tile-tier">${chStep}</span>
+                    </div>
+                  `;
+                }).join('')}
               </div>
             </div>
           ` : ''}
 
-          <!-- Harvestable Materials -->
+          <!-- CHEST-STYLE LOOT GRID: Direct Equipment Drops -->
+          ${possibleEquips.length > 0 && (rates.equip > 0 || isSpec) ? `
+            <div class="detail-section" style="margin-bottom: 0;">
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                <span>⚔️ ${isRu ? 'Прямой дроп снаряжения' : (isCn ? '可能掉落装备' : 'Direct Gear Drops')} (${possibleEquips.length})</span>
+                <span style="font-size: 11.5px; font-weight: normal; color: var(--text-muted);">
+                  💡 ${isRu ? 'Наведите для характеристик • Кликните для карточки' : (isCn ? '悬停查看属性 • 点击查看装备' : 'Hover for stats • Click for gear card')}
+                </span>
+              </div>
+              <div class="chest-loot-grid" style="background: rgba(10, 14, 23, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); max-height: 240px;">
+                ${possibleEquips.map(eq => {
+                  const eqName = eq.name?.[currentLang] || eq.name?.RU || eq.id;
+                  const eqStep = eq.step || 'A';
+                  const tierClass = eqStep ? `loot-tier-${eqStep.toLowerCase()}` : '';
+                  const eqIcon = (typeof ItemsView !== 'undefined' && ItemsView.getItemIcon) ? ItemsView.getItemIcon(eq, 'equipment', imageMappings) : '';
+                  const tooltipText = `⚔️ ${eqName} [${eqStep}★]${eq.slot ? ` • ${eq.slot}` : ''}`;
+
+                  return `
+                    <div class="loot-tile ${tierClass}" 
+                         onclick="App.openItemModal('equipment', '${eq.id}')" 
+                         title="${this.escapeHtml(tooltipText)}"
+                         data-tooltip="${this.escapeHtml(tooltipText)}">
+                      <div class="loot-tile-icon-box">
+                        ${eqIcon ? `
+                          <img src="${eqIcon}" alt="${this.escapeHtml(eqName)}" class="loot-tile-img" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='inline-block';">
+                          <span style="display: none; font-size: 22px;">⚔️</span>
+                        ` : `<span style="font-size: 22px;">⚔️</span>`}
+                      </div>
+                      <span class="loot-tile-tier">${eqStep}</span>
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+            </div>
+          ` : ''}
+
+          <!-- CHEST-STYLE LOOT GRID: Harvestable Materials & Ingredients -->
           ${mats.length > 0 ? `
             <div class="detail-section" style="margin-bottom: 0;">
-              <div class="section-heading" style="font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 8px;">🌿 ${isRu ? 'Добываемые материалы и ресурсы' : (isCn ? '可采集素材与产出' : 'Harvestable Materials')}</div>
-              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                <span>🌿 ${isRu ? 'Добываемые материалы и трофеи' : (isCn ? '可采集素材与产出' : 'Harvestable Materials & Trophies')} (${mats.length})</span>
+                <span style="font-size: 11.5px; font-weight: normal; color: var(--text-muted);">
+                  💡 ${isRu ? 'Кликните на ресурс для подробностей' : 'Click resource for details'}
+                </span>
+              </div>
+              <div class="chest-loot-grid" style="background: rgba(10, 14, 23, 0.7); border: 1px solid rgba(34, 197, 94, 0.3); max-height: 180px; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));">
                 ${mats.map(m => `
-                  <span class="tag-badge clickable-badge" 
-                        onclick="event.stopPropagation(); App.openItemModal('ingredients', '${this.escapeHtml(m)}')" 
-                        title="${isRu ? 'Нажмите, чтобы открыть информацию о материале' : 'Click to view material'}"
-                        style="background: rgba(34, 197, 94, 0.12); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.35); font-size: 13px; padding: 6px 14px; cursor: pointer; border-radius: var(--radius-sm); transition: all 0.15s ease;">
-                    💎 ${this.escapeHtml(m)}
-                  </span>
+                  <div class="loot-tile loot-tier-b" 
+                       onclick="App.openItemModal('ingredients', '${this.escapeHtml(m)}')" 
+                       title="${this.escapeHtml(m)}"
+                       style="aspect-ratio: auto; padding: 8px 10px; display: flex; align-items: center; gap: 8px; justify-content: flex-start;">
+                    <span style="font-size: 18px;">💎</span>
+                    <span style="font-size: 12px; font-weight: 700; color: #4ade80; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${this.escapeHtml(m)}</span>
+                  </div>
                 `).join('')}
               </div>
             </div>
           ` : ''}
 
-          <!-- Possible Chests -->
-          ${possibleChests.length > 0 && rates.chest > 0 ? `
+          <!-- Drops Breakdown / Summary Table -->
+          ${dropsSummary.length > 0 ? `
             <div class="detail-section" style="margin-bottom: 0;">
-              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 8px;">
-                <span>📦 ${isRu ? 'Возможные сундуки на тайле' : (isCn ? '可能出现的宝箱' : 'Possible Chests')} (${possibleChests.length})</span>
-                <span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">${isRu ? 'Кликните для просмотра лута' : 'Click chest to view loot'}</span>
+              <div class="section-heading" style="font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 8px;">
+                🎁 ${isRu ? 'Сводная таблица дропа и шансов' : (isCn ? '详细掉落构成清单' : 'Detailed Drops & Bounty Breakdown')}
               </div>
-              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                ${possibleChests.map(c => {
-                  const cName = c.name?.[currentLang] || c.name?.RU || c.id;
-                  return `
-                    <span class="tag-badge clickable-badge" 
-                          onclick="event.stopPropagation(); App.openItemModal('chests', '${c.id}')" 
-                          title="${this.escapeHtml(cName)} [${c.step}★]"
-                          style="background: rgba(234, 179, 8, 0.1); color: #facc15; border: 1px solid rgba(234, 179, 8, 0.35); padding: 6px 12px; font-size: 12px; cursor: pointer; border-radius: var(--radius-sm); transition: all 0.15s ease;">
-                      📦 ${this.escapeHtml(cName)} <span style="font-weight: 700; color: #fff;">[${c.step}★]</span>
-                    </span>
-                  `;
-                }).join('')}
-              </div>
-            </div>
-          ` : ''}
-
-          <!-- Possible Equipment -->
-          ${possibleEquips.length > 0 && rates.equip > 0 ? `
-            <div class="detail-section" style="margin-bottom: 0;">
-              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 700; color: #f1f5f9; margin-bottom: 8px;">
-                <span>⚔️ ${isRu ? 'Прямой дроп снаряжения в локации' : (isCn ? '可能掉落装备' : 'Direct Gear Drops')} (${possibleEquips.length})</span>
-                <span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">${isRu ? 'Кликните для характеристик' : 'Click gear for stats'}</span>
-              </div>
-              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                ${possibleEquips.map(eq => {
-                  const eqName = eq.name?.[currentLang] || eq.name?.RU || eq.id;
-                  return `
-                    <span class="tag-badge clickable-badge" 
-                          onclick="event.stopPropagation(); App.openItemModal('equipment', '${eq.id}')" 
-                          title="${this.escapeHtml(eqName)} [${eq.step}★]"
-                          style="background: rgba(56, 189, 248, 0.1); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); padding: 6px 12px; font-size: 12px; cursor: pointer; border-radius: var(--radius-sm); transition: all 0.15s ease;">
-                      ⚔️ ${this.escapeHtml(eqName)} <span style="font-weight: 700; color: #fff;">[${eq.step}★]</span>
-                    </span>
-                  `;
-                }).join('')}
+              <div style="background: rgba(10, 15, 29, 0.75); border: 1px solid rgba(255,255,255,0.06); padding: 12px 16px; border-radius: var(--radius-md); font-size: 13px; line-height: 1.8; color: #e2e8f0; display: flex; flex-direction: column; gap: 4px;">
+                ${dropsSummary.map(d => `<div style="display: flex; align-items: center; gap: 8px;"><span style="color: #38bdf8;">•</span> <span>${this.escapeHtml(d)}</span></div>`).join('')}
               </div>
             </div>
           ` : ''}
@@ -24144,7 +24174,7 @@ const GuidesView = {
           ` : ''}
         </div>
 
-        <div class="modal-footer" style="padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); background: rgba(10, 15, 29, 0.95); border-bottom-left-radius: var(--radius-lg); border-bottom-right-radius: var(--radius-lg);">
+        <div class="modal-footer" style="padding: 14px 22px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08); background: rgba(10, 15, 29, 0.95); border-bottom-left-radius: var(--radius-lg); border-bottom-right-radius: var(--radius-lg);">
           <button class="tile-action-link-btn" 
                   onclick="GuidesView.copyTileLink('${tile.id}')" 
                   style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: #94a3b8; border-radius: var(--radius-sm); padding: 7px 16px; font-size: 12.5px; font-weight: 600; cursor: pointer; transition: all 0.15s ease; display: flex; align-items: center; gap: 6px;">
