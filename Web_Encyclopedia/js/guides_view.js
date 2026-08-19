@@ -45098,6 +45098,7 @@ const GuidesView = {
   tilesFilter: 'all',
   tilesSearchQuery: '',
   isNavCollapsedMobile: false,
+  defaultMapTiles: (typeof defaultMapTiles !== 'undefined' ? defaultMapTiles : []),
 
   setSection(sectionId) {
     this.activeSection = sectionId;
@@ -45495,6 +45496,124 @@ const GuidesView = {
             </div>
           </div>
 
+        </div>
+      </div>
+    `;
+  },
+
+
+
+  // 2. Interactive Map Tiles Atlas (184 Tiles with Categories & Search)
+  getTilesContent(lang = 'RU') {
+    const isRu = lang === 'RU';
+    const isCn = lang === 'CN';
+    const tiles = (typeof App !== 'undefined' && App.state?.mapTiles && App.state.mapTiles.length)
+      ? App.state.mapTiles
+      : ((typeof defaultMapTiles !== 'undefined') ? defaultMapTiles : (this.defaultMapTiles || []));
+
+    const filter = this.tilesFilter || 'all';
+    const query = (this.tilesSearchQuery || '').toLowerCase().trim();
+
+    let filtered = tiles.filter(t => {
+      if (filter !== 'all' && t.category !== filter) return false;
+      if (query) {
+        const name = (typeof t.name === 'object' ? (t.name[lang] || t.name.RU || '') : (t.name || '')).toLowerCase();
+        const desc = (typeof t.description === 'object' ? (t.description[lang] || t.description.RU || '') : (t.description || '')).toLowerCase();
+        const catName = (typeof t.category_name === 'object' ? (t.category_name[lang] || t.category_name.RU || '') : (t.category_name || '')).toLowerCase();
+        const id = String(t.id || '').toLowerCase();
+        if (!name.includes(query) && !desc.includes(query) && !catName.includes(query) && !id.includes(query)) return false;
+      }
+      return true;
+    });
+
+    const categories = [
+      { key: 'all', label: isRu ? 'Все клетки' : (isCn ? '全部地块' : 'All Tiles'), count: tiles.length },
+      { key: 'special', label: isRu ? '🌟 Особые & Тайники' : (isCn ? '🌟 圣所与特殊' : '🌟 Special & Sanctuaries'), count: tiles.filter(t => t.category === 'special').length },
+      { key: 'altar', label: isRu ? '🏛️ Алтари & Стелы' : (isCn ? '🏛️ 祭坛与石碑' : '🏛️ Altars & Steles'), count: tiles.filter(t => t.category === 'altar').length },
+      { key: 'mimic', label: isRu ? '🧰 Мимики & Сундуки' : (isCn ? '🧰 宝箱怪与宝藏' : '🧰 Mimics & Chests'), count: tiles.filter(t => t.category === 'mimic').length },
+      { key: 'resource', label: isRu ? '💎 Сбор ресурсов' : (isCn ? '💎 资源采集' : '💎 Resource Nodes'), count: tiles.filter(t => t.category === 'resource').length },
+      { key: 'merchant', label: isRu ? '🛒 Торговцы' : (isCn ? '🛒 游商地精' : '🛒 Merchants'), count: tiles.filter(t => t.category === 'merchant').length }
+    ];
+
+    return `
+      <div class="guide-article">
+        <h2 class="guide-title">🗺️ ${isRu ? 'Интерактивный Атлас Тайлов Карты (184 Клетки)' : isCn ? '大地图探索全地块交互图鉴 (184种)' : 'Interactive Adventure Map Tiles Atlas (184 Spots)'}</h2>
+        <p class="guide-lead">
+          ${isRu 
+            ? 'Полный интерактивный каталог всех типов клеток карты приключений: безопасные лагеря, святилища, алтари наследия, сундуки-мимики, скрытые тайники и точки сбора ресурсов. Кликните по клетке для просмотра наград и дропа.' 
+            : isCn 
+            ? '冒险大地图全交互地块权威图鉴：安全营地、神秘圣所、传承祭坛、献祭宝箱怪、隐秘密藏与资源采集点。点击任意地块可查看详细奖励与掉落机制。' 
+            : 'Complete interactive catalog of all adventure map spots: safe camps, sanctuaries, legacy altars, mimic chests, and resource harvest points. Click any spot to inspect drops.'}
+        </p>
+
+        <!-- Filters & Search Toolbar -->
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; align-items: center; justify-content: space-between;">
+          <div class="pill-group" style="margin: 0; display: flex; flex-wrap: wrap; gap: 6px;">
+            ${categories.map(c => `
+              <button class="filter-pill ${filter === c.key ? 'active' : ''}" onclick="GuidesView.setTilesFilter('${c.key}')" style="font-size: 12px; padding: 5px 12px; cursor: pointer;">
+                ${c.label} <span style="opacity: 0.7; font-weight: 700;">(${c.count})</span>
+              </button>
+            `).join('')}
+          </div>
+          <div style="min-width: 220px; flex: 1; max-width: 320px;">
+            <input type="text" id="tilesSearchInput" class="search-input" placeholder="${isRu ? 'Поиск тайла по имени/ID...' : isCn ? '搜索地块名称/ID...' : 'Search spot name or ID...'}" value="${this.escapeHtml(this.tilesSearchQuery)}" oninput="GuidesView.setTilesSearch(this.value)" style="width: 100%; padding: 7px 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); background: var(--bg-surface-elevated); color: #fff; font-size: 13px;">
+          </div>
+        </div>
+
+        <!-- Counter & Results stats -->
+        <div style="font-size: 12.5px; color: var(--text-muted); margin-bottom: 12px;">
+          ${isRu ? 'Найдено клеток:' : isCn ? '匹配地块数：' : 'Found spots:'} <strong style="color: #38bdf8;">${filtered.length}</strong>
+        </div>
+
+        <!-- Tiles Cards Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px;">
+          ${filtered.map(t => {
+            const name = typeof t.name === 'object' ? (t.name[lang] || t.name.RU || t.id) : (t.name || t.id);
+            const desc = typeof t.description === 'object' ? (t.description[lang] || t.description.RU || '') : (t.description || '');
+            const catName = typeof t.category_name === 'object' ? (t.category_name[lang] || t.category_name.RU || t.category) : (t.category_name || t.category || '');
+            const icon = t.icon || (t.category === 'altar' ? '🏛️' : t.category === 'mimic' ? '🧰' : t.category === 'resource' ? '💎' : t.category === 'merchant' ? '🛒' : '🌟');
+            const sizeBadge = t.size_str || (t.sizes ? t.sizes.join('x') : '1x1');
+
+            return `
+              <div class="guide-card" style="padding: 14px; margin: 0; background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.15s ease, border-color 0.15s ease;" onclick="App.openTileModal('${t.id}')" onmouseover="this.style.borderColor='#38bdf8'; this.style.transform='translateY(-2px)';" onmouseout="this.style.borderColor='var(--border-subtle)'; this.style.transform='translateY(0)';">
+                <div>
+                  <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px;">
+                    <div style="display: flex; align-items: center; gap: 8px; min-width: 0;">
+                      <span style="font-size: 22px; line-height: 1;">${icon}</span>
+                      <span style="font-size: 14px; font-weight: 700; color: #ffffff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${this.escapeHtml(name)}">
+                        ${this.escapeHtml(name)}
+                      </span>
+                    </div>
+                    <span class="tag-badge" style="font-size: 10px; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 1px 6px; border-radius: 4px; flex-shrink: 0;">
+                      ${sizeBadge}
+                    </span>
+                  </div>
+
+                  <div style="display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap;">
+                    <span style="font-size: 11px; font-weight: 600; color: #c084fc; background: rgba(168, 85, 247, 0.12); padding: 2px 6px; border-radius: 4px;">
+                      ${this.escapeHtml(catName)}
+                    </span>
+                    <span style="font-size: 10.5px; font-family: monospace; color: var(--text-muted); background: rgba(0,0,0,0.3); padding: 2px 5px; border-radius: 4px;">
+                      ${t.code || t.id}
+                    </span>
+                  </div>
+
+                  <div style="font-size: 12px; color: #cbd5e1; line-height: 1.5; margin-bottom: 10px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 36px;">
+                    ${this.escapeHtml(desc) || (isRu ? 'Нажмите для подробного описания наград и шансов.' : 'Click for loot details and mechanics.')}
+                  </div>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 8px; margin-top: 4px;">
+                  <span style="font-size: 11px; color: var(--text-muted);">
+                    ${t.is_special ? '✨ ' + (isRu ? 'Особый тайл' : 'Special Spot') : '🗺️ ' + (isRu ? 'Обычный тайл' : 'Standard Spot')}
+                  </span>
+                  <button class="action-btn" onclick="event.stopPropagation(); App.openTileModal('${t.id}')" style="font-size: 11px; padding: 3px 8px; background: rgba(56, 189, 248, 0.2); border: 1px solid #38bdf8; color: #38bdf8; border-radius: 4px; cursor: pointer;">
+                    ${isRu ? 'Награды' : isCn ? '奖励详情' : 'Rewards'} ➔
+                  </button>
+                </div>
+              </div>
+            `;
+          }).join('')}
         </div>
       </div>
     `;
@@ -47548,109 +47667,6 @@ const GuidesView = {
   },
 
 
-getTilesContent(lang) {
-    const isRu = lang === 'RU';
-    const isCn = lang === 'CN';
-    const tiles = (typeof App !== 'undefined' && App.state?.mapTiles) ? App.state.mapTiles : (this.defaultMapTiles || []);
-    const filter = this.tilesFilter || 'all';
-    const query = (this.tilesSearchQuery || '').toLowerCase().trim();
-
-    let filtered = tiles.filter(t => {
-      if (filter !== 'all' && t.category !== filter) return false;
-      if (query) {
-        const name = (typeof t.name === 'object' ? (t.name[lang] || t.name.RU || '') : (t.name || '')).toLowerCase();
-        const desc = (typeof t.description === 'object' ? (t.description[lang] || t.description.RU || '') : (t.description || '')).toLowerCase();
-        const id = String(t.id || '').toLowerCase();
-        if (!name.includes(query) && !desc.includes(query) && !id.includes(query)) return false;
-      }
-      return true;
-    });
-
-    const categories = [
-      { key: 'all', label: isRu ? 'Все клетки' : (isCn ? '全地块' : 'All Tiles'), count: tiles.length },
-      { key: 'combat', label: isRu ? '⚔️ Битвы' : (isCn ? '⚔️ 战斗' : '⚔️ Combat'), count: tiles.filter(t => t.category === 'combat').length },
-      { key: 'treasure', label: isRu ? '📦 Сундуки' : (isCn ? '📦 宝箱' : '📦 Treasure'), count: tiles.filter(t => t.category === 'treasure').length },
-      { key: 'event', label: isRu ? '✨ События' : (isCn ? '✨ 事件' : '✨ Events'), count: tiles.filter(t => t.category === 'event').length },
-      { key: 'resource', label: isRu ? '💎 Ресурсы' : (isCn ? '💎 资源' : '💎 Resource'), count: tiles.filter(t => t.category === 'resource').length }
-    ];
-
-    return `
-      <div class="guide-card">
-        <h3 class="guide-section-title">🗺️ ${isRu ? 'Интерактивный Атлас Тайлов Карты (80+ Клеток)' : 'Interactive Map Tiles Atlas'}</h3>
-        <p class="guide-lead">${isRu ? 'Полный справочник клеток карты приключений с вероятностями дропа и наградами:' : 'Complete adventure map tiles reference with loot drop rates:'}</p>
-
-        <!-- Filters & Search Toolbar -->
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; align-items: center; justify-content: space-between;">
-          <div class="pill-group" style="margin: 0;">
-            ${categories.map(c => `
-              <button class="filter-pill ${filter === c.key ? 'active' : ''}" onclick="GuidesView.setTilesFilter('${c.key}')">
-                ${c.label} (${c.count})
-              </button>
-            `).join('')}
-          </div>
-          <div style="min-width: 220px; flex: 1; max-width: 320px;">
-            <input type="text" id="tilesSearchInput" class="search-input" placeholder="${isRu ? 'Поиск тайла...' : 'Search tile...'}" value="${this.escapeHtml(this.tilesSearchQuery)}" oninput="GuidesView.setTilesSearch(this.value)">
-          </div>
-        </div>
-
-        <!-- Tiles Cards Grid -->
-        <div class="guide-cards-grid" style="margin-top: 16px;">
-          ${filtered.slice(0, 80).map(t => {
-            const name = typeof t.name === 'object' ? (t.name[lang] || t.name.RU || t.id) : (t.name || t.id);
-            const desc = typeof t.description === 'object' ? (t.description[lang] || t.description.RU || '') : (t.description || '');
-            return `
-              <div class="guide-card" style="padding: 12px; margin: 0; background: var(--bg-surface-elevated); border: 1px solid rgba(255,255,255,0.08); cursor: pointer;" onclick="App.openTileModal('${t.id}')">
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-                  <span style="font-size: 14px; font-weight: 700; color: #38bdf8;">${this.escapeHtml(name)}</span>
-                  <span class="tag-badge" style="font-size: 10px;">${t.category || 'map'}</span>
-                </div>
-                <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.4; margin-bottom: 8px;">
-                  ${this.escapeHtml(desc).slice(0, 100)}${desc.length > 100 ? '...' : ''}
-                </div>
-                <div style="display: flex; justify-content: flex-end;">
-                  <button class="tile-action-detail-btn" onclick="event.stopPropagation(); App.openTileModal('${t.id}')">
-                    ${isRu ? 'Подробнее' : 'Details'} ➔
-                  </button>
-                </div>
-              </div>
-            `;
-          }).join('')}
-        </div>
-      </div>
-    `;
-  },
-
-  // 14. Community Resources
-  getResourcesContent(lang) {
-    const isRu = lang === 'RU';
-    return `
-      <div class="guide-card">
-        <h3 class="guide-section-title">🌐 ${isRu ? 'Базы Данных, Инструменты Сообщества и Ссылки' : 'Community Tools & Databases'}</h3>
-        <div class="guide-specs-grid">
-          <div class="spec-card" style="cursor: pointer;" onclick="App.setTab('characters')">
-            <div class="spec-label">👥 Энциклопедия</div>
-            <div class="spec-value" style="color: #38bdf8;">204 Героини</div>
-            <div class="spec-desc">${isRu ? 'Все персонажи, скиллы и статы' : 'Full character database'}</div>
-          </div>
-          <div class="spec-card" style="cursor: pointer;" onclick="App.setTab('items')">
-            <div class="spec-label">🎒 Снаряжение</div>
-            <div class="spec-value" style="color: #fbbf24;">3,353 Предмета</div>
-            <div class="spec-desc">${isRu ? 'Экипировка, реликвии, сеты' : 'Items & Sets database'}</div>
-          </div>
-          <div class="spec-card" style="cursor: pointer;" onclick="App.setTab('calculators')">
-            <div class="spec-label">🧮 Оптимизаторы</div>
-            <div class="spec-value" style="color: #34d399;">Калькуляторы</div>
-            <div class="spec-desc">${isRu ? 'Gacha, Таланты, Урон' : 'Simulators & Optimizers'}</div>
-          </div>
-          <div class="spec-card" style="cursor: pointer;" onclick="App.openContactsModal()">
-            <div class="spec-label">💬 Сообщество</div>
-            <div class="spec-value" style="color: #a855f7;">Discord & QQ</div>
-            <div class="spec-desc">${isRu ? 'Официальные контакты разработчиков' : 'Official channels & Support'}</div>
-          </div>
-        </div>
-      </div>
-    `;
-  },
 
   renderTileModal(tile, lang = 'RU') {
     if (!tile) return '';
@@ -47658,25 +47674,40 @@ getTilesContent(lang) {
     const isCn = lang === 'CN';
     const name = typeof tile.name === 'object' ? (tile.name[lang] || tile.name.RU || tile.id) : (tile.name || tile.id);
     const desc = typeof tile.description === 'object' ? (tile.description[lang] || tile.description.RU || '') : (tile.description || '');
+    const catName = typeof tile.category_name === 'object' ? (tile.category_name[lang] || tile.category_name.RU || tile.category) : (tile.category_name || tile.category || 'Map Tile');
 
     return `
       <div class="modal-dialog" style="max-width: 600px;">
         <div class="modal-header">
           <div class="modal-title-group">
             <div class="modal-title">🗺️ ${this.escapeHtml(name)}</div>
-            <div class="modal-subtitle">ID: ${tile.id} &bull; ${tile.category || 'Map Tile'}</div>
+            <div class="modal-subtitle">ID: ${tile.id} &bull; ${this.escapeHtml(catName)} &bull; ${tile.size_str || '1x1'}</div>
           </div>
           <button class="modal-close-btn" onclick="App.closeModal()">&times;</button>
         </div>
         <div class="modal-body">
-          <div style="background: var(--bg-surface-elevated); padding: 14px; border-radius: var(--radius-md); font-size: 13.5px; line-height: 1.5; margin-bottom: 14px;">
-            ${this.escapeHtml(desc)}
+          <div style="background: var(--bg-surface-elevated); padding: 14px; border-radius: var(--radius-md); font-size: 13.5px; line-height: 1.6; margin-bottom: 14px; border: 1px solid var(--border-subtle);">
+            ${this.escapeHtml(desc) || (isRu ? 'Особое место на карте приключений.' : 'Special adventure map location.')}
           </div>
+
+          ${tile.biomes && (tile.biomes.RU || tile.biomes.CN || Array.isArray(tile.biomes)) ? `
+            <div class="detail-section" style="margin-bottom: 12px;">
+              <div class="section-heading" style="font-size: 13px; font-weight: 700; color: #38bdf8; margin-bottom: 6px;">
+                🌍 ${isRu ? 'Биомы появления' : isCn ? '出现区域' : 'Spawn Biomes'}
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                ${(Array.isArray(tile.biomes) ? tile.biomes : (tile.biomes[lang] || tile.biomes.RU || tile.biomes.CN || [])).map(b => `<span class="tag-badge" style="background: rgba(56,189,248,0.15); color: #7dd3fc; border: 1px solid rgba(56,189,248,0.3); font-size: 11px;">📍 ${this.escapeHtml(b)}</span>`).join('')}
+              </div>
+            </div>
+          ` : ''}
+
           ${tile.drops && tile.drops.length > 0 ? `
             <div class="detail-section">
-              <div class="section-heading">🎁 ${isRu ? 'Возможный дроп и награды' : (isCn ? '可能掉落' : 'Possible Drops')}</div>
+              <div class="section-heading" style="font-size: 13px; font-weight: 700; color: #facc15; margin-bottom: 6px;">
+                🎁 ${isRu ? 'Возможный дроп и награды' : (isCn ? '可能掉落' : 'Possible Drops')}
+              </div>
               <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                ${tile.drops.map(d => `<span class="tag-badge">💎 ${this.escapeHtml(d)}</span>`).join('')}
+                ${tile.drops.map(d => `<span class="tag-badge" style="background: rgba(234, 179, 8, 0.15); color: #fde047; border: 1px solid rgba(234, 179, 8, 0.3);">💎 ${this.escapeHtml(d)}</span>`).join('')}
               </div>
             </div>
           ` : ''}

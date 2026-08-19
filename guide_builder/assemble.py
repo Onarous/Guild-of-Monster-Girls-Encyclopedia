@@ -8,7 +8,9 @@ import sys, os, re
 sys.stdout.reconfigure(encoding='utf-8')
 
 # Import section generators
+import core_nav
 import tips
+import tiles
 import phases
 import targeting
 import damage
@@ -22,7 +24,7 @@ import gacha
 import events
 import codes
 import resources
-import core_nav
+import helpers
 
 TARGET_FILE = 'MonsterGirls_Account_Extractor/Web_Encyclopedia/js/guides_view.js'
 
@@ -30,47 +32,27 @@ with open(TARGET_FILE, 'r', encoding='utf-8') as f:
     orig_text = f.read()
 
 # 1. Extract header and defaultMapTiles
-tiles_end_marker = "activeSection: 'tips',"
-active_idx = orig_text.find(tiles_end_marker)
-if active_idx == -1:
-    # try looking for const GuidesView
-    gv_idx = orig_text.find('const GuidesView = {')
-    if gv_idx != -1:
-        prev_bracket = orig_text.rfind('];', 0, gv_idx)
-        if prev_bracket == -1:
-            prev_bracket = orig_text.rfind(']', 0, gv_idx)
-    else:
-        prev_bracket = orig_text.rfind('];')
-        if prev_bracket == -1:
-            prev_bracket = orig_text.rfind(']')
-else:
-    prev_bracket = orig_text.rfind('];', 0, active_idx)
-    if prev_bracket == -1:
-        prev_bracket = orig_text.rfind(']', 0, active_idx)
+tiles_start_idx = orig_text.find('const defaultMapTiles = [')
+if tiles_start_idx == -1:
+    print("Error: could not find const defaultMapTiles")
+    sys.exit(1)
 
+# Find the closing ]; of defaultMapTiles
+# search for '];' starting from tiles_start_idx
+tiles_end_marker = "];"
+prev_bracket = orig_text.find(tiles_end_marker, tiles_start_idx)
 if prev_bracket == -1:
-    print("Error: could not find closing bracket of defaultMapTiles")
+    print("Error: could not find closing ]; of defaultMapTiles")
     sys.exit(1)
 
-# Ensure closing semicolon on defaultMapTiles
-tiles_slice = orig_text[:prev_bracket+1]
-if not tiles_slice.strip().endswith(';'):
-    tiles_slice = tiles_slice + ';'
+header_and_tiles = orig_text[:prev_bracket+2]
 
-# 2. Extract tail methods starting from getTilesContent
-matches = [m.start() for m in re.finditer(r'\bgetTilesContent\s*\(', orig_text)]
-if not matches:
-    print("Error: could not find getTilesContent definition")
-    sys.exit(1)
-
-tiles_method_pos = matches[-1]
-tail_code = orig_text[tiles_method_pos:]
-
-# 3. Assemble all parts
+# 2. Assemble all parts
 new_js_code = (
-    tiles_slice + "\n\nconst GuidesView = {\n" +
+    header_and_tiles + "\n\nconst GuidesView = {\n" +
     core_nav.get_core_nav_code() + "\n\n" +
     tips.get_tips_code() + "\n\n" +
+    tiles.get_tiles_code() + "\n\n" +
     phases.get_phases_code() + "\n\n" +
     targeting.get_targeting_code() + "\n\n" +
     damage.get_damage_code() + "\n\n" +
@@ -84,10 +66,10 @@ new_js_code = (
     events.get_events_code() + "\n\n" +
     codes.get_codes_code() + "\n\n" +
     resources.get_resources_code() + "\n\n" +
-    tail_code
+    helpers.get_helpers_code()
 )
 
-# 4. Save to target file
+# 3. Save to target file
 with open(TARGET_FILE, 'w', encoding='utf-8') as f:
     f.write(new_js_code)
 

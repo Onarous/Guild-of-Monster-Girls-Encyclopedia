@@ -7,6 +7,7 @@ def get_core_nav_code():
   tilesFilter: 'all',
   tilesSearchQuery: '',
   isNavCollapsedMobile: false,
+  defaultMapTiles: (typeof defaultMapTiles !== 'undefined' ? defaultMapTiles : []),
 
   setSection(sectionId) {
     this.activeSection = sectionId;
