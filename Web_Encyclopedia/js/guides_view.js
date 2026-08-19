@@ -240,12 +240,55 @@ const GuidesView = {
             : 'Essential progression rules, gem spending priority, crystal merging, and stamina management from veteran guild theorycrafters.'}
         </p>
 
+        <!-- Quick Table of Contents / Sub-sections Bar -->
+        <div class="guide-toc-bar" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; padding: 14px 16px; background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: var(--radius-md); box-shadow: 0 4px 16px rgba(0,0,0,0.3);">
+          <div style="font-size: 13px; font-weight: 700; color: #c084fc; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <span style="font-size: 16px;">📑</span>
+              <span>${isRu ? 'Быстрый переход к разделам руководства:' : isCn ? '核心攻略子章节快速导航:' : 'Quick Navigation to Sub-sections:'}</span>
+            </div>
+            <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">
+              ${isRu ? 'Кликните для перехода или используйте 🔗 для копирования ссылки' : 'Click to jump or use 🔗 to share link'}
+            </span>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px;">
+            <button class="filter-pill" onclick="GuidesView.scrollToAnchor('tips-gems')" style="padding: 5px 12px; font-size: 12px; font-weight: 700; cursor: pointer;">
+              💎 ${isRu ? '1. Самоцветы и Крутки' : isCn ? '1. 钻石与心愿' : '1. Gems & Wishlist'}
+            </button>
+            <button class="filter-pill" onclick="GuidesView.scrollToAnchor('tips-gold')" style="padding: 5px 12px; font-size: 12px; font-weight: 700; cursor: pointer;">
+              💰 ${isRu ? '2. Золото и Сброс' : isCn ? '2. 金币与重置' : '2. Gold & Resets'}
+            </button>
+            <button class="filter-pill" onclick="GuidesView.scrollToAnchor('tips-manual')" style="padding: 5px 12px; font-size: 12px; font-weight: 700; cursor: pointer;">
+              ⚔️ ${isRu ? '3. Зачистка и Клевер' : isCn ? '3. 推图与四叶草' : '3. Manual & Clovers'}
+            </button>
+            <button class="filter-pill" onclick="GuidesView.scrollToAnchor('tips-alchemy')" style="padding: 5px 12px; font-size: 12px; font-weight: 700; cursor: pointer;">
+              ⚗️ ${isRu ? '4. Алхимия и Сундуки' : isCn ? '4. 炼金与宝箱' : '4. Alchemy & Chests'}
+            </button>
+            <button class="filter-pill" onclick="GuidesView.scrollToAnchor('tips-gear-stars')" style="padding: 5px 12px; font-size: 12px; font-weight: 700; cursor: pointer;">
+              ⭐ ${isRu ? '5. Звездность и Сеты' : isCn ? '5. 装备升星与传承' : '5. Star-Up & Sets'}
+            </button>
+            <button class="filter-pill" onclick="GuidesView.scrollToAnchor('tips-luck')" style="padding: 5px 12px; font-size: 12px; font-weight: 700; cursor: pointer;">
+              🎲 ${isRu ? '6. Механика Удачи' : isCn ? '6. 幸运值真实机制' : '6. True Luck (LUK)'}
+            </button>
+            <button class="filter-pill" onclick="GuidesView.scrollToAnchor('tips-talents')" style="padding: 5px 12px; font-size: 12px; font-weight: 700; cursor: pointer;">
+              🧬 ${isRu ? '7. Плоды Таланта' : isCn ? '7. 天赋果实保底' : '7. Talent Fruits & Pity'}
+            </button>
+          </div>
+        </div>
+
+
         <!-- 1. Gems & Recruits -->
-        <div class="guide-card" style="border-left: 4px solid #38bdf8;">
-          <h3 style="color: #38bdf8; display: flex; align-items: center; gap: 8px;">
-            <span>💎</span>
-            <span>${isRu ? '1. Самоцветы, Крутки и Осколки' : isCn ? '1. 钻石规划、卡池心愿与碎片管理' : '1. Gems, Wishlist & Shards'}</span>
-          </h3>
+        <div class="guide-card" id="tips-gems" style="border-left: 4px solid #38bdf8; scroll-margin-top: 80px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 8px;">
+            <h3 style="color: #38bdf8; display: flex; align-items: center; gap: 8px; margin: 0;">
+              <span>💎</span>
+              <span>${isRu ? '1. Самоцветы, Крутки и Осколки' : isCn ? '1. 钻石规划、卡池心愿与碎片管理' : '1. Gems, Wishlist & Shards'}</span>
+            </h3>
+            <button class="guide-copy-link-btn" onclick="GuidesView.copyGuideLink('tips-gems', this)" title="${isRu ? 'Скопировать прямую ссылку на этот подраздел' : 'Copy direct link to this sub-section'}">
+              <span class="link-icon">🔗</span>
+              <span class="link-text">${isRu ? 'Ссылка' : 'Share'}</span>
+            </button>
+          </div>
           <ul class="guide-list">
             <li><strong>${isRu ? 'Самоцветы (Gems):' : isCn ? '钻石用途:' : 'Gems Spending:'}</strong> ${isRu ? 'Тратьте кристаллы <strong>только на Альтер-найм (Alter summon)</strong>. В эндгейме они потребуются для реролла золотых талантов (200 кристаллов за замену). Арена и Астральное Царство стабильно снабжают кристаллами каждую неделю.' : isCn ? '钻石<strong>只用来抽异化卡池</strong>。游戏后期每次更换金天赋需要消耗200钻石。每周竞技场和星界领域都会提供大量钻石，放心抽异化。' : 'Spend gems <strong>only on Alter Summon</strong>. In the endgame, gems are used for swapping gold talents (200 gems each). Weekly Arena and Astral Realm provide a steady income.'}</li>
             <li><strong>${isRu ? 'Список желаний (Wishlist):' : isCn ? '常规心愿推荐:' : 'Standard Wishlist:'}</strong> ${isRu ? 'В стандартном призыве ставьте <strong>Кристальную грибницу (Crystal Shroom)</strong> или <strong>Командующую Легиона (Legion Commander)</strong> — это топ батарейки маны для частого спама ультимейтами.' : isCn ? '常规招募心愿推荐选择<strong>水晶菇娘</strong>或<strong>军团统领</strong>。她们是队伍的“回蓝充电宝”，能让主力DPS高频释放大招。' : 'Wish-pick <strong>Crystal Shroom</strong> or <strong>Legion Commander</strong>. These mana batteries enable your main DPS to spam skills frequently.'}</li>
@@ -256,11 +299,17 @@ const GuidesView = {
         </div>
 
         <!-- 2. Gold & Upgrades -->
-        <div class="guide-card" style="border-left: 4px solid #eab308;">
-          <h3 style="color: #eab308; display: flex; align-items: center; gap: 8px;">
-            <span>💰</span>
-            <span>${isRu ? '2. Золото, Прокачка и Сброс до 60 уровня' : isCn ? '2. 金币消耗、60级免费重置与心之升级' : '2. Gold, Level 60 Reset & Hearts'}</span>
-          </h3>
+        <div class="guide-card" id="tips-gold" style="border-left: 4px solid #eab308; scroll-margin-top: 80px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 8px;">
+            <h3 style="color: #eab308; display: flex; align-items: center; gap: 8px; margin: 0;">
+              <span>💰</span>
+              <span>${isRu ? '2. Золото, Прокачка и Сброс до 60 уровня' : isCn ? '2. 金币消耗、60级免费重置与心之升级' : '2. Gold, Level 60 Reset & Hearts'}</span>
+            </h3>
+            <button class="guide-copy-link-btn" onclick="GuidesView.copyGuideLink('tips-gold', this)" title="${isRu ? 'Скопировать прямую ссылку на этот подраздел' : 'Copy direct link to this sub-section'}">
+              <span class="link-icon">🔗</span>
+              <span class="link-text">${isRu ? 'Ссылка' : 'Share'}</span>
+            </button>
+          </div>
           <ul class="guide-list">
             <li><strong>${isRu ? 'Приоритет расходов золота:' : isCn ? '金币消费优先级:' : 'Gold Spending Order:'}</strong> ${isRu ? '1. Повышение звездности экипировки и рун ➔ 2. Прокачка 3 боевых юнитов до 60 ур. по уровню Кодекса ➔ 3. Излишки — товары у странствующего гоблина.' : isCn ? '1. 装备与符文升星 ➔ 2. 随图鉴等级将3个主力升至60级 ➔ 3. 剩余金币在游商地精处扫货。' : '1. Star up gear & runes ➔ 2. Level 3 units to Lv 60 as codex grows ➔ 3. Spend excess at travel merchant goblin.'}</li>
             <li><strong>${isRu ? 'Остановка на 60 уровне:' : isCn ? '升到60级立即停手:' : 'Stop at Level 60:'}</strong> ${isRu ? 'Любого персонажа 60 уровня и ниже можно <strong>БЕСПЛАТНО сбросить (Reset)</strong> с возвратом 100% золота и ресурсов. Экспериментируйте с пачками без штрафов!' : isCn ? '所有60级及以下的角色均支持<strong>无损免费重置</strong>，全额返还金币与养成材料，方便零成本尝试各种流派。' : 'Units at Lv 60 and below can be <strong>freely reset</strong> for 100% gold and material refund to experiment with teams.'}</li>
@@ -270,11 +319,17 @@ const GuidesView = {
         </div>
 
         <!-- 3. Manual vs Blitz & Clovers -->
-        <div class="guide-card" style="border-left: 4px solid #10b981;">
-          <h3 style="color: #10b981; display: flex; align-items: center; gap: 8px;">
-            <span>⚔️</span>
-            <span>${isRu ? '3. Ручная зачистка, Блиц и Клевер' : isCn ? '3. 手动推图、扫荡机制与四叶草' : '3. Manual vs Blitz & Clovers'}</span>
-          </h3>
+        <div class="guide-card" id="tips-manual" style="border-left: 4px solid #10b981; scroll-margin-top: 80px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 8px;">
+            <h3 style="color: #10b981; display: flex; align-items: center; gap: 8px; margin: 0;">
+              <span>⚔️</span>
+              <span>${isRu ? '3. Ручная зачистка, Блиц и Клевер' : isCn ? '3. 手动推图、扫荡机制与四叶草' : '3. Manual vs Blitz & Clovers'}</span>
+            </h3>
+            <button class="guide-copy-link-btn" onclick="GuidesView.copyGuideLink('tips-manual', this)" title="${isRu ? 'Скопировать прямую ссылку на этот подраздел' : 'Copy direct link to this sub-section'}">
+              <span class="link-icon">🔗</span>
+              <span class="link-text">${isRu ? 'Ссылка' : 'Share'}</span>
+            </button>
+          </div>
           <ul class="guide-list">
             <li><strong>${isRu ? 'Ручная зачистка (Manual):' : isCn ? '前期手动拿抽券:' : 'Manual Clearing:'}</strong> ${isRu ? 'На старте проходите вручную как можно больше этажей ради билетов призыва. В мид/эндгейме: бегите прямо к Боссу и спец-клеткам, затем <strong>выходите с карты</strong>, экономя стамину на мобах.' : isCn ? '前期尽量手动全清关卡拿满常规招募券。中后期直奔 Boss 房和特殊事件格，打完直接离开关卡，跳过杂兵省体力。' : 'Manually clear as many early stages for summon tickets. In mid/endgame, rush the Boss tile and exit to conserve stamina.'}</li>
             <li><strong>${isRu ? 'Эффективный Блиц (Blitz):' : isCn ? '10连扫荡吃神谕:' : '10x Blitz Rule:'}</strong> ${isRu ? 'Рекомендуется запускать блиц <strong>10x за 500 стамины</strong>, чтобы поймать несколько баффов оракула. Блиц за 50 стамины также отлично фармит клевер и плоды таланта.' : isCn ? '建议只使用 <strong>500体力的10连扫荡</strong>，以博取多次神谕Buff。50体力的单次扫荡也是农四叶草与天赋果实的极佳途径。' : 'Only blitz on 10x (500 stamina) to maximize oracle buffs. Blitz is also great for farming clovers and talent berries.'}</li>
@@ -284,11 +339,17 @@ const GuidesView = {
         </div>
 
         <!-- 4. Alchemy & Crystals -->
-        <div class="guide-card" style="border-left: 4px solid #a855f7;">
-          <h3 style="color: #a855f7; display: flex; align-items: center; gap: 8px;">
-            <span>⚗️</span>
-            <span>${isRu ? '4. Алхимия, Сундуки и Слияние Кристаллов' : isCn ? '4. 炼金全开、宝箱自动合成与晶石合成' : '4. Alchemy, Chests & Crystal Merging'}</span>
-          </h3>
+        <div class="guide-card" id="tips-alchemy" style="border-left: 4px solid #a855f7; scroll-margin-top: 80px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 8px;">
+            <h3 style="color: #a855f7; display: flex; align-items: center; gap: 8px; margin: 0;">
+              <span>⚗️</span>
+              <span>${isRu ? '4. Алхимия, Сундуки и Слияние Кристаллов' : isCn ? '4. 炼金全开、宝箱自动合成与晶石合成' : '4. Alchemy, Chests & Crystal Merging'}</span>
+            </h3>
+            <button class="guide-copy-link-btn" onclick="GuidesView.copyGuideLink('tips-alchemy', this)" title="${isRu ? 'Скопировать прямую ссылку на этот подраздел' : 'Copy direct link to this sub-section'}">
+              <span class="link-icon">🔗</span>
+              <span class="link-text">${isRu ? 'Ссылка' : 'Share'}</span>
+            </button>
+          </div>
           <ul class="guide-list">
             <li><strong>${isRu ? 'Авто-слияние сундуков:' : isCn ? '宝箱合成节点:' : 'Chest Merging:'}</strong> ${isRu ? 'В начале игры останавливайте авто-слияние на <strong>Фиолетовых сундуках</strong> и открывайте их для быстрой прокачки уровня Кодекса. В эндгейме сливайте на максимум до Оранжевых.' : isCn ? '前期宝箱自动合成停在<strong>紫色品阶</strong>并开启，快速填补图鉴等级。中后期再一路自动合成到最高橙色品阶。' : 'Early game: stop auto-merging at Purple chests to open and raise codex faster. Endgame: auto-merge to max Orange.'}</li>
             <li><strong>${isRu ? 'Алхимия (Кнопка «Max»):' : isCn ? '炼金必选【全部】:' : 'Alchemy Max:'}</strong> ${isRu ? 'Всегда используйте режим <strong>«Max»</strong>. Звездите даже зеленый и синий шмот для уровня Кодекса. Алхимия снабжает кристаллами и камнями Наследия.' : isCn ? '炼金一律选用<strong>“全部 (Max)”</strong>。即使是绿装蓝装也要升星以提升图鉴，同时获取兑换图鉴装备与传承石的晶石。' : 'Always use "Max" in alchemy. Star up all gear (even green/blue) for codex progression and legacy stones.'}</li>
@@ -297,11 +358,17 @@ const GuidesView = {
         </div>
 
         <!-- 5. Gear Star-Up & Legacy -->
-        <div class="guide-card" style="border-left: 4px solid #ec4899;">
-          <h3 style="color: #ec4899; display: flex; align-items: center; gap: 8px;">
-            <span>⭐</span>
-            <span>${isRu ? '5. Звездность Экипировки (1★–3★), Наследие (Legacy) и Комбо Сетов' : isCn ? '5. 装备升星(1★–3★)、传承(Legacy)与套装偷位机制' : '5. Gear Star-Up (1★–3★), Legacy & Multi-Set Resonance'}</span>
-          </h3>
+        <div class="guide-card" id="tips-gear-stars" style="border-left: 4px solid #ec4899; scroll-margin-top: 80px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 8px;">
+            <h3 style="color: #ec4899; display: flex; align-items: center; gap: 8px; margin: 0;">
+              <span>⭐</span>
+              <span>${isRu ? '5. Звездность Экипировки (1★–3★), Наследие (Legacy) и Комбо Сетов' : isCn ? '5. 装备升星(1★–3★)、传承(Legacy)与套装偷位机制' : '5. Gear Star-Up (1★–3★), Legacy & Multi-Set Resonance'}</span>
+            </h3>
+            <button class="guide-copy-link-btn" onclick="GuidesView.copyGuideLink('tips-gear-stars', this)" title="${isRu ? 'Скопировать прямую ссылку на этот подраздел' : 'Copy direct link to this sub-section'}">
+              <span class="link-icon">🔗</span>
+              <span class="link-text">${isRu ? 'Ссылка' : 'Share'}</span>
+            </button>
+          </div>
           <ul class="guide-list">
             <li><strong>${isRu ? 'Шкала улучшения экипировки:' : isCn ? '装备升星消耗与收益:' : 'Star-Up Progression:'}</strong> ${isRu ? '• <strong>Legacy (Камень наследия):</strong> +1 очко ко всем 3 строкам талантов предмета.<br>• <strong>1★ (1 дубликат):</strong> +1 очко к 1-й строке.<br>• <strong>2★ (5 дубликатов):</strong> +1 очко ко 2-й строке.<br>• <strong>3★ (10 дубликатов):</strong> +1 очко к 3-й строке.<br>• <strong>MAX (Legacy + 3★):</strong> +3 очка ко ВСЕМ строкам талантов предмета!' : isCn ? '• <strong>传承 (传承石):</strong> 全词条+1点天赋点数。<br>• <strong>1星 (消耗1个同名装备):</strong> 第1行词条+1点。<br>• <strong>2星 (消耗5个同名装备):</strong> 第2行词条+1点。<br>• <strong>3星 (消耗10个同名装备):</strong> 第3行词条+1点。<br>• <strong>满配 (传承+3星):</strong> 装备全词条总计+3点！' : '• <strong>Legacy:</strong> +1 to all talent rows.<br>• <strong>1-Star (1 dupe):</strong> +1 to 1st row.<br>• <strong>2-Star (5 dupes):</strong> +1 to 2nd row.<br>• <strong>3-Star (10 dupes):</strong> +1 to 3rd row.<br>• <strong>MAX (Legacy + 3-Star):</strong> +3 to ALL talent rows!'}</li>
             <li><strong>${isRu ? 'Секрет 3★ — Активация сетов 2 предметами вместо 3:' : isCn ? '3星核心价值——少穿装备激活完整套装:' : '3-Star Secret: 2-Piece Full Resonance:'}</strong> ${isRu ? 'Прокачанная до 3★ вещь дает достаточно очков сета, чтобы полностью активировать 3-предметный сет <strong>всего двумя надетыми вещами</strong>! 3-й слот освобождается под другой мощный сет, позволяя комбинировать сразу несколько резонансов на одной героине.' : isCn ? '满3星装备提供的高额词条点数，能让原本需要穿戴3件的套装仅凭<strong>2件装备即可完全激活满层套装效果</strong>！腾出的第3个装备槽可以自由混搭其他强力套装，极大提升单人战斗力。' : '3-Star gear provides so many resonance points that you only need 2 pieces to activate a 3-piece set, freeing up the 3rd slot for another powerful set!'}</li>
@@ -310,11 +377,17 @@ const GuidesView = {
         </div>
 
         <!-- 6. Real Luck Mechanics & Abyss Drops -->
-        <div class="guide-card" style="border-left: 4px solid #f97316;">
-          <h3 style="color: #f97316; display: flex; align-items: center; gap: 8px;">
-            <span>🎲</span>
-            <span>${isRu ? '6. Разбор Механики Удачи (LUK), Клевер и Дроп d20 в Бездне' : isCn ? '6. 幸运值 (LUK) 真实机制、四叶草重骰与深渊额外掉落' : '6. True Luck (LUK) Mechanics, Clovers & Abyss d20 Drops'}</span>
-          </h3>
+        <div class="guide-card" id="tips-luck" style="border-left: 4px solid #f97316; scroll-margin-top: 80px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 8px;">
+            <h3 style="color: #f97316; display: flex; align-items: center; gap: 8px; margin: 0;">
+              <span>🎲</span>
+              <span>${isRu ? '6. Разбор Механики Удачи (LUK), Клевер и Дроп d20 в Бездне' : isCn ? '6. 幸运值 (LUK) 真实机制、四叶草重骰与深渊额外掉落' : '6. True Luck (LUK) Mechanics, Clovers & Abyss d20 Drops'}</span>
+            </h3>
+            <button class="guide-copy-link-btn" onclick="GuidesView.copyGuideLink('tips-luck', this)" title="${isRu ? 'Скопировать прямую ссылку на этот подраздел' : 'Copy direct link to this sub-section'}">
+              <span class="link-icon">🔗</span>
+              <span class="link-text">${isRu ? 'Ссылка' : 'Share'}</span>
+            </button>
+          </div>
           <ul class="guide-list">
             <li><strong>${isRu ? 'Как реально работает Удача (LUK):' : isCn ? '幸运值真实作用机制:' : 'How LUK Truly Works:'}</strong> ${isRu ? 'Удача (LUK) <strong>НЕ влияет на первый бесплатный бросок кубика</strong> (он на 100% случайный). Удача дает <strong>+1 к результату броска за каждые 15 суммарной Удачи команды ПРИ ТРАТЕ КЛЕВЕРА</strong>!' : isCn ? '全队幸运值 (LUK) <strong>完全不影响战后首次免费掷骰</strong>（初次掷骰为纯随机）。幸运值的真实机制为：<strong>在使用四叶草重骰时，全队每有15点幸运值，重骰点数固定+1</strong>！' : 'LUK <strong>does NOT affect the initial free dice roll</strong> (pure RNG). Instead, every 15 team LUK grants <strong>+1 to your dice roll WHEN SPENDING A CLOVER</strong>!'}</li>
             <li><strong>${isRu ? 'Стратегия Клевера на Натуральную 20-ку:' : isCn ? '四叶草绝杀20点策略:' : 'Clover Strategy for 20s:'}</strong> ${isRu ? 'Только ролл 20 гарантирует Оранжевый / Желтый Наследие дроп. Тратьте клевер только тогда, когда базовый ролл выпал 17–19 — с бонусом LUK вы гарантированно за 1–2 клевера добьете кубик до 20!' : isCn ? '投出20点是必定掉落橙装与黄晶传承装的唯一途径。初次掷出17-19点时再使用四叶草，依靠幸运加成只需1-2个四叶草即可稳稳保底20点神装！' : 'Only dice roll 20 guarantees Orange/Yellow Legacy drops. Only spend clovers when the initial roll is 17-19 to easily hit 20.'}</li>
@@ -324,11 +397,17 @@ const GuidesView = {
         </div>
 
         <!-- 7. Talent Fruit Pity, Duplication & Transfer -->
-        <div class="guide-card" style="border-left: 4px solid #14b8a6;">
-          <h3 style="color: #14b8a6; display: flex; align-items: center; gap: 8px;">
-            <span>🧬</span>
-            <span>${isRu ? '7. Плоды Таланта: Скрытый Гарант (Wishlist Pity) и Секрет Дублирования Эксклюзивов' : isCn ? '7. 天赋果实心愿保底机制与专属天赋转移/复制秘籍' : '7. Talent Fruit Wishlist Pity, Transfer & Duplication Guide'}</span>
-          </h3>
+        <div class="guide-card" id="tips-talents" style="border-left: 4px solid #14b8a6; scroll-margin-top: 80px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 8px;">
+            <h3 style="color: #14b8a6; display: flex; align-items: center; gap: 8px; margin: 0;">
+              <span>🧬</span>
+              <span>${isRu ? '7. Плоды Таланта: Скрытый Гарант (Wishlist Pity) и Секрет Дублирования Эксклюзивов' : isCn ? '7. 天赋果实心愿保底机制与专属天赋转移/复制秘籍' : '7. Talent Fruit Wishlist Pity, Transfer & Duplication Guide'}</span>
+            </h3>
+            <button class="guide-copy-link-btn" onclick="GuidesView.copyGuideLink('tips-talents', this)" title="${isRu ? 'Скопировать прямую ссылку на этот подраздел' : 'Copy direct link to this sub-section'}">
+              <span class="link-icon">🔗</span>
+              <span class="link-text">${isRu ? 'Ссылка' : 'Share'}</span>
+            </button>
+          </div>
           <ul class="guide-list">
             <li><strong>${isRu ? 'Скрытая математика гаранта (Wishlist Pity):' : isCn ? '心愿天赋保底递增公式:' : 'Wishlist Pity Formula:'}</strong> ${isRu ? 'Шанс на целевой золотой талант из Wishlist начинает расти <strong>ТОЛЬКО ПОСЛЕ 50 золотых талантов-промахов</strong>. С 51-го ролла шанс растет на <strong>+5% за каждый последующий золотой реролл</strong> (на 70-м золотом таланте достигается 100% гарант).' : isCn ? '心愿金天赋的保底概率<strong>只有在连续歪掉50个非心愿金天赋后才开始递增</strong>。从第51个金天赋开始，每次洗练概率递增<strong>+5%</strong>，第70个金天赋必定100%出心愿目标！' : 'Pity chance begins increasing ONLY after 50 non-wishlist gold talents. From roll 51 onwards, chance increases by +5% per gold reroll, hitting 100% hard pity at roll 70.'}</li>
             <li><strong>${isRu ? 'Сборка идеальных 4 слотов:' : isCn ? '四金天赋标准养成法:' : '4-Slot Gold Method:'}</strong> ${isRu ? 'Сначала крутите 1-ю страницу до открытия <strong>4 любых золотых слотов</strong> (неважно, какие таланты). Затем выбивайте нужные эксклюзивы на донорах и переносите их за 200 кристаллов.' : isCn ? '先在第1页洗出<strong>任意4个金色天赋槽位</strong>（无需在意词条好坏）。然后在其他狗粮角色身上洗出极品专属天赋，消耗200钻石转移至主力身上覆盖。' : 'First reroll Page 1 until you have 4 random gold slots. Then roll target exclusives on donor units and transfer them across for 200 gems.'}</li>
@@ -341,7 +420,9 @@ const GuidesView = {
   },
 
   // 1. Battle Phases
-  getPhasesRU() {
+
+
+    getPhasesRU() {
     return `
       <div class="guide-article">
         <h2 class="guide-title">⚔️ Порядок ходов и Фазы действий (Action Lifecycle)</h2>
@@ -1881,7 +1962,50 @@ const GuidesView = {
   }
 ,
 
-  renderBuffModal(buff, currentLang = 'RU') {
+  scrollToAnchor(anchorId) {
+    if (!anchorId) return;
+    const cleanId = anchorId.startsWith('tips-') ? anchorId : `tips-${anchorId}`;
+    const el = document.getElementById(cleanId) || document.getElementById(anchorId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      el.classList.add('guide-anchor-highlight');
+      setTimeout(() => el.classList.remove('guide-anchor-highlight'), 2500);
+    }
+    const hash = `#guides/tips/${cleanId.replace('tips-', '')}`;
+    if (window.location.hash !== hash) {
+      history.pushState(null, '', hash);
+    }
+  },
+
+  copyGuideLink(anchorId, btnEl = null) {
+    if (!anchorId) return;
+    const cleanId = anchorId.startsWith('tips-') ? anchorId : `tips-${anchorId}`;
+    const sub = cleanId.replace('tips-', '');
+    const url = `${window.location.origin}${window.location.pathname}#guides/tips/${sub}`;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(() => {
+        if (btnEl) {
+          const origHtml = btnEl.innerHTML;
+          const isCn = (App.currentLanguage || 'RU') === 'CN';
+          const isEn = (App.currentLanguage || 'RU') === 'EN';
+          btnEl.innerHTML = `<span style="color: #4ade80;">✓ ${isCn ? '已复制' : (isEn ? 'Copied!' : 'Скопировано!')}</span>`;
+          btnEl.style.borderColor = '#4ade80';
+          setTimeout(() => {
+            btnEl.innerHTML = origHtml;
+            btnEl.style.borderColor = '';
+          }, 2000);
+        }
+        this.scrollToAnchor(cleanId);
+      }).catch(() => {
+        prompt('Ссылка на подраздел:', url);
+      });
+    } else {
+      prompt('Ссылка на подраздел:', url);
+    }
+  },
+
+    renderBuffModal(buff, currentLang = 'RU') {
     if (!buff) return '';
     const isRu = currentLang === 'RU';
     const isCn = currentLang === 'CN';

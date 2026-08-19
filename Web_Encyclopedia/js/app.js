@@ -103,6 +103,20 @@ const App = {
 
     if (route === 'guides' && hashParts[1]) {
       GuidesView.activeSection = hashParts[1];
+      if (hashParts[1] === 'tips' && hashParts[2]) {
+        setTimeout(() => {
+          GuidesView.scrollToAnchor(`tips-${hashParts[2]}`);
+        }, 150);
+      }
+    } else if (route.startsWith('tips-') || route === 'tips') {
+      initialTab = 'guides';
+      GuidesView.activeSection = 'tips';
+      const targetAnchor = route.startsWith('tips-') ? route : (hashParts[1] ? `tips-${hashParts[1]}` : '');
+      if (targetAnchor) {
+        setTimeout(() => {
+          GuidesView.scrollToAnchor(targetAnchor);
+        }, 150);
+      }
     } else if (route === 'calculators' && hashParts[1]) {
       CalculatorsView.activeCalc = hashParts[1];
     }

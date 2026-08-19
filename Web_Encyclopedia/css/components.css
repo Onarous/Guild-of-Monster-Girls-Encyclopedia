@@ -4313,3 +4313,46 @@
   color: #fbbf24;
   border: 1px solid rgba(251, 191, 36, 0.35);
 }
+
+/* Guide Sub-section Anchors & Link Buttons */
+.guide-copy-link-btn {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: var(--radius-sm);
+  padding: 3px 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.guide-copy-link-btn:hover {
+  background: rgba(168, 85, 247, 0.3);
+  color: #ffffff;
+  border-color: #a855f7;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(168, 85, 247, 0.35);
+}
+
+.guide-anchor-highlight {
+  animation: guideAnchorPulse 2.5s ease-out;
+}
+
+@keyframes guideAnchorPulse {
+  0% {
+    box-shadow: 0 0 0 3px #a855f7, 0 0 25px rgba(168, 85, 247, 0.7);
+    border-color: #c084fc !important;
+    background: rgba(30, 27, 75, 0.75) !important;
+  }
+  50% {
+    box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.5), 0 0 15px rgba(168, 85, 247, 0.4);
+  }
+  100% {
+    box-shadow: none;
+  }
+}
