@@ -120,24 +120,27 @@ const ItemsView = {
       return (isRu ? '🪨 Рунический алтарь / Награды битв' : isCn ? '🪨 符文祭坛 / 战斗掉落' : '🪨 Rune Altar / Battles') + chStr;
     } else if (category === 'ingredients') {
       const chStr = chestsFound.length > 0 ? (isRu ? ` • 🎁 ${chestsFound.length} сунд.` : ` • 🎁 ${chestsFound.length} chests`) : '';
-      return (isRu ? '🌿 Сбор ресурсов / Дроп с монстров' : isCn ? '🌿 采集 / 怪物掉落' : '🌿 Gathering / Monsters') + chStr;
+      return (item.source || (isRu ? '🌿 Сбор ресурсов / Дроп с монстров' : isCn ? '🌿 采集 / 怪物掉落' : '🌿 Gathering / Monsters')) + chStr;
+    } else if (category === 'consumables') {
+      const chStr = chestsFound.length > 0 ? (isRu ? ` • 🎁 ${chestsFound.length} сунд.` : ` • 🎁 ${chestsFound.length} chests`) : '';
+      return (item.source || (isRu ? '📦 Квесты / События / Магазин / Карта' : isCn ? '📦 任务 / 活动 / 商店 / 地图' : '📦 Quests / Events / Shop / Map')) + chStr;
     } else if (category === 'special_items') {
-      return isRu ? '✨ Задания / События / Магазин' : isCn ? '✨ 任务 / 活动 / 商店' : '✨ Quests / Events / Shop';
+      return item.source || (isRu ? '✨ Задания / События / Магазин' : isCn ? '✨ 任务 / 活动 / 商店' : '✨ Quests / Events / Shop');
     } else if (category === 'chests') {
       const area = item.area_name;
       const areaStr = (area && area !== '不限' && area !== 'Все зоны' && area !== 'Any Zone') ? ` (${area})` : '';
       return (isRu ? `📦 Исследование мира${areaStr} / Квесты` : isCn ? `📦 世界探索${areaStr} / 战令 / 任务` : `📦 World Exploration${areaStr} / Quests`);
     } else if (category === 'godstones') {
-      return isRu ? '💎 Алхимия / Божественный алтарь' : isCn ? '💎 炼金 / 神石祭坛' : '💎 Alchemy / Divine Altar';
+      return item.source || (isRu ? '💎 Алхимия / Божественный алтарь' : isCn ? '💎 炼金 / 神石祭坛' : '💎 Alchemy / Divine Altar');
     } else if (category === 'dungeon_relics') {
       const diff = item.difficulty ? ` (${item.difficulty})` : '';
-      return isRu ? `🗝️ Roguelike-подземелья${diff}` : isCn ? `🗝️ 秘境肉鸽${diff}` : `🗝️ Roguelike Dungeons${diff}`;
+      return item.source || (isRu ? `🗝️ Roguelike-подземелья${diff}` : isCn ? `🗝️ 秘境肉鸽${diff}` : `🗝️ Roguelike Dungeons${diff}`);
     } else if (category === 'prefixes') {
-      return isRu ? '🏷️ Ковка и перековка в кузнице' : isCn ? '🏷️ 铁匠铺锻造重铸' : '🏷️ Blacksmith Forging & Reforging';
+      return item.source || (isRu ? '🏷️ Ковка и перековка в кузнице' : isCn ? '🏷️ 铁匠铺锻造重铸' : '🏷️ Blacksmith Forging & Reforging');
     } else if (category === 'bonds') {
-      return isRu ? '🔗 Комплект снаряжения (2, 4, 6 шт)' : isCn ? '🔗 装备套装羁绊 (2/4/6件)' : '🔗 Gear Set Synergy (2, 4, 6 pcs)';
+      return item.source || (isRu ? '🔗 Комплект снаряжения (2, 4, 6 шт)' : isCn ? '🔗 装备套装羁绊 (2/4/6件)' : '🔗 Gear Set Synergy (2, 4, 6 pcs)');
     }
-    return isRu ? '📦 Игровые активности' : '📦 Game Activities';
+    return item.source || (isRu ? '📦 Игровые активности' : '📦 Game Activities');
   },
 
   getCategoryLabel(category, currentLang = 'RU') {
@@ -555,12 +558,16 @@ const ItemsView = {
       if (t.possible_chests && t.possible_chests.some(ch => ch.id === itemId || (typeof ch === 'string' && ch === itemId))) {
         return true;
       }
-      // 3. Material match
+      // 3. Direct resources / consumables drop match
+      if (t.possible_resources && t.possible_resources.some(r => r.id === itemId || (typeof r === 'string' && r === itemId))) {
+        return true;
+      }
+      // 4. Material keyword match
       const mats = Array.isArray(t.materials) ? t.materials : (t.materials?.[currentLang] || t.materials?.RU || t.materials?.CN || []);
       if (mats.some(m => itemName && (itemName.includes(String(m).toLowerCase()) || String(m).toLowerCase().includes(itemName)))) {
         return true;
       }
-      // 4. Biome match for area-specific items
+      // 5. Biome match for area-specific items
       if (itemArea && itemArea !== '不限' && itemArea !== 'все зоны' && itemArea !== 'any zone') {
         const biomes = Array.isArray(t.biomes) ? t.biomes : [
           ...(t.biomes?.[currentLang] || []),
@@ -924,10 +931,19 @@ const ItemsView = {
             <div class="detail-section">
               <div class="section-heading">📍 ${dict.acquisitionTitle || 'Способ получения'}</div>
               <div class="item-source-box">
-                <div style="font-size: 13.5px; font-weight: 600; color: #ffffff; display: flex; align-items: center; gap: 8px;">
-                  <span style="font-size: 18px;">🗺️</span>
-                  <span>${this.getItemSourceSummary(item, category, currentLang)}</span>
-                </div>
+                ${(() => {
+                  const srcSummary = this.getItemSourceSummary(item, category, currentLang);
+                  const parts = srcSummary.includes('•') ? srcSummary.split('•').map(s => s.trim()).filter(Boolean) : [srcSummary];
+                  return `
+                    <div style="display: flex; flex-direction: column; gap: 6px;">
+                      ${parts.map(part => `
+                        <div style="font-size: 13px; font-weight: 600; color: #f1f5f9; line-height: 1.5; display: flex; align-items: flex-start; gap: 8px;">
+                          <span>${this.escapeHtml(part)}</span>
+                        </div>
+                      `).join('')}
+                    </div>
+                  `;
+                })()}
 
                 ${(() => {
                   const chestMap = this.buildReverseChestMap(typeof App !== 'undefined' ? App.state?.data?.items?.[currentLang] : null);
