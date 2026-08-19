@@ -10,7 +10,11 @@
     },
     "icon": "⛺",
     "category": "special",
-    "category_name": "Безопасная зона",
+    "category_name": {
+      "RU": "Безопасная зона",
+      "EN": "Safe Zone",
+      "CN": "安全营地"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -92,11 +96,17 @@
         "⛺ Expedition deployment & starting tile",
         "🛡️ Safe zone (no enemy encounters)",
         "👥 Free party formation setup"
+      ],
+      "CN": [
+        "⛺ 远征出发点与安全大本营",
+        "🛡️ 安全区域（无怪物遭遇战）",
+        "👥 自由调整队伍阵型与站位"
       ]
     },
     "description": {
       "RU": "⛺ Стартовая безопасная база экспедиции. С этой клетки начинается высадка отряда на карту. Не содержит врагов и позволяет подготовить построение перед выходом на опасные участки биома.",
-      "EN": "⛺ Starting safe camp for the expedition. Team deployment starts here. Contains no enemies, allowing team formation prep before venturing into hazardous map areas."
+      "EN": "⛺ Starting safe camp for the expedition. Team deployment starts here. Contains no enemies, allowing team formation prep before venturing into hazardous map areas.",
+      "CN": "⛺ 远征出发点与安全大本营。队伍在此完成初始部署与站位调整，无战斗威胁。"
     }
   },
   {
@@ -110,7 +120,11 @@
     },
     "icon": "❄️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "1x1",
@@ -173,11 +187,15 @@
       ],
       "EN": [
         "🌿 Resource Harvest (EXP, Mushrooms, Meat): 100.0%"
+      ],
+      "CN": [
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Мясо): 100.0%"
       ]
     },
     "description": {
       "RU": "Клетка игрового поля типа «Сбор ресурсов» (1x1), встречающаяся в биомах: Морозная тундра.",
-      "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: Frostbound Tundra."
+      "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: Frostbound Tundra.",
+      "CN": "🗺️ 雪地地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -191,7 +209,11 @@
     },
     "icon": "🗿",
     "category": "special",
-    "category_name": "Тотем",
+    "category_name": {
+      "RU": "Тотем",
+      "EN": "Totem",
+      "CN": "图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -256,11 +278,18 @@
         "👑 Heroine Shards / Recruit: 37.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "👑 Фрагменты героинь / Вербовка: 37.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "🗿 Тотем Морозного клыка. Элитное сооружение северных племен: даёт 60% шанс выпадения сундуков и 37% шанс вербовки/осколков северных героинь.",
-      "EN": "🗿 Frostfang Totem. Elite tribal structure: grants 60% gear chest drop rate and 37% northern heroine recruit/shard drop rate."
+      "EN": "🗿 Frostfang Totem. Elite tribal structure: grants 60% gear chest drop rate and 37% northern heroine recruit/shard drop rate.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -274,7 +303,11 @@
     },
     "icon": "📦",
     "category": "special",
-    "category_name": "Сундуки и Тотемы",
+    "category_name": {
+      "RU": "Сундуки и Тотемы",
+      "EN": "Chests & Totems",
+      "CN": "宝箱与图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -636,11 +669,16 @@
       "EN": [
         "📦 Gear Chests: 80.0%",
         "⚔️ Direct Gear Drops: 20.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 20.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Сундук» с повышенной концентрацией сундуков сокровищ (80.0%) и материалов.",
-      "EN": "⭐ Special spot 'Chest' with high concentration of treasure chests (80.0%) and materials."
+      "EN": "⭐ Special spot 'Chest' with high concentration of treasure chests (80.0%) and materials.",
+      "CN": "📦 散落在此区域的密封宝箱。开启可获得该区域专属宝箱及高阶装备。"
     }
   },
   {
@@ -654,7 +692,11 @@
     },
     "icon": "⚪",
     "category": "special",
-    "category_name": "Тайник",
+    "category_name": {
+      "RU": "Тайник",
+      "EN": "Hidden Cache",
+      "CN": "密藏"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -854,11 +896,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⚪ Заснеженный тайник. Скрывает замерзшие сокровища и гарантирует прямое получение снаряжения (100%).",
-      "EN": "⚪ Snowdrift Cache. Conceals frozen treasures with guaranteed direct gear drops (100%)."
+      "EN": "⚪ Snowdrift Cache. Conceals frozen treasures with guaranteed direct gear drops (100%).",
+      "CN": "🗺️ 雪球地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -872,7 +918,11 @@
     },
     "icon": "🏺",
     "category": "special",
-    "category_name": "Реликвия",
+    "category_name": {
+      "RU": "Реликвия",
+      "EN": "Relic",
+      "CN": "遗物"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -1075,11 +1125,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "🏺 Древняя реликвия. Содержит запечатанное легендарное снаряжение (100% шанс прямого дропа экипировки при исследовании клетки).",
-      "EN": "🏺 Ancient Relic. Contains sealed legendary gear (100% direct gear drop rate upon clearing the tile)."
+      "EN": "🏺 Ancient Relic. Contains sealed legendary gear (100% direct gear drop rate upon clearing the tile).",
+      "CN": "🗺️ 遗物地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -1093,7 +1147,11 @@
     },
     "icon": "🌌",
     "category": "special",
-    "category_name": "Разлом",
+    "category_name": {
+      "RU": "Астральный разлом",
+      "EN": "Astral Rift",
+      "CN": "星界裂痕"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -1296,11 +1354,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "🌌 Астральный разлом. Пространственная аномалия, связывающая мир с Астральным царством. Гарантирует 100% шанс прямого дропа высокоуровневой экипировки и астральных камней.",
-      "EN": "🌌 Astral Rift. Spatial anomaly connecting to the Astral Realm. Guarantees 100% direct gear drop rate and astral stones."
+      "EN": "🌌 Astral Rift. Spatial anomaly connecting to the Astral Realm. Guarantees 100% direct gear drop rate and astral stones.",
+      "CN": "🗺️ 星界裂痕地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -1314,7 +1376,11 @@
     },
     "icon": "🪨",
     "category": "special",
-    "category_name": "Тайник",
+    "category_name": {
+      "RU": "Тайник",
+      "EN": "Hidden Cache",
+      "CN": "密藏"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -1517,11 +1583,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "🪨 Треснувшая земля. Под разломом скрыт подземный схрон с экипировкой (100% прямой дроп).",
-      "EN": "🪨 Fissured Ground. Hides an underground cache with direct gear drops (100%)."
+      "EN": "🪨 Fissured Ground. Hides an underground cache with direct gear drops (100%).",
+      "CN": "🗺️ 龟裂地面地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -1535,7 +1605,11 @@
     },
     "icon": "🧙‍♂️",
     "category": "merchant",
-    "category_name": "Торговец",
+    "category_name": {
+      "RU": "Странствующий торговец",
+      "EN": "Travel Merchant",
+      "CN": "游商地精"
+    },
     "special_spot_type": 2,
     "is_special": true,
     "size_str": "1x1",
@@ -1755,11 +1829,18 @@
         "🪨 Legacy Stones for MAX breakthrough: 25.0%",
         "🍱 Large Stamina Rations (+500 ⚡): 25.0%",
         "📜 Recruit Tickets & gear for gold: 20.0%"
+      ],
+      "CN": [
+        "💖 产出角色好感与好感爱心",
+        "🪨 Камни наследия для MAX ранга: 25.0%",
+        "🍱 Большие пайки выносливости (+500 ⚡): 25.0%",
+        "📜 Билеты найма и ценное снаряжение за золото: 20.0%"
       ]
     },
     "description": {
       "RU": "🧙‍♂️ Странствующий торговец-гоблин. Главный источник ценнейших ресурсов в экспедициях. Продаёт Сердца героинь (Heroine's Hearts) для мгновенной прокачки 70+ уровней без золота, Камни наследия, пайки выносливости и свитки призыва за золото.",
-      "EN": "🧙‍♂️ Wandering Goblin Merchant. Primary source of valuable expedition items. Sells Heroine's Hearts for instant 70+ level-ups without gold, Legacy Stones, stamina rations, and recruit tickets for gold."
+      "EN": "🧙‍♂️ Wandering Goblin Merchant. Primary source of valuable expedition items. Sells Heroine's Hearts for instant 70+ level-ups without gold, Legacy Stones, stamina rations, and recruit tickets for gold.",
+      "CN": "🧙‍♂️ 游荡于荒野各区域的神秘商人。售卖角色好感爱心（30%）、神石（25%）、大份干粮（500体力）及招募契约书（20%）。"
     }
   },
   {
@@ -1773,7 +1854,11 @@
     },
     "icon": "📦",
     "category": "mimic",
-    "category_name": "Металлический мимик",
+    "category_name": {
+      "RU": "Металлический мимик",
+      "EN": "Metallic Mimic",
+      "CN": "金属宝箱怪"
+    },
     "special_spot_type": 2,
     "is_special": true,
     "size_str": "1x1",
@@ -1993,11 +2078,18 @@
         "📦 Gold & Orange Gear Chests: 30.0%",
         "💎 Wish Stones & Divine Crystals: 15.0%",
         "👑 Golden Maiden / Metallic Race Shards: 10.0%"
+      ],
+      "CN": [
+        "🪙 掉落大量金币与财宝",
+        "📦 产出区域专属高阶宝箱",
+        "💎 Камни желаний и Божественные кристаллы: 15.0%",
+        "🪙 掉落大量金币与财宝"
       ]
     },
     "description": {
       "RU": "📦 Металлический мимик (Metallic). Обладает стальной бронёй и иммунитетом к потере HP (HP Loss). Пробивается чистым уроном (Drain MP), способностями расы Металла или быстрыми сериями мульти-ударов. Награждает огромными суммами золота и сундуками сокровищ.",
-      "EN": "📦 Metallic Mimic. Possesses hardened armor and immunity to HP Loss. Defeated by Drain MP, Metallic race traits, or multi-hit attacks. Yields massive gold bounties and treasure chests."
+      "EN": "📦 Metallic Mimic. Possesses hardened armor and immunity to HP Loss. Defeated by Drain MP, Metallic race traits, or multi-hit attacks. Yields massive gold bounties and treasure chests.",
+      "CN": "🪙 伪装成金属宝箱的贪婪怪物。击败后掉落巨额金币（45%）、高阶宝箱（30%）、祈愿神石（15%）及金币女神碎片（10%）。"
     }
   },
   {
@@ -2011,7 +2103,11 @@
     },
     "icon": "⚙️",
     "category": "mimic",
-    "category_name": "Заводной мимик",
+    "category_name": {
+      "RU": "Заводной мимик",
+      "EN": "Clockwork Mimic",
+      "CN": "机巧宝箱怪"
+    },
     "special_spot_type": 2,
     "is_special": true,
     "size_str": "1x1",
@@ -2392,11 +2488,18 @@
         "📦 Gear & Rune Chests: 35.0%",
         "🪨 Legacy Stones for MAX star-up: 15.0%",
         "⚔️ Direct high-tier component drops: 10.0%"
+      ],
+      "CN": [
+        "⚙️ Шестерёнки для рулетки «Заводного тайника»: 40.0%",
+        "📦 产出区域专属高阶宝箱",
+        "🪨 Камни наследия (Legacy Stones): 15.0%",
+        "⚔️ Прямой дроп высокоранговых компонентов: 10.0%"
       ]
     },
     "description": {
       "RU": "⚙️ Заводной мимик-механизм. Редкое боевое событие. После победы даёт ценные шестерёнки для рулетки «Заводного тайника» (Clockwork Trove), Камни наследия и редкие компоненты снаряжения.",
-      "EN": "⚙️ Clockwork Mimic. Rare combat encounter. Victory rewards gears for the 'Clockwork Trove' lucky roulette, Legacy Stones, and rare gear components."
+      "EN": "⚙️ Clockwork Mimic. Rare combat encounter. Victory rewards gears for the 'Clockwork Trove' lucky roulette, Legacy Stones, and rare gear components.",
+      "CN": "⚙️ 由精巧齿轮机关驱动的特殊宝箱怪。击败可产出机巧核心齿轮零件（40%）、宝箱（35%）及稀有传承石（15%）。"
     }
   },
   {
@@ -2410,7 +2513,11 @@
     },
     "icon": "⚰️",
     "category": "altar",
-    "category_name": "Гробница героини",
+    "category_name": {
+      "RU": "Гробница героини",
+      "EN": "Heroine's Grave",
+      "CN": "勇者之墓"
+    },
     "special_spot_type": 3,
     "is_special": true,
     "size_str": "1x1",
@@ -2507,11 +2614,17 @@
         "✨ Fallen ally revival & +100 party stamina: 40.0%",
         "🛡️ Combat damage and defense blessings: 35.0%",
         "👑 Shards and relics of fallen heroines: 25.0%"
+      ],
+      "CN": [
+        "✨ Воскрешение павших союзниц и +100 выносливости: 40.0%",
+        "🛡️ Боевые благословения на урон и защиту: 35.0%",
+        "👑 Фрагменты и реликвии павших воительниц: 25.0%"
       ]
     },
     "description": {
       "RU": "⚰️ Гробница павшей героини. Сакральное святилище, где можно воскресить павших союзниц, восстановить выносливость отряда и получить временные благословения на урон и защиту.",
-      "EN": "⚰️ Heroine's Grave. Sacred shrine allowing revival of fallen allies, party stamina recovery, and temporary damage/defense blessings."
+      "EN": "⚰️ Heroine's Grave. Sacred shrine allowing revival of fallen allies, party stamina recovery, and temporary damage/defense blessings.",
+      "CN": "⚰️ 远古英雄长眠的长眠之地。交互可提供复活神迹（40%）、全队属性大祝福（35%）及传承碎片（25%）。"
     }
   },
   {
@@ -2525,7 +2638,11 @@
     },
     "icon": "🏛️",
     "category": "altar",
-    "category_name": "Алтарь наследия",
+    "category_name": {
+      "RU": "Алтарь наследия",
+      "EN": "Legacy Altar",
+      "CN": "传承祭坛"
+    },
     "special_spot_type": 4,
     "is_special": true,
     "size_str": "1x1",
@@ -2780,11 +2897,17 @@
         "🪨 Legacy gear breakthrough (MAX rank): 50.0%",
         "⭐ Set talent bonus points (+1/+3 to all rows): 30.0%",
         "💎 Legacy Stones & astral materials: 20.0%"
+      ],
+      "CN": [
+        "🪨 Прорыв наследия экипировки (MAX ранг): 50.0%",
+        "⭐ Очки к строкам сетовых бонусов (+1/+3): 30.0%",
+        "💎 Камни наследия и астральные материалы: 20.0%"
       ]
     },
     "description": {
       "RU": "🏛️ Древний алтарь наследия. Ключевая механика усиления снаряжения: позволяет применять Камни наследия (Legacy Stones) для прорыва экипировки до ранга MAX (+3 очка ко всем строкам сетов, сокращая требование сета до 2 предметов).",
-      "EN": "🏛️ Ancient Legacy Altar. Core gear enhancement mechanic: allows using Legacy Stones for MAX breakthrough (+3 points to all set talent rows, reducing set requirements to 2 pieces)."
+      "EN": "🏛️ Ancient Legacy Altar. Core gear enhancement mechanic: allows using Legacy Stones for MAX breakthrough (+3 points to all set talent rows, reducing set requirements to 2 pieces).",
+      "CN": "🏛️ 一座能将金币转化为神圣能量的神奇祭坛。可直接提升装备传承等级至MAX（50%）、提供套装词条与洗练神石。"
     }
   },
   {
@@ -2798,7 +2921,11 @@
     },
     "icon": "📜",
     "category": "altar",
-    "category_name": "Стела пророчества",
+    "category_name": {
+      "RU": "Стела пророчества",
+      "EN": "Prophecy Stele",
+      "CN": "预言石碑"
+    },
     "special_spot_type": 7,
     "is_special": true,
     "size_str": "1x1",
@@ -2892,11 +3019,17 @@
         "🔮 Oracle Buffs (+20% damage, +15% crit): 50.0%",
         "🗺️ Map scouting & fog of war removal: 30.0%",
         "📍 Secret cache and Boss tile reveal: 20.0%"
+      ],
+      "CN": [
+        "📜 提供全队强力预知与战斗增益",
+        "🗺️ Разведка карты и снятие тумана войны: 30.0%",
+        "📍 Обнаружение скрытых тайников и клетки Босса: 20.0%"
       ]
     },
     "description": {
       "RU": "📜 Стела пророчества. Рассеивает туман войны в окружающих секторах, указывает кратчайший путь к клетке Босса и накладывает мощные баффы Оракула (Oracle Buffs) на весь отряд.",
-      "EN": "📜 Prophecy Stele. Clears fog of war in adjacent sectors, highlights the optimal path to the Boss tile, and bestows powerful party-wide Oracle Buffs."
+      "EN": "📜 Prophecy Stele. Clears fog of war in adjacent sectors, highlights the optimal path to the Boss tile, and bestows powerful party-wide Oracle Buffs.",
+      "CN": "📜 刻有远古先知预言的神秘石刻。激活后获得战斗预知加成（50%）、全图视野探明（30%）及直通Boss捷径（20%）。"
     }
   },
   {
@@ -2910,7 +3043,11 @@
     },
     "icon": "🎁",
     "category": "special",
-    "category_name": "Припасы",
+    "category_name": {
+      "RU": "Припасы",
+      "EN": "Gift Pack",
+      "CN": "限时礼包"
+    },
     "special_spot_type": 5,
     "is_special": true,
     "size_str": "1x1",
@@ -2988,11 +3125,15 @@
       ],
       "EN": [
         "🌿 Resource Harvest: 100.0%"
+      ],
+      "CN": [
+        "🌿 Добыча материалов: 100.0%"
       ]
     },
     "description": {
       "RU": "🎁 Временный подарочный тайник. Содержит щедрые порции выносливости (Базовые и Большие пайки), Клеверы удачи и кристаллы алхимии.",
-      "EN": "🎁 Timed Supply Cache. Contains generous stamina rations (Basic/Large), Lucky Clovers, and alchemy crystals."
+      "EN": "🎁 Timed Supply Cache. Contains generous stamina rations (Basic/Large), Lucky Clovers, and alchemy crystals.",
+      "CN": "🎁 探索中随机触发的限时特惠补给包，提供高性价比体力与稀有资源。"
     }
   },
   {
@@ -3006,7 +3147,11 @@
     },
     "icon": "🩸",
     "category": "mimic",
-    "category_name": "Ритуальный мимик",
+    "category_name": {
+      "RU": "Ритуальный мимик",
+      "EN": "Sacrificial Mimic",
+      "CN": "献祭宝箱怪"
+    },
     "special_spot_type": 6,
     "is_special": true,
     "size_str": "1x1",
@@ -3223,11 +3368,18 @@
         "💖 Heroine's Hearts for star ascension: 25.0%",
         "📜 Recruit / Alter Summon Tickets: 15.0%",
         "🔮 Alter Heroine Shards: 10.0%"
+      ],
+      "CN": [
+        "🎁 Сакральные сундуки высшего ранга (S★ / SS★): 50.0%",
+        "💖 产出角色好感与好感爱心",
+        "📜 Билеты найма / Альтер-билеты: 15.0%",
+        "🔮 Альтер-осколки героинь: 10.0%"
       ]
     },
     "description": {
       "RU": "🩸 Ритуальный мимик. Требует принесения в жертву части выносливости или победы в усложнённом испытании в обмен на редчайшие сундуки экипировки, Сердца героинь и свитки призыва.",
-      "EN": "🩸 Sacrificial Mimic. Demands stamina sacrifice or victory in an empowered challenge in exchange for the rarest gear chests, Heroine's Hearts, and summon tickets."
+      "EN": "🩸 Sacrificial Mimic. Demands stamina sacrifice or victory in an empowered challenge in exchange for the rarest gear chests, Heroine's Hearts, and summon tickets.",
+      "CN": "🩸 需消耗生命或资源献祭交互的血色宝箱怪。提供高阶极品神秘宝箱（50%）、角色好感爱心（25%）及抽卡券（15%）。"
     }
   },
   {
@@ -3241,7 +3393,11 @@
     },
     "icon": "🪙",
     "category": "special",
-    "category_name": "Сокровищница",
+    "category_name": {
+      "RU": "Сокровищница",
+      "EN": "Treasure Vault",
+      "CN": "宝库"
+    },
     "special_spot_type": 9,
     "is_special": true,
     "size_str": "1x1",
@@ -3319,11 +3475,15 @@
       ],
       "EN": [
         "🌿 Resource Harvest: 100.0%"
+      ],
+      "CN": [
+        "🌿 Добыча материалов: 100.0%"
       ]
     },
     "description": {
       "RU": "🪙 Золотое хранилище гильдии. Особая зона с рекордным содержанием золотых слитков и сундуков сокровищ.",
-      "EN": "🪙 Guild Golden Vault. Special zone featuring record amounts of gold bullion and treasure chests."
+      "EN": "🪙 Guild Golden Vault. Special zone featuring record amounts of gold bullion and treasure chests.",
+      "CN": "💰 堆满宝藏的地下密室。可获取大量纯金金币、高级宝箱及稀有养成材料。"
     }
   },
   {
@@ -3337,7 +3497,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 3x3",
@@ -3603,11 +3767,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Ore, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Руда, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Разбросанные останки павших зверей.",
-      "EN": "Scattered remains of fallen beasts."
+      "EN": "Scattered remains of fallen beasts.",
+      "CN": "🗺️ 野兽坟墓地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -3621,7 +3793,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -3886,11 +4062,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Plants, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Растения, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Природная руда, подверженная воздействию стихий.",
-      "EN": "Natural ore exposed to the elements."
+      "EN": "Natural ore exposed to the elements.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -3904,7 +4088,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 4x4",
@@ -4148,11 +4336,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Ore): 60.0%",
         "💎 Godstones & Gems: 2.1%",
         "🪙 Slime / Gold Coins: 1.1%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.3%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Руда): 60.0%",
+        "💎 Камни Богов / Самоцветы: 2.1%",
+        "🪙 Слизь / Золотые монеты: 1.1%"
       ]
     },
     "description": {
       "RU": "Лед, испещренный неведомыми рунами.",
-      "EN": "Ice carved with unknown runes."
+      "EN": "Ice carved with unknown runes.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -4166,7 +4362,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -4409,11 +4609,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 60.0%",
         "💎 Godstones & Gems: 2.1%",
         "🪙 Slime / Gold Coins: 1.1%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.3%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 60.0%",
+        "💎 Камни Богов / Самоцветы: 2.1%",
+        "🪙 Слизь / Золотые монеты: 1.1%"
       ]
     },
     "description": {
       "RU": "Неестественное сооружение, излучающее бесконечный холод.",
-      "EN": "An unnatural construct radiating endless cold."
+      "EN": "An unnatural construct radiating endless cold.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -4427,7 +4635,11 @@
     },
     "icon": "🗿",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -4670,11 +4882,19 @@
         "🌿 Resource Harvest (EXP, Meat, Ore): 60.0%",
         "💎 Godstones & Gems: 2.1%",
         "🪙 Slime / Gold Coins: 1.1%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.3%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Мясо, Руда): 60.0%",
+        "💎 Камни Богов / Самоцветы: 2.1%",
+        "🪙 Слизь / Золотые монеты: 1.1%"
       ]
     },
     "description": {
       "RU": "Тотем из рога, покрытый инеем.",
-      "EN": "A horn totem encased in frost."
+      "EN": "A horn totem encased in frost.",
+      "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
     }
   },
   {
@@ -4688,7 +4908,11 @@
     },
     "icon": "🐝",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "5x5, 6x6",
@@ -4941,11 +5165,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Energy, Ore): 60.0%",
         "💎 Godstones & Gems: 2.1%",
         "🪙 Slime / Gold Coins: 1.1%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.3%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия, Руда): 60.0%",
+        "💎 Камни Богов / Самоцветы: 2.1%",
+        "🪙 Слизь / Золотые монеты: 1.1%"
       ]
     },
     "description": {
       "RU": "Улей, построенный в замерзших корнях.",
-      "EN": "A hive built into frozen roots."
+      "EN": "A hive built into frozen roots.",
+      "CN": "🗺️ 极寒蜂巢地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -4959,7 +5191,11 @@
     },
     "icon": "🗿",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -5202,11 +5438,19 @@
         "🌿 Resource Harvest (EXP, Meat, Ore): 60.0%",
         "💎 Godstones & Gems: 2.1%",
         "🪙 Slime / Gold Coins: 1.1%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.3%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Мясо, Руда): 60.0%",
+        "💎 Камни Богов / Самоцветы: 2.1%",
+        "🪙 Слизь / Золотые монеты: 1.1%"
       ]
     },
     "description": {
       "RU": "Первобытный тотем, вырезанный из цельного льда.",
-      "EN": "A primal totem carved from solid ice."
+      "EN": "A primal totem carved from solid ice.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -5220,7 +5464,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -5485,11 +5733,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Гниющий деревянный забор.",
-      "EN": "A rotting wooden fence."
+      "EN": "A rotting wooden fence.",
+      "CN": "🗺️ 破烂围墙地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -5503,7 +5759,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -5746,11 +6006,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 60.0%",
         "💎 Godstones & Gems: 2.1%",
         "🪙 Slime / Gold Coins: 1.1%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.3%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 60.0%",
+        "💎 Камни Богов / Самоцветы: 2.1%",
+        "🪙 Слизь / Золотые монеты: 1.1%"
       ]
     },
     "description": {
       "RU": "Магический ориентир, отмечающий координаты в ледяном мире.",
-      "EN": "A magical landmark marking coordinates in the frozen world."
+      "EN": "A magical landmark marking coordinates in the frozen world.",
+      "CN": "🗺️ 极寒哨塔地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -5764,7 +6032,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -6029,11 +6301,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Ore, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Руда, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Некогда тайное место, пока кто-то не поставил у входа указатель.",
-      "EN": "Once hidden, until someone planted a sign at the entrance."
+      "EN": "Once hidden, until someone planted a sign at the entrance.",
+      "CN": "🗺️ 藏宝洞穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -6047,7 +6327,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "8x8",
@@ -6290,11 +6574,19 @@
         "🌿 Resource Harvest (EXP, Ore, Meat): 60.0%",
         "💎 Godstones & Gems: 2.1%",
         "🪙 Slime / Gold Coins: 1.1%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.3%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Руда, Мясо): 60.0%",
+        "💎 Камни Богов / Самоцветы: 2.1%",
+        "🪙 Слизь / Золотые монеты: 1.1%"
       ]
     },
     "description": {
       "RU": "Когда-то здесь жили ледяные волки. Надеюсь, они давно ушли.",
-      "EN": "Frostwolves once lived here. Hopefully they're long gone."
+      "EN": "Frostwolves once lived here. Hopefully they're long gone.",
+      "CN": "🗺️ 霜狼巢穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -6308,7 +6600,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "35x35",
@@ -6358,11 +6654,15 @@
       ],
       "EN": [
         "📦 Gear Chests: 100.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱"
       ]
     },
     "description": {
       "RU": "Зарождающиеся врата между ледяным миром и главным миром.",
-      "EN": "A nascent gateway between the frozen realm and the prime world."
+      "EN": "A nascent gateway between the frozen realm and the prime world.",
+      "CN": "🗺️ 极寒之门地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -6376,7 +6676,11 @@
     },
     "icon": "🌿",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "1x1",
@@ -6475,11 +6779,15 @@
       ],
       "EN": [
         "🌿 Resource Harvest (Plants, Energy, Mushrooms, EXP, Meat): 100.0%"
+      ],
+      "CN": [
+        "🌿 Добыча материалов (Растения, Энергия, Грибы, Очки опыта (ОП), Мясо): 100.0%"
       ]
     },
     "description": {
       "RU": "Клетка игрового поля типа «Сбор ресурсов» (1x1), встречающаяся в биомах: Ветреные берега, Рассветные равнины, Увядший лес.",
-      "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: Breezy Shores, Dawnstep Plains, Withered Timberland."
+      "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: Breezy Shores, Dawnstep Plains, Withered Timberland.",
+      "CN": "🌿 含有丰富植物与草本资源的自然地块。采集可获得植物纤维、草药及能量素材。"
     }
   },
   {
@@ -6493,7 +6801,11 @@
     },
     "icon": "📦",
     "category": "special",
-    "category_name": "Сундуки и Тотемы",
+    "category_name": {
+      "RU": "Сундуки и Тотемы",
+      "EN": "Chests & Totems",
+      "CN": "宝箱与图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -6558,11 +6870,18 @@
         "👑 Heroine Shards / Recruit: 37.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "👑 Фрагменты героинь / Вербовка: 37.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Костер» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
-      "EN": "⭐ Special spot 'Campfire' with high concentration of treasure chests (60.0%) and materials."
+      "EN": "⭐ Special spot 'Campfire' with high concentration of treasure chests (60.0%) and materials.",
+      "CN": "🗺️ 篝火地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -6576,7 +6895,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1, 2x2, 3x3, 4x4",
@@ -6871,11 +7194,19 @@
         "🌿 Resource Harvest (Plants, Energy, Mushrooms, Ore, EXP): 31.8%",
         "💎 Godstones & Gems: 1.0%",
         "🪙 Slime / Gold Coins: 0.5%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 51.3%",
+        "🌿 Добыча материалов (Растения, Энергия, Грибы, Руда, Очки опыта (ОП)): 31.8%",
+        "💎 Камни Богов / Самоцветы: 1.0%",
+        "🪙 Слизь / Золотые монеты: 0.5%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Скала» с гарантированным прямым выпадением экипировки (51.3%).",
-      "EN": "⭐ Special spot 'Rock' with guaranteed direct gear drops (51.3%)."
+      "EN": "⭐ Special spot 'Rock' with guaranteed direct gear drops (51.3%).",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -6889,7 +7220,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -7089,11 +7424,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Посылка» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Parcel' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Parcel' with guaranteed direct gear drops (100.0%).",
+      "CN": "🗺️ 包裹地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -7107,7 +7446,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -7307,11 +7650,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Нора» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Burrow' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Burrow' with guaranteed direct gear drops (100.0%).",
+      "CN": "🗺️ 地洞地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -7325,7 +7672,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -7525,11 +7876,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Палатка» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Tent' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Tent' with guaranteed direct gear drops (100.0%).",
+      "CN": "🗺️ 帐篷地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -7543,7 +7898,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "3x3",
@@ -7786,11 +8145,19 @@
         "🌿 Resource Harvest (EXP, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Обычный багряный клен.",
-      "EN": "An ordinary crimson maple."
+      "EN": "An ordinary crimson maple.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -7804,7 +8171,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -8047,11 +8418,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Маленькое зонтичное дерево.",
-      "EN": "A small umbrella-shaped tree."
+      "EN": "A small umbrella-shaped tree.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -8065,7 +8444,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -8308,11 +8691,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Куча сухой травы.",
-      "EN": "A pile of dry grass."
+      "EN": "A pile of dry grass.",
+      "CN": "🌿 含有丰富植物与草本资源的自然地块。采集可获得植物纤维、草药及能量素材。"
     }
   },
   {
@@ -8326,7 +8717,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "3x3",
@@ -8591,11 +8986,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Ore, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Руда, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Здесь обитает неведомый зверь.",
-      "EN": "An unknown beast makes its home here."
+      "EN": "An unknown beast makes its home here.",
+      "CN": "🗺️ 野兽巢穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -8609,7 +9012,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -8852,11 +9259,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Маленькое зонтичное дерево.",
-      "EN": "A small umbrella-shaped tree."
+      "EN": "A small umbrella-shaped tree.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -8870,7 +9285,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4, 9x9",
@@ -9114,11 +9533,19 @@
         "🌿 Resource Harvest (EXP, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Маленькое дерево, накапливающее воду.",
-      "EN": "A small tree that stores water."
+      "EN": "A small tree that stores water.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -9132,7 +9559,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -9375,11 +9806,19 @@
         "🌿 Resource Harvest (EXP, Plants, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Дерево, растущее из цельного камня.",
-      "EN": "A tree growing from solid stone."
+      "EN": "A tree growing from solid stone.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -9393,7 +9832,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -9636,11 +10079,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Редкая листва, яркая, словно пламя.",
-      "EN": "Rare foliage with leaves bright as flame."
+      "EN": "Rare foliage with leaves bright as flame.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -9654,7 +10105,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -9897,11 +10352,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Темная древняя гробница. Какие тайны она скрывает?",
-      "EN": "A dark ancient tomb. What secrets lie within?"
+      "EN": "A dark ancient tomb. What secrets lie within?",
+      "CN": "🗺️ 阴暗古墓地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -9915,7 +10378,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -10158,11 +10625,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Роща багряных кленов.",
-      "EN": "A grove of crimson maples."
+      "EN": "A grove of crimson maples.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -10176,7 +10651,11 @@
     },
     "icon": "🪦",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -10419,11 +10898,19 @@
         "🌿 Resource Harvest (EXP, Plants, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Треснувшая стела, оплетенная корнями.",
-      "EN": "A cracked stele tangled in roots."
+      "EN": "A cracked stele tangled in roots.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -10437,7 +10924,11 @@
     },
     "icon": "⛩️",
     "category": "special",
-    "category_name": "Алтарь",
+    "category_name": {
+      "RU": "Алтарь",
+      "EN": "Altar",
+      "CN": "祭坛"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "4x4, 6x6",
@@ -10682,11 +11173,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "⛩️ Древний алтарь стихий. Источник благословений и концентрированного дропа сундуков с экипировкой.",
-      "EN": "⛩️ Ancient Elemental Altar. Source of party blessings and concentrated gear chest drops."
+      "EN": "⛩️ Ancient Elemental Altar. Source of party blessings and concentrated gear chest drops.",
+      "CN": "🗺️ 古代祭坛地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -10700,7 +11199,11 @@
     },
     "icon": "🗿",
     "category": "special",
-    "category_name": "Тотем",
+    "category_name": {
+      "RU": "Тотем",
+      "EN": "Totem",
+      "CN": "图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -10765,11 +11268,18 @@
         "👑 Heroine Shards / Recruit: 37.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "👑 Фрагменты героинь / Вербовка: 37.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "🗿 Костяной тотем зверей. Шаманский тотем с повышенным шансом сундуков и осколков героинь диких племен.",
-      "EN": "🗿 Beastbone Totem. Shamanic totem with boosted gear chest and tribal heroine shard drop rates."
+      "EN": "🗿 Beastbone Totem. Shamanic totem with boosted gear chest and tribal heroine shard drop rates.",
+      "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
     }
   },
   {
@@ -10783,7 +11293,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -10986,11 +11500,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Куст» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Shrub' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Shrub' with guaranteed direct gear drops (100.0%).",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -11004,7 +11522,11 @@
     },
     "icon": "🗿",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -11247,11 +11769,19 @@
         "🌿 Resource Harvest (EXP, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Простой тотем, наспех воздвигнутый.",
-      "EN": "A simple totem hastily erected."
+      "EN": "A simple totem hastily erected.",
+      "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
     }
   },
   {
@@ -11265,7 +11795,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 4x4, 6x6",
@@ -11584,11 +12118,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Камень с высеченными на нем неизвестными рунами.",
-      "EN": "A stone carved with unknown runes."
+      "EN": "A stone carved with unknown runes.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -11602,7 +12144,11 @@
     },
     "icon": "🗿",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -11845,11 +12391,19 @@
         "🌿 Resource Harvest (EXP, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Тотем, украшенный рогами дикого быка.",
-      "EN": "A totem adorned with wild bull horns."
+      "EN": "A totem adorned with wild bull horns.",
+      "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
     }
   },
   {
@@ -11863,7 +12417,11 @@
     },
     "icon": "🐝",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4, 5x5, 6x6",
@@ -12121,11 +12679,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Улей в мертвом дереве.",
-      "EN": "A hive built into dead wood."
+      "EN": "A hive built into dead wood.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -12139,7 +12705,11 @@
     },
     "icon": "🗿",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -12382,11 +12952,19 @@
         "🌿 Resource Harvest (EXP, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Первобытный тотем, символизирующий силу.",
-      "EN": "A primal totem symbolizing strength."
+      "EN": "A primal totem symbolizing strength.",
+      "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
     }
   },
   {
@@ -12400,7 +12978,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "9x9",
@@ -12643,11 +13225,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Древнее древо с золотыми листьями.",
-      "EN": "An ancient tree with golden leaves."
+      "EN": "An ancient tree with golden leaves.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -12661,7 +13251,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "8x8",
@@ -12904,11 +13498,19 @@
         "🌿 Resource Harvest (EXP, Meat, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Мясо, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Логово Огневолков.",
-      "EN": "Flamewolves den here."
+      "EN": "Flamewolves den here.",
+      "CN": "🗺️ 炎狼巢穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -12922,7 +13524,11 @@
     },
     "icon": "📦",
     "category": "special",
-    "category_name": "Сундуки и Тотемы",
+    "category_name": {
+      "RU": "Сундуки и Тотемы",
+      "EN": "Chests & Totems",
+      "CN": "宝箱与图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -12987,11 +13593,18 @@
         "👑 Heroine Shards / Recruit: 37.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "👑 Фрагменты героинь / Вербовка: 37.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Пень» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
-      "EN": "⭐ Special spot 'Stump' with high concentration of treasure chests (60.0%) and materials."
+      "EN": "⭐ Special spot 'Stump' with high concentration of treasure chests (60.0%) and materials.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -13005,7 +13618,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -13205,11 +13822,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Трава» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Grass' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Grass' with guaranteed direct gear drops (100.0%).",
+      "CN": "🌿 含有丰富植物与草本资源的自然地块。采集可获得植物纤维、草药及能量素材。"
     }
   },
   {
@@ -13223,7 +13844,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1, 2x2, 3x3",
@@ -13482,11 +14107,19 @@
         "🌿 Resource Harvest (EXP, Meat, Ore): 31.8%",
         "💎 Godstones & Gems: 1.0%",
         "🪙 Slime / Gold Coins: 0.5%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 51.3%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Мясо, Руда): 31.8%",
+        "💎 Камни Богов / Самоцветы: 1.0%",
+        "🪙 Слизь / Золотые монеты: 0.5%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Кости» с гарантированным прямым выпадением экипировки (51.3%).",
-      "EN": "⭐ Special spot 'Bones' with guaranteed direct gear drops (51.3%)."
+      "EN": "⭐ Special spot 'Bones' with guaranteed direct gear drops (51.3%).",
+      "CN": "🗺️ 白骨地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -13500,7 +14133,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -13700,11 +14337,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Набор» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Pack' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Pack' with guaranteed direct gear drops (100.0%).",
+      "CN": "🗺️ 背包地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -13718,7 +14359,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -13918,11 +14563,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Материалы» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Materials' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Materials' with guaranteed direct gear drops (100.0%).",
+      "CN": "🗺️ 素材地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -13936,7 +14585,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "3x3, 6x6",
@@ -14202,11 +14855,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Сломанная колонна с выгравированными узорами.",
-      "EN": "A broken pillar etched with patterns."
+      "EN": "A broken pillar etched with patterns.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -14220,7 +14881,11 @@
     },
     "icon": "🪵",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "3x3",
@@ -14463,11 +15128,19 @@
         "🌿 Resource Harvest (EXP, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Засохший пень, покрытый грибами.",
-      "EN": "A withered stump covered in mushrooms."
+      "EN": "A withered stump covered in mushrooms.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -14481,7 +15154,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -14724,11 +15401,19 @@
         "🌿 Resource Harvest (EXP, Energy, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Временное укрытие.",
-      "EN": "A temporary shelter."
+      "EN": "A temporary shelter.",
+      "CN": "🗺️ 简陋帐篷地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -14742,7 +15427,11 @@
     },
     "icon": "🗿",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -14985,11 +15674,19 @@
         "🌿 Resource Harvest (EXP, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Грубый тотем, вырезанный из камня.",
-      "EN": "A crude totem carved from stone."
+      "EN": "A crude totem carved from stone.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -15003,7 +15700,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -15246,11 +15947,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Засохший пень, покрытый грибами.",
-      "EN": "A withered stump covered in mushrooms."
+      "EN": "A withered stump covered in mushrooms.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -15264,7 +15973,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -15507,11 +16220,19 @@
         "🌿 Resource Harvest (EXP, Energy, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Палатка из шкур с припасами.",
-      "EN": "A hide tent storing supplies."
+      "EN": "A hide tent storing supplies.",
+      "CN": "🗺️ 部落帐篷地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -15525,7 +16246,11 @@
     },
     "icon": "🗿",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -15768,11 +16493,19 @@
         "🌿 Resource Harvest (EXP, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Высокий деревянный тотем.",
-      "EN": "A tall wooden totem."
+      "EN": "A tall wooden totem.",
+      "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
     }
   },
   {
@@ -15786,7 +16519,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -16029,11 +16766,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Несколько высоких деревянных кольев.",
-      "EN": "Several tall wooden stakes."
+      "EN": "Several tall wooden stakes.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -16047,7 +16792,11 @@
     },
     "icon": "🗿",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -16290,11 +17039,19 @@
         "🌿 Resource Harvest (EXP, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Высокий деревянный тотем.",
-      "EN": "A tall wooden totem."
+      "EN": "A tall wooden totem.",
+      "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
     }
   },
   {
@@ -16308,7 +17065,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "8x8",
@@ -16551,11 +17312,19 @@
         "🌿 Resource Harvest (EXP, Energy, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Хижина, заброшенная во время войны.",
-      "EN": "A cabin abandoned during wartime."
+      "EN": "A cabin abandoned during wartime.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -16569,7 +17338,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6, 8x8",
@@ -16835,11 +17608,19 @@
         "🌿 Resource Harvest (EXP, Fish, Mushrooms, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Грибы, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Проход, уходящий во тьму.",
-      "EN": "A passage descending into darkness."
+      "EN": "A passage descending into darkness.",
+      "CN": "🗺️ 幽深洞穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -16853,7 +17634,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "8x8",
@@ -17096,11 +17881,19 @@
         "🌿 Resource Harvest (EXP, Meat, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Мясо, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Курган из огромных костей.",
-      "EN": "A burial mound of massive bones."
+      "EN": "A burial mound of massive bones.",
+      "CN": "🗺️ 巨兽之墓地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -17114,7 +17907,11 @@
     },
     "icon": "📦",
     "category": "special",
-    "category_name": "Сундуки и Тотемы",
+    "category_name": {
+      "RU": "Сундуки и Тотемы",
+      "EN": "Chests & Totems",
+      "CN": "宝箱与图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -17179,11 +17976,18 @@
         "👑 Heroine Shards / Recruit: 37.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "👑 Фрагменты героинь / Вербовка: 37.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Лужа» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
-      "EN": "⭐ Special spot 'Puddle' with high concentration of treasure chests (60.0%) and materials."
+      "EN": "⭐ Special spot 'Puddle' with high concentration of treasure chests (60.0%) and materials.",
+      "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
     }
   },
   {
@@ -17197,7 +18001,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -17397,11 +18205,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Дерево с кислыми плодами» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Sour Fruit Tree' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Sour Fruit Tree' with guaranteed direct gear drops (100.0%).",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -17415,7 +18227,11 @@
     },
     "icon": "🌱",
     "category": "special",
-    "category_name": "Святилище",
+    "category_name": {
+      "RU": "Святилище",
+      "EN": "Sanctuary",
+      "CN": "圣所"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -17615,11 +18431,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "🌱 Саженец Мирового Древа. Даёт Плоды таланта и восстанавливает выносливость отряда.",
-      "EN": "🌱 World Tree Sapling. Grants Talent Fruits and restores party stamina."
+      "EN": "🌱 World Tree Sapling. Grants Talent Fruits and restores party stamina.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -17633,7 +18453,11 @@
     },
     "icon": "🌳",
     "category": "special",
-    "category_name": "Сокровище",
+    "category_name": {
+      "RU": "Сокровище",
+      "EN": "Treasure",
+      "CN": "宝藏"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -17833,11 +18657,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "🌳 Тайник лесных духов. Скрывает священные дары леса и редкие сундуки.",
-      "EN": "🌳 Forest Spirits Cache. Conceals sacred woodland gifts and rare chests."
+      "EN": "🌳 Forest Spirits Cache. Conceals sacred woodland gifts and rare chests.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -17851,7 +18679,11 @@
     },
     "icon": "🪵",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "3x3",
@@ -18094,11 +18926,19 @@
         "🌿 Resource Harvest (EXP, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Пень, сломанный чем-то большим.",
-      "EN": "A stump snapped by something large."
+      "EN": "A stump snapped by something large.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -18112,7 +18952,11 @@
     },
     "icon": "🍄",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 3x3",
@@ -18378,11 +19222,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Повсюду разноцветные грибы.",
-      "EN": "Colorful mushrooms everywhere."
+      "EN": "Colorful mushrooms everywhere.",
+      "CN": "🍄 生长稀有菌类的潮湿地块。采集可获得孢子菇、奶油菇及魔力菌菇。"
     }
   },
   {
@@ -18396,7 +19248,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 3x3",
@@ -18653,11 +19509,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Полый куст, заросший сорняками.",
-      "EN": "A hollow bush choked with weeds."
+      "EN": "A hollow bush choked with weeds.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -18671,7 +19535,11 @@
     },
     "icon": "🪵",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -18914,11 +19782,19 @@
         "🌿 Resource Harvest (EXP, Plants, Fish): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Рыба): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Пень, в котором скопилась дождевая вода.",
-      "EN": "A stump pooling rainwater."
+      "EN": "A stump pooling rainwater.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -18932,7 +19808,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 4x4",
@@ -19198,11 +20078,19 @@
         "🌿 Resource Harvest (EXP, Fish, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Чистый пруд, наполненный маной.",
-      "EN": "A clear pond brimming with mana."
+      "EN": "A clear pond brimming with mana.",
+      "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
     }
   },
   {
@@ -19216,7 +20104,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -19459,11 +20351,19 @@
         "🌿 Resource Harvest (EXP, Plants, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Камень, скрытый в кустах.",
-      "EN": "A rock concealed by bushes."
+      "EN": "A rock concealed by bushes.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -19477,7 +20377,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -19720,11 +20624,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Огромный кустарник.",
-      "EN": "An enormous shrub."
+      "EN": "An enormous shrub.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -19738,7 +20650,11 @@
     },
     "icon": "🏛️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 4x4",
@@ -20004,11 +20920,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Уцелевшая древняя колонна.",
-      "EN": "An intact ancient pillar."
+      "EN": "An intact ancient pillar.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -20022,7 +20946,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -20287,11 +21215,19 @@
         "🌿 Resource Harvest (EXP, Fish, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Древний колодец, вода в котором излучает жизненную силу.",
-      "EN": "An ancient well with water that radiates vitality."
+      "EN": "An ancient well with water that radiates vitality.",
+      "CN": "🗺️ 月亮古井地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -20305,7 +21241,11 @@
     },
     "icon": "🌳",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -20548,11 +21488,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Обычное дерево.",
-      "EN": "An ordinary tree."
+      "EN": "An ordinary tree.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -20566,7 +21514,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -20809,11 +21761,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Широкое дупло в стволе.",
-      "EN": "A wide natural hollow in the trunk."
+      "EN": "A wide natural hollow in the trunk.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -20827,7 +21787,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "9x9",
@@ -21070,11 +22034,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Это древнее древо укрывает весь лес.",
-      "EN": "This ancient tree shelters the entire forest."
+      "EN": "This ancient tree shelters the entire forest.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -21088,7 +22060,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "15x15",
@@ -21331,11 +22307,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Здесь поднимается туман. Впереди ждет неизвестное испытание.",
-      "EN": "Mist rises here. An unknown trial awaits."
+      "EN": "Mist rises here. An unknown trial awaits.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -21349,7 +22333,11 @@
     },
     "icon": "📦",
     "category": "special",
-    "category_name": "Сундуки и Тотемы",
+    "category_name": {
+      "RU": "Сундуки и Тотемы",
+      "EN": "Chests & Totems",
+      "CN": "宝箱与图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -21414,11 +22402,18 @@
         "👑 Heroine Shards / Recruit: 37.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "👑 Фрагменты героинь / Вербовка: 37.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Медвежий капкан» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
-      "EN": "⭐ Special spot 'Bear Trap' with high concentration of treasure chests (60.0%) and materials."
+      "EN": "⭐ Special spot 'Bear Trap' with high concentration of treasure chests (60.0%) and materials.",
+      "CN": "🗺️ 捕兽夹地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -21432,7 +22427,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -21632,11 +22631,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Ловушка» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Trap' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Trap' with guaranteed direct gear drops (100.0%).",
+      "CN": "🗺️ 陷阱地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -21650,7 +22653,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -21850,11 +22857,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Статуя из слизи» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Slime Statue' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Slime Statue' with guaranteed direct gear drops (100.0%).",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -21868,7 +22879,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -22099,11 +23114,19 @@
         "👑 Heroine Shards / Recruit: 18.5%",
         "💎 Godstones & Gems: 1.0%",
         "🪙 Slime / Gold Coins: 0.5%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 50.0%",
+        "👑 Фрагменты героинь / Вербовка: 18.5%",
+        "💎 Камни Богов / Самоцветы: 1.0%",
+        "🪙 Слизь / Золотые монеты: 0.5%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Шипы» с гарантированным прямым выпадением экипировки (50.0%).",
-      "EN": "⭐ Special spot 'Thorns' with guaranteed direct gear drops (50.0%)."
+      "EN": "⭐ Special spot 'Thorns' with guaranteed direct gear drops (50.0%).",
+      "CN": "🗺️ 荆棘地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -22117,7 +23140,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -22317,11 +23344,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Меч» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Sword' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Sword' with guaranteed direct gear drops (100.0%).",
+      "CN": "🗺️ 宝剑地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -22335,7 +23366,11 @@
     },
     "icon": "🏛️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -22578,11 +23613,19 @@
         "🌿 Resource Harvest (EXP, Fish, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Вода в колодце кристально чистая.",
-      "EN": "The well water is crystal clear."
+      "EN": "The well water is crystal clear.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -22596,7 +23639,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "3x3",
@@ -22839,11 +23886,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Полое бревно, необъяснимо высохшее.",
-      "EN": "A hollow log inexplicably withered and dry."
+      "EN": "A hollow log inexplicably withered and dry.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -22857,7 +23912,11 @@
     },
     "icon": "🏛️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -23100,11 +24159,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Даже в разбитом состоянии собирает свет.",
-      "EN": "Even shattered, it gathers light."
+      "EN": "Even shattered, it gathers light.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -23118,7 +24185,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -23361,11 +24432,19 @@
         "🌿 Resource Harvest (EXP, Plants, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Густая растительность.",
-      "EN": "Dense vegetation."
+      "EN": "Dense vegetation.",
+      "CN": "🌿 含有丰富植物与草本资源的自然地块。采集可获得植物纤维、草药及能量素材。"
     }
   },
   {
@@ -23379,7 +24458,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -23622,11 +24705,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Несколько кривых саженцев.",
-      "EN": "Several crooked saplings."
+      "EN": "Several crooked saplings.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -23640,7 +24731,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -23883,11 +24978,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Сломанные, иссохшие корни.",
-      "EN": "Broken, withered roots."
+      "EN": "Broken, withered roots.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -23901,7 +25004,11 @@
     },
     "icon": "🪦",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 4x4, 5x5, 6x6, 8x8",
@@ -24201,11 +25308,19 @@
         "🌿 Resource Harvest (Plants, Energy, Mushrooms, Ore, EXP, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Растения, Энергия, Грибы, Руда, Очки опыта (ОП), Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Стела с вырезанными на ней странными узорами.",
-      "EN": "A stele carved with strange patterns."
+      "EN": "A stele carved with strange patterns.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -24219,7 +25334,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6, 8x8",
@@ -24485,11 +25604,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Действующий древний обелиск.",
-      "EN": "An ancient obelisk still functioning."
+      "EN": "An ancient obelisk still functioning.",
+      "CN": "🗺️ 方尖碑地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -24503,7 +25630,11 @@
     },
     "icon": "🍄",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "9x9",
@@ -24746,11 +25877,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Plants): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Растения): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Бесхозная хижина в окружении разноцветных грибов.",
-      "EN": "An ownerless hut surrounded by colorful mushrooms."
+      "EN": "An ownerless hut surrounded by colorful mushrooms.",
+      "CN": "🍄 生长稀有菌类的潮湿地块。采集可获得孢子菇、奶油菇及魔力菌菇。"
     }
   },
   {
@@ -24764,7 +25903,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "1x1",
@@ -24842,11 +25985,15 @@
       ],
       "EN": [
         "🌿 Resource Harvest (EXP, Mushrooms, Energy, Ore): 100.0%"
+      ],
+      "CN": [
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия, Руда): 100.0%"
       ]
     },
     "description": {
       "RU": "Клетка игрового поля типа «Сбор ресурсов» (1x1), встречающаяся в биомах: Глубокие лощины, Магмовый проход, Заброшенные шахты.",
-      "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: The Deep Hollows, Magma Passage, Forsaken Mines."
+      "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: The Deep Hollows, Magma Passage, Forsaken Mines.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -24860,7 +26007,11 @@
     },
     "icon": "📦",
     "category": "special",
-    "category_name": "Сундуки и Тотемы",
+    "category_name": {
+      "RU": "Сундуки и Тотемы",
+      "EN": "Chests & Totems",
+      "CN": "宝箱与图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -24928,11 +26079,18 @@
         "👑 Heroine Shards / Recruit: 37.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "👑 Фрагменты героинь / Вербовка: 37.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Ящик с рудой» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
-      "EN": "⭐ Special spot 'Ore Crate' with high concentration of treasure chests (60.0%) and materials."
+      "EN": "⭐ Special spot 'Ore Crate' with high concentration of treasure chests (60.0%) and materials.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -24946,7 +26104,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -25149,11 +26311,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Открытая шахта» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Open Mine' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Open Mine' with guaranteed direct gear drops (100.0%).",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -25167,7 +26333,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -25370,11 +26540,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Пещера» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Cave' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Cave' with guaranteed direct gear drops (100.0%).",
+      "CN": "🗺️ 地穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -25388,7 +26562,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -25591,11 +26769,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Золотой столб» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Golden Pillar' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Golden Pillar' with guaranteed direct gear drops (100.0%).",
+      "CN": "🗺️ 黄金柱地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -25609,7 +26791,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1, 3x3, 4x4, 6x6",
@@ -25846,11 +27032,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 31.8%",
         "💎 Godstones & Gems: 1.0%",
         "🪙 Slime / Gold Coins: 0.5%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 51.3%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 31.8%",
+        "💎 Камни Богов / Самоцветы: 1.0%",
+        "🪙 Слизь / Золотые монеты: 0.5%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Жила кристаллов маны» с гарантированным прямым выпадением экипировки (51.3%).",
-      "EN": "⭐ Special spot 'Mana Crystal Vein' with guaranteed direct gear drops (51.3%)."
+      "EN": "⭐ Special spot 'Mana Crystal Vein' with guaranteed direct gear drops (51.3%).",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -25864,7 +27058,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "3x3, 4x4",
@@ -26108,11 +27306,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Куча ящиков с рудой.",
-      "EN": "A pile of ore crates."
+      "EN": "A pile of ore crates.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -26126,7 +27332,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 3x3, 5x5, 6x6",
@@ -26384,11 +27594,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Скальные образования в форме колонн.",
-      "EN": "Pillar-shaped rock formations."
+      "EN": "Pillar-shaped rock formations.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -26402,7 +27620,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -26645,11 +27867,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Ящик, из которого высыпаются кристаллы.",
-      "EN": "A crate spilling crystals."
+      "EN": "A crate spilling crystals.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -26663,7 +27893,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -26906,11 +28140,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Разрушенная, заброшенная вагонетка.",
-      "EN": "A ruined, abandoned mine cart."
+      "EN": "A ruined, abandoned mine cart.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -26924,7 +28166,11 @@
     },
     "icon": "💎",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4, 6x6",
@@ -27168,11 +28414,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Кристаллы, встречающиеся по всем пещерам.",
-      "EN": "Crystals found throughout the caves."
+      "EN": "Crystals found throughout the caves.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -27186,7 +28440,11 @@
     },
     "icon": "🍄",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "5x5",
@@ -27429,11 +28687,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Грибы, распыляющие светящуюся пыльцу.",
-      "EN": "Mushrooms spraying luminous dust."
+      "EN": "Mushrooms spraying luminous dust.",
+      "CN": "🍄 生长稀有菌类的潮湿地块。采集可获得孢子菇、奶油菇及魔力菌菇。"
     }
   },
   {
@@ -27447,7 +28713,11 @@
     },
     "icon": "🏛️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -27693,11 +28963,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Фрагменты древних руин.",
-      "EN": "Fragments of ancient ruins."
+      "EN": "Fragments of ancient ruins.",
+      "CN": "🗺️ 遗迹碎片地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -27711,7 +28989,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -27966,11 +29248,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Таинственное ископаемое, небрежно заваленное рудой.",
-      "EN": "A mysterious fossil carelessly piled with ore."
+      "EN": "A mysterious fossil carelessly piled with ore.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -27984,7 +29274,11 @@
     },
     "icon": "💎",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "9x9",
@@ -28230,11 +29524,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Древний кристалл портала. От времени мана вокруг него стала нестабильной.",
-      "EN": "An ancient portal crystal. Age has destabilized the mana around it."
+      "EN": "An ancient portal crystal. Age has destabilized the mana around it.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -28248,7 +29550,11 @@
     },
     "icon": "📦",
     "category": "special",
-    "category_name": "Сундуки и Тотемы",
+    "category_name": {
+      "RU": "Сундуки и Тотемы",
+      "EN": "Chests & Totems",
+      "CN": "宝箱与图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -28313,11 +29619,18 @@
         "👑 Heroine Shards / Recruit: 37.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "👑 Фрагменты героинь / Вербовка: 37.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Рудничник» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
-      "EN": "⭐ Special spot 'Mineshroom' with high concentration of treasure chests (60.0%) and materials."
+      "EN": "⭐ Special spot 'Mineshroom' with high concentration of treasure chests (60.0%) and materials.",
+      "CN": "🍄 生长稀有菌类的潮湿地块。采集可获得孢子菇、奶油菇及魔力菌菇。"
     }
   },
   {
@@ -28331,7 +29644,11 @@
     },
     "icon": "🍄",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1, 2x2, 5x5",
@@ -28567,11 +29884,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Energy, Ore): 31.8%",
         "💎 Godstones & Gems: 1.0%",
         "🪙 Slime / Gold Coins: 0.5%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 51.3%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия, Руда): 31.8%",
+        "💎 Камни Богов / Самоцветы: 1.0%",
+        "🪙 Слизь / Золотые монеты: 0.5%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Гриб» с гарантированным прямым выпадением экипировки (51.3%).",
-      "EN": "⭐ Special spot 'Mushroom' with guaranteed direct gear drops (51.3%)."
+      "EN": "⭐ Special spot 'Mushroom' with guaranteed direct gear drops (51.3%).",
+      "CN": "🍄 生长稀有菌类的潮湿地块。采集可获得孢子菇、奶油菇及魔力菌菇。"
     }
   },
   {
@@ -28585,7 +29910,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -28785,11 +30114,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Каменная плита» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Stone Slab' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Stone Slab' with guaranteed direct gear drops (100.0%).",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -28803,7 +30136,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -29003,11 +30340,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Тайный вход» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Hidden Entrance' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Hidden Entrance' with guaranteed direct gear drops (100.0%).",
+      "CN": "🗺️ 隐蔽入口地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -29021,7 +30362,11 @@
     },
     "icon": "🗡️",
     "category": "special",
-    "category_name": "Артефакт",
+    "category_name": {
+      "RU": "Артефакт",
+      "EN": "Artifact",
+      "CN": "神器"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -29221,11 +30566,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "🗡️ Легендарный Меч в камне. Особая интерактивная точка с гарантированным получением высокорангового оружия.",
-      "EN": "🗡️ Legendary Sword in the Stone. Special interactive spot yielding high-tier weapons."
+      "EN": "🗡️ Legendary Sword in the Stone. Special interactive spot yielding high-tier weapons.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -29239,7 +30588,11 @@
     },
     "icon": "🏛️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 3x3, 4x4",
@@ -29484,11 +30837,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Древняя плита с неизвестным текстом.",
-      "EN": "An ancient slab inscribed with unknown text."
+      "EN": "An ancient slab inscribed with unknown text.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -29502,7 +30863,11 @@
     },
     "icon": "🍄",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -29745,11 +31110,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Таинственный гриб, прозрачный как кристалл.",
-      "EN": "A mysterious mushroom clear as crystal."
+      "EN": "A mysterious mushroom clear as crystal.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -29763,7 +31136,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4, 6x6",
@@ -30007,11 +31384,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Грибы, распыляющие светящуюся пыльцу.",
-      "EN": "Mushrooms spraying luminous dust."
+      "EN": "Mushrooms spraying luminous dust.",
+      "CN": "🗺️ 荧光孢子地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -30025,7 +31410,11 @@
     },
     "icon": "🏛️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -30268,11 +31657,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Ржавый двуручный меч прислонен к колонне.",
-      "EN": "A rusted greatsword leans against a pillar."
+      "EN": "A rusted greatsword leans against a pillar.",
+      "CN": "🗺️ 遗迹拱门地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -30286,7 +31683,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -30529,11 +31930,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Вход в неведомые глубины. Изнутри исходит жар.",
-      "EN": "An entrance to unknown depths. Heat radiates from within."
+      "EN": "An entrance to unknown depths. Heat radiates from within.",
+      "CN": "🗺️ 地下入口地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -30547,7 +31956,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "1x1",
@@ -30610,11 +32023,15 @@
       ],
       "EN": [
         "🌿 Resource Harvest (EXP, Fish, Meat): 100.0%"
+      ],
+      "CN": [
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Мясо): 100.0%"
       ]
     },
     "description": {
       "RU": "Клетка игрового поля типа «Сбор ресурсов» (1x1), встречающаяся в биомах: Затонувшее море.",
-      "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: The Sunken Sea."
+      "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: The Sunken Sea.",
+      "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
     }
   },
   {
@@ -30628,7 +32045,11 @@
     },
     "icon": "🗺️",
     "category": "special",
-    "category_name": "Сундуки и Тотемы",
+    "category_name": {
+      "RU": "Сундуки и Тотемы",
+      "EN": "Chests & Totems",
+      "CN": "宝箱与图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1, 2x2",
@@ -30862,11 +32283,20 @@
         "🌿 Resource Harvest (EXP, Fish, Meat): 37.1%",
         "💎 Godstones & Gems: 1.2%",
         "🪙 Slime / Gold Coins: 0.6%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 3.0%",
+        "👑 Фрагменты героинь / Вербовка: 22.2%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Мясо): 37.1%",
+        "💎 Камни Богов / Самоцветы: 1.2%",
+        "🪙 Слизь / Золотые монеты: 0.6%"
       ]
     },
     "description": {
       "RU": "⭐ Особая интерактивная клетка «Актиния» (1x1, 2x2), встречающаяся в биомах: Затонувшее море.",
-      "EN": "⭐ Special interactive tile 'Sea Anemone' (1x1, 2x2), appearing in biomes: The Sunken Sea."
+      "EN": "⭐ Special interactive tile 'Sea Anemone' (1x1, 2x2), appearing in biomes: The Sunken Sea.",
+      "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
     }
   },
   {
@@ -30880,7 +32310,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -31080,11 +32514,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Грубый указатель» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Crude Marker' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Crude Marker' with guaranteed direct gear drops (100.0%).",
+      "CN": "🗺️ 简陋标记地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -31098,7 +32536,11 @@
     },
     "icon": "🍾",
     "category": "special",
-    "category_name": "Реликвия",
+    "category_name": {
+      "RU": "Реликвия",
+      "EN": "Relic",
+      "CN": "遗物"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -31298,11 +32740,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "🍾 Затонувшая бутылка желаний. Морской тайник с редкими сокровищами и Камнями желаний для перековки.",
-      "EN": "🍾 Sunken Message Bottle. Marine cache yielding rare treasures and Wish Stones for stat rerolls."
+      "EN": "🍾 Sunken Message Bottle. Marine cache yielding rare treasures and Wish Stones for stat rerolls.",
+      "CN": "🗺️ 许愿瓶地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -31316,7 +32762,11 @@
     },
     "icon": "⚓",
     "category": "special",
-    "category_name": "Реликвия",
+    "category_name": {
+      "RU": "Реликвия",
+      "EN": "Relic",
+      "CN": "遗物"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -31516,11 +32966,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⚓ Серебряный якорь затонувшего флагмана. Гарантирует богатую морскую добычу и экипировку.",
-      "EN": "⚓ Silver Anchor of sunken flagship. Guarantees rich maritime loot and gear."
+      "EN": "⚓ Silver Anchor of sunken flagship. Guarantees rich maritime loot and gear.",
+      "CN": "🗺️ 银船锚地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -31534,7 +32988,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -31734,11 +33192,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Глубинный источник» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Deep Spring' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Deep Spring' with guaranteed direct gear drops (100.0%).",
+      "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
     }
   },
   {
@@ -31752,7 +33214,11 @@
     },
     "icon": "🏛️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 4x4, 6x6",
@@ -32019,11 +33485,19 @@
         "🌿 Resource Harvest (EXP, Fish, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Хрупкие остатки руин.",
-      "EN": "Ruined remains barely standing."
+      "EN": "Ruined remains barely standing.",
+      "CN": "🗺️ 破碎遗迹地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -32037,7 +33511,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -32280,11 +33758,19 @@
         "🌿 Resource Harvest (EXP, Fish, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Обнажившееся месторождение руды на морском дне.",
-      "EN": "An exposed seafloor ore deposit."
+      "EN": "An exposed seafloor ore deposit.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -32298,7 +33784,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 4x4, 6x6",
@@ -32543,11 +34033,19 @@
         "🌿 Resource Harvest (EXP, Fish, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Одинокий риф.",
-      "EN": "A lone reef."
+      "EN": "A lone reef.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -32561,7 +34059,11 @@
     },
     "icon": "🏛️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -32804,11 +34306,19 @@
         "🌿 Resource Harvest (EXP, Fish, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Руины каменных фонарей.",
-      "EN": "Stone lamp ruins."
+      "EN": "Stone lamp ruins.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -32822,7 +34332,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -33065,11 +34579,19 @@
         "🌿 Resource Harvest (EXP, Fish, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Кораллы всех форм и расцветок.",
-      "EN": "Coral of every shape and color."
+      "EN": "Coral of every shape and color.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -33083,7 +34605,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -33326,11 +34852,19 @@
         "🌿 Resource Harvest (EXP, Fish, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Разросшиеся заросли зеленых кораллов.",
-      "EN": "A sprawling patch of green coral."
+      "EN": "A sprawling patch of green coral.",
+      "CN": "🗺️ 巨大绿珊瑚地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -33344,7 +34878,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -33587,11 +35125,19 @@
         "🌿 Resource Harvest (EXP, Fish, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Лабиринт из рифов.",
-      "EN": "A labyrinth of reefs."
+      "EN": "A labyrinth of reefs.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -33605,7 +35151,11 @@
     },
     "icon": "🏛️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "9x9",
@@ -33848,11 +35398,19 @@
         "🌿 Resource Harvest (EXP, Fish, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Из этих руин бесконечным потоком течет вода, насыщенная маной.",
-      "EN": "This spring ruin endlessly flows with mana-rich water."
+      "EN": "This spring ruin endlessly flows with mana-rich water.",
+      "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
     }
   },
   {
@@ -33866,7 +35424,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "10x10",
@@ -34109,11 +35671,19 @@
         "🌿 Resource Harvest (EXP, Fish, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Древний шпиль, покрытый неизвестными рунами.",
-      "EN": "An ancient spire covered in unknown runes."
+      "EN": "An ancient spire covered in unknown runes.",
+      "CN": "🗺️ 方尖塔地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -34127,7 +35697,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "15x15",
@@ -34370,11 +35944,19 @@
         "🌿 Resource Harvest (EXP, Fish, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Рыба, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Древний затонувший корабль излучает зловещую энергию. Сколько же сокровищ таится внутри?",
-      "EN": "An ancient shipwreck radiating ominous energy. How much treasure lies within?"
+      "EN": "An ancient shipwreck radiating ominous energy. How much treasure lies within?",
+      "CN": "🗺️ 沉船地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -34388,7 +35970,11 @@
     },
     "icon": "📦",
     "category": "special",
-    "category_name": "Сундуки и Тотемы",
+    "category_name": {
+      "RU": "Сундуки и Тотемы",
+      "EN": "Chests & Totems",
+      "CN": "宝箱与图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -34453,11 +36039,18 @@
         "👑 Heroine Shards / Recruit: 37.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "👑 Фрагменты героинь / Вербовка: 37.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Раковина» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
-      "EN": "⭐ Special spot 'Conch' with high concentration of treasure chests (60.0%) and materials."
+      "EN": "⭐ Special spot 'Conch' with high concentration of treasure chests (60.0%) and materials.",
+      "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
     }
   },
   {
@@ -34471,7 +36064,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -34671,11 +36268,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Ящик» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Crate' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Crate' with guaranteed direct gear drops (100.0%).",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -34689,7 +36290,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -34892,11 +36497,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Бочка» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Barrel' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Barrel' with guaranteed direct gear drops (100.0%).",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -34910,7 +36519,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -35110,11 +36723,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Ракушка» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Shell' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Shell' with guaranteed direct gear drops (100.0%).",
+      "CN": "🗺️ 贝壳地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -35128,7 +36745,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2",
@@ -35371,11 +36992,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Заплесневелые доски.",
-      "EN": "Moldy planks."
+      "EN": "Moldy planks.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -35389,7 +37018,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 4x4, 6x6, 8x8",
@@ -35635,11 +37268,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Маленькая пальма.",
-      "EN": "A small palm tree."
+      "EN": "A small palm tree.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -35653,7 +37294,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -35896,11 +37541,19 @@
         "🌿 Resource Harvest (EXP, Plants, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Обломки корабля, выброшенные на берег.",
-      "EN": "Ship debris washed ashore."
+      "EN": "Ship debris washed ashore.",
+      "CN": "🗺️ 船只残骸地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -35914,7 +37567,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "8x8",
@@ -36157,11 +37814,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Узкий грот, спрятанный в скалах.",
-      "EN": "A narrow grotto hidden in the rocks."
+      "EN": "A narrow grotto hidden in the rocks.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -36175,7 +37840,11 @@
     },
     "icon": "🪦",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -36418,11 +38087,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Таинственная стела в форме луны.",
-      "EN": "A mysterious stele shaped like the moon."
+      "EN": "A mysterious stele shaped like the moon.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -36436,7 +38113,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "1x1",
@@ -36502,11 +38183,15 @@
       ],
       "EN": [
         "🌿 Resource Harvest (EXP, Energy, Ore): 100.0%"
+      ],
+      "CN": [
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 100.0%"
       ]
     },
     "description": {
       "RU": "Клетка игрового поля типа «Сбор ресурсов» (1x1), встречающаяся в биомах: Бескрайняя пустыня, Пепельные пустоши.",
-      "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: Endless Desert, Ashland Wastes."
+      "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: Endless Desert, Ashland Wastes.",
+      "CN": "🗺️ 沙地地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -36520,7 +38205,11 @@
     },
     "icon": "📦",
     "category": "special",
-    "category_name": "Сундуки и Тотемы",
+    "category_name": {
+      "RU": "Сундуки и Тотемы",
+      "EN": "Chests & Totems",
+      "CN": "宝箱与图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -36582,11 +38271,18 @@
         "👑 Heroine Shards / Recruit: 37.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "👑 Фрагменты героинь / Вербовка: 37.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Указатель» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
-      "EN": "⭐ Special spot 'Signpost' with high concentration of treasure chests (60.0%) and materials."
+      "EN": "⭐ Special spot 'Signpost' with high concentration of treasure chests (60.0%) and materials.",
+      "CN": "🗺️ 路牌地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -36600,7 +38296,11 @@
     },
     "icon": "🌵",
     "category": "special",
-    "category_name": "Сундуки и Тотемы",
+    "category_name": {
+      "RU": "Сундуки и Тотемы",
+      "EN": "Chests & Totems",
+      "CN": "宝箱与图腾"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1, 2x2, 3x3, 4x4, 6x6",
@@ -36856,11 +38556,20 @@
         "🌿 Resource Harvest (Plants, Energy, Ore, EXP, Meat): 23.7%",
         "💎 Godstones & Gems: 0.8%",
         "🪙 Slime / Gold Coins: 0.4%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 38.2%",
+        "👑 Фрагменты героинь / Вербовка: 14.1%",
+        "🌿 Добыча материалов (Растения, Энергия, Руда, Очки опыта (ОП), Мясо): 23.7%",
+        "💎 Камни Богов / Самоцветы: 0.8%",
+        "🪙 Слизь / Золотые монеты: 0.4%"
       ]
     },
     "description": {
       "RU": "⭐ Особая интерактивная клетка «Кактус» (1x1, 2x2, 3x3, 4x4, 6x6), встречающаяся в биомах: Бескрайняя пустыня, Пепельные пустоши.",
-      "EN": "⭐ Special interactive tile 'Cactus' (1x1, 2x2, 3x3, 4x4, 6x6), appearing in biomes: Endless Desert, Ashland Wastes."
+      "EN": "⭐ Special interactive tile 'Cactus' (1x1, 2x2, 3x3, 4x4, 6x6), appearing in biomes: Endless Desert, Ashland Wastes.",
+      "CN": "🗺️ 仙人掌地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -36874,7 +38583,11 @@
     },
     "icon": "🪦",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -37074,11 +38787,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Стела» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Stele' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Stele' with guaranteed direct gear drops (100.0%).",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -37092,7 +38809,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "1x1, 2x2, 4x4",
@@ -37328,11 +39049,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 31.8%",
         "💎 Godstones & Gems: 1.0%",
         "🪙 Slime / Gold Coins: 0.5%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 51.3%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 31.8%",
+        "💎 Камни Богов / Самоцветы: 1.0%",
+        "🪙 Слизь / Золотые монеты: 0.5%"
       ]
     },
     "description": {
       "RU": "Сухое полое бревно.",
-      "EN": "A dry, hollow log."
+      "EN": "A dry, hollow log.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -37346,7 +39075,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -37589,11 +39322,19 @@
         "🌿 Resource Harvest (EXP, Meat, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Мясо, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Еще одна шахта, заброшенная старателями.",
-      "EN": "Another mine abandoned by prospectors."
+      "EN": "Another mine abandoned by prospectors.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -37607,7 +39348,11 @@
     },
     "icon": "⛩️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "8x8",
@@ -37850,11 +39595,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Огромный алтарь, благословленный лунным светом и сияющий по ночам.",
-      "EN": "A massive altar blessed by moonlight, radiant at night."
+      "EN": "A massive altar blessed by moonlight, radiant at night.",
+      "CN": "🗺️ 月影祭坛地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -37868,7 +39621,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -38068,11 +39825,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Гравий» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Gravel' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Gravel' with guaranteed direct gear drops (100.0%).",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -38086,7 +39847,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -38286,11 +40051,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Каменные шипы» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Stone Spikes' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Stone Spikes' with guaranteed direct gear drops (100.0%).",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -38304,7 +40073,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -38504,11 +40277,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Ящик» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Crate' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Crate' with guaranteed direct gear drops (100.0%).",
+      "CN": "📦 散落在此区域的密封宝箱。开启可获得该区域专属宝箱及高阶装备。"
     }
   },
   {
@@ -38522,7 +40299,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -38722,11 +40503,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Цветок солнечного пламени» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Sunblaze Flower' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Sunblaze Flower' with guaranteed direct gear drops (100.0%).",
+      "CN": "🌿 含有丰富植物与草本资源的自然地块。采集可获得植物纤维、草药及能量素材。"
     }
   },
   {
@@ -38740,7 +40525,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -38983,11 +40772,19 @@
         "🌿 Resource Harvest (EXP, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Засохший пень.",
-      "EN": "A withered tree stump."
+      "EN": "A withered tree stump.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -39001,7 +40798,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -39244,11 +41045,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Здесь нужно смотреть под ноги.",
-      "EN": "Watch your step around here."
+      "EN": "Watch your step around here.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -39262,7 +41071,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -39505,11 +41318,19 @@
         "🌿 Resource Harvest (EXP, Energy, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Энергия, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "С этой землей что-то не так.",
-      "EN": "Something about this ground seems off."
+      "EN": "Something about this ground seems off.",
+      "CN": "🗺️ 流沙地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -39523,7 +41344,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "8x8",
@@ -39766,11 +41591,19 @@
         "🌿 Resource Harvest (EXP, Meat, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Мясо, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Пещера, где обитают неизвестные звери.",
-      "EN": "A cave where unknown beasts dwell."
+      "EN": "A cave where unknown beasts dwell.",
+      "CN": "🗺️ 隐蔽兽穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -39784,7 +41617,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "8x8",
@@ -40027,11 +41864,19 @@
         "🌿 Resource Harvest (EXP, Plants, Meat): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Мясо): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Редкий источник воды в пустыне.",
-      "EN": "A rare water source in the desert."
+      "EN": "A rare water source in the desert.",
+      "CN": "🗺️ 绿洲地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -40045,7 +41890,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "35x35",
@@ -40084,11 +41933,15 @@
       ],
       "EN": [
         "📦 Gear Chests: 100.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱"
       ]
     },
     "description": {
       "RU": "Молодой портал между Исекаем и основным миром.",
-      "EN": "A fledgling portal between the isekai and the main world."
+      "EN": "A fledgling portal between the isekai and the main world.",
+      "CN": "🗺️ 异界之门地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -40102,7 +41955,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1, 2x2",
@@ -40334,11 +42191,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Energy): 31.8%",
         "💎 Godstones & Gems: 1.0%",
         "🪙 Slime / Gold Coins: 0.5%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 51.3%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Энергия): 31.8%",
+        "💎 Камни Богов / Самоцветы: 1.0%",
+        "🪙 Слизь / Золотые монеты: 0.5%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Могильная плита» с гарантированным прямым выпадением экипировки (51.3%).",
-      "EN": "⭐ Special spot 'Gravestone' with guaranteed direct gear drops (51.3%)."
+      "EN": "⭐ Special spot 'Gravestone' with guaranteed direct gear drops (51.3%).",
+      "CN": "🗺️ 墓碑地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -40352,7 +42217,11 @@
     },
     "icon": "⚔️",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -40552,11 +42421,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Каменный колодец» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Stone Well' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Stone Well' with guaranteed direct gear drops (100.0%).",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -40570,7 +42443,11 @@
     },
     "icon": "🪵",
     "category": "special",
-    "category_name": "Прямой дроп снаряжения",
+    "category_name": {
+      "RU": "Дроп снаряжения",
+      "EN": "Gear Drop",
+      "CN": "装备掉落"
+    },
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -40770,11 +42647,15 @@
       ],
       "EN": [
         "⚔️ Direct Gear Drops: 100.0%"
+      ],
+      "CN": [
+        "⚔️ Прямой дроп экипировки: 100.0%"
       ]
     },
     "description": {
       "RU": "⭐ Особая точка «Полый пень» с гарантированным прямым выпадением экипировки (100.0%).",
-      "EN": "⭐ Special spot 'Hollow Stump' with guaranteed direct gear drops (100.0%)."
+      "EN": "⭐ Special spot 'Hollow Stump' with guaranteed direct gear drops (100.0%).",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -40788,7 +42669,11 @@
     },
     "icon": "🪵",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "2x2, 3x3, 4x4, 6x6",
@@ -41023,11 +42908,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Засохший пень, покрытый грибами.",
-      "EN": "A withered stump covered in mushrooms."
+      "EN": "A withered stump covered in mushrooms.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -41041,7 +42934,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -41273,11 +43170,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Высокое, мертвое дерево.",
-      "EN": "A tall, dead tree."
+      "EN": "A tall, dead tree.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -41291,7 +43196,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -41523,11 +43432,19 @@
         "🌿 Resource Harvest (EXP, Plants, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Камень, опутанный колючими лозами.",
-      "EN": "A rock tangled in thorny vines."
+      "EN": "A rock tangled in thorny vines.",
+      "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
     }
   },
   {
@@ -41541,7 +43458,11 @@
     },
     "icon": "🍄",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -41773,11 +43694,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Гриб огромных размеров.",
-      "EN": "A mushroom of enormous size."
+      "EN": "A mushroom of enormous size.",
+      "CN": "🍄 生长稀有菌类的潮湿地块。采集可获得孢子菇、奶油菇及魔力菌菇。"
     }
   },
   {
@@ -41791,7 +43720,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "4x4",
@@ -42023,11 +43956,19 @@
         "🌿 Resource Harvest (EXP, Plants, Energy): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Энергия): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Редкое плотоядное растение.",
-      "EN": "A rare carnivorous plant."
+      "EN": "A rare carnivorous plant.",
+      "CN": "🗺️ 食肉植物地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -42041,7 +43982,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -42273,11 +44218,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Пещера, выглядящая совершенно обычно.",
-      "EN": "A cave that looks perfectly ordinary."
+      "EN": "A cave that looks perfectly ordinary.",
+      "CN": "🗺️ 山洞地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -42291,7 +44244,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -42523,11 +44480,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Искаженная масса шипастых лоз.",
-      "EN": "A twisted mass of spiked vines."
+      "EN": "A twisted mass of spiked vines.",
+      "CN": "🗺️ 荆棘藤蔓地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -42541,7 +44506,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "9x9",
@@ -42773,11 +44742,19 @@
         "🌿 Resource Harvest (EXP, Plants, Mushrooms): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Растения, Грибы): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Хорошо скрытая дупло дерева.",
-      "EN": "A well-hidden tree hollow."
+      "EN": "A well-hidden tree hollow.",
+      "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
     }
   },
   {
@@ -42791,7 +44768,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "6x6",
@@ -43023,11 +45004,19 @@
         "🌿 Resource Harvest (EXP, Mushrooms, Ore): 62.0%",
         "💎 Godstones & Gems: 2.0%",
         "🪙 Slime / Gold Coins: 1.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱",
+        "⚔️ Прямой дроп экипировки: 5.0%",
+        "🌿 Добыча материалов (Очки опыта (ОП), Грибы, Руда): 62.0%",
+        "💎 Камни Богов / Самоцветы: 2.0%",
+        "🪙 Слизь / Золотые монеты: 1.0%"
       ]
     },
     "description": {
       "RU": "Ее остаточная энергия продолжает заражать окружающие растения.",
-      "EN": "Its lingering energy keeps corrupting the surrounding plants."
+      "EN": "Its lingering energy keeps corrupting the surrounding plants.",
+      "CN": "🗺️ 巨兽骸骨地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   },
   {
@@ -43041,7 +45030,11 @@
     },
     "icon": "🗺️",
     "category": "resource",
-    "category_name": "Сбор ресурсов",
+    "category_name": {
+      "RU": "Сбор ресурсов",
+      "EN": "Resource Harvesting",
+      "CN": "资源采集"
+    },
     "special_spot_type": 0,
     "is_special": false,
     "size_str": "35x35",
@@ -43080,11 +45073,15 @@
       ],
       "EN": [
         "📦 Gear Chests: 100.0%"
+      ],
+      "CN": [
+        "📦 产出区域专属高阶宝箱"
       ]
     },
     "description": {
       "RU": "Хорошо скрытая алхимическая мастерская, охраняемая сильными стражницами.",
-      "EN": "A well-hidden alchemy workshop, guarded by powerful sentries."
+      "EN": "A well-hidden alchemy workshop, guarded by powerful sentries.",
+      "CN": "🗺️ 隐蔽工坊地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
     }
   }
 ]
