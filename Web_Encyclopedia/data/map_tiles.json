@@ -9,8 +9,8 @@
       "CN": "营地"
     },
     "icon": "⛺",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "category": "special",
+    "category_name": "Безопасная зона",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -333,8 +333,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Морозная тундра, Глубокие лощины, Ветреные берега.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Frostbound Tundra, The Deep Hollows, Breezy Shores."
+      "RU": "⛺ Стартовая безопасная база экспедиции. С этой клетки начинается высадка отряда на карту. Не содержит врагов и позволяет подготовить построение перед выходом на опасные участки биома.",
+      "EN": "⛺ Starting safe camp for the expedition. Team deployment starts here. Contains no enemies, allowing team formation prep before venturing into hazardous map areas."
     }
   },
   {
@@ -658,8 +658,8 @@
       "CN": "冰牙图腾"
     },
     "icon": "🗿",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "category": "special",
+    "category_name": "Тотем",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -958,8 +958,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Морозная тундра.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Frostbound Tundra."
+      "RU": "🗿 Тотем Морозного клыка. Элитное сооружение северных племен: даёт 60% шанс выпадения сундуков и 37% шанс вербовки/осколков северных героинь.",
+      "EN": "🗿 Frostfang Totem. Elite tribal structure: grants 60% gear chest drop rate and 37% northern heroine recruit/shard drop rate."
     }
   },
   {
@@ -972,7 +972,7 @@
       "CN": "宝箱"
     },
     "icon": "📦",
-    "category": "chest",
+    "category": "special",
     "category_name": "Сундуки и Тотемы",
     "special_spot_type": 1,
     "is_special": true,
@@ -1298,8 +1298,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Морозная тундра, Глубокие лощины, Ветреные берега.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Frostbound Tundra, The Deep Hollows, Breezy Shores."
+      "RU": "⭐ Особая точка «Сундук» с повышенной концентрацией сундуков сокровищ (80.0%) и материалов.",
+      "EN": "⭐ Special spot 'Chest' with high concentration of treasure chests (80.0%) and materials."
     }
   },
   {
@@ -1312,8 +1312,8 @@
       "CN": "雪球"
     },
     "icon": "⚪",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "category": "special",
+    "category_name": "Тайник",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -1597,8 +1597,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Морозная тундра.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Frostbound Tundra."
+      "RU": "⚪ Заснеженный тайник. Скрывает замерзшие сокровища и гарантирует прямое получение снаряжения (100%).",
+      "EN": "⚪ Snowdrift Cache. Conceals frozen treasures with guaranteed direct gear drops (100%)."
     }
   },
   {
@@ -1611,8 +1611,8 @@
       "CN": "遗物"
     },
     "icon": "🏺",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "category": "special",
+    "category_name": "Реликвия",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -1899,8 +1899,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Морозная тундра, Бескрайняя степь.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Frostbound Tundra, Boundless Steppe."
+      "RU": "🏺 Древняя реликвия. Содержит запечатанное легендарное снаряжение (100% шанс прямого дропа экипировки при исследовании клетки).",
+      "EN": "🏺 Ancient Relic. Contains sealed legendary gear (100% direct gear drop rate upon clearing the tile)."
     }
   },
   {
@@ -1913,8 +1913,8 @@
       "CN": "星界裂痕"
     },
     "icon": "🌌",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "category": "special",
+    "category_name": "Разлом",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -2201,8 +2201,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Морозная тундра, Бескрайняя степь.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Frostbound Tundra, Boundless Steppe."
+      "RU": "🌌 Астральный разлом. Пространственная аномалия, связывающая мир с Астральным царством. Гарантирует 100% шанс прямого дропа высокоуровневой экипировки и астральных камней.",
+      "EN": "🌌 Astral Rift. Spatial anomaly connecting to the Astral Realm. Guarantees 100% direct gear drop rate and astral stones."
     }
   },
   {
@@ -2215,8 +2215,8 @@
       "CN": "龟裂地面"
     },
     "icon": "🪨",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "category": "special",
+    "category_name": "Тайник",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -2503,8 +2503,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Морозная тундра, Бескрайняя степь.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Frostbound Tundra, Boundless Steppe."
+      "RU": "🪨 Треснувшая земля. Под разломом скрыт подземный схрон с экипировкой (100% прямой дроп).",
+      "EN": "🪨 Fissured Ground. Hides an underground cache with direct gear drops (100%)."
     }
   },
   {
@@ -2517,8 +2517,8 @@
       "CN": "旅行商人"
     },
     "icon": "🧙‍♂️",
-    "category": "monster",
-    "category_name": "События и Монстры",
+    "category": "special",
+    "category_name": "Торговец",
     "special_spot_type": 2,
     "is_special": true,
     "size_str": "1x1",
@@ -2841,8 +2841,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «События и Монстры» (1x1), встречающаяся в биомах: Морозная тундра, Глубокие лощины, Ветреные берега.",
-      "EN": "Map spot of type 'Events & Monsters' (1x1), appearing in biomes: Frostbound Tundra, The Deep Hollows, Breezy Shores."
+      "RU": "🧙‍♂️ Странствующий торговец-гоблин. Главный источник редких ресурсов в экспедициях. Продаёт Сердца героинь (Heroine's Hearts) для мгновенной прокачки 70+ уровней без золота, Камни наследия, свитки призыва и премиальные расходники за накопленное золото.",
+      "EN": "🧙‍♂️ Wandering Goblin Merchant. Primary source of valuable expedition items. Sells Heroine's Hearts for instant 70+ level-ups without gold, Legacy Stones, recruit tickets, and premium consumables for gold."
     }
   },
   {
@@ -2855,8 +2855,8 @@
       "CN": "金属宝箱怪"
     },
     "icon": "📦",
-    "category": "monster",
-    "category_name": "События и Монстры",
+    "category": "special",
+    "category_name": "Мимик",
     "special_spot_type": 2,
     "is_special": true,
     "size_str": "1x1",
@@ -3179,8 +3179,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «События и Монстры» (1x1), встречающаяся в биомах: Морозная тундра, Глубокие лощины, Ветреные берега.",
-      "EN": "Map spot of type 'Events & Monsters' (1x1), appearing in biomes: Frostbound Tundra, The Deep Hollows, Breezy Shores."
+      "RU": "📦 Металлический мимик (Metallic). Обладает стальной бронёй и иммунитетом к стандартному урону и потере HP (HP Loss). Пробивается чистым уроном (Drain MP), способностями расы Металла или сериями мульти-ударов. Награждает огромным количеством золота и редким лутом.",
+      "EN": "📦 Metallic Mimic. Possesses hardened armor and immunity to standard damage & HP Loss. Countered by Drain MP, Metallic race traits, or multi-hit bursts. Rewards huge piles of gold and rare loot."
     }
   },
   {
@@ -3192,9 +3192,9 @@
       "EN": "Clockwork Mimic",
       "CN": "机巧宝箱怪"
     },
-    "icon": "📦",
-    "category": "monster",
-    "category_name": "События и Монстры",
+    "icon": "⚙️",
+    "category": "special",
+    "category_name": "Мимик",
     "special_spot_type": 2,
     "is_special": true,
     "size_str": "1x1",
@@ -3517,8 +3517,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «События и Монстры» (1x1), встречающаяся в биомах: Морозная тундра, Глубокие лощины, Ветреные берега.",
-      "EN": "Map spot of type 'Events & Monsters' (1x1), appearing in biomes: Frostbound Tundra, The Deep Hollows, Breezy Shores."
+      "RU": "⚙️ Заводной мимик-механизм. Редкое боевое событие. После победы даёт ценные шестерёнки для рулетки «Заводного тайника» (Clockwork Trove) и высокоуровневые компоненты снаряжения.",
+      "EN": "⚙️ Clockwork Mimic. Rare combat encounter. Victory rewards gears for the 'Clockwork Trove' lucky roulette and high-tier gear components."
     }
   },
   {
@@ -3531,8 +3531,8 @@
       "CN": "勇者之墓"
     },
     "icon": "⚰️",
-    "category": "altar",
-    "category_name": "Гробницы и Святилища",
+    "category": "special",
+    "category_name": "Святилище",
     "special_spot_type": 3,
     "is_special": true,
     "size_str": "1x1",
@@ -3855,8 +3855,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Гробницы и Святилища» (1x1), встречающаяся в биомах: Морозная тундра, Глубокие лощины, Ветреные берега.",
-      "EN": "Map spot of type 'Graves & Shrines' (1x1), appearing in biomes: Frostbound Tundra, The Deep Hollows, Breezy Shores."
+      "RU": "⚰️ Гробница павшей героини. Сакральное святилище, где можно воскресить павших союзниц, восстановить боевой дух отряда и получить временные благословения на урон и защиту.",
+      "EN": "⚰️ Heroine's Grave. Sacred shrine allowing revival of fallen allies, party stamina recovery, and temporary damage/defense blessings."
     }
   },
   {
@@ -3869,8 +3869,8 @@
       "CN": "传承祭坛"
     },
     "icon": "🏛️",
-    "category": "altar",
-    "category_name": "Алтари наследия",
+    "category": "special",
+    "category_name": "Алтарь",
     "special_spot_type": 4,
     "is_special": true,
     "size_str": "1x1",
@@ -4193,8 +4193,8 @@
       ]
     },
     "description": {
-      "RU": "Алтарь, что превращает золото в мистическую энергию, пробуждая скрытое наследие в снаряжении.",
-      "EN": "An altar that transforms gold into mystical energy, awakening dormant legacy within gear."
+      "RU": "🏛️ Древний алтарь наследия. Ключевая механика усиления снаряжения: позволяет применять Камни наследия (Legacy Stones) для прорыва экипировки до ранга MAX (+3 очка ко всем строкам сетов, сокращая требование сета до 2 предметов).",
+      "EN": "🏛️ Ancient Legacy Altar. Core gear enhancement mechanic: allows using Legacy Stones for MAX breakthrough (+3 points to all set talent rows, reducing set requirements to 2 pieces)."
     }
   },
   {
@@ -4207,8 +4207,8 @@
       "CN": "预言石碑"
     },
     "icon": "📜",
-    "category": "altar",
-    "category_name": "Стелы предсказаний",
+    "category": "special",
+    "category_name": "Стела",
     "special_spot_type": 7,
     "is_special": true,
     "size_str": "1x1",
@@ -4531,8 +4531,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Стелы предсказаний» (1x1), встречающаяся в биомах: Морозная тундра, Глубокие лощины, Ветреные берега.",
-      "EN": "Map spot of type 'Prophecy Steles' (1x1), appearing in biomes: Frostbound Tundra, The Deep Hollows, Breezy Shores."
+      "RU": "📜 Стела пророчества. Рассеивает туман войны в окружающих секторах, указывает кратчайший путь к клетке Босса и накладывает мощные баффы Оракула (Oracle Buffs) на весь отряд.",
+      "EN": "📜 Prophecy Stele. Clears fog of war in adjacent sectors, highlights the optimal path to the Boss tile, and bestows powerful party-wide Oracle Buffs."
     }
   },
   {
@@ -4545,8 +4545,8 @@
       "CN": "限时礼包"
     },
     "icon": "🎁",
-    "category": "chest",
-    "category_name": "Особые припасы",
+    "category": "special",
+    "category_name": "Припасы",
     "special_spot_type": 5,
     "is_special": true,
     "size_str": "1x1",
@@ -4869,8 +4869,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Особые припасы» (1x1), встречающаяся в биомах: Морозная тундра, Глубокие лощины, Ветреные берега.",
-      "EN": "Map spot of type 'Special Supplies' (1x1), appearing in biomes: Frostbound Tundra, The Deep Hollows, Breezy Shores."
+      "RU": "🎁 Временный подарочный тайник. Содержит щедрые порции выносливости (Базовые и Большие пайки), Клеверы удачи и кристаллы алхимии.",
+      "EN": "🎁 Timed Supply Cache. Contains generous stamina rations (Basic/Large), Lucky Clovers, and alchemy crystals."
     }
   },
   {
@@ -4882,9 +4882,9 @@
       "EN": "Ritual Mimic",
       "CN": "献祭宝箱怪"
     },
-    "icon": "📦",
-    "category": "terrain",
-    "category_name": "Обычные клетки",
+    "icon": "🩸",
+    "category": "special",
+    "category_name": "Мимик",
     "special_spot_type": 6,
     "is_special": true,
     "size_str": "1x1",
@@ -5204,8 +5204,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Обычные клетки» (1x1), встречающаяся в биомах: Морозная тундра, Глубокие лощины, Ветреные берега.",
-      "EN": "Map spot of type 'Terrain' (1x1), appearing in biomes: Frostbound Tundra, The Deep Hollows, Breezy Shores."
+      "RU": "🩸 Ритуальный мимик. Требует принесения в жертву части выносливости или победы в усложнённом испытании в обмен на редчайшие сундуки экипировки.",
+      "EN": "🩸 Sacrificial Mimic. Demands stamina sacrifice or victory in an empowered challenge in exchange for the rarest gear chests."
     }
   },
   {
@@ -5217,9 +5217,9 @@
       "EN": "Golden Vault",
       "CN": "黄金宝库"
     },
-    "icon": "🗺️",
-    "category": "terrain",
-    "category_name": "Обычные клетки",
+    "icon": "🪙",
+    "category": "special",
+    "category_name": "Сокровищница",
     "special_spot_type": 9,
     "is_special": true,
     "size_str": "1x1",
@@ -5542,8 +5542,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Обычные клетки» (1x1), встречающаяся в биомах: Морозная тундра, Глубокие лощины, Ветреные берега.",
-      "EN": "Map spot of type 'Terrain' (1x1), appearing in biomes: Frostbound Tundra, The Deep Hollows, Breezy Shores."
+      "RU": "🪙 Золотое хранилище гильдии. Особая зона с рекордным содержанием золотых слитков и сундуков сокровищ.",
+      "EN": "🪙 Guild Golden Vault. Special zone featuring record amounts of gold bullion and treasure chests."
     }
   },
   {
@@ -9728,8 +9728,8 @@
       "EN": "Campfire",
       "CN": "篝火"
     },
-    "icon": "🗺️",
-    "category": "chest",
+    "icon": "📦",
+    "category": "special",
     "category_name": "Сундуки и Тотемы",
     "special_spot_type": 1,
     "is_special": true,
@@ -10029,8 +10029,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Рассветные равнины.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Dawnstep Plains."
+      "RU": "⭐ Особая точка «Костер» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
+      "EN": "⭐ Special spot 'Campfire' with high concentration of treasure chests (60.0%) and materials."
     }
   },
   {
@@ -10042,9 +10042,9 @@
       "EN": "Rock",
       "CN": "岩石"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1, 2x2, 3x3, 4x4",
@@ -10372,8 +10372,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1, 2x2, 3x3, 4x4), встречающаяся в биомах: Ветреные берега, Рассветные равнины, Увядший лес.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1, 2x2, 3x3, 4x4), appearing in biomes: Breezy Shores, Dawnstep Plains, Withered Timberland."
+      "RU": "⭐ Особая точка «Скала» с гарантированным прямым выпадением экипировки (51.3%).",
+      "EN": "⭐ Special spot 'Rock' with guaranteed direct gear drops (51.3%)."
     }
   },
   {
@@ -10385,9 +10385,9 @@
       "EN": "Parcel",
       "CN": "包裹"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -10671,8 +10671,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Рассветные равнины.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Dawnstep Plains."
+      "RU": "⭐ Особая точка «Посылка» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Parcel' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -10684,9 +10684,9 @@
       "EN": "Burrow",
       "CN": "地洞"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -10970,8 +10970,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Рассветные равнины.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Dawnstep Plains."
+      "RU": "⭐ Особая точка «Нора» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Burrow' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -10983,9 +10983,9 @@
       "EN": "Tent",
       "CN": "帐篷"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -11269,8 +11269,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Рассветные равнины.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Dawnstep Plains."
+      "RU": "⭐ Особая точка «Палатка» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Tent' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -14799,8 +14799,8 @@
       "CN": "古代祭坛"
     },
     "icon": "⛩️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "category": "special",
+    "category_name": "Алтарь",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "4x4, 6x6",
@@ -15108,8 +15108,8 @@
       ]
     },
     "description": {
-      "RU": "Таинственный алтарь испытаний, скрытый в завывающих ветрах.",
-      "EN": "A mysterious trial altar hidden in howling winds."
+      "RU": "⛩️ Древний алтарь стихий. Источник благословений и концентрированного дропа сундуков с экипировкой.",
+      "EN": "⛩️ Ancient Elemental Altar. Source of party blessings and concentrated gear chest drops."
     }
   },
   {
@@ -15122,8 +15122,8 @@
       "CN": "兽骨图腾"
     },
     "icon": "🗿",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "category": "special",
+    "category_name": "Тотем",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -15422,8 +15422,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Бескрайняя степь.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Boundless Steppe."
+      "RU": "🗿 Костяной тотем зверей. Шаманский тотем с повышенным шансом сундуков и осколков героинь диких племен.",
+      "EN": "🗿 Beastbone Totem. Shamanic totem with boosted gear chest and tribal heroine shard drop rates."
     }
   },
   {
@@ -15435,9 +15435,9 @@
       "EN": "Shrub",
       "CN": "灌木丛"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -15724,8 +15724,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Бескрайняя степь, Блуждающий лес.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Boundless Steppe, Wandering Woods."
+      "RU": "⭐ Особая точка «Куст» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Shrub' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -17995,8 +17995,8 @@
       "EN": "Stump",
       "CN": "木桩"
     },
-    "icon": "🗺️",
-    "category": "chest",
+    "icon": "📦",
+    "category": "special",
     "category_name": "Сундуки и Тотемы",
     "special_spot_type": 1,
     "is_special": true,
@@ -18296,8 +18296,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Багровое нагорье.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Crimson Highlands."
+      "RU": "⭐ Особая точка «Пень» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
+      "EN": "⭐ Special spot 'Stump' with high concentration of treasure chests (60.0%) and materials."
     }
   },
   {
@@ -18309,9 +18309,9 @@
       "EN": "Grass",
       "CN": "草丛"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -18595,8 +18595,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Багровое нагорье.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Crimson Highlands."
+      "RU": "⭐ Особая точка «Трава» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Grass' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -18608,9 +18608,9 @@
       "EN": "Bones",
       "CN": "白骨"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1, 2x2, 3x3",
@@ -18922,8 +18922,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1, 2x2, 3x3), встречающаяся в биомах: Багровое нагорье, Бескрайняя пустыня, Пепельные пустоши.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1, 2x2, 3x3), appearing in biomes: Crimson Highlands, Endless Desert, Ashland Wastes."
+      "RU": "⭐ Особая точка «Кости» с гарантированным прямым выпадением экипировки (51.3%).",
+      "EN": "⭐ Special spot 'Bones' with guaranteed direct gear drops (51.3%)."
     }
   },
   {
@@ -18935,9 +18935,9 @@
       "EN": "Pack",
       "CN": "背包"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -19221,8 +19221,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Багровое нагорье.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Crimson Highlands."
+      "RU": "⭐ Особая точка «Набор» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Pack' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -19234,9 +19234,9 @@
       "EN": "Materials",
       "CN": "素材"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -19520,8 +19520,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Багровое нагорье.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Crimson Highlands."
+      "RU": "⭐ Особая точка «Материалы» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Materials' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -23375,8 +23375,8 @@
       "EN": "Puddle",
       "CN": "小水塘"
     },
-    "icon": "🗺️",
-    "category": "chest",
+    "icon": "📦",
+    "category": "special",
     "category_name": "Сундуки и Тотемы",
     "special_spot_type": 1,
     "is_special": true,
@@ -23676,8 +23676,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Блуждающий лес.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Wandering Woods."
+      "RU": "⭐ Особая точка «Лужа» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
+      "EN": "⭐ Special spot 'Puddle' with high concentration of treasure chests (60.0%) and materials."
     }
   },
   {
@@ -23689,9 +23689,9 @@
       "EN": "Sour Fruit Tree",
       "CN": "酸果树"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -23975,8 +23975,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Блуждающий лес.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Wandering Woods."
+      "RU": "⭐ Особая точка «Дерево с кислыми плодами» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Sour Fruit Tree' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -23988,9 +23988,9 @@
       "EN": "Divine Sapling",
       "CN": "神树幼苗"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "🌱",
+    "category": "special",
+    "category_name": "Святилище",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -24274,8 +24274,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Блуждающий лес.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Wandering Woods."
+      "RU": "🌱 Саженец Мирового Древа. Даёт Плоды таланта и восстанавливает выносливость отряда.",
+      "EN": "🌱 World Tree Sapling. Grants Talent Fruits and restores party stamina."
     }
   },
   {
@@ -24287,9 +24287,9 @@
       "EN": "Forest Treasure",
       "CN": "森林秘宝"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "🌳",
+    "category": "special",
+    "category_name": "Сокровище",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -24573,8 +24573,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Блуждающий лес.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Wandering Woods."
+      "RU": "🌳 Тайник лесных духов. Скрывает священные дары леса и редкие сундуки.",
+      "EN": "🌳 Forest Spirits Cache. Conceals sacred woodland gifts and rare chests."
     }
   },
   {
@@ -28764,8 +28764,8 @@
       "EN": "Bear Trap",
       "CN": "捕兽夹"
     },
-    "icon": "🗺️",
-    "category": "chest",
+    "icon": "📦",
+    "category": "special",
     "category_name": "Сундуки и Тотемы",
     "special_spot_type": 1,
     "is_special": true,
@@ -29065,8 +29065,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Роща теневой завесы.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Shadowveil Grove."
+      "RU": "⭐ Особая точка «Медвежий капкан» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
+      "EN": "⭐ Special spot 'Bear Trap' with high concentration of treasure chests (60.0%) and materials."
     }
   },
   {
@@ -29078,9 +29078,9 @@
       "EN": "Trap",
       "CN": "陷阱"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -29364,8 +29364,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Роща теневой завесы.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Shadowveil Grove."
+      "RU": "⭐ Особая точка «Ловушка» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Trap' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -29377,9 +29377,9 @@
       "EN": "Slime Statue",
       "CN": "史莱姆石像"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -29663,8 +29663,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Роща теневой завесы.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Shadowveil Grove."
+      "RU": "⭐ Особая точка «Статуя из слизи» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Slime Statue' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -29676,9 +29676,9 @@
       "EN": "Thorns",
       "CN": "荆棘"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -29982,8 +29982,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Увядший лес, Роща теневой завесы.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Withered Timberland, Shadowveil Grove."
+      "RU": "⭐ Особая точка «Шипы» с гарантированным прямым выпадением экипировки (50.0%).",
+      "EN": "⭐ Special spot 'Thorns' with guaranteed direct gear drops (50.0%)."
     }
   },
   {
@@ -29995,9 +29995,9 @@
       "EN": "Sword",
       "CN": "宝剑"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -30281,8 +30281,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Роща теневой завесы.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Shadowveil Grove."
+      "RU": "⭐ Особая точка «Меч» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Sword' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -33511,8 +33511,8 @@
       "EN": "Ore Crate",
       "CN": "矿箱"
     },
-    "icon": "🗺️",
-    "category": "chest",
+    "icon": "📦",
+    "category": "special",
     "category_name": "Сундуки и Тотемы",
     "special_spot_type": 1,
     "is_special": true,
@@ -33815,8 +33815,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Магмовый проход, Заброшенные шахты.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Magma Passage, Forsaken Mines."
+      "RU": "⭐ Особая точка «Ящик с рудой» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
+      "EN": "⭐ Special spot 'Ore Crate' with high concentration of treasure chests (60.0%) and materials."
     }
   },
   {
@@ -33828,9 +33828,9 @@
       "EN": "Open Mine",
       "CN": "露天矿"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -34117,8 +34117,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Магмовый проход, Заброшенные шахты.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Magma Passage, Forsaken Mines."
+      "RU": "⭐ Особая точка «Открытая шахта» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Open Mine' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -34130,9 +34130,9 @@
       "EN": "Cave",
       "CN": "地穴"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -34419,8 +34419,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Магмовый проход, Заброшенные шахты.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Magma Passage, Forsaken Mines."
+      "RU": "⭐ Особая точка «Пещера» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Cave' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -34432,9 +34432,9 @@
       "EN": "Golden Pillar",
       "CN": "黄金柱"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -34721,8 +34721,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Магмовый проход, Заброшенные шахты.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Magma Passage, Forsaken Mines."
+      "RU": "⭐ Особая точка «Золотой столб» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Golden Pillar' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -34734,9 +34734,9 @@
       "EN": "Mana Crystal Vein",
       "CN": "魔晶矿"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1, 3x3, 4x4, 6x6",
@@ -35046,8 +35046,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1, 3x3, 4x4, 6x6), встречающаяся в биомах: Магмовый проход, Заброшенные шахты.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1, 3x3, 4x4, 6x6), appearing in biomes: Magma Passage, Forsaken Mines."
+      "RU": "⭐ Особая точка «Жила кристаллов маны» с гарантированным прямым выпадением экипировки (51.3%).",
+      "EN": "⭐ Special spot 'Mana Crystal Vein' with guaranteed direct gear drops (51.3%)."
     }
   },
   {
@@ -37953,8 +37953,8 @@
       "EN": "Mineshroom",
       "CN": "地雷菇"
     },
-    "icon": "🗺️",
-    "category": "chest",
+    "icon": "📦",
+    "category": "special",
     "category_name": "Сундуки и Тотемы",
     "special_spot_type": 1,
     "is_special": true,
@@ -38254,8 +38254,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Глубокие лощины.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: The Deep Hollows."
+      "RU": "⭐ Особая точка «Рудничник» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
+      "EN": "⭐ Special spot 'Mineshroom' with high concentration of treasure chests (60.0%) and materials."
     }
   },
   {
@@ -38268,8 +38268,8 @@
       "CN": "蘑菇"
     },
     "icon": "🍄",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1, 2x2, 5x5",
@@ -38578,8 +38578,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1, 2x2, 5x5), встречающаяся в биомах: Глубокие лощины.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1, 2x2, 5x5), appearing in biomes: The Deep Hollows."
+      "RU": "⭐ Особая точка «Гриб» с гарантированным прямым выпадением экипировки (51.3%).",
+      "EN": "⭐ Special spot 'Mushroom' with guaranteed direct gear drops (51.3%)."
     }
   },
   {
@@ -38591,9 +38591,9 @@
       "EN": "Stone Slab",
       "CN": "石板"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -38877,8 +38877,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Глубокие лощины.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: The Deep Hollows."
+      "RU": "⭐ Особая точка «Каменная плита» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Stone Slab' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -38890,9 +38890,9 @@
       "EN": "Hidden Entrance",
       "CN": "隐蔽入口"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -39176,8 +39176,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Глубокие лощины.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: The Deep Hollows."
+      "RU": "⭐ Особая точка «Тайный вход» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Hidden Entrance' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -39189,9 +39189,9 @@
       "EN": "Sword in Stone",
       "CN": "石中剑"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "🗡️",
+    "category": "special",
+    "category_name": "Артефакт",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -39475,8 +39475,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Глубокие лощины.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: The Deep Hollows."
+      "RU": "🗡️ Легендарный Меч в камне. Особая интерактивная точка с гарантированным получением высокорангового оружия.",
+      "EN": "🗡️ Legendary Sword in the Stone. Special interactive spot yielding high-tier weapons."
     }
   },
   {
@@ -41398,7 +41398,7 @@
       "CN": "海葵"
     },
     "icon": "🗺️",
-    "category": "chest",
+    "category": "special",
     "category_name": "Сундуки и Тотемы",
     "special_spot_type": 1,
     "is_special": true,
@@ -41706,8 +41706,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1, 2x2), встречающаяся в биомах: Затонувшее море.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1, 2x2), appearing in biomes: The Sunken Sea."
+      "RU": "⭐ Особая интерактивная клетка «Актиния» (1x1, 2x2), встречающаяся в биомах: Затонувшее море.",
+      "EN": "⭐ Special interactive tile 'Sea Anemone' (1x1, 2x2), appearing in biomes: The Sunken Sea."
     }
   },
   {
@@ -41719,9 +41719,9 @@
       "EN": "Crude Marker",
       "CN": "简陋标记"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -42005,8 +42005,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Затонувшее море.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: The Sunken Sea."
+      "RU": "⭐ Особая точка «Грубый указатель» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Crude Marker' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -42018,9 +42018,9 @@
       "EN": "Wishing Bottle",
       "CN": "许愿瓶"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "🍾",
+    "category": "special",
+    "category_name": "Реликвия",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -42304,8 +42304,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Затонувшее море.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: The Sunken Sea."
+      "RU": "🍾 Затонувшая бутылка желаний. Морской тайник с редкими сокровищами и Камнями желаний для перековки.",
+      "EN": "🍾 Sunken Message Bottle. Marine cache yielding rare treasures and Wish Stones for stat rerolls."
     }
   },
   {
@@ -42317,9 +42317,9 @@
       "EN": "Silver Anchor",
       "CN": "银船锚"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚓",
+    "category": "special",
+    "category_name": "Реликвия",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -42603,8 +42603,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Затонувшее море.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: The Sunken Sea."
+      "RU": "⚓ Серебряный якорь затонувшего флагмана. Гарантирует богатую морскую добычу и экипировку.",
+      "EN": "⚓ Silver Anchor of sunken flagship. Guarantees rich maritime loot and gear."
     }
   },
   {
@@ -42616,9 +42616,9 @@
       "EN": "Deep Spring",
       "CN": "深海涌泉"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -42902,8 +42902,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Затонувшее море.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: The Sunken Sea."
+      "RU": "⭐ Особая точка «Глубинный источник» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Deep Spring' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -46115,8 +46115,8 @@
       "EN": "Conch",
       "CN": "海螺"
     },
-    "icon": "🗺️",
-    "category": "chest",
+    "icon": "📦",
+    "category": "special",
     "category_name": "Сундуки и Тотемы",
     "special_spot_type": 1,
     "is_special": true,
@@ -46416,8 +46416,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Ветреные берега.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Breezy Shores."
+      "RU": "⭐ Особая точка «Раковина» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
+      "EN": "⭐ Special spot 'Conch' with high concentration of treasure chests (60.0%) and materials."
     }
   },
   {
@@ -46429,9 +46429,9 @@
       "EN": "Crate",
       "CN": "木箱"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -46715,8 +46715,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Ветреные берега.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Breezy Shores."
+      "RU": "⭐ Особая точка «Ящик» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Crate' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -46728,9 +46728,9 @@
       "EN": "Barrel",
       "CN": "木桶"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -47017,8 +47017,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Ветреные берега, Пепельные пустоши.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Breezy Shores, Ashland Wastes."
+      "RU": "⭐ Особая точка «Бочка» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Barrel' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -47030,9 +47030,9 @@
       "EN": "Shell",
       "CN": "贝壳"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -47316,8 +47316,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Ветреные берега.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Breezy Shores."
+      "RU": "⭐ Особая точка «Ракушка» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Shell' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -49241,8 +49241,8 @@
       "EN": "Signpost",
       "CN": "路牌"
     },
-    "icon": "🗺️",
-    "category": "chest",
+    "icon": "📦",
+    "category": "special",
     "category_name": "Сундуки и Тотемы",
     "special_spot_type": 1,
     "is_special": true,
@@ -49539,8 +49539,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Пепельные пустоши.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Ashland Wastes."
+      "RU": "⭐ Особая точка «Указатель» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
+      "EN": "⭐ Special spot 'Signpost' with high concentration of treasure chests (60.0%) and materials."
     }
   },
   {
@@ -49553,7 +49553,7 @@
       "CN": "仙人掌"
     },
     "icon": "🌵",
-    "category": "chest",
+    "category": "special",
     "category_name": "Сундуки и Тотемы",
     "special_spot_type": 1,
     "is_special": true,
@@ -49873,8 +49873,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1, 2x2, 3x3, 4x4, 6x6), встречающаяся в биомах: Бескрайняя пустыня, Пепельные пустоши.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1, 2x2, 3x3, 4x4, 6x6), appearing in biomes: Endless Desert, Ashland Wastes."
+      "RU": "⭐ Особая интерактивная клетка «Кактус» (1x1, 2x2, 3x3, 4x4, 6x6), встречающаяся в биомах: Бескрайняя пустыня, Пепельные пустоши.",
+      "EN": "⭐ Special interactive tile 'Cactus' (1x1, 2x2, 3x3, 4x4, 6x6), appearing in biomes: Endless Desert, Ashland Wastes."
     }
   },
   {
@@ -49887,8 +49887,8 @@
       "CN": "石碑"
     },
     "icon": "🪦",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -50172,8 +50172,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Пепельные пустоши.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Ashland Wastes."
+      "RU": "⭐ Особая точка «Стела» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Stele' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -51147,9 +51147,9 @@
       "EN": "Gravel",
       "CN": "碎石"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -51433,8 +51433,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Бескрайняя пустыня.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Endless Desert."
+      "RU": "⭐ Особая точка «Гравий» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Gravel' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -51446,9 +51446,9 @@
       "EN": "Stone Spikes",
       "CN": "石刺"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -51732,8 +51732,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Бескрайняя пустыня.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Endless Desert."
+      "RU": "⭐ Особая точка «Каменные шипы» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Stone Spikes' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -51745,9 +51745,9 @@
       "EN": "Crate",
       "CN": "箱子"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -52031,8 +52031,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Бескрайняя пустыня.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Endless Desert."
+      "RU": "⭐ Особая точка «Ящик» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Crate' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -52044,9 +52044,9 @@
       "EN": "Sunblaze Flower",
       "CN": "烈阳花"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -52330,8 +52330,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Бескрайняя пустыня.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Endless Desert."
+      "RU": "⭐ Особая точка «Цветок солнечного пламени» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Sunblaze Flower' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -54237,9 +54237,9 @@
       "EN": "Gravestone",
       "CN": "墓碑"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1, 2x2",
@@ -54544,8 +54544,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1, 2x2), встречающаяся в биомах: Увядший лес.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1, 2x2), appearing in biomes: Withered Timberland."
+      "RU": "⭐ Особая точка «Могильная плита» с гарантированным прямым выпадением экипировки (51.3%).",
+      "EN": "⭐ Special spot 'Gravestone' with guaranteed direct gear drops (51.3%)."
     }
   },
   {
@@ -54557,9 +54557,9 @@
       "EN": "Stone Well",
       "CN": "石井"
     },
-    "icon": "🗺️",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "icon": "⚔️",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -54843,8 +54843,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Увядший лес.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Withered Timberland."
+      "RU": "⭐ Особая точка «Каменный колодец» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Stone Well' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
@@ -54857,8 +54857,8 @@
       "CN": "空心树桩"
     },
     "icon": "🪵",
-    "category": "chest",
-    "category_name": "Сундуки и Тотемы",
+    "category": "special",
+    "category_name": "Прямой дроп снаряжения",
     "special_spot_type": 1,
     "is_special": true,
     "size_str": "1x1",
@@ -55142,8 +55142,8 @@
       ]
     },
     "description": {
-      "RU": "Клетка игрового поля типа «Сундуки и Тотемы» (1x1), встречающаяся в биомах: Увядший лес.",
-      "EN": "Map spot of type 'Treasure & Totems' (1x1), appearing in biomes: Withered Timberland."
+      "RU": "⭐ Особая точка «Полый пень» с гарантированным прямым выпадением экипировки (100.0%).",
+      "EN": "⭐ Special spot 'Hollow Stump' with guaranteed direct gear drops (100.0%)."
     }
   },
   {
