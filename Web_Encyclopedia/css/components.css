@@ -4431,3 +4431,18 @@
   border-radius: 3px;
   transition: width 0.3s ease;
 }
+
+
+/* Tile Action Buttons & Enhancements */
+.tile-action-link-btn:hover {
+  background: rgba(56, 189, 248, 0.15) !important;
+  border-color: rgba(56, 189, 248, 0.4) !important;
+  color: #38bdf8 !important;
+}
+
+.tile-action-detail-btn:hover {
+  background: rgba(56, 189, 248, 0.25) !important;
+  border-color: #38bdf8 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.35) !important;
+}

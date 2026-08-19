@@ -73,11 +73,11 @@
       "CN": []
     },
     "rates": {
-      "chest": 0.0,
-      "equip": 0.0,
-      "role": 0.0,
       "materials": 0.0,
       "stones": 0.0,
+      "role": 0.0,
+      "chest": 0.0,
+      "equip": 0.0,
       "gold": 0.0
     },
     "possible_chests": [
@@ -326,10 +326,14 @@
     ],
     "drops_summary": {
       "RU": [
-        "⚙️ Особое небоевое событие / Взаимодействие"
+        "⛺ Точка высадки и старта экспедиции",
+        "🛡️ Безопасная зона (нет боевых стычек)",
+        "👥 Бесплатная настройка расстановки отряда"
       ],
       "EN": [
-        "⚙️ Special Interaction / Non-combat Event"
+        "⛺ Expedition deployment & starting tile",
+        "🛡️ Safe zone (no enemy encounters)",
+        "👥 Free party formation setup"
       ]
     },
     "description": {
@@ -2517,7 +2521,7 @@
       "CN": "旅行商人"
     },
     "icon": "🧙‍♂️",
-    "category": "special",
+    "category": "merchant",
     "category_name": "Торговец",
     "special_spot_type": 2,
     "is_special": true,
@@ -2576,16 +2580,31 @@
       ]
     },
     "materials": {
-      "RU": [],
-      "EN": [],
-      "CN": []
+      "RU": [
+        "💖 Сердца героинь",
+        "🪨 Камни наследия",
+        "🍱 Большие пайки (500 ⚡)",
+        "📜 Билеты найма"
+      ],
+      "EN": [
+        "💖 Heroine's Hearts",
+        "🪨 Legacy Stones",
+        "🍱 Large Rations (500 ⚡)",
+        "📜 Recruit Tickets"
+      ],
+      "CN": [
+        "💖 魔灵之心",
+        "🪨 传承石",
+        "🍱 大份干粮 (500 ⚡)",
+        "📜 推荐信"
+      ]
     },
     "rates": {
-      "chest": 0.0,
+      "role": 30.0,
+      "stones": 25.0,
+      "materials": 25.0,
+      "chest": 20.0,
       "equip": 0.0,
-      "role": 0.0,
-      "materials": 0.0,
-      "stones": 0.0,
       "gold": 0.0
     },
     "possible_chests": [
@@ -2834,15 +2853,21 @@
     ],
     "drops_summary": {
       "RU": [
-        "⚙️ Особое небоевое событие / Взаимодействие"
+        "💖 Сердца героинь (мгновенный ап 70+ уровней): 30.0%",
+        "🪨 Камни наследия для MAX ранга: 25.0%",
+        "🍱 Большие пайки выносливости (+500 ⚡): 25.0%",
+        "📜 Билеты найма и ценное снаряжение за золото: 20.0%"
       ],
       "EN": [
-        "⚙️ Special Interaction / Non-combat Event"
+        "💖 Heroine's Hearts (instant 70+ level-up): 30.0%",
+        "🪨 Legacy Stones for MAX breakthrough: 25.0%",
+        "🍱 Large Stamina Rations (+500 ⚡): 25.0%",
+        "📜 Recruit Tickets & gear for gold: 20.0%"
       ]
     },
     "description": {
-      "RU": "🧙‍♂️ Странствующий торговец-гоблин. Главный источник редких ресурсов в экспедициях. Продаёт Сердца героинь (Heroine's Hearts) для мгновенной прокачки 70+ уровней без золота, Камни наследия, свитки призыва и премиальные расходники за накопленное золото.",
-      "EN": "🧙‍♂️ Wandering Goblin Merchant. Primary source of valuable expedition items. Sells Heroine's Hearts for instant 70+ level-ups without gold, Legacy Stones, recruit tickets, and premium consumables for gold."
+      "RU": "🧙‍♂️ Странствующий торговец-гоблин. Главный источник ценнейших ресурсов в экспедициях. Продаёт Сердца героинь (Heroine's Hearts) для мгновенной прокачки 70+ уровней без золота, Камни наследия, пайки выносливости и свитки призыва за золото.",
+      "EN": "🧙‍♂️ Wandering Goblin Merchant. Primary source of valuable expedition items. Sells Heroine's Hearts for instant 70+ level-ups without gold, Legacy Stones, stamina rations, and recruit tickets for gold."
     }
   },
   {
@@ -2855,8 +2880,8 @@
       "CN": "金属宝箱怪"
     },
     "icon": "📦",
-    "category": "special",
-    "category_name": "Мимик",
+    "category": "mimic",
+    "category_name": "Металлический мимик",
     "special_spot_type": 2,
     "is_special": true,
     "size_str": "1x1",
@@ -2914,17 +2939,32 @@
       ]
     },
     "materials": {
-      "RU": [],
-      "EN": [],
-      "CN": []
+      "RU": [
+        "🪙 Золотой куш",
+        "📦 Золотые сундуки",
+        "💎 Камни желаний",
+        "👑 Осколки Золотой Девы"
+      ],
+      "EN": [
+        "🪙 Gold Bounty",
+        "📦 Gold Chests",
+        "💎 Wish Stones",
+        "👑 Golden Maiden Shards"
+      ],
+      "CN": [
+        "🪙 海量金币",
+        "📦 黄金宝箱",
+        "💎 许愿石",
+        "👑 黄金之女碎片"
+      ]
     },
     "rates": {
-      "chest": 0.0,
+      "gold": 45.0,
+      "chest": 30.0,
+      "stones": 15.0,
+      "role": 10.0,
       "equip": 0.0,
-      "role": 0.0,
-      "materials": 0.0,
-      "stones": 0.0,
-      "gold": 0.0
+      "materials": 0.0
     },
     "possible_chests": [
       {
@@ -3172,15 +3212,21 @@
     ],
     "drops_summary": {
       "RU": [
-        "⚙️ Особое небоевое событие / Взаимодействие"
+        "🪙 Золото (Огромный куш): 45.0%",
+        "📦 Сундуки с золотым/оранжевым снаряжением: 30.0%",
+        "💎 Камни желаний и Божественные кристаллы: 15.0%",
+        "👑 Осколки Золотой Девы / Металлической расы: 10.0%"
       ],
       "EN": [
-        "⚙️ Special Interaction / Non-combat Event"
+        "🪙 Gold (Massive Bounty): 45.0%",
+        "📦 Gold & Orange Gear Chests: 30.0%",
+        "💎 Wish Stones & Divine Crystals: 15.0%",
+        "👑 Golden Maiden / Metallic Race Shards: 10.0%"
       ]
     },
     "description": {
-      "RU": "📦 Металлический мимик (Metallic). Обладает стальной бронёй и иммунитетом к стандартному урону и потере HP (HP Loss). Пробивается чистым уроном (Drain MP), способностями расы Металла или сериями мульти-ударов. Награждает огромным количеством золота и редким лутом.",
-      "EN": "📦 Metallic Mimic. Possesses hardened armor and immunity to standard damage & HP Loss. Countered by Drain MP, Metallic race traits, or multi-hit bursts. Rewards huge piles of gold and rare loot."
+      "RU": "📦 Металлический мимик (Metallic). Обладает стальной бронёй и иммунитетом к потере HP (HP Loss). Пробивается чистым уроном (Drain MP), способностями расы Металла или быстрыми сериями мульти-ударов. Награждает огромными суммами золота и сундуками сокровищ.",
+      "EN": "📦 Metallic Mimic. Possesses hardened armor and immunity to HP Loss. Defeated by Drain MP, Metallic race traits, or multi-hit attacks. Yields massive gold bounties and treasure chests."
     }
   },
   {
@@ -3193,8 +3239,8 @@
       "CN": "机巧宝箱怪"
     },
     "icon": "⚙️",
-    "category": "special",
-    "category_name": "Мимик",
+    "category": "mimic",
+    "category_name": "Заводной мимик",
     "special_spot_type": 2,
     "is_special": true,
     "size_str": "1x1",
@@ -3252,16 +3298,31 @@
       ]
     },
     "materials": {
-      "RU": [],
-      "EN": [],
-      "CN": []
+      "RU": [
+        "⚙️ Шестерёнки тайника",
+        "📦 Сундуки с рунами",
+        "🪨 Камни наследия",
+        "⚔️ Детали экипировки"
+      ],
+      "EN": [
+        "⚙️ Clockwork Gears",
+        "📦 Rune Chests",
+        "🪨 Legacy Stones",
+        "⚔️ Gear Components"
+      ],
+      "CN": [
+        "⚙️ 机巧齿轮",
+        "📦 符文宝箱",
+        "🪨 传承石",
+        "⚔️ 装备构件"
+      ]
     },
     "rates": {
-      "chest": 0.0,
-      "equip": 0.0,
+      "materials": 40.0,
+      "chest": 35.0,
+      "stones": 15.0,
+      "equip": 10.0,
       "role": 0.0,
-      "materials": 0.0,
-      "stones": 0.0,
       "gold": 0.0
     },
     "possible_chests": [
@@ -3510,15 +3571,21 @@
     ],
     "drops_summary": {
       "RU": [
-        "⚙️ Особое небоевое событие / Взаимодействие"
+        "⚙️ Шестерёнки для рулетки «Заводного тайника»: 40.0%",
+        "📦 Сундуки с экипировкой и рунами: 35.0%",
+        "🪨 Камни наследия (Legacy Stones): 15.0%",
+        "⚔️ Прямой дроп высокоранговых компонентов: 10.0%"
       ],
       "EN": [
-        "⚙️ Special Interaction / Non-combat Event"
+        "⚙️ Gears for 'Clockwork Trove' lucky roulette: 40.0%",
+        "📦 Gear & Rune Chests: 35.0%",
+        "🪨 Legacy Stones for MAX star-up: 15.0%",
+        "⚔️ Direct high-tier component drops: 10.0%"
       ]
     },
     "description": {
-      "RU": "⚙️ Заводной мимик-механизм. Редкое боевое событие. После победы даёт ценные шестерёнки для рулетки «Заводного тайника» (Clockwork Trove) и высокоуровневые компоненты снаряжения.",
-      "EN": "⚙️ Clockwork Mimic. Rare combat encounter. Victory rewards gears for the 'Clockwork Trove' lucky roulette and high-tier gear components."
+      "RU": "⚙️ Заводной мимик-механизм. Редкое боевое событие. После победы даёт ценные шестерёнки для рулетки «Заводного тайника» (Clockwork Trove), Камни наследия и редкие компоненты снаряжения.",
+      "EN": "⚙️ Clockwork Mimic. Rare combat encounter. Victory rewards gears for the 'Clockwork Trove' lucky roulette, Legacy Stones, and rare gear components."
     }
   },
   {
@@ -3531,8 +3598,8 @@
       "CN": "勇者之墓"
     },
     "icon": "⚰️",
-    "category": "special",
-    "category_name": "Святилище",
+    "category": "altar",
+    "category_name": "Гробница героини",
     "special_spot_type": 3,
     "is_special": true,
     "size_str": "1x1",
@@ -3590,16 +3657,31 @@
       ]
     },
     "materials": {
-      "RU": [],
-      "EN": [],
-      "CN": []
+      "RU": [
+        "✨ Воскрешение союзниц",
+        "⚡ +100 выносливости",
+        "🛡️ Благословения",
+        "👑 Фрагменты воительниц"
+      ],
+      "EN": [
+        "✨ Ally Revival",
+        "⚡ +100 Stamina",
+        "🛡️ Combat Blessings",
+        "👑 Heroine Shards"
+      ],
+      "CN": [
+        "✨ 阵亡复活",
+        "⚡ +100体力",
+        "🛡️ 战斗祝福",
+        "👑 勇者碎片"
+      ]
     },
     "rates": {
+      "materials": 40.0,
+      "role": 35.0,
+      "stones": 25.0,
       "chest": 0.0,
       "equip": 0.0,
-      "role": 0.0,
-      "materials": 100.0,
-      "stones": 0.0,
       "gold": 0.0
     },
     "possible_chests": [
@@ -3848,14 +3930,18 @@
     ],
     "drops_summary": {
       "RU": [
-        "🌿 Добыча материалов: 100.0%"
+        "✨ Воскрешение павших союзниц и +100 выносливости: 40.0%",
+        "🛡️ Боевые благословения на урон и защиту: 35.0%",
+        "👑 Фрагменты и реликвии павших воительниц: 25.0%"
       ],
       "EN": [
-        "🌿 Resource Harvest: 100.0%"
+        "✨ Fallen ally revival & +100 party stamina: 40.0%",
+        "🛡️ Combat damage and defense blessings: 35.0%",
+        "👑 Shards and relics of fallen heroines: 25.0%"
       ]
     },
     "description": {
-      "RU": "⚰️ Гробница павшей героини. Сакральное святилище, где можно воскресить павших союзниц, восстановить боевой дух отряда и получить временные благословения на урон и защиту.",
+      "RU": "⚰️ Гробница павшей героини. Сакральное святилище, где можно воскресить павших союзниц, восстановить выносливость отряда и получить временные благословения на урон и защиту.",
       "EN": "⚰️ Heroine's Grave. Sacred shrine allowing revival of fallen allies, party stamina recovery, and temporary damage/defense blessings."
     }
   },
@@ -3869,8 +3955,8 @@
       "CN": "传承祭坛"
     },
     "icon": "🏛️",
-    "category": "special",
-    "category_name": "Алтарь",
+    "category": "altar",
+    "category_name": "Алтарь наследия",
     "special_spot_type": 4,
     "is_special": true,
     "size_str": "1x1",
@@ -3928,16 +4014,28 @@
       ]
     },
     "materials": {
-      "RU": [],
-      "EN": [],
-      "CN": []
+      "RU": [
+        "🪨 Прорыв наследия (MAX)",
+        "⭐ Очки сетов (+1/+3)",
+        "💎 Астральные камни"
+      ],
+      "EN": [
+        "🪨 Legacy Breakthrough (MAX)",
+        "⭐ Set Points (+1/+3)",
+        "💎 Astral Stones"
+      ],
+      "CN": [
+        "🪨 传承突破 (MAX)",
+        "⭐ 套装点数 (+1/+3)",
+        "💎 星界石"
+      ]
     },
     "rates": {
+      "stones": 50.0,
+      "equip": 30.0,
+      "materials": 20.0,
       "chest": 0.0,
-      "equip": 0.0,
       "role": 0.0,
-      "materials": 100.0,
-      "stones": 0.0,
       "gold": 0.0
     },
     "possible_chests": [
@@ -4186,10 +4284,14 @@
     ],
     "drops_summary": {
       "RU": [
-        "🌿 Добыча материалов: 100.0%"
+        "🪨 Прорыв наследия экипировки (MAX ранг): 50.0%",
+        "⭐ Очки к строкам сетовых бонусов (+1/+3): 30.0%",
+        "💎 Камни наследия и астральные материалы: 20.0%"
       ],
       "EN": [
-        "🌿 Resource Harvest: 100.0%"
+        "🪨 Legacy gear breakthrough (MAX rank): 50.0%",
+        "⭐ Set talent bonus points (+1/+3 to all rows): 30.0%",
+        "💎 Legacy Stones & astral materials: 20.0%"
       ]
     },
     "description": {
@@ -4207,8 +4309,8 @@
       "CN": "预言石碑"
     },
     "icon": "📜",
-    "category": "special",
-    "category_name": "Стела",
+    "category": "altar",
+    "category_name": "Стела пророчества",
     "special_spot_type": 7,
     "is_special": true,
     "size_str": "1x1",
@@ -4266,16 +4368,28 @@
       ]
     },
     "materials": {
-      "RU": [],
-      "EN": [],
-      "CN": []
+      "RU": [
+        "🔮 Баффы Оракула",
+        "🗺️ Разведка карты",
+        "📍 Путь к Боссу"
+      ],
+      "EN": [
+        "🔮 Oracle Buffs",
+        "🗺️ Map Scouting",
+        "📍 Boss Path"
+      ],
+      "CN": [
+        "🔮 神谕祝福",
+        "🗺️ 地图侦查",
+        "📍 首领路径"
+      ]
     },
     "rates": {
+      "materials": 50.0,
+      "stones": 30.0,
+      "role": 20.0,
       "chest": 0.0,
       "equip": 0.0,
-      "role": 0.0,
-      "materials": 100.0,
-      "stones": 0.0,
       "gold": 0.0
     },
     "possible_chests": [
@@ -4524,10 +4638,14 @@
     ],
     "drops_summary": {
       "RU": [
-        "🌿 Добыча материалов: 100.0%"
+        "🔮 Баффы Оракула (+20% урона, +15% крита): 50.0%",
+        "🗺️ Разведка карты и снятие тумана войны: 30.0%",
+        "📍 Обнаружение скрытых тайников и клетки Босса: 20.0%"
       ],
       "EN": [
-        "🌿 Resource Harvest: 100.0%"
+        "🔮 Oracle Buffs (+20% damage, +15% crit): 50.0%",
+        "🗺️ Map scouting & fog of war removal: 30.0%",
+        "📍 Secret cache and Boss tile reveal: 20.0%"
       ]
     },
     "description": {
@@ -4883,8 +5001,8 @@
       "CN": "献祭宝箱怪"
     },
     "icon": "🩸",
-    "category": "special",
-    "category_name": "Мимик",
+    "category": "mimic",
+    "category_name": "Ритуальный мимик",
     "special_spot_type": 6,
     "is_special": true,
     "size_str": "1x1",
@@ -4939,16 +5057,31 @@
       ]
     },
     "materials": {
-      "RU": [],
-      "EN": [],
-      "CN": []
+      "RU": [
+        "🎁 Сакральные сундуки",
+        "💖 Сердца героинь",
+        "📜 Билеты найма",
+        "🔮 Альтер-осколки"
+      ],
+      "EN": [
+        "🎁 Sacred Chests",
+        "💖 Heroine's Hearts",
+        "📜 Recruit Tickets",
+        "🔮 Alter Shards"
+      ],
+      "CN": [
+        "🎁 献祭秘宝箱",
+        "💖 魔灵之心",
+        "📜 推荐信",
+        "🔮 异化碎片"
+      ]
     },
     "rates": {
-      "chest": 0.0,
+      "chest": 50.0,
+      "role": 25.0,
+      "materials": 15.0,
+      "stones": 10.0,
       "equip": 0.0,
-      "role": 0.0,
-      "materials": 100.0,
-      "stones": 0.0,
       "gold": 0.0
     },
     "possible_chests": [
@@ -5197,15 +5330,21 @@
     ],
     "drops_summary": {
       "RU": [
-        "🌿 Добыча материалов: 100.0%"
+        "🎁 Сакральные сундуки высшего ранга (S★ / SS★): 50.0%",
+        "💖 Сердца героинь (Heroine's Hearts): 25.0%",
+        "📜 Билеты найма / Альтер-билеты: 15.0%",
+        "🔮 Альтер-осколки героинь: 10.0%"
       ],
       "EN": [
-        "🌿 Resource Harvest: 100.0%"
+        "🎁 High-Tier Sacred Chests (S★ / SS★): 50.0%",
+        "💖 Heroine's Hearts for star ascension: 25.0%",
+        "📜 Recruit / Alter Summon Tickets: 15.0%",
+        "🔮 Alter Heroine Shards: 10.0%"
       ]
     },
     "description": {
-      "RU": "🩸 Ритуальный мимик. Требует принесения в жертву части выносливости или победы в усложнённом испытании в обмен на редчайшие сундуки экипировки.",
-      "EN": "🩸 Sacrificial Mimic. Demands stamina sacrifice or victory in an empowered challenge in exchange for the rarest gear chests."
+      "RU": "🩸 Ритуальный мимик. Требует принесения в жертву части выносливости или победы в усложнённом испытании в обмен на редчайшие сундуки экипировки, Сердца героинь и свитки призыва.",
+      "EN": "🩸 Sacrificial Mimic. Demands stamina sacrifice or victory in an empowered challenge in exchange for the rarest gear chests, Heroine's Hearts, and summon tickets."
     }
   },
   {
