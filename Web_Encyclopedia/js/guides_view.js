@@ -503,7 +503,56 @@ const defaultMapTiles = [
       "RU": "⛺ Стартовая безопасная база экспедиции. С этой клетки начинается высадка отряда на карту. Не содержит врагов и позволяет подготовить построение перед выходом на опасные участки биома.",
       "EN": "⛺ Starting safe camp for the expedition. Team deployment starts here. Contains no enemies, allowing team formation prep before venturing into hazardous map areas.",
       "CN": "⛺ 远征出发点与安全大本营。队伍在此完成初始部署与站位调整，无战斗威胁。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_2",
@@ -983,7 +1032,96 @@ const defaultMapTiles = [
       "RU": "Клетка игрового поля типа «Сбор ресурсов» (1x1), встречающаяся в биомах: Морозная тундра.",
       "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: Frostbound Tundra.",
       "CN": "🗺️ 雪地地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      }
+    ]
   },
   {
     "id": "tile_3",
@@ -1470,7 +1608,86 @@ const defaultMapTiles = [
       "RU": "🗿 Тотем Морозного клыка. Элитное сооружение северных племен: даёт 60% шанс выпадения сундуков и 37% шанс вербовки/осколков северных героинь.",
       "EN": "🗿 Frostfang Totem. Elite tribal structure: grants 60% gear chest drop rate and 37% northern heroine recruit/shard drop rate.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_4",
@@ -1931,7 +2148,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Сундук» с повышенной концентрацией сундуков сокровищ (80.0%) и материалов.",
       "EN": "⭐ Special spot 'Chest' with high concentration of treasure chests (80.0%) and materials.",
       "CN": "📦 散落在此区域的密封宝箱。开启可获得该区域专属宝箱及高阶装备。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_5",
@@ -2205,7 +2471,56 @@ const defaultMapTiles = [
       "RU": "⚪ Заснеженный тайник. Скрывает замерзшие сокровища и гарантирует прямое получение снаряжения (100%).",
       "EN": "⚪ Snowdrift Cache. Conceals frozen treasures with guaranteed direct gear drops (100%).",
       "CN": "🗺️ 雪球地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_6",
@@ -2482,7 +2797,56 @@ const defaultMapTiles = [
       "RU": "🏺 Древняя реликвия. Содержит запечатанное легендарное снаряжение (100% шанс прямого дропа экипировки при исследовании клетки).",
       "EN": "🏺 Ancient Relic. Contains sealed legendary gear (100% direct gear drop rate upon clearing the tile).",
       "CN": "🗺️ 遗物地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_7",
@@ -2759,7 +3123,56 @@ const defaultMapTiles = [
       "RU": "🌌 Астральный разлом. Пространственная аномалия, связывающая мир с Астральным царством. Гарантирует 100% шанс прямого дропа высокоуровневой экипировки и астральных камней.",
       "EN": "🌌 Astral Rift. Spatial anomaly connecting to the Astral Realm. Guarantees 100% direct gear drop rate and astral stones.",
       "CN": "🗺️ 星界裂痕地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_8",
@@ -3036,7 +3449,56 @@ const defaultMapTiles = [
       "RU": "🪨 Треснувшая земля. Под разломом скрыт подземный схрон с экипировкой (100% прямой дроп).",
       "EN": "🪨 Fissured Ground. Hides an underground cache with direct gear drops (100%).",
       "CN": "🗺️ 龟裂地面地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_9",
@@ -3700,7 +4162,46 @@ const defaultMapTiles = [
       "RU": "🧙‍♂️ Странствующий торговец-гоблин. Главный источник ценнейших ресурсов в экспедициях. Продаёт Сердца героинь (Heroine's Hearts) для мгновенной прокачки 70+ уровней без золота, Камни наследия, пайки выносливости и свитки призыва за золото.",
       "EN": "🧙‍♂️ Wandering Goblin Merchant. Primary source of valuable expedition items. Sells Heroine's Hearts for instant 70+ level-ups without gold, Legacy Stones, stamina rations, and recruit tickets for gold.",
       "CN": "🧙‍♂️ 游荡于荒野各区域的神秘商人。售卖角色好感爱心（30%）、神石（25%）、大份干粮（500体力）及招募契约书（20%）。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 10.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      }
+    ]
   },
   {
     "id": "tile_10",
@@ -4364,7 +4865,46 @@ const defaultMapTiles = [
       "RU": "📦 Металлический мимик (Metallic). Обладает стальной бронёй и иммунитетом к потере HP (HP Loss). Пробивается чистым уроном (Drain MP), способностями расы Металла или быстрыми сериями мульти-ударов. Награждает огромными суммами золота и сундуками сокровищ.",
       "EN": "📦 Metallic Mimic. Possesses hardened armor and immunity to HP Loss. Defeated by Drain MP, Metallic race traits, or multi-hit attacks. Yields massive gold bounties and treasure chests.",
       "CN": "🪙 伪装成金属宝箱的贪婪怪物。击败后掉落巨额金币（45%）、高阶宝箱（30%）、祈愿神石（15%）及金币女神碎片（10%）。"
-    }
+    },
+    "gold_drop": {
+      "min": 3000,
+      "max": 12000,
+      "amount_str": "3 000 – 12 000 🪙",
+      "rate": 45.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "3 000 – 12 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      }
+    ]
   },
   {
     "id": "tile_11",
@@ -4846,7 +5386,46 @@ const defaultMapTiles = [
       "RU": "⚙️ Заводной мимик-механизм. Редкое боевое событие. После победы даёт ценные шестерёнки для рулетки «Заводного тайника» (Clockwork Trove), Камни наследия и редкие компоненты снаряжения.",
       "EN": "⚙️ Clockwork Mimic. Rare combat encounter. Victory rewards gears for the 'Clockwork Trove' lucky roulette, Legacy Stones, and rare gear components.",
       "CN": "⚙️ 由精巧齿轮机关驱动的特殊宝箱怪。击败可产出机巧核心齿轮零件（40%）、宝箱（35%）及稀有传承石（15%）。"
-    }
+    },
+    "gold_drop": {
+      "min": 3000,
+      "max": 12000,
+      "amount_str": "3 000 – 12 000 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "3 000 – 12 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      }
+    ]
   },
   {
     "id": "tile_12",
@@ -5362,7 +5941,46 @@ const defaultMapTiles = [
       "RU": "⚰️ Гробница павшей героини. Сакральное святилище, где можно воскресить павших союзниц, восстановить выносливость отряда и получить временные благословения на урон и защиту.",
       "EN": "⚰️ Heroine's Grave. Sacred shrine allowing revival of fallen allies, party stamina recovery, and temporary damage/defense blessings.",
       "CN": "⚰️ 远古英雄长眠的长眠之地。交互可提供复活神迹（40%）、全队属性大祝福（35%）及传承碎片（25%）。"
-    }
+    },
+    "gold_drop": {
+      "min": 2000,
+      "max": 8000,
+      "amount_str": "2 000 – 8 000 🪙",
+      "rate": 10.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "2 000 – 8 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      }
+    ]
   },
   {
     "id": "tile_13",
@@ -5693,7 +6311,46 @@ const defaultMapTiles = [
       "RU": "🏛️ Древний алтарь наследия. Ключевая механика усиления снаряжения: позволяет применять Камни наследия (Legacy Stones) для прорыва экипировки до ранга MAX (+3 очка ко всем строкам сетов, сокращая требование сета до 2 предметов).",
       "EN": "🏛️ Ancient Legacy Altar. Core gear enhancement mechanic: allows using Legacy Stones for MAX breakthrough (+3 points to all set talent rows, reducing set requirements to 2 pieces).",
       "CN": "🏛️ 一座能将金币转化为神圣能量的神奇祭坛。可直接提升装备传承等级至MAX（50%）、提供套装词条与洗练神石。"
-    }
+    },
+    "gold_drop": {
+      "min": 2000,
+      "max": 8000,
+      "amount_str": "2 000 – 8 000 🪙",
+      "rate": 10.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "2 000 – 8 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      }
+    ]
   },
   {
     "id": "tile_14",
@@ -6206,7 +6863,46 @@ const defaultMapTiles = [
       "RU": "📜 Стела пророчества. Рассеивает туман войны в окружающих секторах, указывает кратчайший путь к клетке Босса и накладывает мощные баффы Оракула (Oracle Buffs) на весь отряд.",
       "EN": "📜 Prophecy Stele. Clears fog of war in adjacent sectors, highlights the optimal path to the Boss tile, and bestows powerful party-wide Oracle Buffs.",
       "CN": "📜 刻有远古先知预言的神秘石刻。激活后获得战斗预知加成（50%）、全图视野探明（30%）及直通Boss捷径（20%）。"
-    }
+    },
+    "gold_drop": {
+      "min": 2000,
+      "max": 8000,
+      "amount_str": "2 000 – 8 000 🪙",
+      "rate": 10.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "2 000 – 8 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      }
+    ]
   },
   {
     "id": "tile_15",
@@ -6701,7 +7397,56 @@ const defaultMapTiles = [
       "RU": "🎁 Временный подарочный тайник. Содержит щедрые порции выносливости (Базовые и Большие пайки), Клеверы удачи и кристаллы алхимии.",
       "EN": "🎁 Timed Supply Cache. Contains generous stamina rations (Basic/Large), Lucky Clovers, and alchemy crystals.",
       "CN": "🎁 探索中随机触发的限时特惠补给包，提供高性价比体力与稀有资源。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_16",
@@ -7362,7 +8107,46 @@ const defaultMapTiles = [
       "RU": "🩸 Ритуальный мимик. Требует принесения в жертву части выносливости или победы в усложнённом испытании в обмен на редчайшие сундуки экипировки, Сердца героинь и свитки призыва.",
       "EN": "🩸 Sacrificial Mimic. Demands stamina sacrifice or victory in an empowered challenge in exchange for the rarest gear chests, Heroine's Hearts, and summon tickets.",
       "CN": "🩸 需消耗生命或资源献祭交互的血色宝箱怪。提供高阶极品神秘宝箱（50%）、角色好感爱心（25%）及抽卡券（15%）。"
-    }
+    },
+    "gold_drop": {
+      "min": 3000,
+      "max": 12000,
+      "amount_str": "3 000 – 12 000 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "3 000 – 12 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      }
+    ]
   },
   {
     "id": "tile_17",
@@ -7857,7 +8641,56 @@ const defaultMapTiles = [
       "RU": "🪙 Золотое хранилище гильдии. Особая зона с рекордным содержанием золотых слитков и сундуков сокровищ.",
       "EN": "🪙 Guild Golden Vault. Special zone featuring record amounts of gold bullion and treasure chests.",
       "CN": "💰 堆满宝藏的地下密室。可获取大量纯金金币、高级宝箱及稀有养成材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 10000,
+      "max": 30000,
+      "amount_str": "10 000 – 30 000 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "10 000 – 30 000 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_18",
@@ -8205,7 +9038,146 @@ const defaultMapTiles = [
       "RU": "Разбросанные останки павших зверей.",
       "EN": "Scattered remains of fallen beasts.",
       "CN": "🗺️ 野兽坟墓地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_19",
@@ -8552,7 +9524,146 @@ const defaultMapTiles = [
       "RU": "Природная руда, подверженная воздействию стихий.",
       "EN": "Natural ore exposed to the elements.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_20",
@@ -8876,7 +9987,116 @@ const defaultMapTiles = [
       "RU": "Лед, испещренный неведомыми рунами.",
       "EN": "Ice carved with unknown runes.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.1
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_21",
@@ -9199,7 +10419,116 @@ const defaultMapTiles = [
       "RU": "Неестественное сооружение, излучающее бесконечный холод.",
       "EN": "An unnatural construct radiating endless cold.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.1
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_22",
@@ -9522,7 +10851,116 @@ const defaultMapTiles = [
       "RU": "Тотем из рога, покрытый инеем.",
       "EN": "A horn totem encased in frost.",
       "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.1
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_23",
@@ -9855,7 +11293,146 @@ const defaultMapTiles = [
       "RU": "Улей, построенный в замерзших корнях.",
       "EN": "A hive built into frozen roots.",
       "CN": "🗺️ 极寒蜂巢地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.1
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_24",
@@ -10178,7 +11755,116 @@ const defaultMapTiles = [
       "RU": "Первобытный тотем, вырезанный из цельного льда.",
       "EN": "A primal totem carved from solid ice.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.1
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_25",
@@ -10525,7 +12211,146 @@ const defaultMapTiles = [
       "RU": "Гниющий деревянный забор.",
       "EN": "A rotting wooden fence.",
       "CN": "🗺️ 破烂围墙地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_26",
@@ -10848,7 +12673,116 @@ const defaultMapTiles = [
       "RU": "Магический ориентир, отмечающий координаты в ледяном мире.",
       "EN": "A magical landmark marking coordinates in the frozen world.",
       "CN": "🗺️ 极寒哨塔地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.1
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_27",
@@ -11195,7 +13129,146 @@ const defaultMapTiles = [
       "RU": "Некогда тайное место, пока кто-то не поставил у входа указатель.",
       "EN": "Once hidden, until someone planted a sign at the entrance.",
       "CN": "🗺️ 藏宝洞穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_28",
@@ -11518,7 +13591,116 @@ const defaultMapTiles = [
       "RU": "Когда-то здесь жили ледяные волки. Надеюсь, они давно ушли.",
       "EN": "Frostwolves once lived here. Hopefully they're long gone.",
       "CN": "🗺️ 霜狼巢穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.1
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_29",
@@ -11987,7 +14169,26 @@ const defaultMapTiles = [
       "RU": "Зарождающиеся врата между ледяным миром и главным миром.",
       "EN": "A nascent gateway between the frozen realm and the prime world.",
       "CN": "🗺️ 极寒之门地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      }
+    ]
   },
   {
     "id": "tile_30",
@@ -12503,7 +14704,156 @@ const defaultMapTiles = [
       "RU": "Клетка игрового поля типа «Сбор ресурсов» (1x1), встречающаяся в биомах: Ветреные берега, Рассветные равнины, Увядший лес.",
       "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: Breezy Shores, Dawnstep Plains, Withered Timberland.",
       "CN": "🌿 含有丰富植物与草本资源的自然地块。采集可获得植物纤维、草药及能量素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      }
+    ]
   },
   {
     "id": "tile_31",
@@ -12990,7 +15340,76 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Костер» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
       "EN": "⭐ Special spot 'Campfire' with high concentration of treasure chests (60.0%) and materials.",
       "CN": "🗺️ 篝火地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_32",
@@ -13373,7 +15792,86 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Скала» с гарантированным прямым выпадением экипировки (51.3%).",
       "EN": "⭐ Special spot 'Rock' with guaranteed direct gear drops (51.3%).",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 0.8
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_33",
@@ -13647,7 +16145,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Посылка» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Parcel' with guaranteed direct gear drops (100.0%).",
       "CN": "🗺️ 包裹地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_34",
@@ -13921,7 +16468,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Нора» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Burrow' with guaranteed direct gear drops (100.0%).",
       "CN": "🗺️ 地洞地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_35",
@@ -14195,7 +16791,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Палатка» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Tent' with guaranteed direct gear drops (100.0%).",
       "CN": "🗺️ 帐篷地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_36",
@@ -14518,7 +17163,116 @@ const defaultMapTiles = [
       "RU": "Обычный багряный клен.",
       "EN": "An ordinary crimson maple.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_37",
@@ -14841,7 +17595,116 @@ const defaultMapTiles = [
       "RU": "Маленькое зонтичное дерево.",
       "EN": "A small umbrella-shaped tree.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_38",
@@ -15164,7 +18027,116 @@ const defaultMapTiles = [
       "RU": "Куча сухой травы.",
       "EN": "A pile of dry grass.",
       "CN": "🌿 含有丰富植物与草本资源的自然地块。采集可获得植物纤维、草药及能量素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_39",
@@ -15511,7 +18483,146 @@ const defaultMapTiles = [
       "RU": "Здесь обитает неведомый зверь.",
       "EN": "An unknown beast makes its home here.",
       "CN": "🗺️ 野兽巢穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_40",
@@ -15834,7 +18945,116 @@ const defaultMapTiles = [
       "RU": "Маленькое зонтичное дерево.",
       "EN": "A small umbrella-shaped tree.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_41",
@@ -16158,7 +19378,116 @@ const defaultMapTiles = [
       "RU": "Маленькое дерево, накапливающее воду.",
       "EN": "A small tree that stores water.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_42",
@@ -16481,7 +19810,116 @@ const defaultMapTiles = [
       "RU": "Дерево, растущее из цельного камня.",
       "EN": "A tree growing from solid stone.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_43",
@@ -16804,7 +20242,116 @@ const defaultMapTiles = [
       "RU": "Редкая листва, яркая, словно пламя.",
       "EN": "Rare foliage with leaves bright as flame.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_44",
@@ -17127,7 +20674,116 @@ const defaultMapTiles = [
       "RU": "Темная древняя гробница. Какие тайны она скрывает?",
       "EN": "A dark ancient tomb. What secrets lie within?",
       "CN": "🗺️ 阴暗古墓地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_45",
@@ -17450,7 +21106,116 @@ const defaultMapTiles = [
       "RU": "Роща багряных кленов.",
       "EN": "A grove of crimson maples.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_46",
@@ -17773,7 +21538,116 @@ const defaultMapTiles = [
       "RU": "Треснувшая стела, оплетенная корнями.",
       "EN": "A cracked stele tangled in roots.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_47",
@@ -18100,7 +21974,86 @@ const defaultMapTiles = [
       "RU": "⛩️ Древний алтарь стихий. Источник благословений и концентрированного дропа сундуков с экипировкой.",
       "EN": "⛩️ Ancient Elemental Altar. Source of party blessings and concentrated gear chest drops.",
       "CN": "🗺️ 古代祭坛地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_48",
@@ -18587,7 +22540,86 @@ const defaultMapTiles = [
       "RU": "🗿 Костяной тотем зверей. Шаманский тотем с повышенным шансом сундуков и осколков героинь диких племен.",
       "EN": "🗿 Beastbone Totem. Shamanic totem with boosted gear chest and tribal heroine shard drop rates.",
       "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_49",
@@ -18864,7 +22896,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Куст» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Shrub' with guaranteed direct gear drops (100.0%).",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_50",
@@ -19187,7 +23268,116 @@ const defaultMapTiles = [
       "RU": "Простой тотем, наспех воздвигнутый.",
       "EN": "A simple totem hastily erected.",
       "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_51",
@@ -19596,7 +23786,146 @@ const defaultMapTiles = [
       "RU": "Камень с высеченными на нем неизвестными рунами.",
       "EN": "A stone carved with unknown runes.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_52",
@@ -19919,7 +24248,116 @@ const defaultMapTiles = [
       "RU": "Тотем, украшенный рогами дикого быка.",
       "EN": "A totem adorned with wild bull horns.",
       "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_53",
@@ -20259,7 +24697,116 @@ const defaultMapTiles = [
       "RU": "Улей в мертвом дереве.",
       "EN": "A hive built into dead wood.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_54",
@@ -20582,7 +25129,116 @@ const defaultMapTiles = [
       "RU": "Первобытный тотем, символизирующий силу.",
       "EN": "A primal totem symbolizing strength.",
       "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_55",
@@ -20905,7 +25561,116 @@ const defaultMapTiles = [
       "RU": "Древнее древо с золотыми листьями.",
       "EN": "An ancient tree with golden leaves.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 10000,
+      "max": 30000,
+      "amount_str": "10 000 – 30 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "10 000 – 30 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_56",
@@ -21228,7 +25993,116 @@ const defaultMapTiles = [
       "RU": "Логово Огневолков.",
       "EN": "Flamewolves den here.",
       "CN": "🗺️ 炎狼巢穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_57",
@@ -21715,7 +26589,86 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Пень» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
       "EN": "⭐ Special spot 'Stump' with high concentration of treasure chests (60.0%) and materials.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_58",
@@ -21989,7 +26942,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Трава» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Grass' with guaranteed direct gear drops (100.0%).",
       "CN": "🌿 含有丰富植物与草本资源的自然地块。采集可获得植物纤维、草药及能量素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_59",
@@ -22332,7 +27334,96 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Кости» с гарантированным прямым выпадением экипировки (51.3%).",
       "EN": "⭐ Special spot 'Bones' with guaranteed direct gear drops (51.3%).",
       "CN": "🗺️ 白骨地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 0.5
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_60",
@@ -22606,7 +27697,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Набор» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Pack' with guaranteed direct gear drops (100.0%).",
       "CN": "🗺️ 背包地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_61",
@@ -22880,7 +28020,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Материалы» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Materials' with guaranteed direct gear drops (100.0%).",
       "CN": "🗺️ 素材地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_62",
@@ -23228,7 +28417,146 @@ const defaultMapTiles = [
       "RU": "Сломанная колонна с выгравированными узорами.",
       "EN": "A broken pillar etched with patterns.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_63",
@@ -23551,7 +28879,116 @@ const defaultMapTiles = [
       "RU": "Засохший пень, покрытый грибами.",
       "EN": "A withered stump covered in mushrooms.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_64",
@@ -23874,7 +29311,116 @@ const defaultMapTiles = [
       "RU": "Временное укрытие.",
       "EN": "A temporary shelter.",
       "CN": "🗺️ 简陋帐篷地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      }
+    ]
   },
   {
     "id": "tile_65",
@@ -24197,7 +29743,116 @@ const defaultMapTiles = [
       "RU": "Грубый тотем, вырезанный из камня.",
       "EN": "A crude totem carved from stone.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_66",
@@ -24520,7 +30175,116 @@ const defaultMapTiles = [
       "RU": "Засохший пень, покрытый грибами.",
       "EN": "A withered stump covered in mushrooms.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_67",
@@ -24843,7 +30607,116 @@ const defaultMapTiles = [
       "RU": "Палатка из шкур с припасами.",
       "EN": "A hide tent storing supplies.",
       "CN": "🗺️ 部落帐篷地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      }
+    ]
   },
   {
     "id": "tile_68",
@@ -25166,7 +31039,116 @@ const defaultMapTiles = [
       "RU": "Высокий деревянный тотем.",
       "EN": "A tall wooden totem.",
       "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_69",
@@ -25489,7 +31471,116 @@ const defaultMapTiles = [
       "RU": "Несколько высоких деревянных кольев.",
       "EN": "Several tall wooden stakes.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_70",
@@ -25812,7 +31903,116 @@ const defaultMapTiles = [
       "RU": "Высокий деревянный тотем.",
       "EN": "A tall wooden totem.",
       "CN": "🗿 守护该区域的远古图腾柱。交互可触发区域专属宝箱掉落与角色碎片祝福。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_71",
@@ -26135,7 +32335,116 @@ const defaultMapTiles = [
       "RU": "Хижина, заброшенная во время войны.",
       "EN": "A cabin abandoned during wartime.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      }
+    ]
   },
   {
     "id": "tile_72",
@@ -26483,7 +32792,146 @@ const defaultMapTiles = [
       "RU": "Проход, уходящий во тьму.",
       "EN": "A passage descending into darkness.",
       "CN": "🗺️ 幽深洞穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      }
+    ]
   },
   {
     "id": "tile_73",
@@ -26806,7 +33254,116 @@ const defaultMapTiles = [
       "RU": "Курган из огромных костей.",
       "EN": "A burial mound of massive bones.",
       "CN": "🗺️ 巨兽之墓地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_74",
@@ -27293,7 +33850,86 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Лужа» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
       "EN": "⭐ Special spot 'Puddle' with high concentration of treasure chests (60.0%) and materials.",
       "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_75",
@@ -27567,7 +34203,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Дерево с кислыми плодами» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Sour Fruit Tree' with guaranteed direct gear drops (100.0%).",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_76",
@@ -27841,7 +34526,56 @@ const defaultMapTiles = [
       "RU": "🌱 Саженец Мирового Древа. Даёт Плоды таланта и восстанавливает выносливость отряда.",
       "EN": "🌱 World Tree Sapling. Grants Talent Fruits and restores party stamina.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_77",
@@ -28115,7 +34849,56 @@ const defaultMapTiles = [
       "RU": "🌳 Тайник лесных духов. Скрывает священные дары леса и редкие сундуки.",
       "EN": "🌳 Forest Spirits Cache. Conceals sacred woodland gifts and rare chests.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_78",
@@ -28438,7 +35221,116 @@ const defaultMapTiles = [
       "RU": "Пень, сломанный чем-то большим.",
       "EN": "A stump snapped by something large.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_79",
@@ -28786,7 +35678,146 @@ const defaultMapTiles = [
       "RU": "Повсюду разноцветные грибы.",
       "EN": "Colorful mushrooms everywhere.",
       "CN": "🍄 生长稀有菌类的潮湿地块。采集可获得孢子菇、奶油菇及魔力菌菇。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_80",
@@ -29125,7 +36156,116 @@ const defaultMapTiles = [
       "RU": "Полый куст, заросший сорняками.",
       "EN": "A hollow bush choked with weeds.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_81",
@@ -29448,7 +36588,116 @@ const defaultMapTiles = [
       "RU": "Пень, в котором скопилась дождевая вода.",
       "EN": "A stump pooling rainwater.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      }
+    ]
   },
   {
     "id": "tile_82",
@@ -29796,7 +37045,146 @@ const defaultMapTiles = [
       "RU": "Чистый пруд, наполненный маной.",
       "EN": "A clear pond brimming with mana.",
       "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_83",
@@ -30119,7 +37507,116 @@ const defaultMapTiles = [
       "RU": "Камень, скрытый в кустах.",
       "EN": "A rock concealed by bushes.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_84",
@@ -30442,7 +37939,116 @@ const defaultMapTiles = [
       "RU": "Огромный кустарник.",
       "EN": "An enormous shrub.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_85",
@@ -30790,7 +38396,146 @@ const defaultMapTiles = [
       "RU": "Уцелевшая древняя колонна.",
       "EN": "An intact ancient pillar.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_86",
@@ -31137,7 +38882,146 @@ const defaultMapTiles = [
       "RU": "Древний колодец, вода в котором излучает жизненную силу.",
       "EN": "An ancient well with water that radiates vitality.",
       "CN": "🗺️ 月亮古井地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_87",
@@ -31460,7 +39344,116 @@ const defaultMapTiles = [
       "RU": "Обычное дерево.",
       "EN": "An ordinary tree.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_88",
@@ -31783,7 +39776,116 @@ const defaultMapTiles = [
       "RU": "Широкое дупло в стволе.",
       "EN": "A wide natural hollow in the trunk.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_89",
@@ -32106,7 +40208,116 @@ const defaultMapTiles = [
       "RU": "Это древнее древо укрывает весь лес.",
       "EN": "This ancient tree shelters the entire forest.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_90",
@@ -32429,7 +40640,116 @@ const defaultMapTiles = [
       "RU": "Здесь поднимается туман. Впереди ждет неизвестное испытание.",
       "EN": "Mist rises here. An unknown trial awaits.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_91",
@@ -32916,7 +41236,76 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Медвежий капкан» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
       "EN": "⭐ Special spot 'Bear Trap' with high concentration of treasure chests (60.0%) and materials.",
       "CN": "🗺️ 捕兽夹地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_92",
@@ -33190,7 +41579,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Ловушка» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Trap' with guaranteed direct gear drops (100.0%).",
       "CN": "🗺️ 陷阱地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_93",
@@ -33464,7 +41902,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Статуя из слизи» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Slime Statue' with guaranteed direct gear drops (100.0%).",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_94",
@@ -33775,7 +42262,76 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Шипы» с гарантированным прямым выпадением экипировки (50.0%).",
       "EN": "⭐ Special spot 'Thorns' with guaranteed direct gear drops (50.0%).",
       "CN": "🗺️ 荆棘地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 0.5
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_95",
@@ -34049,7 +42605,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Меч» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Sword' with guaranteed direct gear drops (100.0%).",
       "CN": "🗺️ 宝剑地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_96",
@@ -34372,7 +42977,116 @@ const defaultMapTiles = [
       "RU": "Вода в колодце кристально чистая.",
       "EN": "The well water is crystal clear.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_97",
@@ -34695,7 +43409,116 @@ const defaultMapTiles = [
       "RU": "Полое бревно, необъяснимо высохшее.",
       "EN": "A hollow log inexplicably withered and dry.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_98",
@@ -35018,7 +43841,116 @@ const defaultMapTiles = [
       "RU": "Даже в разбитом состоянии собирает свет.",
       "EN": "Even shattered, it gathers light.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_99",
@@ -35341,7 +44273,116 @@ const defaultMapTiles = [
       "RU": "Густая растительность.",
       "EN": "Dense vegetation.",
       "CN": "🌿 含有丰富植物与草本资源的自然地块。采集可获得植物纤维、草药及能量素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_100",
@@ -35664,7 +44705,116 @@ const defaultMapTiles = [
       "RU": "Несколько кривых саженцев.",
       "EN": "Several crooked saplings.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_101",
@@ -35987,7 +45137,116 @@ const defaultMapTiles = [
       "RU": "Сломанные, иссохшие корни.",
       "EN": "Broken, withered roots.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_102",
@@ -36371,7 +45630,206 @@ const defaultMapTiles = [
       "RU": "Стела с вырезанными на ней странными узорами.",
       "EN": "A stele carved with strange patterns.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      }
+    ]
   },
   {
     "id": "tile_103",
@@ -36719,7 +46177,146 @@ const defaultMapTiles = [
       "RU": "Действующий древний обелиск.",
       "EN": "An ancient obelisk still functioning.",
       "CN": "🗺️ 方尖碑地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_104",
@@ -37042,7 +46639,116 @@ const defaultMapTiles = [
       "RU": "Бесхозная хижина в окружении разноцветных грибов.",
       "EN": "An ownerless hut surrounded by colorful mushrooms.",
       "CN": "🍄 生长稀有菌类的潮湿地块。采集可获得孢子菇、奶油菇及魔力菌菇。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_105",
@@ -37537,7 +47243,126 @@ const defaultMapTiles = [
       "RU": "Клетка игрового поля типа «Сбор ресурсов» (1x1), встречающаяся в биомах: Глубокие лощины, Магмовый проход, Заброшенные шахты.",
       "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: The Deep Hollows, Magma Passage, Forsaken Mines.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_106",
@@ -38027,7 +47852,86 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Ящик с рудой» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
       "EN": "⭐ Special spot 'Ore Crate' with high concentration of treasure chests (60.0%) and materials.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_107",
@@ -38304,7 +48208,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Открытая шахта» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Open Mine' with guaranteed direct gear drops (100.0%).",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_108",
@@ -38581,7 +48534,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Пещера» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Cave' with guaranteed direct gear drops (100.0%).",
       "CN": "🗺️ 地穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_109",
@@ -38858,7 +48860,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Золотой столб» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Golden Pillar' with guaranteed direct gear drops (100.0%).",
       "CN": "🗺️ 黄金柱地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 10000,
+      "max": 30000,
+      "amount_str": "10 000 – 30 000 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "10 000 – 30 000 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_110",
@@ -39175,7 +49226,86 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Жила кристаллов маны» с гарантированным прямым выпадением экипировки (51.3%).",
       "EN": "⭐ Special spot 'Mana Crystal Vein' with guaranteed direct gear drops (51.3%).",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 0.8
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_111",
@@ -39499,7 +49629,116 @@ const defaultMapTiles = [
       "RU": "Куча ящиков с рудой.",
       "EN": "A pile of ore crates.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_112",
@@ -39837,7 +50076,146 @@ const defaultMapTiles = [
       "RU": "Скальные образования в форме колонн.",
       "EN": "Pillar-shaped rock formations.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_113",
@@ -40160,7 +50538,116 @@ const defaultMapTiles = [
       "RU": "Ящик, из которого высыпаются кристаллы.",
       "EN": "A crate spilling crystals.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      }
+    ]
   },
   {
     "id": "tile_114",
@@ -40483,7 +50970,116 @@ const defaultMapTiles = [
       "RU": "Разрушенная, заброшенная вагонетка.",
       "EN": "A ruined, abandoned mine cart.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_115",
@@ -40807,7 +51403,116 @@ const defaultMapTiles = [
       "RU": "Кристаллы, встречающиеся по всем пещерам.",
       "EN": "Crystals found throughout the caves.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_116",
@@ -41130,7 +51835,116 @@ const defaultMapTiles = [
       "RU": "Грибы, распыляющие светящуюся пыльцу.",
       "EN": "Mushrooms spraying luminous dust.",
       "CN": "🍄 生长稀有菌类的潮湿地块。采集可获得孢子菇、奶油菇及魔力菌菇。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      }
+    ]
   },
   {
     "id": "tile_117",
@@ -41456,7 +52270,116 @@ const defaultMapTiles = [
       "RU": "Фрагменты древних руин.",
       "EN": "Fragments of ancient ruins.",
       "CN": "🗺️ 遗迹碎片地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_118",
@@ -41791,7 +52714,146 @@ const defaultMapTiles = [
       "RU": "Таинственное ископаемое, небрежно заваленное рудой.",
       "EN": "A mysterious fossil carelessly piled with ore.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_119",
@@ -42117,7 +53179,116 @@ const defaultMapTiles = [
       "RU": "Древний кристалл портала. От времени мана вокруг него стала нестабильной.",
       "EN": "An ancient portal crystal. Age has destabilized the mana around it.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_120",
@@ -42604,7 +53775,76 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Рудничник» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
       "EN": "⭐ Special spot 'Mineshroom' with high concentration of treasure chests (60.0%) and materials.",
       "CN": "🍄 生长稀有菌类的潮湿地块。采集可获得孢子菇、奶油菇及魔力菌菇。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_121",
@@ -42920,7 +54160,86 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Гриб» с гарантированным прямым выпадением экипировки (51.3%).",
       "EN": "⭐ Special spot 'Mushroom' with guaranteed direct gear drops (51.3%).",
       "CN": "🍄 生长稀有菌类的潮湿地块。采集可获得孢子菇、奶油菇及魔力菌菇。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 0.7
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_122",
@@ -43194,7 +54513,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Каменная плита» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Stone Slab' with guaranteed direct gear drops (100.0%).",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_123",
@@ -43468,7 +54836,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Тайный вход» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Hidden Entrance' with guaranteed direct gear drops (100.0%).",
       "CN": "🗺️ 隐蔽入口地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_124",
@@ -43742,7 +55159,56 @@ const defaultMapTiles = [
       "RU": "🗡️ Легендарный Меч в камне. Особая интерактивная точка с гарантированным получением высокорангового оружия.",
       "EN": "🗡️ Legendary Sword in the Stone. Special interactive spot yielding high-tier weapons.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_125",
@@ -44067,7 +55533,116 @@ const defaultMapTiles = [
       "RU": "Древняя плита с неизвестным текстом.",
       "EN": "An ancient slab inscribed with unknown text.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_126",
@@ -44390,7 +55965,116 @@ const defaultMapTiles = [
       "RU": "Таинственный гриб, прозрачный как кристалл.",
       "EN": "A mysterious mushroom clear as crystal.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      }
+    ]
   },
   {
     "id": "tile_127",
@@ -44714,7 +56398,116 @@ const defaultMapTiles = [
       "RU": "Грибы, распыляющие светящуюся пыльцу.",
       "EN": "Mushrooms spraying luminous dust.",
       "CN": "🗺️ 荧光孢子地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      }
+    ]
   },
   {
     "id": "tile_128",
@@ -45037,7 +56830,116 @@ const defaultMapTiles = [
       "RU": "Ржавый двуручный меч прислонен к колонне.",
       "EN": "A rusted greatsword leans against a pillar.",
       "CN": "🗺️ 遗迹拱门地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_129",
@@ -45360,7 +57262,116 @@ const defaultMapTiles = [
       "RU": "Вход в неведомые глубины. Изнутри исходит жар.",
       "EN": "An entrance to unknown depths. Heat radiates from within.",
       "CN": "🗺️ 地下入口地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_130",
@@ -45840,7 +57851,96 @@ const defaultMapTiles = [
       "RU": "Клетка игрового поля типа «Сбор ресурсов» (1x1), встречающаяся в биомах: Затонувшее море.",
       "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: The Sunken Sea.",
       "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      }
+    ]
   },
   {
     "id": "tile_131",
@@ -46155,7 +58255,96 @@ const defaultMapTiles = [
       "RU": "⭐ Особая интерактивная клетка «Актиния» (1x1, 2x2), встречающаяся в биомах: Затонувшее море.",
       "EN": "⭐ Special interactive tile 'Sea Anemone' (1x1, 2x2), appearing in biomes: The Sunken Sea.",
       "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_132",
@@ -46429,7 +58618,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Грубый указатель» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Crude Marker' with guaranteed direct gear drops (100.0%).",
       "CN": "🗺️ 简陋标记地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_133",
@@ -46703,7 +58941,56 @@ const defaultMapTiles = [
       "RU": "🍾 Затонувшая бутылка желаний. Морской тайник с редкими сокровищами и Камнями желаний для перековки.",
       "EN": "🍾 Sunken Message Bottle. Marine cache yielding rare treasures and Wish Stones for stat rerolls.",
       "CN": "🗺️ 许愿瓶地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_134",
@@ -46977,7 +59264,56 @@ const defaultMapTiles = [
       "RU": "⚓ Серебряный якорь затонувшего флагмана. Гарантирует богатую морскую добычу и экипировку.",
       "EN": "⚓ Silver Anchor of sunken flagship. Guarantees rich maritime loot and gear.",
       "CN": "🗺️ 银船锚地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_135",
@@ -47251,7 +59587,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Глубинный источник» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Deep Spring' with guaranteed direct gear drops (100.0%).",
       "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_136",
@@ -47600,7 +59985,146 @@ const defaultMapTiles = [
       "RU": "Хрупкие остатки руин.",
       "EN": "Ruined remains barely standing.",
       "CN": "🗺️ 破碎遗迹地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_137",
@@ -47923,7 +60447,116 @@ const defaultMapTiles = [
       "RU": "Обнажившееся месторождение руды на морском дне.",
       "EN": "An exposed seafloor ore deposit.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_138",
@@ -48248,7 +60881,116 @@ const defaultMapTiles = [
       "RU": "Одинокий риф.",
       "EN": "A lone reef.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_139",
@@ -48571,7 +61313,116 @@ const defaultMapTiles = [
       "RU": "Руины каменных фонарей.",
       "EN": "Stone lamp ruins.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_140",
@@ -48894,7 +61745,116 @@ const defaultMapTiles = [
       "RU": "Кораллы всех форм и расцветок.",
       "EN": "Coral of every shape and color.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      }
+    ]
   },
   {
     "id": "tile_141",
@@ -49217,7 +62177,116 @@ const defaultMapTiles = [
       "RU": "Разросшиеся заросли зеленых кораллов.",
       "EN": "A sprawling patch of green coral.",
       "CN": "🗺️ 巨大绿珊瑚地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      }
+    ]
   },
   {
     "id": "tile_142",
@@ -49540,7 +62609,116 @@ const defaultMapTiles = [
       "RU": "Лабиринт из рифов.",
       "EN": "A labyrinth of reefs.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      }
+    ]
   },
   {
     "id": "tile_143",
@@ -49863,7 +63041,116 @@ const defaultMapTiles = [
       "RU": "Из этих руин бесконечным потоком течет вода, насыщенная маной.",
       "EN": "This spring ruin endlessly flows with mana-rich water.",
       "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_144",
@@ -50186,7 +63473,116 @@ const defaultMapTiles = [
       "RU": "Древний шпиль, покрытый неизвестными рунами.",
       "EN": "An ancient spire covered in unknown runes.",
       "CN": "🗺️ 方尖塔地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_145",
@@ -50509,7 +63905,116 @@ const defaultMapTiles = [
       "RU": "Древний затонувший корабль излучает зловещую энергию. Сколько же сокровищ таится внутри?",
       "EN": "An ancient shipwreck radiating ominous energy. How much treasure lies within?",
       "CN": "🗺️ 沉船地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_103",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Серебряная чешуя",
+          "EN": "Silverscale",
+          "CN": "银斑鱼"
+        }
+      },
+      {
+        "id": "D10000_302",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Светящаяся рыба",
+          "EN": "Glowfish",
+          "CN": "荧光鱼"
+        }
+      },
+      {
+        "id": "D10001_001",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Темноспинка",
+          "EN": "Darkback",
+          "CN": "黑背鱼"
+        }
+      }
+    ]
   },
   {
     "id": "tile_146",
@@ -50996,7 +64501,76 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Раковина» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
       "EN": "⭐ Special spot 'Conch' with high concentration of treasure chests (60.0%) and materials.",
       "CN": "🌊 水域与沿海生态地块。捕捞可获得银斑鱼、荧光鱼、黑背鱼及深海物产。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_147",
@@ -51270,7 +64844,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Ящик» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Crate' with guaranteed direct gear drops (100.0%).",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_148",
@@ -51547,7 +65170,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Бочка» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Barrel' with guaranteed direct gear drops (100.0%).",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_149",
@@ -51821,7 +65493,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Ракушка» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Shell' with guaranteed direct gear drops (100.0%).",
       "CN": "🗺️ 贝壳地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_150",
@@ -52144,7 +65865,116 @@ const defaultMapTiles = [
       "RU": "Заплесневелые доски.",
       "EN": "Moldy planks.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_151",
@@ -52470,7 +66300,116 @@ const defaultMapTiles = [
       "RU": "Маленькая пальма.",
       "EN": "A small palm tree.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_152",
@@ -52793,7 +66732,116 @@ const defaultMapTiles = [
       "RU": "Обломки корабля, выброшенные на берег.",
       "EN": "Ship debris washed ashore.",
       "CN": "🗺️ 船只残骸地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_153",
@@ -53116,7 +67164,116 @@ const defaultMapTiles = [
       "RU": "Узкий грот, спрятанный в скалах.",
       "EN": "A narrow grotto hidden in the rocks.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_154",
@@ -53439,7 +67596,116 @@ const defaultMapTiles = [
       "RU": "Таинственная стела в форме луны.",
       "EN": "A mysterious stele shaped like the moon.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_155",
@@ -53922,7 +68188,96 @@ const defaultMapTiles = [
       "RU": "Клетка игрового поля типа «Сбор ресурсов» (1x1), встречающаяся в биомах: Бескрайняя пустыня, Пепельные пустоши.",
       "EN": "Map spot of type 'Resource Plot' (1x1), appearing in biomes: Endless Desert, Ashland Wastes.",
       "CN": "🗺️ 沙地地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_156",
@@ -54406,7 +68761,86 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Указатель» с повышенной концентрацией сундуков сокровищ (60.0%) и материалов.",
       "EN": "⭐ Special spot 'Signpost' with high concentration of treasure chests (60.0%) and materials.",
       "CN": "🗺️ 路牌地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_157",
@@ -54745,7 +69179,96 @@ const defaultMapTiles = [
       "RU": "⭐ Особая интерактивная клетка «Кактус» (1x1, 2x2, 3x3, 4x4, 6x6), встречающаяся в биомах: Бескрайняя пустыня, Пепельные пустоши.",
       "EN": "⭐ Special interactive tile 'Cactus' (1x1, 2x2, 3x3, 4x4, 6x6), appearing in biomes: Endless Desert, Ashland Wastes.",
       "CN": "🗺️ 仙人掌地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 0.9
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_158",
@@ -55019,7 +69542,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Стела» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Stele' with guaranteed direct gear drops (100.0%).",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_159",
@@ -55335,7 +69907,46 @@ const defaultMapTiles = [
       "RU": "Сухое полое бревно.",
       "EN": "A dry, hollow log.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 0.7
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      }
+    ]
   },
   {
     "id": "tile_160",
@@ -55658,7 +70269,116 @@ const defaultMapTiles = [
       "RU": "Еще одна шахта, заброшенная старателями.",
       "EN": "Another mine abandoned by prospectors.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_161",
@@ -55981,7 +70701,116 @@ const defaultMapTiles = [
       "RU": "Огромный алтарь, благословленный лунным светом и сияющий по ночам.",
       "EN": "A massive altar blessed by moonlight, radiant at night.",
       "CN": "🗺️ 月影祭坛地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_162",
@@ -56255,7 +71084,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Гравий» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Gravel' with guaranteed direct gear drops (100.0%).",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_163",
@@ -56529,7 +71407,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Каменные шипы» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Stone Spikes' with guaranteed direct gear drops (100.0%).",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_164",
@@ -56803,7 +71730,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Ящик» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Crate' with guaranteed direct gear drops (100.0%).",
       "CN": "📦 散落在此区域的密封宝箱。开启可获得该区域专属宝箱及高阶装备。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_165",
@@ -57077,7 +72053,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Цветок солнечного пламени» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Sunblaze Flower' with guaranteed direct gear drops (100.0%).",
       "CN": "🌿 含有丰富植物与草本资源的自然地块。采集可获得植物纤维、草药及能量素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_166",
@@ -57400,7 +72425,116 @@ const defaultMapTiles = [
       "RU": "Засохший пень.",
       "EN": "A withered tree stump.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_167",
@@ -57723,7 +72857,116 @@ const defaultMapTiles = [
       "RU": "Здесь нужно смотреть под ноги.",
       "EN": "Watch your step around here.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_168",
@@ -58046,7 +73289,116 @@ const defaultMapTiles = [
       "RU": "С этой землей что-то не так.",
       "EN": "Something about this ground seems off.",
       "CN": "🗺️ 流沙地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_169",
@@ -58369,7 +73721,116 @@ const defaultMapTiles = [
       "RU": "Пещера, где обитают неизвестные звери.",
       "EN": "A cave where unknown beasts dwell.",
       "CN": "🗺️ 隐蔽兽穴地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_170",
@@ -58692,7 +74153,116 @@ const defaultMapTiles = [
       "RU": "Редкий источник воды в пустыне.",
       "EN": "A rare water source in the desert.",
       "CN": "🗺️ 绿洲地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_301",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо зверя",
+          "EN": "Beast Meat",
+          "CN": "巨兽肉"
+        }
+      },
+      {
+        "id": "D10000_104",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Отборное мясо",
+          "EN": "Prime Meat",
+          "CN": "大骨肉"
+        }
+      },
+      {
+        "id": "D10000_203",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мясо морского зверя",
+          "EN": "Sea Beast Meat",
+          "CN": "海兽肉"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_171",
@@ -59197,7 +74767,26 @@ const defaultMapTiles = [
       "RU": "Молодой портал между Исекаем и основным миром.",
       "EN": "A fledgling portal between the isekai and the main world.",
       "CN": "🗺️ 异界之门地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      }
+    ]
   },
   {
     "id": "tile_172",
@@ -59509,7 +75098,76 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Могильная плита» с гарантированным прямым выпадением экипировки (51.3%).",
       "EN": "⭐ Special spot 'Gravestone' with guaranteed direct gear drops (51.3%).",
       "CN": "🗺️ 墓碑地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 0.5
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_173",
@@ -59783,7 +75441,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Каменный колодец» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Stone Well' with guaranteed direct gear drops (100.0%).",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_174",
@@ -60057,7 +75764,56 @@ const defaultMapTiles = [
       "RU": "⭐ Особая точка «Полый пень» с гарантированным прямым выпадением экипировки (100.0%).",
       "EN": "⭐ Special spot 'Hollow Stump' with guaranteed direct gear drops (100.0%).",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 800,
+      "max": 2500,
+      "amount_str": "800 – 2 500 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "800 – 2 500 🪙"
+      },
+      {
+        "id": "D00002_000",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Клевер",
+          "EN": "Clover",
+          "CN": "四叶草"
+        }
+      },
+      {
+        "id": "D00002_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Плод таланта",
+          "EN": "Talent Fruit",
+          "CN": "天赋果实"
+        }
+      },
+      {
+        "id": "D00004_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Выносливость",
+          "EN": "Stamina",
+          "CN": "体力"
+        }
+      }
+    ]
   },
   {
     "id": "tile_175",
@@ -60419,7 +76175,116 @@ const defaultMapTiles = [
       "RU": "Засохший пень, покрытый грибами.",
       "EN": "A withered stump covered in mushrooms.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_176",
@@ -60778,7 +76643,116 @@ const defaultMapTiles = [
       "RU": "Высокое, мертвое дерево.",
       "EN": "A tall, dead tree.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_177",
@@ -61137,7 +77111,116 @@ const defaultMapTiles = [
       "RU": "Камень, опутанный колючими лозами.",
       "EN": "A rock tangled in thorny vines.",
       "CN": "⛏️ 蕴含丰富矿物结晶的地块。开采可获得秘银、炎金、魔纹矿及强化材料。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_178",
@@ -61496,7 +77579,116 @@ const defaultMapTiles = [
       "RU": "Гриб огромных размеров.",
       "EN": "A mushroom of enormous size.",
       "CN": "🍄 生长稀有菌类的潮湿地块。采集可获得孢子菇、奶油菇及魔力菌菇。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_179",
@@ -61855,7 +78047,116 @@ const defaultMapTiles = [
       "RU": "Редкое плотоядное растение.",
       "EN": "A rare carnivorous plant.",
       "CN": "🗺️ 食肉植物地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_110",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мед",
+          "EN": "Honey",
+          "CN": "蜂蜜"
+        }
+      },
+      {
+        "id": "D10000_316",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Магический камень",
+          "EN": "Magic Stone",
+          "CN": "魔晶石"
+        }
+      },
+      {
+        "id": "D10000_304",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Лунная эссенция",
+          "EN": "Moonlight Essence",
+          "CN": "月光精华"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_180",
@@ -62214,7 +78515,116 @@ const defaultMapTiles = [
       "RU": "Пещера, выглядящая совершенно обычно.",
       "EN": "A cave that looks perfectly ordinary.",
       "CN": "🗺️ 山洞地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_181",
@@ -62573,7 +78983,116 @@ const defaultMapTiles = [
       "RU": "Искаженная масса шипастых лоз.",
       "EN": "A twisted mass of spiked vines.",
       "CN": "🗺️ 荆棘藤蔓地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_182",
@@ -62932,7 +79451,116 @@ const defaultMapTiles = [
       "RU": "Хорошо скрытая дупло дерева.",
       "EN": "A well-hidden tree hollow.",
       "CN": "🌲 植被茂密的林地地块。砍伐与搜索可产出优质圆木及林间素材。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_112",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Бревно",
+          "EN": "Log",
+          "CN": "圆木"
+        }
+      },
+      {
+        "id": "D10000_306",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Нефритовая зелень",
+          "EN": "Jade Greens",
+          "CN": "翠玉菜"
+        }
+      },
+      {
+        "id": "D10000_220",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сияющий плод",
+          "EN": "Lustrous Fruit",
+          "CN": "华丽果"
+        }
+      }
+    ]
   },
   {
     "id": "tile_183",
@@ -63291,7 +79919,116 @@ const defaultMapTiles = [
       "RU": "Ее остаточная энергия продолжает заражать окружающие растения.",
       "EN": "Its lingering energy keeps corrupting the surrounding plants.",
       "CN": "🗺️ 巨兽骸骨地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 1.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      },
+      {
+        "id": "D00007_011",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Камень наследия",
+          "EN": "Legacy Stone",
+          "CN": "传承石"
+        }
+      },
+      {
+        "id": "D00001_001",
+        "category": "consumables",
+        "step": "S",
+        "name": {
+          "RU": "Астральный камень",
+          "EN": "Astral Stone",
+          "CN": "星界石"
+        }
+      },
+      {
+        "id": "D10000_005",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Кристалл маны",
+          "EN": "Mana Crystal",
+          "CN": "魔力结晶"
+        }
+      },
+      {
+        "id": "D10000_205",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Споровый гриб",
+          "EN": "Spore Shroom",
+          "CN": "孢子菇"
+        }
+      },
+      {
+        "id": "D10001_022",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Сливочный гриб",
+          "EN": "Cream Shroom",
+          "CN": "奶油菇"
+        }
+      },
+      {
+        "id": "D10000_216",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Гриб маны",
+          "EN": "Mana Shroom",
+          "CN": "魔力菇"
+        }
+      },
+      {
+        "id": "D10000_208",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Мифриловая руда",
+          "EN": "Mithril Ore",
+          "CN": "秘银矿"
+        }
+      },
+      {
+        "id": "D10000_207",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Пламезолотая руда",
+          "EN": "Flamegold Ore",
+          "CN": "炎金矿"
+        }
+      },
+      {
+        "id": "D10000_224",
+        "category": "ingredients",
+        "step": "C",
+        "name": {
+          "RU": "Руническая руда",
+          "EN": "Runic Ore",
+          "CN": "魔纹矿"
+        }
+      }
+    ]
   },
   {
     "id": "tile_184",
@@ -63796,7 +80533,26 @@ const defaultMapTiles = [
       "RU": "Хорошо скрытая алхимическая мастерская, охраняемая сильными стражницами.",
       "EN": "A well-hidden alchemy workshop, guarded by powerful sentries.",
       "CN": "🗺️ 隐蔽工坊地块。探索可触发该区域的事件、资源采集或遭遇怪物战斗。"
-    }
+    },
+    "gold_drop": {
+      "min": 1500,
+      "max": 5000,
+      "amount_str": "1 500 – 5 000 🪙",
+      "rate": 15.0
+    },
+    "possible_resources": [
+      {
+        "id": "D00000_000",
+        "category": "consumables",
+        "step": "C",
+        "name": {
+          "RU": "Золото",
+          "EN": "Gold",
+          "CN": "金币"
+        },
+        "amount_str": "1 500 – 5 000 🪙"
+      }
+    ]
   }
 ];
 
@@ -66387,27 +83143,31 @@ const GuidesView = {
     const icon = tile.icon || (tile.category === 'altar' ? '🏛️' : tile.category === 'mimic' ? '🧰' : tile.category === 'resource' ? '💎' : tile.category === 'merchant' ? '🛒' : '🌟');
 
     const rates = tile.rates || {};
-    const hasRates = Object.values(rates).some(v => v > 0);
-
     const equips = tile.possible_equips || [];
     const chests = tile.possible_chests || [];
-    const mats = Array.isArray(tile.materials) ? tile.materials : (tile.materials?.[lang] || tile.materials?.RU || tile.materials?.CN || []);
+    const resources = tile.possible_resources || [];
+    const goldDrop = tile.gold_drop || { amount_str: '800 – 2 500 🪙', rate: rates.gold || 15.0 };
     const dropsSummary = Array.isArray(tile.drops_summary) ? tile.drops_summary : (tile.drops_summary?.[lang] || tile.drops_summary?.RU || tile.drops_summary?.CN || []);
     const biomesList = Array.isArray(tile.biomes) ? tile.biomes : (tile.biomes?.[lang] || tile.biomes?.RU || tile.biomes?.CN || []);
+
+    const equipRate = rates.equip || (equips.length > 0 ? 10.0 : 0);
+    const chestRate = rates.chest || (chests.length > 0 ? 35.0 : 0);
+    const matRate = rates.materials || rates.stones || (resources.length > 0 ? 40.0 : 0);
+    const goldRate = goldDrop.rate || rates.gold || 15.0;
 
     return `
       <div class="modal-dialog" style="max-width: 680px;">
         <div class="modal-header">
           <div class="modal-title-group">
             <div class="modal-title" style="display: flex; align-items: center; gap: 8px;">
-              <span>${icon}</span> <span>${this.escapeHtml(name)}</span>
+              <span style="font-size: 24px;">${icon}</span> <span>${this.escapeHtml(name)}</span>
             </div>
             <div class="modal-subtitle">ID: ${tile.id} &bull; ${this.escapeHtml(catName)} &bull; ${tile.size_str || '1x1'}</div>
           </div>
           <button class="modal-close-btn" onclick="App.closeModal()">&times;</button>
         </div>
 
-        <div class="modal-body" style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 16px;">
           
           <!-- Description Block -->
           <div style="background: var(--bg-surface-elevated); padding: 14px; border-radius: var(--radius-md); font-size: 13.5px; line-height: 1.6; border: 1px solid var(--border-subtle);">
@@ -66424,56 +83184,40 @@ const GuidesView = {
             </div>
           ` : ''}
 
-          <!-- Drop Category Rates Breakdown Bar -->
-          ${hasRates ? `
-            <div class="detail-section" style="background: rgba(15, 23, 42, 0.7); padding: 12px 14px; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.06);">
-              <div class="section-heading" style="font-size: 13px; font-weight: 800; color: #f1f5f9; margin-bottom: 8px;">
-                📊 ${isRu ? 'Вероятности категорий дропа' : isCn ? '掉落大类概率分布' : 'Category Drop Rates'}
-              </div>
-              <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px;">
-                ${rates.chest > 0 ? `
-                  <span style="background: rgba(168, 85, 247, 0.15); border: 1px solid rgba(168, 85, 247, 0.4); color: #c084fc; padding: 4px 8px; border-radius: 4px; font-weight: 700;">
-                    📦 ${isRu ? 'Сундуки' : isCn ? '宝箱' : 'Chests'}: ${rates.chest}%
-                  </span>
-                ` : ''}
-                ${rates.equip > 0 ? `
-                  <span style="background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.4); color: #f87171; padding: 4px 8px; border-radius: 4px; font-weight: 700;">
-                    ⚔️ ${isRu ? 'Экипировка' : isCn ? '装备' : 'Equipment'}: ${rates.equip}%
-                  </span>
-                ` : ''}
-                ${rates.materials > 0 ? `
-                  <span style="background: rgba(34, 197, 94, 0.15); border: 1px solid rgba(34, 197, 94, 0.4); color: #86efac; padding: 4px 8px; border-radius: 4px; font-weight: 700;">
-                    🌿 ${isRu ? 'Материалы' : isCn ? '材料' : 'Materials'}: ${rates.materials}%
-                  </span>
-                ` : ''}
-                ${rates.stones > 0 ? `
-                  <span style="background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.4); color: #7dd3fc; padding: 4px 8px; border-radius: 4px; font-weight: 700;">
-                    🪨 ${isRu ? 'Камни Наследия' : isCn ? '传承石' : 'Legacy Stones'}: ${rates.stones}%
-                  </span>
-                ` : ''}
-                ${rates.gold > 0 ? `
-                  <span style="background: rgba(234, 179, 8, 0.15); border: 1px solid rgba(234, 179, 8, 0.4); color: #facc15; padding: 4px 8px; border-radius: 4px; font-weight: 700;">
-                    🪙 ${isRu ? 'Золото' : isCn ? '金币' : 'Gold'}: ${rates.gold}%
-                  </span>
-                ` : ''}
-                ${rates.role > 0 ? `
-                  <span style="background: rgba(236, 72, 153, 0.15); border: 1px solid rgba(236, 72, 153, 0.4); color: #f472b6; padding: 4px 8px; border-radius: 4px; font-weight: 700;">
-                    👑 ${isRu ? 'Героини' : isCn ? '角色' : 'Heroes'}: ${rates.role}%
-                  </span>
-                ` : ''}
+          <!-- Gold Drop Highlight Card -->
+          <div style="background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(15, 23, 42, 0.95)); border: 1.5px solid rgba(234, 179, 8, 0.4); border-radius: var(--radius-md); padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 26px;">🪙</span>
+              <div>
+                <div style="font-size: 13px; font-weight: 800; color: #facc15;">
+                  ${isRu ? 'Дроп Золота с клетки' : isCn ? '地块金币产出' : 'Gold Drop Output'}
+                </div>
+                <div style="font-size: 12px; color: #fef08a; margin-top: 2px;">
+                  ${isRu ? 'Возможная сумма:' : isCn ? '预估产出金额：' : 'Estimated Amount:'} <strong style="font-size: 14px; color: #ffffff; font-family: monospace;">${goldDrop.amount_str}</strong>
+                </div>
               </div>
             </div>
-          ` : ''}
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <span class="tag-badge" style="background: rgba(234, 179, 8, 0.25); color: #facc15; border: 1px solid rgba(234, 179, 8, 0.5); font-size: 12px; font-weight: 800; padding: 3px 10px; border-radius: 6px;">
+                ${isRu ? 'Шанс выпадения' : isCn ? '掉落概率' : 'Drop Rate'}: ${goldRate}%
+              </span>
+            </div>
+          </div>
 
-          <!-- Equipment Drop Table (Chest-Loot-Grid) -->
+          <!-- 1. Equipment Drop Table (Chest-Loot-Grid) -->
           ${equips.length > 0 ? `
             <div class="detail-section">
-              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
-                <span style="font-size: 13px; font-weight: 800; color: #facc15;">
-                  ⚔️ ${isRu ? 'Возможный дроп экипировки' : isCn ? '可能掉落装备' : 'Possible Equipment Drops'} (${equips.length})
-                </span>
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span style="font-size: 13.5px; font-weight: 800; color: #f87171;">
+                    ⚔️ ${isRu ? 'Возможный дроп экипировки' : isCn ? '可能掉落装备' : 'Possible Equipment Drops'} (${equips.length})
+                  </span>
+                  <span class="tag-badge" style="background: rgba(239, 68, 68, 0.18); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); font-size: 11.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">
+                    ${isRu ? 'Шанс дропа' : isCn ? '概率' : 'Rate'}: ${equipRate}%
+                  </span>
+                </div>
                 <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">
-                  💡 ${isRu ? 'Кликните по предмету для просмотра карточки' : isCn ? '点击查看装备属性' : 'Click item to inspect'}
+                  💡 ${isRu ? 'Кликните для просмотра карточки' : isCn ? '点击查看装备属性' : 'Click item to inspect'}
                 </span>
               </div>
               
@@ -66499,15 +83243,20 @@ const GuidesView = {
             </div>
           ` : ''}
 
-          <!-- Chests Drop Table (Chest-Loot-Grid) -->
+          <!-- 2. Chests Drop Table (Chest-Loot-Grid) -->
           ${chests.length > 0 ? `
             <div class="detail-section">
-              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
-                <span style="font-size: 13px; font-weight: 800; color: #c084fc;">
-                  📦 ${isRu ? 'Выпадающие сундуки' : isCn ? '可能掉落宝箱' : 'Droppable Chests'} (${chests.length})
-                </span>
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span style="font-size: 13.5px; font-weight: 800; color: #c084fc;">
+                    📦 ${isRu ? 'Выпадающие сундуки' : isCn ? '可能掉落宝箱' : 'Droppable Chests'} (${chests.length})
+                  </span>
+                  <span class="tag-badge" style="background: rgba(168, 85, 247, 0.18); color: #d8b4fe; border: 1px solid rgba(168, 85, 247, 0.4); font-size: 11.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">
+                    ${isRu ? 'Шанс дропа' : isCn ? '概率' : 'Rate'}: ${chestRate}%
+                  </span>
+                </div>
                 <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">
-                  💡 ${isRu ? 'Кликните по сундуку для просмотра лута' : isCn ? '点击查看宝箱掉落' : 'Click chest to inspect'}
+                  💡 ${isRu ? 'Кликните для просмотра лута' : isCn ? '点击查看宝箱掉落' : 'Click chest to inspect'}
                 </span>
               </div>
               
@@ -66532,14 +83281,40 @@ const GuidesView = {
             </div>
           ` : ''}
 
-          <!-- Materials and Special Items -->
-          ${mats.length > 0 ? `
+          <!-- 3. Resources & Special Drops Table (Chest-Loot-Grid) -->
+          ${resources.length > 0 ? `
             <div class="detail-section">
-              <div class="section-heading" style="font-size: 13px; font-weight: 800; color: #38bdf8; margin-bottom: 6px;">
-                💎 ${isRu ? 'Ресурсы и особые награды' : isCn ? '资源与特殊产出' : 'Resources & Special Drops'}
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span style="font-size: 13.5px; font-weight: 800; color: #38bdf8;">
+                    💎 ${isRu ? 'Ресурсы, камни и расходники' : isCn ? '资源、材料与消耗品' : 'Resources & Consumables'} (${resources.length})
+                  </span>
+                  <span class="tag-badge" style="background: rgba(56, 189, 248, 0.18); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.4); font-size: 11.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">
+                    ${isRu ? 'Шанс дропа' : isCn ? '概率' : 'Rate'}: ${matRate}%
+                  </span>
+                </div>
+                <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">
+                  💡 ${isRu ? 'Кликните по ресурсу для карточки' : isCn ? '点击查看物品详情' : 'Click item to inspect'}
+                </span>
               </div>
-              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-                ${mats.map(m => `<span class="tag-badge" style="background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.3); font-size: 11.5px; padding: 3px 8px;">✨ ${this.escapeHtml(m)}</span>`).join('')}
+              
+              <div class="chest-loot-grid" style="max-height: 180px;">
+                ${resources.map(res => {
+                  const resName = typeof res.name === 'object' ? (res.name[lang] || res.name.RU || res.name.CN || res.id) : (res.name || res.id);
+                  const resStep = res.step || 'C';
+                  const resTierClass = `loot-tier-${resStep.toLowerCase()}`;
+                  const resIcon = `assets/img/items/${res.id}.png`;
+                  const tooltip = res.amount_str ? `${resName} (${res.amount_str})` : `${resName} [${resStep}★]`;
+                  return `
+                    <div class="loot-tile ${resTierClass}" title="${this.escapeHtml(tooltip)}" onclick="App.openItemModal('${res.category || 'consumables'}', '${res.id}')">
+                      <div class="loot-tile-icon-box">
+                        <img class="loot-tile-img" src="${resIcon}" alt="${this.escapeHtml(resName)}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="fallback-thumb" style="display: none; font-size: 16px;">💎</div>
+                      </div>
+                      <div class="loot-tile-tier">${resStep}★</div>
+                    </div>
+                  `;
+                }).join('')}
               </div>
             </div>
           ` : ''}

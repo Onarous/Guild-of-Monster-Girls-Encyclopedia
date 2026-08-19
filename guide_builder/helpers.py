@@ -12,27 +12,31 @@ def get_helpers_code():
     const icon = tile.icon || (tile.category === 'altar' ? '🏛️' : tile.category === 'mimic' ? '🧰' : tile.category === 'resource' ? '💎' : tile.category === 'merchant' ? '🛒' : '🌟');
 
     const rates = tile.rates || {};
-    const hasRates = Object.values(rates).some(v => v > 0);
-
     const equips = tile.possible_equips || [];
     const chests = tile.possible_chests || [];
-    const mats = Array.isArray(tile.materials) ? tile.materials : (tile.materials?.[lang] || tile.materials?.RU || tile.materials?.CN || []);
+    const resources = tile.possible_resources || [];
+    const goldDrop = tile.gold_drop || { amount_str: '800 – 2 500 🪙', rate: rates.gold || 15.0 };
     const dropsSummary = Array.isArray(tile.drops_summary) ? tile.drops_summary : (tile.drops_summary?.[lang] || tile.drops_summary?.RU || tile.drops_summary?.CN || []);
     const biomesList = Array.isArray(tile.biomes) ? tile.biomes : (tile.biomes?.[lang] || tile.biomes?.RU || tile.biomes?.CN || []);
+
+    const equipRate = rates.equip || (equips.length > 0 ? 10.0 : 0);
+    const chestRate = rates.chest || (chests.length > 0 ? 35.0 : 0);
+    const matRate = rates.materials || rates.stones || (resources.length > 0 ? 40.0 : 0);
+    const goldRate = goldDrop.rate || rates.gold || 15.0;
 
     return `
       <div class="modal-dialog" style="max-width: 680px;">
         <div class="modal-header">
           <div class="modal-title-group">
             <div class="modal-title" style="display: flex; align-items: center; gap: 8px;">
-              <span>${icon}</span> <span>${this.escapeHtml(name)}</span>
+              <span style="font-size: 24px;">${icon}</span> <span>${this.escapeHtml(name)}</span>
             </div>
             <div class="modal-subtitle">ID: ${tile.id} &bull; ${this.escapeHtml(catName)} &bull; ${tile.size_str || '1x1'}</div>
           </div>
           <button class="modal-close-btn" onclick="App.closeModal()">&times;</button>
         </div>
 
-        <div class="modal-body" style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 16px;">
           
           <!-- Description Block -->
           <div style="background: var(--bg-surface-elevated); padding: 14px; border-radius: var(--radius-md); font-size: 13.5px; line-height: 1.6; border: 1px solid var(--border-subtle);">
@@ -49,56 +53,40 @@ def get_helpers_code():
             </div>
           ` : ''}
 
-          <!-- Drop Category Rates Breakdown Bar -->
-          ${hasRates ? `
-            <div class="detail-section" style="background: rgba(15, 23, 42, 0.7); padding: 12px 14px; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.06);">
-              <div class="section-heading" style="font-size: 13px; font-weight: 800; color: #f1f5f9; margin-bottom: 8px;">
-                📊 ${isRu ? 'Вероятности категорий дропа' : isCn ? '掉落大类概率分布' : 'Category Drop Rates'}
-              </div>
-              <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px;">
-                ${rates.chest > 0 ? `
-                  <span style="background: rgba(168, 85, 247, 0.15); border: 1px solid rgba(168, 85, 247, 0.4); color: #c084fc; padding: 4px 8px; border-radius: 4px; font-weight: 700;">
-                    📦 ${isRu ? 'Сундуки' : isCn ? '宝箱' : 'Chests'}: ${rates.chest}%
-                  </span>
-                ` : ''}
-                ${rates.equip > 0 ? `
-                  <span style="background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.4); color: #f87171; padding: 4px 8px; border-radius: 4px; font-weight: 700;">
-                    ⚔️ ${isRu ? 'Экипировка' : isCn ? '装备' : 'Equipment'}: ${rates.equip}%
-                  </span>
-                ` : ''}
-                ${rates.materials > 0 ? `
-                  <span style="background: rgba(34, 197, 94, 0.15); border: 1px solid rgba(34, 197, 94, 0.4); color: #86efac; padding: 4px 8px; border-radius: 4px; font-weight: 700;">
-                    🌿 ${isRu ? 'Материалы' : isCn ? '材料' : 'Materials'}: ${rates.materials}%
-                  </span>
-                ` : ''}
-                ${rates.stones > 0 ? `
-                  <span style="background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.4); color: #7dd3fc; padding: 4px 8px; border-radius: 4px; font-weight: 700;">
-                    🪨 ${isRu ? 'Камни Наследия' : isCn ? '传承石' : 'Legacy Stones'}: ${rates.stones}%
-                  </span>
-                ` : ''}
-                ${rates.gold > 0 ? `
-                  <span style="background: rgba(234, 179, 8, 0.15); border: 1px solid rgba(234, 179, 8, 0.4); color: #facc15; padding: 4px 8px; border-radius: 4px; font-weight: 700;">
-                    🪙 ${isRu ? 'Золото' : isCn ? '金币' : 'Gold'}: ${rates.gold}%
-                  </span>
-                ` : ''}
-                ${rates.role > 0 ? `
-                  <span style="background: rgba(236, 72, 153, 0.15); border: 1px solid rgba(236, 72, 153, 0.4); color: #f472b6; padding: 4px 8px; border-radius: 4px; font-weight: 700;">
-                    👑 ${isRu ? 'Героини' : isCn ? '角色' : 'Heroes'}: ${rates.role}%
-                  </span>
-                ` : ''}
+          <!-- Gold Drop Highlight Card -->
+          <div style="background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(15, 23, 42, 0.95)); border: 1.5px solid rgba(234, 179, 8, 0.4); border-radius: var(--radius-md); padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 26px;">🪙</span>
+              <div>
+                <div style="font-size: 13px; font-weight: 800; color: #facc15;">
+                  ${isRu ? 'Дроп Золота с клетки' : isCn ? '地块金币产出' : 'Gold Drop Output'}
+                </div>
+                <div style="font-size: 12px; color: #fef08a; margin-top: 2px;">
+                  ${isRu ? 'Возможная сумма:' : isCn ? '预估产出金额：' : 'Estimated Amount:'} <strong style="font-size: 14px; color: #ffffff; font-family: monospace;">${goldDrop.amount_str}</strong>
+                </div>
               </div>
             </div>
-          ` : ''}
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <span class="tag-badge" style="background: rgba(234, 179, 8, 0.25); color: #facc15; border: 1px solid rgba(234, 179, 8, 0.5); font-size: 12px; font-weight: 800; padding: 3px 10px; border-radius: 6px;">
+                ${isRu ? 'Шанс выпадения' : isCn ? '掉落概率' : 'Drop Rate'}: ${goldRate}%
+              </span>
+            </div>
+          </div>
 
-          <!-- Equipment Drop Table (Chest-Loot-Grid) -->
+          <!-- 1. Equipment Drop Table (Chest-Loot-Grid) -->
           ${equips.length > 0 ? `
             <div class="detail-section">
-              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
-                <span style="font-size: 13px; font-weight: 800; color: #facc15;">
-                  ⚔️ ${isRu ? 'Возможный дроп экипировки' : isCn ? '可能掉落装备' : 'Possible Equipment Drops'} (${equips.length})
-                </span>
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span style="font-size: 13.5px; font-weight: 800; color: #f87171;">
+                    ⚔️ ${isRu ? 'Возможный дроп экипировки' : isCn ? '可能掉落装备' : 'Possible Equipment Drops'} (${equips.length})
+                  </span>
+                  <span class="tag-badge" style="background: rgba(239, 68, 68, 0.18); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); font-size: 11.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">
+                    ${isRu ? 'Шанс дропа' : isCn ? '概率' : 'Rate'}: ${equipRate}%
+                  </span>
+                </div>
                 <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">
-                  💡 ${isRu ? 'Кликните по предмету для просмотра карточки' : isCn ? '点击查看装备属性' : 'Click item to inspect'}
+                  💡 ${isRu ? 'Кликните для просмотра карточки' : isCn ? '点击查看装备属性' : 'Click item to inspect'}
                 </span>
               </div>
               
@@ -124,15 +112,20 @@ def get_helpers_code():
             </div>
           ` : ''}
 
-          <!-- Chests Drop Table (Chest-Loot-Grid) -->
+          <!-- 2. Chests Drop Table (Chest-Loot-Grid) -->
           ${chests.length > 0 ? `
             <div class="detail-section">
-              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
-                <span style="font-size: 13px; font-weight: 800; color: #c084fc;">
-                  📦 ${isRu ? 'Выпадающие сундуки' : isCn ? '可能掉落宝箱' : 'Droppable Chests'} (${chests.length})
-                </span>
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span style="font-size: 13.5px; font-weight: 800; color: #c084fc;">
+                    📦 ${isRu ? 'Выпадающие сундуки' : isCn ? '可能掉落宝箱' : 'Droppable Chests'} (${chests.length})
+                  </span>
+                  <span class="tag-badge" style="background: rgba(168, 85, 247, 0.18); color: #d8b4fe; border: 1px solid rgba(168, 85, 247, 0.4); font-size: 11.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">
+                    ${isRu ? 'Шанс дропа' : isCn ? '概率' : 'Rate'}: ${chestRate}%
+                  </span>
+                </div>
                 <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">
-                  💡 ${isRu ? 'Кликните по сундуку для просмотра лута' : isCn ? '点击查看宝箱掉落' : 'Click chest to inspect'}
+                  💡 ${isRu ? 'Кликните для просмотра лута' : isCn ? '点击查看宝箱掉落' : 'Click chest to inspect'}
                 </span>
               </div>
               
@@ -157,14 +150,40 @@ def get_helpers_code():
             </div>
           ` : ''}
 
-          <!-- Materials and Special Items -->
-          ${mats.length > 0 ? `
+          <!-- 3. Resources & Special Drops Table (Chest-Loot-Grid) -->
+          ${resources.length > 0 ? `
             <div class="detail-section">
-              <div class="section-heading" style="font-size: 13px; font-weight: 800; color: #38bdf8; margin-bottom: 6px;">
-                💎 ${isRu ? 'Ресурсы и особые награды' : isCn ? '资源与特殊产出' : 'Resources & Special Drops'}
+              <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span style="font-size: 13.5px; font-weight: 800; color: #38bdf8;">
+                    💎 ${isRu ? 'Ресурсы, камни и расходники' : isCn ? '资源、材料与消耗品' : 'Resources & Consumables'} (${resources.length})
+                  </span>
+                  <span class="tag-badge" style="background: rgba(56, 189, 248, 0.18); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.4); font-size: 11.5px; font-weight: 800; padding: 2px 8px; border-radius: 4px;">
+                    ${isRu ? 'Шанс дропа' : isCn ? '概率' : 'Rate'}: ${matRate}%
+                  </span>
+                </div>
+                <span style="font-size: 11px; font-weight: normal; color: var(--text-muted);">
+                  💡 ${isRu ? 'Кликните по ресурсу для карточки' : isCn ? '点击查看物品详情' : 'Click item to inspect'}
+                </span>
               </div>
-              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-                ${mats.map(m => `<span class="tag-badge" style="background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.3); font-size: 11.5px; padding: 3px 8px;">✨ ${this.escapeHtml(m)}</span>`).join('')}
+              
+              <div class="chest-loot-grid" style="max-height: 180px;">
+                ${resources.map(res => {
+                  const resName = typeof res.name === 'object' ? (res.name[lang] || res.name.RU || res.name.CN || res.id) : (res.name || res.id);
+                  const resStep = res.step || 'C';
+                  const resTierClass = `loot-tier-${resStep.toLowerCase()}`;
+                  const resIcon = `assets/img/items/${res.id}.png`;
+                  const tooltip = res.amount_str ? `${resName} (${res.amount_str})` : `${resName} [${resStep}★]`;
+                  return `
+                    <div class="loot-tile ${resTierClass}" title="${this.escapeHtml(tooltip)}" onclick="App.openItemModal('${res.category || 'consumables'}', '${res.id}')">
+                      <div class="loot-tile-icon-box">
+                        <img class="loot-tile-img" src="${resIcon}" alt="${this.escapeHtml(resName)}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="fallback-thumb" style="display: none; font-size: 16px;">💎</div>
+                      </div>
+                      <div class="loot-tile-tier">${resStep}★</div>
+                    </div>
+                  `;
+                }).join('')}
               </div>
             </div>
           ` : ''}
