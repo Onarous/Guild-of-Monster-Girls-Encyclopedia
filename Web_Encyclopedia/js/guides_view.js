@@ -25648,7 +25648,157 @@ const GuidesView = {
     }
   },
 
-    renderBuffModal(buff, currentLang = 'RU') {
+    renderTileModal(tile, currentLang = 'RU') {
+    if (!tile) return '';
+    const isRu = currentLang === 'RU';
+    const isCn = currentLang === 'CN';
+    const name = tile.name?.[currentLang] || tile.name?.RU || tile.name || tile.id;
+    const cat = tile.category || 'terrain';
+    const catName = tile.category_name || (isRu ? 'Клетка поля' : 'Map Tile');
+    const icon = tile.icon || '🗺️';
+    const sizeStr = tile.size_str || '1x1';
+    const biomes = tile.biomes?.[currentLang] || tile.biomes?.RU || [];
+    const mats = tile.materials?.[currentLang] || tile.materials?.RU || [];
+    const rates = tile.rates || {};
+    const dropsSummary = tile.drops_summary?.[currentLang] || tile.drops_summary?.RU || [];
+
+    const catBadges = {
+      chest: { bg: 'rgba(234, 179, 8, 0.15)', text: '#facc15', border: 'rgba(234, 179, 8, 0.3)', icon: '📦' },
+      resource: { bg: 'rgba(34, 197, 94, 0.15)', text: '#4ade80', border: 'rgba(34, 197, 94, 0.3)', icon: '🌿' },
+      altar: { bg: 'rgba(168, 85, 247, 0.15)', text: '#c084fc', border: 'rgba(168, 85, 247, 0.3)', icon: '🏛️' },
+      monster: { bg: 'rgba(239, 68, 68, 0.15)', text: '#f87171', border: 'rgba(239, 68, 68, 0.3)', icon: '⚔️' },
+      hazard: { bg: 'rgba(249, 115, 22, 0.15)', text: '#fb923c', border: 'rgba(249, 115, 22, 0.3)', icon: '⚠️' },
+      terrain: { bg: 'rgba(56, 189, 248, 0.15)', text: '#38bdf8', border: 'rgba(56, 189, 248, 0.3)', icon: '🗺️' }
+    };
+    const currentCatStyle = catBadges[cat] || catBadges.terrain;
+
+    return `
+      <div class="modal-dialog map-tile-modal-dialog" style="max-width: 680px;">
+        <div class="modal-header">
+          <div class="modal-title-area">
+            ${(typeof App !== 'undefined' && App.renderModalBackButton) ? App.renderModalBackButton(currentLang) : ''}
+            <div class="char-portrait-container" style="width: 54px; height: 54px; font-size: 28px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3); border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.1);">
+              ${icon}
+            </div>
+            <div>
+              <div class="char-modal-name" style="font-size: 22px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 8px;">
+                <span>${this.escapeHtml(name)}</span>
+              </div>
+              <div style="display: flex; gap: 8px; align-items: center; margin-top: 4px; flex-wrap: wrap;">
+                <span class="tag-badge" style="background: ${currentCatStyle.bg}; color: ${currentCatStyle.text}; border: 1px solid ${currentCatStyle.border}; font-weight: 600; font-size: 11px; padding: 2px 8px;">
+                  ${currentCatStyle.icon} ${this.escapeHtml(catName)}
+                </span>
+                <span class="tag-badge" style="background: rgba(255,255,255,0.06); color: var(--text-muted); font-size: 11px; padding: 2px 8px;">
+                  📐 ${isRu ? 'Размер' : (isCn ? '尺寸' : 'Size')}: ${sizeStr}
+                </span>
+                <span class="tag-badge" style="background: rgba(255,255,255,0.06); color: var(--text-muted); font-size: 11px; padding: 2px 8px;">
+                  ID: ${tile.id}
+                </span>
+              </div>
+            </div>
+          </div>
+          <button class="modal-close-btn" onclick="App.closeDetailModal()" title="Закрыть">✕</button>
+        </div>
+
+        <div class="modal-body" style="padding: 20px; display: flex; flex-direction: column; gap: 20px;">
+          <!-- Drop Rates Breakdown -->
+          <div class="detail-section" style="margin-bottom: 0;">
+            <div class="section-heading" style="display: flex; align-items: center; justify-content: space-between;">
+              <span>📊 ${isRu ? 'Шансы и категории дропа' : (isCn ? '掉落概率与类别' : 'Drop Rates Breakdown')}</span>
+              <span style="font-size: 11px; color: var(--text-muted); font-weight: normal;">Area_Spot Base Config</span>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-top: 10px;">
+              <div style="background: rgba(234, 179, 8, 0.08); border: 1px solid rgba(234, 179, 8, 0.2); border-radius: var(--radius-sm); padding: 10px; text-align: center;">
+                <div style="font-size: 11px; color: var(--text-muted);">📦 ${isRu ? 'Сундуки' : 'Chests'}</div>
+                <div style="font-size: 18px; font-weight: 700; color: #facc15; margin-top: 2px;">${rates.chest || 0}%</div>
+              </div>
+              <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: var(--radius-sm); padding: 10px; text-align: center;">
+                <div style="font-size: 11px; color: var(--text-muted);">⚔️ ${isRu ? 'Снаряжение' : 'Gear'}</div>
+                <div style="font-size: 18px; font-weight: 700; color: #38bdf8; margin-top: 2px;">${rates.equip || 0}%</div>
+              </div>
+              <div style="background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.2); border-radius: var(--radius-sm); padding: 10px; text-align: center;">
+                <div style="font-size: 11px; color: var(--text-muted);">👑 ${isRu ? 'Фрагменты' : 'Shards'}</div>
+                <div style="font-size: 18px; font-weight: 700; color: #c084fc; margin-top: 2px;">${rates.role || 0}%</div>
+              </div>
+              <div style="background: rgba(34, 197, 94, 0.08); border: 1px solid rgba(34, 197, 94, 0.2); border-radius: var(--radius-sm); padding: 10px; text-align: center;">
+                <div style="font-size: 11px; color: var(--text-muted);">🌿 ${isRu ? 'Материалы' : 'Materials'}</div>
+                <div style="font-size: 18px; font-weight: 700; color: #4ade80; margin-top: 2px;">${rates.materials || 0}%</div>
+              </div>
+              <div style="background: rgba(244, 63, 94, 0.08); border: 1px solid rgba(244, 63, 94, 0.2); border-radius: var(--radius-sm); padding: 10px; text-align: center;">
+                <div style="font-size: 11px; color: var(--text-muted);">💎 ${isRu ? 'Камни' : 'Gems'}</div>
+                <div style="font-size: 18px; font-weight: 700; color: #fb7185; margin-top: 2px;">${rates.stones || 0}%</div>
+              </div>
+              <div style="background: rgba(251, 191, 36, 0.08); border: 1px solid rgba(251, 191, 36, 0.2); border-radius: var(--radius-sm); padding: 10px; text-align: center;">
+                <div style="font-size: 11px; color: var(--text-muted);">🪙 ${isRu ? 'Золото' : 'Gold'}</div>
+                <div style="font-size: 18px; font-weight: 700; color: #fbbf24; margin-top: 2px;">${rates.gold || 0}%</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Materials & Harvestables -->
+          ${mats.length > 0 ? `
+            <div class="detail-section" style="margin-bottom: 0;">
+              <div class="section-heading">🌿 ${isRu ? 'Добываемые материалы и ресурсы' : (isCn ? '可采集素材与产出' : 'Harvestable Materials')}</div>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
+                ${mats.map(m => `
+                  <span class="tag-badge" 
+                        onclick="event.stopPropagation(); App.openItemModal('ingredients', '${this.escapeHtml(m)}')" 
+                        title="${isRu ? 'Нажмите, чтобы открыть информацию о материале' : 'Click to view material'}"
+                        style="background: rgba(34, 197, 94, 0.12); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.35); font-size: 13px; padding: 5px 12px; cursor: pointer; transition: all 0.15s ease;">
+                    💎 ${this.escapeHtml(m)}
+                  </span>
+                `).join('')}
+              </div>
+            </div>
+          ` : ''}
+
+          <!-- Biomes & Locations -->
+          ${biomes.length > 0 ? `
+            <div class="detail-section" style="margin-bottom: 0;">
+              <div class="section-heading">🗺️ ${isRu ? 'Локации и биомы появления' : (isCn ? '出现地图与地块区域' : 'Spawn Biomes & Maps')}</div>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
+                ${biomes.map(b => `
+                  <span class="tag-badge" style="background: rgba(56, 189, 248, 0.08); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.25); font-size: 12px; padding: 4px 10px;">
+                    📍 ${this.escapeHtml(b)}
+                  </span>
+                `).join('')}
+              </div>
+            </div>
+          ` : ''}
+
+          <!-- Drop Summary List -->
+          <div class="detail-section" style="margin-bottom: 0;">
+            <div class="section-heading">🎁 ${isRu ? 'Подробная сводка дропа' : (isCn ? '详细掉落构成' : 'Detailed Drops Composition')}</div>
+            <div style="background: rgba(0,0,0,0.25); padding: 12px 16px; border-radius: var(--radius-sm); font-size: 13px; line-height: 1.8; color: var(--text-secondary);">
+              ${dropsSummary.map(d => `<div>• ${this.escapeHtml(d)}</div>`).join('')}
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer" style="padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.08);">
+          <button class="action-btn secondary-btn" onclick="GuidesView.copyTileLink('${tile.id}')" style="font-size: 12px; padding: 6px 14px;">
+            🔗 ${isRu ? 'Скопировать ссылку на тайл' : (isCn ? '复制地块链接' : 'Copy Tile Link')}
+          </button>
+          <button class="action-btn primary-btn" onclick="App.closeDetailModal()" style="font-size: 12px; padding: 6px 18px;">
+            ${isRu ? 'Закрыть' : (isCn ? '关闭' : 'Close')}
+          </button>
+        </div>
+      </div>
+    `;
+  },
+
+  copyTileLink(tileId) {
+    const url = `${window.location.origin}${window.location.pathname}#tile/${tileId}`;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(url).then(() => {
+        alert('Ссылка на тайл скопирована в буфер обмена!');
+      });
+    } else {
+      prompt('Ссылка на тайл:', url);
+    }
+  },
+
+  renderBuffModal(buff, currentLang = 'RU') {
     if (!buff) return '';
     const isRu = currentLang === 'RU';
     const isCn = currentLang === 'CN';

@@ -1351,6 +1351,8 @@ const App = {
       this.openItemModal(prev.category, prev.id, true, true);
     } else if (prev.type === 'buff') {
       this.openBuffModal(prev.id, true, true);
+    } else if (prev.type === 'tile') {
+      this.openTileModal(prev.id, true, true);
     }
   },
 
@@ -1429,6 +1431,34 @@ const App = {
       }
     } catch (err) {
       console.error("Error opening character from relic:", err);
+    }
+  },
+
+  openTileModal(tileId, updateHash = true, isBack = false) {
+    if (!tileId) return;
+    const lang = this.state.lang || 'RU';
+    const tiles = this.state.mapTiles || (typeof GuidesView !== 'undefined' ? GuidesView.defaultMapTiles : []) || [];
+    const tile = tiles.find(t => t.id === tileId || t.key === tileId || (t.name && (t.name[lang] === tileId || t.name.RU === tileId || t.name.EN === tileId)));
+    if (!tile) return;
+
+    if (!isBack && this.currentModal && (this.currentModal.type !== 'tile' || this.currentModal.id !== tile.id)) {
+      this.modalHistory.push(this.currentModal);
+    }
+    this.currentModal = { type: 'tile', id: tile.id, name: tile.name?.[lang] || tile.name };
+
+    const modal = document.getElementById('detailModal');
+    if (!modal) return;
+    modal.dataset.modalType = 'tile';
+    modal.dataset.tileId = tile.id;
+    delete modal.dataset.charId;
+    delete modal.dataset.buffId;
+    delete modal.dataset.itemCat;
+    delete modal.dataset.itemId;
+    modal.innerHTML = GuidesView.renderTileModal(tile, lang);
+    modal.classList.add('active');
+
+    if (updateHash) {
+      this.updateUrl('tile', tile.id);
     }
   },
 
