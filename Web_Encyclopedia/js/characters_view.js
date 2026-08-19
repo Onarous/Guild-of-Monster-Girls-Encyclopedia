@@ -258,11 +258,17 @@ const CharactersView = {
     if (char.upgrade_ingredients && char.upgrade_ingredients.length > 0) {
       matsHtml = `
         <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-          ${char.upgrade_ingredients.map(ing => `
-            <span class="tag-badge" style="background: rgba(255,255,255,0.06); padding: 4px 10px; font-size: 12px;">
-              💎 ${this.escapeHtml(typeof ing === 'object' ? ing.name : ing)}
-            </span>
-          `).join('')}
+          ${char.upgrade_ingredients.map(ing => {
+            const ingName = typeof ing === 'object' ? ing.name : ing;
+            return `
+              <span class="tag-badge" 
+                    onclick="event.stopPropagation(); App.openItemModal('ingredients', '${this.escapeHtml(ingName)}')" 
+                    title="Нажмите, чтобы открыть информацию о материале"
+                    style="background: rgba(56, 189, 248, 0.1); padding: 4px 12px; font-size: 12px; cursor: pointer; border-color: rgba(56, 189, 248, 0.35); color: #7dd3fc; transition: all 0.15s ease;">
+                💎 ${this.escapeHtml(ingName)}
+              </span>
+            `;
+          }).join('')}
         </div>
       `;
     }
